@@ -19,9 +19,18 @@ export default function AccountPage() {
       </section>
 
       <div className="mt-4 space-y-4">
+        <Link
+          href="/account/subscription"
+          className="flex w-full items-center justify-between rounded-2xl bg-white p-5 text-left shadow-[0_4px_24px_rgba(13,27,62,0.06)] transition-colors hover:bg-sky/30 dark:bg-navy dark:hover:bg-white/5"
+        >
+          <div>
+            <p className="font-medium text-navy dark:text-white">Subscription</p>
+            <p className="text-sm text-navy/50 dark:text-white/60">Plan, allowance, and billing</p>
+          </div>
+          <span className="text-navy/30 dark:text-white/30">›</span>
+        </Link>
         {[
           { title: "Profile", desc: "Display name, email, exam sitting" },
-          { title: "Subscription", desc: "Free tier · 10 questions/day" },
           { title: "Data & privacy", desc: "Export or delete your data" },
         ].map((item) => (
           <button

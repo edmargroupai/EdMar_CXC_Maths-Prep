@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ProgressRing } from "@/components/ui/progress-ring";
+import { GradeProjectionCard } from "@/features/readiness/GradeProjectionCard";
+import { ReadinessCard } from "@/features/readiness/ReadinessCard";
 import { createClient } from "@/lib/supabase/client";
 
 interface WeakAreaRow {
@@ -56,6 +58,11 @@ export function ProgressDashboard() {
           {error}
         </p>
       ) : null}
+
+      <div className="lg:col-span-2 grid gap-6 lg:grid-cols-2">
+        <ReadinessCard />
+        <GradeProjectionCard />
+      </div>
 
       <section className="rounded-2xl bg-white p-6 shadow-[0_4px_24px_rgba(13,27,62,0.06)]">
         <h2 className="text-lg font-semibold text-navy">Topic mastery snapshot</h2>

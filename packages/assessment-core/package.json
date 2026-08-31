@@ -1,0 +1,21 @@
+{
+  "name": "@edmar/assessment-core",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@edmar/config": "workspace:*",
+    "@typescript-eslint/parser": "^8.44.0",
+    "eslint": "^9",
+    "typescript": "^5",
+    "vitest": "^3.2.4"
+  }
+}

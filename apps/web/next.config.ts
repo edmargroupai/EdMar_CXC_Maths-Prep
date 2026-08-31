@@ -26,7 +26,7 @@ if (existsSync(envPath)) {
 }
 
 const nextConfig: NextConfig = {
-  transpilePackages: ["@edmar/design", "@edmar/answer-core", "@edmar/types"],
+  transpilePackages: ["@edmar/design", "@edmar/answer-core", "@edmar/assessment-core", "@edmar/types"],
   async redirects() {
     return [
       { source: "/value", destination: "/onboarding/value", permanent: true },

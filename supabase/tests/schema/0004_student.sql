@@ -2,7 +2,7 @@
 
 begin;
 
-select plan(25);
+select plan(28);
 
 -- P06 tables
 select has_table('public', 'profiles', 'profiles exists');
@@ -26,23 +26,27 @@ select has_table('public', 'ai_generations', 'ai_generations exists');
 select has_table('public', 'app_config', 'app_config exists');
 select has_table('public', 'diagnostic_sessions', 'diagnostic_sessions exists');
 
+select has_table('public', 'readiness_snapshots', 'readiness_snapshots exists');
+select has_table('public', 'grade_projections', 'grade_projections exists');
+select has_table('public', 'student_outcomes', 'student_outcomes exists');
+
 select ok(
   (
-    select count(*) = 47
+    select count(*) = 50
     from information_schema.tables
     where table_schema = 'public'
       and table_type = 'BASE TABLE'
   ),
   format(
-    '47 tables exist (found %s)',
+    '50 tables exist (found %s)',
     (select count(*)::int from information_schema.tables
      where table_schema = 'public' and table_type = 'BASE TABLE')
   )
 );
 
 select ok(
-  (select count(*) = 12 from public.app_config),
-  'app_config seeded with 12 keys'
+  (select count(*) = 21 from public.app_config),
+  'app_config seeded with 21 keys'
 );
 
 -- fn_handle_new_user: registered email

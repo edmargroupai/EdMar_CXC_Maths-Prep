@@ -1,7 +1,7 @@
 import type { EntitlementView } from "@edmar/types";
 import { tokens } from "@edmar/design/tokens";
 
-/** Placeholder until useEntitlement() ships (P18). */
+/** Placeholder until useEntitlement() loads (P18). */
 export const FREE_ENTITLEMENT_VIEW: EntitlementView = {
   tier: "free",
   isPremium: false,

@@ -218,7 +218,8 @@ select enum_has_labels(
     'insufficient_coverage',
     'no_simulation',
     'stale_evidence',
-    'not_entitled'
+    'not_entitled',
+    'withdrawn'
   ],
   'withheld_reason'
 );

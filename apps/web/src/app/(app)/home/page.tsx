@@ -1,5 +1,6 @@
-import { ProgressRing } from "@/components/ui/progress-ring";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { ReadinessCard } from "@/features/readiness/ReadinessCard";
 import { recommendations, skillSummaries } from "@/lib/mock/app-shell";
 
 export const metadata = { title: "Dashboard" };
@@ -13,17 +14,9 @@ export default function HomePage() {
       </header>
 
       <div className="grid gap-6 lg:grid-cols-3">
-        <section className="rounded-2xl bg-white p-6 shadow-[0_4px_24px_rgba(13,27,62,0.06)] lg:col-span-1">
-          <h2 className="text-sm font-semibold uppercase tracking-wide text-navy/50">
-            Overall readiness
-          </h2>
-          <div className="mt-6 flex flex-col items-center">
-            <ProgressRing value={45} label="45%" sublabel="Developing" />
-            <p className="mt-4 text-center text-sm text-navy/60">
-              Estimated band range shown after more practice evidence is collected.
-            </p>
-          </div>
-        </section>
+        <div className="lg:col-span-1">
+          <ReadinessCard compact />
+        </div>
 
         <section className="rounded-2xl bg-white p-6 shadow-[0_4px_24px_rgba(13,27,62,0.06)] lg:col-span-2">
           <h2 className="text-sm font-semibold uppercase tracking-wide text-navy/50">
@@ -76,6 +69,12 @@ export default function HomePage() {
           Continue practising
         </Button>
       </section>
+
+      <p className="mt-6 text-center text-sm text-navy/50">
+        <Link href="/progress" className="text-royal hover:underline">
+          View full progress and grade projection
+        </Link>
+      </p>
     </div>
   );
 }
