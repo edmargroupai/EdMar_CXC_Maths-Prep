@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "2.0.0",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Find the correct answer."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Apply the method shown in class.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Work through the calculation step by step."
+        }
+      ]
+    }
+  ],
+  "curriculum": {
+    "syllabusCode": "V2018",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "00000000-0000-4000-8000-000000000001",
+      "code": "M1-1.1",
+      "label": "Number operations"
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Identify the operation and compute carefully."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "The result matches the answer spec display value."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The canonical value satisfies the stated accuracy rule."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "sign_error",
+      "wrongValue": "0",
+      "misconception": "Student reversed the sign when simplifying.",
+      "correctiveNote": "Check whether the final value should be positive or negative."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Show each step clearly before stating the final answer."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "machine_verified"
+  },
+  "questionType": "numeric",
+  "answerSpec": {
+    "answerType": "numeric_tolerance",
+    "canonicalValue": "100",
+    "displayValue": "100",
+    "acceptedForms": [
+      "100",
+      "100.5"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0.5
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Quick check for numeric_tolerance."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_tolerance",
+      "canonicalValue": "100",
+      "displayValue": "100",
+      "acceptedForms": [
+        "100",
+        "100.5"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.5
+      },
+      "normalisation": "numeric_default"
+    }
+  }
+}

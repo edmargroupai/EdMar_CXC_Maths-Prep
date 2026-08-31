@@ -1,0 +1,261 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schema.edmar.ai/edmar-answer-spec.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "answerType",
+    "canonicalValue",
+    "displayValue",
+    "acceptedForms",
+    "normalisation"
+  ],
+  "properties": {
+    "answerType": {
+      "enum": [
+        "option_id",
+        "option_set",
+        "boolean",
+        "numeric_exact",
+        "numeric_tolerance",
+        "numeric_sf",
+        "numeric_dp",
+        "fraction",
+        "mixed_number",
+        "ratio",
+        "currency",
+        "with_units",
+        "expression",
+        "coordinate",
+        "set",
+        "interval",
+        "matrix",
+        "vector",
+        "text"
+      ]
+    },
+    "canonicalValue": {
+      "type": [
+        "string",
+        "array"
+      ]
+    },
+    "displayValue": {
+      "type": "string",
+      "minLength": 1
+    },
+    "acceptedForms": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "tolerance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "absolute",
+            "relative",
+            "range",
+            "none"
+          ]
+        },
+        "value": {
+          "type": "number",
+          "minimum": 0
+        },
+        "min": {
+          "type": "number"
+        },
+        "max": {
+          "type": "number"
+        }
+      }
+    },
+    "precision": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "enum": [
+            "significant_figures",
+            "decimal_places",
+            "none"
+          ]
+        },
+        "value": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 10
+        },
+        "required": {
+          "type": "boolean",
+          "default": false
+        }
+      }
+    },
+    "units": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "requirement": {
+          "enum": [
+            "none",
+            "optional",
+            "required",
+            "convertible"
+          ]
+        },
+        "canonical": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "acceptedSet": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "form": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "lowestTerms": {
+          "type": "boolean",
+          "default": false
+        },
+        "simplifiedSurd": {
+          "type": "boolean",
+          "default": false
+        },
+        "simplestRatio": {
+          "type": "boolean",
+          "default": false
+        },
+        "specifiedForm": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "followThrough": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "dependsOn",
+        "rule"
+      ],
+      "properties": {
+        "dependsOn": {
+          "type": "string"
+        },
+        "rule": {
+          "type": "string"
+        }
+      }
+    },
+    "normalisation": {
+      "enum": [
+        "default",
+        "numeric_default",
+        "currency_default",
+        "expression_default",
+        "units_default",
+        "text_default"
+      ]
+    },
+    "caseSensitive": {
+      "type": "boolean",
+      "default": false
+    },
+    "commonErrorValues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "key",
+          "value"
+        ],
+        "properties": {
+          "key": {
+            "type": "string"
+          },
+          "value": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "parts": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#"
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "answerType": {
+            "enum": [
+              "numeric_tolerance",
+              "numeric_sf",
+              "numeric_dp",
+              "currency",
+              "with_units"
+            ]
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "tolerance"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "answerType": {
+            "enum": [
+              "numeric_sf",
+              "numeric_dp"
+            ]
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "precision"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "answerType": {
+            "const": "with_units"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "units"
+        ]
+      }
+    }
+  ]
+}
