@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SignOutButton } from "@/components/auth/sign-out-button";
 
 export const metadata = { title: "Account" };
 
@@ -29,9 +30,11 @@ export default function AccountPage() {
         ))}
       </div>
 
-      <p className="mt-8">
+      <p className="mt-8 flex items-center gap-3">
+        <SignOutButton />
+        <span className="text-navy/30">·</span>
         <Link href="/" className="text-sm text-royal hover:underline">
-          Sign out · return to marketing site
+          Marketing site
         </Link>
       </p>
     </div>
