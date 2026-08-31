@@ -80,7 +80,7 @@ export function HeroSection() {
             Practice. Exam simulation. Results.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <Button href="/sign-in" size="lg">
+            <Button href="/home" size="lg">
               Start Free Diagnostic
             </Button>
             <Button href="/#how-it-works" variant="secondary" size="lg">

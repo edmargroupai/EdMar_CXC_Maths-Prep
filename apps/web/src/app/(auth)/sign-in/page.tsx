@@ -80,7 +80,7 @@ export default function SignInPage() {
                 Forgot password?
               </Link>
             </div>
-            <Button type="submit" variant="secondary" className="w-full" size="lg">
+            <Button href="/home" variant="secondary" className="w-full" size="lg">
               Login
             </Button>
           </form>
