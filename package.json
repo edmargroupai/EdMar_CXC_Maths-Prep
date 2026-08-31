@@ -9,7 +9,8 @@
     "build": "turbo build",
     "check:invariants": "node scripts/check-no-secrets.mjs && node scripts/check-no-ai-in-client.mjs && node scripts/check-no-service-role.mjs && node scripts/check-entitlement.mjs && node scripts/check-no-hardcoded-questions.mjs",
     "test": "node scripts/test-boundaries.mjs",
-    "test:boundaries": "node scripts/test-boundaries.mjs"
+    "test:boundaries": "node scripts/test-boundaries.mjs",
+    "test:db": "supabase test db"
   },
   "devDependencies": {
     "prettier": "^3.6.2",
