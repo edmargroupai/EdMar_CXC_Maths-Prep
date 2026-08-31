@@ -11,16 +11,27 @@
     "test": "turbo test && node scripts/test-boundaries.mjs",
     "test:boundaries": "node scripts/test-boundaries.mjs",
     "test:db": "supabase test db",
-  "test:crosscheck": "tsx scripts/crosscheck-answer-core.ts",
+    "test:crosscheck": "tsx scripts/crosscheck-answer-core.ts",
+    "test:scripts": "vitest run --config vitest.config.ts",
+    "render-math": "tsx scripts/render-math.ts",
+    "validate:content": "tsx scripts/validate-content.ts",
     "gen:taxonomy": "node scripts/gen-taxonomy-seed.mjs",
     "extract:syllabus": "python scripts/extract-syllabus.py"
   },
   "devDependencies": {
     "@edmar/answer-core": "workspace:*",
+    "@edmar/content-schema": "workspace:*",
     "@edmar/types": "workspace:*",
+    "@types/node": "^20.19.43",
+    "@types/pg": "^8.23.1",
     "prettier": "^3.6.2",
     "tsx": "^4.20.5",
     "turbo": "^2.5.8",
-    "typescript": "^5.9.2"
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.7"
+  },
+  "dependencies": {
+    "mathjax-full": "^3.2.2",
+    "pg": "^8.23.0"
   }
 }
