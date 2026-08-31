@@ -27,21 +27,21 @@ select has_table('public', 'app_config', 'app_config exists');
 
 select ok(
   (
-    select count(*) = 45
+    select count(*) = 46
     from information_schema.tables
     where table_schema = 'public'
       and table_type = 'BASE TABLE'
   ),
   format(
-    '45 Rev 1 tables exist (found %s)',
+    '46 tables exist (found %s)',
     (select count(*)::int from information_schema.tables
      where table_schema = 'public' and table_type = 'BASE TABLE')
   )
 );
 
 select ok(
-  (select count(*) = 9 from public.app_config),
-  'app_config seeded with 9 keys'
+  (select count(*) = 12 from public.app_config),
+  'app_config seeded with 12 keys'
 );
 
 -- fn_handle_new_user: registered email

@@ -11,11 +11,15 @@
     "test": "turbo test && node scripts/test-boundaries.mjs",
     "test:boundaries": "node scripts/test-boundaries.mjs",
     "test:db": "supabase test db",
+  "test:crosscheck": "tsx scripts/crosscheck-answer-core.ts",
     "gen:taxonomy": "node scripts/gen-taxonomy-seed.mjs",
     "extract:syllabus": "python scripts/extract-syllabus.py"
   },
   "devDependencies": {
+    "@edmar/answer-core": "workspace:*",
+    "@edmar/types": "workspace:*",
     "prettier": "^3.6.2",
+    "tsx": "^4.20.5",
     "turbo": "^2.5.8",
     "typescript": "^5.9.2"
   }
