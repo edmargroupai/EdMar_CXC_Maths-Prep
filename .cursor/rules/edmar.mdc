@@ -1,0 +1,70 @@
+---
+description: EdMar CXC Mathematics — binding architecture rules (Revision 2)
+alwaysApply: true
+---
+
+# EdMar — non-negotiable rules
+
+Source of truth, in precedence order:
+`docs/TECHNICAL_BUILD_SPEC.md` (v2.0) > `docs/MASTER_BLUEPRINT.md` (v2.0) > this file > the code.
+If the spec and the code disagree, the spec wins — raise it, never silently reconcile.
+If the spec is silent, ask one specific question. Never invent.
+
+## Platform
+- `apps/web` (Next.js App Router, PWA) is the MVP student client and the reference implementation.
+- `apps/mobile` is PAUSED at V2. Do not extend it, do not delete it, do not port to it.
+- `apps/admin` and `apps/pipeline` continue. `packages/*` are shared by all clients.
+
+## The eight invariants
+- I-1 No AI on the student path. No client bundle may import an AI SDK. CI-enforced.
+- I-2 Nothing reaches a student unapproved — enforced in RLS, never in application logic.
+- I-3 Answer checking is deterministic and local, from `@edmar/answer-core`, in the client.
+- I-4 Published content is immutable. Corrections are new versions.
+- I-5 Every AI-touched artefact carries provenance.
+- I-6 All assessment output is deterministic and recomputable, computed in Postgres.
+- I-7 No projection without evidence — withheld below the gate, always banded, always with confidence.
+- I-8 Web is the reference implementation. Mobile conforms to it, not the reverse.
+
+## Assessment — the rules most likely to be violated by well-meaning code
+- NEVER compute readiness, mastery rollups or a grade band in TypeScript. Computation lives in
+  Postgres functions (D-18). `packages/assessment-core` holds types, band labels, gate constants
+  and user-facing strings ONLY — no arithmetic on assessment values. CI greps for this.
+- NEVER let a client construct a band. `fn_get_grade_projection` returns `withheld` with a
+  machine-readable reason, and the gate lives in the function, not the interface (D-20).
+- NEVER issue a projection without both bounds, a confidence, a model_version and a
+  disclosure_version. The `issued_has_band` constraint enforces it at the database too.
+- NEVER show a band to a non-entitled student, or put one in a notification, email, or any
+  marketing surface. CI band-vocabulary check covers marketing routes and templates.
+- NEVER cache readiness, a projection, or entitlement. Network-only. A stale confident number is
+  the one failure this product cannot afford.
+- NEVER read the clock inside an assessment function. `p_as_of` is an explicit argument.
+- NEVER let a simulation with `blueprint_ok = false` feed readiness.
+- NEVER trust a client-supplied timer value. Simulation timing is server-anchored (D-22).
+
+## Content
+- Every published question carries all ten presentation blocks (spec §40). Publication is refused
+  without them. Do NOT add default or empty values to make old questions publishable — the gate is
+  the point.
+- Response blocks 2–10 never reach a client before that student has answered or skipped. Three
+  layers enforce it: the payload, `fn_reveal_response`, and the service worker. Do not weaken any
+  of them for a loading-performance win.
+- Never invent CXC curriculum, and never invent a mathematical answer.
+- Never auto-publish AI-generated content. No confidence threshold, no exception.
+
+## Other standing rules
+- No secret in client code. No service-role key outside `apps/admin` server code.
+- No hard-coded question data in a component. No premium logic outside
+  `useEntitlement()` / `<PremiumGate>`.
+- Never widen a tolerance or disable a test to make it pass.
+- Use the spec's exact names for tables, columns, routes, functions, types and files.
+- One phase per session. No unrelated changes in a phase's diff.
+
+## Working agreement
+1. Restate the phase objective, files to touch, and acceptance criteria BEFORE writing code.
+2. Write the test first wherever the phase defines acceptance criteria.
+3. `pnpm lint && pnpm typecheck && pnpm test` (+ `pnpm test:db`, + `pnpm check:invariants`).
+4. Review the diff for: secrets, AI imports, service-role leakage, hard-coded content, premium
+  logic outside the two permitted files, assessment arithmetic in TypeScript, cached readiness,
+  response blocks reaching a client before an attempt exists.
+5. Conventional Commit scoped to the phase.
+6. Restate each acceptance criterion and how you verified it. If any is unmet, STOP and report.

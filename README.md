@@ -1,25 +1,29 @@
 # EdMar CXC Maths Prep
 
-CXC Mathematics prep platform for EdMar Group. Next.js on Vercel, data and auth on Supabase.
+Examination-readiness system for CSEC Mathematics. Spec: `docs/TECHNICAL_BUILD_SPEC.md` (v2.0).
 
-## Connected services
+## Workspace
 
-- GitHub: [edmargroupai/EdMar_CXC_Maths-Prep](https://github.com/edmargroupai/EdMar_CXC_Maths-Prep)
-- Supabase project ref: `vrafxpxaeoxhpwtixggc`
-- Vercel team: `edmargroupai`
+pnpm + Turborepo.
 
-## Local setup
+- `apps/web` — MVP student client (Next.js)
+- `apps/admin` — not started (P19)
+- `apps/pipeline` — not started (P20)
+- `apps/mobile` — paused at V2; do not extend
+- `packages/config` — shared eslint / tsconfig / prettier presets
+
+## Local
 
 ```bash
-npm install
+pnpm install
+pnpm lint && pnpm typecheck && pnpm check:invariants
 cp .env.example .env.local
 ```
 
-Fill `.env.local` from the Supabase project settings, then:
+`apps/web` is the only runnable app in P01. Product phases start at P13 on that app.
 
-```bash
-npx supabase link --project-ref vrafxpxaeoxhpwtixggc
-npm run dev
-```
+## Docs
 
-Required keys are listed in `.env.example`. Never commit `.env.local`.
+- `docs/PROJECT_INSTRUCTIONS.md`
+- `docs/MASTER_BLUEPRINT.md`
+- `docs/rev2/GAP_AUDIT.md`

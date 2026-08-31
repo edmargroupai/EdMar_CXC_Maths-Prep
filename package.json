@@ -1,28 +1,18 @@
 {
-  "name": "edmar-cxc-maths-prep",
-  "version": "0.1.0",
+  "name": "edmar-cxc-maths",
   "private": true,
+  "packageManager": "pnpm@11.22.0",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
-  },
-  "dependencies": {
-    "@supabase/ssr": "^0.12.5",
-    "@supabase/supabase-js": "^2.112.4",
-    "next": "16.3.3",
-    "react": "19.2.8",
-    "react-dom": "19.2.8"
+    "lint": "turbo lint",
+    "typecheck": "turbo typecheck",
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "check:invariants": "node scripts/check-no-secrets.mjs && node scripts/check-no-ai-in-client.mjs && node scripts/check-no-service-role.mjs && node scripts/check-entitlement.mjs && node scripts/check-no-hardcoded-questions.mjs",
+    "test": "node -e \"console.log('P01: no unit workspaces yet')\""
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "16.3.3",
-    "tailwindcss": "^4",
-    "typescript": "^5"
+    "prettier": "^3.6.2",
+    "turbo": "^2.5.8",
+    "typescript": "^5.9.2"
   }
 }
