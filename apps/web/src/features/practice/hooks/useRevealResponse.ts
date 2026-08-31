@@ -2,6 +2,7 @@
 
 import { useCallback } from "react";
 import type { ResponseBlocks } from "@edmar/types";
+import { recordAttemptWithSync } from "@/lib/sync";
 import { createClient } from "@/lib/supabase/client";
 
 export function useRevealResponse() {
@@ -37,16 +38,5 @@ export async function recordAttemptBackground(args: {
   clientIsCorrect: boolean;
   durationMs: number;
 }) {
-  const supabase = createClient();
-  return supabase.rpc("fn_record_attempt", {
-    p_client_attempt_id: args.clientAttemptId,
-    p_question_version_id: args.questionVersionId,
-    p_session_id: args.sessionId,
-    p_part_key: null,
-    p_raw_answer: args.rawAnswer,
-    p_was_skipped: args.wasSkipped,
-    p_client_is_correct: args.clientIsCorrect,
-    p_duration_ms: args.durationMs,
-    p_client_created_at: new Date().toISOString(),
-  });
+  return recordAttemptWithSync(args);
 }

@@ -1,14 +1,16 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { resolvePostAuthPath } from "@/lib/auth/post-auth-destination";
 import { createClient } from "@/lib/supabase/client";
 import { isSupabaseConfigured } from "@/lib/supabase/env";
 
 export function SignInForm() {
   const router = useRouter();
+  const searchParams = useSearchParams();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState<string | null>(null);
@@ -26,7 +28,7 @@ export function SignInForm() {
 
     setLoading(true);
     const supabase = createClient();
-    const { error: signInError } = await supabase.auth.signInWithPassword({
+    const { data: signInData, error: signInError } = await supabase.auth.signInWithPassword({
       email,
       password,
     });
@@ -37,7 +39,29 @@ export function SignInForm() {
       return;
     }
 
-    router.push("/home");
+    const userId = signInData.user?.id;
+    if (!userId) {
+      setError("Sign-in succeeded but no user session was returned. Try again.");
+      return;
+    }
+
+    const { data: profile, error: profileError } = await supabase
+      .from("profiles")
+      .select("onboarding_completed_at")
+      .eq("id", userId)
+      .maybeSingle();
+
+    if (profileError) {
+      setError(profileError.message);
+      return;
+    }
+
+    const destination = resolvePostAuthPath(profile, {
+      isAnonymous: signInData.user?.is_anonymous ?? false,
+      nextPath: searchParams.get("next"),
+    });
+
+    router.push(destination);
     router.refresh();
   }
 

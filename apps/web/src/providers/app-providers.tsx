@@ -9,6 +9,7 @@ import {
   useState,
   type ReactNode,
 } from "react";
+import { flushSyncQueue } from "@/lib/sync";
 
 type Theme = "light" | "dark" | "system";
 
@@ -96,6 +97,19 @@ function registerServiceWorker() {
   });
 }
 
+function SyncProvider({ children }: { children: ReactNode }) {
+  useEffect(() => {
+    const flush = () => {
+      void flushSyncQueue();
+    };
+    flush();
+    window.addEventListener("online", flush);
+    return () => window.removeEventListener("online", flush);
+  }, []);
+
+  return <>{children}</>;
+}
+
 export function AppProviders({ children }: { children: ReactNode }) {
   useEffect(() => {
     registerServiceWorker();
@@ -103,7 +117,9 @@ export function AppProviders({ children }: { children: ReactNode }) {
 
   return (
     <ThemeProvider>
-      <QueryProvider>{children}</QueryProvider>
+      <QueryProvider>
+        <SyncProvider>{children}</SyncProvider>
+      </QueryProvider>
     </ThemeProvider>
   );
 }

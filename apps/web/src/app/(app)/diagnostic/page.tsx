@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { DiagnosticStarter } from "@/features/diagnostic/DiagnosticStarter";
 
 export const metadata = { title: "Diagnostic" };
 
@@ -10,20 +10,15 @@ export default function DiagnosticPage() {
       </span>
       <h1 className="mt-6 text-3xl font-bold text-navy">Diagnostic assessment</h1>
       <p className="mt-4 text-navy/70">
-        A twenty-minute assessment across key syllabus topics. You will see a coverage map
-        and your first readiness reading when you finish.
+        A twenty-minute assessment across key syllabus topics. You will see a coverage map when
+        you finish.
       </p>
       <ul className="mt-8 space-y-2 text-left text-sm text-navy/60">
-        <li>· About 20 questions across multiple topics</li>
+        <li>· 22 questions across multiple topics</li>
         <li>· No per-question feedback during the run</li>
-        <li>· Results unlock your personalised study plan</li>
+        <li>· Results feed your progress map</li>
       </ul>
-      <Button className="mt-10" size="lg">
-        Start diagnostic
-      </Button>
-      <p className="mt-4 text-xs text-navy/40">
-        Available after your first practice session (per product spec).
-      </p>
+      <DiagnosticStarter />
     </div>
   );
 }

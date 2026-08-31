@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Suspense } from "react";
 import { Logo } from "@/components/ui/logo";
 import { SignInForm } from "./sign-in-form";
 
@@ -39,7 +40,9 @@ export default function SignInPage() {
             </Link>
           </p>
 
-          <SignInForm />
+          <Suspense fallback={<p className="mt-8 text-sm text-navy/60">Loading sign-in…</p>}>
+            <SignInForm />
+          </Suspense>
 
           <p className="mt-8 text-center text-sm text-navy/50">
             <Link href="/" className="text-royal hover:underline">

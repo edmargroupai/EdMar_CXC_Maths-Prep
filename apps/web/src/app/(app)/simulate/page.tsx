@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { SimulationStarter } from "@/features/simulation/SimulationStarter";
 import { examPapers } from "@/lib/mock/app-shell";
 
 export const metadata = { title: "Exam Simulation" };
@@ -13,6 +14,17 @@ export default function SimulatePage() {
           Sit full papers under timed or practice conditions.
         </p>
       </header>
+
+      <section className="mt-8 rounded-2xl border border-royal/20 bg-sky/30 p-6">
+        <h2 className="text-lg font-semibold text-navy">Paper 01 — regular form</h2>
+        <p className="mt-2 text-sm text-navy/70">
+          Timed 2½-hour simulation with server-anchored clock. Blueprint conformance is checked
+          against the published question bank.
+        </p>
+        <div className="mt-4">
+          <SimulationStarter />
+        </div>
+      </section>
 
       <div className="mt-8 grid gap-4 md:grid-cols-2">
         {examPapers.map((paper) => (

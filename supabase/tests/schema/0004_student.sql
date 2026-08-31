@@ -2,7 +2,7 @@
 
 begin;
 
-select plan(24);
+select plan(25);
 
 -- P06 tables
 select has_table('public', 'profiles', 'profiles exists');
@@ -24,16 +24,17 @@ select has_table('public', 'analytics_events', 'analytics_events exists');
 select has_table('public', 'content_jobs', 'content_jobs exists');
 select has_table('public', 'ai_generations', 'ai_generations exists');
 select has_table('public', 'app_config', 'app_config exists');
+select has_table('public', 'diagnostic_sessions', 'diagnostic_sessions exists');
 
 select ok(
   (
-    select count(*) = 46
+    select count(*) = 47
     from information_schema.tables
     where table_schema = 'public'
       and table_type = 'BASE TABLE'
   ),
   format(
-    '46 tables exist (found %s)',
+    '47 tables exist (found %s)',
     (select count(*)::int from information_schema.tables
      where table_schema = 'public' and table_type = 'BASE TABLE')
   )

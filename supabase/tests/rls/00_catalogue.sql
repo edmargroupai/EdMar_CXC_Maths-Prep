@@ -6,7 +6,7 @@ select plan(2);
 
 select ok(
   (
-    select count(*) = 46
+    select count(*) = 47
     from pg_class c
     join pg_namespace n on n.oid = c.relnamespace
     join information_schema.tables t
@@ -17,7 +17,7 @@ select ok(
       and c.relrowsecurity
   ),
   format(
-    'all 46 tables have RLS enabled (%s/%s)',
+    'all 47 tables have RLS enabled (%s/%s)',
     (
       select count(*)::int
       from pg_class c
