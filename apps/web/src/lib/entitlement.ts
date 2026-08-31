@@ -12,4 +12,4 @@ export const FREE_ENTITLEMENT_VIEW: EntitlementView = {
   resetsAt: null,
 };
 
-export const brandPrimary = tokens.colour.brand.primary;
+export const brandPrimary = tokens.colour.royal.DEFAULT;
