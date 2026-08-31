@@ -34,6 +34,13 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# python (apps/pipeline)
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+.pytest_cache/
+
 # supabase local
 supabase/.temp/
 supabase/.branches/

@@ -9,6 +9,17 @@ export function MarketingFooter() {
           EdMar CXC Maths is an independent preparation platform. Not affiliated with or
           endorsed by CXC.
         </p>
+        <nav className="flex flex-wrap gap-4 text-sm text-navy/60">
+          <a href="/privacy" className="hover:text-royal">
+            Privacy
+          </a>
+          <a href="/terms" className="hover:text-royal">
+            Terms
+          </a>
+          <a href="/about" className="hover:text-royal">
+            About
+          </a>
+        </nav>
         <p className="text-sm text-navy/50">© {new Date().getFullYear()} EdMar Group</p>
       </div>
     </footer>

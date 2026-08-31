@@ -9,6 +9,7 @@ function excluded(file) {
     file === ".env.example" ||
     file === "supabase/config.toml" ||
     file.startsWith("supabase/functions/") ||
+    file.startsWith("supabase/migrations/") ||
     file.startsWith("docs/") ||
     file.startsWith("scripts/check-") ||
     file.startsWith(".cursor/")

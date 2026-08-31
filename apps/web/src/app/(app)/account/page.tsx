@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { SignOutButton } from "@/components/auth/sign-out-button";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
+import { AccountDataPanel } from "@/features/account/AccountDataPanel";
 
 export const metadata = { title: "Account" };
 
@@ -29,28 +30,21 @@ export default function AccountPage() {
           </div>
           <span className="text-navy/30 dark:text-white/30">›</span>
         </Link>
-        {[
-          { title: "Profile", desc: "Display name, email, exam sitting" },
-          { title: "Data & privacy", desc: "Export or delete your data" },
-        ].map((item) => (
-          <button
-            key={item.title}
-            type="button"
-            className="flex w-full items-center justify-between rounded-2xl bg-white p-5 text-left shadow-[0_4px_24px_rgba(13,27,62,0.06)] transition-colors hover:bg-sky/30 dark:bg-navy dark:hover:bg-white/5"
-          >
-            <div>
-              <p className="font-medium text-navy dark:text-white">{item.title}</p>
-              <p className="text-sm text-navy/50 dark:text-white/60">{item.desc}</p>
-            </div>
-            <span className="text-navy/30 dark:text-white/30">›</span>
-          </button>
-        ))}
+        <AccountDataPanel />
       </div>
 
-      <p className="mt-8 flex items-center gap-3">
+      <p className="mt-8 flex flex-wrap items-center gap-3 text-sm">
         <SignOutButton />
         <span className="text-navy/30 dark:text-white/30">·</span>
-        <Link href="/" className="text-sm text-royal hover:underline">
+        <Link href="/privacy" className="text-royal hover:underline">
+          Privacy
+        </Link>
+        <span className="text-navy/30 dark:text-white/30">·</span>
+        <Link href="/terms" className="text-royal hover:underline">
+          Terms
+        </Link>
+        <span className="text-navy/30 dark:text-white/30">·</span>
+        <Link href="/" className="text-royal hover:underline">
           Marketing site
         </Link>
       </p>
