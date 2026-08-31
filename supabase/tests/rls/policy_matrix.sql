@@ -30,7 +30,7 @@ insert into auth.users (
   (
     '00000000-0000-0000-0000-000000000000',
     'a0000000-0000-0000-0000-000000000003',
-    'authenticated', 'authenticated', 'support@test.com',
+    'authenticated', 'authenticated',     'support@test.com',
     crypt('password', gen_salt('bf')), timezone('utc', now()),
     timezone('utc', now()), timezone('utc', now()),
     '', '', '', ''

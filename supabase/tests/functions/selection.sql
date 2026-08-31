@@ -26,6 +26,13 @@ begin
   from public.topics t
   join public.specific_objectives so on so.topic_id = t.id
   where t.syllabus_code = 'V2027'
+    and not exists (
+      select 1
+      from public.question_objectives qo
+      join public.questions q on q.id = qo.question_id
+      where qo.specific_objective_id = so.id
+        and q.status = 'published'
+    )
   order by t.sequence, so.sequence
   limit 1;
 
