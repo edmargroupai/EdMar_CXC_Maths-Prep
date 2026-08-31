@@ -11,7 +11,8 @@
     "test": "node scripts/test-boundaries.mjs",
     "test:boundaries": "node scripts/test-boundaries.mjs",
     "test:db": "supabase test db",
-    "gen:taxonomy": "node scripts/gen-taxonomy-seed.mjs"
+    "gen:taxonomy": "node scripts/gen-taxonomy-seed.mjs",
+    "extract:syllabus": "python scripts/extract-syllabus.py"
   },
   "devDependencies": {
     "prettier": "^3.6.2",
