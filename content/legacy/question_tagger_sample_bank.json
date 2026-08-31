@@ -1,0 +1,23 @@
+[
+  {
+    "id": "sample_reverse_percentage_001",
+    "country": "Jamaica",
+    "curriculum": "CSEC Mathematics",
+    "grade_level": "Grade 10",
+    "source": "EdMar CXC Mathematics Workbook 2026",
+    "module": "Number and Algebra",
+    "topic": "Consumer Arithmetic",
+    "subtopic": "Percentage discount",
+    "skill": "Find the original amount after a percentage discount",
+    "learning_objective": "Calculate original price when the selling price and percentage discount are known.",
+    "prerequisites": ["Percentages", "Decimals", "Simple equations"],
+    "difficulty": 3,
+    "marks": 2,
+    "estimated_time_minutes": 3,
+    "diagnostic_use": "Suitable for diagnostic and targeted practice",
+    "cognitive_level": "Application",
+    "common_misconceptions": ["Treating the sale price as the original price", "Subtracting the discount from the sale price"],
+    "ai_coaching_note": "Ask the student what percentage of the original price remains after the discount.",
+    "recommended_next_action": "Assign reverse percentage mini-lesson if missed."
+  }
+]

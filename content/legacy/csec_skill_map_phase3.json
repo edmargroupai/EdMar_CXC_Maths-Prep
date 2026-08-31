@@ -1,0 +1,19 @@
+[
+  {"id":"M1_NTC_FRACTIONS","module":1,"topic":"Number Theory and Computation","skill":"Operations with fractions","prerequisites":[],"lesson":"Fraction operations and equivalent forms","month":"September"},
+  {"id":"M1_NTC_DECIMALS","module":1,"topic":"Number Theory and Computation","skill":"Decimals, rounding and significant figures","prerequisites":["M1_NTC_FRACTIONS"],"lesson":"Decimal calculation and approximation","month":"September"},
+  {"id":"M1_NTC_RATIO","module":1,"topic":"Number Theory and Computation","skill":"Ratio and proportion","prerequisites":["M1_NTC_FRACTIONS","M1_NTC_DECIMALS"],"lesson":"Sharing quantities and proportional reasoning","month":"October"},
+  {"id":"M1_CON_PERCENT","module":1,"topic":"Consumer Arithmetic","skill":"Percentages, discount and VAT","prerequisites":["M1_NTC_RATIO"],"lesson":"Percentages in everyday finance","month":"October"},
+  {"id":"M1_CON_INTEREST","module":1,"topic":"Consumer Arithmetic","skill":"Simple and compound interest","prerequisites":["M1_CON_PERCENT"],"lesson":"Interest, investments and loans","month":"November"},
+  {"id":"M1_SETS_VENN","module":1,"topic":"Sets","skill":"Venn diagrams and set notation","prerequisites":[],"lesson":"Representing and analysing sets","month":"November"},
+  {"id":"M1_MEAS_AREA","module":1,"topic":"Measurement","skill":"Perimeter, area and unit conversion","prerequisites":["M1_NTC_DECIMALS"],"lesson":"Measuring length, area and units","month":"December"},
+  {"id":"M1_ALG_EQUATIONS","module":1,"topic":"Algebra 1","skill":"Linear equations and substitution","prerequisites":["M1_NTC_FRACTIONS"],"lesson":"Solving equations step by step","month":"December"},
+  {"id":"M2_STATS_MEAN","module":2,"topic":"Statistics 1","skill":"Mean, median, mode and range","prerequisites":["M1_NTC_DECIMALS"],"lesson":"Summarising data","month":"January"},
+  {"id":"M2_ALG_EXPRESSIONS","module":2,"topic":"Algebra 2","skill":"Simplifying algebraic expressions","prerequisites":["M1_ALG_EQUATIONS"],"lesson":"Algebraic structure and like terms","month":"January"},
+  {"id":"M2_GRAPH_LINEAR","module":2,"topic":"Relations, Functions and Graphs 1","skill":"Linear graphs and gradient","prerequisites":["M1_ALG_EQUATIONS"],"lesson":"Gradient, intercept and straight lines","month":"February"},
+  {"id":"M2_GEOM_TRIG","module":2,"topic":"Geometry and Trigonometry 1","skill":"Pythagoras and basic trigonometry","prerequisites":["M1_MEAS_AREA"],"lesson":"Right triangles and unknown sides","month":"February"},
+  {"id":"M2_VEC_MATRIX","module":2,"topic":"Vectors and Matrices 1","skill":"Vector notation and matrix order","prerequisites":["M1_ALG_EQUATIONS"],"lesson":"Vectors, matrices and movement","month":"March"},
+  {"id":"M3_STATS_PROB","module":3,"topic":"Statistics 2","skill":"Probability and data interpretation","prerequisites":["M2_STATS_MEAN","M1_SETS_VENN"],"lesson":"Probability and decision making","month":"April"},
+  {"id":"M3_FUNC_QUAD","module":3,"topic":"Relations, Functions and Graphs 2","skill":"Quadratic graphs and functions","prerequisites":["M2_GRAPH_LINEAR","M2_ALG_EXPRESSIONS"],"lesson":"Curves, roots and turning points","month":"April"},
+  {"id":"M3_TRIG_ADV","module":3,"topic":"Geometry and Trigonometry 2","skill":"Circle theorems and advanced trigonometry","prerequisites":["M2_GEOM_TRIG"],"lesson":"Advanced geometric reasoning","month":"May"},
+  {"id":"M3_VEC_MATRIX2","module":3,"topic":"Vectors and Matrices 2","skill":"Matrix transformations and advanced vectors","prerequisites":["M2_VEC_MATRIX"],"lesson":"Transformations and vector reasoning","month":"May"}
+]

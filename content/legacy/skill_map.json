@@ -1,0 +1,10 @@
+{
+  "academic_year": {"start":"September", "end":"June", "duration_months":10},
+  "mission":"We don't teach students to memorize mathematics. We teach them to think mathematically.",
+  "modules": [
+    {"module":1,"name":"Fundamentals of Secondary Level Mathematics","months":["September","October","November","December"],"topics":["Number Theory and Computation","Consumer Arithmetic","Sets","Measurement","Algebra 1","Introduction to Graphs"]},
+    {"module":2,"name":"Intermediate Secondary Level Mathematics","months":["January","February","March"],"topics":["Statistics 1","Algebra 2","Relations, Functions and Graphs 1","Geometry and Trigonometry 1","Vectors and Matrices 1"]},
+    {"module":3,"name":"Higher Concepts in Secondary Level Mathematics","months":["April","May","June"],"topics":["Statistics 2","Relations, Functions and Graphs 2","Geometry and Trigonometry 2","Vectors and Matrices 2"]}
+  ],
+  "early_mastery_paths":["EdMar Mathematics Challenge Program","Additional Mathematics Gateway"]
+}

@@ -1,0 +1,77 @@
+[
+  {
+    "id": "proof_ratio_001",
+    "module": 1,
+    "topic": "Ratio and Proportion",
+    "level": "Gold",
+    "type": "show_that",
+    "prompt": "Show that if two quantities x and y are in the ratio 3:5, then 5x = 3y.",
+    "coachHint": "Start by writing x/y = 3/5, then cross-multiply. Explain why cross-multiplication preserves equality.",
+    "successCriteria": [
+      "States the ratio as a fraction",
+      "Uses valid cross-multiplication",
+      "Explains the equality relationship",
+      "Uses clear mathematical language"
+    ]
+  },
+  {
+    "id": "proof_algebra_001",
+    "module": 2,
+    "topic": "Algebra",
+    "level": "Diamond",
+    "type": "prove_that",
+    "prompt": "Prove that the sum of any three consecutive integers is divisible by 3.",
+    "coachHint": "Represent the integers as n, n + 1 and n + 2. Add them and factorise.",
+    "successCriteria": [
+      "Uses a general variable",
+      "Adds the three expressions correctly",
+      "Factorises the result",
+      "Connects the result to divisibility by 3"
+    ]
+  },
+  {
+    "id": "proof_geometry_001",
+    "module": 3,
+    "topic": "Geometry and Trigonometry",
+    "level": "Master",
+    "type": "show_that",
+    "prompt": "Show that the area of a right-angled triangle with perpendicular sides a and b is half the area of a rectangle with the same length and width.",
+    "coachHint": "Imagine two identical right-angled triangles forming a rectangle. Compare the areas.",
+    "successCriteria": [
+      "Uses a diagram or mental model",
+      "Identifies the rectangle area as ab",
+      "Explains that two equal triangles form the rectangle",
+      "Concludes the triangle area is 1/2 ab"
+    ]
+  },
+  {
+    "id": "proof_functions_001",
+    "module": 3,
+    "topic": "Relations, Functions and Graphs",
+    "level": "Diamond",
+    "type": "justify",
+    "prompt": "Justify why a vertical line test can determine whether a graph represents a function.",
+    "coachHint": "Think about whether one input can have more than one output.",
+    "successCriteria": [
+      "Defines a function in terms of input and output",
+      "Explains what a vertical line represents",
+      "Identifies repeated x-values",
+      "Concludes why more than one intersection fails the function test"
+    ]
+  },
+  {
+    "id": "proof_number_001",
+    "module": 1,
+    "topic": "Number Theory and Computation",
+    "level": "Gold",
+    "type": "prove_that",
+    "prompt": "Prove that the product of two even numbers is always even.",
+    "coachHint": "Represent the even numbers as 2m and 2n, then multiply.",
+    "successCriteria": [
+      "Represents even numbers generally",
+      "Multiplies correctly",
+      "Factorises out 2",
+      "States the conclusion clearly"
+    ]
+  }
+]

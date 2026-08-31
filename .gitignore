@@ -38,3 +38,7 @@ next-env.d.ts
 supabase/.temp/
 supabase/.branches/
 .supabase/
+
+# legacy import generated artefacts (§12.11)
+content/legacy/import-report-*.json
+content/legacy/failed/

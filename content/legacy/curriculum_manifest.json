@@ -1,0 +1,238 @@
+{
+  "countries": [
+    {
+      "id": "jamaica",
+      "name": "Jamaica",
+      "active": true
+    },
+    {
+      "id": "usa",
+      "name": "United States",
+      "active": true
+    }
+  ],
+  "programmes": [
+    {
+      "countryId": "jamaica",
+      "grade": "Grade 7",
+      "subjects": [
+        "NSC Mathematics",
+        "NSC Mathematics Pathway III"
+      ],
+      "resources": [
+        "Jamaica NSC Mathematics Grades 7\u20139 APSE I",
+        "Jamaica NSC Mathematics Grades 7\u20138 APSE II",
+        "Jamaica NSC Mathematics Grades 7\u20139 APSE III",
+        "EdMar Grade 7 NSC Mathematics Workbook",
+        "EdMar Grade 7 Pathway III Workbook"
+      ]
+    },
+    {
+      "countryId": "jamaica",
+      "grade": "Grade 8",
+      "subjects": [
+        "NSC Mathematics",
+        "NSC Mathematics Pathway III"
+      ],
+      "resources": [
+        "Jamaica NSC Mathematics Grades 7\u20139 APSE I",
+        "Jamaica NSC Mathematics Grades 7\u20138 APSE II",
+        "Jamaica NSC Mathematics Grades 7\u20139 APSE III",
+        "EdMar Grade 8 NSC Mathematics Workbook",
+        "EdMar Grade 8 Pathway III Workbook"
+      ]
+    },
+    {
+      "countryId": "jamaica",
+      "grade": "Grade 9",
+      "subjects": [
+        "NSC Mathematics"
+      ],
+      "resources": [
+        "Jamaica NSC Mathematics Grades 7\u20139 APSE I",
+        "Jamaica NSC Mathematics Grades 7\u20139 APSE III",
+        "EdMar Grade 9 NSC Mathematics Workbook"
+      ]
+    },
+    {
+      "countryId": "jamaica",
+      "grade": "Grade 10",
+      "subjects": [
+        "CSEC Mathematics",
+        "CSEC Additional Mathematics"
+      ],
+      "resources": [
+        "CSEC Mathematics Syllabus",
+        "CSEC Additional Mathematics Syllabus",
+        "EdMar CXC Mathematics Workbook",
+        "EdMar Additional Mathematics Workbook",
+        "CSEC Mathematics Past Papers by Topic"
+      ]
+    },
+    {
+      "countryId": "jamaica",
+      "grade": "Grade 11",
+      "subjects": [
+        "CSEC Mathematics",
+        "CSEC Additional Mathematics"
+      ],
+      "resources": [
+        "CSEC Mathematics Syllabus",
+        "CSEC Additional Mathematics Syllabus",
+        "EdMar CXC Mathematics Workbook",
+        "EdMar Additional Mathematics Workbook",
+        "CSEC Mathematics Past Papers by Topic"
+      ]
+    },
+    {
+      "countryId": "jamaica",
+      "grade": "Grade 12",
+      "subjects": [
+        "CAPE Integrated Mathematics",
+        "CAPE Pure Mathematics"
+      ],
+      "resources": [
+        "CAPE Integrated Mathematics Syllabus",
+        "CAPE Pure Mathematics Syllabus",
+        "EdMar Integrated Mathematics Workbook"
+      ]
+    },
+    {
+      "countryId": "jamaica",
+      "grade": "Grade 13",
+      "subjects": [
+        "CAPE Integrated Mathematics",
+        "CAPE Pure Mathematics"
+      ],
+      "resources": [
+        "CAPE Integrated Mathematics Syllabus",
+        "CAPE Pure Mathematics Syllabus",
+        "EdMar Integrated Mathematics Workbook"
+      ]
+    },
+    {
+      "countryId": "usa",
+      "grade": "Grade 6",
+      "subjects": ["Middle School Mathematics"],
+      "resources": ["Common Core Grade 6 Mathematics", "EdMar Middle School Workbook Grade 6"]
+    },
+    {
+      "countryId": "usa",
+      "grade": "Grade 7",
+      "subjects": ["Middle School Mathematics"],
+      "resources": ["Common Core Grade 7 Mathematics", "EdMar Middle School Workbook Grade 7"]
+    },
+    {
+      "countryId": "usa",
+      "grade": "Grade 8",
+      "subjects": ["Middle School Mathematics"],
+      "resources": ["Common Core Grade 8 Mathematics", "EdMar Middle School Workbook Grade 8"]
+    },
+    {
+      "countryId": "usa",
+      "grade": "Grade 9",
+      "subjects": ["High School Mathematics", "Algebra I"],
+      "resources": ["High School Algebra I", "EdMar High School Mathematics Workbook"]
+    },
+    {
+      "countryId": "usa",
+      "grade": "Grade 10",
+      "subjects": ["High School Mathematics", "Geometry", "Algebra II"],
+      "resources": ["High School Geometry", "High School Algebra II", "EdMar SAT Mathematics Prep"]
+    },
+    {
+      "countryId": "usa",
+      "grade": "Grade 11",
+      "subjects": ["High School Mathematics", "Pre-Calculus", "SAT Mathematics"],
+      "resources": ["Pre-Calculus", "SAT Mathematics Official Guide", "EdMar SAT Mathematics Prep"]
+    },
+    {
+      "countryId": "usa",
+      "grade": "Grade 12",
+      "subjects": ["High School Mathematics", "SAT Mathematics", "ACT Mathematics"],
+      "resources": ["SAT Mathematics Official Guide", "ACT Mathematics Prep Guide", "EdMar Exam Preparation Workbook"]
+    }
+  ],
+  "resources": [
+    {
+      "title": "Jamaica NSC Mathematics Grades 7\u20139 APSE I",
+      "file": "data/curriculum/jamaica/NSC_Mathematics_Grades_7-9_APSE1.pdf",
+      "type": "pdf"
+    },
+    {
+      "title": "Jamaica NSC Mathematics Grades 7\u20138 APSE II",
+      "file": "data/curriculum/jamaica/NSC_Mathematics_Grades_7-8_APSEII.pdf",
+      "type": "pdf"
+    },
+    {
+      "title": "Jamaica NSC Mathematics Grades 7\u20139 APSE III",
+      "file": "data/curriculum/jamaica/NSC_Mathematics_Grades_7-9_APSEIII.pdf",
+      "type": "pdf"
+    },
+    {
+      "title": "CSEC Mathematics Syllabus",
+      "file": "data/curriculum/jamaica/CSEC_Mathematics_Syllabus_2027.pdf",
+      "type": "pdf"
+    },
+    {
+      "title": "CSEC Additional Mathematics Syllabus",
+      "file": "data/curriculum/jamaica/CSEC_Additional_Mathematics_Syllabus.pdf",
+      "type": "pdf"
+    },
+    {
+      "title": "CAPE Integrated Mathematics Syllabus",
+      "file": "data/curriculum/jamaica/CAPE_Integrated_Mathematics_Syllabus.pdf",
+      "type": "pdf"
+    },
+    {
+      "title": "CAPE Pure Mathematics Syllabus",
+      "file": "data/curriculum/jamaica/CAPE_Pure_Mathematics_Syllabus.pdf",
+      "type": "pdf"
+    },
+    {
+      "title": "EdMar CXC Mathematics Workbook",
+      "file": "data/curriculum/jamaica/EdMar_CXC_Mathematics_Workbook_2026.pdf",
+      "type": "pdf"
+    },
+    {
+      "title": "EdMar Grade 9 NSC Mathematics Workbook",
+      "file": "data/curriculum/jamaica/EdMar_Grade_9_NSC_Mathematics_Workbook.pdf",
+      "type": "pdf"
+    },
+    {
+      "title": "EdMar Grade 7 NSC Mathematics Workbook",
+      "file": "data/curriculum/jamaica/EdMar_Grade_7_NSC_Mathematics_Workbook.pdf",
+      "type": "pdf"
+    },
+    {
+      "title": "EdMar Grade 7 Pathway III Workbook",
+      "file": "data/curriculum/jamaica/EdMar_Grade_7_Pathway_III_Workbook.pdf",
+      "type": "pdf"
+    },
+    {
+      "title": "EdMar Grade 8 NSC Mathematics Workbook",
+      "file": "data/curriculum/jamaica/EdMar_Grade_8_NSC_Mathematics_Workbook.pdf",
+      "type": "pdf"
+    },
+    {
+      "title": "EdMar Grade 8 Pathway III Workbook",
+      "file": "data/curriculum/jamaica/EdMar_Grade_8_Pathway_III_Workbook.pdf",
+      "type": "pdf"
+    },
+    {
+      "title": "EdMar Additional Mathematics Workbook",
+      "file": "data/curriculum/jamaica/EdMar_Additional_Mathematics_Workbook.pdf",
+      "type": "pdf"
+    },
+    {
+      "title": "EdMar Integrated Mathematics Workbook",
+      "file": "data/curriculum/jamaica/EdMar_Integrated_Mathematics_Workbook.pdf",
+      "type": "pdf"
+    },
+    {
+      "title": "CSEC Mathematics Past Papers by Topic",
+      "file": "data/curriculum/jamaica/CSEC_Mathematics_Past_Papers_By_Topic.pdf",
+      "type": "pdf"
+    }
+  ]
+}

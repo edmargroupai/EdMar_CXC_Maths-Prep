@@ -1,0 +1,14 @@
+[
+  {
+    "question_text": "A shirt is sold for $480 after a discount of 20%. Calculate the original price.",
+    "topic": "Consumer Arithmetic",
+    "syllabus_objective": "Calculate percentages and reverse percentage changes in real-life contexts.",
+    "diagnostic_candidate": true
+  },
+  {
+    "question_text": "Solve 3x - 7 = 20.",
+    "topic": "Algebra",
+    "syllabus_objective": "Solve linear equations using inverse operations.",
+    "diagnostic_candidate": true
+  }
+]

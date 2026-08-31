@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "1.0.0",
+  "description": "Pipeline input manifest — legacy prototype sources copied into content/legacy/",
+  "sources": [
+    {
+      "path": "content/legacy/csec_skill_map_phase3.json",
+      "kind": "taxonomy",
+      "priority": 1,
+      "import": "skills"
+    },
+    {
+      "path": "content/legacy/skill_map.json",
+      "kind": "taxonomy_reference",
+      "priority": 1,
+      "import": "cross_check_only"
+    },
+    {
+      "path": "content/legacy/curriculum_manifest.json",
+      "kind": "resource_manifest",
+      "priority": 2,
+      "import": "reference"
+    },
+    {
+      "path": "content/legacy/lesson_bank_phase4.json",
+      "kind": "questions",
+      "priority": 3,
+      "import": "independentPractice_and_quiz"
+    },
+    {
+      "path": "content/legacy/diagnostic_bank_phase3.json",
+      "kind": "questions",
+      "priority": 2,
+      "import": "full"
+    },
+    {
+      "path": "content/legacy/reasoning/reasoning_bank_phase7.json",
+      "kind": "reasoning",
+      "priority": null,
+      "import": "held"
+    },
+    {
+      "path": "content/legacy/question_tagger_sample_bank.json",
+      "kind": "tagger_sample",
+      "priority": 3,
+      "import": "held"
+    },
+    {
+      "path": "content/legacy/bulk_tagger_sample_bank.json",
+      "kind": "tagger_sample",
+      "priority": 4,
+      "import": "held"
+    }
+  ],
+  "copiedFrom": "C:\\Users\\kemar\\Projects\\EdMar-AI\\edmar_work\\EdMar-AI-phase10\\data\\",
+  "copiedAt": "2026-08-31"
+}
