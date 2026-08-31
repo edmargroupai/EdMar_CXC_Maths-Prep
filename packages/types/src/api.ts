@@ -52,6 +52,29 @@ export interface RecordAttemptResponse {
 
 export type RecordAttemptResult = RecordAttemptResponse | ApiError;
 
+// ── fn_reveal_response (§40.4) ──────────────────────────────────────────────
+
+export interface RevealResponseRequest {
+  pQuestionVersionId: string;
+  pClientAttemptId: string;
+}
+
+// Success shape is ResponseBlocks in domain.ts (null when no attempt).
+
+// ── fn_complete_session (§6.11) ─────────────────────────────────────────────
+
+export interface CompleteSessionResponse {
+  sessionId: string;
+  correctCount: number;
+  answeredCount: number;
+  deliveredCount: number;
+  durationSeconds: number;
+  masteryBefore: Record<string, number>;
+  masteryAfter: Record<string, number>;
+}
+
+export type CompleteSessionResult = CompleteSessionResponse | ApiError;
+
 // ── question_payloads (§34.3) ───────────────────────────────────────────────
 // Success shape is QuestionPayload in domain.ts.
 

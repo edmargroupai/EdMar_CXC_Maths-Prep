@@ -180,6 +180,7 @@ export interface SolutionStep {
   stepNo: number;
   instruction: string;
   contentBlocks: Block[];
+  resultBlocks?: Block[];
   marks?: number;
   note?: string;
 }
@@ -208,7 +209,7 @@ export interface MathRender {
   depthEx: number;
 }
 
-/** The inner `payload` JSONB of a question_payloads row (§34.3). */
+/** Pre-answer payload from fn_build_question_payload / question_payloads (§40.4). */
 export interface QuestionPayloadBody {
   questionType: QuestionType;
   difficultyBand: DifficultyBand;
@@ -218,13 +219,48 @@ export interface QuestionPayloadBody {
   stemBlocks: Block[];
   options: QuestionOption[] | null;
   answerSpec: AnswerSpec;
-  solutionSteps: SolutionStep[];
-  explanation: string | null;
-  commonErrors: CommonError[];
   assets: QuestionAsset[];
   mathRenders: Record<string, MathRender>;
   topicName: string;
   objectiveCodes: string[];
+}
+
+export interface ConceptRequired {
+  objectiveId: string;
+  code: string;
+  label: string;
+}
+
+export interface QuickCheck {
+  promptBlocks: Block[];
+  answerSpec: AnswerSpec;
+  assetId?: string | null;
+  solutionNote?: string;
+}
+
+export interface AnswerValidationMeta {
+  marks: number | null;
+  cognitiveLevel: ProfileDimension;
+  methodClass: string | null;
+  accuracyRule: string;
+  verification: string;
+  ambiguityNote: string | null;
+  objectiveCodes: string[];
+}
+
+/** Blocks 2–10 from fn_reveal_response (§40.4). */
+export interface ResponseBlocks {
+  conceptsRequired: ConceptRequired[];
+  strategyBlocks: Block[];
+  solutionSteps: SolutionStep[];
+  finalAnswerBlocks: Block[];
+  whyThisWorks: Block[];
+  explanation: string | null;
+  commonErrors: CommonError[];
+  examTip: Block[];
+  quickCheck: QuickCheck | null;
+  answerValidation: AnswerValidationMeta;
+  mathRenders: Record<string, MathRender>;
 }
 
 /** What the student app actually receives from GET /rest/v1/question_payloads. */

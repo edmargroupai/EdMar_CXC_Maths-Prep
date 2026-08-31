@@ -73,7 +73,8 @@ sql_paths = [
   "./seed/02_topics.sql",
   "./seed/03_specific_objectives.sql",
   "./seed/04_skills.sql",
-  "./seed/05_onboarding_questions.sql"
+  "./seed/05_onboarding_questions.sql",
+  "./seed/06_onboarding_reveal_content.sql"
 ]
 
 [db.network_restrictions]
