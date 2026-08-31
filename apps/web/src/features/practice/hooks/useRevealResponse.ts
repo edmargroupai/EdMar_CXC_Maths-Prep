@@ -38,7 +38,7 @@ export async function recordAttemptBackground(args: {
   durationMs: number;
 }) {
   const supabase = createClient();
-  void supabase.rpc("fn_record_attempt", {
+  return supabase.rpc("fn_record_attempt", {
     p_client_attempt_id: args.clientAttemptId,
     p_question_version_id: args.questionVersionId,
     p_session_id: args.sessionId,

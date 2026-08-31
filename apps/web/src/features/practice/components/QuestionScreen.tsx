@@ -87,6 +87,16 @@ export function QuestionScreen({ sessionId, position, item, total }: QuestionScr
 
     void (async () => {
       try {
+        await recordAttemptBackground({
+          clientAttemptId: state.clientAttemptId,
+          questionVersionId: item.question_version_id,
+          sessionId,
+          rawAnswer: state.wasSkipped ? null : String(state.input),
+          wasSkipped: state.wasSkipped,
+          clientIsCorrect: state.result.isCorrect,
+          durationMs: Math.max(0, Date.now() - durationStart.current),
+        });
+
         const response = await reveal(item.question_version_id, state.clientAttemptId);
         if (cancelled || !response) return;
         dispatch({ type: "REVEAL_SUCCESS", response });
@@ -98,7 +108,7 @@ export function QuestionScreen({ sessionId, position, item, total }: QuestionScr
     return () => {
       cancelled = true;
     };
-  }, [state, item.question_version_id, reveal]);
+  }, [state, sessionId, item.question_version_id, reveal]);
 
   useEffect(() => {
     if (state.phase !== "checking") return;
@@ -108,17 +118,7 @@ export function QuestionScreen({ sessionId, position, item, total }: QuestionScr
       : validate(state.input, state.payload.payload.answerSpec);
 
     dispatch({ type: "VERDICT", result });
-
-    recordAttemptBackground({
-      clientAttemptId: state.clientAttemptId,
-      questionVersionId: item.question_version_id,
-      sessionId,
-      rawAnswer: state.wasSkipped ? null : String(state.input),
-      wasSkipped: state.wasSkipped,
-      clientIsCorrect: result.isCorrect,
-      durationMs: Math.max(0, Date.now() - durationStart.current),
-    });
-  }, [state, sessionId, item.question_version_id]);
+  }, [state]);
 
   useEffect(() => {
     if (state.phase !== "advancing") return;
