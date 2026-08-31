@@ -41,30 +41,6 @@ export default function SignInPage() {
 
           <SignInForm />
 
-          <div className="relative my-8">
-            <div className="absolute inset-0 flex items-center">
-              <div className="w-full border-t border-navy/10" />
-            </div>
-            <div className="relative flex justify-center text-xs uppercase">
-              <span className="bg-white px-2 text-navy/50">Or continue with</span>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-2 gap-3">
-            <button
-              type="button"
-              className="flex items-center justify-center gap-2 rounded-xl border border-navy/15 px-4 py-3 text-sm font-medium text-navy transition-colors hover:bg-sky/50"
-            >
-              Google
-            </button>
-            <button
-              type="button"
-              className="flex items-center justify-center gap-2 rounded-xl border border-navy/15 px-4 py-3 text-sm font-medium text-navy transition-colors hover:bg-sky/50"
-            >
-              Microsoft
-            </button>
-          </div>
-
           <p className="mt-8 text-center text-sm text-navy/50">
             <Link href="/" className="text-royal hover:underline">
               ← Back to home
