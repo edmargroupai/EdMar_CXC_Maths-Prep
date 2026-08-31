@@ -57,7 +57,7 @@ export default function PracticePage() {
                   />
                 </div>
               </div>
-              <Button size="sm" className="mt-4">
+              <Button href="/practice/setup" size="sm" className="mt-4">
                 Continue
               </Button>
             </article>
@@ -87,7 +87,7 @@ export default function PracticePage() {
                   <p className="text-sm font-semibold text-navy">{item.mastery}%</p>
                   <p className="text-xs text-navy/50">mastery</p>
                 </div>
-                <Button href={item.href} size="sm">
+                <Button href="/practice/setup" size="sm">
                   Start
                 </Button>
               </div>

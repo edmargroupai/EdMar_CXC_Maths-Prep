@@ -15,10 +15,13 @@ const PUBLIC_PREFIXES = [
 const APP_PREFIXES = [
   "/home",
   "/practice",
+  "/session",
   "/progress",
   "/simulate",
   "/diagnostic",
   "/account",
+  "/bookmarks",
+  "/readiness",
 ];
 
 function isPublicPath(pathname: string): boolean {

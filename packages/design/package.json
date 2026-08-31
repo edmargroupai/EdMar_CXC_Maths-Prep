@@ -5,7 +5,11 @@
   "type": "module",
   "exports": {
     ".": "./src/index.ts",
-    "./tokens": "./src/tokens.ts"
+    "./tokens": "./src/tokens.ts",
+    "./blocks": "./src/blocks/index.ts"
+  },
+  "peerDependencies": {
+    "react": "^18 || ^19"
   },
   "scripts": {
     "lint": "eslint .",
@@ -13,6 +17,7 @@
   },
   "devDependencies": {
     "@edmar/config": "workspace:*",
+    "@types/react": "^19",
     "@typescript-eslint/parser": "^8.44.0",
     "eslint": "^9",
     "eslint-plugin-boundaries": "^5.0.1",
