@@ -1,5 +1,6 @@
 import { createClient } from "@/lib/supabase/server";
 import { isSupabaseConfigured } from "@/lib/supabase/env";
+import { brandPrimary, FREE_ENTITLEMENT_VIEW } from "@/lib/entitlement";
 
 export default async function Home() {
   const configured = isSupabaseConfigured();
@@ -25,8 +26,12 @@ export default async function Home() {
           CXC Maths Prep
         </h1>
         <p className="mt-3 text-zinc-600 dark:text-zinc-400">
-          GitHub, Supabase, and Vercel are wired for this project. App features
-          can be built on this connection.
+          GitHub, Supabase, and Vercel are wired for this project. Shared
+          packages are live — daily limit {FREE_ENTITLEMENT_VIEW.dailyLimit}{" "}
+          questions on the free tier.
+        </p>
+        <p className="mt-2 text-xs text-zinc-500" style={{ color: brandPrimary }}>
+          @edmar/types · @edmar/design
         </p>
         <ul className="mt-8 space-y-3 text-sm">
           <StatusRow

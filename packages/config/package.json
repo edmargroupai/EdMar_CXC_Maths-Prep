@@ -2,9 +2,20 @@
   "name": "@edmar/config",
   "version": "0.0.0",
   "private": true,
+  "type": "module",
+  "exports": {
+    "./tsconfig.base.json": "./tsconfig.base.json",
+    "./eslint.preset.mjs": "./eslint.preset.mjs",
+    "./eslint/boundaries.mjs": "./eslint/boundaries.mjs",
+    "./prettier.cjs": "./prettier.cjs"
+  },
   "files": [
     "tsconfig.base.json",
     "eslint.preset.mjs",
+    "eslint/boundaries.mjs",
     "prettier.cjs"
-  ]
+  ],
+  "dependencies": {
+    "eslint-plugin-boundaries": "^5.0.1"
+  }
 }

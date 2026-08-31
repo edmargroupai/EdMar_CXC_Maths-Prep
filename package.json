@@ -8,7 +8,8 @@
     "dev": "turbo dev",
     "build": "turbo build",
     "check:invariants": "node scripts/check-no-secrets.mjs && node scripts/check-no-ai-in-client.mjs && node scripts/check-no-service-role.mjs && node scripts/check-entitlement.mjs && node scripts/check-no-hardcoded-questions.mjs",
-    "test": "node -e \"console.log('P01: no unit workspaces yet')\""
+    "test": "node scripts/test-boundaries.mjs",
+    "test:boundaries": "node scripts/test-boundaries.mjs"
   },
   "devDependencies": {
     "prettier": "^3.6.2",
