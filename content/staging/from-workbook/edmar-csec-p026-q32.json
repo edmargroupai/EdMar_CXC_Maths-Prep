@@ -1,0 +1,202 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p026-q32",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A technician earns $3 200 per week for a 40-hour week. (a) Calculate the hourly rate. (b) Overtime is paid at time and a half; calculate the overtime rate. (c) If the technician worked 6 hours overtime in one week, calculate his total wage for that week."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Everything here is built from one number, the basic hourly rate, so find that first."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p026_q32.jpg",
+      "altText": "Source visual for edmar-csec-p026-q32 from workbook page 26."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Divide the weekly wage by the number of basic hours.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3 200 / 40"
+        },
+        {
+          "type": "text",
+          "value": "Result: $80 per hour"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Multiply the basic rate by 1.5 for time and a half.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "80 x 1.5"
+        },
+        {
+          "type": "text",
+          "value": "Result: $120 per hour"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Calculate the overtime pay for 6 hours.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "6 x $120"
+        },
+        {
+          "type": "text",
+          "value": "Result: $720"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Add the overtime pay to the basic weekly wage.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "$3 200 + $720"
+        },
+        {
+          "type": "text",
+          "value": "Result: $3 920"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Divide the weekly wage by 40 hours for the basic rate, multiply that by 1.5 for the overtime rate, then add 6 hours of overtime pay to the basic weekly wage."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) Hourly rate = $80  (b) Overtime rate = $120 per hour  (c) Total wage for the week = $3 920"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Basic pay covers a fixed number of hours and any hours beyond that are paid at an enhanced rate. Time and a half means one and a half times the basic rate, so the multiplier is 1.5. Total wage is basic pay plus overtime pay, never the whole week recalculated at the overtime rate."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "multiplying_all_46_hours_by_the_overtime",
+      "wrongValue": "incorrect_1",
+      "misconception": "Multiplying all 46 hours by the overtime rate.",
+      "correctiveNote": "Avoid this: Multiplying all 46 hours by the overtime rate."
+    },
+    {
+      "key": "reading_time_and_a_half_as_1_15_or_as_do",
+      "wrongValue": "incorrect_2",
+      "misconception": "Reading time and a half as 1.15 or as double time.",
+      "correctiveNote": "Avoid this: Reading time and a half as 1.15 or as double time."
+    },
+    {
+      "key": "giving_only_the_720_overtime_and_forgett",
+      "wrongValue": "incorrect_3",
+      "misconception": "Giving only the $720 overtime and forgetting the basic $3 200.",
+      "correctiveNote": "Avoid this: Giving only the $720 overtime and forgetting the basic $3 200."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Break every wage question into basic hours at the basic rate plus extra hours at the enhanced rate. Two lines of working, then one addition."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Hourlyrate=$80",
+    "displayValue": "Hourly rate = $80",
+    "acceptedForms": [
+      "Hourly rate = $80",
+      "Hourlyrate=$80"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A worker earns $1 800 for a 36-hour week with overtime at time and a half. Find the overtime rate."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "currency",
+      "canonicalValue": "75.00",
+      "displayValue": "$75",
+      "acceptedForms": [
+        "$75",
+        "$75",
+        "75"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.005
+      },
+      "precision": {
+        "kind": "decimal_places",
+        "value": 2,
+        "required": true
+      },
+      "normalisation": "currency_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "1afe0511-1012-4c3d-a436-381c26da2dd3",
+      "code": "M1-1.1",
+      "label": "Wages and salaries"
+    },
+    {
+      "objectiveId": "68e770d9-c202-4ca4-ac5c-a44bc8686aeb",
+      "code": "M1-1.1",
+      "label": "Hourly rate"
+    },
+    {
+      "objectiveId": "1e83cb68-9655-49dc-a47c-88de4f5fbb85",
+      "code": "M1-1.1",
+      "label": "Overtime at time and a half"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 32,
+    "pageRef": "p26",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

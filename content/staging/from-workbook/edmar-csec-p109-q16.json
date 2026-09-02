@@ -1,0 +1,226 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p109-q16",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Four chairs and one small table cost $684. Six chairs and one large table cost $1196. The large table costs twice as much as the small table. Taking c as the cost of a chair and t as the cost of a small table, form suitable equations and find the cost of the large table."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The key move is writing the large table as 2t, so the whole problem sits in just two unknowns."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p109_q16.jpg",
+      "altText": "Source visual for edmar-csec-p109-q16 from workbook page 109."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Translate the first purchase.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "four chairs and one small table cost $684"
+        },
+        {
+          "type": "text",
+          "value": "Result: 4c + t = 684 ... (1)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Translate the second purchase, writing the large table as 2t.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "six chairs and one large table cost $1196"
+        },
+        {
+          "type": "text",
+          "value": "Result: 6c + 2t = 1196 ... (2)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Make t the subject of equation (1) and substitute into (2).",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "t = 684 − 4c, so 6c + 2(684 − 4c) = 1196"
+        },
+        {
+          "type": "text",
+          "value": "Result: 6c + 1368 − 8c = 1196"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Solve for c.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "−2c = 1196 − 1368 = −172"
+        },
+        {
+          "type": "text",
+          "value": "Result: c = 86"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Find t, then double it for the large table, and check.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "t = 684 − 4(86) = 340; 2t = 680; check 6(86) + 680 = 516 + 680 = 1196"
+        },
+        {
+          "type": "text",
+          "value": "Result: large table = $680"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Write the two cost equations using 2t for the large table, substitute for t from the first equation into the second, solve for c, then find t and double it."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "4c + t = 684 and 6c + 2t = 1196; a chair costs $86, the small table costs $340, and the large table costs $680."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Three unknown prices would normally need three equations, but the relationship 'large = 2 × small' removes one unknown before you start, leaving a standard two-by-two system. Substitution suits this problem because t already appears with coefficient 1 in equation (1). The final doubling converts the small-table price into the quantity the question actually asks for."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "introducing_a_third_variable_for_the_lar",
+      "wrongValue": "incorrect_1",
+      "misconception": "Introducing a third variable for the large table and then having too few equations.",
+      "correctiveNote": "Avoid this: Introducing a third variable for the large table and then having too few equations."
+    },
+    {
+      "key": "writing_the_large_table_as_t_2_instead_o",
+      "wrongValue": "incorrect_2",
+      "misconception": "Writing the large table as t/2 instead of 2t.",
+      "correctiveNote": "Avoid this: Writing the large table as t/2 instead of 2t."
+    },
+    {
+      "key": "stopping_at_t_340_and_offering_that_as_t",
+      "wrongValue": "incorrect_3",
+      "misconception": "Stopping at t = 340 and offering that as the large table's cost.",
+      "correctiveNote": "Avoid this: Stopping at t = 340 and offering that as the large table's cost."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Underline exactly what the question asks for — here it is the large table, not the chair or small table you solved for along the way."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "tolerance",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "currency",
+    "canonicalValue": "4.00",
+    "displayValue": "$4",
+    "acceptedForms": [
+      "$4",
+      "$4",
+      "4"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0.005
+    },
+    "precision": {
+      "kind": "decimal_places",
+      "value": 2,
+      "required": true
+    },
+    "normalisation": "currency_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Two pens and one notebook cost $14, and a notebook costs three times a pen. Find the notebook's cost."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "currency",
+      "canonicalValue": "2.00",
+      "displayValue": "$2",
+      "acceptedForms": [
+        "$2",
+        "$2",
+        "2"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.005
+      },
+      "precision": {
+        "kind": "decimal_places",
+        "value": 2,
+        "required": true
+      },
+      "normalisation": "currency_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-6.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "2c6a062a-07a4-4e3b-ad8b-87dbd6f9d6dc",
+      "code": "M1-6.1",
+      "label": "Forming simultaneous equations from words"
+    },
+    {
+      "objectiveId": "02553965-26d7-4579-a6d1-75b8d8f3b09b",
+      "code": "M1-6.1",
+      "label": "Expressing one quantity in terms of another"
+    },
+    {
+      "objectiveId": "442446ef-88e5-4402-ac41-45883af456f2",
+      "code": "M1-6.1",
+      "label": "Substitution method"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 16,
+    "pageRef": "p109",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

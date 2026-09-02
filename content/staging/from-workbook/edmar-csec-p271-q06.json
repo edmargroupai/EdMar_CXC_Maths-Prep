@@ -1,0 +1,286 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p271-q06",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 5,
+  "status": "draft",
+  "marks": 6,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "From a port L, ship R is 250 km away on a bearing of 065 degrees and ship T is 180 km away on a bearing of 148 degrees. (i) Insert the value of angle RLT on the diagram. (ii) Calculate RT, the distance between the two ships. (iii) Determine the bearing of T from R."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Both bearings start at L, so the angle at L is the difference between them, and the triangle is then a straightforward cosine-rule problem."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p271_q06.jpg",
+      "altText": "Source visual for edmar-csec-p271-q06 from workbook page 271."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Subtract the two bearings to get the angle at L.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "angle RLT = 148 - 65"
+        },
+        {
+          "type": "text",
+          "value": "Result: angle RLT = 83 degrees"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Apply the cosine rule in triangle RLT with LR = 250, LT = 180 and the included angle 83 degrees.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "RT squared = 250 squared + 180 squared - 2(250)(180) cos 83 = 62500 + 32400 - 10968.2"
+        },
+        {
+          "type": "text",
+          "value": "Result: RT squared = 83931.8"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Take the square root.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "square root of 83931.8 = 289.71"
+        },
+        {
+          "type": "text",
+          "value": "Result: RT = 290 km (3 s.f.)"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Use the sine rule to find angle LRT, the angle at R in the triangle.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "sin(LRT) / LT = sin(RLT) / RT, so sin(LRT) = 180 x sin 83 / 289.71 = 0.6167"
+        },
+        {
+          "type": "text",
+          "value": "Result: angle LRT = 38.1 degrees"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Find the bearing of L from R (the back bearing) and turn through angle LRT towards T.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Bearing of R from L is 065, so the bearing of L from R is 065 + 180 = 245 degrees. T lies anticlockwise from L as seen from R, so the bearing of T from R is 245 - 38.1."
+        },
+        {
+          "type": "text",
+          "value": "Result: Bearing of T from R = 206.9, i.e. 207 degrees"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Find angle RLT by subtracting the bearings, use the cosine rule for RT, then find angle LRT by the sine rule and combine it with the back bearing of L from R."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) angle RLT = 83 degrees  (ii) RT = 290 km (3 s.f.)  (iii) The bearing of T from R is 207 degrees (to the nearest degree)."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Because both bearings are measured from the same north line at L, their difference is the true angle of the triangle at L. With two sides and that included angle, the cosine rule gives the third side, and the sine rule then gives a second angle. A back bearing differs from the forward bearing by exactly 180 degrees because the north lines at the two points are parallel, which is what lets you convert an interior angle of the triangle into a compass direction."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "adding_the_bearings_to_get_213_degrees_f",
+      "wrongValue": "incorrect_1",
+      "misconception": "Adding the bearings to get 213 degrees for the angle at L.",
+      "correctiveNote": "Avoid this: Adding the bearings to get 213 degrees for the angle at L."
+    },
+    {
+      "key": "forgetting_to_square_root_at_the_end_of_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Forgetting to square root at the end of the cosine rule.",
+      "correctiveNote": "Avoid this: Forgetting to square root at the end of the cosine rule."
+    },
+    {
+      "key": "adding_angle_lrt_to_the_back_bearing_ins",
+      "wrongValue": "incorrect_3",
+      "misconception": "Adding angle LRT to the back bearing instead of subtracting it, giving 283 degrees.",
+      "correctiveNote": "Avoid this: Adding angle LRT to the back bearing instead of subtracting it, giving 283 degrees."
+    },
+    {
+      "key": "quoting_a_bearing_with_fewer_than_three_",
+      "wrongValue": "incorrect_4",
+      "misconception": "Quoting a bearing with fewer than three figures.",
+      "correctiveNote": "Avoid this: Quoting a bearing with fewer than three figures."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Draw a short north arrow at every point you take a bearing from. Back bearing = forward bearing plus or minus 180 degrees, whichever keeps the answer between 000 and 360."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "angleRLT=83degrees",
+    "displayValue": "angle RLT = 83 degrees",
+    "acceptedForms": [
+      "angle RLT = 83 degrees",
+      "angleRLT=83degrees"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "The bearing of B from A is 072 degrees. What is the bearing of A from B?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "252",
+      "displayValue": "252",
+      "acceptedForms": [
+        "252",
+        "252"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "97a26350-24de-4e45-a0c5-06e5b39f1036",
+      "code": "M1-1.1",
+      "label": "Bearings measured clockwise from north"
+    },
+    {
+      "objectiveId": "ed5994cf-9142-41f9-a27f-4b0cb723d20f",
+      "code": "M1-1.1",
+      "label": "Cosine rule"
+    },
+    {
+      "objectiveId": "138a02c3-463a-493d-a137-86fcc4e47aee",
+      "code": "M1-1.1",
+      "label": "Sine rule"
+    },
+    {
+      "objectiveId": "9ed4e52d-98cf-4973-a187-23988474b01a",
+      "code": "M1-1.1",
+      "label": "Back bearings"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 6,
+    "pageRef": "p271",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a.i",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.i): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "angleRLT=83degrees",
+        "displayValue": "angle RLT = 83 degrees",
+        "acceptedForms": [
+          "angle RLT = 83 degrees",
+          "angleRLT=83degrees"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.ii",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.ii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "RT=290km(3s.f.)",
+        "displayValue": "RT = 290 km (3 s.f.)",
+        "acceptedForms": [
+          "RT = 290 km (3 s.f.)",
+          "RT=290km(3s.f.)"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.iii",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.iii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "ThebearingofTfromRis207degrees(tothenearestdegree).",
+        "displayValue": "The bearing of T from R is 207 degrees (to the nearest degree).",
+        "acceptedForms": [
+          "The bearing of T from R is 207 degrees (to the nearest degree).",
+          "ThebearingofTfromRis207degrees(tothenearestdegree)."
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

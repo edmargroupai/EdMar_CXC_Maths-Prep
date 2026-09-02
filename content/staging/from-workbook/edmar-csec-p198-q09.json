@@ -1,0 +1,241 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p198-q09",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 4,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A = (2 3 / −1 4) and x is the column vector (5 / 2). (a) Calculate the matrix product Ax. (b) State the order of Ax."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Multiplying a 2 × 2 matrix by a column vector gives another column vector: each row of A meets the single column of x."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p198_q09.jpg",
+      "altText": "Source visual for edmar-csec-p198-q09 from workbook page 198."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Check the product is defined.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(2 × 2)(2 × 1): the inner numbers are both 2."
+        },
+        {
+          "type": "text",
+          "value": "Result: Ax is defined, order 2 × 1"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Multiply row 1 of A into the column x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2 × 5 + 3 × 2 = 10 + 6"
+        },
+        {
+          "type": "text",
+          "value": "Result: Top entry = 16"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Multiply row 2 of A into the column x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "−1 × 5 + 4 × 2 = −5 + 8"
+        },
+        {
+          "type": "text",
+          "value": "Result: Bottom entry = 3"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Assemble the answer as a column vector.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Two rows, one column."
+        },
+        {
+          "type": "text",
+          "value": "Result: Ax = (16 / 3)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Multiply each row of A into the column x, adding the products, then read the order from the outer numbers 2 and 1."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) Ax = (16 / 3), that is the column vector with entries 16 and 3  (b) The order of Ax is 2 × 1"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Each entry of the product comes from pairing a row of the first matrix with a column of the second, multiplying matched entries and adding. Because x has only one column, the answer also has only one column, so the shape 2 × 1 is forced by the rule that the outer numbers survive. This is exactly the structure that lets a matrix equation stand for simultaneous equations."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "multiplying_entry_by_entry_as_if_it_were",
+      "wrongValue": "incorrect_1",
+      "misconception": "Multiplying entry by entry as if it were addition, giving (10 / 6).",
+      "correctiveNote": "Avoid this: Multiplying entry by entry as if it were addition, giving (10 / 6)."
+    },
+    {
+      "key": "using_columns_of_a_with_rows_of_x_instea",
+      "wrongValue": "incorrect_2",
+      "misconception": "Using columns of A with rows of x instead of rows of A with the column of x.",
+      "correctiveNote": "Avoid this: Using columns of A with rows of x instead of rows of A with the column of x."
+    },
+    {
+      "key": "losing_the_sign_in_1_5",
+      "wrongValue": "incorrect_3",
+      "misconception": "Losing the sign in −1 × 5.",
+      "correctiveNote": "Avoid this: Losing the sign in −1 × 5."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Trace row 1 across with your left hand and the column down with your right; say the products aloud as you pair them."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "A",
+    "displayValue": "A",
+    "acceptedForms": [
+      "A",
+      "A"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Calculate (1 2 / 3 0) × (4 / 1)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(6/12)",
+      "displayValue": "(6 / 12)",
+      "acceptedForms": [
+        "(6 / 12)",
+        "(6/12)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "56c7bf8e-78e3-4659-adc6-aa6564faf7d0",
+      "code": "M2-4.1",
+      "label": "Matrix multiplication"
+    },
+    {
+      "objectiveId": "1cdc7dd0-4646-4b86-a3da-d8efd06805d6",
+      "code": "M2-4.1",
+      "label": "Row-by-column rule"
+    },
+    {
+      "objectiveId": "39e6fa3e-9374-4230-a72f-f2a6a118dc1a",
+      "code": "M2-4.1",
+      "label": "Column vectors"
+    },
+    {
+      "objectiveId": "75a0da0d-e87c-4e1d-a337-d1faa06d33fa",
+      "code": "M2-4.1",
+      "label": "Order of a product"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 9,
+    "pageRef": "p198",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "A",
+        "displayValue": "A",
+        "acceptedForms": [
+          "A",
+          "A"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "TheorderofA",
+        "displayValue": "The order of A",
+        "acceptedForms": [
+          "The order of A",
+          "TheorderofA"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

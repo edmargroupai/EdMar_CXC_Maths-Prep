@@ -1,0 +1,217 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p243-q09",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A, B, C and D lie on a circle with centre O. AOC and BOD are diameters, and AB is parallel to DC. On the diagram angle BAC = 2p°, angle BCA = 3p°, angle BDC = q° and angle ACD = r°. (i) State why angle ABC = 90°. (ii) Determine, with reasons, (a) angle BAC and (b) angle q. (iii) Calculate the value of angle r."
+    },
+    {
+      "type": "text",
+      "value": "Think first: AC is a diameter, so the angle at B is 90° — that turns the two algebraic angles into a simple equation."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p243_q09.jpg",
+      "altText": "Source visual for edmar-csec-p243-q09 from workbook page 243."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Explain the right angle at B.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "AOC is a diameter and B is on the circumference, so ∠ABC stands on a semicircle"
+        },
+        {
+          "type": "text",
+          "value": "Result: ∠ABC = 90° (angle in a semicircle)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Write the angle sum of triangle ABC in terms of p.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2p + 3p + 90 = 180"
+        },
+        {
+          "type": "text",
+          "value": "Result: 5p = 90"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Solve for p and hence for angle BAC.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "p = 18, so ∠BAC = 2p = 36° (and ∠BCA = 3p = 54°)"
+        },
+        {
+          "type": "text",
+          "value": "Result: ∠BAC = 36°"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Compare ∠BDC with ∠BAC.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Both angles stand on chord BC and both lie in the same segment"
+        },
+        {
+          "type": "text",
+          "value": "Result: q = ∠BAC = 36°"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Use the parallel lines AB and DC with transversal AC.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "∠BAC and ∠ACD are alternate angles between the parallel lines"
+        },
+        {
+          "type": "text",
+          "value": "Result: r = 36°"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Use the right angle at B to solve 2p + 3p + 90 = 180 for p, then get q as an angle in the same segment as ∠BAC and r as an alternate angle to ∠BAC across the parallel lines."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) ∠ABC = 90° because it is the angle in a semicircle — AOC is a diameter.  (ii) a) ∠BAC = 36° (from 2p + 3p + 90 = 180, so p = 18)  b) q = 36° — angles in the same segment, standing on chord BC, are equal.  (iii) r = 36° — alternate angles, since AB is parallel to DC and AC is a transversal."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The angle in a semicircle is 90° because the diameter subtends a straight angle of 180° at the centre and the angle at the circumference is half of it. That fixed 90° leaves only 90° for the two algebraic angles, which is what makes p solvable. The same-segment rule then transfers ∠BAC to D without any new calculation, and the parallel lines transfer it again to r — one 36° angle appears three times in the figure."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_2p_3p_180_and_forgetting_the_rig",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing 2p + 3p = 180 and forgetting the right angle.",
+      "correctiveNote": "Avoid this: Writing 2p + 3p = 180 and forgetting the right angle."
+    },
+    {
+      "key": "solving_for_p_but_then_giving_p_18_as_th",
+      "wrongValue": "incorrect_2",
+      "misconception": "Solving for p but then giving p = 18 as the answer for ∠BAC instead of 2p = 36°.",
+      "correctiveNote": "Avoid this: Solving for p but then giving p = 18 as the answer for ∠BAC instead of 2p = 36°."
+    },
+    {
+      "key": "matching_bdc_with_the_wrong_angle_it_mus",
+      "wrongValue": "incorrect_3",
+      "misconception": "Matching ∠BDC with the wrong angle — it must stand on the same chord (BC) to be in the same segment.",
+      "correctiveNote": "Avoid this: Matching ∠BDC with the wrong angle — it must stand on the same chord (BC) to be in the same segment."
+    },
+    {
+      "key": "using_corresponding_instead_of_alternate",
+      "wrongValue": "incorrect_4",
+      "misconception": "Using corresponding instead of alternate angles across AB and DC.",
+      "correctiveNote": "Avoid this: Using corresponding instead of alternate angles across AB and DC."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When angles are given as multiples of a letter, look for a right angle or a straight line first — it turns the diagram into a one-line equation."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "∠ABC=90°becauseitistheangleinasemicircle—AOCisadiameter.",
+    "displayValue": "∠ABC = 90° because it is the angle in a semicircle — AOC is a diameter.",
+    "acceptedForms": [
+      "∠ABC = 90° because it is the angle in a semicircle — AOC is a diameter.",
+      "∠ABC=90°becauseitistheangleinasemicircle—AOCisadiameter."
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "In a circle, PR is a diameter and Q lies on the circumference with ∠QPR = a° and ∠QRP = 4a°. Find a."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=18(sincea+4a+90=180)",
+      "displayValue": "= 18 (since a + 4a + 90 = 180)",
+      "acceptedForms": [
+        "= 18 (since a + 4a + 90 = 180)",
+        "=18(sincea+4a+90=180)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "588f6f28-863d-4286-a98b-e6c5f8a1bb5c",
+      "code": "M1-1.1",
+      "label": "Angle in a semicircle"
+    },
+    {
+      "objectiveId": "12dd94b2-68ec-4fb3-a27b-5a243805b8d3",
+      "code": "M1-1.1",
+      "label": "Angle sum of a triangle"
+    },
+    {
+      "objectiveId": "8d2202e9-e8b5-4aa8-a765-f303c72cd9e8",
+      "code": "M1-1.1",
+      "label": "Angles in the same segment"
+    },
+    {
+      "objectiveId": "5ee35867-fe28-4497-a3d2-0777a117c72c",
+      "code": "M1-1.1",
+      "label": "Alternate angles between parallel lines"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 9,
+    "pageRef": "p243",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

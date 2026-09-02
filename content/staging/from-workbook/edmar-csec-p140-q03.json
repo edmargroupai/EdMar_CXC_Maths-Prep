@@ -1,0 +1,211 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p140-q03",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Given that f: x ↦ (2x − 3)/(x + 1) and g: x ↦ x + 2: (i) Evaluate f(-2) and gf(-2). (ii) Determine f⁻¹(x)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: In gf(-2) the function nearest the number acts first, so f(-2) is calculated before g is applied."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p140_q03.jpg",
+      "altText": "Source visual for edmar-csec-p140-q03 from workbook page 140."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Evaluate f(-2).",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "f(-2) = (2(-2) − 3)/(-2 + 1) = (-4 − 3)/(-1) = -7/-1"
+        },
+        {
+          "type": "text",
+          "value": "Result: f(-2) = 7"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Apply g to that result.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "gf(-2) = g(7) = 7 + 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: gf(-2) = 9"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Set y = f(x) and clear the fraction.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "y(x + 1) = 2x − 3 → yx + y = 2x − 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: yx − 2x = -3 − y"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Factor out x and solve.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x(y − 2) = -(y + 3), so x = -(y + 3)/(y − 2) = (y + 3)/(2 − y)"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = (y + 3)/(2 − y)"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Write the inverse in terms of x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Replace y by x"
+        },
+        {
+          "type": "text",
+          "value": "Result: f⁻¹(x) = (x + 3)/(2 − x), x ≠ 2"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Substitute x = -2 into f, feed that output into g, then invert f by writing y = f(x), clearing the fraction and solving for x."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) f(-2) = 7 and gf(-2) = 9  (ii) f⁻¹(x) = (x + 3)/(2 − x), x ≠ 2 (equivalently -(x + 3)/(x − 2))."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Composition is a chain: the inner function converts the input into an intermediate value and the outer function converts that into the final answer, which is why gf is not the same as fg. Inverting a rational function always follows the same route — clear the denominator, gather every x term on one side, factor and divide — and the value making the new denominator zero is excluded from the domain."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "working_gf_2_as_g_first_giving_f_0_inste",
+      "wrongValue": "incorrect_1",
+      "misconception": "Working gf(-2) as g first, giving f(0) instead of g(7).",
+      "correctiveNote": "Avoid this: Working gf(-2) as g first, giving f(0) instead of g(7)."
+    },
+    {
+      "key": "losing_a_sign_in_4_3_1_and_writing_7",
+      "wrongValue": "incorrect_2",
+      "misconception": "Losing a sign in (-4 − 3)/(-1) and writing -7.",
+      "correctiveNote": "Avoid this: Losing a sign in (-4 − 3)/(-1) and writing -7."
+    },
+    {
+      "key": "forgetting_to_factor_x_out_after_collect",
+      "wrongValue": "incorrect_3",
+      "misconception": "Forgetting to factor x out after collecting terms, so the rearrangement stalls.",
+      "correctiveNote": "Avoid this: Forgetting to factor x out after collecting terms, so the rearrangement stalls."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Read composite notation from right to left, and write the intermediate value down before applying the outer function."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "f(-2)=7andgf(-2)=9",
+    "displayValue": "f(-2) = 7 and gf(-2) = 9",
+    "acceptedForms": [
+      "f(-2) = 7 and gf(-2) = 9",
+      "f(-2)=7andgf(-2)=9"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "If f(x) = 3x and g(x) = x − 4, find gf(2)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "f(2)=6,theng(6)=2.",
+      "displayValue": "f(2) = 6, then g(6) = 2.",
+      "acceptedForms": [
+        "f(2) = 6, then g(6) = 2.",
+        "f(2)=6,theng(6)=2."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "bef64b15-841b-4128-a95f-922d570c4939",
+      "code": "M1-5.1",
+      "label": "Evaluating a function"
+    },
+    {
+      "objectiveId": "61329700-33fd-4daa-a323-97210e2fe3a6",
+      "code": "M1-5.1",
+      "label": "Composite functions"
+    },
+    {
+      "objectiveId": "054741a0-957e-4bce-a751-b9a6bd94f3d1",
+      "code": "M1-5.1",
+      "label": "Inverse of a rational function"
+    },
+    {
+      "objectiveId": "861b35fb-14a8-4ee0-a3a5-d655d396c2a3",
+      "code": "M1-5.1",
+      "label": "Making a variable the subject"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 3,
+    "pageRef": "p140",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

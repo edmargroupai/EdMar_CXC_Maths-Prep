@@ -1,0 +1,183 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p096-q12",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Make r the subject of the formula V = 4πr³/3 (the volume of a sphere)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: r is cubed, so the last step will be a cube root, not a square root."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p096_q12.jpg",
+      "altText": "Source visual for edmar-csec-p096-q12 from workbook page 96."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply both sides by 3.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3V = 4πr³"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3V = 4πr³"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Divide both sides by 4π.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3V ÷ 4π"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3V/(4π) = r³"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Take the cube root of both sides.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The inverse of cubing is the cube root"
+        },
+        {
+          "type": "text",
+          "value": "Result: r = ∛(3V/(4π))"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Multiply by 3, divide by 4π to isolate r³, then take the cube root of both sides."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "r = ∛(3V/(4π))"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Each operation applied to r — cubing, multiplying by 4π, dividing by 3 — is undone in reverse order. The cube root is left until last because it can only be applied once r³ stands alone; taking it earlier would trap the other factors inside the root."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "taking_a_square_root_instead_of_a_cube_r",
+      "wrongValue": "incorrect_1",
+      "misconception": "Taking a square root instead of a cube root.",
+      "correctiveNote": "Avoid this: Taking a square root instead of a cube root."
+    },
+    {
+      "key": "applying_the_cube_root_before_isolating_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Applying the cube root before isolating r³, giving r = ∛(3V)/4π.",
+      "correctiveNote": "Avoid this: Applying the cube root before isolating r³, giving r = ∛(3V)/4π."
+    },
+    {
+      "key": "multiplying_by_4_instead_of_dividing",
+      "wrongValue": "incorrect_3",
+      "misconception": "Multiplying by 4π instead of dividing.",
+      "correctiveNote": "Avoid this: Multiplying by 4π instead of dividing."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "A power on the subject always comes off last: clear fractions, divide out coefficients, and only then root both sides."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "r=∛(3V/(4π))",
+    "displayValue": "r = ∛(3V/(4π))",
+    "acceptedForms": [
+      "r = ∛(3V/(4π))",
+      "r=∛(3V/(4π))"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Make r the subject of V = πr²h."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "r=√(V/(πh))",
+      "displayValue": "r = √(V/(πh))",
+      "acceptedForms": [
+        "r = √(V/(πh))",
+        "r=√(V/(πh))"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "c2bc3a24-24ae-4d72-a64e-b38663ae9335",
+      "code": "M1-1.1",
+      "label": "Changing the subject of a formula"
+    },
+    {
+      "objectiveId": "a817aee2-8357-44e7-a219-97273efe96be",
+      "code": "M1-1.1",
+      "label": "Clearing fractions"
+    },
+    {
+      "objectiveId": "9f34e1b2-aba2-4245-a513-a945ee320530",
+      "code": "M1-1.1",
+      "label": "Cube roots"
+    },
+    {
+      "objectiveId": "a9e9a6a8-868a-4f0b-add9-d47c8d83f74c",
+      "code": "M1-1.1",
+      "label": "Volume of a sphere"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 12,
+    "pageRef": "p96",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

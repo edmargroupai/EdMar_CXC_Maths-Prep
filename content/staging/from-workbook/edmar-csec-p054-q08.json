@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p054-q08",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the equation x/4 + 16 = 2x."
+    },
+    {
+      "type": "text",
+      "value": "Think first: There is a fraction in the equation, so clearing it first makes everything else straightforward."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p054_q08.jpg",
+      "altText": "Source visual for edmar-csec-p054-q08 from workbook page 54."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply every term on both sides by 4.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "4 × x/4 = x, 4 × 16 = 64, 4 × 2x = 8x"
+        },
+        {
+          "type": "text",
+          "value": "Result: x + 64 = 8x"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Subtract x from both sides.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "8x − x = 7x"
+        },
+        {
+          "type": "text",
+          "value": "Result: 64 = 7x"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Divide both sides by 7.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "64 ÷ 7"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 64/7"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Check by substitution.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(64/7)/4 + 16 = 16/7 + 112/7 = 128/7; and 2 × 64/7 = 128/7"
+        },
+        {
+          "type": "text",
+          "value": "Result: both sides equal 128/7"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Multiply every term by 4 to remove the denominator, then gather the x-terms and divide."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = 64/7 (approximately 9.14)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Multiplying every term by the denominator 4 removes the fraction while keeping both sides equal, because the same operation is applied throughout. The key word is every: the 16 and the 2x must be multiplied as well as the fractional term. After that the equation is an ordinary linear one, solved by collecting x-terms on one side and dividing by their coefficient."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "multiplying_only_the_fractional_term_by_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Multiplying only the fractional term by 4 and leaving 16 and 2x unchanged.",
+      "correctiveNote": "Avoid this: Multiplying only the fractional term by 4 and leaving 16 and 2x unchanged."
+    },
+    {
+      "key": "writing_x_4_16_2x_as_x_16_2x_by_simply_d",
+      "wrongValue": "incorrect_2",
+      "misconception": "Writing x/4 + 16 = 2x as x + 16 = 2x by simply deleting the denominator.",
+      "correctiveNote": "Avoid this: Writing x/4 + 16 = 2x as x + 16 = 2x by simply deleting the denominator."
+    },
+    {
+      "key": "assuming_an_error_because_the_answer_is_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Assuming an error because the answer is not a whole number.",
+      "correctiveNote": "Avoid this: Assuming an error because the answer is not a whole number."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "To clear fractions, multiply every term by the lowest common denominator — and count the terms as you go so none is missed."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=64/7(approximately9.14)",
+    "displayValue": "= 64/7 (approximately 9.14)",
+    "acceptedForms": [
+      "= 64/7 (approximately 9.14)",
+      "=64/7(approximately9.14)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve x/3 + 10 = 3x."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "+30=9x,so30=8xandx=15/4.",
+      "displayValue": "+ 30 = 9x, so 30 = 8x and x = 15/4.",
+      "acceptedForms": [
+        "+ 30 = 9x, so 30 = 8x and x = 15/4.",
+        "+30=9x,so30=8xandx=15/4."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "ba3cddb0-f725-4a60-a3cb-3c0801b084d2",
+      "code": "M1-4.1",
+      "label": "Solving linear equations"
+    },
+    {
+      "objectiveId": "b0b9e4e8-b009-4392-a67c-0f65cbf94f15",
+      "code": "M1-4.1",
+      "label": "Clearing fractions"
+    },
+    {
+      "objectiveId": "cc51a3f6-eac8-4736-af67-2027b512379c",
+      "code": "M1-4.1",
+      "label": "Collecting like terms"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 8,
+    "pageRef": "p54",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

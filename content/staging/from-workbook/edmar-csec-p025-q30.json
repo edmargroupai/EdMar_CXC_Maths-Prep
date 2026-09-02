@@ -1,0 +1,216 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p025-q30",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A supermarket sells cereal as 500 g for $480, 750 g for $690, and 1 kg for $920. (a) Calculate the cost per gram for each size. (b) Which size is the best buy? (c) How much would it cost to buy 3 kg using the best option?"
+    },
+    {
+      "type": "text",
+      "value": "Think first: Convert 1 kg to 1 000 g first so all three sizes are measured in the same unit before you divide."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p025_q30.jpg",
+      "altText": "Source visual for edmar-csec-p025-q30 from workbook page 25."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Find the cost per gram of the 500 g box.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "480 / 500"
+        },
+        {
+          "type": "text",
+          "value": "Result: $0.96 per g"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Find the cost per gram of the 750 g box.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "690 / 750"
+        },
+        {
+          "type": "text",
+          "value": "Result: $0.92 per g"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Convert 1 kg to grams and find its cost per gram.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "920 / 1 000"
+        },
+        {
+          "type": "text",
+          "value": "Result: $0.92 per g"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Compare the three rates.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "0.92 = 0.92 < 0.96"
+        },
+        {
+          "type": "text",
+          "value": "Result: the 750 g and 1 kg boxes tie as best"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Cost 3 kg at the best rate.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3 000 g x $0.92, that is three 1 kg boxes at $920 or four 750 g boxes at $690"
+        },
+        {
+          "type": "text",
+          "value": "Result: $2 760"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Divide each price by its mass in grams, compare the three costs per gram, then buy 3 kg using whichever size is cheapest."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) 500 g: $0.96 per g; 750 g: $0.92 per g; 1 kg: $0.92 per g  (b) the 750 g and the 1 kg boxes are equally the best buy at $0.92 per g, both beating the 500 g box  (c) 3 kg costs $2 760"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Comparing rates only works when the units match, so the kilogram must become 1 000 g before dividing. Two offers with the same unit cost are genuinely equal value, and 3 kg is a whole number of boxes either way, so both routes cost $2 760. The smallest box being dearest per gram is the usual pattern for packaged goods."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "comparing_920_690_and_480_without_dividi",
+      "wrongValue": "incorrect_1",
+      "misconception": "Comparing $920, $690 and $480 without dividing by the masses.",
+      "correctiveNote": "Avoid this: Comparing $920, $690 and $480 without dividing by the masses."
+    },
+    {
+      "key": "leaving_1_kg_as_1_and_getting_a_cost_per",
+      "wrongValue": "incorrect_2",
+      "misconception": "Leaving 1 kg as 1 and getting a cost per gram of $920.",
+      "correctiveNote": "Avoid this: Leaving 1 kg as 1 and getting a cost per gram of $920."
+    },
+    {
+      "key": "assuming_there_must_be_a_single_winner_a",
+      "wrongValue": "incorrect_3",
+      "misconception": "Assuming there must be a single winner and picking one of the tied sizes at random.",
+      "correctiveNote": "Avoid this: Assuming there must be a single winner and picking one of the tied sizes at random."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Convert every measurement to the same unit before any division. A mixed kg and g comparison is the fastest way to lose an easy mark."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "tolerance",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "currency",
+    "canonicalValue": "500.00",
+    "displayValue": "$500",
+    "acceptedForms": [
+      "$500",
+      "$500",
+      "500"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0.005
+    },
+    "precision": {
+      "kind": "decimal_places",
+      "value": 2,
+      "required": true
+    },
+    "normalisation": "currency_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A 250 g pack costs $300 and a 400 g pack costs $440. Which is cheaper per gram?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "The400gpack,at$1.10pergagainst$1.20perg",
+      "displayValue": "The 400 g pack, at $1.10 per g against $1.20 per g",
+      "acceptedForms": [
+        "The 400 g pack, at $1.10 per g against $1.20 per g",
+        "The400gpack,at$1.10pergagainst$1.20perg"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "da360956-7141-4600-abff-3e2bb5c0e556",
+      "code": "M1-1.1",
+      "label": "Best buy"
+    },
+    {
+      "objectiveId": "b1edea5e-2db7-429f-a3af-8ca822b78d41",
+      "code": "M1-1.1",
+      "label": "Unit cost"
+    },
+    {
+      "objectiveId": "63badc8b-ef4d-49ab-a047-c5b7665aa4f4",
+      "code": "M1-1.1",
+      "label": "Converting kilograms to grams"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 30,
+    "pageRef": "p25",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

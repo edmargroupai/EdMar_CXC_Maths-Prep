@@ -1,0 +1,211 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p067-q02",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Copy and complete the table of values below for the function y = x + 2, then draw the graph of the function. The table has x values −3, −2, −1, 0, 1, 2, 3."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Each y value is just its x value with 2 added, so the table fills in quickly."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p067_q02.jpg",
+      "altText": "Source visual for edmar-csec-p067-q02 from workbook page 67."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Substitute the negative x values.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x = −3: y = −3 + 2; x = −2: y = −2 + 2; x = −1: y = −1 + 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = −1, 0, 1"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Substitute x = 0.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "y = 0 + 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 2"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Substitute the positive x values.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x = 1: y = 3; x = 2: y = 4; x = 3: y = 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 3, 4, 5"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Write the completed table.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x: −3, −2, −1, 0, 1, 2, 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: y: −1, 0, 1, 2, 3, 4, 5"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Plot the seven points and join them with a ruled straight line.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Points (−3, −1), (−2, 0), (−1, 1), (0, 2), (1, 3), (2, 4), (3, 5)"
+        },
+        {
+          "type": "text",
+          "value": "Result: A straight line crossing the y-axis at 2"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Substitute each x value into y = x + 2 to complete the table, then plot the seven points and join them with a straight line."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "Completed table, y = −1, 0, 1, 2, 3, 4, 5 for x = −3, −2, −1, 0, 1, 2, 3. The graph is a straight line through (0, 2) rising one unit for each unit moved to the right."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A table of values is a small sample of the infinitely many points that satisfy the equation. Because y = x + 2 has x to the power one, the rate of change is constant, so those sample points line up exactly and joining them with a ruler is legitimate. The constant 2 is where the line meets the y-axis, and the coefficient of 1 on x is its gradient."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "adding_2_to_the_magnitude_of_a_negative_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Adding 2 to the magnitude of a negative x, giving y = −5 when x = −3.",
+      "correctiveNote": "Avoid this: Adding 2 to the magnitude of a negative x, giving y = −5 when x = −3."
+    },
+    {
+      "key": "joining_the_points_with_a_freehand_curve",
+      "wrongValue": "incorrect_2",
+      "misconception": "Joining the points with a freehand curve instead of a ruled line.",
+      "correctiveNote": "Avoid this: Joining the points with a freehand curve instead of a ruled line."
+    },
+    {
+      "key": "plotting_the_coordinates_the_wrong_way_r",
+      "wrongValue": "incorrect_3",
+      "misconception": "Plotting the coordinates the wrong way round, as (y, x).",
+      "correctiveNote": "Avoid this: Plotting the coordinates the wrong way round, as (y, x)."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Before plotting, check that your y values go up in equal steps; if they do not, one substitution is wrong."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Completedtable,y=−1,0,1,2,3,4,5forx=−3,−2,−1,0,1,2,3.Thegraphisastraightlinethrough(0,2)ri",
+    "displayValue": "Completed table, y = −1, 0, 1, 2, 3, 4, 5 for x = −3, −2, −1, 0, 1, 2, 3. The graph is a straight line through (0, 2) ri",
+    "acceptedForms": [
+      "Completed table, y = −1, 0, 1, 2, 3, 4, 5 for x = −3, −2, −1, 0, 1, 2, 3. The graph is a straight line through (0, 2) ri",
+      "Completedtable,y=−1,0,1,2,3,4,5forx=−3,−2,−1,0,1,2,3.Thegraphisastraightlinethrough(0,2)ri"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Complete the table for y = x − 3 when x = −2, 0 and 2."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "y=−5,−3,−1",
+      "displayValue": "y = −5, −3, −1",
+      "acceptedForms": [
+        "y = −5, −3, −1",
+        "y=−5,−3,−1"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "1b24f112-1d3b-434d-af31-cf2ab3eaef20",
+      "code": "M1-1.1",
+      "label": "Table of values"
+    },
+    {
+      "objectiveId": "985b3546-45ef-4b3b-ad36-2909bba41e67",
+      "code": "M1-1.1",
+      "label": "Graphs of linear functions"
+    },
+    {
+      "objectiveId": "b2f2886d-a36b-4610-a213-ec8b649e7a5a",
+      "code": "M1-1.1",
+      "label": "Substitution"
+    },
+    {
+      "objectiveId": "5075e9a9-872f-41d9-a2ff-2db1f768e16b",
+      "code": "M1-1.1",
+      "label": "Plotting points"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 2,
+    "pageRef": "p67",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

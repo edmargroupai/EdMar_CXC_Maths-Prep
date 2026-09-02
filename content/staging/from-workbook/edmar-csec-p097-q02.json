@@ -1,0 +1,201 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p097-q02",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the simultaneous equations 5x + 4y = 6 and 3x − 4y = 10."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The y terms are already +4y and −4y, so adding the equations wipes y out immediately."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p097_q02.jpg",
+      "altText": "Source visual for edmar-csec-p097-q02 from workbook page 97."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Add the two equations term by term.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(5x + 3x) + (4y − 4y) = 6 + 10"
+        },
+        {
+          "type": "text",
+          "value": "Result: 8x = 16"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Divide to find x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "16 ÷ 8"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 2"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Substitute x = 2 into the first equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5(2) + 4y = 6, so 10 + 4y = 6"
+        },
+        {
+          "type": "text",
+          "value": "Result: 4y = −4"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Divide to find y.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "−4 ÷ 4"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = −1"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Check in the second equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3(2) − 4(−1) = 6 + 4"
+        },
+        {
+          "type": "text",
+          "value": "Result: 10 ✓"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Add the two equations as they stand to eliminate y, solve for x, then substitute to find y."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = 2, y = −1"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "When the coefficients of one unknown are equal in size but opposite in sign, adding the equations makes that unknown vanish without any preparation. What remains is a single equation in one unknown, and back-substitution recovers the other."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "subtracting_instead_of_adding_which_leav",
+      "wrongValue": "incorrect_1",
+      "misconception": "Subtracting instead of adding, which leaves 8y in the equation.",
+      "correctiveNote": "Avoid this: Subtracting instead of adding, which leaves 8y in the equation."
+    },
+    {
+      "key": "adding_the_left_sides_but_forgetting_to_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Adding the left sides but forgetting to add the right sides.",
+      "correctiveNote": "Avoid this: Adding the left sides but forgetting to add the right sides."
+    },
+    {
+      "key": "writing_10_4y_6_and_then_giving_y_1_by_i",
+      "wrongValue": "incorrect_3",
+      "misconception": "Writing 10 + 4y = 6 and then giving y = 1 by ignoring the negative.",
+      "correctiveNote": "Avoid this: Writing 10 + 4y = 6 and then giving y = 1 by ignoring the negative."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Scan the coefficients before doing anything: if one unknown already has matching numbers, add for opposite signs and subtract for the same sign."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=2,y=−1",
+    "displayValue": "= 2, y = −1",
+    "acceptedForms": [
+      "= 2, y = −1",
+      "=2,y=−1"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve 2x + 3y = 12 and 5x − 3y = 9."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=3,y=2",
+      "displayValue": "= 3, y = 2",
+      "acceptedForms": [
+        "= 3, y = 2",
+        "=3,y=2"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "5b9a2b27-f6a4-4a2f-a48e-7a375550cb28",
+      "code": "M1-5.1",
+      "label": "Simultaneous linear equations"
+    },
+    {
+      "objectiveId": "70c45c5f-0ebd-4b9a-a717-ee4677d9db37",
+      "code": "M1-5.1",
+      "label": "Elimination by addition"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 2,
+    "pageRef": "p97",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

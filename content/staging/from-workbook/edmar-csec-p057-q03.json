@@ -1,0 +1,162 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p057-q03",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A binary operation is defined by a o b = a² + b. Find 3 o 4."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Replace a with 3 and b with 4, and square before you add."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p057_q03.jpg",
+      "altText": "Source visual for edmar-csec-p057-q03 from workbook page 57."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Substitute a = 3 and b = 4.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3² + 4"
+        },
+        {
+          "type": "text",
+          "value": "Result: 9 + 4"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Add.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: 13"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Substitute a = 3 and b = 4 into a² + b and evaluate."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "3 o 4 = 13"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The definition tells you exactly what to do with the left and right inputs. Only the first number is², so the order of operations - index before addition - decides the answer."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "squaring_the_sum_giving_3_4_49",
+      "wrongValue": "incorrect_1",
+      "misconception": "Squaring the sum, giving (3 + 4)² = 49.",
+      "correctiveNote": "Avoid this: Squaring the sum, giving (3 + 4)² = 49."
+    },
+    {
+      "key": "squaring_the_wrong_number_giving_3_16_19",
+      "wrongValue": "incorrect_2",
+      "misconception": "Squaring the wrong number, giving 3 + 16 = 19.",
+      "correctiveNote": "Avoid this: Squaring the wrong number, giving 3 + 16 = 19."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Write the substitution line in full before you calculate; it makes the order of operations obvious."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "3",
+    "displayValue": "3",
+    "acceptedForms": [
+      "3",
+      "3"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "With a o b = a² + b, find 5 o 2."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "27",
+      "displayValue": "27",
+      "acceptedForms": [
+        "27",
+        "27"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "237d06cd-24ba-49d4-a904-de8c997d674d",
+      "code": "M1-4.1",
+      "label": "Binary operations"
+    },
+    {
+      "objectiveId": "2b059e91-9447-4db6-a53d-7e2519bb287e",
+      "code": "M1-4.1",
+      "label": "Substitution"
+    },
+    {
+      "objectiveId": "17627b81-1907-4561-a9a7-c00f1f38c748",
+      "code": "M1-4.1",
+      "label": "Order of operations"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 3,
+    "pageRef": "p57",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

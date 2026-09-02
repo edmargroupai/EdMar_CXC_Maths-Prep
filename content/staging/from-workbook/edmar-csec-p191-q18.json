@@ -1,0 +1,248 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p191-q18",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 6,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A boat moves due east at 8 km/h in still water while a current flows due north at 6 km/h. (a) Write the resultant velocity as a column vector. (b) Calculate the magnitude of the resultant velocity. (c) Write a unit vector in the direction of the resultant velocity."
+    },
+    {
+      "type": "text",
+      "value": "Think first: East is the positive x-direction and north is the positive y-direction, so the two speeds slot straight into a column vector."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p191_q18.jpg",
+      "altText": "Source visual for edmar-csec-p191-q18 from workbook page 191."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write the eastward speed as the x-component and the northward speed as the y-component.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "8 east, 6 north"
+        },
+        {
+          "type": "text",
+          "value": "Result: v = (8, 6) km/h"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Apply Pythagoras to the two components.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "√(8² + 6²) = √(64 + 36) = √100"
+        },
+        {
+          "type": "text",
+          "value": "Result: |v| = 10 km/h"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Divide each component of v by its magnitude.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(1/10)(8, 6)"
+        },
+        {
+          "type": "text",
+          "value": "Result: unit vector = (0.8, 0.6)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Place 8 as the x-component and 6 as the y-component, use Pythagoras for the magnitude, then divide the vector by that magnitude."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) Resultant velocity = (8, 6) km/h  (b) Magnitude = √(8² + 6²) = √100 = 10 km/h  (c) Unit vector = (1/10)(8, 6) = (0.8, 0.6)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "East and north are perpendicular, so the two velocities form the legs of a right-angled triangle and the resultant is its hypotenuse. Dividing a vector by its own length keeps the direction but scales the length to exactly 1, which is what a unit vector means. Checking (0.8)² + (0.6)² = 1 confirms it."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "adding_the_speeds_to_get_14_km_h_instead",
+      "wrongValue": "incorrect_1",
+      "misconception": "Adding the speeds to get 14 km/h instead of using Pythagoras.",
+      "correctiveNote": "Avoid this: Adding the speeds to get 14 km/h instead of using Pythagoras."
+    },
+    {
+      "key": "putting_north_in_the_x_slot_and_east_in_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Putting north in the x-slot and east in the y-slot.",
+      "correctiveNote": "Avoid this: Putting north in the x-slot and east in the y-slot."
+    },
+    {
+      "key": "forgetting_to_divide_both_components_whe",
+      "wrongValue": "incorrect_3",
+      "misconception": "Forgetting to divide both components when forming the unit vector.",
+      "correctiveNote": "Avoid this: Forgetting to divide both components when forming the unit vector."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Always test a unit vector by squaring and adding its components — you should get exactly 1."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Resultantvelocity=(8,6)km/h",
+    "displayValue": "Resultant velocity = (8, 6) km/h",
+    "acceptedForms": [
+      "Resultant velocity = (8, 6) km/h",
+      "Resultantvelocity=(8,6)km/h"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Find the magnitude of the vector (5, 12) and a unit vector in its direction."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "Magnitude13;unitvector(5/13,12/13)",
+      "displayValue": "Magnitude 13; unit vector (5/13, 12/13)",
+      "acceptedForms": [
+        "Magnitude 13; unit vector (5/13, 12/13)",
+        "Magnitude13;unitvector(5/13,12/13)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "63c0f716-57ad-4628-a226-4d95b48a51ff",
+      "code": "M2-5.1",
+      "label": "Column vectors"
+    },
+    {
+      "objectiveId": "5ed497dc-5a2e-4539-a64a-2f3750925e76",
+      "code": "M2-5.1",
+      "label": "Resultant velocity"
+    },
+    {
+      "objectiveId": "d96eafc6-2b27-46ea-a1d7-c77d5e377a2c",
+      "code": "M2-5.1",
+      "label": "Magnitude of a vector"
+    },
+    {
+      "objectiveId": "c0abdf67-0e9d-4d55-a991-c059bc24699f",
+      "code": "M2-5.1",
+      "label": "Unit vectors"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 18,
+    "pageRef": "p191",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Resultantvelocity=(8,6)km/h",
+        "displayValue": "Resultant velocity = (8, 6) km/h",
+        "acceptedForms": [
+          "Resultant velocity = (8, 6) km/h",
+          "Resultantvelocity=(8,6)km/h"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Magnitude=√(8²+6²)=√100=10km/h",
+        "displayValue": "Magnitude = √(8² + 6²) = √100 = 10 km/h",
+        "acceptedForms": [
+          "Magnitude = √(8² + 6²) = √100 = 10 km/h",
+          "Magnitude=√(8²+6²)=√100=10km/h"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "c",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (c): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Unitvector=(1/10)(8,6)=(0.8,0.6)",
+        "displayValue": "Unit vector = (1/10)(8, 6) = (0.8, 0.6)",
+        "acceptedForms": [
+          "Unit vector = (1/10)(8, 6) = (0.8, 0.6)",
+          "Unitvector=(1/10)(8,6)=(0.8,0.6)"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

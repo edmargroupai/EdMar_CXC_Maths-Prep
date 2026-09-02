@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p050-q07",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Simplify 7/(x + 2) − 3/(x − 4) as a single fraction."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The two denominators are different, so build one common denominator before subtracting."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p050_q07.jpg",
+      "altText": "Source visual for edmar-csec-p050-q07 from workbook page 50."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Form the common denominator.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "the brackets have no common factor"
+        },
+        {
+          "type": "text",
+          "value": "Result: (x + 2)(x − 4)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Rewrite both fractions over it.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "7 is multiplied by (x − 4); 3 is multiplied by (x + 2)"
+        },
+        {
+          "type": "text",
+          "value": "Result: [7(x − 4) − 3(x + 2)]/[(x + 2)(x − 4)]"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Expand the numerator, keeping the subtraction over the whole second bracket.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "7x − 28 − (3x + 6)"
+        },
+        {
+          "type": "text",
+          "value": "Result: 7x − 28 − 3x − 6"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Collect like terms.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "7x − 3x = 4x and −28 − 6 = −34"
+        },
+        {
+          "type": "text",
+          "value": "Result: 4x − 34"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Use (x + 2)(x − 4) as the common denominator, then expand and collect the numerator carefully with the minus sign."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(4x − 34)/[(x + 2)(x − 4)], which may also be written 2(2x − 17)/[(x + 2)(x − 4)]"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Multiplying each fraction top and bottom by the missing bracket rescales it without changing its value, so the two fractions become directly comparable. Subtraction then applies to the numerators only. The minus sign belongs to the entire second numerator, which is why 3(x + 2) must be expanded inside a bracket before the signs are distributed."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "getting_7x_28_3x_6_by_only_applying_the_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Getting 7x − 28 − 3x + 6 by only applying the minus to the first term.",
+      "correctiveNote": "Avoid this: Getting 7x − 28 − 3x + 6 by only applying the minus to the first term."
+    },
+    {
+      "key": "cancelling_the_4_in_4x_34_with_something",
+      "wrongValue": "incorrect_2",
+      "misconception": "Cancelling the 4 in 4x − 34 with something in the denominator.",
+      "correctiveNote": "Avoid this: Cancelling the 4 in 4x − 34 with something in the denominator."
+    },
+    {
+      "key": "multiplying_the_numerators_as_well_as_th",
+      "wrongValue": "incorrect_3",
+      "misconception": "Multiplying the numerators as well as the denominators.",
+      "correctiveNote": "Avoid this: Multiplying the numerators as well as the denominators."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "After collecting the numerator, glance at whether it has a common factor. Writing 2(2x − 17) shows the examiner you checked, and it costs nothing."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "(4x−34)/[(x+2)(x−4)],whichmayalsobewritten2(2x−17)/[(x+2)(x−4)]",
+    "displayValue": "(4x − 34)/[(x + 2)(x − 4)], which may also be written 2(2x − 17)/[(x + 2)(x − 4)]",
+    "acceptedForms": [
+      "(4x − 34)/[(x + 2)(x − 4)], which may also be written 2(2x − 17)/[(x + 2)(x − 4)]",
+      "(4x−34)/[(x+2)(x−4)],whichmayalsobewritten2(2x−17)/[(x+2)(x−4)]"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Simplify 4/(x + 1) − 2/(x − 5) as a single fraction."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "[4(x−5)−2(x+1)]/[(x+1)(x−5)]=(2x−22)/[(x+1)(x−5)].",
+      "displayValue": "[4(x − 5) − 2(x + 1)]/[(x + 1)(x − 5)] = (2x − 22)/[(x + 1)(x − 5)].",
+      "acceptedForms": [
+        "[4(x − 5) − 2(x + 1)]/[(x + 1)(x − 5)] = (2x − 22)/[(x + 1)(x − 5)].",
+        "[4(x−5)−2(x+1)]/[(x+1)(x−5)]=(2x−22)/[(x+1)(x−5)]."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "8a6291c9-5890-4619-a817-50c83fcc4eb4",
+      "code": "M1-4.1",
+      "label": "Subtraction of algebraic fractions"
+    },
+    {
+      "objectiveId": "7f2778b5-ccce-4349-a787-a8693a863b17",
+      "code": "M1-4.1",
+      "label": "Lowest common denominator"
+    },
+    {
+      "objectiveId": "a0431cb5-9ea8-4180-a5bd-ff25fef83b41",
+      "code": "M1-4.1",
+      "label": "Expanding brackets"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 7,
+    "pageRef": "p50",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

@@ -1,0 +1,188 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p066-q15",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Factorise completely: p(q + 4) + 7(q + 4)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The repeated bracket (q + 4) is itself the common factor."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p066_q15.jpg",
+      "altText": "Source visual for edmar-csec-p066-q15 from workbook page 66."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Identify what both terms have in common.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The first term is p × (q + 4), the second is 7 × (q + 4)"
+        },
+        {
+          "type": "text",
+          "value": "Result: (q + 4)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Divide each term by (q + 4).",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "p(q + 4) ÷ (q + 4) = p and 7(q + 4) ÷ (q + 4) = 7"
+        },
+        {
+          "type": "text",
+          "value": "Result: p and 7"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Write the common bracket outside and the remainder in a second bracket.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: (q + 4)(p + 7)"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Check by expanding.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(q + 4) × p + (q + 4) × 7"
+        },
+        {
+          "type": "text",
+          "value": "Result: p(q + 4) + 7(q + 4)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Treat (q + 4) as a single object that both terms are multiplied by, take it out, and collect what is left."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "p(q + 4) + 7(q + 4) = (q + 4)(p + 7)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A common factor does not have to be a single number or letter; a whole bracket can play that role. Here (q + 4) multiplies both terms in exactly the same way that 3 multiplied both terms in 3a + 3b, so the same distributive law applies in reverse. Recognising a repeated bracket is the key step that leads on to factorising by grouping."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "expanding_both_brackets_first_and_losing",
+      "wrongValue": "incorrect_1",
+      "misconception": "Expanding both brackets first and losing the structure.",
+      "correctiveNote": "Avoid this: Expanding both brackets first and losing the structure."
+    },
+    {
+      "key": "writing_q_4_p_7q_28",
+      "wrongValue": "incorrect_2",
+      "misconception": "Writing (q + 4)(p + 7q + 28).",
+      "correctiveNote": "Avoid this: Writing (q + 4)(p + 7q + 28)."
+    },
+    {
+      "key": "adding_the_brackets_instead_of_factorisi",
+      "wrongValue": "incorrect_3",
+      "misconception": "Adding the brackets instead of factorising, giving (q + 4) + (p + 7).",
+      "correctiveNote": "Avoid this: Adding the brackets instead of factorising, giving (q + 4) + (p + 7)."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "If the same bracket appears in every term, resist expanding; the factorisation is already almost written for you."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "p(q+4)+7(q+4)=(q+4)(p+7)",
+    "displayValue": "p(q + 4) + 7(q + 4) = (q + 4)(p + 7)",
+    "acceptedForms": [
+      "p(q + 4) + 7(q + 4) = (q + 4)(p + 7)",
+      "p(q+4)+7(q+4)=(q+4)(p+7)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Factorise completely: a(x − 5) + 3(x − 5)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "−5)(a+3)",
+      "displayValue": "− 5)(a + 3)",
+      "acceptedForms": [
+        "− 5)(a + 3)",
+        "−5)(a+3)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "62e25646-c0d3-4056-a8e4-e83a59e4039d",
+      "code": "M1-4.1",
+      "label": "Factorising"
+    },
+    {
+      "objectiveId": "da49314e-bc63-495d-abee-ab7c7547c5b4",
+      "code": "M1-4.1",
+      "label": "Common bracket factor"
+    },
+    {
+      "objectiveId": "95951541-9d55-4237-a804-63c07ec481ed",
+      "code": "M1-4.1",
+      "label": "The distributive law"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 15,
+    "pageRef": "p66",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

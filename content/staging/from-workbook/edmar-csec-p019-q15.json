@@ -1,0 +1,187 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p019-q15",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The price of a phone increased from $45 000 to $51 750. Calculate the percentage increase."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Percentage change is always measured against the price you started with, not the price you ended with."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p019_q15.jpg",
+      "altText": "Source visual for edmar-csec-p019-q15 from workbook page 19."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Find the actual increase in price.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "$51 750 - $45 000"
+        },
+        {
+          "type": "text",
+          "value": "Result: $6 750"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Divide the increase by the ORIGINAL price.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "6 750 / 45 000"
+        },
+        {
+          "type": "text",
+          "value": "Result: 0.15"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Multiply by 100 to express it as a percentage.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "0.15 x 100"
+        },
+        {
+          "type": "text",
+          "value": "Result: 15%"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Check the answer forwards.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "$45 000 x 1.15"
+        },
+        {
+          "type": "text",
+          "value": "Result: $51 750"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Subtract to find the actual increase, then write that increase as a percentage of the original $45 000."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "The percentage increase is 15%."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Percentage change compares the size of a change with the size of what you began with, so the original value is always the denominator. Dividing by the new value would answer a different question. Multiplying the original by 1 plus the percentage rebuilds the new price, which is why that check works."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "dividing_the_increase_by_51_750_instead_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Dividing the increase by $51 750 instead of $45 000.",
+      "correctiveNote": "Avoid this: Dividing the increase by $51 750 instead of $45 000."
+    },
+    {
+      "key": "dividing_51_750_by_45_000_and_giving_115",
+      "wrongValue": "incorrect_2",
+      "misconception": "Dividing $51 750 by $45 000 and giving 115% as the increase.",
+      "correctiveNote": "Avoid this: Dividing $51 750 by $45 000 and giving 115% as the increase."
+    },
+    {
+      "key": "forgetting_to_subtract_first_and_treatin",
+      "wrongValue": "incorrect_3",
+      "misconception": "Forgetting to subtract first and treating $51 750 as the increase.",
+      "correctiveNote": "Avoid this: Forgetting to subtract first and treating $51 750 as the increase."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Write percentage change = change / original x 100 at the top of your working. The word original is what earns the mark."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Thepercentageincreaseis15%.",
+    "displayValue": "The percentage increase is 15%.",
+    "acceptedForms": [
+      "The percentage increase is 15%.",
+      "Thepercentageincreaseis15%."
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A price rises from $200 to $230. Find the percentage increase."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "15%",
+      "displayValue": "15%",
+      "acceptedForms": [
+        "15%",
+        "15%"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-3.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "a5dba837-a0d3-4398-a7cd-7bcb5c453dac",
+      "code": "M1-3.1",
+      "label": "Percentage increase"
+    },
+    {
+      "objectiveId": "c4c99c40-f737-4ed4-ab14-3eb8740c2253",
+      "code": "M1-3.1",
+      "label": "Expressing a change as a percentage of the original"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 15,
+    "pageRef": "p19",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

@@ -1,0 +1,155 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p095-q03",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Make x the subject of the formula y = 7x."
+    },
+    {
+      "type": "text",
+      "value": "Think first: x is multiplied by 7, so dividing by 7 will release it."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p095_q03.jpg",
+      "altText": "Source visual for edmar-csec-p095-q03 from workbook page 95."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Divide both sides by 7.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "y ÷ 7 = 7x ÷ 7"
+        },
+        {
+          "type": "text",
+          "value": "Result: y/7 = x"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Write the new subject on the left.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: x = y/7"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Divide both sides by 7 and write x on the left."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = y/7"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "7x means 7 multiplied by x, and division is the inverse of multiplication. Dividing both sides by 7 cancels the 7 on the right and leaves x by itself, while the equal sign stays valid because both sides were divided by the same amount."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_x_7y_instead_of_y_7",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing x = 7y instead of y/7.",
+      "correctiveNote": "Avoid this: Writing x = 7y instead of y/7."
+    },
+    {
+      "key": "writing_x_y_7_treating_the_7_as_if_it_we",
+      "wrongValue": "incorrect_2",
+      "misconception": "Writing x = y − 7, treating the 7 as if it were added.",
+      "correctiveNote": "Avoid this: Writing x = y − 7, treating the 7 as if it were added."
+    },
+    {
+      "key": "dividing_only_the_right_hand_side_by_7",
+      "wrongValue": "incorrect_3",
+      "misconception": "Dividing only the right-hand side by 7.",
+      "correctiveNote": "Avoid this: Dividing only the right-hand side by 7."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Ask what is being done TO the subject, then do the opposite: multiplied means divide, added means subtract, squared means square root."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=y/7",
+    "displayValue": "= y/7",
+    "acceptedForms": [
+      "= y/7",
+      "=y/7"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Make t the subject of s = 5t."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "t=s/5",
+      "displayValue": "t = s/5",
+      "acceptedForms": [
+        "t = s/5",
+        "t=s/5"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "21e49683-e09a-4555-a474-937621ad083a",
+      "code": "M1-1.1",
+      "label": "Changing the subject of a formula"
+    },
+    {
+      "objectiveId": "7c373d7c-9169-4f7b-a8a3-f8561dc86e3b",
+      "code": "M1-1.1",
+      "label": "Inverse operations"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 3,
+    "pageRef": "p95",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

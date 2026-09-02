@@ -1,0 +1,216 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p232-q03",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 5,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A vendor buys x kg of peanuts and y kg of cashew nuts. (a)(i) She must buy a minimum of 10 kg of peanuts and a minimum of 5 kg of cashew nuts — write two inequalities. (ii) She buys no more than 60 kg of nuts in total; peanuts cost $4.00 per kg, cashews $8.00 per kg, and she spends at least $200 — write two inequalities. (b) Draw the graph of the four inequalities (2 cm to 10 kg on each axis) and shade only the region satisfying all four. (c) The profit is $2.00 per kg of peanuts and $5.00 per kg of cashews: (i) use the graph to find the number of kilograms of each nut for maximum profit, (ii) calculate the maximum profit."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Two of these constraints are about weight and one is about money — keep the units apart as you write them."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p232_q03.jpg",
+      "altText": "Source visual for edmar-csec-p232-q03 from workbook page 232."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write the two minimum-purchase inequalities.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "At least 10 kg of peanuts, at least 5 kg of cashews"
+        },
+        {
+          "type": "text",
+          "value": "Result: x ≥ 10 and y ≥ 5"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Write the weight limit and the spending condition, then simplify the cost inequality.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x + y ≤ 60; cost 4x + 8y ≥ 200, divide through by 4"
+        },
+        {
+          "type": "text",
+          "value": "Result: x + y ≤ 60 and x + 2y ≥ 50"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Draw the four boundary lines and find the corners of the region satisfying all four.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x = 10 with x + 2y = 50 gives (10, 20); x = 10 with x + y = 60 gives (10, 50); y = 5 with x + 2y = 50 gives (40, 5); y = 5 with x + y = 60 gives (55, 5)"
+        },
+        {
+          "type": "text",
+          "value": "Result: Vertices (10, 20), (10, 50), (55, 5), (40, 5)"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Write the profit function and evaluate it at each vertex.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "P = 2x + 5y: (10,20) → 120; (10,50) → 20 + 250 = 270; (55,5) → 135; (40,5) → 105"
+        },
+        {
+          "type": "text",
+          "value": "Result: Maximum P = 270 at (10, 50)"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Check the winning point against every condition.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Peanuts 10 ≥ 10 ✓, cashews 50 ≥ 5 ✓, total 60 ≤ 60 ✓, cost 4(10) + 8(50) = $440 ≥ $200 ✓"
+        },
+        {
+          "type": "text",
+          "value": "Result: (10, 50) is valid"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Write the four inequalities, simplify the cost one, find the corners of the region, then test P = 2x + 5y at each corner."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a)(i) x ≥ 10 and y ≥ 5  (ii) x + y ≤ 60 and 4x + 8y ≥ 200 (i.e. x + 2y ≥ 50)  (b) Region with vertices (10, 20), (10, 50), (55, 5) and (40, 5)  (c)(i) 10 kg of peanuts and 50 kg of cashew nuts  (ii) Maximum profit = 2(10) + 5(50) = $270"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Every constraint is linear, so the set of possible purchases is a polygon and a linear profit function reaches its greatest value at one of its corners. Cashews earn $5 per kg against $2 for peanuts, so profit rises fastest by loading up on cashews; the vendor therefore buys only the compulsory 10 kg of peanuts and fills the remaining allowance of the 60 kg limit with cashews."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_the_spending_condition_with_inst",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing the spending condition with ≤ instead of ≥ ('at least $200').",
+      "correctiveNote": "Avoid this: Writing the spending condition with ≤ instead of ≥ ('at least $200')."
+    },
+    {
+      "key": "mixing_the_cost_per_kg_into_the_weight_i",
+      "wrongValue": "incorrect_2",
+      "misconception": "Mixing the cost per kg into the weight inequality, e.g. 4x + 8y ≤ 60.",
+      "correctiveNote": "Avoid this: Mixing the cost per kg into the weight inequality, e.g. 4x + 8y ≤ 60."
+    },
+    {
+      "key": "forgetting_to_check_the_corner_also_sati",
+      "wrongValue": "incorrect_3",
+      "misconception": "Forgetting to check the corner also satisfies the constraints that were not used to create it.",
+      "correctiveNote": "Avoid this: Forgetting to check the corner also satisfies the constraints that were not used to create it."
+    },
+    {
+      "key": "using_the_cost_figures_4_and_8_instead_o",
+      "wrongValue": "incorrect_4",
+      "misconception": "Using the cost figures ($4 and $8) instead of the profit figures ($2 and $5) in the objective function.",
+      "correctiveNote": "Avoid this: Using the cost figures ($4 and $8) instead of the profit figures ($2 and $5) in the objective function."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Simplify a money inequality by dividing through by a common factor before graphing — smaller numbers make the intercepts far easier to plot."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "(a)(i)x≥10andy≥5(ii)x+y≤60and4x+8y≥200(i.e.x+2y≥50)(b)Regionwithvertices(10,20),(10,5",
+    "displayValue": "(a)(i) x ≥ 10 and y ≥ 5  (ii) x + y ≤ 60 and 4x + 8y ≥ 200 (i.e. x + 2y ≥ 50)  (b) Region with vertices (10, 20), (10, 5",
+    "acceptedForms": [
+      "(a)(i) x ≥ 10 and y ≥ 5  (ii) x + y ≤ 60 and 4x + 8y ≥ 200 (i.e. x + 2y ≥ 50)  (b) Region with vertices (10, 20), (10, 5",
+      "(a)(i)x≥10andy≥5(ii)x+y≤60and4x+8y≥200(i.e.x+2y≥50)(b)Regionwithvertices(10,20),(10,5"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Simplify the inequality 6x + 9y ≥ 180."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "2",
+      "displayValue": "2",
+      "acceptedForms": [
+        "2",
+        "2"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "419f1b52-ceab-46a2-a42c-39ac03641528",
+      "code": "M1-1.1",
+      "label": "Forming linear inequalities from constraints"
+    },
+    {
+      "objectiveId": "4dd5b85a-3a51-4638-a6cb-fcab769f4340",
+      "code": "M1-1.1",
+      "label": "Feasible region and its vertices"
+    },
+    {
+      "objectiveId": "f5aad6da-8d3c-41b2-a82b-cb79aaf6b2e7",
+      "code": "M1-1.1",
+      "label": "Maximising a linear profit function"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 3,
+    "pageRef": "p232",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

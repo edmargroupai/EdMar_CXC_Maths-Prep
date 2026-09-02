@@ -1,0 +1,217 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p295-q06",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Q = (2  -1 / 4  3), R = (1  6 / -5  4) and S = (2  7 / 4  -1 / -8  9), a 3x2 matrix. (i) Explain why the matrix product QS is NOT possible. (ii) State the order of the matrix product SR. (iii) Calculate the matrix product QR. (b) Given A = (4  -1 / -7  x), determine the value of x when the determinant of A is 5."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Write the order of every matrix beside it first; the conformability questions then answer themselves."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p295_q06.jpg",
+      "altText": "Source visual for edmar-csec-p295-q06 from workbook page 295."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write down the order of each matrix.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Q is 2x2, R is 2x2, S is 3x2 (three rows, two columns)."
+        },
+        {
+          "type": "text",
+          "value": "Result: Orders recorded"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Test QS for conformability.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Q has 2 columns but S has 3 rows, and 2 is not equal to 3."
+        },
+        {
+          "type": "text",
+          "value": "Result: QS is not possible"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Test SR and give the order of the product.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "S is 3x2 and R is 2x2; the inner numbers both equal 2, so the product exists and takes the outer numbers 3 and 2."
+        },
+        {
+          "type": "text",
+          "value": "Result: SR is a 3x2 matrix"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Multiply Q by R, row into column.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(2)(1) + (-1)(-5) = 7;  (2)(6) + (-1)(4) = 8;  (4)(1) + (3)(-5) = -11;  (4)(6) + (3)(4) = 36"
+        },
+        {
+          "type": "text",
+          "value": "Result: QR = (7  8 / -11  36)"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "For (b), write the determinant of A and set it equal to 5.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "det A = (4)(x) - (-1)(-7) = 4x - 7, so 4x - 7 = 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: 4x = 12, so x = 3"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Compare the inner dimensions for QS and SR, multiply Q by R row into column, and set the determinant expression for A equal to 5."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) QS is not possible because Q has 2 columns while S has 3 rows; for multiplication the number of columns of the first matrix must equal the number of rows of the second.  (ii) SR is of order 3x2.  (iii) QR = (7  8 / -11  36)  (b) x = 3"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Each entry of a product pairs a whole row of the first matrix with a whole column of the second, so those two lists must be the same length; that is the conformability rule, and it also explains why the product keeps the rows of the first matrix and the columns of the second. The determinant of a 2x2 matrix is the product of the leading diagonal minus the product of the other diagonal, and careful sign work with the two negative entries is what makes -(-1)(-7) come out as -7."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "reading_s_as_2x3_instead_of_3x2_and_clai",
+      "wrongValue": "incorrect_1",
+      "misconception": "Reading S as 2x3 instead of 3x2 and claiming QS is possible.",
+      "correctiveNote": "Avoid this: Reading S as 2x3 instead of 3x2 and claiming QS is possible."
+    },
+    {
+      "key": "answering_i_with_the_matrices_are_differ",
+      "wrongValue": "incorrect_2",
+      "misconception": "Answering (i) with 'the matrices are different sizes' rather than naming the columns and rows that fail to match.",
+      "correctiveNote": "Avoid this: Answering (i) with 'the matrices are different sizes' rather than naming the columns and rows that fail to match."
+    },
+    {
+      "key": "getting_the_sign_of_1_7_wrong_in_the_det",
+      "wrongValue": "incorrect_3",
+      "misconception": "Getting the sign of (-1)(-7) wrong in the determinant and writing 4x + 7 = 5.",
+      "correctiveNote": "Avoid this: Getting the sign of (-1)(-7) wrong in the determinant and writing 4x + 7 = 5."
+    },
+    {
+      "key": "adding_corresponding_entries_when_asked_",
+      "wrongValue": "incorrect_4",
+      "misconception": "Adding corresponding entries when asked for the product QR.",
+      "correctiveNote": "Avoid this: Adding corresponding entries when asked for the product QR."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Label each matrix with its order the moment you copy it down; nearly every mark in a conformability question comes from that habit."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "QSisnotpossiblebecauseQhas2columnswhileShas3rows;formultiplicationthenumberofcolumnsofthefirstmat",
+    "displayValue": "QS is not possible because Q has 2 columns while S has 3 rows; for multiplication the number of columns of the first mat",
+    "acceptedForms": [
+      "QS is not possible because Q has 2 columns while S has 3 rows; for multiplication the number of columns of the first mat",
+      "QSisnotpossiblebecauseQhas2columnswhileShas3rows;formultiplicationthenumberofcolumnsofthefirstmat"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A is 4x3 and B is 3x5. Does AB exist, and if so what is its order?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "Yes;ABis4x5.",
+      "displayValue": "Yes; AB is 4x5.",
+      "acceptedForms": [
+        "Yes; AB is 4x5.",
+        "Yes;ABis4x5."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "8731ad54-2474-41a2-ac3b-40b60d006d0a",
+      "code": "M2-4.1",
+      "label": "Order of a matrix"
+    },
+    {
+      "objectiveId": "537d9914-0bc6-464d-abc0-d846ef804d82",
+      "code": "M2-4.1",
+      "label": "Conformability for matrix multiplication"
+    },
+    {
+      "objectiveId": "0c26b266-f54f-44f1-a8f2-859e40107a73",
+      "code": "M2-4.1",
+      "label": "Matrix multiplication"
+    },
+    {
+      "objectiveId": "a4776651-bb45-4f18-a1e3-48328558ec02",
+      "code": "M2-4.1",
+      "label": "Determinant of a 2x2 matrix"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 6,
+    "pageRef": "p295",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

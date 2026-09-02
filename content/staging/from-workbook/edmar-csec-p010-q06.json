@@ -1,0 +1,252 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p010-q06",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 4,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Calculate (6.4 × 10⁵)/(8 × 10²) and give your answer: (i) exactly  (ii) in standard form."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Deal with the ordinary numbers and the powers of ten as two separate divisions."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p010_q06.jpg",
+      "altText": "Source visual for edmar-csec-p010-q06 from workbook page 10."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Split the quotient into two parts.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(6.4 ÷ 8) × (10⁵ ÷ 10²)"
+        },
+        {
+          "type": "text",
+          "value": "Result: (6.4 ÷ 8) × 10³"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Divide the front numbers.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "6.4 ÷ 8 = 64 ÷ 80"
+        },
+        {
+          "type": "text",
+          "value": "Result: 0.8"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Give the exact value.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "0.8 × 1000"
+        },
+        {
+          "type": "text",
+          "value": "Result: 800"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Rewrite in standard form.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "0.8 = 8 × 10⁻¹, so 8 × 10⁻¹ × 10³"
+        },
+        {
+          "type": "text",
+          "value": "Result: 8 × 10²"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Divide 6.4 by 8, subtract the indices for the powers of ten, then adjust the front number so it lies between 1 and 10."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) 800 exactly  (ii) 8 × 10²"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Dividing powers of ten subtracts their indices, since each matching factor of ten cancels between numerator and denominator. The front number 0.8 is below 1, so it is not yet standard form; moving the decimal point one place right multiplies it by 10, which must be paid for by reducing the index from 10³ to 10². The value never changes — only the way it is written."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "leaving_the_answer_as_0_8_10_and_calling",
+      "wrongValue": "incorrect_1",
+      "misconception": "Leaving the answer as 0.8 × 10³ and calling it standard form.",
+      "correctiveNote": "Avoid this: Leaving the answer as 0.8 × 10³ and calling it standard form."
+    },
+    {
+      "key": "dividing_10_by_10_to_get_10_2_5_or_10_by",
+      "wrongValue": "incorrect_2",
+      "misconception": "Dividing 10⁵ by 10² to get 10^2.5 or 10³ by dividing the indices.",
+      "correctiveNote": "Avoid this: Dividing 10⁵ by 10² to get 10^2.5 or 10³ by dividing the indices."
+    },
+    {
+      "key": "reading_6_4_8_as_8_because_8_divides_int",
+      "wrongValue": "incorrect_3",
+      "misconception": "Reading 6.4 ÷ 8 as 8 because 8 divides into 64.",
+      "correctiveNote": "Avoid this: Reading 6.4 ÷ 8 as 8 because 8 divides into 64."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "If your front number is less than 1, move the point right and drop the index by the same number of places — the total value stays put."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "800",
+    "displayValue": "800",
+    "acceptedForms": [
+      "800",
+      "800"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Calculate (7.2 × 10⁶)/(9 × 10³), exactly and in standard form."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "800",
+      "displayValue": "800",
+      "acceptedForms": [
+        "800",
+        "800"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.2"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "867847f9-5a92-4ea7-aa38-30d2c8eedfb6",
+      "code": "M1-1.2",
+      "label": "Standard form"
+    },
+    {
+      "objectiveId": "ab7be2c3-72b3-4934-a200-e0f1b77fc6e0",
+      "code": "M1-1.2",
+      "label": "Laws of indices"
+    },
+    {
+      "objectiveId": "d7b3ccd2-24c8-47d7-a227-0199d940389b",
+      "code": "M1-1.2",
+      "label": "Division"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 6,
+    "pageRef": "p10",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a.i",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.i): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "numeric_exact",
+        "canonicalValue": "800",
+        "displayValue": "800",
+        "acceptedForms": [
+          "800",
+          "800"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0
+        },
+        "normalisation": "numeric_default"
+      }
+    },
+    {
+      "partKey": "a.ii",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.ii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "numeric_exact",
+        "canonicalValue": "8",
+        "displayValue": "8",
+        "acceptedForms": [
+          "8",
+          "8"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0
+        },
+        "normalisation": "numeric_default"
+      }
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p096-q15",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 5,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Make x the subject of the formula y = (3x − 4)/(x + 2)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: x appears twice, so the plan is to clear the fraction, gather every x term on one side and factorise."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p096_q15.jpg",
+      "altText": "Source visual for edmar-csec-p096-q15 from workbook page 96."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply both sides by (x + 2).",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "y(x + 2) = 3x − 4"
+        },
+        {
+          "type": "text",
+          "value": "Result: y(x + 2) = 3x − 4"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Expand the left-hand side.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "yx + 2y = 3x − 4"
+        },
+        {
+          "type": "text",
+          "value": "Result: yx + 2y = 3x − 4"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Collect the x terms on one side and everything else on the other.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "yx − 3x = −4 − 2y"
+        },
+        {
+          "type": "text",
+          "value": "Result: yx − 3x = −4 − 2y"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Factorise out x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x(y − 3) = −(2y + 4)"
+        },
+        {
+          "type": "text",
+          "value": "Result: x(y − 3) = −(2y + 4)"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Divide by (y − 3) and tidy the signs.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x = −(2y + 4)/(y − 3) = (2y + 4)/(3 − y)"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = (2y + 4)/(3 − y)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Multiply both sides by (x + 2), expand, collect the x terms together, factorise out x and divide."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = (2y + 4)/(3 − y), equivalently x = −(2y + 4)/(y − 3)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "When the new subject appears more than once, no sequence of simple inverse operations can isolate it. Clearing the fraction turns the formula into a linear equation in x, and factorising collects the scattered x terms into a single factor that can then be divided away."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "cancelling_the_x_in_the_numerator_agains",
+      "wrongValue": "incorrect_1",
+      "misconception": "Cancelling the x in the numerator against the x in the denominator at the start.",
+      "correctiveNote": "Avoid this: Cancelling the x in the numerator against the x in the denominator at the start."
+    },
+    {
+      "key": "multiplying_only_the_3x_by_x_2",
+      "wrongValue": "incorrect_2",
+      "misconception": "Multiplying only the 3x by (x + 2).",
+      "correctiveNote": "Avoid this: Multiplying only the 3x by (x + 2)."
+    },
+    {
+      "key": "forgetting_the_minus_sign_when_dividing_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Forgetting the minus sign when dividing, giving x = (2y + 4)/(y − 3).",
+      "correctiveNote": "Avoid this: Forgetting the minus sign when dividing, giving x = (2y + 4)/(y − 3)."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Whenever the letter you want appears twice, expect the same three moves: clear fractions, collect that letter on one side, factorise it out."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=(2y+4)/(3−y),equivalentlyx=−(2y+4)/(y−3)",
+    "displayValue": "= (2y + 4)/(3 − y), equivalently x = −(2y + 4)/(y − 3)",
+    "acceptedForms": [
+      "= (2y + 4)/(3 − y), equivalently x = −(2y + 4)/(y − 3)",
+      "=(2y+4)/(3−y),equivalentlyx=−(2y+4)/(y−3)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Make x the subject of y = (x + 1)/(x − 5)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=(5y+1)/(y−1)",
+      "displayValue": "= (5y + 1)/(y − 1)",
+      "acceptedForms": [
+        "= (5y + 1)/(y − 1)",
+        "=(5y+1)/(y−1)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "0f8a96ff-5583-4e08-a689-cae8fb84bb6d",
+      "code": "M1-1.1",
+      "label": "Changing the subject of a formula"
+    },
+    {
+      "objectiveId": "e1ac69c5-709e-4c53-ac0e-8148942bb668",
+      "code": "M1-1.1",
+      "label": "Clearing fractions"
+    },
+    {
+      "objectiveId": "31878922-cf0d-48b3-ae62-5311aa1bdecc",
+      "code": "M1-1.1",
+      "label": "Factorising to isolate a repeated variable"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 15,
+    "pageRef": "p96",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

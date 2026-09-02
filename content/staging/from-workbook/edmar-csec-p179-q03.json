@@ -1,0 +1,187 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p179-q03",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The vectors a and b are equal, where a has components (2x + 1) and (y + 4), and b has components 7 and 10. (a) Determine the value of x. (b) Determine the value of y."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Equal vectors must match component by component, which splits one vector equation into two ordinary equations."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p179_q03.jpg",
+      "altText": "Source visual for edmar-csec-p179-q03 from workbook page 179."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "State what equal vectors mean.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Both the horizontal and the vertical components must match"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2x + 1 = 7 and y + 4 = 10"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Solve the top equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2x = 6"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 3"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Solve the bottom equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "y = 10 − 4"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 6"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Check by substituting back.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2(3) + 1 = 7 and 6 + 4 = 10"
+        },
+        {
+          "type": "text",
+          "value": "Result: a = (7, 10) = b"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Equate the top components to find x and the bottom components to find y."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) x = 3  (b) y = 6"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A vector carries two independent pieces of information, one for each direction, and neither can compensate for the other. So two vectors are equal only when both components agree, and a single vector equation is really a pair of separate equations — here one in x and one in y."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "adding_the_components_and_setting_one_co",
+      "wrongValue": "incorrect_1",
+      "misconception": "Adding the components and setting one combined equation, which loses the independence of the two.",
+      "correctiveNote": "Avoid this: Adding the components and setting one combined equation, which loses the independence of the two."
+    },
+    {
+      "key": "matching_the_top_of_a_with_the_bottom_of",
+      "wrongValue": "incorrect_2",
+      "misconception": "Matching the top of a with the bottom of b.",
+      "correctiveNote": "Avoid this: Matching the top of a with the bottom of b."
+    },
+    {
+      "key": "solving_2x_1_7_as_x_6",
+      "wrongValue": "incorrect_3",
+      "misconception": "Solving 2x + 1 = 7 as x = 6.",
+      "correctiveNote": "Avoid this: Solving 2x + 1 = 7 as x = 6."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Write the two component equations on separate lines before solving — it makes the structure obvious and prevents cross-matching."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "x=3",
+    "displayValue": "x = 3",
+    "acceptedForms": [
+      "x = 3",
+      "x=3"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "If the vector with components (3x − 2) and 5 equals the vector with components 10 and y, find x and y."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=4andy=5.",
+      "displayValue": "= 4 and y = 5.",
+      "acceptedForms": [
+        "= 4 and y = 5.",
+        "=4andy=5."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "7f59bbdb-cb75-4f77-ab8a-287e6c0e1423",
+      "code": "M2-5.1",
+      "label": "Equality of vectors"
+    },
+    {
+      "objectiveId": "13eff949-90dc-48e2-a1dd-4759489edc41",
+      "code": "M2-5.1",
+      "label": "Solving linear equations"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 3,
+    "pageRef": "p179",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

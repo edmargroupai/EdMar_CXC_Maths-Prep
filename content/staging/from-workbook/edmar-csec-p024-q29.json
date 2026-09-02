@@ -1,0 +1,206 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p024-q29",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Three pharmacies sell the same vitamin tablets: HealthPlus 60 tablets for $1 200, MediCare 90 tablets for $1 890, SaveMore 120 tablets for $2 520. (a) Calculate the cost per tablet for each pharmacy. (b) Which pharmacy offers the best buy? (c) If a customer needs 180 tablets, how much would they pay at the cheapest pharmacy?"
+    },
+    {
+      "type": "text",
+      "value": "Think first: Different bottle sizes hide the real comparison, so bring every offer down to the cost of one tablet."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p024_q29.jpg",
+      "altText": "Source visual for edmar-csec-p024-q29 from workbook page 24."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Find HealthPlus's cost per tablet.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "1 200 / 60"
+        },
+        {
+          "type": "text",
+          "value": "Result: $20 per tablet"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Find MediCare's cost per tablet.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "1 890 / 90"
+        },
+        {
+          "type": "text",
+          "value": "Result: $21 per tablet"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Find SaveMore's cost per tablet.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2 520 / 120"
+        },
+        {
+          "type": "text",
+          "value": "Result: $21 per tablet"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Rank the unit costs.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "20 < 21 = 21"
+        },
+        {
+          "type": "text",
+          "value": "Result: HealthPlus is cheapest"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Cost 180 tablets at the cheapest rate.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "180 x $20, which is three 60-tablet bottles at $1 200"
+        },
+        {
+          "type": "text",
+          "value": "Result: $3 600"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Divide each price by the number of tablets, rank the three unit costs, then multiply the lowest unit cost by 180."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) HealthPlus $20, MediCare $21, SaveMore $21 per tablet  (b) HealthPlus is the best buy  (c) 180 tablets cost $3 600"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Unit cost is the only fair basis for comparison when quantities differ, and here it shows that the largest bottle is not the cheapest per tablet. MediCare and SaveMore tie, so ranking by unit cost also reveals when two offers are equally good. Because 180 is exactly three HealthPlus bottles, no awkward part-bottle arises."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "choosing_savemore_because_its_bottle_hol",
+      "wrongValue": "incorrect_1",
+      "misconception": "Choosing SaveMore because its bottle holds the most tablets.",
+      "correctiveNote": "Avoid this: Choosing SaveMore because its bottle holds the most tablets."
+    },
+    {
+      "key": "dividing_tablets_by_dollars_and_quoting_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Dividing tablets by dollars and quoting tablets per dollar without saying so.",
+      "correctiveNote": "Avoid this: Dividing tablets by dollars and quoting tablets per dollar without saying so."
+    },
+    {
+      "key": "forgetting_that_180_tablets_means_three_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Forgetting that 180 tablets means three bottles, not one.",
+      "correctiveNote": "Avoid this: Forgetting that 180 tablets means three bottles, not one."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When the quantity in the last part is a whole-number multiple of a pack size, say so in your working. It shows you have checked that the packs actually fit."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "HealthPlus$20,MediCare$21,SaveMore$21pertablet",
+    "displayValue": "HealthPlus $20, MediCare $21, SaveMore $21 per tablet",
+    "acceptedForms": [
+      "HealthPlus $20, MediCare $21, SaveMore $21 per tablet",
+      "HealthPlus$20,MediCare$21,SaveMore$21pertablet"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Shop P sells 40 tablets for $1 000 and Shop Q sells 50 tablets for $1 200. Which has the lower cost per tablet?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "ShopQ,at$24pertabletagainst$25",
+      "displayValue": "Shop Q, at $24 per tablet against $25",
+      "acceptedForms": [
+        "Shop Q, at $24 per tablet against $25",
+        "ShopQ,at$24pertabletagainst$25"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "fc07ae1d-f48b-4c10-ad42-0e9d793c90c0",
+      "code": "M1-1.1",
+      "label": "Best buy"
+    },
+    {
+      "objectiveId": "79e5c00f-6e74-45ee-a91e-c718440008d2",
+      "code": "M1-1.1",
+      "label": "Unit cost"
+    },
+    {
+      "objectiveId": "eb84f92a-0c9a-46e5-aab5-0f65897e63ac",
+      "code": "M1-1.1",
+      "label": "Proportion"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 29,
+    "pageRef": "p24",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

@@ -1,0 +1,220 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p099-q09",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the simultaneous equations 4m + 5n = −7 and 3m − 2n = 12."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Neither coefficient matches, so scale both equations until one unknown has the same size coefficient in each."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p099_q09.jpg",
+      "altText": "Source visual for edmar-csec-p099-q09 from workbook page 99."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply the first equation by 2.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2 × (4m + 5n = −7)"
+        },
+        {
+          "type": "text",
+          "value": "Result: 8m + 10n = −14"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Multiply the second equation by 5.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5 × (3m − 2n = 12)"
+        },
+        {
+          "type": "text",
+          "value": "Result: 15m − 10n = 60"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Add the two new equations so the n terms cancel.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(8m + 15m) + (10n − 10n) = −14 + 60"
+        },
+        {
+          "type": "text",
+          "value": "Result: 23m = 46"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Divide to find m.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "46 ÷ 23"
+        },
+        {
+          "type": "text",
+          "value": "Result: m = 2"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Substitute m = 2 into the first original equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "4(2) + 5n = −7, so 5n = −15"
+        },
+        {
+          "type": "text",
+          "value": "Result: n = −3"
+        }
+      ]
+    },
+    {
+      "stepNo": 6,
+      "instruction": "Check in the second equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3(2) − 2(−3) = 6 + 6"
+        },
+        {
+          "type": "text",
+          "value": "Result: 12 ✓"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Multiply the first equation by 2 and the second by 5 to make the n terms +10n and −10n, then add."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "m = 2, n = −3"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Multiplying an equation through by a constant produces a different-looking equation with exactly the same solutions, so scaling is always safe. Choosing multipliers that make one pair of coefficients equal in size and opposite in sign turns addition into a clean elimination."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "multiplying_only_some_terms_of_an_equati",
+      "wrongValue": "incorrect_1",
+      "misconception": "Multiplying only some terms of an equation by the chosen factor.",
+      "correctiveNote": "Avoid this: Multiplying only some terms of an equation by the chosen factor."
+    },
+    {
+      "key": "adding_when_the_matched_coefficients_hav",
+      "wrongValue": "incorrect_2",
+      "misconception": "Adding when the matched coefficients have the same sign.",
+      "correctiveNote": "Avoid this: Adding when the matched coefficients have the same sign."
+    },
+    {
+      "key": "mishandling_14_60_and_getting_46_with_th",
+      "wrongValue": "incorrect_3",
+      "misconception": "Mishandling −14 + 60 and getting 46 with the wrong sign.",
+      "correctiveNote": "Avoid this: Mishandling −14 + 60 and getting 46 with the wrong sign."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "To match coefficients, cross-multiply the two you want to cancel — here 5 and 2 give multipliers 2 and 5 — so you never have to hunt for a common multiple."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "m=2,n=−3",
+    "displayValue": "m = 2, n = −3",
+    "acceptedForms": [
+      "m = 2, n = −3",
+      "m=2,n=−3"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve 3a + 2b = 4 and 2a − 3b = 7."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=2,b=−1",
+      "displayValue": "= 2, b = −1",
+      "acceptedForms": [
+        "= 2, b = −1",
+        "=2,b=−1"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "a4689d44-fb24-4e65-a452-fe75d78859b5",
+      "code": "M1-5.1",
+      "label": "Simultaneous linear equations"
+    },
+    {
+      "objectiveId": "f401d231-add4-43be-a666-ca44656d7776",
+      "code": "M1-5.1",
+      "label": "Elimination with multipliers"
+    },
+    {
+      "objectiveId": "f83fab23-1d65-4bd2-a8f8-af91ec6a629c",
+      "code": "M1-5.1",
+      "label": "Working with negative numbers"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 9,
+    "pageRef": "p99",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

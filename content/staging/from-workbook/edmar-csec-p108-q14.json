@@ -1,0 +1,216 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p108-q14",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Seven chairs and nine desks cost $1200. Thirteen chairs and six desks also cost $1200. Taking c as the cost of one chair and d as the cost of one desk, form two simultaneous equations and find the cost of each item."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Translate each sentence into an equation, then eliminate one unknown by matching its coefficients."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p108_q14.jpg",
+      "altText": "Source visual for edmar-csec-p108-q14 from workbook page 108."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Translate each statement into an equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "7 chairs and 9 desks cost $1200; 13 chairs and 6 desks cost $1200"
+        },
+        {
+          "type": "text",
+          "value": "Result: 7c + 9d = 1200 ... (1);  13c + 6d = 1200 ... (2)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Scale both equations so the d-coefficients match.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(1) × 2 gives 14c + 18d = 2400; (2) × 3 gives 39c + 18d = 3600"
+        },
+        {
+          "type": "text",
+          "value": "Result: 14c + 18d = 2400;  39c + 18d = 3600"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Subtract to eliminate d.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "39c − 14c = 25c and 3600 − 2400 = 1200"
+        },
+        {
+          "type": "text",
+          "value": "Result: 25c = 1200, so c = 48"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Substitute c = 48 into equation (1) to find d.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "7(48) = 336, so 9d = 1200 − 336 = 864"
+        },
+        {
+          "type": "text",
+          "value": "Result: d = 96"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Check the pair in equation (2).",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "13(48) + 6(96) = 624 + 576"
+        },
+        {
+          "type": "text",
+          "value": "Result: 1200, so the values are correct"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Write the two equations, scale them so the d-terms match, subtract to find c, then substitute back for d."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "7c + 9d = 1200 and 13c + 6d = 1200; one chair costs $48 and one desk costs $96."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Each purchase gives one linear relationship between the two unknown prices, and two independent relationships are exactly what is needed to pin both down. Multiplying an equation through by a constant does not change its solutions, so scaling to match coefficients is safe; subtracting then removes one unknown entirely. The equal totals of $1200 are a feature of this problem, not a shortcut, because the coefficients still differ and the equations remain independent."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "concluding_that_7c_9d_13c_6d_means_the_t",
+      "wrongValue": "incorrect_1",
+      "misconception": "Concluding that 7c + 9d = 13c + 6d means the two items cost the same.",
+      "correctiveNote": "Avoid this: Concluding that 7c + 9d = 13c + 6d means the two items cost the same."
+    },
+    {
+      "key": "scaling_only_one_equation_and_subtractin",
+      "wrongValue": "incorrect_2",
+      "misconception": "Scaling only one equation and subtracting anyway.",
+      "correctiveNote": "Avoid this: Scaling only one equation and subtracting anyway."
+    },
+    {
+      "key": "substituting_c_back_into_the_equation_it",
+      "wrongValue": "incorrect_3",
+      "misconception": "Substituting c back into the equation it was derived from and getting a circular result.",
+      "correctiveNote": "Avoid this: Substituting c back into the equation it was derived from and getting a circular result."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Always verify your pair in the equation you did not use for the substitution — it catches almost every arithmetic error."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "tolerance",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "currency",
+    "canonicalValue": "7.00",
+    "displayValue": "$7",
+    "acceptedForms": [
+      "$7",
+      "$7",
+      "7"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0.005
+    },
+    "precision": {
+      "kind": "decimal_places",
+      "value": 2,
+      "required": true
+    },
+    "normalisation": "currency_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve 2a + 3b = 31 and 4a + b = 27."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=5,b=7",
+      "displayValue": "= 5, b = 7",
+      "acceptedForms": [
+        "= 5, b = 7",
+        "=5,b=7"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-6.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "49f70eef-1849-4b2a-a64e-40dbef43de6a",
+      "code": "M1-6.1",
+      "label": "Forming simultaneous equations from words"
+    },
+    {
+      "objectiveId": "4795c4d7-025a-493f-a757-2184926bafca",
+      "code": "M1-6.1",
+      "label": "Elimination method"
+    },
+    {
+      "objectiveId": "35e94e86-ecc1-4d2f-a03b-b858a1cd6610",
+      "code": "M1-6.1",
+      "label": "Substitution to find the second unknown"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 14,
+    "pageRef": "p108",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

@@ -1,0 +1,183 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p178-q01",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The quantities distance, displacement, speed, velocity, time and acceleration are used to describe the motion of a car. (a) State the THREE vector quantities. (b) State ONE feature that distinguishes a vector from a scalar."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Ask of each quantity: does it need a direction to make sense?"
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p178_q01.jpg",
+      "altText": "Source visual for edmar-csec-p178-q01 from workbook page 178."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Test each quantity for direction.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Distance, speed and time answer only 'how much'; displacement, velocity and acceleration all need 'in which direction'"
+        },
+        {
+          "type": "text",
+          "value": "Result: three directional quantities identified"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "List the vectors.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: displacement, velocity, acceleration"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Name the remaining quantities as scalars.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Distance, speed and time have size only"
+        },
+        {
+          "type": "text",
+          "value": "Result: three scalars"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "State the distinguishing feature.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "A vector has both magnitude and direction; a scalar has magnitude only"
+        },
+        {
+          "type": "text",
+          "value": "Result: direction is the difference"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Test each quantity for whether a direction is part of its meaning, then state the defining difference."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) The three vector quantities are displacement, velocity and acceleration  (b) A vector has both magnitude and direction, whereas a scalar has magnitude only"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The distinction is not about the numbers involved but about what the quantity describes. A speed of 60 km/h tells you nothing about where the car is heading; a velocity of 60 km/h due north does. Because vectors carry direction, they combine by the triangle or parallelogram law rather than by plain addition — which is why 3 km east then 4 km north gives a displacement of 5 km, not 7 km."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "calling_distance_a_vector_by_confusing_i",
+      "wrongValue": "incorrect_1",
+      "misconception": "Calling distance a vector by confusing it with displacement.",
+      "correctiveNote": "Avoid this: Calling distance a vector by confusing it with displacement."
+    },
+    {
+      "key": "listing_speed_as_a_vector_because_it_has",
+      "wrongValue": "incorrect_2",
+      "misconception": "Listing speed as a vector because it has a numerical size.",
+      "correctiveNote": "Avoid this: Listing speed as a vector because it has a numerical size."
+    },
+    {
+      "key": "answering_part_b_with_a_vector_is_bigger",
+      "wrongValue": "incorrect_3",
+      "misconception": "Answering part b with 'a vector is bigger' or 'a vector is an arrow' rather than naming magnitude and direction.",
+      "correctiveNote": "Avoid this: Answering part b with 'a vector is bigger' or 'a vector is an arrow' rather than naming magnitude and direction."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Pair each scalar with its vector partner — distance/displacement, speed/velocity — and the classification questions answer themselves."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Thethreevectorquantitiesaredisplacement,velocityandacceleration",
+    "displayValue": "The three vector quantities are displacement, velocity and acceleration",
+    "acceptedForms": [
+      "The three vector quantities are displacement, velocity and acceleration",
+      "Thethreevectorquantitiesaredisplacement,velocityandacceleration"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Is force a vector or a scalar? Give a reason."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "vector,becauseaforcehasbothsizeandadirectioninwhichitacts.",
+      "displayValue": "vector, because a force has both size and a direction in which it acts.",
+      "acceptedForms": [
+        "vector, because a force has both size and a direction in which it acts.",
+        "vector,becauseaforcehasbothsizeandadirectioninwhichitacts."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "d4234dee-2601-4645-aa7b-42420fa5581a",
+      "code": "M2-5.1",
+      "label": "Vector and scalar quantities"
+    },
+    {
+      "objectiveId": "8b6800c4-dd89-45be-a9bf-e93874ace998",
+      "code": "M2-5.1",
+      "label": "Magnitude and direction"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 1,
+    "pageRef": "p178",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

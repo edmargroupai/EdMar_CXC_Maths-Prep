@@ -1,0 +1,248 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p190-q17",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 6,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Three forces act successively as shown on the vector diagram, where F1 = (6, 2), F2 = (−1, 5) and F3 = (−5, −7) as column vectors. (a) Calculate F1 + F2. (b) Calculate F1 + F2 + F3. (c) State what the answer to (b) indicates about the three forces."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Column vectors add component by component, so keep the top numbers with the top numbers and the bottom with the bottom."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p190_q17.jpg",
+      "altText": "Source visual for edmar-csec-p190-q17 from workbook page 190."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Add the top components and then the bottom components of F1 and F2.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "6 + (−1) = 5 and 2 + 5 = 7"
+        },
+        {
+          "type": "text",
+          "value": "Result: F1 + F2 = (5, 7)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Add F3 to the answer from step 1.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5 + (−5) = 0 and 7 + (−7) = 0"
+        },
+        {
+          "type": "text",
+          "value": "Result: F1 + F2 + F3 = (0, 0)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Interpret the zero resultant.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The three arrows drawn nose to tail return to the starting point, closing the triangle."
+        },
+        {
+          "type": "text",
+          "value": "Result: The forces are in equilibrium"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Add the x-components and the y-components separately for (a), add F3 to that result for (b), then interpret a zero resultant."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) F1 + F2 = (5, 7) as a column vector  (b) F1 + F2 + F3 = (0, 0), the zero vector  (c) The three forces have zero resultant, so they are in equilibrium; drawn nose to tail they form a closed triangle and produce no net movement."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Adding vectors nose to tail traces a path, and the sum is the single arrow from the very start to the very end of that path. When the sum is the zero vector, the path has returned to where it began, so the closed figure on the diagram is not a coincidence. Physically, no net force acts on the object."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "adding_an_x_component_to_a_y_component_w",
+      "wrongValue": "incorrect_1",
+      "misconception": "Adding an x-component to a y-component when the columns are written across the page.",
+      "correctiveNote": "Avoid this: Adding an x-component to a y-component when the columns are written across the page."
+    },
+    {
+      "key": "losing_a_minus_sign_in_5_7_and_getting_a",
+      "wrongValue": "incorrect_2",
+      "misconception": "Losing a minus sign in (−5, −7) and getting a non-zero resultant.",
+      "correctiveNote": "Avoid this: Losing a minus sign in (−5, −7) and getting a non-zero resultant."
+    },
+    {
+      "key": "answering_c_with_0_instead_of_saying_wha",
+      "wrongValue": "incorrect_3",
+      "misconception": "Answering (c) with '0' instead of saying what zero means about the forces.",
+      "correctiveNote": "Avoid this: Answering (c) with '0' instead of saying what zero means about the forces."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "After adding column vectors, glance back at the diagram: if the arrows close up into a polygon, your resultant must be zero."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "F1+F2=(5,7)as",
+    "displayValue": "F1 + F2 = (5, 7) as",
+    "acceptedForms": [
+      "F1 + F2 = (5, 7) as",
+      "F1+F2=(5,7)as"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Add the column vectors (3, −4) and (−3, 9)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(0,5)",
+      "displayValue": "(0, 5)",
+      "acceptedForms": [
+        "(0, 5)",
+        "(0,5)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "c71fc75a-2feb-4e11-a2c6-66c2ded54670",
+      "code": "M2-5.1",
+      "label": "Column vectors"
+    },
+    {
+      "objectiveId": "d96fc1e0-7404-40af-a11f-f001112a9df7",
+      "code": "M2-5.1",
+      "label": "Addition of vectors"
+    },
+    {
+      "objectiveId": "3a64dc2f-6b88-478a-abc5-3858d3650cc3",
+      "code": "M2-5.1",
+      "label": "Resultant of forces"
+    },
+    {
+      "objectiveId": "1dc64121-44bd-4316-a2ab-d001e0db750c",
+      "code": "M2-5.1",
+      "label": "Zero vector and equilibrium"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 17,
+    "pageRef": "p190",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "F1+F2=(5,7)as",
+        "displayValue": "F1 + F2 = (5, 7) as",
+        "acceptedForms": [
+          "F1 + F2 = (5, 7) as",
+          "F1+F2=(5,7)as"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "F1+F2+F3=(0,0),thezerovector",
+        "displayValue": "F1 + F2 + F3 = (0, 0), the zero vector",
+        "acceptedForms": [
+          "F1 + F2 + F3 = (0, 0), the zero vector",
+          "F1+F2+F3=(0,0),thezerovector"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "c",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (c): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Thethreeforceshavezeroresultant,sotheyareinequilibrium;drawnnosetotailtheyform",
+        "displayValue": "The three forces have zero resultant, so they are in equilibrium; drawn nose to tail they form",
+        "acceptedForms": [
+          "The three forces have zero resultant, so they are in equilibrium; drawn nose to tail they form",
+          "Thethreeforceshavezeroresultant,sotheyareinequilibrium;drawnnosetotailtheyform"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

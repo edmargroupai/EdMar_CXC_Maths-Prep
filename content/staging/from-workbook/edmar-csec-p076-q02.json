@@ -1,0 +1,250 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p076-q02",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 4,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The table lists four variables recorded for athletes at a sports meet: blood group (A, B, AB or O), finishing position (1st, 2nd, 3rd, ...), temperature (degrees Celsius) and time for a 100 m race (seconds). (a) For each variable, state whether the level of measurement is nominal, ordinal, interval or ratio. (b) State the most appropriate average for blood group and give a reason. (c) State the most appropriate average for the finishing positions and give a reason."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Ask two questions of every variable: can the values be put in order, and does zero mean 'none of it'?"
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p076_q02.jpg",
+      "altText": "Source visual for edmar-csec-p076-q02 from workbook page 76."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Test blood group for order.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "A, B, AB and O are labels only; no group is 'more' than another."
+        },
+        {
+          "type": "text",
+          "value": "Result: Nominal"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Test finishing position for order and equal gaps.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Positions can be ranked, but the gap between 1st and 2nd need not equal the gap between 2nd and 3rd."
+        },
+        {
+          "type": "text",
+          "value": "Result: Ordinal"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Test temperature in degrees Celsius.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Differences are equal, but 0 °C does not mean no temperature, so '20 °C is twice 10 °C' is false."
+        },
+        {
+          "type": "text",
+          "value": "Result: Interval"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Test the 100 m time in seconds.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "0 s means no time at all, so 20 s really is twice 10 s."
+        },
+        {
+          "type": "text",
+          "value": "Result: Ratio"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Match an average to each level of measurement.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Nominal data cannot be ordered or added, so only the most frequent value has meaning; ordinal data can be ordered, so a middle value has meaning."
+        },
+        {
+          "type": "text",
+          "value": "Result: Mode for blood group; median for finishing position"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Classify each variable by testing it for order, equal intervals and a true zero, then match the average to the level of measurement — the mode for nominal data and the median for ordinal data."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) Blood group – nominal; Finishing position – ordinal; Temperature in °C – interval; Time for the 100 m in seconds – ratio. (b) The mode, because blood groups are names rather than numbers — they cannot be added or ranked, so only the most common group can be quoted as typical. (c) The median, because finishing positions can be placed in order but the gaps between them are not equal, so a middle position is meaningful while a mean position is not."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The level of measurement fixes what arithmetic is legal on the data. Labels support only counting, so the mode is all that survives. Ranks support ordering, so the median works. Only interval and ratio data support addition, and only ratio data has a true zero that makes multiplying and dividing meaningful."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "calling_finishing_position_interval_beca",
+      "wrongValue": "incorrect_1",
+      "misconception": "Calling finishing position 'interval' because it uses numbers — those numbers are ranks, not measurements.",
+      "correctiveNote": "Avoid this: Calling finishing position 'interval' because it uses numbers — those numbers are ranks, not measurements."
+    },
+    {
+      "key": "calling_temperature_in_c_ratio_0_c_is_a_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Calling temperature in °C 'ratio' — 0 °C is a chosen point, not an absence of heat.",
+      "correctiveNote": "Avoid this: Calling temperature in °C 'ratio' — 0 °C is a chosen point, not an absence of heat."
+    },
+    {
+      "key": "giving_the_mean_as_the_average_for_blood",
+      "wrongValue": "incorrect_3",
+      "misconception": "Giving the mean as the average for blood group when blood groups cannot be added.",
+      "correctiveNote": "Avoid this: Giving the mean as the average for blood group when blood groups cannot be added."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Before naming a level of measurement, ask 'does 0 mean none?' — that single question separates interval from ratio."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Bloo",
+    "displayValue": "Bloo",
+    "acceptedForms": [
+      "Bloo",
+      "Bloo"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "State the level of measurement for (i) the colour of a car and (ii) the mass of a parcel in kilograms."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "Nominal",
+      "displayValue": "Nominal",
+      "acceptedForms": [
+        "Nominal",
+        "Nominal"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M3-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "dd7d9172-60a1-4497-ae95-48bd46ef7cb5",
+      "code": "M3-1.1",
+      "label": "Levels of measurement"
+    },
+    {
+      "objectiveId": "cdc5d882-ddc8-4231-aa7b-5019b9659a36",
+      "code": "M3-1.1",
+      "label": "Nominal, ordinal, interval and ratio data"
+    },
+    {
+      "objectiveId": "b77cc7be-f51d-4102-ac39-f2812d2c2337",
+      "code": "M3-1.1",
+      "label": "Choosing an appropriate average"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 2,
+    "pageRef": "p76",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Bloo",
+        "displayValue": "Bloo",
+        "acceptedForms": [
+          "Bloo",
+          "Bloo"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Themode,becausebloo",
+        "displayValue": "The mode, because bloo",
+        "acceptedForms": [
+          "The mode, because bloo",
+          "Themode,becausebloo"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

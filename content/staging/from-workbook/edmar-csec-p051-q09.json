@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p051-q09",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Simplify (3x + 1)/2 + (4x + 2)/5 as a single fraction."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The denominators are plain numbers, so the lowest common denominator is just their LCM."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p051_q09.jpg",
+      "altText": "Source visual for edmar-csec-p051-q09 from workbook page 51."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Find the lowest common denominator of 2 and 5.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "LCM of 2 and 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: 10"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Rewrite each fraction over 10.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(3x + 1) is multiplied by 5; (4x + 2) is multiplied by 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: [5(3x + 1) + 2(4x + 2)]/10"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Expand the numerator.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "15x + 5 and 8x + 4"
+        },
+        {
+          "type": "text",
+          "value": "Result: 15x + 5 + 8x + 4"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Collect like terms.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "15x + 8x = 23x and 5 + 4 = 9"
+        },
+        {
+          "type": "text",
+          "value": "Result: 23x + 9"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Use 10 as the common denominator, multiply each numerator by the matching factor, then collect like terms."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(23x + 9)/10"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Multiplying a fraction's top and bottom by the same number leaves its value unchanged, so both fractions can be moved onto the denominator 10 without altering the sum. Once the pieces are the same size, only the numerators are added. Because the numerators are whole brackets, each must be multiplied through completely before terms are collected."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "multiplying_only_the_first_term_of_a_bra",
+      "wrongValue": "incorrect_1",
+      "misconception": "Multiplying only the first term of a bracket, for example writing 5(3x + 1) as 15x + 1.",
+      "correctiveNote": "Avoid this: Multiplying only the first term of a bracket, for example writing 5(3x + 1) as 15x + 1."
+    },
+    {
+      "key": "using_7_as_the_common_denominator_by_add",
+      "wrongValue": "incorrect_2",
+      "misconception": "Using 7 as the common denominator by adding 2 and 5.",
+      "correctiveNote": "Avoid this: Using 7 as the common denominator by adding 2 and 5."
+    },
+    {
+      "key": "cancelling_part_of_23x_9_with_the_10_und",
+      "wrongValue": "incorrect_3",
+      "misconception": "Cancelling part of 23x + 9 with the 10 underneath.",
+      "correctiveNote": "Avoid this: Cancelling part of 23x + 9 with the 10 underneath."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Write the multiplier outside a bracket first — [5(3x + 1) + 2(4x + 2)]/10 — and only then expand. Setting it out this way makes the expansion mechanical instead of guesswork."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "(23x+9)/10",
+    "displayValue": "(23x + 9)/10",
+    "acceptedForms": [
+      "(23x + 9)/10",
+      "(23x+9)/10"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Simplify (2x + 1)/3 + (x + 4)/4 as a single fraction."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "[4(2x+1)+3(x+4)]/12=(11x+16)/12.",
+      "displayValue": "[4(2x + 1) + 3(x + 4)]/12 = (11x + 16)/12.",
+      "acceptedForms": [
+        "[4(2x + 1) + 3(x + 4)]/12 = (11x + 16)/12.",
+        "[4(2x+1)+3(x+4)]/12=(11x+16)/12."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "81190cb1-231b-4684-ab06-62dd0e0071ce",
+      "code": "M1-4.1",
+      "label": "Addition of algebraic fractions"
+    },
+    {
+      "objectiveId": "579a9dbc-b38a-4a9d-adf8-ef309cda2d43",
+      "code": "M1-4.1",
+      "label": "Lowest common multiple"
+    },
+    {
+      "objectiveId": "d8ddb266-62e3-47dc-acf3-33d93ca64acd",
+      "code": "M1-4.1",
+      "label": "Expanding brackets"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 9,
+    "pageRef": "p51",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

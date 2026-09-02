@@ -1,0 +1,206 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p156-q12",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Using a ruler, a pencil and a pair of compasses, construct accurately the square EFGH with EF = 6 cm, showing all construction lines and curves. (i) Measure and state, in centimetres, the length of the diagonal FH."
+    },
+    {
+      "type": "text",
+      "value": "Think first: A square is just a 90° construction repeated, so the whole figure follows from one perpendicular raised at E."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p156_q12.jpg",
+      "altText": "Source visual for edmar-csec-p156-q12 from workbook page 156."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Draw a base line and mark EF = 6 cm on it with the ruler.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: EF = 6 cm"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Construct a perpendicular to EF at E.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "With centre E draw arcs cutting the line each side, then from those two points draw equal arcs that cross above E; join the crossing point to E"
+        },
+        {
+          "type": "text",
+          "value": "Result: a 90° line through E"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Mark H on that perpendicular with EH = 6 cm.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Compasses set to 6 cm, centre E"
+        },
+        {
+          "type": "text",
+          "value": "Result: EH = 6 cm"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Locate G with two arcs of radius 6 cm.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Centre F and centre H, radius 6 cm each; they cross at G"
+        },
+        {
+          "type": "text",
+          "value": "Result: G fixed"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Join FG and HG to complete EFGH, then draw the diagonal FH and measure it.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Check against 6√2 = 8.485…"
+        },
+        {
+          "type": "text",
+          "value": "Result: FH ≈ 8.5 cm"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Draw EF = 6 cm, construct a perpendicular at E, mark H 6 cm up it, then use arcs of radius 6 cm from F and H to fix G; finally join FH and measure it."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) FH ≈ 8.5 cm (the exact value is 6√2 = 8.49 cm)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Every angle of a square is a right angle and every side is equal, so a single constructed perpendicular plus two equal arcs pins the whole shape. The diagonal then closes a right-angled isosceles triangle with two sides of 6 cm, so Pythagoras gives FH = √(6² + 6²) = 6√2 — which is exactly what a correct drawing must measure."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "using_a_protractor_for_the_right_angle_w",
+      "wrongValue": "incorrect_1",
+      "misconception": "Using a protractor for the right angle when the question demands compasses.",
+      "correctiveNote": "Avoid this: Using a protractor for the right angle when the question demands compasses."
+    },
+    {
+      "key": "rubbing_out_the_construction_arcs_marks_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Rubbing out the construction arcs — marks are given for them.",
+      "correctiveNote": "Avoid this: Rubbing out the construction arcs — marks are given for them."
+    },
+    {
+      "key": "measuring_the_side_instead_of_the_diagon",
+      "wrongValue": "incorrect_3",
+      "misconception": "Measuring the side instead of the diagonal FH.",
+      "correctiveNote": "Avoid this: Measuring the side instead of the diagonal FH."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Compute the expected answer with Pythagoras before you measure; if your ruler reading is more than about 0.2 cm away from it, your construction has drifted."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "FH≈8.5cm(theexactvalueis6√2=8.49cm)",
+    "displayValue": "FH ≈ 8.5 cm (the exact value is 6√2 = 8.49 cm)",
+    "acceptedForms": [
+      "FH ≈ 8.5 cm (the exact value is 6√2 = 8.49 cm)",
+      "FH≈8.5cm(theexactvalueis6√2=8.49cm)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A square has side 5 cm. What length should its diagonal measure?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "5",
+      "displayValue": "5",
+      "acceptedForms": [
+        "5",
+        "5"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "8b937233-ab57-4bc2-a5d5-bda363b070f8",
+      "code": "M1-1.1",
+      "label": "Constructing a perpendicular at a point on a line"
+    },
+    {
+      "objectiveId": "dc40d39c-b12a-46e0-a13a-bb3de961a18e",
+      "code": "M1-1.1",
+      "label": "Properties of a square"
+    },
+    {
+      "objectiveId": "9a694e39-fe4a-4468-a9b6-f1f0d0ac4cf8",
+      "code": "M1-1.1",
+      "label": "Pythagoras' theorem as a check"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 12,
+    "pageRef": "p156",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

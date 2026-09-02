@@ -1,0 +1,225 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p081-q08",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The dot diagram represents the ordered data set 4, 6, 6, 7, 8, 9, 10, 10, 11, 12, 13, 18. (a) Determine the median. (b) Determine the lower quartile and the upper quartile. (c) Calculate the interquartile range. (d) Calculate the semi-interquartile range. (e) Calculate the range. (f) Identify the extreme value and state whether the mean or the median would better represent a typical value, giving a reason."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The data are already in order, so every answer here comes from counting positions."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p081_q08.jpg",
+      "altText": "Source visual for edmar-csec-p081-q08 from workbook page 81."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Average the 6th and 7th values.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(9 + 10) ÷ 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: Median = 9.5"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Take the middle of the lower six values 4, 6, 6, 7, 8, 9.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(6 + 7) ÷ 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: Q1 = 6.5"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Take the middle of the upper six values 10, 10, 11, 12, 13, 18.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(11 + 12) ÷ 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: Q3 = 11.5"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Subtract the quartiles, then halve the result.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "11.5 − 6.5 = 5, then 5 ÷ 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: IQR = 5 and semi-interquartile range = 2.5"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Subtract the smallest value from the largest.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "18 − 4"
+        },
+        {
+          "type": "text",
+          "value": "Result: Range = 14"
+        }
+      ]
+    },
+    {
+      "stepNo": 6,
+      "instruction": "Compare the effect of the extreme value on the two averages.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "18 lies well above the rest; leaving it out drops the mean from 9.5 to 96 ÷ 11 = 8.7, while the median moves only from 9.5 to 9"
+        },
+        {
+          "type": "text",
+          "value": "Result: The median is the better representative"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "With 12 values, split the list into two halves of six: the middle of the whole list gives the median and the middle of each half gives a quartile. The measures of spread then follow by subtraction."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) Median = 9.5  (b) Q1 = 6.5 and Q3 = 11.5  (c) IQR = 5  (d) Semi-interquartile range = 2.5  (e) Range = 14  (f) The extreme value is 18; the median better represents a typical value because it depends only on position and is barely disturbed by the outlier, while the mean is pulled upwards by it."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The median and the quartiles are positional measures: they depend on where a value sits in the order, not on how large it is, which makes them resistant to a single unusually large or small reading. The range is the opposite — it is built from the two extremes, so it is the measure most distorted by an outlier."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "taking_the_6th_value_alone_as_the_median",
+      "wrongValue": "incorrect_1",
+      "misconception": "Taking the 6th value alone as the median instead of averaging the 6th and 7th.",
+      "correctiveNote": "Avoid this: Taking the 6th value alone as the median instead of averaging the 6th and 7th."
+    },
+    {
+      "key": "including_the_median_position_inside_a_h",
+      "wrongValue": "incorrect_2",
+      "misconception": "Including the median position inside a half when finding the quartiles of an even-sized set.",
+      "correctiveNote": "Avoid this: Including the median position inside a half when finding the quartiles of an even-sized set."
+    },
+    {
+      "key": "confusing_the_interquartile_range_with_t",
+      "wrongValue": "incorrect_3",
+      "misconception": "Confusing the interquartile range with the semi-interquartile range — the second is half of the first.",
+      "correctiveNote": "Avoid this: Confusing the interquartile range with the semi-interquartile range — the second is half of the first."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Number the positions above the ordered values before you start; picking quartiles by eye is where most marks are lost."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Median=9.5",
+    "displayValue": "Median = 9.5",
+    "acceptedForms": [
+      "Median = 9.5",
+      "Median=9.5"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "For the ordered set 2, 4, 5, 7, 9, 10, 12, 15, find the lower and upper quartiles."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "Q1=4.5andQ3=11",
+      "displayValue": "Q1 = 4.5 and Q3 = 11",
+      "acceptedForms": [
+        "Q1 = 4.5 and Q3 = 11",
+        "Q1=4.5andQ3=11"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M3-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "d39d8995-88b1-41cb-ab14-d16b708bd0c1",
+      "code": "M3-1.1",
+      "label": "Median"
+    },
+    {
+      "objectiveId": "144ab395-eafd-490b-a4d6-dee940ac803d",
+      "code": "M3-1.1",
+      "label": "Quartiles"
+    },
+    {
+      "objectiveId": "1ac00a34-9c4c-4c6c-a33d-255d1ff3566b",
+      "code": "M3-1.1",
+      "label": "Interquartile and semi-interquartile range"
+    },
+    {
+      "objectiveId": "63563139-b3a0-460b-ab7d-16ba992945f8",
+      "code": "M3-1.1",
+      "label": "Range"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 8,
+    "pageRef": "p81",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

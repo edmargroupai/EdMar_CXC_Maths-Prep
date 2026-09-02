@@ -1,0 +1,153 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p059-q01",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the inequality 3x − 7 > 2x + 5."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Treat it like an equation: gather the x terms on one side and the numbers on the other."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p059_q01.jpg",
+      "altText": "Source visual for edmar-csec-p059-q01 from workbook page 59."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Subtract 2x from both sides.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3x − 2x − 7 > 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: x − 7 > 5"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Add 7 to both sides.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x > 5 + 7"
+        },
+        {
+          "type": "text",
+          "value": "Result: x > 12"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Subtract 2x from both sides, then add 7 to both sides."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x > 12"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Adding or subtracting the same quantity from both sides never disturbs an inequality, so the > sign is carried through unchanged. The answer is a range, not a single number: every value greater than 12 satisfies the original statement, and 12 itself does not."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "turning_the_inequality_into_an_equals_si",
+      "wrongValue": "incorrect_1",
+      "misconception": "Turning the inequality into an equals sign and giving x = 12.",
+      "correctiveNote": "Avoid this: Turning the inequality into an equals sign and giving x = 12."
+    },
+    {
+      "key": "reversing_the_sign_for_no_reason_writing",
+      "wrongValue": "incorrect_2",
+      "misconception": "Reversing the sign for no reason, writing x < 12.",
+      "correctiveNote": "Avoid this: Reversing the sign for no reason, writing x < 12."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Only reverse the inequality sign when you multiply or divide by a negative number - adding and subtracting never flip it."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": ">12",
+    "displayValue": "> 12",
+    "acceptedForms": [
+      "> 12",
+      ">12"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve 5x − 2 > 4x + 3."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": ">5",
+      "displayValue": "> 5",
+      "acceptedForms": [
+        "> 5",
+        ">5"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "a0547b0b-c3e2-4036-a30f-528906ab6f98",
+      "code": "M1-4.1",
+      "label": "Linear inequalities"
+    },
+    {
+      "objectiveId": "f78c064b-a04c-476c-aaec-f51f65db2fc5",
+      "code": "M1-4.1",
+      "label": "Collecting like terms"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 1,
+    "pageRef": "p59",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

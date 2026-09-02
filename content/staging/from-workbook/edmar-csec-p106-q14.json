@@ -1,0 +1,215 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p106-q14",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The length of a rectangle is (2x + 1) cm and its width is (x − 2) cm. The area is 45 cm². Calculate the value(s) of x."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Form the area equation first; only afterwards worry about whether the roots make geometric sense."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p106_q14.jpg",
+      "altText": "Source visual for edmar-csec-p106-q14 from workbook page 106."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write the area as a product.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "length × width = 45"
+        },
+        {
+          "type": "text",
+          "value": "Result: (2x + 1)(x − 2) = 45"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Expand the brackets.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2x² − 4x + x − 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2x² − 3x − 2 = 45"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Rearrange into standard form.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "−2 − 45 = −47"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2x² − 3x − 47 = 0"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Apply the quadratic formula with a = 2, b = −3, c = −47.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "b² − 4ac = 9 + 376 = 385, and √385 ≈ 19.62"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = (3 ± √385) / 4"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Evaluate and reject the invalid root.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x ≈ 5.66 or x ≈ −4.16; the negative root makes x − 2 negative"
+        },
+        {
+          "type": "text",
+          "value": "Result: x ≈ 5.66 (2 d.p.)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Set (2x + 1)(x − 2) = 45, expand and rearrange to standard form, solve with the formula, then reject the root that gives a negative width."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = (3 + √385)/4 ≈ 5.66 (2 d.p.). The root x ≈ −4.16 is rejected because it gives a negative width."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The equation encodes the whole situation: the product of the two side expressions must equal the given area. Because the discriminant 385 is not a perfect square, the sides are not whole numbers — that is perfectly acceptable, real rectangles need not have integer sides. The rejection step is what turns two algebraic roots into one physical answer."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "expanding_2x_1_x_2_as_2x_2_and_losing_th",
+      "wrongValue": "incorrect_1",
+      "misconception": "Expanding (2x + 1)(x − 2) as 2x² − 2 and losing the middle term.",
+      "correctiveNote": "Avoid this: Expanding (2x + 1)(x − 2) as 2x² − 2 and losing the middle term."
+    },
+    {
+      "key": "subtracting_45_from_only_the_constant_on",
+      "wrongValue": "incorrect_2",
+      "misconception": "Subtracting 45 from only the constant on the left and forgetting it changes the equation's constant.",
+      "correctiveNote": "Avoid this: Subtracting 45 from only the constant on the left and forgetting it changes the equation's constant."
+    },
+    {
+      "key": "reporting_both_roots_without_checking_th",
+      "wrongValue": "incorrect_3",
+      "misconception": "Reporting both roots without checking the width.",
+      "correctiveNote": "Avoid this: Reporting both roots without checking the width."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Once you have x, substitute it back to state the actual side lengths — it confirms both roots and the rejection at once."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=(3+√385)/4≈5.66(2d.p.).Therootx≈−4.16isrejectedbecauseitgivesanegativewidth.",
+    "displayValue": "= (3 + √385)/4 ≈ 5.66 (2 d.p.). The root x ≈ −4.16 is rejected because it gives a negative width.",
+    "acceptedForms": [
+      "= (3 + √385)/4 ≈ 5.66 (2 d.p.). The root x ≈ −4.16 is rejected because it gives a negative width.",
+      "=(3+√385)/4≈5.66(2d.p.).Therootx≈−4.16isrejectedbecauseitgivesanegativewidth."
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A rectangle has length (2x − 1) cm and width x cm with area 15 cm². Find x."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "2",
+      "displayValue": "2",
+      "acceptedForms": [
+        "2",
+        "2"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-6.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "c6252ddd-8c56-40f2-aa69-9eeae9c8f5b7",
+      "code": "M1-6.1",
+      "label": "Area of a rectangle"
+    },
+    {
+      "objectiveId": "781ce1c8-558a-4f2b-addb-cce10467aaa5",
+      "code": "M1-6.1",
+      "label": "Expanding double brackets"
+    },
+    {
+      "objectiveId": "fbf5627b-575b-4675-a06a-6e07e96c6c3b",
+      "code": "M1-6.1",
+      "label": "Quadratic formula"
+    },
+    {
+      "objectiveId": "e9b44ff3-da69-437c-a03e-fb0f345441a1",
+      "code": "M1-6.1",
+      "label": "Rejecting invalid solutions"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 14,
+    "pageRef": "p106",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

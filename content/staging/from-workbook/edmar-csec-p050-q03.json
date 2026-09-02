@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p050-q03",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Simplify 9/(x + 5) − 4/(x − 2) as a single fraction."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Two fractions with different denominators must be rewritten over one common denominator before they can be subtracted."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p050_q03.jpg",
+      "altText": "Source visual for edmar-csec-p050-q03 from workbook page 50."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write the common denominator as the product of the two denominators.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "they share no common factor"
+        },
+        {
+          "type": "text",
+          "value": "Result: (x + 5)(x − 2)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Rewrite each fraction over that denominator.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "9 is multiplied by (x − 2); 4 is multiplied by (x + 5)"
+        },
+        {
+          "type": "text",
+          "value": "Result: [9(x − 2) − 4(x + 5)]/[(x + 5)(x − 2)]"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Expand both brackets in the numerator.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "9x − 18 and 4x + 20; the whole 4(x + 5) is subtracted"
+        },
+        {
+          "type": "text",
+          "value": "Result: (9x − 18 − 4x − 20)"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Collect like terms.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "9x − 4x = 5x and −18 − 20 = −38"
+        },
+        {
+          "type": "text",
+          "value": "Result: 5x − 38"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Use (x + 5)(x − 2) as the common denominator, adjust each numerator accordingly, then expand and collect like terms."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(5x − 38)/[(x + 5)(x − 2)]"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Fractions can only be combined when they measure the same sized pieces, and multiplying each fraction by a well-chosen form of 1 changes its appearance without changing its value. Here 9/(x + 5) becomes 9(x − 2)/[(x + 5)(x − 2)], which is the same number written over the shared denominator. Once both pieces are the same size, subtraction acts on the numerators alone."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "subtracting_only_the_first_term_of_the_s",
+      "wrongValue": "incorrect_1",
+      "misconception": "Subtracting only the first term of the second numerator, giving 9x − 18 − 4x + 20.",
+      "correctiveNote": "Avoid this: Subtracting only the first term of the second numerator, giving 9x − 18 − 4x + 20."
+    },
+    {
+      "key": "adding_the_denominators_instead_of_multi",
+      "wrongValue": "incorrect_2",
+      "misconception": "Adding the denominators instead of multiplying them.",
+      "correctiveNote": "Avoid this: Adding the denominators instead of multiplying them."
+    },
+    {
+      "key": "expanding_the_denominator_unnecessarily_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Expanding the denominator unnecessarily, which makes the answer harder to read and to check.",
+      "correctiveNote": "Avoid this: Expanding the denominator unnecessarily, which makes the answer harder to read and to check."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Put the second numerator in brackets before you subtract. Writing −(4x + 20) rather than −4x + 20 stops the most common sign slip in this whole topic."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "(5x−38)/[(x+5)(x−2)]",
+    "displayValue": "(5x − 38)/[(x + 5)(x − 2)]",
+    "acceptedForms": [
+      "(5x − 38)/[(x + 5)(x − 2)]",
+      "(5x−38)/[(x+5)(x−2)]"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Simplify 5/(x + 1) − 2/(x − 3) as a single fraction."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "[5(x−3)−2(x+1)]/[(x+1)(x−3)]=(3x−17)/[(x+1)(x−3)].",
+      "displayValue": "[5(x − 3) − 2(x + 1)]/[(x + 1)(x − 3)] = (3x − 17)/[(x + 1)(x − 3)].",
+      "acceptedForms": [
+        "[5(x − 3) − 2(x + 1)]/[(x + 1)(x − 3)] = (3x − 17)/[(x + 1)(x − 3)].",
+        "[5(x−3)−2(x+1)]/[(x+1)(x−3)]=(3x−17)/[(x+1)(x−3)]."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "5a8c7e44-cda5-47ea-a04f-835abae0d503",
+      "code": "M1-4.1",
+      "label": "Addition and subtraction of algebraic fractions"
+    },
+    {
+      "objectiveId": "e879eb62-0a44-42d1-af35-87fb74e22d48",
+      "code": "M1-4.1",
+      "label": "Lowest common denominator"
+    },
+    {
+      "objectiveId": "c5fa028a-dfb2-4c07-a7de-22f37633a1ce",
+      "code": "M1-4.1",
+      "label": "Expanding brackets"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 3,
+    "pageRef": "p50",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

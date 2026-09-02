@@ -1,0 +1,206 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p097-q01",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the simultaneous equations 2x + y = 3 and 5x − 2y = 12."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The y coefficients are 1 and −2, so doubling the first equation lines them up for elimination."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p097_q01.jpg",
+      "altText": "Source visual for edmar-csec-p097-q01 from workbook page 97."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply the first equation by 2 to match the y coefficients.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2 × (2x + y = 3)"
+        },
+        {
+          "type": "text",
+          "value": "Result: 4x + 2y = 6"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Add this to the second equation so that +2y and −2y cancel.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(4x + 2y) + (5x − 2y) = 6 + 12"
+        },
+        {
+          "type": "text",
+          "value": "Result: 9x = 18"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Divide to find x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "18 ÷ 9"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 2"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Substitute x = 2 into the simpler original equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2(2) + y = 3, so 4 + y = 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = −1"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Check in the equation you did not use.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5(2) − 2(−1) = 10 + 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: 12 ✓"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Multiply the first equation by 2 so the y terms cancel when the equations are added, solve for x, then substitute back."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = 2, y = −1"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Two linear equations describe two straight lines, and the solution is the single point where they cross. Adding a multiple of one equation to the other produces a new equation with the same solution but only one unknown, which can be solved directly."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "adding_when_the_signs_are_the_same_so_no",
+      "wrongValue": "incorrect_1",
+      "misconception": "Adding when the signs are the same, so nothing cancels.",
+      "correctiveNote": "Avoid this: Adding when the signs are the same, so nothing cancels."
+    },
+    {
+      "key": "multiplying_only_the_left_hand_side_of_a",
+      "wrongValue": "incorrect_2",
+      "misconception": "Multiplying only the left-hand side of an equation by 2.",
+      "correctiveNote": "Avoid this: Multiplying only the left-hand side of an equation by 2."
+    },
+    {
+      "key": "finding_x_correctly_then_substituting_it",
+      "wrongValue": "incorrect_3",
+      "misconception": "Finding x correctly then substituting it into a mis-copied equation.",
+      "correctiveNote": "Avoid this: Finding x correctly then substituting it into a mis-copied equation."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Always substitute your answers into the equation you did not use for the substitution — it is a free, complete check."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=2,y=−1",
+    "displayValue": "= 2, y = −1",
+    "acceptedForms": [
+      "= 2, y = −1",
+      "=2,y=−1"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve 3x + y = 7 and 2x − y = 3."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=2,y=1",
+      "displayValue": "= 2, y = 1",
+      "acceptedForms": [
+        "= 2, y = 1",
+        "=2,y=1"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "74f4edfc-1ba0-45c0-a7e5-163fb337a453",
+      "code": "M1-5.1",
+      "label": "Simultaneous linear equations"
+    },
+    {
+      "objectiveId": "e9a18d83-77b7-4a04-a6f0-cdd4f25ca6f5",
+      "code": "M1-5.1",
+      "label": "Elimination method"
+    },
+    {
+      "objectiveId": "22773ad7-eeab-4b7e-a9b2-0160bf271eb3",
+      "code": "M1-5.1",
+      "label": "Substitution to find the second unknown"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 1,
+    "pageRef": "p97",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

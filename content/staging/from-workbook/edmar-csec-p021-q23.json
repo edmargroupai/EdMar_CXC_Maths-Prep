@@ -1,0 +1,173 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p021-q23",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The exchange rate is J$150 = US$1. Calculate how many US dollars are received when exchanging J$75 000."
+    },
+    {
+      "type": "text",
+      "value": "Think first: You are converting towards the stronger currency, so the answer must be smaller than 75 000."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p021_q23.jpg",
+      "altText": "Source visual for edmar-csec-p021-q23 from workbook page 21."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Read the rate as a unit conversion.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "J$150 = US$1"
+        },
+        {
+          "type": "text",
+          "value": "Result: US$1 per J$150"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Divide the Jamaican amount by 150.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "75 000 / 150"
+        },
+        {
+          "type": "text",
+          "value": "Result: US$500"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Check by converting back.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "500 x 150"
+        },
+        {
+          "type": "text",
+          "value": "Result: J$75 000"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Since J$150 buys US$1, divide the Jamaican dollar amount by 150."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "US$500 is received."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "An exchange rate is a unit rate telling you how much of one currency buys a single unit of the other. Moving towards the stronger currency means dividing and moving back means multiplying, which is why the reverse conversion reproduces the original amount."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "multiplying_by_150_instead_of_dividing",
+      "wrongValue": "incorrect_1",
+      "misconception": "Multiplying by 150 instead of dividing.",
+      "correctiveNote": "Avoid this: Multiplying by 150 instead of dividing."
+    },
+    {
+      "key": "setting_the_rate_up_upside_down_as_us_15",
+      "wrongValue": "incorrect_2",
+      "misconception": "Setting the rate up upside down as US$150 = J$1.",
+      "correctiveNote": "Avoid this: Setting the rate up upside down as US$150 = J$1."
+    },
+    {
+      "key": "not_checking_that_the_answer_is_smaller_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Not checking that the answer is smaller than the starting amount.",
+      "correctiveNote": "Avoid this: Not checking that the answer is smaller than the starting amount."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Before calculating, decide whether the answer should be bigger or smaller than the number you started with. That one sentence tells you whether to multiply or divide."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "US$500isreceived.",
+    "displayValue": "US$500 is received.",
+    "acceptedForms": [
+      "US$500 is received.",
+      "US$500isreceived."
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "The rate is J$160 = US$1. How many US dollars are received for J$48 000?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "US$300",
+      "displayValue": "US$300",
+      "acceptedForms": [
+        "US$300",
+        "US$300"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-3.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "b1553d9f-6f0b-44c0-a1a9-74f9140c2397",
+      "code": "M1-3.1",
+      "label": "Currency exchange"
+    },
+    {
+      "objectiveId": "c4ffe7ea-c2c8-4cf1-a71b-3773feafed46",
+      "code": "M1-3.1",
+      "label": "Rates and unit conversion"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 23,
+    "pageRef": "p21",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

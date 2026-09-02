@@ -1,0 +1,200 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p101-q06",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Rewrite the quadratic expression 3x² − 12x + 7 by completing the square, in the form a(x + h)² + k."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The coefficient of x² is not 1, so factor the 3 out of the x-terms before you complete the square."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p101_q06.jpg",
+      "altText": "Source visual for edmar-csec-p101-q06 from workbook page 101."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Factor 3 out of the terms containing x, leaving the constant outside.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3x² − 12x + 7 = 3(x² − 4x) + 7"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3(x² − 4x) + 7"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Complete the square inside the bracket by halving the coefficient of x and squaring it.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "half of −4 is −2, and (−2)² = 4, so x² − 4x = (x − 2)² − 4"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3[(x − 2)² − 4] + 7"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Multiply the 3 back through the bracket.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3(x − 2)² − 12 + 7"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3(x − 2)² − 12 + 7"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Combine the constants.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "−12 + 7 = −5"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3(x − 2)² − 5"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Take 3 out of the first two terms, complete the square inside the bracket, then multiply back out and tidy the constant."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "3x² − 12x + 7 = 3(x − 2)² − 5"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Completing the square rebuilds the quadratic around a single squared bracket, which is only possible when the x² coefficient inside is 1. Factoring the 3 out first creates that situation; multiplying it back afterwards scales the −4 into −12, which is why the constant changes. The identity is exact, so expanding 3(x − 2)² − 5 returns the original expression."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "forgetting_to_multiply_the_subtracted_sq",
+      "wrongValue": "incorrect_1",
+      "misconception": "Forgetting to multiply the subtracted square (−4) by the factor 3 when expanding the bracket back out.",
+      "correctiveNote": "Avoid this: Forgetting to multiply the subtracted square (−4) by the factor 3 when expanding the bracket back out."
+    },
+    {
+      "key": "factoring_3_out_of_the_constant_term_as_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Factoring 3 out of the constant term as well, which is not needed and leads to fractions.",
+      "correctiveNote": "Avoid this: Factoring 3 out of the constant term as well, which is not needed and leads to fractions."
+    },
+    {
+      "key": "halving_12_instead_of_4_the_halving_is_d",
+      "wrongValue": "incorrect_3",
+      "misconception": "Halving −12 instead of −4 — the halving is done after the 3 is taken out.",
+      "correctiveNote": "Avoid this: Halving −12 instead of −4 — the halving is done after the 3 is taken out."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "After completing the square, expand your answer mentally to check it returns the original expression — it takes ten seconds and catches sign slips."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "3",
+    "displayValue": "3",
+    "acceptedForms": [
+      "3",
+      "3"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Write 2x² − 8x + 3 in the form a(x + h)² + k."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "2",
+      "displayValue": "2",
+      "acceptedForms": [
+        "2",
+        "2"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "85b20934-09b8-4b22-a60b-499163aac2e5",
+      "code": "M1-5.1",
+      "label": "Completing the square"
+    },
+    {
+      "objectiveId": "012d26fc-b73b-416a-a5ce-68f99f4b90b1",
+      "code": "M1-5.1",
+      "label": "Factorising out a common coefficient"
+    },
+    {
+      "objectiveId": "37efc86e-bd4f-4bf1-a1da-152d343f6197",
+      "code": "M1-5.1",
+      "label": "Perfect square trinomials"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 6,
+    "pageRef": "p101",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

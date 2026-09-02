@@ -1,0 +1,268 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p281-q04",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 6,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "O is the origin, E lies on OF with OE = 2EF, and M is the midpoint of EG. Given OG = c and OF = d, find in terms of c and d, in simplest form: (i) FG, (ii) EG, (iii) OM."
+    },
+    {
+      "type": "text",
+      "value": "Think first: OE = 2EF splits OF into three equal parts, so E is two-thirds of the way from O to F — write OE = (2/3)d before anything else."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p281_q04.jpg",
+      "altText": "Source visual for edmar-csec-p281-q04 from workbook page 281."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Use OE = 2EF to split OF into three equal parts.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "OE : EF = 2 : 1, so OE = (2/3)OF"
+        },
+        {
+          "type": "text",
+          "value": "Result: OE = (2/3)d"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Find FG by subtracting the position vectors of F and G.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "FG = OG − OF = c − d"
+        },
+        {
+          "type": "text",
+          "value": "Result: FG = c − d"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Find EG the same way, using the position vector of E.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "EG = OG − OE = c − (2/3)d"
+        },
+        {
+          "type": "text",
+          "value": "Result: EG = c − (2/3)d"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Reach M by adding half of EG to OE, since M is the midpoint of EG.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "OM = (2/3)d + (1/2)(c − (2/3)d) = (2/3)d + (1/2)c − (1/3)d"
+        },
+        {
+          "type": "text",
+          "value": "Result: OM = (1/2)c + (1/3)d"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Convert OE = 2EF into OE = (2/3)OF, then get FG and EG by subtracting position vectors, and reach M by going O → E → halfway along EG."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) FG = c − d  (ii) EG = c − (2/3)d  (iii) OM = (1/2)c + (1/3)d"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The condition OE = 2EF says OE is twice EF, so OF is cut into three equal pieces and E sits at the two-thirds mark; that turns a worded ratio into the vector (2/3)d. From there every vector between two points is 'position of finish minus position of start'. A midpoint is exactly halfway, so adding half of EG to the position vector of E lands precisely on M."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "reading_oe_2ef_as_oe_2of_and_writing_oe_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Reading OE = 2EF as OE = 2OF and writing OE = 2d.",
+      "correctiveNote": "Avoid this: Reading OE = 2EF as OE = 2OF and writing OE = 2d."
+    },
+    {
+      "key": "writing_fg_d_c_by_reversing_start_and_fi",
+      "wrongValue": "incorrect_2",
+      "misconception": "Writing FG = d − c by reversing start and finish.",
+      "correctiveNote": "Avoid this: Writing FG = d − c by reversing start and finish."
+    },
+    {
+      "key": "using_om_1_2_oe_og_but_substituting_of_f",
+      "wrongValue": "incorrect_3",
+      "misconception": "Using OM = (1/2)(OE + OG) but substituting OF for OE.",
+      "correctiveNote": "Avoid this: Using OM = (1/2)(OE + OG) but substituting OF for OE."
+    },
+    {
+      "key": "failing_to_collect_the_d_terms_2_3_d_1_3",
+      "wrongValue": "incorrect_4",
+      "misconception": "Failing to collect the d terms: (2/3)d − (1/3)d is (1/3)d, not (1/3)d subtracted.",
+      "correctiveNote": "Avoid this: Failing to collect the d terms: (2/3)d − (1/3)d is (1/3)d, not (1/3)d subtracted."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "The midpoint of PQ always has position vector (1/2)(OP + OQ) — check your route answer against that formula as a free verification."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "FG=",
+    "displayValue": "FG =",
+    "acceptedForms": [
+      "FG =",
+      "FG="
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "If OA = 6m and OB = 4n, find the position vector of the midpoint of AB."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(1/2)(6m+4n)=3m+2n",
+      "displayValue": "(1/2)(6m + 4n) = 3m + 2n",
+      "acceptedForms": [
+        "(1/2)(6m + 4n) = 3m + 2n",
+        "(1/2)(6m+4n)=3m+2n"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "b28c1c94-591b-4039-ab6c-3554d90dc64d",
+      "code": "M2-5.1",
+      "label": "Position vectors"
+    },
+    {
+      "objectiveId": "a0c255a9-e44f-4155-a707-0b528f26a358",
+      "code": "M2-5.1",
+      "label": "Dividing a line in a given ratio"
+    },
+    {
+      "objectiveId": "dab9a56f-bf18-4ea3-a7b1-3f41b2243162",
+      "code": "M2-5.1",
+      "label": "Midpoint of a line in vectors"
+    },
+    {
+      "objectiveId": "5ef682e2-df95-4b5e-af69-fe0d584a389d",
+      "code": "M2-5.1",
+      "label": "Vector addition and subtraction"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 4,
+    "pageRef": "p281",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a.i",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.i): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "FG=",
+        "displayValue": "FG =",
+        "acceptedForms": [
+          "FG =",
+          "FG="
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.ii",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.ii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "EG=",
+        "displayValue": "EG =",
+        "acceptedForms": [
+          "EG =",
+          "EG="
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.iii",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.iii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "OM=(1/2)",
+        "displayValue": "OM = (1/2)",
+        "acceptedForms": [
+          "OM = (1/2)",
+          "OM=(1/2)"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

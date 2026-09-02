@@ -1,0 +1,196 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p066-q02",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Factorise completely: 5a − 15."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The minus sign stays inside the bracket when the common factor is positive."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p066_q02.jpg",
+      "altText": "Source visual for edmar-csec-p066-q02 from workbook page 66."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Find the HCF of the two terms.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5a = 5 × a and 15 = 5 × 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: HCF = 5"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Divide each term by the HCF.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5a ÷ 5 = a and 15 ÷ 5 = 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: a and 3"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Write the HCF outside a bracket, keeping the subtraction.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: 5(a − 3)"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Check by expanding.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5 × a − 5 × 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: 5a − 15"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Take out the HCF of 5a and 15 and write the remaining terms in a bracket."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "5a − 15 = 5(a − 3)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Factorising is the reverse of expanding. Every term shares a highest common factor, and pulling it outside a bracket leaves behind exactly what each term must be multiplied by to get back to the original. Because multiplication distributes over addition, expanding the bracket returns the expression you started with, which is the check that the factorisation is correct."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "changing_the_minus_to_a_plus_inside_the_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Changing the minus to a plus inside the bracket.",
+      "correctiveNote": "Avoid this: Changing the minus to a plus inside the bracket."
+    },
+    {
+      "key": "writing_5_a_15_by_dividing_only_the_firs",
+      "wrongValue": "incorrect_2",
+      "misconception": "Writing 5(a − 15) by dividing only the first term.",
+      "correctiveNote": "Avoid this: Writing 5(a − 15) by dividing only the first term."
+    },
+    {
+      "key": "using_5_as_a_factor_of_a_as_well",
+      "wrongValue": "incorrect_3",
+      "misconception": "Using 5 as a factor of a as well.",
+      "correctiveNote": "Avoid this: Using 5 as a factor of a as well."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Copy the operation sign between the terms straight into the bracket; only the numbers and letters change."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "5",
+    "displayValue": "5",
+    "acceptedForms": [
+      "5",
+      "5"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Factorise completely: 7b − 21."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "7",
+      "displayValue": "7",
+      "acceptedForms": [
+        "7",
+        "7"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "187bf616-6daa-4188-ad9d-61e572a294ea",
+      "code": "M1-4.1",
+      "label": "Factorising"
+    },
+    {
+      "objectiveId": "bc937843-3b5c-4700-a7dc-f42c2347f638",
+      "code": "M1-4.1",
+      "label": "Highest common factor"
+    },
+    {
+      "objectiveId": "3ef98dbb-c0df-478c-a659-fcb51e24aebc",
+      "code": "M1-4.1",
+      "label": "The distributive law"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 2,
+    "pageRef": "p66",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

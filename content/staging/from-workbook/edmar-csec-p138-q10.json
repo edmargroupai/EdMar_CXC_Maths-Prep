@@ -1,0 +1,197 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p138-q10",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The graph represents 3x + y = 9 and x + y = 5. (a) State the solution of the simultaneous equations. (b) Use the graph to state the y-intercept of each line. (c) Calculate the gradient of each line."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Both lines are drawn and labelled, so read the crossing point and the intercepts, then count squares for the gradients."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p138_q10.jpg",
+      "altText": "Source visual for edmar-csec-p138-q10 from workbook page 138."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Read the point where the lines cross.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The lines meet 2 across and 3 up"
+        },
+        {
+          "type": "text",
+          "value": "Result: Solution x = 2, y = 3"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Check the solution in both equations.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3(2) + 3 = 9 ✓ and 2 + 3 = 5 ✓"
+        },
+        {
+          "type": "text",
+          "value": "Result: Solution verified"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Read the y-intercepts from the graph.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3x + y = 9 cuts the y-axis at 9; x + y = 5 cuts it at 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: y-intercepts 9 and 5"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Rearrange each equation into y = mx + c to read the gradients.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3x + y = 9 → y = -3x + 9;  x + y = 5 → y = -x + 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: Gradients -3 and -1"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Read the intersection for the solution, read where each line meets the y-axis, then rearrange each equation (or count rise over run) to get the gradients."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) x = 2, y = 3  (b) y-intercepts: 9 for 3x + y = 9 and 5 for x + y = 5  (c) Gradients: -3 for 3x + y = 9 and -1 for x + y = 5."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Once an equation is written as y = mx + c the graph is fully described: c is where it crosses the y-axis and m is how steeply it climbs or falls. Both lines here fall as x increases, so both gradients are negative, and the steeper fall of 3 units per step belongs to the equation with the coefficient 3. The crossing point is where the two descriptions agree."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "giving_the_gradients_as_3_and_1_and_losi",
+      "wrongValue": "incorrect_1",
+      "misconception": "Giving the gradients as 3 and 1 and losing the negative signs.",
+      "correctiveNote": "Avoid this: Giving the gradients as 3 and 1 and losing the negative signs."
+    },
+    {
+      "key": "reading_the_y_intercept_of_3x_y_9_as_3_t",
+      "wrongValue": "incorrect_2",
+      "misconception": "Reading the y-intercept of 3x + y = 9 as 3 (the x-intercept) instead of 9.",
+      "correctiveNote": "Avoid this: Reading the y-intercept of 3x + y = 9 as 3 (the x-intercept) instead of 9."
+    },
+    {
+      "key": "quoting_the_solution_as_3_2",
+      "wrongValue": "incorrect_3",
+      "misconception": "Quoting the solution as (3, 2).",
+      "correctiveNote": "Avoid this: Quoting the solution as (3, 2)."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "For an equation in the form ax + by = c, rearrange before you comment on gradient — the coefficient of x is not the gradient until y stands alone."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "x=2,y=3",
+    "displayValue": "x = 2, y = 3",
+    "acceptedForms": [
+      "x = 2, y = 3",
+      "x=2,y=3"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "State the gradient and y-intercept of 2x + y = 7."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "Gradient-2,y-intercept7.",
+      "displayValue": "Gradient -2, y-intercept 7.",
+      "acceptedForms": [
+        "Gradient -2, y-intercept 7.",
+        "Gradient-2,y-intercept7."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "008cf827-741b-4f36-a58e-7ca61f8adebb",
+      "code": "M1-5.1",
+      "label": "Graphical solution of simultaneous equations"
+    },
+    {
+      "objectiveId": "24022682-8263-453e-aa5d-bbf44be69c82",
+      "code": "M1-5.1",
+      "label": "y-intercept"
+    },
+    {
+      "objectiveId": "bfd7e249-1edc-46cf-af02-c794dbc30130",
+      "code": "M1-5.1",
+      "label": "Gradient of a straight line"
+    },
+    {
+      "objectiveId": "24683681-cf11-4103-a553-6366e3da519a",
+      "code": "M1-5.1",
+      "label": "y = mx + c"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 10,
+    "pageRef": "p138",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

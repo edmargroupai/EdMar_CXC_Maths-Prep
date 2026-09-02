@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p105-q09",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the quadratic equation x² + 6x − 4 = 0."
+    },
+    {
+      "type": "text",
+      "value": "Think first: No pair of whole numbers multiplies to −4 and adds to 6, so this one needs the formula or completing the square."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p105_q09.jpg",
+      "altText": "Source visual for edmar-csec-p105-q09 from workbook page 105."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write down a, b and c.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "comparing with ax² + bx + c = 0"
+        },
+        {
+          "type": "text",
+          "value": "Result: a = 1, b = 6, c = −4"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Evaluate the discriminant b² − 4ac.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "6² − 4(1)(−4) = 36 + 16"
+        },
+        {
+          "type": "text",
+          "value": "Result: 52"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Substitute into x = (−b ± √(b² − 4ac)) / 2a.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x = (−6 ± √52) / 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = (−6 ± 2√13) / 2"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Simplify by dividing through by 2 and evaluate.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "√13 ≈ 3.606"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = −3 ± √13, so x ≈ 0.61 or x ≈ −6.61"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Identify a, b and c, substitute into the quadratic formula, then simplify the surd and give decimal values."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = −3 + √13 ≈ 0.61 or x = −3 − √13 ≈ −6.61 (2 d.p.)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The quadratic formula is completing the square carried out once and for all on ax² + bx + c = 0, so it always works, factorisable or not. The discriminant 52 is positive but not a perfect square, which is precisely why no whole-number factorisation exists and the roots are irrational. Simplifying √52 to 2√13 lets the 2 cancel with the denominator, giving the neat exact form −3 ± √13."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "taking_c_as_4_and_getting_a_discriminant",
+      "wrongValue": "incorrect_1",
+      "misconception": "Taking c as +4 and getting a discriminant of 20.",
+      "correctiveNote": "Avoid this: Taking c as +4 and getting a discriminant of 20."
+    },
+    {
+      "key": "dividing_only_the_surd_by_2_and_leaving_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Dividing only the surd by 2 and leaving −6 undivided.",
+      "correctiveNote": "Avoid this: Dividing only the surd by 2 and leaving −6 undivided."
+    },
+    {
+      "key": "rounding_13_to_3_6_early_and_reporting_i",
+      "wrongValue": "incorrect_3",
+      "misconception": "Rounding √13 to 3.6 early and reporting inaccurate roots.",
+      "correctiveNote": "Avoid this: Rounding √13 to 3.6 early and reporting inaccurate roots."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Compute the discriminant on its own line first — it tells you straight away whether nice factors exist and guards against sign errors."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=−3+√13≈0.61",
+    "displayValue": "= −3 + √13 ≈ 0.61",
+    "acceptedForms": [
+      "= −3 + √13 ≈ 0.61",
+      "=−3+√13≈0.61"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve x² + 4x − 6 = 0, giving answers to 2 decimal places."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=−2±√10,sox≈1.16",
+      "displayValue": "= −2 ± √10, so x ≈ 1.16",
+      "acceptedForms": [
+        "= −2 ± √10, so x ≈ 1.16",
+        "=−2±√10,sox≈1.16"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-6.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "8c0a1b5d-5a52-4c86-af62-3971f4016179",
+      "code": "M1-6.1",
+      "label": "Quadratic formula"
+    },
+    {
+      "objectiveId": "2e64b640-ea30-4442-abb2-a7fc1e04a5fa",
+      "code": "M1-6.1",
+      "label": "Discriminant"
+    },
+    {
+      "objectiveId": "acea6afc-6e26-4c47-ada6-fe1298f110db",
+      "code": "M1-6.1",
+      "label": "Simplifying surds"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 9,
+    "pageRef": "p105",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

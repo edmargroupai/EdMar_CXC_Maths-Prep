@@ -1,0 +1,167 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p059-q03",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the inequality 2(3x − 1) < 10."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Clear the bracket first, then isolate x."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p059_q03.jpg",
+      "altText": "Source visual for edmar-csec-p059-q03 from workbook page 59."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Expand the bracket.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2 × 3x − 2 × 1"
+        },
+        {
+          "type": "text",
+          "value": "Result: 6x − 2 < 10"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Add 2 to both sides.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "6x < 10 + 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: 6x < 12"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Divide both sides by 6.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "6x/6 < 12/6"
+        },
+        {
+          "type": "text",
+          "value": "Result: x < 2"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Expand the bracket, add 2 to both sides, then divide by 6."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x < 2"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Expanding is safe here because the multiplier 2 is positive; multiplying an inequality by a positive number keeps its direction. You could also divide both sides by 2 first to get 3x − 1 < 5, which is quicker and reaches the same answer."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "multiplying_only_the_3x_by_2_giving_6x_1",
+      "wrongValue": "incorrect_1",
+      "misconception": "Multiplying only the 3x by 2, giving 6x − 1 < 10.",
+      "correctiveNote": "Avoid this: Multiplying only the 3x by 2, giving 6x − 1 < 10."
+    },
+    {
+      "key": "dividing_12_by_3_instead_of_6_giving_x_4",
+      "wrongValue": "incorrect_2",
+      "misconception": "Dividing 12 by 3 instead of 6, giving x < 4.",
+      "correctiveNote": "Avoid this: Dividing 12 by 3 instead of 6, giving x < 4."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Look for a common factor before expanding - dividing through can save a whole line of working."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "<2",
+    "displayValue": "< 2",
+    "acceptedForms": [
+      "< 2",
+      "<2"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve 3(2x − 4) < 6."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "<3",
+      "displayValue": "< 3",
+      "acceptedForms": [
+        "< 3",
+        "<3"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "2dfccb3c-3b32-4a61-a24e-f20cf09b33d5",
+      "code": "M1-4.1",
+      "label": "Linear inequalities"
+    },
+    {
+      "objectiveId": "6c2b0126-6a4b-42b8-af20-5aa617929288",
+      "code": "M1-4.1",
+      "label": "Expanding brackets"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 3,
+    "pageRef": "p59",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

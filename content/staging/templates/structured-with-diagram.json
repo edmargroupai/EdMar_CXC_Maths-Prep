@@ -1,0 +1,143 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "REPLACE_author-id",
+  "questionType": "structured",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 4,
+  "status": "draft",
+  "marks": 5,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The diagram shows REPLACE_context. Answer parts (a) and (b)."
+    },
+    {
+      "type": "asset",
+      "storagePath": "draft-assets/staging/REPLACE_author-id/figure-1.svg",
+      "altText": "REPLACE_Full accessible description of the geometric or statistical diagram."
+    }
+  ],
+  "assets": [
+    {
+      "role": "question_figure",
+      "storagePath": "draft-assets/staging/REPLACE_author-id/figure-1.svg",
+      "mimeType": "image/svg+xml",
+      "altText": "REPLACE_Same accessible description as in the stem.",
+      "widthPx": 400,
+      "heightPx": 300,
+      "requiresColour": true
+    }
+  ],
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        { "type": "text", "value": "(a) REPLACE_Read a value from the diagram." }
+      ],
+      "answerSpec": {
+        "answerType": "numeric_exact",
+        "canonicalValue": "8",
+        "displayValue": "8",
+        "acceptedForms": ["8"],
+        "tolerance": { "kind": "absolute", "value": 0 },
+        "normalisation": "numeric_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 2,
+      "marks": 3,
+      "stemBlocks": [
+        { "type": "text", "value": "(b) REPLACE_Use the diagram to calculate …" }
+      ],
+      "answerSpec": {
+        "answerType": "numeric_tolerance",
+        "canonicalValue": "25.0",
+        "displayValue": "25.0",
+        "acceptedForms": ["25", "25.0"],
+        "tolerance": { "kind": "absolute", "value": 0.5 },
+        "normalisation": "numeric_default"
+      }
+    }
+  ],
+  "solutionSteps": [
+    {
+      "partKey": "a",
+      "stepNo": 1,
+      "instruction": "Read from the diagram.",
+      "contentBlocks": [
+        { "type": "text", "value": "REPLACE_Identify the required measurement." }
+      ]
+    },
+    {
+      "partKey": "b",
+      "stepNo": 1,
+      "instruction": "Apply the formula.",
+      "contentBlocks": [
+        { "type": "math", "latex": "A = \\frac{1}{2} \\times b \\times h", "style": "display" }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    { "type": "text", "value": "REPLACE_Mark known lengths on the diagram before part (b)." }
+  ],
+  "finalAnswerBlocks": [
+    { "type": "text", "value": "(a) 8 units, (b) 25.0 square units" }
+  ],
+  "whyThisWorks": [
+    { "type": "text", "value": "REPLACE_Link diagram measurements to the calculation." }
+  ],
+  "commonErrors": [
+    {
+      "key": "wrong_scale",
+      "partKey": "a",
+      "wrongValue": "80",
+      "misconception": "REPLACE_Misread the scale on the diagram.",
+      "correctiveNote": "REPLACE_Check the units on each axis or label."
+    }
+  ],
+  "examTip": [
+    { "type": "text", "value": "REPLACE_Draw on the diagram in the exam — examiners allow it." }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "tolerance",
+    "verification": "machine_verified"
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "8",
+    "displayValue": "8",
+    "acceptedForms": ["8"],
+    "tolerance": { "kind": "absolute", "value": 0 },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      { "type": "text", "value": "REPLACE_Simpler diagram-reading check." }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "8",
+      "displayValue": "8",
+      "acceptedForms": ["8"],
+      "tolerance": { "kind": "absolute", "value": 0 },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": ["REPLACE_M2-4.2"]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "REPLACE_uuid-from-specific_objectives",
+      "code": "REPLACE_M2-4.2",
+      "label": "REPLACE_Short objective label"
+    }
+  ]
+}

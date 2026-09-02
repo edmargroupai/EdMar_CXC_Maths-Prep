@@ -1,0 +1,233 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p089-q18",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Fifty households recorded how many times they visited a community centre during one week. The bar chart shows 0 visits → 5 households, 1 → 9, 2 → 14, 4 → 7 and 5 → 3, with the bar for 3 visits missing. (a) Determine the number of households that visited 3 times. (b) Complete the bar chart. (c) State the modal number of visits. (d) Determine the median number of visits. (e) Calculate the mean number of visits. (f) Calculate the percentage of households that visited at least 3 times. (g) Calculate the angle of the sector that would represent households making 2 visits on a pie chart. (h) Write ONE inference about the visiting pattern."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The missing bar is whatever makes the six frequencies add to 50 — find it before anything else."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p089_q18.jpg",
+      "altText": "Source visual for edmar-csec-p089-q18 from workbook page 89."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Subtract the known frequencies from 50.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5 + 9 + 14 + 7 + 3 = 38, then 50 − 38"
+        },
+        {
+          "type": "text",
+          "value": "Result: 12 households visited 3 times"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Draw the missing bar to a height of 12 and read off the mode.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Frequencies are now 5, 9, 14, 12, 7, 3; the tallest bar is 14 at 2 visits"
+        },
+        {
+          "type": "text",
+          "value": "Result: Bar of height 12; mode = 2 visits"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Locate the 25th and 26th values using cumulative frequency.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Up to 0 visits: 5; up to 1: 14; up to 2: 28 — so both the 25th and 26th households made 2 visits"
+        },
+        {
+          "type": "text",
+          "value": "Result: Median = 2 visits"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Calculate Σfx and divide by 50.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "0(5) + 1(9) + 2(14) + 3(12) + 4(7) + 5(3) = 0 + 9 + 28 + 36 + 28 + 15 = 116"
+        },
+        {
+          "type": "text",
+          "value": "Result: Mean = 116 ÷ 50 = 2.32 visits"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Count the households making at least 3 visits and convert to a percentage.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "12 + 7 + 3 = 22, then 22/50 × 100"
+        },
+        {
+          "type": "text",
+          "value": "Result: 44%"
+        }
+      ]
+    },
+    {
+      "stepNo": 6,
+      "instruction": "Turn the frequency for 2 visits into a sector angle.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "14/50 × 360"
+        },
+        {
+          "type": "text",
+          "value": "Result: 100.8°"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Recover the missing frequency from the total of 50, then work through the completed table: the largest frequency gives the mode, cumulative frequency gives the median, Σfx ÷ 50 gives the mean, and fractions of 50 give the percentage and the sector angle."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) 12 households  (b) A bar of height 12 above '3'  (c) Mode = 2 visits  (d) Median = 2 visits  (e) Mean = 2.32 visits  (f) 44%  (g) 100.8°  (h) Most households visited once or twice and the numbers fall away steadily after 2 visits, so for the majority the centre is an occasional rather than a regular destination — only 3 households in 50 visited as often as 5 times."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A frequency distribution has to account for every member of the population, so a known total pins down any single missing frequency. Once the table is complete, the mode, median and mean are three different readings of that same table, and any fraction of the total can be re-expressed as a percentage or as a share of 360° on a pie chart."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "giving_the_mode_as_14_the_frequency_inst",
+      "wrongValue": "incorrect_1",
+      "misconception": "Giving the mode as 14, the frequency, instead of 2, the number of visits.",
+      "correctiveNote": "Avoid this: Giving the mode as 14, the frequency, instead of 2, the number of visits."
+    },
+    {
+      "key": "leaving_out_the_12_households_that_visit",
+      "wrongValue": "incorrect_2",
+      "misconception": "Leaving out the 12 households that visited exactly 3 times when finding 'at least 3 times'.",
+      "correctiveNote": "Avoid this: Leaving out the 12 households that visited exactly 3 times when finding 'at least 3 times'."
+    },
+    {
+      "key": "multiplying_by_100_instead_of_360_when_c",
+      "wrongValue": "incorrect_3",
+      "misconception": "Multiplying by 100 instead of 360 when converting a frequency into a pie chart angle.",
+      "correctiveNote": "Avoid this: Multiplying by 100 instead of 360 when converting a frequency into a pie chart angle."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When a chart is incomplete but a total is given, recover the missing value first — later parts nearly always depend on it."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "12",
+    "displayValue": "12",
+    "acceptedForms": [
+      "12",
+      "12"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "In a survey of 50 people, 20 chose tea. What angle would represent tea on a pie chart?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "144",
+      "displayValue": "144",
+      "acceptedForms": [
+        "144",
+        "144"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M3-2.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "2de272cc-ee4d-4009-a89c-68dbf3e06cf9",
+      "code": "M3-2.1",
+      "label": "Bar charts"
+    },
+    {
+      "objectiveId": "5e72495b-db20-420b-a2b3-96958bb50ef1",
+      "code": "M3-2.1",
+      "label": "Frequency distributions"
+    },
+    {
+      "objectiveId": "2efc76aa-6dcf-492e-ab7d-9e4606ed8800",
+      "code": "M3-2.1",
+      "label": "Mode, median and mean"
+    },
+    {
+      "objectiveId": "ff24de40-0ea9-452b-a260-e4bcae016ac8",
+      "code": "M3-2.1",
+      "label": "Percentage of a total"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 18,
+    "pageRef": "p89",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

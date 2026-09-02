@@ -1,0 +1,211 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p074-q12",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The diagram shows two straight lines, L₁ and L₂. (a) State the equation of L₁. (b) State the equation of L₂. (c) State the coordinates of the point at which L₁ and L₂ intersect. (d) State the gradient of L₁. (e) Explain why the gradient of L₂ cannot be determined."
+    },
+    {
+      "type": "text",
+      "value": "Think first: One line is horizontal and one is vertical, and each type has its own kind of equation."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p074_q12.jpg",
+      "altText": "Source visual for edmar-csec-p074-q12 from workbook page 74."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Read L₁ from the diagram.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "L₁ is horizontal and passes through the y-axis at −2, so every point on it has y = −2"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = −2"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Read L₂ from the diagram.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "L₂ is vertical and passes through the x-axis at 3, so every point on it has x = 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 3"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Find the intersection.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The point must satisfy both x = 3 and y = −2"
+        },
+        {
+          "type": "text",
+          "value": "Result: (3, −2)"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Find the gradient of L₁.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The height never changes, so the rise is 0 for any run"
+        },
+        {
+          "type": "text",
+          "value": "Result: gradient = 0"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Consider the gradient of L₂.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Between any two points on L₂ the change in x is 0, and the gradient formula requires dividing by that change"
+        },
+        {
+          "type": "text",
+          "value": "Result: Division by zero, so the gradient is undefined"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Identify each line by the coordinate it holds constant, combine those two constants to get the intersection, then reason about the gradient of a vertical line."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) y = −2  (b) x = 3  (c) (3, −2)  (d) gradient of L₁ = 0  (e) L₂ is vertical, so any two points on it have the same x-coordinate. The gradient formula (y₂ − y₁)/(x₂ − x₁) then requires division by zero, which is undefined, so L₂ has no gradient."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Gradient is defined as the change in y divided by the change in x. For a horizontal line the numerator is always zero, so the gradient is zero, meaning no steepness at all. For a vertical line the denominator is zero, and division by zero has no value, so the gradient does not exist. Zero gradient and undefined gradient are therefore completely different situations, not two ways of saying the same thing."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "saying_the_gradient_of_l_is_zero_rather_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Saying the gradient of L₂ is zero rather than undefined.",
+      "correctiveNote": "Avoid this: Saying the gradient of L₂ is zero rather than undefined."
+    },
+    {
+      "key": "swapping_the_equations_and_writing_x_2_a",
+      "wrongValue": "incorrect_2",
+      "misconception": "Swapping the equations and writing x = −2 and y = 3.",
+      "correctiveNote": "Avoid this: Swapping the equations and writing x = −2 and y = 3."
+    },
+    {
+      "key": "giving_the_intersection_as_2_3",
+      "wrongValue": "incorrect_3",
+      "misconception": "Giving the intersection as (−2, 3).",
+      "correctiveNote": "Avoid this: Giving the intersection as (−2, 3)."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Learn the pair together: horizontal line means gradient 0, vertical line means gradient undefined. Examiners test the difference regularly."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "y=−2",
+    "displayValue": "y = −2",
+    "acceptedForms": [
+      "y = −2",
+      "y=−2"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "State the equation and gradient of the horizontal line through (4, 7), and of the vertical line through the same point."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "Horizontal:y=7withgradient0.Vertical:x=4withgradientundefined.",
+      "displayValue": "Horizontal: y = 7 with gradient 0. Vertical: x = 4 with gradient undefined.",
+      "acceptedForms": [
+        "Horizontal: y = 7 with gradient 0. Vertical: x = 4 with gradient undefined.",
+        "Horizontal:y=7withgradient0.Vertical:x=4withgradientundefined."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "009957e2-20e3-44bc-a6af-ea205974bdc0",
+      "code": "M1-1.1",
+      "label": "Horizontal and vertical lines"
+    },
+    {
+      "objectiveId": "aa9392eb-61ad-4790-a851-f052d7659221",
+      "code": "M1-1.1",
+      "label": "Equations of the form y = k and x = k"
+    },
+    {
+      "objectiveId": "300d08eb-7f2f-4484-a6cf-994bbe0a1718",
+      "code": "M1-1.1",
+      "label": "Gradient"
+    },
+    {
+      "objectiveId": "7264e3ab-e9b3-4c0d-adef-de17b04d77e5",
+      "code": "M1-1.1",
+      "label": "Point of intersection"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 12,
+    "pageRef": "p74",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p054-q04",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the equation 2(x − 1) = 5/2."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The right-hand side is a fraction, so expect a fractional answer."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p054_q04.jpg",
+      "altText": "Source visual for edmar-csec-p054-q04 from workbook page 54."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Divide both sides by 2.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(5/2) ÷ 2 = 5/4"
+        },
+        {
+          "type": "text",
+          "value": "Result: x − 1 = 5/4"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Add 1 to both sides.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5/4 + 1 = 5/4 + 4/4"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 9/4"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Write the answer as a decimal if preferred.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "9 ÷ 4"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 2.25"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Check by substitution.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2(9/4 − 1) = 2 × 5/4"
+        },
+        {
+          "type": "text",
+          "value": "Result: 5/2, which matches the right-hand side"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Divide both sides by 2 to remove the bracket's coefficient, then add 1."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = 9/4, or 2.25"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Dividing a fraction by 2 is the same as multiplying it by 1/2, so 5/2 becomes 5/4 — the fraction gets smaller because the parts are halved. Adding 1 then requires writing 1 as 4/4 so the two fractions have the same denominator. Nothing about the method changes when fractions appear; only the arithmetic within each step does."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "dividing_5_2_by_2_to_get_5_by_cancelling",
+      "wrongValue": "incorrect_1",
+      "misconception": "Dividing 5/2 by 2 to get 5 by cancelling the 2s incorrectly.",
+      "correctiveNote": "Avoid this: Dividing 5/2 by 2 to get 5 by cancelling the 2s incorrectly."
+    },
+    {
+      "key": "adding_1_to_5_4_as_6_4_by_adding_1_to_th",
+      "wrongValue": "incorrect_2",
+      "misconception": "Adding 1 to 5/4 as 6/4 by adding 1 to the numerator only.",
+      "correctiveNote": "Avoid this: Adding 1 to 5/4 as 6/4 by adding 1 to the numerator only."
+    },
+    {
+      "key": "multiplying_both_sides_by_2_instead_of_d",
+      "wrongValue": "incorrect_3",
+      "misconception": "Multiplying both sides by 2 instead of dividing, which makes the equation worse.",
+      "correctiveNote": "Avoid this: Multiplying both sides by 2 instead of dividing, which makes the equation worse."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "If fractions make you uneasy, multiply every term by the denominator at the start: 2(x − 1) = 5/2 becomes 4(x − 1) = 5. The answer is the same and the working is fraction-free until the last line."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=9/4,",
+    "displayValue": "= 9/4,",
+    "acceptedForms": [
+      "= 9/4,",
+      "=9/4,"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve 3(x − 2) = 7/2."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "−2=7/6,sox=19/6.",
+      "displayValue": "− 2 = 7/6, so x = 19/6.",
+      "acceptedForms": [
+        "− 2 = 7/6, so x = 19/6.",
+        "−2=7/6,sox=19/6."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "cd58a3e2-4c0e-4336-a36d-372be125af49",
+      "code": "M1-4.1",
+      "label": "Solving linear equations"
+    },
+    {
+      "objectiveId": "d7a16dd1-6451-4eba-ae7c-a5449a2abffc",
+      "code": "M1-4.1",
+      "label": "Fractions in equations"
+    },
+    {
+      "objectiveId": "bd138c32-e512-4ea2-a0e6-9487e98e949b",
+      "code": "M1-4.1",
+      "label": "Inverse operations"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 4,
+    "pageRef": "p54",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

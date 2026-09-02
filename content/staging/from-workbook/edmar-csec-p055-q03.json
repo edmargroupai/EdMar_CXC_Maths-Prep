@@ -1,0 +1,173 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p055-q03",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Make x the subject of the formula y = 7x."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Here x is multiplied by 7, so division is the operation that frees it."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p055_q03.jpg",
+      "altText": "Source visual for edmar-csec-p055-q03 from workbook page 55."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Identify what is being done to x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x is multiplied by 7"
+        },
+        {
+          "type": "text",
+          "value": "Result: 7x"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Divide both sides by 7.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "the inverse of multiplying by 7"
+        },
+        {
+          "type": "text",
+          "value": "Result: y/7 = x"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Write x as the subject.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "reverse the sides"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = y/7"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Divide both sides by 7."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = y/7"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Multiplication and division are inverse operations, so dividing both sides by 7 cancels the 7 attached to x while keeping the two sides equal. The result x = y/7 says that x is one seventh of y, which is the same relationship read the other way round. No number can be found for x because y is itself a variable."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_x_y_7_by_subtracting_instead_of_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing x = y − 7 by subtracting instead of dividing.",
+      "correctiveNote": "Avoid this: Writing x = y − 7 by subtracting instead of dividing."
+    },
+    {
+      "key": "writing_x_7y_by_multiplying_rather_than_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Writing x = 7y by multiplying rather than dividing.",
+      "correctiveNote": "Avoid this: Writing x = 7y by multiplying rather than dividing."
+    },
+    {
+      "key": "dividing_only_one_side_of_the_formula_by",
+      "wrongValue": "incorrect_3",
+      "misconception": "Dividing only one side of the formula by 7.",
+      "correctiveNote": "Avoid this: Dividing only one side of the formula by 7."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Match the inverse to the operation: addition pairs with subtraction, multiplication with division. Choosing the wrong pair is the single most common error in this topic."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=y/7",
+    "displayValue": "= y/7",
+    "acceptedForms": [
+      "= y/7",
+      "=y/7"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Make x the subject of y = 5x."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=y/5.",
+      "displayValue": "= y/5.",
+      "acceptedForms": [
+        "= y/5.",
+        "=y/5."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "1ea13020-6d89-4786-a2c2-c04ff1b8f7e1",
+      "code": "M1-4.1",
+      "label": "Changing the subject of a formula"
+    },
+    {
+      "objectiveId": "7ad9081d-25ea-476c-ae73-e0ed15869d4a",
+      "code": "M1-4.1",
+      "label": "Inverse operations"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 3,
+    "pageRef": "p55",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

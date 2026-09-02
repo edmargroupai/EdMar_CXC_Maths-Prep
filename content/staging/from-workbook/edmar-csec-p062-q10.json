@@ -1,0 +1,188 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p062-q10",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "If m = 6, find the value of m² − 5m."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Substitution just means swapping the letter for its number, then following the order of operations."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p062_q10.jpg",
+      "altText": "Source visual for edmar-csec-p062-q10 from workbook page 62."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write the expression with 6 in place of m.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "m² − 5m becomes 6² − 5(6)"
+        },
+        {
+          "type": "text",
+          "value": "Result: 6² − 5(6)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Evaluate the power.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "6² = 6 × 6"
+        },
+        {
+          "type": "text",
+          "value": "Result: 36 − 5(6)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Evaluate the multiplication.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5 × 6 = 30"
+        },
+        {
+          "type": "text",
+          "value": "Result: 36 − 30"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Subtract.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: 6"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Replace every m with 6, work out the power first, then the multiplication, then the subtraction."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "m² − 5m = 6"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "An algebraic expression is a set of instructions waiting for a number. Once m is fixed at 6, the expression becomes ordinary arithmetic, and the usual order of operations decides what happens first: the index, then the multiplication, then the subtraction. Doing the subtraction early would answer a different calculation entirely."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "reading_m_as_2_m_and_getting_12_instead_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Reading m² as 2 × m and getting 12 instead of 36.",
+      "correctiveNote": "Avoid this: Reading m² as 2 × m and getting 12 instead of 36."
+    },
+    {
+      "key": "subtracting_before_multiplying_e_g_worki",
+      "wrongValue": "incorrect_2",
+      "misconception": "Subtracting before multiplying, e.g. working out 36 − 5 first.",
+      "correctiveNote": "Avoid this: Subtracting before multiplying, e.g. working out 36 − 5 first."
+    },
+    {
+      "key": "forgetting_that_5m_means_5_m",
+      "wrongValue": "incorrect_3",
+      "misconception": "Forgetting that 5m means 5 × m.",
+      "correctiveNote": "Avoid this: Forgetting that 5m means 5 × m."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Write the substitution line out in full with brackets, 6² − 5(6), before you calculate anything. It stops the index and the coefficient getting mixed up."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "m²−5m=6",
+    "displayValue": "m² − 5m = 6",
+    "acceptedForms": [
+      "m² − 5m = 6",
+      "m²−5m=6"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "If m = 4, find m² − 5m."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "−4",
+      "displayValue": "−4",
+      "acceptedForms": [
+        "−4",
+        "−4"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "26df8ffc-9a81-4933-ab50-29acd42115b3",
+      "code": "M1-4.1",
+      "label": "Substitution into an algebraic expression"
+    },
+    {
+      "objectiveId": "0c931b79-ea58-4c33-aea5-211aa46878b4",
+      "code": "M1-4.1",
+      "label": "Order of operations"
+    },
+    {
+      "objectiveId": "70e3203a-630a-4cb2-a9ef-e6e592277f2d",
+      "code": "M1-4.1",
+      "label": "Index notation"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 10,
+    "pageRef": "p62",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

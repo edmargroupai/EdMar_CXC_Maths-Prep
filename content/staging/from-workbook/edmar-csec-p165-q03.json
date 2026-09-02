@@ -1,0 +1,206 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p165-q03",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The diagram shows kite ABCD, where AB = AD, CB = CD, and the diagonal AC is drawn. a) Prove that triangle ABC is congruent to triangle ADC, stating the congruence case used. b) Hence show that AC bisects ∠BAD. c) If ∠ABC = 68°, determine ∠ADC."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The diagonal AC belongs to both triangles, so it supplies the third pair of equal sides for free."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p165_q03.jpg",
+      "altText": "Source visual for edmar-csec-p165-q03 from workbook page 165."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "List the equal sides in triangles ABC and ADC.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "AB = AD (given); CB = CD (given); AC = AC (common side)"
+        },
+        {
+          "type": "text",
+          "value": "Result: three pairs of equal sides"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "State the congruence.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "All three sides of one triangle equal all three sides of the other"
+        },
+        {
+          "type": "text",
+          "value": "Result: triangle ABC ≅ triangle ADC (SSS)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Use corresponding angles at A.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "∠BAC and ∠DAC are corresponding angles of the congruent triangles, so they are equal"
+        },
+        {
+          "type": "text",
+          "value": "Result: ∠BAC = ∠DAC"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Conclude the bisection.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "AC splits ∠BAD into two equal parts"
+        },
+        {
+          "type": "text",
+          "value": "Result: AC bisects ∠BAD"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Match the angles at B and D.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "∠ABC and ∠ADC are corresponding angles of the congruent triangles"
+        },
+        {
+          "type": "text",
+          "value": "Result: ∠ADC = ∠ABC = 68°"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "List the three pairs of equal sides to establish SSS congruence, then read off the equal corresponding angles for parts b and c."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) Triangle ABC ≅ triangle ADC by SSS (AB = AD, CB = CD, AC common)  (b) ∠BAC = ∠DAC as corresponding angles of congruent triangles, so AC bisects ∠BAD  (c) ∠ADC = 68°"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Congruence means the two triangles are identical copies, so every matched part — side, angle, area — is equal. Once SSS is established, no further calculation is needed for parts b and c: the equal angles are simply corresponding parts being read off. This is why a kite's axis of symmetry is exactly the diagonal joining the two vertices where equal sides meet."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "forgetting_to_state_ac_ac_common_without",
+      "wrongValue": "incorrect_1",
+      "misconception": "Forgetting to state AC = AC (common) — without it there is no third pair and no SSS.",
+      "correctiveNote": "Avoid this: Forgetting to state AC = AC (common) — without it there is no third pair and no SSS."
+    },
+    {
+      "key": "claiming_sas_by_using_the_angle_at_a_whi",
+      "wrongValue": "incorrect_2",
+      "misconception": "Claiming SAS by using the angle at A, which is what you are trying to prove equal.",
+      "correctiveNote": "Avoid this: Claiming SAS by using the angle at A, which is what you are trying to prove equal."
+    },
+    {
+      "key": "writing_the_congruence_with_mismatched_l",
+      "wrongValue": "incorrect_3",
+      "misconception": "Writing the congruence with mismatched letter order, so the corresponding parts read off are the wrong ones.",
+      "correctiveNote": "Avoid this: Writing the congruence with mismatched letter order, so the corresponding parts read off are the wrong ones."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "In a congruence proof, always write the two triangles with corresponding vertices in matching order (ABC ↔ ADC) — then every corresponding pair can be read straight off the naming."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "TriangleABC≅triangleADCbySSS(AB=AD,CB=CD,ACcommon)",
+    "displayValue": "Triangle ABC ≅ triangle ADC by SSS (AB = AD, CB = CD, AC common)",
+    "acceptedForms": [
+      "Triangle ABC ≅ triangle ADC by SSS (AB = AD, CB = CD, AC common)",
+      "TriangleABC≅triangleADCbySSS(AB=AD,CB=CD,ACcommon)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "In kite PQRS, PQ = PS and RQ = RS. Which diagonal is the axis of symmetry?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "PR.",
+      "displayValue": "PR.",
+      "acceptedForms": [
+        "PR.",
+        "PR."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "ae6cecda-4c4e-40cc-a0fe-b3136ded7548",
+      "code": "M1-1.1",
+      "label": "Congruent triangles (SSS)"
+    },
+    {
+      "objectiveId": "390f9fd0-e5be-45ef-a213-8faf02bf86d7",
+      "code": "M1-1.1",
+      "label": "Properties of a kite"
+    },
+    {
+      "objectiveId": "7df0dabc-3cba-46aa-a772-464e1f1c897a",
+      "code": "M1-1.1",
+      "label": "Corresponding parts of congruent triangles"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 3,
+    "pageRef": "p165",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

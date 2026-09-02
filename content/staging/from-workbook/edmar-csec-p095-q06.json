@@ -1,0 +1,178 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p095-q06",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Make w the subject of the formula P = 2(l + w) (the perimeter of a rectangle)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: w sits inside a bracket that is multiplied by 2, so remove the 2 before touching the bracket."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p095_q06.jpg",
+      "altText": "Source visual for edmar-csec-p095-q06 from workbook page 95."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Divide both sides by 2.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "P/2 = (l + w)"
+        },
+        {
+          "type": "text",
+          "value": "Result: P/2 = l + w"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Subtract l from both sides.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "P/2 − l = w"
+        },
+        {
+          "type": "text",
+          "value": "Result: w = P/2 − l"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Write it as a single fraction if preferred.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "P/2 − l = (P − 2l)/2"
+        },
+        {
+          "type": "text",
+          "value": "Result: w = (P − 2l)/2"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Divide both sides by 2, subtract l, then state w."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "w = (P − 2l)/2, which is the same as w = P/2 − l"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The bracket is the last thing to be built when the formula is evaluated, so it is the first thing to be dismantled when you reverse the process. Dividing by 2 undoes the outer multiplication and leaves a simple sum, from which l is removed by subtraction."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_w_p_2l_forgetting_to_divide_p_by",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing w = P − 2l, forgetting to divide P by 2.",
+      "correctiveNote": "Avoid this: Writing w = P − 2l, forgetting to divide P by 2."
+    },
+    {
+      "key": "expanding_to_p_2l_2w_and_then_dividing_o",
+      "wrongValue": "incorrect_2",
+      "misconception": "Expanding to P = 2l + 2w and then dividing only the 2w term.",
+      "correctiveNote": "Avoid this: Expanding to P = 2l + 2w and then dividing only the 2w term."
+    },
+    {
+      "key": "writing_w_p_l_2_by_subtracting_l_before_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Writing w = (P − l)/2 by subtracting l before dividing.",
+      "correctiveNote": "Avoid this: Writing w = (P − l)/2 by subtracting l before dividing."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Peel a formula like an onion: undo whatever is outermost first, and the inner terms come free without extra work."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "w=(P−2l)/2",
+    "displayValue": "w = (P − 2l)/2",
+    "acceptedForms": [
+      "w = (P − 2l)/2",
+      "w=(P−2l)/2"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Make l the subject of P = 2(l + w)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "l=(P−2w)/2",
+      "displayValue": "l = (P − 2w)/2",
+      "acceptedForms": [
+        "l = (P − 2w)/2",
+        "l=(P−2w)/2"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "113c8ee3-4bc2-4185-aa76-033b9318e0b9",
+      "code": "M1-1.1",
+      "label": "Changing the subject of a formula"
+    },
+    {
+      "objectiveId": "94affd09-e0db-42b9-a30b-0dc85da9c767",
+      "code": "M1-1.1",
+      "label": "Inverse operations"
+    },
+    {
+      "objectiveId": "b7c6e7b3-c987-4370-a182-5b8051fcb46b",
+      "code": "M1-1.1",
+      "label": "Perimeter of a rectangle"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 6,
+    "pageRef": "p95",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

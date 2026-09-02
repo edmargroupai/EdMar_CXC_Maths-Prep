@@ -1,0 +1,220 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p022-q25",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Electricity charges are: fixed charge $450, energy charge $20 per kWh, previous reading 8 450 kWh, present reading 8 725 kWh, and a government tax of 15% is added to the total charges. (a) Calculate the number of units used. (b) Calculate the total bill before tax. (c) Calculate the tax. (d) Calculate the final amount to be paid."
+    },
+    {
+      "type": "text",
+      "value": "Think first: A meter shows a running total, so the units used this period are the difference between the two readings."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p022_q25.jpg",
+      "altText": "Source visual for edmar-csec-p022-q25 from workbook page 22."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Subtract the previous reading from the present reading.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "8 725 - 8 450"
+        },
+        {
+          "type": "text",
+          "value": "Result: 275 kWh"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Cost the units used.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "275 x $20"
+        },
+        {
+          "type": "text",
+          "value": "Result: $5 500"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Add the fixed charge to get the bill before tax.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "$5 500 + $450"
+        },
+        {
+          "type": "text",
+          "value": "Result: $5 950"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Find 15% of the bill before tax.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "0.15 x 5 950"
+        },
+        {
+          "type": "text",
+          "value": "Result: $892.50"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Add the tax to the bill.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "$5 950 + $892.50, or $5 950 x 1.15"
+        },
+        {
+          "type": "text",
+          "value": "Result: $6 842.50"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Subtract the readings for the units, cost the units at $20 each and add the fixed charge, then add 15% tax to that total."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) 275 kWh  (b) $5 950  (c) $892.50  (d) $6 842.50"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A utility bill has a fixed part that does not depend on usage and a variable part that does, and the tax applies to their sum rather than to either piece alone. Because the meter is cumulative, only the difference between readings represents this period of consumption. Adding 15% is the same as multiplying the pre-tax total by 1.15."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "costing_the_present_reading_of_8_725_uni",
+      "wrongValue": "incorrect_1",
+      "misconception": "Costing the present reading of 8 725 units instead of the 275 used.",
+      "correctiveNote": "Avoid this: Costing the present reading of 8 725 units instead of the 275 used."
+    },
+    {
+      "key": "applying_the_tax_only_to_the_energy_char",
+      "wrongValue": "incorrect_2",
+      "misconception": "Applying the tax only to the energy charge and not the fixed charge.",
+      "correctiveNote": "Avoid this: Applying the tax only to the energy charge and not the fixed charge."
+    },
+    {
+      "key": "adding_the_fixed_charge_after_the_tax_ha",
+      "wrongValue": "incorrect_3",
+      "misconception": "Adding the fixed charge after the tax has been worked out.",
+      "correctiveNote": "Avoid this: Adding the fixed charge after the tax has been worked out."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Lay a bill out in the order the utility company does: units, energy charge, fixed charge, subtotal, tax, total. Each part of the question then reads straight off your list."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "275",
+    "displayValue": "275",
+    "acceptedForms": [
+      "275",
+      "275"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Fixed charge $300, $15 per kWh, readings 1 200 to 1 300 kWh, 10% tax. Find the final bill."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "currency",
+      "canonicalValue": "1.00",
+      "displayValue": "$1",
+      "acceptedForms": [
+        "$1",
+        "$1",
+        "1"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.005
+      },
+      "precision": {
+        "kind": "decimal_places",
+        "value": 2,
+        "required": true
+      },
+      "normalisation": "currency_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "e34cddff-07a3-4f03-a269-2f7170d60db5",
+      "code": "M1-1.1",
+      "label": "Utility bills"
+    },
+    {
+      "objectiveId": "662fd1fd-3149-4e82-a046-1ec5116769b6",
+      "code": "M1-1.1",
+      "label": "Fixed and variable charges"
+    },
+    {
+      "objectiveId": "b507bca1-906c-481c-a36b-578ef095b8b2",
+      "code": "M1-1.1",
+      "label": "Percentage increase (tax)"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 25,
+    "pageRef": "p22",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

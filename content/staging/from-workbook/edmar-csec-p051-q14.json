@@ -1,0 +1,196 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p051-q14",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Simplify 6m/7 − 2m/3 as a single fraction."
+    },
+    {
+      "type": "text",
+      "value": "Think first: There is only one letter here, so the answer will be a single multiple of m over a number."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p051_q14.jpg",
+      "altText": "Source visual for edmar-csec-p051-q14 from workbook page 51."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Find the lowest common denominator of 7 and 3.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "7 and 3 share no factor, so LCM = 21"
+        },
+        {
+          "type": "text",
+          "value": "Result: 21"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Rewrite each fraction over 21.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "6m is multiplied by 3; 2m is multiplied by 7"
+        },
+        {
+          "type": "text",
+          "value": "Result: (18m − 14m)/21"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Subtract the like terms in the numerator.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "18m − 14m"
+        },
+        {
+          "type": "text",
+          "value": "Result: 4m"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Check for a common factor.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "4 and 21 share no factor"
+        },
+        {
+          "type": "text",
+          "value": "Result: already simplest"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Use 21 as the common denominator, rewrite both numerators, then subtract the like terms."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "4m/21"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Because 6m/7 and 2m/3 are both multiples of the same letter, the subtraction reduces to subtracting numerical coefficients once the denominators match. Rescaling to 21 gives 18m and 14m, quantities of the same kind that can be combined directly. The result cannot be reduced since 4 and 21 have no factor in common."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "subtracting_the_denominators_as_well_giv",
+      "wrongValue": "incorrect_1",
+      "misconception": "Subtracting the denominators as well, giving 4m/4.",
+      "correctiveNote": "Avoid this: Subtracting the denominators as well, giving 4m/4."
+    },
+    {
+      "key": "rescaling_only_one_of_the_two_fractions",
+      "wrongValue": "incorrect_2",
+      "misconception": "Rescaling only one of the two fractions.",
+      "correctiveNote": "Avoid this: Rescaling only one of the two fractions."
+    },
+    {
+      "key": "writing_the_answer_as_4m_21_by_multiplyi",
+      "wrongValue": "incorrect_3",
+      "misconception": "Writing the answer as 4m²/21 by multiplying the m terms instead of subtracting them.",
+      "correctiveNote": "Avoid this: Writing the answer as 4m²/21 by multiplying the m terms instead of subtracting them."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Treat 6m/7 as (6/7)m if it helps: the letter simply comes along for the ride while you do the fraction arithmetic 6/7 − 2/3."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "4",
+    "displayValue": "4",
+    "acceptedForms": [
+      "4",
+      "4"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Simplify 5k/6 − k/4 as a single fraction."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(10k−3k)/12=7k/12.",
+      "displayValue": "(10k − 3k)/12 = 7k/12.",
+      "acceptedForms": [
+        "(10k − 3k)/12 = 7k/12.",
+        "(10k−3k)/12=7k/12."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "f254754f-67a0-4c9f-a5c7-56d555dcdd52",
+      "code": "M1-4.1",
+      "label": "Subtraction of algebraic fractions"
+    },
+    {
+      "objectiveId": "6268dfc4-f1c9-4618-aa08-4a0681186ad0",
+      "code": "M1-4.1",
+      "label": "Lowest common multiple"
+    },
+    {
+      "objectiveId": "47cc0cc9-f932-4f6f-a951-ac4122ad0cec",
+      "code": "M1-4.1",
+      "label": "Collecting like terms"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 14,
+    "pageRef": "p51",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

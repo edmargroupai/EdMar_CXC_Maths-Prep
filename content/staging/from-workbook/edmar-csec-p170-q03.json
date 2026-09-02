@@ -1,0 +1,206 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p170-q03",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A cuboid has length 12 cm, width 9 cm and height 8 cm. AC is a diagonal of the base and AG is a space diagonal. a) Calculate the length of AC. b) Hence calculate the length of AG. c) State why Pythagoras' theorem may be used twice in this problem."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Get the flat base diagonal first — it becomes one leg of a second, upright right-angled triangle."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p170_q03.jpg",
+      "altText": "Source visual for edmar-csec-p170-q03 from workbook page 170."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Work in the rectangular base ABCD.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "AB = 12 cm and BC = 9 cm meet at right angles"
+        },
+        {
+          "type": "text",
+          "value": "Result: right-angled triangle ABC"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Apply Pythagoras to find AC.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "AC² = 12² + 9² = 144 + 81 = 225"
+        },
+        {
+          "type": "text",
+          "value": "Result: AC = 15 cm"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Set up the upright triangle ACG.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "CG is the vertical edge of 8 cm and it is perpendicular to the base, so ∠ACG = 90°"
+        },
+        {
+          "type": "text",
+          "value": "Result: legs AC = 15 cm and CG = 8 cm"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Apply Pythagoras again.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "AG² = 15² + 8² = 225 + 64 = 289"
+        },
+        {
+          "type": "text",
+          "value": "Result: AG = 17 cm"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Explain the double use.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Two separate right-angled triangles exist: ABC lying flat in the base, and ACG standing upright because the vertical edge is perpendicular to every line in the base"
+        },
+        {
+          "type": "text",
+          "value": "Result: two right angles, so two applications"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Apply Pythagoras in the horizontal base to find AC, then again in the vertical triangle ACG using AC and the height."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) AC = 15 cm  (b) AG = 17 cm  (c) Because the solid contains two different right-angled triangles: ABC in the horizontal base (adjacent edges of a rectangle meet at 90°), and ACG in a vertical plane (the edge CG is perpendicular to the base, so it is perpendicular to AC). Pythagoras applies once in each."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A vertical edge of a cuboid is perpendicular to every line drawn in the base, so pairing it with any base line automatically creates a right-angled triangle. That is what lets a three-dimensional length be reached in two flat steps: reduce the base to a single diagonal, then stand that diagonal up against the height. The same idea gives AG² = 12² + 9² + 8²."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "trying_to_use_the_height_together_with_a",
+      "wrongValue": "incorrect_1",
+      "misconception": "Trying to use the height together with a single edge, skipping the base diagonal step.",
+      "correctiveNote": "Avoid this: Trying to use the height together with a single edge, skipping the base diagonal step."
+    },
+    {
+      "key": "using_12_and_8_in_the_second_step_instea",
+      "wrongValue": "incorrect_2",
+      "misconception": "Using 12 and 8 in the second step instead of AC = 15 and 8.",
+      "correctiveNote": "Avoid this: Using 12 and 8 in the second step instead of AC = 15 and 8."
+    },
+    {
+      "key": "treating_ag_as_a_face_diagonal_rather_th",
+      "wrongValue": "incorrect_3",
+      "misconception": "Treating AG as a face diagonal rather than a space diagonal.",
+      "correctiveNote": "Avoid this: Treating AG as a face diagonal rather than a space diagonal."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "For any cuboid, the space diagonal is √(l² + w² + h²) — use the two-step method to show working, then use this formula to check your answer."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "AC=15cm",
+    "displayValue": "AC = 15 cm",
+    "acceptedForms": [
+      "AC = 15 cm",
+      "AC=15cm"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A cuboid measures 3 cm by 4 cm by 12 cm. How long is its space diagonal?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "√(9+16+144)=√169=13cm.",
+      "displayValue": "√(9 + 16 + 144) = √169 = 13 cm.",
+      "acceptedForms": [
+        "√(9 + 16 + 144) = √169 = 13 cm.",
+        "√(9+16+144)=√169=13cm."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "3b984dab-1cc5-4d69-ab40-39462a31493b",
+      "code": "M1-1.1",
+      "label": "Pythagoras' theorem in three dimensions"
+    },
+    {
+      "objectiveId": "0810c28f-68a3-40ad-a3f4-f78a0472f9d6",
+      "code": "M1-1.1",
+      "label": "Space diagonal of a cuboid"
+    },
+    {
+      "objectiveId": "a8c16d66-34a5-4aa3-aab5-1392505bb27b",
+      "code": "M1-1.1",
+      "label": "Identifying right angles in a solid"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 3,
+    "pageRef": "p170",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

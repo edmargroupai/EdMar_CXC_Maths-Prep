@@ -1,0 +1,187 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p126-q01",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Determine the coordinates of the midpoint of the line segment joining A(−3, 5) and B(7, −1)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The midpoint is just the average of the two x-values paired with the average of the two y-values."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p126_q01.jpg",
+      "altText": "Source visual for edmar-csec-p126-q01 from workbook page 126."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write the midpoint formula and label the coordinates.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "A(x₁, y₁) = (−3, 5), B(x₂, y₂) = (7, −1)"
+        },
+        {
+          "type": "text",
+          "value": "Result: M = ((x₁ + x₂)/2, (y₁ + y₂)/2)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Average the x-coordinates.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(−3 + 7)/2 = 4/2"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 2"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Average the y-coordinates.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(5 + (−1))/2 = 4/2"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 2"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Write the midpoint as an ordered pair.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Combine the two averages"
+        },
+        {
+          "type": "text",
+          "value": "Result: M(2, 2)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Apply the midpoint formula ((x₁ + x₂)/2, (y₁ + y₂)/2) to A and B."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "The midpoint is (2, 2)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The midpoint sits halfway along the segment, so its horizontal position is halfway between the two x-values and its vertical position halfway between the two y-values. Averaging each coordinate separately is exactly what 'halfway' means, which is why the formula works for any pair of points, negatives included."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "subtracting_the_coordinates_instead_of_a",
+      "wrongValue": "incorrect_1",
+      "misconception": "Subtracting the coordinates instead of adding them, as in the gradient formula.",
+      "correctiveNote": "Avoid this: Subtracting the coordinates instead of adding them, as in the gradient formula."
+    },
+    {
+      "key": "dividing_only_one_coordinate_by_2",
+      "wrongValue": "incorrect_2",
+      "misconception": "Dividing only one coordinate by 2.",
+      "correctiveNote": "Avoid this: Dividing only one coordinate by 2."
+    },
+    {
+      "key": "mishandling_5_1_and_writing_6_instead_of",
+      "wrongValue": "incorrect_3",
+      "misconception": "Mishandling 5 + (−1) and writing 6 instead of 4.",
+      "correctiveNote": "Avoid this: Mishandling 5 + (−1) and writing 6 instead of 4."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Sketch the two points roughly — the midpoint must lie between them in both directions, which catches most sign errors instantly."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Themidpointis(2,2)",
+    "displayValue": "The midpoint is (2, 2)",
+    "acceptedForms": [
+      "The midpoint is (2, 2)",
+      "Themidpointis(2,2)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Find the midpoint of the segment joining (2, −4) and (8, 10)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(5,3)",
+      "displayValue": "(5, 3)",
+      "acceptedForms": [
+        "(5, 3)",
+        "(5,3)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-3.2"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "6a6dcdb8-b69a-453b-a0e2-ec589debeb99",
+      "code": "M1-3.2",
+      "label": "Midpoint of a line segment"
+    },
+    {
+      "objectiveId": "77f7f793-410d-4492-a454-b01f565a4c55",
+      "code": "M1-3.2",
+      "label": "Coordinate geometry"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 1,
+    "pageRef": "p126",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

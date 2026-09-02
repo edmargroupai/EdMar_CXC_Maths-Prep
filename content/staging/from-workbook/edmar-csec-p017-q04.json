@@ -1,0 +1,212 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p017-q04",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The simple interest on a sum of money invested at 5% per annum for 2 years was $600. Calculate the principal invested."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The unknown here is the principal, so rearrange the formula rather than substituting into it directly."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p017_q04.jpg",
+      "altText": "Source visual for edmar-csec-p017-q04 from workbook page 17."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write the formula with the known values.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "600 = (P × 5 × 2)/100"
+        },
+        {
+          "type": "text",
+          "value": "Result: 600 = 10P/100"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Simplify the right-hand side.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "10/100 = 0.1"
+        },
+        {
+          "type": "text",
+          "value": "Result: 600 = 0.1P"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Solve for P.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "P = 600 ÷ 0.1"
+        },
+        {
+          "type": "text",
+          "value": "Result: $6000"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Check the answer.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(6000 × 5 × 2)/100 = 600"
+        },
+        {
+          "type": "text",
+          "value": "Result: Checks out"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Substitute R = 5, T = 2 and I = 600 into I = PRT/100 and solve for P."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "$6 000"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Simple interest is directly proportional to the principal, so the ratio between interest and principal is fixed by the rate and time alone: at 5% for 2 years the interest is always one tenth of whatever is invested. That is why dividing the interest by 0.1 recovers the principal, and why the check is just the original formula run forwards."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "dividing_600_by_5_or_by_2_alone_and_stop",
+      "wrongValue": "incorrect_1",
+      "misconception": "Dividing $600 by 5 or by 2 alone and stopping there.",
+      "correctiveNote": "Avoid this: Dividing $600 by 5 or by 2 alone and stopping there."
+    },
+    {
+      "key": "treating_600_as_the_amount_and_subtracti",
+      "wrongValue": "incorrect_2",
+      "misconception": "Treating $600 as the amount and subtracting instead of dividing.",
+      "correctiveNote": "Avoid this: Treating $600 as the amount and subtracting instead of dividing."
+    },
+    {
+      "key": "losing_the_100_and_answering_60",
+      "wrongValue": "incorrect_3",
+      "misconception": "Losing the ÷ 100 and answering $60.",
+      "correctiveNote": "Avoid this: Losing the ÷ 100 and answering $60."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Substitute into the formula before you rearrange it — the numbers usually simplify to a one-step equation and there is far less to go wrong."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "tolerance",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "currency",
+    "canonicalValue": "6.00",
+    "displayValue": "$6",
+    "acceptedForms": [
+      "$6",
+      "$6",
+      "6"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0.005
+    },
+    "precision": {
+      "kind": "decimal_places",
+      "value": 2,
+      "required": true
+    },
+    "normalisation": "currency_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "The simple interest on a sum invested at 4% per annum for 5 years was $800. Find the principal."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "currency",
+      "canonicalValue": "4.00",
+      "displayValue": "$4",
+      "acceptedForms": [
+        "$4",
+        "$4",
+        "4"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.005
+      },
+      "precision": {
+        "kind": "decimal_places",
+        "value": 2,
+        "required": true
+      },
+      "normalisation": "currency_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "57d6da0d-95cd-4b1e-a8f7-d8ee6ea4044c",
+      "code": "M1-1.1",
+      "label": "Simple interest"
+    },
+    {
+      "objectiveId": "b542ca61-671b-4377-a308-6fcba12d73bb",
+      "code": "M1-1.1",
+      "label": "Rearranging a formula"
+    },
+    {
+      "objectiveId": "0c26c79d-c265-4e68-a948-081c7cfd6189",
+      "code": "M1-1.1",
+      "label": "Solving a linear equation"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 4,
+    "pageRef": "p17",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

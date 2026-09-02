@@ -1,0 +1,242 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p256-q15",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 4,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "On a grid the letter A is drawn with apex (4, 4), feet (3, 2) and (5, 2) and a crossbar from (3.5, 3) to (4.5, 3); the point C(6, 6) is marked. Draw accurately (i) the enlargement of letter A by scale factor 2 about centre C(6, 6), and (ii) the translation of letter A by the vector (−3, 2)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Transform the key points of the letter one at a time, then join them up in the same order as the original."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p256_q15.jpg",
+      "altText": "Source visual for edmar-csec-p256-q15 from workbook page 256."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "List the key points of the letter A.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Apex, two feet and the two ends of the crossbar"
+        },
+        {
+          "type": "text",
+          "value": "Result: (4, 4), (3, 2), (5, 2), (3.5, 3), (4.5, 3)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Apply the enlargement rule about C(6, 6) with scale factor 2.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Image = (2x − 6, 2y − 6): apex (4,4) → (2, 2); (3,2) → (0, −2); (5,2) → (4, −2); (3.5,3) → (1, 0); (4.5,3) → (3, 0)"
+        },
+        {
+          "type": "text",
+          "value": "Result: Enlarged letter with apex (2, 2) and feet (0, −2) and (4, −2)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Check the enlargement by comparing a length.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The distance between the feet was 2 units and is now 4 units, and every image point lies on the line from C through its object point"
+        },
+        {
+          "type": "text",
+          "value": "Result: Scale factor 2 confirmed"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Apply the translation by adding the vector to each point.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(x − 3, y + 2): (4,4) → (1, 6); (3,2) → (0, 4); (5,2) → (2, 4); (3.5,3) → (0.5, 5); (4.5,3) → (1.5, 5)"
+        },
+        {
+          "type": "text",
+          "value": "Result: Translated letter with apex (1, 6) and feet (0, 4) and (2, 4)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "For the enlargement use image = C + 2 × (point − C) for each key point; for the translation add −3 to every x-coordinate and 2 to every y-coordinate."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) The enlargement has apex (2, 2), feet (0, −2) and (4, −2), and a crossbar from (1, 0) to (3, 0) — twice the size of the original and on the far side of C(6, 6) from it.  (ii) The translated letter has apex (1, 6), feet (0, 4) and (2, 4), and a crossbar from (0.5, 5) to (1.5, 5) — the same size, moved 3 units left and 2 units up."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "An enlargement multiplies the displacement from the centre by the scale factor, so every image point lies on the ray from C through the object point at twice the distance, and every length doubles while the shape is unchanged. A translation adds the same vector to every point, so nothing about the shape, size or orientation changes — only its position."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "multiplying_the_coordinates_by_2_instead",
+      "wrongValue": "incorrect_1",
+      "misconception": "Multiplying the coordinates by 2 instead of multiplying the distance from the centre C by 2.",
+      "correctiveNote": "Avoid this: Multiplying the coordinates by 2 instead of multiplying the distance from the centre C by 2."
+    },
+    {
+      "key": "translating_with_the_vector_components_s",
+      "wrongValue": "incorrect_2",
+      "misconception": "Translating with the vector components swapped, moving 3 up and 2 left.",
+      "correctiveNote": "Avoid this: Translating with the vector components swapped, moving 3 up and 2 left."
+    },
+    {
+      "key": "enlarging_only_the_outline_and_forgettin",
+      "wrongValue": "incorrect_3",
+      "misconception": "Enlarging only the outline and forgetting the crossbar, so the image is not the same letter.",
+      "correctiveNote": "Avoid this: Enlarging only the outline and forgetting the crossbar, so the image is not the same letter."
+    },
+    {
+      "key": "drawing_the_image_without_joining_the_po",
+      "wrongValue": "incorrect_4",
+      "misconception": "Drawing the image without joining the points in the original order.",
+      "correctiveNote": "Avoid this: Drawing the image without joining the points in the original order."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Draw a faint ray from the centre through one object point and past its image — if the image is not on that ray, your enlargement is wrong."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Theenlargementhasape",
+    "displayValue": "The enlargement has ape",
+    "acceptedForms": [
+      "The enlargement has ape",
+      "Theenlargementhasape"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Enlarge the point (5, 4) by scale factor 2 about centre (1, 2)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(9,6).",
+      "displayValue": "(9, 6).",
+      "acceptedForms": [
+        "(9, 6).",
+        "(9,6)."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "f8fb8f96-f55b-4c72-a935-ba1cb70a47a3",
+      "code": "M1-1.1",
+      "label": "Enlargement about a given centre"
+    },
+    {
+      "objectiveId": "643dee18-6b8c-4ffa-a8c6-33b7501346a0",
+      "code": "M1-1.1",
+      "label": "Image coordinates under a scale factor"
+    },
+    {
+      "objectiveId": "f1ff5cf4-5f10-43a0-a495-d47411ea0dd6",
+      "code": "M1-1.1",
+      "label": "Translation by a column vector"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 15,
+    "pageRef": "p256",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a.i",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.i): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Theenlargementhasape",
+        "displayValue": "The enlargement has ape",
+        "acceptedForms": [
+          "The enlargement has ape",
+          "Theenlargementhasape"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.ii",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.ii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Thetranslate",
+        "displayValue": "The translate",
+        "acceptedForms": [
+          "The translate",
+          "Thetranslate"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

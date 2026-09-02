@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p127-q05",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Triangle ABC has vertices A(-2, 1), B(4, 1) and C(1, 5). (a) Calculate the lengths AB, AC and BC. (b) Hence state the type of triangle ABC, giving a reason."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Every length here is a distance between two known points, so one formula does all three parts."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p127_q05.jpg",
+      "altText": "Source visual for edmar-csec-p127-q05 from workbook page 127."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Find AB from A(-2, 1) to B(4, 1).",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "√((4 − (-2))² + (1 − 1)²) = √(36 + 0)"
+        },
+        {
+          "type": "text",
+          "value": "Result: AB = 6 units"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Find AC from A(-2, 1) to C(1, 5).",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "√((1 − (-2))² + (5 − 1)²) = √(9 + 16) = √25"
+        },
+        {
+          "type": "text",
+          "value": "Result: AC = 5 units"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Find BC from B(4, 1) to C(1, 5).",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "√((1 − 4)² + (5 − 1)²) = √(9 + 16) = √25"
+        },
+        {
+          "type": "text",
+          "value": "Result: BC = 5 units"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Compare the three lengths.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "AC = BC = 5, AB = 6, so exactly two sides are equal"
+        },
+        {
+          "type": "text",
+          "value": "Result: Two equal sides"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Apply the distance formula d = √((x₂ − x₁)² + (y₂ − y₁)²) to each pair of vertices, then compare the three lengths."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) AB = 6 units, AC = 5 units, BC = 5 units  (b) Isosceles, because AC = BC = 5 units while AB = 6 units, so exactly two sides are equal."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The distance formula is Pythagoras' theorem written in coordinates: the horizontal gap and the vertical gap between two points are the two shorter sides of a right-angled triangle, and the join of the points is the hypotenuse. Because squaring removes signs, the order of the points never matters. Classifying the triangle then needs nothing more than a comparison of the three numbers you produced."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "subtracting_the_coordinates_the_wrong_wa",
+      "wrongValue": "incorrect_1",
+      "misconception": "Subtracting the coordinates the wrong way and then losing the square, e.g. writing 4 − (-2) = 2.",
+      "correctiveNote": "Avoid this: Subtracting the coordinates the wrong way and then losing the square, e.g. writing 4 − (-2) = 2."
+    },
+    {
+      "key": "adding_the_differences_instead_of_squari",
+      "wrongValue": "incorrect_2",
+      "misconception": "Adding the differences instead of squaring them: (3 + 4) = 7 instead of √(9 + 16) = 5.",
+      "correctiveNote": "Avoid this: Adding the differences instead of squaring them: (3 + 4) = 7 instead of √(9 + 16) = 5."
+    },
+    {
+      "key": "calling_the_triangle_equilateral_because",
+      "wrongValue": "incorrect_3",
+      "misconception": "Calling the triangle equilateral because two sides matched, without checking the third.",
+      "correctiveNote": "Avoid this: Calling the triangle equilateral because two sides matched, without checking the third."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Note that AB is horizontal (both y-coordinates are 1), so its length is just the difference in x-values — spotting horizontal and vertical sides saves time under exam pressure."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "AB=6units,AC=5units,BC=5units",
+    "displayValue": "AB = 6 units, AC = 5 units, BC = 5 units",
+    "acceptedForms": [
+      "AB = 6 units, AC = 5 units, BC = 5 units",
+      "AB=6units,AC=5units,BC=5units"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Find the length PQ where P(1, -2) and Q(5, 1)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "PQ=√(16+9)=5units.",
+      "displayValue": "PQ = √(16 + 9) = 5 units.",
+      "acceptedForms": [
+        "PQ = √(16 + 9) = 5 units.",
+        "PQ=√(16+9)=5units."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-3.2"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "3e9478d6-8dcf-43bd-a67a-16bccbfcec9d",
+      "code": "M1-3.2",
+      "label": "Coordinate geometry"
+    },
+    {
+      "objectiveId": "7a7fd8cd-ca78-46a4-a524-d53263ae5f16",
+      "code": "M1-3.2",
+      "label": "Distance between two points"
+    },
+    {
+      "objectiveId": "7795dacb-e683-4a7e-ab96-053fc7e486bd",
+      "code": "M1-3.2",
+      "label": "Classifying triangles by side length"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 5,
+    "pageRef": "p127",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

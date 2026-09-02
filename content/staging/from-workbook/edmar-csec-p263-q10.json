@@ -1,0 +1,211 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p263-q10",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Shape T has vertices (2, 1), (5, 1), (5, 3) and (4, 3); its image Q has vertices (1, 2), (1, 5), (3, 5) and (3, 4). (i) Describe fully the single transformation that maps T onto Q. (ii) On the diagram, draw the image of T after a translation by the vector (-1, 6) and label it M."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Every vertex of Q is a vertex of T with its two coordinates swapped, which is the signature of one particular mirror line."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p263_q10.jpg",
+      "altText": "Source visual for edmar-csec-p263-q10 from workbook page 263."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Read the vertices of T and Q from the grid.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Go round each shape in the same sense."
+        },
+        {
+          "type": "text",
+          "value": "Result: T: (2, 1), (5, 1), (5, 3), (4, 3);  Q: (1, 2), (1, 5), (3, 5), (3, 4)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Pair the corresponding vertices and compare the coordinates.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(2, 1) -> (1, 2);  (5, 1) -> (1, 5);  (5, 3) -> (3, 5);  (4, 3) -> (3, 4). In every case the x and y values swap."
+        },
+        {
+          "type": "text",
+          "value": "Result: (x, y) -> (y, x)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Check the orientation and name the transformation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Going round T the vertices run anticlockwise but round Q they run clockwise, so the orientation is reversed, which rules out a rotation and confirms a reflection. The rule (x, y) -> (y, x) is reflection in the line y = x."
+        },
+        {
+          "type": "text",
+          "value": "Result: Reflection in the line y = x"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "For part (ii), apply the translation vector (-1, 6) to each vertex of T.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(x, y) -> (x - 1, y + 6)"
+        },
+        {
+          "type": "text",
+          "value": "Result: M: (1, 7), (4, 7), (4, 9), (3, 9)"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Plot those four points, join them in the same order as T, and label the shape M.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "M sits 1 square left and 6 squares up from T, congruent and the same way up."
+        },
+        {
+          "type": "text",
+          "value": "Result: Shape M drawn near the top of the grid"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Match the corresponding vertices of T and Q to spot the coordinate rule, name the mirror line, then apply the given vector to each vertex of T for part (ii)."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) A reflection in the line y = x.  (ii) M has vertices (1, 7), (4, 7), (4, 9) and (3, 9)."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Reflection in y = x interchanges the roles of the two axes, so a point a units along and b units up becomes b units along and a units up. Because a reflection reverses the sense in which the vertices are traced, checking orientation is a quick way to distinguish a reflection from a rotation when the two could otherwise be confused. The translation in part (ii) leaves both size and orientation alone, so it only shifts the coordinates."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "calling_the_mapping_a_rotation_of_90_deg",
+      "wrongValue": "incorrect_1",
+      "misconception": "Calling the mapping a rotation of 90 degrees, which would preserve orientation rather than reverse it.",
+      "correctiveNote": "Avoid this: Calling the mapping a rotation of 90 degrees, which would preserve orientation rather than reverse it."
+    },
+    {
+      "key": "writing_the_mirror_line_as_y_x_instead_o",
+      "wrongValue": "incorrect_2",
+      "misconception": "Writing the mirror line as y = -x instead of y = x.",
+      "correctiveNote": "Avoid this: Writing the mirror line as y = -x instead of y = x."
+    },
+    {
+      "key": "adding_1_instead_of_subtracting_it_for_t",
+      "wrongValue": "incorrect_3",
+      "misconception": "Adding 1 instead of subtracting it for the -1 in the translation vector.",
+      "correctiveNote": "Avoid this: Adding 1 instead of subtracting it for the -1 in the translation vector."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "The coordinate rules are worth memorising: reflection in y = x gives (y, x), reflection in y = -x gives (-y, -x), rotation of 90 degrees anticlockwise about O gives (-y, x)."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Areflectionintheliney=x.",
+    "displayValue": "A reflection in the line y = x.",
+    "acceptedForms": [
+      "A reflection in the line y = x.",
+      "Areflectionintheliney=x."
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Reflect the point (7, 2) in the line y = x, then translate the result by the vector (-1, 6)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(2,7)afterthereflection,then(1,13).",
+      "displayValue": "(2, 7) after the reflection, then (1, 13).",
+      "acceptedForms": [
+        "(2, 7) after the reflection, then (1, 13).",
+        "(2,7)afterthereflection,then(1,13)."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "1529c9b2-6adf-421e-afeb-017483a38537",
+      "code": "M1-1.1",
+      "label": "Describing transformations fully"
+    },
+    {
+      "objectiveId": "4930b0cf-db06-49b5-aa7c-ba55fb1d231d",
+      "code": "M1-1.1",
+      "label": "Reflection in the line y = x"
+    },
+    {
+      "objectiveId": "b7f63564-ba31-4df8-ac0e-f6ba59d78837",
+      "code": "M1-1.1",
+      "label": "Translation by a column vector"
+    },
+    {
+      "objectiveId": "8c972987-b3d3-470c-a14d-f2dfff15f3c2",
+      "code": "M1-1.1",
+      "label": "Orientation of a figure"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 10,
+    "pageRef": "p263",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

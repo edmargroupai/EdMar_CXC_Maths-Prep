@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p054-q01",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the equation 5x − 1 = 8x + 1."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The unknown appears on both sides, so the first job is to gather all the x-terms together."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p054_q01.jpg",
+      "altText": "Source visual for edmar-csec-p054-q01 from workbook page 54."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Subtract 5x from both sides.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5x − 5x = 0 and 8x − 5x = 3x"
+        },
+        {
+          "type": "text",
+          "value": "Result: −1 = 3x + 1"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Subtract 1 from both sides.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "−1 − 1 = −2"
+        },
+        {
+          "type": "text",
+          "value": "Result: −2 = 3x"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Divide both sides by 3.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "−2 ÷ 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = −2/3"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Check by substitution.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "LHS: 5(−2/3) − 1 = −13/3; RHS: 8(−2/3) + 1 = −13/3"
+        },
+        {
+          "type": "text",
+          "value": "Result: both sides equal −13/3"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Move the x-terms to one side and the numbers to the other, then divide by the coefficient of x."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = −2/3"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "An equation is a statement that two expressions have equal value, and that equality survives any operation applied identically to both sides. Subtracting 5x from each side removes x from the left without disturbing the balance, leaving a single x-term to isolate. The solution is a fraction simply because 3 does not divide −2 exactly, which is perfectly acceptable."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "subtracting_8x_instead_of_5x_and_then_mi",
+      "wrongValue": "incorrect_1",
+      "misconception": "Subtracting 8x instead of 5x and then mishandling the resulting −3x.",
+      "correctiveNote": "Avoid this: Subtracting 8x instead of 5x and then mishandling the resulting −3x."
+    },
+    {
+      "key": "assuming_a_wrong_answer_because_it_is_ne",
+      "wrongValue": "incorrect_2",
+      "misconception": "Assuming a wrong answer because it is negative and not a whole number.",
+      "correctiveNote": "Avoid this: Assuming a wrong answer because it is negative and not a whole number."
+    },
+    {
+      "key": "moving_the_1_across_without_changing_its",
+      "wrongValue": "incorrect_3",
+      "misconception": "Moving the 1 across without changing its sign.",
+      "correctiveNote": "Avoid this: Moving the 1 across without changing its sign."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Move the x-terms to whichever side keeps the coefficient positive — subtracting 5x here avoids working with −3x. Fewer negatives means fewer sign errors."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=−2/3",
+    "displayValue": "= −2/3",
+    "acceptedForms": [
+      "= −2/3",
+      "=−2/3"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve 4x − 3 = 6x + 5."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "−8=2x,sox=−4.",
+      "displayValue": "−8 = 2x, so x = −4.",
+      "acceptedForms": [
+        "−8 = 2x, so x = −4.",
+        "−8=2x,sox=−4."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "8ab92011-3caf-4141-afbe-e8af22d5a5b9",
+      "code": "M1-4.1",
+      "label": "Solving linear equations"
+    },
+    {
+      "objectiveId": "6e305e75-4759-460d-ad11-42cf453b20b0",
+      "code": "M1-4.1",
+      "label": "Balancing an equation"
+    },
+    {
+      "objectiveId": "f5359daa-7d6c-4534-ae6b-7bb0fee67aa3",
+      "code": "M1-4.1",
+      "label": "Directed numbers"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 1,
+    "pageRef": "p54",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

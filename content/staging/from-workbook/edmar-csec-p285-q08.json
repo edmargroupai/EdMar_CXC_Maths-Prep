@@ -1,0 +1,303 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p285-q08",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 8,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "On the grid, O is the origin, P is the point (−2, 4) and R is the point (5, 1). (iii) Write the position vector OR as a column vector. (iv) Q is such that QR = (2, −4); plot Q. (v) Determine |QR|. (vi) Show by calculation that OPQR is a parallelogram."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Read the coordinates straight off the grid, then remember that QR runs from Q to R — so to find Q you go backwards from R."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p285_q08.jpg",
+      "altText": "Source visual for edmar-csec-p285-q08 from workbook page 285."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Read the coordinates of R from the grid and write them as a column vector.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "R is 5 units right and 1 unit up from O"
+        },
+        {
+          "type": "text",
+          "value": "Result: OR = (5, 1)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Since QR = OR − OQ, rearrange to OQ = OR − QR and substitute.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "OQ = (5, 1) − (2, −4) = (5 − 2, 1 + 4)"
+        },
+        {
+          "type": "text",
+          "value": "Result: Q = (3, 5); plot the point 3 right and 5 up"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Apply Pythagoras to the components of QR.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "|QR| = √(2² + (−4)²) = √(4 + 16) = √20"
+        },
+        {
+          "type": "text",
+          "value": "Result: |QR| = 2√5 ≈ 4.47 units"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Write the vectors of one pair of opposite sides of OPQR.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "OP = (−2, 4) − (0, 0) = (−2, 4); RQ = OQ − OR = (3, 5) − (5, 1) = (−2, 4)"
+        },
+        {
+          "type": "text",
+          "value": "Result: OP = RQ = (−2, 4)"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "State the conclusion. Equal vectors mean the sides are both parallel and of equal length.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Check the other pair too: PQ = (3, 5) − (−2, 4) = (5, 1) = OR"
+        },
+        {
+          "type": "text",
+          "value": "Result: Both pairs of opposite sides are equal and parallel, so OPQR is a parallelogram"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Read OR from the grid, subtract QR from R's coordinates to locate Q, apply Pythagoras for the magnitude, then show a pair of opposite sides are equal vectors."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(iii) OR = (5, 1)  (iv) Q = (3, 5)  (v) |QR| = √20 = 2√5 ≈ 4.47 units  (vi) OP = (−2, 4) and RQ = (−2, 4), so OP = RQ; also PQ = (5, 1) = OR. Both pairs of opposite sides are equal in length and parallel, therefore OPQR is a parallelogram."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A position vector is just the point's coordinates written as a column, so reading the grid gives OR directly. The vector QR is the displacement from Q to R, so undoing it from R lands you back on Q. Two sides of a quadrilateral being represented by identical column vectors means they have the same direction and the same length — and that is precisely the definition of a parallelogram."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "adding_qr_to_r_instead_of_subtracting_it",
+      "wrongValue": "incorrect_1",
+      "misconception": "Adding QR to R instead of subtracting it, plotting Q at (7, −3).",
+      "correctiveNote": "Avoid this: Adding QR to R instead of subtracting it, plotting Q at (7, −3)."
+    },
+    {
+      "key": "writing_qr_as_2_4_or_as_2_4_instead_of_u",
+      "wrongValue": "incorrect_2",
+      "misconception": "Writing |QR| as 2 + (−4) or as √(2 − 4) instead of using squares.",
+      "correctiveNote": "Avoid this: Writing |QR| as 2 + (−4) or as √(2 − 4) instead of using squares."
+    },
+    {
+      "key": "comparing_op_with_qr_which_gives_the_neg",
+      "wrongValue": "incorrect_3",
+      "misconception": "Comparing OP with QR (which gives the negative) and concluding the sides are not equal — compare OP with RQ, or state that OP = −QR.",
+      "correctiveNote": "Avoid this: Comparing OP with QR (which gives the negative) and concluding the sides are not equal — compare OP with RQ, or state that OP = −QR."
+    },
+    {
+      "key": "leaving_the_answer_as_20_when_the_questi",
+      "wrongValue": "incorrect_4",
+      "misconception": "Leaving the answer as √20 when the question expects a simplified surd or a decimal.",
+      "correctiveNote": "Avoid this: Leaving the answer as √20 when the question expects a simplified surd or a decimal."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When testing a parallelogram with vectors, always take the two opposite sides in the same rotational direction round the shape, or the signs will fight you."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "OR=(5,1)",
+    "displayValue": "OR = (5, 1)",
+    "acceptedForms": [
+      "OR = (5, 1)",
+      "OR=(5,1)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A(1, 2), B(4, 3), C(6, 7), D(3, 6). Is ABCD a parallelogram?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=(3,1)andDC=(3,1),soAB=DC—yes,itisaparallelogram.",
+      "displayValue": "= (3, 1) and DC = (3, 1), so AB = DC — yes, it is a parallelogram.",
+      "acceptedForms": [
+        "= (3, 1) and DC = (3, 1), so AB = DC — yes, it is a parallelogram.",
+        "=(3,1)andDC=(3,1),soAB=DC—yes,itisaparallelogram."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "57b378e8-4de9-4eea-af57-7ea168058aac",
+      "code": "M2-5.1",
+      "label": "Position vectors from a grid"
+    },
+    {
+      "objectiveId": "861a9c28-181d-4549-a58b-7ac1c0c4aef5",
+      "code": "M2-5.1",
+      "label": "Column vectors"
+    },
+    {
+      "objectiveId": "068f37a4-cdd9-46f8-a320-423287fdc04c",
+      "code": "M2-5.1",
+      "label": "Magnitude of a vector"
+    },
+    {
+      "objectiveId": "501d9b12-42bc-4a91-a155-18cb92983dd0",
+      "code": "M2-5.1",
+      "label": "Parallelogram test using equal vectors"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 8,
+    "pageRef": "p285",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a.iii",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.iii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "OR=(5,1)",
+        "displayValue": "OR = (5, 1)",
+        "acceptedForms": [
+          "OR = (5, 1)",
+          "OR=(5,1)"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.iv",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.iv): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Q=(3,5)",
+        "displayValue": "Q = (3, 5)",
+        "acceptedForms": [
+          "Q = (3, 5)",
+          "Q=(3,5)"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.v",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.v): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "|QR|=√20=2√5≈4.47units",
+        "displayValue": "|QR| = √20 = 2√5 ≈ 4.47 units",
+        "acceptedForms": [
+          "|QR| = √20 = 2√5 ≈ 4.47 units",
+          "|QR|=√20=2√5≈4.47units"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "d",
+      "sequence": 4,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (d): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "OP=(−2,4)an",
+        "displayValue": "OP = (−2, 4) an",
+        "acceptedForms": [
+          "OP = (−2, 4) an",
+          "OP=(−2,4)an"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

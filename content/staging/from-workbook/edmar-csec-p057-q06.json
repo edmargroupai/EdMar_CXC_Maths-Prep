@@ -1,0 +1,162 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p057-q06",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A binary operation is defined by a o b = a + b². Find 2 o 3."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Only the second number is² here - check the definition before you calculate."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p057_q06.jpg",
+      "altText": "Source visual for edmar-csec-p057-q06 from workbook page 57."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Substitute a = 2 and b = 3.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2 + 3²"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2 + 9"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Add.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: 11"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Substitute a = 2 and b = 3 into a + b², squaring first."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "2 o 3 = 11"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The index applies only to b, so squaring happens before the addition. Compare this with the earlier rule a² + b: the same two inputs give a different answer, which is why the definition must be read every time rather than remembered from the previous question."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "squaring_the_sum_giving_2_3_25",
+      "wrongValue": "incorrect_1",
+      "misconception": "Squaring the sum, giving (2 + 3)² = 25.",
+      "correctiveNote": "Avoid this: Squaring the sum, giving (2 + 3)² = 25."
+    },
+    {
+      "key": "squaring_the_first_number_giving_4_3_7",
+      "wrongValue": "incorrect_2",
+      "misconception": "Squaring the first number, giving 4 + 3 = 7.",
+      "correctiveNote": "Avoid this: Squaring the first number, giving 4 + 3 = 7."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Copy the definition onto your answer line first; questions on a page often use different rules with the same symbol."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "2",
+    "displayValue": "2",
+    "acceptedForms": [
+      "2",
+      "2"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "With a o b = a + b², find 5 o 2."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "9",
+      "displayValue": "9",
+      "acceptedForms": [
+        "9",
+        "9"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "f42bae01-a472-4e03-ac5b-c664f4e7eae6",
+      "code": "M1-4.1",
+      "label": "Binary operations"
+    },
+    {
+      "objectiveId": "10803172-34d7-48b1-a937-73a6ac369202",
+      "code": "M1-4.1",
+      "label": "Substitution"
+    },
+    {
+      "objectiveId": "5af95666-887e-4b9e-ae08-4ce696e36d16",
+      "code": "M1-4.1",
+      "label": "Order of operations"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 6,
+    "pageRef": "p57",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

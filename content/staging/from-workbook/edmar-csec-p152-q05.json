@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p152-q05",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The graphs of y = x² − 1 and y = x + 3 are shown on the same axes. (a) Estimate the coordinates of their TWO points of intersection. (b) Hence estimate the solutions of x² − x − 4 = 0. (c) State the y-intercept of each graph."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The equation in part (b) is exactly what you get by setting the two given expressions equal, so the intersection x-values are its solutions."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p152_q05.jpg",
+      "altText": "Source visual for edmar-csec-p152-q05 from workbook page 152."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Read the two crossing points from the graph.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The curve and line meet just left of x = -1.5 and just past x = 2.5"
+        },
+        {
+          "type": "text",
+          "value": "Result: About (-1.6, 1.4) and (2.6, 5.6)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Set the two expressions equal.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x² − 1 = x + 3 → x² − x − 4 = 0"
+        },
+        {
+          "type": "text",
+          "value": "Result: The intersection x-values solve this equation"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "State the estimated solutions.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Take the x-coordinates of the two intersection points"
+        },
+        {
+          "type": "text",
+          "value": "Result: x ≈ -1.6 and x ≈ 2.6"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Read the y-intercept of each graph.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "y = x² − 1 gives y = -1 at x = 0; y = x + 3 gives y = 3 at x = 0"
+        },
+        {
+          "type": "text",
+          "value": "Result: -1 and 3"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Read the two crossing points from the graph, show that equating the two expressions produces x² − x − 4 = 0 so the x-values are its roots, then read each y-intercept."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) Approximately (-1.6, 1.4) and (2.6, 5.6)  (b) x ≈ -1.6 and x ≈ 2.6  (c) y-intercepts: -1 for y = x² − 1 and 3 for y = x + 3."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Where two graphs cross, both equations hold at once, so the x-values there satisfy x² − 1 = x + 3 — and rearranging that gives precisely x² − x − 4 = 0. This is the standard trick for solving an equation graphically: split it into two familiar graphs whose intersection you can read. The exact roots are (1 ± √17)/2, which agree with the graphical estimates."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "giving_only_the_x_coordinates_when_full_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Giving only the x-coordinates when full coordinates are asked for in part (a).",
+      "correctiveNote": "Avoid this: Giving only the x-coordinates when full coordinates are asked for in part (a)."
+    },
+    {
+      "key": "trying_to_solve_x_x_4_0_by_factorising_w",
+      "wrongValue": "incorrect_2",
+      "misconception": "Trying to solve x² − x − 4 = 0 by factorising, when it does not factorise over the integers.",
+      "correctiveNote": "Avoid this: Trying to solve x² − x − 4 = 0 by factorising, when it does not factorise over the integers."
+    },
+    {
+      "key": "reading_the_y_intercept_of_the_curve_as_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Reading the y-intercept of the curve as the position of its lowest point.",
+      "correctiveNote": "Avoid this: Reading the y-intercept of the curve as the position of its lowest point."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When a question says 'hence', use the previous answer — re-solving from scratch wastes time and usually loses the connection mark."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Approximately(-1.6,1.4)and(2.6,5.6)",
+    "displayValue": "Approximately (-1.6, 1.4) and (2.6, 5.6)",
+    "acceptedForms": [
+      "Approximately (-1.6, 1.4) and (2.6, 5.6)",
+      "Approximately(-1.6,1.4)and(2.6,5.6)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Where does y = x² meet y = x + 2?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "x²=x+2givesx²−x−2=0,sox=-1andx=2,at(-1,1)and(2,4).",
+      "displayValue": "x² = x + 2 gives x² − x − 2 = 0, so x = -1 and x = 2, at (-1, 1) and (2, 4).",
+      "acceptedForms": [
+        "x² = x + 2 gives x² − x − 2 = 0, so x = -1 and x = 2, at (-1, 1) and (2, 4).",
+        "x²=x+2givesx²−x−2=0,sox=-1andx=2,at(-1,1)and(2,4)."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "442b4435-3a30-44e8-a0ee-3a61951288a3",
+      "code": "M1-5.1",
+      "label": "Intersection of a line and a curve"
+    },
+    {
+      "objectiveId": "d23e2e11-b52d-4c06-a469-f14997e41548",
+      "code": "M1-5.1",
+      "label": "Solving equations graphically"
+    },
+    {
+      "objectiveId": "4e8a5c27-4237-47ec-a84b-9ab552bfd789",
+      "code": "M1-5.1",
+      "label": "y-intercepts"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 5,
+    "pageRef": "p152",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

@@ -1,0 +1,211 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p082-q09",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Two dot plots show the points scored by Team A and Team B in nine matches each. Team A scored 3, 4, 4, 5, 5, 5, 6, 6, 7 and Team B scored 1, 2, 4, 5, 5, 5, 6, 8, 9. (a) Determine the median score for each team. (b) Determine the modal score for each team. (c) Calculate the range of scores for each team. (d) Which team was more consistent? Give a reason based on the data."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Read every stack of dots as a repeated value, then treat each team as its own ordered list of nine scores."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p082_q09.jpg",
+      "altText": "Source visual for edmar-csec-p082-q09 from workbook page 82."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write out Team A's scores from the dots.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "One dot at 3, two at 4, three at 5, two at 6, one at 7"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3, 4, 4, 5, 5, 5, 6, 6, 7"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Write out Team B's scores from the dots.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "One dot each at 1, 2 and 4, three at 5, one each at 6, 8 and 9"
+        },
+        {
+          "type": "text",
+          "value": "Result: 1, 2, 4, 5, 5, 5, 6, 8, 9"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Take the 5th score in each ordered list.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Nine values, so the median sits in position 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: Median = 5 for each team"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Find the tallest stack in each plot.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Three dots at 5 in both plots"
+        },
+        {
+          "type": "text",
+          "value": "Result: Mode = 5 for each team"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Subtract the lowest score from the highest for each team.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "A: 7 − 3; B: 9 − 1"
+        },
+        {
+          "type": "text",
+          "value": "Result: Range = 4 for A and 8 for B"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Write each dot plot out as an ordered list of nine scores; the 5th score is the median, the tallest stack gives the mode, and the difference between the end values gives the range — then compare the ranges to judge consistency."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) Median = 5 for Team A and 5 for Team B  (b) Mode = 5 for both teams  (c) Range = 4 for Team A and 8 for Team B  (d) Team A was more consistent: its scores span only 4 points and cluster around 5, while Team B's span 8 points and include scores as low as 1 and as high as 9."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Averages tell you where the data sit but nothing about how tightly they sit there. Two data sets can share a median and a mode and still behave very differently, so a measure of spread such as the range is what settles any question about consistency."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "ignoring_stacked_dots_and_treating_every",
+      "wrongValue": "incorrect_1",
+      "misconception": "Ignoring stacked dots and treating every value as occurring once.",
+      "correctiveNote": "Avoid this: Ignoring stacked dots and treating every value as occurring once."
+    },
+    {
+      "key": "concluding_the_teams_performed_identical",
+      "wrongValue": "incorrect_2",
+      "misconception": "Concluding the teams performed identically because their medians and modes match.",
+      "correctiveNote": "Avoid this: Concluding the teams performed identically because their medians and modes match."
+    },
+    {
+      "key": "giving_the_range_as_3_to_7_instead_of_as",
+      "wrongValue": "incorrect_3",
+      "misconception": "Giving the range as '3 to 7' instead of as the single number 4.",
+      "correctiveNote": "Avoid this: Giving the range as '3 to 7' instead of as the single number 4."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When a question asks which set is more consistent, quote a spread figure — an answer with no number rarely earns the mark."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Median=5forTeamAand5forTeamB",
+    "displayValue": "Median = 5 for Team A and 5 for Team B",
+    "acceptedForms": [
+      "Median = 5 for Team A and 5 for Team B",
+      "Median=5forTeamAand5forTeamB"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A team scores 4, 4, 5, 6, 6 in five matches. Find its median and its range."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "Median=5,range=2",
+      "displayValue": "Median = 5, range = 2",
+      "acceptedForms": [
+        "Median = 5, range = 2",
+        "Median=5,range=2"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M3-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "98eddc04-352d-467a-a20a-d268de860a1e",
+      "code": "M3-1.1",
+      "label": "Reading dot plots"
+    },
+    {
+      "objectiveId": "1df623b6-8906-4b6d-a924-aa8670083165",
+      "code": "M3-1.1",
+      "label": "Median"
+    },
+    {
+      "objectiveId": "e87e8e0c-215b-4fc7-acf1-be5c83c4b682",
+      "code": "M3-1.1",
+      "label": "Mode"
+    },
+    {
+      "objectiveId": "318034c6-9874-4ef0-ae72-503e47dbd35f",
+      "code": "M3-1.1",
+      "label": "Range"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 9,
+    "pageRef": "p82",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

@@ -1,0 +1,221 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p206-q20",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Three branches sell Models A, B and C of a device. The sales matrix S = (12 8 5 / 9 11 6 / 15 7 4) has one row per branch and one column per model, and the unit-price matrix p = (450 / 600 / 750) gives the price of each model in dollars. (a) Calculate Sp. (b) State what the entries of Sp represent. (c) A 5% commission is paid on the revenue of each branch; write the commission amounts as a column matrix. (d) Determine the total commission paid to the three branches."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The product gives each branch's revenue; the commission is then just 5% of each of those numbers, which is a scalar multiplication."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p206_q20.jpg",
+      "altText": "Source visual for edmar-csec-p206-q20 from workbook page 206."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply branch 1's row into the price column.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "12(450) + 8(600) + 5(750) = 5400 + 4800 + 3750"
+        },
+        {
+          "type": "text",
+          "value": "Result: 13 950"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Multiply branch 2's row into the price column.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "9(450) + 11(600) + 6(750) = 4050 + 6600 + 4500"
+        },
+        {
+          "type": "text",
+          "value": "Result: 15 150"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Multiply branch 3's row into the price column.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "15(450) + 7(600) + 4(750) = 6750 + 4200 + 3000"
+        },
+        {
+          "type": "text",
+          "value": "Result: 13 950"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Take 5% of each revenue, that is multiply the column by 0.05.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "0.05 × 13 950 = 697.50; 0.05 × 15 150 = 757.50; 0.05 × 13 950 = 697.50"
+        },
+        {
+          "type": "text",
+          "value": "Result: (697.50 / 757.50 / 697.50)"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Add the three commissions.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "697.50 + 757.50 + 697.50, or 5% of the total revenue 43 050"
+        },
+        {
+          "type": "text",
+          "value": "Result: $2152.50"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Multiply each branch row into the price column to get revenues, take 5% of each to get commissions, then add the three commissions."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) Sp = (13950 / 15150 / 13950)  (b) Each entry is the total sales revenue in dollars of that branch: $13 950 for branch 1, $15 150 for branch 2 and $13 950 for branch 3  (c) Commission column matrix = 0.05 × Sp = (697.50 / 757.50 / 697.50)  (d) Total commission = $697.50 + $757.50 + $697.50 = $2152.50"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Each entry of Sp pairs the number of each model sold with the price of that same model and adds the money, so one multiplication prices three branches at once. Taking a percentage of every entry is a scalar multiplication, which is why the commission column has the same shape as the revenue column. Adding the commissions gives the same figure as 5% of the total revenue of $43 050, a useful cross-check."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "pairing_model_b_sales_with_the_model_a_p",
+      "wrongValue": "incorrect_1",
+      "misconception": "Pairing Model B sales with the Model A price.",
+      "correctiveNote": "Avoid this: Pairing Model B sales with the Model A price."
+    },
+    {
+      "key": "working_out_5_as_0_5_and_getting_ten_tim",
+      "wrongValue": "incorrect_2",
+      "misconception": "Working out 5% as 0.5 and getting ten times too much.",
+      "correctiveNote": "Avoid this: Working out 5% as 0.5 and getting ten times too much."
+    },
+    {
+      "key": "rounding_revenue_to_the_nearest_dollar_b",
+      "wrongValue": "incorrect_3",
+      "misconception": "Rounding revenue to the nearest dollar before taking the commission and losing the exact cents.",
+      "correctiveNote": "Avoid this: Rounding revenue to the nearest dollar before taking the commission and losing the exact cents."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When several percentages of a column are wanted, multiply the whole column by the decimal in one step rather than each entry separately."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Sp=(13950/15150/13950)",
+    "displayValue": "Sp = (13950 / 15150 / 13950)",
+    "acceptedForms": [
+      "Sp = (13950 / 15150 / 13950)",
+      "Sp=(13950/15150/13950)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Find 5% of $8400."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "currency",
+      "canonicalValue": "420.00",
+      "displayValue": "$420",
+      "acceptedForms": [
+        "$420",
+        "$420",
+        "420"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.005
+      },
+      "precision": {
+        "kind": "decimal_places",
+        "value": 2,
+        "required": true
+      },
+      "normalisation": "currency_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "5eaa06f4-2335-416a-a1af-d87644356b6b",
+      "code": "M2-4.1",
+      "label": "Matrix multiplication"
+    },
+    {
+      "objectiveId": "b0dcc30a-ef85-406c-a6ae-582e4dfc953b",
+      "code": "M2-4.1",
+      "label": "Interpreting a product matrix in context"
+    },
+    {
+      "objectiveId": "582d95f7-e4c2-4e28-aac0-61162a5c41de",
+      "code": "M2-4.1",
+      "label": "Percentage of a quantity"
+    },
+    {
+      "objectiveId": "0388fc38-366a-4b12-a998-b36641986c0c",
+      "code": "M2-4.1",
+      "label": "Scalar multiplication"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 20,
+    "pageRef": "p206",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

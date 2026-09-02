@@ -1,0 +1,220 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p112-q10",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the simultaneous equations x + y = 1 and x² + y² = 13."
+    },
+    {
+      "type": "text",
+      "value": "Think first: One equation is linear and one is quadratic, so make a variable the subject of the linear one and substitute."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p112_q10.jpg",
+      "altText": "Source visual for edmar-csec-p112-q10 from workbook page 112."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Make y the subject of the linear equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x + y = 1"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 1 − x"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Substitute y = 1 − x into x² + y² = 13.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x² + (1 − x)² = 13"
+        },
+        {
+          "type": "text",
+          "value": "Result: x² + 1 − 2x + x² = 13"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Collect terms and simplify to standard quadratic form.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2x² − 2x − 12 = 0, then divide by 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: x² − x − 6 = 0"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Factorise and solve for x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(x − 3)(x + 2) = 0"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 3 or x = −2"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Substitute each x back into y = 1 − x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x = 3 → y = −2;  x = −2 → y = 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: (3, −2) and (−2, 3)"
+        }
+      ]
+    },
+    {
+      "stepNo": 6,
+      "instruction": "Check both pairs in the quadratic equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3² + (−2)² = 13 and (−2)² + 3² = 13"
+        },
+        {
+          "type": "text",
+          "value": "Result: Both pairs verified"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Rearrange x + y = 1 to y = 1 − x, substitute into x² + y² = 13, solve the resulting quadratic in x, then find the matching y for each x."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = 3, y = −2  or  x = −2, y = 3"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A line and a circle can meet in at most two points, which is why this pair of equations gives two solutions. Substituting the linear equation into the quadratic replaces two unknowns with one, turning the problem into a single quadratic you already know how to solve. Each root of that quadratic is one x-coordinate of an intersection point, and the linear equation supplies its partner y."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "solving_the_quadratic_for_x_but_forgetti",
+      "wrongValue": "incorrect_1",
+      "misconception": "Solving the quadratic for x but forgetting to find the matching y values.",
+      "correctiveNote": "Avoid this: Solving the quadratic for x but forgetting to find the matching y values."
+    },
+    {
+      "key": "pairing_the_x_values_with_the_wrong_y_va",
+      "wrongValue": "incorrect_2",
+      "misconception": "Pairing the x values with the wrong y values.",
+      "correctiveNote": "Avoid this: Pairing the x values with the wrong y values."
+    },
+    {
+      "key": "expanding_1_x_as_1_x_instead_of_1_2x_x",
+      "wrongValue": "incorrect_3",
+      "misconception": "Expanding (1 − x)² as 1 − x² instead of 1 − 2x + x².",
+      "correctiveNote": "Avoid this: Expanding (1 − x)² as 1 − x² instead of 1 − 2x + x²."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Always write your answers as ordered pairs so each x stays attached to its own y — examiners mark the pairing, not just the numbers."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=3,y=−2",
+    "displayValue": "= 3, y = −2",
+    "acceptedForms": [
+      "= 3, y = −2",
+      "=3,y=−2"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve x + y = 5 and x² + y² = 17."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=4,y=1",
+      "displayValue": "= 4, y = 1",
+      "acceptedForms": [
+        "= 4, y = 1",
+        "=4,y=1"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-6.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "774bb1b0-d45b-42be-ab9c-321c0d574f47",
+      "code": "M1-6.1",
+      "label": "Simultaneous equations (one linear, one quadratic)"
+    },
+    {
+      "objectiveId": "60586037-1f6a-4159-a2b6-9f6c90110418",
+      "code": "M1-6.1",
+      "label": "Substitution"
+    },
+    {
+      "objectiveId": "3b9bcbdc-d20f-4744-aba6-71ab1aea3350",
+      "code": "M1-6.1",
+      "label": "Solving quadratic equations by factorising"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 10,
+    "pageRef": "p112",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

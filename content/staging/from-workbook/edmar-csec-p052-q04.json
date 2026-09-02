@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p052-q04",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Expand and simplify (x − 4)(x − 3)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Two negative numbers multiply to give a positive constant, but their sum makes the middle term negative."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p052_q04.jpg",
+      "altText": "Source visual for edmar-csec-p052-q04 from workbook page 52."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply the first terms.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x × x"
+        },
+        {
+          "type": "text",
+          "value": "Result: x²"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Multiply the outer and inner pairs.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x × (−3) = −3x and (−4) × x = −4x"
+        },
+        {
+          "type": "text",
+          "value": "Result: −3x − 4x"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Multiply the last terms.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(−4) × (−3), negative times negative is positive"
+        },
+        {
+          "type": "text",
+          "value": "Result: +12"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Collect the middle terms.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "−3x − 4x = −7x"
+        },
+        {
+          "type": "text",
+          "value": "Result: x² − 7x + 12"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Expand term by term, keeping the signs attached to the numbers, then collect the x-terms."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x² − 7x + 12"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Each number keeps its sign throughout the expansion, so the two cross-products are both negative and add to −7x, while the product of the two negatives turns positive. This is why a quadratic with a positive constant and a negative middle term factorises into two brackets that both contain minus signs. Sign discipline, not new mathematics, is what makes this expansion different from the all-positive ones."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "getting_12_as_the_constant_by_forgetting",
+      "wrongValue": "incorrect_1",
+      "misconception": "Getting −12 as the constant by forgetting that (−4)(−3) is positive.",
+      "correctiveNote": "Avoid this: Getting −12 as the constant by forgetting that (−4)(−3) is positive."
+    },
+    {
+      "key": "writing_the_middle_term_as_7x",
+      "wrongValue": "incorrect_2",
+      "misconception": "Writing the middle term as +7x.",
+      "correctiveNote": "Avoid this: Writing the middle term as +7x."
+    },
+    {
+      "key": "treating_x_4_x_3_as_x_12",
+      "wrongValue": "incorrect_3",
+      "misconception": "Treating (x − 4)(x − 3) as x² − 12.",
+      "correctiveNote": "Avoid this: Treating (x − 4)(x − 3) as x² − 12."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Rewrite subtraction as adding a negative — (x + (−4))(x + (−3)) — whenever signs feel slippery. The sum and product rules then apply unchanged."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "x²−7x+12",
+    "displayValue": "x² − 7x + 12",
+    "acceptedForms": [
+      "x² − 7x + 12",
+      "x²−7x+12"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Expand and simplify (x − 2)(x − 5)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "x²−7x+10.",
+      "displayValue": "x² − 7x + 10.",
+      "acceptedForms": [
+        "x² − 7x + 10.",
+        "x²−7x+10."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "cecf41ff-56e8-4ce9-a9e9-8ea59a5aea51",
+      "code": "M1-4.1",
+      "label": "Expanding a product of two binomials"
+    },
+    {
+      "objectiveId": "731f3e0e-284f-4df0-a51c-7440e2830c5a",
+      "code": "M1-4.1",
+      "label": "Multiplication of directed numbers"
+    },
+    {
+      "objectiveId": "b0e75dd6-c5cd-4f14-a706-60b36229ecbb",
+      "code": "M1-4.1",
+      "label": "Collecting like terms"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 4,
+    "pageRef": "p52",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

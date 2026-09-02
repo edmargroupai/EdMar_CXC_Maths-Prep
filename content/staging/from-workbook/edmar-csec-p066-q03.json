@@ -1,0 +1,196 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p066-q03",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Factorise completely: 12 + 8y."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Both 12 and 8 are even, but 2 is not the largest factor they share."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p066_q03.jpg",
+      "altText": "Source visual for edmar-csec-p066-q03 from workbook page 66."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Find the HCF of the coefficients.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Factors of 12: 1, 2, 3, 4, 6, 12. Factors of 8: 1, 2, 4, 8"
+        },
+        {
+          "type": "text",
+          "value": "Result: HCF = 4"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Check for a common letter.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "12 has no y, so y is not common"
+        },
+        {
+          "type": "text",
+          "value": "Result: HCF stays 4"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Divide each term by 4.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "12 ÷ 4 = 3 and 8y ÷ 4 = 2y"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3 and 2y"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Write the factorised form.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: 4(3 + 2y)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Find the HCF of 12 and 8, take it outside a bracket, and divide each term by it."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "12 + 8y = 4(3 + 2y)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Factorising completely means removing the highest common factor, not just any common factor. Taking out 2 would leave 2(6 + 4y), which still has a common factor of 2 inside the bracket and so is not finished. Only when the bracket has no remaining common factor is the expression fully factorised."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "taking_out_2_instead_of_4_and_stopping_t",
+      "wrongValue": "incorrect_1",
+      "misconception": "Taking out 2 instead of 4 and stopping there.",
+      "correctiveNote": "Avoid this: Taking out 2 instead of 4 and stopping there."
+    },
+    {
+      "key": "including_y_in_the_common_factor_even_th",
+      "wrongValue": "incorrect_2",
+      "misconception": "Including y in the common factor even though 12 has no y.",
+      "correctiveNote": "Avoid this: Including y in the common factor even though 12 has no y."
+    },
+    {
+      "key": "writing_4_3_8y_by_forgetting_to_divide_t",
+      "wrongValue": "incorrect_3",
+      "misconception": "Writing 4(3 + 8y) by forgetting to divide the second term.",
+      "correctiveNote": "Avoid this: Writing 4(3 + 8y) by forgetting to divide the second term."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "After factorising, scan inside the bracket for another common factor. If you find one, you did not take out the HCF."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "12",
+    "displayValue": "12",
+    "acceptedForms": [
+      "12",
+      "12"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Factorise completely: 18 + 12m."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "6",
+      "displayValue": "6",
+      "acceptedForms": [
+        "6",
+        "6"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "a987321a-19b0-499d-a6cc-44a3cdf7a6c1",
+      "code": "M1-4.1",
+      "label": "Factorising"
+    },
+    {
+      "objectiveId": "4c40ba3a-e47c-4ca1-a3db-945df68daf04",
+      "code": "M1-4.1",
+      "label": "Highest common factor"
+    },
+    {
+      "objectiveId": "6bfd0ec9-86db-418d-a338-602df8d5a235",
+      "code": "M1-4.1",
+      "label": "The distributive law"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 3,
+    "pageRef": "p66",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

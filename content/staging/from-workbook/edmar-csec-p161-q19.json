@@ -1,0 +1,207 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p161-q19",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Using a ruler and a pair of compasses only, construct triangle NLM in which LM = 12 cm, ∠MLN = 30° and ∠LMN = 90°."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The 30° must come from bisecting a constructed 60°, since compasses cannot produce 30° in one step."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p161_q19.jpg",
+      "altText": "Source visual for edmar-csec-p161-q19 from workbook page 161."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Draw LM = 12 cm.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: LM = 12 cm"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Construct 60° at L, then bisect it.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "60° arc construction, then equal arcs from the two arc points crossing inside"
+        },
+        {
+          "type": "text",
+          "value": "Result: ∠MLN = 30°"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Construct a perpendicular to LM at M, on the same side as the 30° arm.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Equal arcs each side of M, then equal larger arcs crossing above M"
+        },
+        {
+          "type": "text",
+          "value": "Result: ∠LMN = 90°"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Mark N where the two arms meet and join LN and MN.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: triangle NLM complete"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Check the drawing by calculation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "MN = 12 tan 30° = 6.93; LN = 12 ÷ cos 30° = 13.86; ∠LNM = 60°"
+        },
+        {
+          "type": "text",
+          "value": "Result: MN ≈ 6.9 cm, LN ≈ 13.9 cm"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Draw LM = 12 cm, construct 60° at L and bisect it for 30°, construct the perpendicular at M, and mark N where the two arms meet."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "A correctly constructed triangle NLM with LM = 12 cm, ∠MLN = 30° and ∠LMN = 90°. Accuracy checks: MN ≈ 6.9 cm, LN ≈ 13.9 cm and ∠LNM = 60°."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Two angles at the ends of a known side determine the triangle, so no further measurement is needed. The construction is exact because 60° comes from an equilateral triangle and bisection halves it precisely; the perpendicular at M is likewise exact, so any error in the finished figure is drawing error, not method error."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "using_a_protractor_for_the_30_when_the_q",
+      "wrongValue": "incorrect_1",
+      "misconception": "Using a protractor for the 30° when the question says ruler and compasses only.",
+      "correctiveNote": "Avoid this: Using a protractor for the 30° when the question says ruler and compasses only."
+    },
+    {
+      "key": "putting_the_perpendicular_on_the_opposit",
+      "wrongValue": "incorrect_2",
+      "misconception": "Putting the perpendicular on the opposite side of LM from the 30° arm.",
+      "correctiveNote": "Avoid this: Putting the perpendicular on the opposite side of LM from the 30° arm."
+    },
+    {
+      "key": "misreading_which_vertex_each_angle_belon",
+      "wrongValue": "incorrect_3",
+      "misconception": "Misreading which vertex each angle belongs to — ∠MLN has its vertex at L.",
+      "correctiveNote": "Avoid this: Misreading which vertex each angle belongs to — ∠MLN has its vertex at L."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Read the vertex order in the angle name carefully: the middle letter is always the vertex, so ∠MLN puts the 30° at L."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "correctlyconstructedtriangleNLMwithLM=12cm,∠MLN=30°and∠LMN=90°.Accuracychecks:MN≈6.9cm,LN≈13.9c",
+    "displayValue": "correctly constructed triangle NLM with LM = 12 cm, ∠MLN = 30° and ∠LMN = 90°. Accuracy checks: MN ≈ 6.9 cm, LN ≈ 13.9 c",
+    "acceptedForms": [
+      "correctly constructed triangle NLM with LM = 12 cm, ∠MLN = 30° and ∠LMN = 90°. Accuracy checks: MN ≈ 6.9 cm, LN ≈ 13.9 c",
+      "correctlyconstructedtriangleNLMwithLM=12cm,∠MLN=30°and∠LMN=90°.Accuracychecks:MN≈6.9cm,LN≈13.9c"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "In a right-angled triangle the hypotenuse is 20 cm and one acute angle is 30°. How long is the side opposite the 30°?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "20",
+      "displayValue": "20",
+      "acceptedForms": [
+        "20",
+        "20"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "e9c93ebb-461f-4aa9-a2ea-2812a472bebd",
+      "code": "M1-1.1",
+      "label": "Constructing 60° with compasses"
+    },
+    {
+      "objectiveId": "32655a7d-d7b0-4139-ac44-1170dec3efe3",
+      "code": "M1-1.1",
+      "label": "Bisecting an angle"
+    },
+    {
+      "objectiveId": "44ba5ce7-75fb-4f2a-ac91-9902cb679283",
+      "code": "M1-1.1",
+      "label": "Constructing a perpendicular at a point on a line"
+    },
+    {
+      "objectiveId": "49f37925-ab21-4b55-a871-1245099baf2a",
+      "code": "M1-1.1",
+      "label": "Angle sum of a triangle"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 19,
+    "pageRef": "p161",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

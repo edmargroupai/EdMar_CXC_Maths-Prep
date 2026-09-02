@@ -1,0 +1,178 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p093-q13",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Factorise completely: 81x⁴ − 256y²"
+    },
+    {
+      "type": "text",
+      "value": "Think first: To square-root x⁴ you halve the index, giving x²."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p093_q13.jpg",
+      "altText": "Source visual for edmar-csec-p093-q13 from workbook page 93."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write each term as a square.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "81x⁴ = (9x²)² since (9x²)² = 81x⁴, and 256y² = (16y)²"
+        },
+        {
+          "type": "text",
+          "value": "Result: (9x²)² − (16y)²"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Apply the difference of two squares.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Here a = 9x² and b = 16y"
+        },
+        {
+          "type": "text",
+          "value": "Result: (9x² − 16y)(9x² + 16y)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Test each bracket for further factorisation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "16y is not a perfect square term, so 9x² − 16y is not a difference of two squares; a sum never factorises this way"
+        },
+        {
+          "type": "text",
+          "value": "Result: No further factorisation is possible"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Write both terms as squares, apply the difference of two squares, then test whether either bracket can be factorised again."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(9x² − 16y)(9x² + 16y)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The square root of 81x⁴ is 9x² because squaring doubles an index, so square-rooting halves it. After one application of the rule you must check the new brackets: here neither is a difference of two squares, because 16y is not a square, so the factorisation stops."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_the_square_root_of_81x_as_9x_ins",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing the square root of 81x⁴ as 9x instead of 9x².",
+      "correctiveNote": "Avoid this: Writing the square root of 81x⁴ as 9x instead of 9x²."
+    },
+    {
+      "key": "giving_the_square_root_of_256y_as_16y_ra",
+      "wrongValue": "incorrect_2",
+      "misconception": "Giving the square root of 256y² as 16y² rather than 16y.",
+      "correctiveNote": "Avoid this: Giving the square root of 256y² as 16y² rather than 16y."
+    },
+    {
+      "key": "trying_to_factorise_9x_16y_a_sum_that_do",
+      "wrongValue": "incorrect_3",
+      "misconception": "Trying to factorise 9x² + 16y, a sum that does not factorise.",
+      "correctiveNote": "Avoid this: Trying to factorise 9x² + 16y, a sum that does not factorise."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Halve the index when square-rooting a power — x⁴ gives x², and x⁶ would give x³."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "(9x²−16y)(9x²+16y)",
+    "displayValue": "(9x² − 16y)(9x² + 16y)",
+    "acceptedForms": [
+      "(9x² − 16y)(9x² + 16y)",
+      "(9x²−16y)(9x²+16y)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Factorise 16a⁴ − 9b²."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(4a²−3b)(4a²+3b)",
+      "displayValue": "(4a² − 3b)(4a² + 3b)",
+      "acceptedForms": [
+        "(4a² − 3b)(4a² + 3b)",
+        "(4a²−3b)(4a²+3b)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M3-2.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "c6bcc63f-38fb-41cf-a9d5-eff1f13bc781",
+      "code": "M3-2.1",
+      "label": "Difference of two squares"
+    },
+    {
+      "objectiveId": "600b5bdd-2eb6-4a74-a02c-6c2969540aff",
+      "code": "M3-2.1",
+      "label": "Square roots and indices"
+    },
+    {
+      "objectiveId": "abb0d292-1261-4951-a48c-f09a82157c70",
+      "code": "M3-2.1",
+      "label": "Deciding when a factorisation is complete"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 13,
+    "pageRef": "p93",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

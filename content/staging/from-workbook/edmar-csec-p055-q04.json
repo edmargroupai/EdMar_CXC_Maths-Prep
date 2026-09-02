@@ -1,0 +1,173 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p055-q04",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Make s the subject of the formula t = s/5."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Here s is divided by 5, so multiplication is what releases it."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p055_q04.jpg",
+      "altText": "Source visual for edmar-csec-p055-q04 from workbook page 55."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Identify what is being done to s.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "s is divided by 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: s/5"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Multiply both sides by 5.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5 × s/5 = s"
+        },
+        {
+          "type": "text",
+          "value": "Result: 5t = s"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Write s as the subject.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "reverse the sides"
+        },
+        {
+          "type": "text",
+          "value": "Result: s = 5t"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Multiply both sides by 5."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "s = 5t"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Dividing by 5 is undone by multiplying by 5, and applying that multiplication to both sides keeps the formula true. The 5 on the left becomes a multiplier of t, giving s = 5t. In words, s is five times whatever t is — the same statement as t being one fifth of s."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_s_t_5_repeating_the_division_ins",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing s = t/5, repeating the division instead of reversing it.",
+      "correctiveNote": "Avoid this: Writing s = t/5, repeating the division instead of reversing it."
+    },
+    {
+      "key": "multiplying_only_the_left_hand_side_by_5",
+      "wrongValue": "incorrect_2",
+      "misconception": "Multiplying only the left-hand side by 5.",
+      "correctiveNote": "Avoid this: Multiplying only the left-hand side by 5."
+    },
+    {
+      "key": "writing_s_t_5_by_treating_the_division_a",
+      "wrongValue": "incorrect_3",
+      "misconception": "Writing s = t + 5 by treating the division as an addition.",
+      "correctiveNote": "Avoid this: Writing s = t + 5 by treating the division as an addition."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "A denominator moves to the other side as a multiplier, and a multiplier moves across as a denominator. Say that rule to yourself before you write the line."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "s=5t",
+    "displayValue": "s = 5t",
+    "acceptedForms": [
+      "s = 5t",
+      "s=5t"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Make s the subject of t = s/8."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "s=8t.",
+      "displayValue": "s = 8t.",
+      "acceptedForms": [
+        "s = 8t.",
+        "s=8t."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "bfee039c-df75-40bb-a138-a758d7279ee9",
+      "code": "M1-4.1",
+      "label": "Changing the subject of a formula"
+    },
+    {
+      "objectiveId": "d8a28661-5c98-4b52-a735-d5ce8ae3b186",
+      "code": "M1-4.1",
+      "label": "Inverse operations"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 4,
+    "pageRef": "p55",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

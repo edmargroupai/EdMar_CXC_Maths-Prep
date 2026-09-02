@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p105-q08",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the quadratic equation 5x² + 2x − 3 = 0."
+    },
+    {
+      "type": "text",
+      "value": "Think first: With a = 5, use the ac method: you need two numbers multiplying to 5 × (−3) = −15 and adding to +2."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p105_q08.jpg",
+      "altText": "Source visual for edmar-csec-p105-q08 from workbook page 105."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Compute ac and find the pair of numbers.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5 × (−3) = −15; +5 × (−3) = −15 and 5 + (−3) = 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: +5 and −3"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Split the middle term.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5x² + 5x − 3x − 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: 5x² + 5x − 3x − 3 = 0"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Factorise in pairs.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5x(x + 1) − 3(x + 1)"
+        },
+        {
+          "type": "text",
+          "value": "Result: (x + 1)(5x − 3) = 0"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Set each factor to zero and solve.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x + 1 = 0 or 5x − 3 = 0"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = −1 or x = 3/5"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Split the middle term using +5 and −3, factorise by grouping, then solve each bracket."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = −1 or x = 3/5 (0.6)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The ac method finds the exact split of the middle term that makes grouping possible, because those two numbers are the cross-products produced when the correct brackets are expanded. Grouping then extracts the shared bracket (x + 1). Each root makes one bracket vanish, so the product is zero."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "searching_for_numbers_that_multiply_to_3",
+      "wrongValue": "incorrect_1",
+      "misconception": "Searching for numbers that multiply to −3 rather than −15.",
+      "correctiveNote": "Avoid this: Searching for numbers that multiply to −3 rather than −15."
+    },
+    {
+      "key": "writing_x_5_3_instead_of_3_5_from_the_fa",
+      "wrongValue": "incorrect_2",
+      "misconception": "Writing x = 5/3 instead of 3/5 from the factor 5x − 3.",
+      "correctiveNote": "Avoid this: Writing x = 5/3 instead of 3/5 from the factor 5x − 3."
+    },
+    {
+      "key": "forgetting_the_sign_change_when_factoris",
+      "wrongValue": "incorrect_3",
+      "misconception": "Forgetting the sign change when factorising −3 out of the second pair.",
+      "correctiveNote": "Avoid this: Forgetting the sign change when factorising −3 out of the second pair."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "From a factor of the form px − q, the root is q/p — get the fraction the right way up by solving the little equation rather than guessing."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=−1",
+    "displayValue": "= −1",
+    "acceptedForms": [
+      "= −1",
+      "=−1"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve 3x² + 2x − 8 = 0."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=4/3",
+      "displayValue": "= 4/3",
+      "acceptedForms": [
+        "= 4/3",
+        "=4/3"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-6.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "a90f7363-14a4-44d3-a26f-16048c71a4d0",
+      "code": "M1-6.1",
+      "label": "Factorising when the leading coefficient is not 1"
+    },
+    {
+      "objectiveId": "aa53d66d-0d72-4994-a76e-bf169efaf9a7",
+      "code": "M1-6.1",
+      "label": "Splitting the middle term"
+    },
+    {
+      "objectiveId": "353402b7-5089-4617-ae0c-ba8dacaa7a56",
+      "code": "M1-6.1",
+      "label": "Zero product property"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 8,
+    "pageRef": "p105",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

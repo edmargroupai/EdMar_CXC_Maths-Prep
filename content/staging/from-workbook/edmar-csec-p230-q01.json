@@ -1,0 +1,306 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p230-q01",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 5,
+  "status": "draft",
+  "marks": 8,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A firm packs items in large boxes holding 8 items and small boxes holding 3 items. It wants to package 84 or fewer items using no more than 18 boxes. L is the number of large boxes and S the number of small boxes. (i) Write two inequalities other than L > 0 and S > 0. (ii) Draw the graphs (2 cm to 5 units on both axes) and shade the unwanted region. (iii) A profit of $32 is made on a large box and $8 on a small box — write an expression for the total profit. (iv) From the graph, find the L and S giving maximum profit. (v) Calculate that maximum profit."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Translate each phrase into an inequality one at a time: 'holds 8 items each' becomes 8L, 'no more than 18 boxes' becomes L + S ≤ 18."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p230_q01.jpg",
+      "altText": "Source visual for edmar-csec-p230-q01 from workbook page 230."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Turn the item limit and the box limit into inequalities.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Large boxes hold 8L items and small boxes 3S items, and at most 84 items; at most 18 boxes altogether"
+        },
+        {
+          "type": "text",
+          "value": "Result: 8L + 3S ≤ 84 and L + S ≤ 18"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Draw the boundary lines and shade out the unwanted region.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "8L + 3S = 84 through (0, 28) and (10.5, 0); L + S = 18 through (0, 18) and (18, 0); keep the side containing the origin, with L ≥ 0 and S ≥ 0"
+        },
+        {
+          "type": "text",
+          "value": "Result: Feasible region with corners (0, 0), (0, 18), (6, 12) and (10.5, 0)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Write the profit expression.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "$32 per large box, $8 per small box"
+        },
+        {
+          "type": "text",
+          "value": "Result: P = 32L + 8S"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Find where the two lines cross, then test each corner in P.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "L + S = 18 and 8L + 3S = 84 give 5L = 30, L = 6, S = 12. P(0, 18) = 144; P(6, 12) = 192 + 96 = 288; P(10.5, 0) = 336"
+        },
+        {
+          "type": "text",
+          "value": "Result: P increases towards the corner (10.5, 0)"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Choose the best point with whole numbers of boxes, since half a box is impossible.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Nearby lattice points: (10, 0) gives 320; (10, 1) uses 8(10) + 3(1) = 83 items ≤ 84 and 11 boxes ≤ 18, giving 320 + 8"
+        },
+        {
+          "type": "text",
+          "value": "Result: L = 10, S = 1 with P = $328"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Write the item and box constraints, graph the two boundary lines, test the corners of the feasible region in the profit expression, and check that the best point uses whole numbers of boxes."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) 8L + 3S ≤ 84 and L + S ≤ 18  (ii) Graph the lines 8L + 3S = 84 and L + S = 18 and shade everything outside the region bounded by them and the axes  (iii) P = 32L + 8S  (iv) L = 10 large boxes and S = 1 small box (the corner (10.5, 0) is not usable because boxes are whole)  (v) Maximum profit = 32(10) + 8(1) = $328"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Each restriction in the wording is a straight-line boundary, and the set of points satisfying all of them at once is the feasible region. Because the profit expression is linear, its value increases steadily in one direction across that region, so the largest value is reached at an extreme point. Here profit weights a large box four times a small one, which pushes the optimum to the corner with as many large boxes as the item limit allows; because L and S count boxes, the answer must be a whole-number point inside the region."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_l_s_84_or_8l_3s_18_by_mixing_up_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing L + S ≤ 84 or 8L + 3S ≤ 18 by mixing up items with boxes.",
+      "correctiveNote": "Avoid this: Writing L + S ≤ 84 or 8L + 3S ≤ 18 by mixing up items with boxes."
+    },
+    {
+      "key": "shading_the_wanted_region_when_the_quest",
+      "wrongValue": "incorrect_2",
+      "misconception": "Shading the wanted region when the question asks for the unwanted region to be shaded.",
+      "correctiveNote": "Avoid this: Shading the wanted region when the question asks for the unwanted region to be shaded."
+    },
+    {
+      "key": "quoting_l_10_5_boxes_as_the_answer",
+      "wrongValue": "incorrect_3",
+      "misconception": "Quoting L = 10.5 boxes as the answer.",
+      "correctiveNote": "Avoid this: Quoting L = 10.5 boxes as the answer."
+    },
+    {
+      "key": "testing_only_one_corner_instead_of_compa",
+      "wrongValue": "incorrect_4",
+      "misconception": "Testing only one corner instead of comparing the profit at all of them.",
+      "correctiveNote": "Avoid this: Testing only one corner instead of comparing the profit at all of them."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When the variables count physical objects, finish by checking your optimum is a whole-number point that still satisfies every inequality."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "8",
+    "displayValue": "8",
+    "acceptedForms": [
+      "8",
+      "8"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "If profit is P = 5x + 2y, which of the corners (0, 6) and (4, 1) gives the greater profit?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(4,1)gives22,morethan12at(0,6).",
+      "displayValue": "(4, 1) gives 22, more than 12 at (0, 6).",
+      "acceptedForms": [
+        "(4, 1) gives 22, more than 12 at (0, 6).",
+        "(4,1)gives22,morethan12at(0,6)."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "83ae1579-0d05-4b88-afb3-ead7ba4e5350",
+      "code": "M1-1.1",
+      "label": "Forming linear inequalities from a word problem"
+    },
+    {
+      "objectiveId": "fba8c223-f817-4c8e-afe6-2f09155bb1e1",
+      "code": "M1-1.1",
+      "label": "Graphing linear inequalities and feasible regions"
+    },
+    {
+      "objectiveId": "aa4a1e36-af42-4679-a703-e2f5cbc4f5e7",
+      "code": "M1-1.1",
+      "label": "Objective function and optimisation at a vertex"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 1,
+    "pageRef": "p230",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a.i",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.i): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "numeric_exact",
+        "canonicalValue": "8",
+        "displayValue": "8",
+        "acceptedForms": [
+          "8",
+          "8"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0
+        },
+        "normalisation": "numeric_default"
+      }
+    },
+    {
+      "partKey": "a.ii",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.ii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Graphthelines8L+3S=84an",
+        "displayValue": "Graph the lines 8L + 3S = 84 an",
+        "acceptedForms": [
+          "Graph the lines 8L + 3S = 84 an",
+          "Graphthelines8L+3S=84an"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.iii",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.iii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "P=32L+8S",
+        "displayValue": "P = 32L + 8S",
+        "acceptedForms": [
+          "P = 32L + 8S",
+          "P=32L+8S"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.iv",
+      "sequence": 4,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.iv): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "L=10largeboxesan",
+        "displayValue": "L = 10 large boxes an",
+        "acceptedForms": [
+          "L = 10 large boxes an",
+          "L=10largeboxesan"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

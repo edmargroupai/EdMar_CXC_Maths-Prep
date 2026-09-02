@@ -1,0 +1,210 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p163-q01",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Several rays meet at O on a horizontal straight line. The three angles above the line are (2x + 10)°, (x + 20)° and 3x°. a) Determine the value of x. b) Calculate the size of each of the three labelled angles above the line. c) The angle z is vertically opposite the angle (2x + 10)°. Determine z and state the relevant angle fact."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Angles on one side of a straight line always add to 180°, and that single sentence gives you the equation."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p163_q01.jpg",
+      "altText": "Source visual for edmar-csec-p163-q01 from workbook page 163."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write the angle equation for the straight line.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(2x + 10) + (x + 20) + 3x = 180"
+        },
+        {
+          "type": "text",
+          "value": "Result: 6x + 30 = 180"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Solve for x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "6x = 150"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 25"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Substitute x = 25 into each expression.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2(25) + 10 = 60; 25 + 20 = 45; 3(25) = 75"
+        },
+        {
+          "type": "text",
+          "value": "Result: 60°, 45°, 75°"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Check the three angles.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "60 + 45 + 75 = 180"
+        },
+        {
+          "type": "text",
+          "value": "Result: sum confirmed"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Find z.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "z is vertically opposite the 60° angle"
+        },
+        {
+          "type": "text",
+          "value": "Result: z = 60°"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Set the three expressions equal to 180°, solve for x, substitute back for each angle, then use the vertically-opposite property for z."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) x = 25  (b) (2x + 10)° = 60°, (x + 20)° = 45°, 3x° = 75°  (c) z = 60°, because vertically opposite angles are equal"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Angles that sit side by side along a straight line make a half turn, which is 180°, so writing their sum as 180 is not a guess but a definition. When two straight lines cross, each pair of opposite angles is the supplement of the same neighbouring angle, so those opposite angles must be equal — that is the vertically opposite angle fact used for z."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "setting_the_sum_to_360_instead_of_180",
+      "wrongValue": "incorrect_1",
+      "misconception": "Setting the sum to 360° instead of 180°.",
+      "correctiveNote": "Avoid this: Setting the sum to 360° instead of 180°."
+    },
+    {
+      "key": "finding_x_and_stopping_without_substitut",
+      "wrongValue": "incorrect_2",
+      "misconception": "Finding x and stopping, without substituting back to give the actual angles.",
+      "correctiveNote": "Avoid this: Finding x and stopping, without substituting back to give the actual angles."
+    },
+    {
+      "key": "stating_z_60_without_naming_the_angle_fa",
+      "wrongValue": "incorrect_3",
+      "misconception": "Stating z = 60° without naming the angle fact, when the question explicitly asks for it.",
+      "correctiveNote": "Avoid this: Stating z = 60° without naming the angle fact, when the question explicitly asks for it."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Always substitute your value of x back and check the angles add to the required total — it catches an arithmetic slip before you lose all the follow-on marks."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "x=25",
+    "displayValue": "x = 25",
+    "acceptedForms": [
+      "x = 25",
+      "x=25"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Three angles on a straight line are 2y°, (y + 30)° and 90°. Find y."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "3",
+      "displayValue": "3",
+      "acceptedForms": [
+        "3",
+        "3"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "7afe8040-1416-4d46-ab0e-a0826cc3b77d",
+      "code": "M1-1.1",
+      "label": "Angles on a straight line"
+    },
+    {
+      "objectiveId": "23bfe0aa-7cdc-4c1b-ac70-af275962cda5",
+      "code": "M1-1.1",
+      "label": "Vertically opposite angles"
+    },
+    {
+      "objectiveId": "cee64d79-87af-4c6a-a308-ee5b802eeebd",
+      "code": "M1-1.1",
+      "label": "Forming and solving a linear equation"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 1,
+    "pageRef": "p163",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

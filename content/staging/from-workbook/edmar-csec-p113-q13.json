@@ -1,0 +1,220 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p113-q13",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 5,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the simultaneous equations x + 2y = 8 and x² + y² = 20."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Make x the subject of the linear equation — it has no coefficient — and substitute into the quadratic."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p113_q13.jpg",
+      "altText": "Source visual for edmar-csec-p113-q13 from workbook page 113."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Make x the subject of the linear equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x + 2y = 8"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 8 − 2y"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Substitute into x² + y² = 20.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(8 − 2y)² + y² = 20"
+        },
+        {
+          "type": "text",
+          "value": "Result: 64 − 32y + 4y² + y² = 20"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Collect terms into standard form.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5y² − 32y + 64 − 20 = 0"
+        },
+        {
+          "type": "text",
+          "value": "Result: 5y² − 32y + 44 = 0"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Solve the quadratic.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Discriminant = (−32)² − 4(5)(44) = 1024 − 880 = 144, √144 = 12, so y = (32 ± 12)/10"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 2 or y = 4.4"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Find the matching x from x = 8 − 2y.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "y = 2 → x = 4;  y = 4.4 → x = 8 − 8.8 = −0.8"
+        },
+        {
+          "type": "text",
+          "value": "Result: (4, 2) and (−0.8, 4.4)"
+        }
+      ]
+    },
+    {
+      "stepNo": 6,
+      "instruction": "Check in x² + y² = 20.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "4² + 2² = 20;  (−0.8)² + (4.4)² = 0.64 + 19.36 = 20"
+        },
+        {
+          "type": "text",
+          "value": "Result: Both pairs verified"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Rearrange to x = 8 − 2y, substitute into x² + y² = 20, solve the quadratic 5y² − 32y + 44 = 0, then find each matching x."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = 4, y = 2  or  x = −0.8, y = 4.4"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The linear equation is a straight line and x² + y² = 20 is a circle centred at the origin, so the two solutions are the two points where the line cuts the circle. Substitution reduces the pair to one quadratic in y; the discriminant being a perfect square is what makes the roots exact decimals rather than surds."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "expanding_8_2y_as_64_4y_and_losing_the_3",
+      "wrongValue": "incorrect_1",
+      "misconception": "Expanding (8 − 2y)² as 64 + 4y² and losing the −32y term.",
+      "correctiveNote": "Avoid this: Expanding (8 − 2y)² as 64 + 4y² and losing the −32y term."
+    },
+    {
+      "key": "dividing_5y_32y_44_0_by_5_too_early_and_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Dividing 5y² − 32y + 44 = 0 by 5 too early and creating awkward fractions.",
+      "correctiveNote": "Avoid this: Dividing 5y² − 32y + 44 = 0 by 5 too early and creating awkward fractions."
+    },
+    {
+      "key": "rounding_y_4_4_to_4_and_then_failing_the",
+      "wrongValue": "incorrect_3",
+      "misconception": "Rounding y = 4.4 to 4 and then failing the check.",
+      "correctiveNote": "Avoid this: Rounding y = 4.4 to 4 and then failing the check."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When the substituted quadratic does not factorise on sight, go straight to the discriminant — if it is a perfect square the roots are still exact."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=4,y=2",
+    "displayValue": "= 4, y = 2",
+    "acceptedForms": [
+      "= 4, y = 2",
+      "=4,y=2"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve x + 2y = 5 and x² + y² = 10."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=3,y=1",
+      "displayValue": "= 3, y = 1",
+      "acceptedForms": [
+        "= 3, y = 1",
+        "=3,y=1"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-6.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "d5e3b242-028f-4bfb-ac08-9d013a793eeb",
+      "code": "M1-6.1",
+      "label": "Simultaneous equations (one linear, one quadratic)"
+    },
+    {
+      "objectiveId": "c281c12f-caa5-464c-afd5-58b3e31af40e",
+      "code": "M1-6.1",
+      "label": "Substitution"
+    },
+    {
+      "objectiveId": "7bbc8bbd-3120-463f-a92a-36483a7d16eb",
+      "code": "M1-6.1",
+      "label": "Solving quadratics by factorising or formula"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 13,
+    "pageRef": "p113",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

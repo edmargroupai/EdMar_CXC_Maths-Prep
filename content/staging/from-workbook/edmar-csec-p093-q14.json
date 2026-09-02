@@ -1,0 +1,173 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p093-q14",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Factorise completely: x² + 11x + 24"
+    },
+    {
+      "type": "text",
+      "value": "Think first: Look for two numbers that multiply to the constant term and add to the coefficient of x."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p093_q14.jpg",
+      "altText": "Source visual for edmar-csec-p093-q14 from workbook page 93."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Look for two numbers with product 24 and sum 11.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Factor pairs of 24: 1 and 24, 2 and 12, 3 and 8, 4 and 6"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3 and 8"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Write the two brackets.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Both numbers are positive, so both signs are plus"
+        },
+        {
+          "type": "text",
+          "value": "Result: (x + 3)(x + 8)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Check by expanding.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x² + 8x + 3x + 24"
+        },
+        {
+          "type": "text",
+          "value": "Result: x² + 11x + 24"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "List the factor pairs of 24, pick the pair adding to 11, and write the two brackets."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(x + 3)(x + 8)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Expanding (x + p)(x + q) gives x² + (p + q)x + pq, so for a quadratic beginning with x² the constant term is the product of the two numbers and the middle coefficient is their sum. Listing the factor pairs of the constant is therefore a complete search rather than guesswork."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "choosing_numbers_that_add_to_24_and_mult",
+      "wrongValue": "incorrect_1",
+      "misconception": "Choosing numbers that add to 24 and multiply to 11.",
+      "correctiveNote": "Avoid this: Choosing numbers that add to 24 and multiply to 11."
+    },
+    {
+      "key": "missing_a_factor_pair_and_concluding_the",
+      "wrongValue": "incorrect_2",
+      "misconception": "Missing a factor pair and concluding the expression will not factorise.",
+      "correctiveNote": "Avoid this: Missing a factor pair and concluding the expression will not factorise."
+    },
+    {
+      "key": "writing_x_6_x_4_whose_middle_term_is_10x",
+      "wrongValue": "incorrect_3",
+      "misconception": "Writing (x + 6)(x + 4), whose middle term is 10x, without checking.",
+      "correctiveNote": "Avoid this: Writing (x + 6)(x + 4), whose middle term is 10x, without checking."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "List every factor pair of the constant term in order — you will find the right pair faster than by trial and error."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "+3)(x+8)",
+    "displayValue": "+ 3)(x + 8)",
+    "acceptedForms": [
+      "+ 3)(x + 8)",
+      "+3)(x+8)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Factorise x² + 9x + 20."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "+4)(x+5)",
+      "displayValue": "+ 4)(x + 5)",
+      "acceptedForms": [
+        "+ 4)(x + 5)",
+        "+4)(x+5)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M3-2.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "a58c8415-b0c2-42df-a6ab-2e1e64acda6f",
+      "code": "M3-2.1",
+      "label": "Factorising quadratic trinomials"
+    },
+    {
+      "objectiveId": "a0f6dc2e-fc51-44a8-a078-850f7b61975b",
+      "code": "M3-2.1",
+      "label": "Product and sum of the two numbers"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 14,
+    "pageRef": "p93",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p104-q06",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the equation x(x − 5) = 14."
+    },
+    {
+      "type": "text",
+      "value": "Think first: You cannot set each factor to zero yet — the right-hand side is 14, not 0, so expand and rearrange first."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p104_q06.jpg",
+      "altText": "Source visual for edmar-csec-p104-q06 from workbook page 104."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Expand the left-hand side.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x × x − x × 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: x² − 5x = 14"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Subtract 14 from both sides to reach standard form.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x² − 5x − 14 = 0"
+        },
+        {
+          "type": "text",
+          "value": "Result: x² − 5x − 14 = 0"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Find two numbers multiplying to −14 and adding to −5.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "−7 × 2 = −14 and −7 + 2 = −5"
+        },
+        {
+          "type": "text",
+          "value": "Result: −7 and +2"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Factorise and solve each bracket.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(x − 7)(x + 2) = 0"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 7 or x = −2"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Expand the left side, bring everything to one side to make the equation equal zero, then factorise."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = 7 or x = −2"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The zero product property only applies when the product equals zero, so the rearrangement to x² − 5x − 14 = 0 is not optional. Writing x = 14 or x − 5 = 14 from the original form is invalid because 14 can be split into many pairs of factors. Once in standard form the usual factorising method applies."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "setting_x_14_and_x_5_14_directly_from_th",
+      "wrongValue": "incorrect_1",
+      "misconception": "Setting x = 14 and x − 5 = 14 directly from the unrearranged equation.",
+      "correctiveNote": "Avoid this: Setting x = 14 and x − 5 = 14 directly from the unrearranged equation."
+    },
+    {
+      "key": "subtracting_14_from_only_one_side",
+      "wrongValue": "incorrect_2",
+      "misconception": "Subtracting 14 from only one side.",
+      "correctiveNote": "Avoid this: Subtracting 14 from only one side."
+    },
+    {
+      "key": "choosing_7_and_2_which_gives_a_middle_te",
+      "wrongValue": "incorrect_3",
+      "misconception": "Choosing +7 and −2, which gives a middle term of +5x.",
+      "correctiveNote": "Avoid this: Choosing +7 and −2, which gives a middle term of +5x."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Standard form first, always: ax² + bx + c = 0 with zero on the right. Every quadratic technique assumes it."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=7",
+    "displayValue": "= 7",
+    "acceptedForms": [
+      "= 7",
+      "=7"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve x(x + 3) = 10."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=2",
+      "displayValue": "= 2",
+      "acceptedForms": [
+        "= 2",
+        "=2"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-6.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "6fba0ac2-27ab-4cc2-aa78-774c706dbb0d",
+      "code": "M1-6.1",
+      "label": "Expanding brackets"
+    },
+    {
+      "objectiveId": "41710171-9a0a-4e00-a6d0-c4107708e98a",
+      "code": "M1-6.1",
+      "label": "Rearranging to standard quadratic form"
+    },
+    {
+      "objectiveId": "b241233a-fefb-4a2e-adea-5d8d7e9b1f22",
+      "code": "M1-6.1",
+      "label": "Factorising a quadratic"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 6,
+    "pageRef": "p104",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

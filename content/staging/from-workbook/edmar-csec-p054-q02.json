@@ -1,0 +1,178 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p054-q02",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the equation 3(x − 2) = 15."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The bracket is multiplied by 3, so you can either expand it or divide both sides by 3 first."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p054_q02.jpg",
+      "altText": "Source visual for edmar-csec-p054-q02 from workbook page 54."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Divide both sides by 3.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "15 ÷ 3 = 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: x − 2 = 5"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Add 2 to both sides.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5 + 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 7"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Check by substitution.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3(7 − 2) = 3 × 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: 15, which matches the right-hand side"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Divide both sides by 3 to clear the bracket, then add 2 to isolate x."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = 7"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Because the entire bracket is multiplied by 3, dividing both sides by 3 undoes that multiplication in one move and leaves a much simpler equation. Expanding first to 3x − 6 = 15 reaches the same answer, since the two routes are just different orders of applying the same inverse operations. Choosing the division route avoids handling the −6 altogether."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "dividing_only_the_3_outside_the_bracket_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Dividing only the 3 outside the bracket and forgetting to divide the 15.",
+      "correctiveNote": "Avoid this: Dividing only the 3 outside the bracket and forgetting to divide the 15."
+    },
+    {
+      "key": "expanding_3_x_2_as_3x_2",
+      "wrongValue": "incorrect_2",
+      "misconception": "Expanding 3(x − 2) as 3x − 2.",
+      "correctiveNote": "Avoid this: Expanding 3(x − 2) as 3x − 2."
+    },
+    {
+      "key": "subtracting_2_instead_of_adding_it_at_th",
+      "wrongValue": "incorrect_3",
+      "misconception": "Subtracting 2 instead of adding it at the final step.",
+      "correctiveNote": "Avoid this: Subtracting 2 instead of adding it at the final step."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When a bracket is multiplied by a number that divides the other side exactly, divide first. It is the quickest route and it keeps the numbers small."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=7",
+    "displayValue": "= 7",
+    "acceptedForms": [
+      "= 7",
+      "=7"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve 4(x − 5) = 12."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "−5=3,sox=8.",
+      "displayValue": "− 5 = 3, so x = 8.",
+      "acceptedForms": [
+        "− 5 = 3, so x = 8.",
+        "−5=3,sox=8."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "0161e4cf-9250-4bab-a886-3b4b21a6d591",
+      "code": "M1-4.1",
+      "label": "Solving linear equations"
+    },
+    {
+      "objectiveId": "af73e928-338e-45c8-a80f-1933fe090bad",
+      "code": "M1-4.1",
+      "label": "Expanding brackets"
+    },
+    {
+      "objectiveId": "24bf3c3d-a930-44a3-ad17-29027749eda9",
+      "code": "M1-4.1",
+      "label": "Inverse operations"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 2,
+    "pageRef": "p54",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

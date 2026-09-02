@@ -1,0 +1,225 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p128-q06",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "AB is a diameter of the circle shown on the grid, with A(-5, 2) and B(3, -4). (a) Determine the coordinates of the centre C. (b) Calculate the length AB. (c) Hence state the radius. (d) Verify that the point D(4, -1) lies on the circle by calculating the length CD."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The centre of a circle is the midpoint of any diameter, so read A and B off the grid first and everything else follows."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p128_q06.jpg",
+      "altText": "Source visual for edmar-csec-p128-q06 from workbook page 128."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Read the endpoints of the diameter from the grid.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The marked points are A(-5, 2) and B(3, -4)"
+        },
+        {
+          "type": "text",
+          "value": "Result: A(-5, 2), B(3, -4)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Find the centre as the midpoint of AB.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "((-5 + 3)/2, (2 + (-4))/2) = (-2/2, -2/2)"
+        },
+        {
+          "type": "text",
+          "value": "Result: C(-1, -1)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Find AB with the distance formula.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "√((3 − (-5))² + (-4 − 2)²) = √(64 + 36) = √100"
+        },
+        {
+          "type": "text",
+          "value": "Result: AB = 10 units"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Halve the diameter to get the radius.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "10 ÷ 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: r = 5 units"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Find CD from C(-1, -1) to D(4, -1).",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "√((4 − (-1))² + (-1 − (-1))²) = √(25 + 0)"
+        },
+        {
+          "type": "text",
+          "value": "Result: CD = 5 units"
+        }
+      ]
+    },
+    {
+      "stepNo": 6,
+      "instruction": "Compare CD with the radius.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "CD = 5 = r, so D is exactly one radius from the centre"
+        },
+        {
+          "type": "text",
+          "value": "Result: D lies on the circle"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Read A and B from the graph, use the midpoint formula for the centre and the distance formula for AB, halve AB for the radius, then test D by comparing CD with the radius."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) C(-1, -1)  (b) AB = 10 units  (c) radius = 5 units  (d) CD = 5 units = radius, so D(4, -1) lies on the circle."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A circle is the set of all points a fixed distance — the radius — from one fixed point. That single fact does all the work here: the diameter passes through the centre, so its midpoint is the centre; the radius is half the diameter; and any point is on the circle exactly when its distance from the centre equals that radius. Checking membership of a circle is therefore always a distance calculation, never a guess from the picture."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "using_the_distance_formula_when_the_midp",
+      "wrongValue": "incorrect_1",
+      "misconception": "Using the distance formula when the midpoint formula is wanted (subtracting instead of averaging).",
+      "correctiveNote": "Avoid this: Using the distance formula when the midpoint formula is wanted (subtracting instead of averaging)."
+    },
+    {
+      "key": "taking_the_radius_as_10_because_ab_was_1",
+      "wrongValue": "incorrect_2",
+      "misconception": "Taking the radius as 10 because AB was 10 — AB is the diameter.",
+      "correctiveNote": "Avoid this: Taking the radius as 10 because AB was 10 — AB is the diameter."
+    },
+    {
+      "key": "deciding_d_is_on_the_circle_just_because",
+      "wrongValue": "incorrect_3",
+      "misconception": "Deciding D is on the circle just because it looks close on the diagram.",
+      "correctiveNote": "Avoid this: Deciding D is on the circle just because it looks close on the diagram."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When a diagram gives you the points, write the coordinates down as an ordered pair before you calculate — misreading one sign off a grid ruins every part that follows."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "C(-1,-1)",
+    "displayValue": "C(-1, -1)",
+    "acceptedForms": [
+      "C(-1, -1)",
+      "C(-1,-1)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A circle has centre (2, -3) and radius 5. Does E(6, 0) lie on it?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "CE=√(16+9)=5,soyes,Eliesonthecircle.",
+      "displayValue": "CE = √(16 + 9) = 5, so yes, E lies on the circle.",
+      "acceptedForms": [
+        "CE = √(16 + 9) = 5, so yes, E lies on the circle.",
+        "CE=√(16+9)=5,soyes,Eliesonthecircle."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-3.2"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "ddf449fb-e9f7-4ca0-a652-9584887de141",
+      "code": "M1-3.2",
+      "label": "Coordinate geometry"
+    },
+    {
+      "objectiveId": "0f626ae5-3b39-45c9-a12e-deb50d80a887",
+      "code": "M1-3.2",
+      "label": "Midpoint formula"
+    },
+    {
+      "objectiveId": "6ed88be1-3a76-4160-a894-01e414413a71",
+      "code": "M1-3.2",
+      "label": "Distance between two points"
+    },
+    {
+      "objectiveId": "7f64a31b-655b-4791-aeb8-d242c33f1c49",
+      "code": "M1-3.2",
+      "label": "Radius and diameter of a circle"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 6,
+    "pageRef": "p128",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

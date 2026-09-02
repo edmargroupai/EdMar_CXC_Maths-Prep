@@ -1,0 +1,198 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p231-q02",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 5,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A farmer grows x acres of peas and y acres of tomatoes on 12 available acres. (i) Write an inequality for the land condition. He must plant at least 2 acres of peas and at least 3 acres of tomatoes. (ii) Write two inequalities for these. The acres of tomatoes must not be more than twice the acres of peas. (iii) Write an inequality for that. (iv) Draw the graphs (1 cm to 1 acre on each axis). (v) Shade the unwanted region and label as S the region satisfying all four inequalities. (b) Profit is $75 per acre of peas and $50 per acre of tomatoes: (i) write an expression for the total profit P, (ii) use the graph to find the acres of each that maximise profit, (iii) state the maximum profit."
+    },
+    {
+      "type": "text",
+      "value": "Think first: 'At least' means ≥, 'available' means the total cannot exceed 12, and 'not more than twice' compares y with 2x."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p231_q02.jpg",
+      "altText": "Source visual for edmar-csec-p231-q02 from workbook page 231."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Translate each condition into an inequality.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Total land: x + y ≤ 12; minimum plantings: x ≥ 2, y ≥ 3; tomatoes at most twice peas: y ≤ 2x"
+        },
+        {
+          "type": "text",
+          "value": "Result: x + y ≤ 12, x ≥ 2, y ≥ 3, y ≤ 2x"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Draw the four boundary lines and identify the region satisfying all of them.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x + y = 12, x = 2, y = 3 and y = 2x, with 1 cm to 1 acre; shade out the unwanted side of each line"
+        },
+        {
+          "type": "text",
+          "value": "Result: Region S bounded by the four lines"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Find the corner points of S.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x = 2 meets y = 3 at (2, 3); x = 2 meets y = 2x at (2, 4); y = 2x meets x + y = 12 at 3x = 12, x = 4, y = 8; y = 3 meets x + y = 12 at (9, 3)"
+        },
+        {
+          "type": "text",
+          "value": "Result: (2, 3), (2, 4), (4, 8), (9, 3)"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Write the profit expression and evaluate it at each corner.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "P = 75x + 50y: (2,3) → 300; (2,4) → 350; (4,8) → 700; (9,3) → 675 + 150"
+        },
+        {
+          "type": "text",
+          "value": "Result: P = 825 at (9, 3)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Write the four inequalities, find the corner points of the region they define, then evaluate P = 75x + 50y at each corner and pick the largest."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) x + y ≤ 12  (ii) x ≥ 2 and y ≥ 3  (iii) y ≤ 2x  (iv)/(v) Region S has vertices (2, 3), (2, 4), (4, 8) and (9, 3)  (b)(i) P = 75x + 50y  (ii) 9 acres of peas and 3 acres of tomatoes  (iii) Maximum profit = $825"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Each inequality cuts the plane in half, and the region left over contains every planting plan the farmer could actually use. Since profit is linear, its contour lines are parallel straight lines sweeping across that region, so the last point they touch is a vertex. Peas earn more per acre than tomatoes, so the optimum uses all 12 acres with tomatoes cut back to their minimum of 3."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_the_tomato_condition_as_y_2x_or_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing the tomato condition as y ≥ 2x or 2y ≤ x instead of y ≤ 2x.",
+      "correctiveNote": "Avoid this: Writing the tomato condition as y ≥ 2x or 2y ≤ x instead of y ≤ 2x."
+    },
+    {
+      "key": "using_x_y_12_as_an_equation_so_plans_usi",
+      "wrongValue": "incorrect_2",
+      "misconception": "Using x + y = 12 as an equation, so plans using less than 12 acres are wrongly excluded.",
+      "correctiveNote": "Avoid this: Using x + y = 12 as an equation, so plans using less than 12 acres are wrongly excluded."
+    },
+    {
+      "key": "testing_points_inside_the_region_instead",
+      "wrongValue": "incorrect_3",
+      "misconception": "Testing points inside the region instead of at its corners.",
+      "correctiveNote": "Avoid this: Testing points inside the region instead of at its corners."
+    },
+    {
+      "key": "reversing_the_profit_rates_and_computing",
+      "wrongValue": "incorrect_4",
+      "misconception": "Reversing the profit rates and computing 50x + 75y.",
+      "correctiveNote": "Avoid this: Reversing the profit rates and computing 50x + 75y."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Label each corner of your feasible region with its coordinates on the graph, then make a small table of P values — it is fast and shows the examiner your method."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "x+y≤12",
+    "displayValue": "x + y ≤ 12",
+    "acceptedForms": [
+      "x + y ≤ 12",
+      "x+y≤12"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Where do the lines y = 2x and x + y = 12 intersect?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(4,8).",
+      "displayValue": "(4, 8).",
+      "acceptedForms": [
+        "(4, 8).",
+        "(4,8)."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "d34dd86d-46fd-484f-a2ab-d37a0035ec0e",
+      "code": "M1-1.1",
+      "label": "Forming linear inequalities"
+    },
+    {
+      "objectiveId": "1e60eddd-3fa9-4e6f-a566-a74e143bd3ce",
+      "code": "M1-1.1",
+      "label": "Feasible region on a graph"
+    },
+    {
+      "objectiveId": "6d0e535e-edc4-4019-a473-1fe51b428c82",
+      "code": "M1-1.1",
+      "label": "Maximising a linear objective function at a vertex"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 2,
+    "pageRef": "p231",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

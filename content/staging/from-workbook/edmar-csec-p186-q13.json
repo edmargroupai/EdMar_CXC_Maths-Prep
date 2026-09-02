@@ -1,0 +1,271 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p186-q13",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 6,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The points A(1, 3), B(4, 5) and C(7, 7) are shown on an accurately scaled coordinate grid. (a) Determine the vectors AB and BC. (b) Show that BC is a scalar multiple of AB. (c) Hence state the relationship among A, B and C."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Read the coordinates carefully from the grid, then use 'finish minus start' for each vector."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p186_q13.jpg",
+      "altText": "Source visual for edmar-csec-p186-q13 from workbook page 186."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Read the coordinates from the grid.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "A is at (1, 3), B at (4, 5), C at (7, 7)"
+        },
+        {
+          "type": "text",
+          "value": "Result: three points located"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Find AB.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "AB = B − A = (4 − 1, 5 − 3)"
+        },
+        {
+          "type": "text",
+          "value": "Result: AB = (3, 2)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Find BC.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "BC = C − B = (7 − 4, 7 − 5)"
+        },
+        {
+          "type": "text",
+          "value": "Result: BC = (3, 2)"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Compare the two vectors.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "BC = 1 × AB, so the scalar is 1"
+        },
+        {
+          "type": "text",
+          "value": "Result: BC is a scalar multiple of AB"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Interpret geometrically.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Parallel vectors sharing the common point B must lie on the same straight line, and equal vectors make BC the same length as AB"
+        },
+        {
+          "type": "text",
+          "value": "Result: A, B and C are collinear, with B the midpoint of AC"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Subtract coordinates for each vector, compare them to find the scalar, and use the shared point B to conclude collinearity."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) AB = (3, 2) and BC = (3, 2)  (b) BC = 1 × AB, so BC is a scalar multiple of AB  (c) A, B and C are collinear — they lie on one straight line — and since BC = AB, B is the midpoint of AC"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Two vectors that are scalar multiples of each other point along the same direction. When they also share a point — here B is the end of AB and the start of BC — the only way for both to lie in the same direction from that shared point is for all three points to sit on one straight line. The scalar happening to be 1 adds the extra information that the two steps are the same length, so B sits exactly halfway."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "misreading_the_grid_coordinates_especial",
+      "wrongValue": "incorrect_1",
+      "misconception": "Misreading the grid coordinates, especially A as (0, 3) rather than (1, 3).",
+      "correctiveNote": "Avoid this: Misreading the grid coordinates, especially A as (0, 3) rather than (1, 3)."
+    },
+    {
+      "key": "concluding_only_parallel_and_stopping_wi",
+      "wrongValue": "incorrect_2",
+      "misconception": "Concluding only 'parallel' and stopping, without mentioning the shared point that gives collinearity.",
+      "correctiveNote": "Avoid this: Concluding only 'parallel' and stopping, without mentioning the shared point that gives collinearity."
+    },
+    {
+      "key": "computing_ab_as_a_b_and_getting_3_2",
+      "wrongValue": "incorrect_3",
+      "misconception": "Computing AB as A − B and getting (−3, −2).",
+      "correctiveNote": "Avoid this: Computing AB as A − B and getting (−3, −2)."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "To prove three points are collinear, show two vectors are scalar multiples AND point out the common point — the second half is where marks are usually lost."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "A",
+    "displayValue": "A",
+    "acceptedForms": [
+      "A",
+      "A"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "P(0, 1), Q(2, 5) and R(5, 11). Is PQ a scalar multiple of QR?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "PQ=(2,4)andQR=(3,6)=1.5×PQ,soyes—P,QandRarecollinear.",
+      "displayValue": "PQ = (2, 4) and QR = (3, 6) = 1.5 × PQ, so yes — P, Q and R are collinear.",
+      "acceptedForms": [
+        "PQ = (2, 4) and QR = (3, 6) = 1.5 × PQ, so yes — P, Q and R are collinear.",
+        "PQ=(2,4)andQR=(3,6)=1.5×PQ,soyes—P,QandRarecollinear."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "37844703-20ec-4e30-a75a-19cc5bd49ac2",
+      "code": "M2-5.1",
+      "label": "Vector between two points"
+    },
+    {
+      "objectiveId": "49f7c7f7-a220-481d-abdd-8c461e5e1cf9",
+      "code": "M2-5.1",
+      "label": "Scalar multiples and parallel vectors"
+    },
+    {
+      "objectiveId": "13b396b5-24bb-4fcb-a921-d34b55ec7c1c",
+      "code": "M2-5.1",
+      "label": "Collinearity"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 13,
+    "pageRef": "p186",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "A",
+        "displayValue": "A",
+        "acceptedForms": [
+          "A",
+          "A"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "=(3,2)an",
+        "displayValue": "= (3, 2) an",
+        "acceptedForms": [
+          "= (3, 2) an",
+          "=(3,2)an"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "c",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (c): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "=(3,2)",
+        "displayValue": "= (3, 2)",
+        "acceptedForms": [
+          "= (3, 2)",
+          "=(3,2)"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

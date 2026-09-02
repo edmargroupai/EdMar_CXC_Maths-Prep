@@ -1,0 +1,283 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p194-q01",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 8,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The matrix A = (3 −1 5 / 0 4 2), a matrix whose first row is 3, −1, 5 and whose second row is 0, 4, 2. (a) State the order of A. (b) Write down the second row of A. (c) Write down the element in row 1, column 3. (d) State whether A is square or rectangular."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Everything here is read straight off the matrix, so the only skill needed is counting rows and columns in the right order."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p194_q01.jpg",
+      "altText": "Source visual for edmar-csec-p194-q01 from workbook page 194."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Count the horizontal rows, then the vertical columns.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Rows: (3 −1 5) and (0 4 2). Columns: the 3/0 column, the −1/4 column and the 5/2 column."
+        },
+        {
+          "type": "text",
+          "value": "Result: 2 rows, 3 columns, so the order is 2 × 3"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Read off the lower of the two rows.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The second row is the one beginning with 0."
+        },
+        {
+          "type": "text",
+          "value": "Result: Second row = (0 4 2)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Go to row 1, then count across to the third column.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Row 1 is (3 −1 5); the third entry is 5."
+        },
+        {
+          "type": "text",
+          "value": "Result: Element = 5"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Compare the number of rows with the number of columns.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2 ≠ 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: A is rectangular"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Count the rows first and the columns second to give the order, then locate the requested row and element by position."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) Order 2 × 3  (b) Second row = (0 4 2)  (c) The element in row 1, column 3 is 5  (d) A is rectangular, since it has 2 rows but 3 columns."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The order of a matrix is always written rows first, columns second, and that convention is what makes element addresses unambiguous. An element referred to as row i, column j sits where those two lines cross. A matrix is square only when those two counts agree."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_the_order_as_3_2_by_counting_col",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing the order as 3 × 2 by counting columns before rows.",
+      "correctiveNote": "Avoid this: Writing the order as 3 × 2 by counting columns before rows."
+    },
+    {
+      "key": "reading_the_element_in_row_3_column_1_ra",
+      "wrongValue": "incorrect_2",
+      "misconception": "Reading the element in row 3, column 1 rather than row 1, column 3.",
+      "correctiveNote": "Avoid this: Reading the element in row 3, column 1 rather than row 1, column 3."
+    },
+    {
+      "key": "calling_any_matrix_with_more_than_one_ro",
+      "wrongValue": "incorrect_3",
+      "misconception": "Calling any matrix with more than one row 'square'.",
+      "correctiveNote": "Avoid this: Calling any matrix with more than one row 'square'."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Say 'rows before columns' to yourself every time you write an order or an element address — it removes most matrix slips."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Order2×3",
+    "displayValue": "Order 2 × 3",
+    "acceptedForms": [
+      "Order 2 × 3",
+      "Order2×3"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A matrix has 4 rows and 1 column. State its order and whether it is square or rectangular."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "Order4×1;rectangular",
+      "displayValue": "Order 4 × 1; rectangular",
+      "acceptedForms": [
+        "Order 4 × 1; rectangular",
+        "Order4×1;rectangular"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "4f66cefd-7e3a-4e72-a34d-4f5e7c8d3650",
+      "code": "M2-4.1",
+      "label": "Order of a matrix"
+    },
+    {
+      "objectiveId": "5c9d6482-29ad-4b7a-a30c-f9e5bf675f6d",
+      "code": "M2-4.1",
+      "label": "Rows and columns"
+    },
+    {
+      "objectiveId": "eae2a460-6245-44ed-aeb0-ae1b4e797648",
+      "code": "M2-4.1",
+      "label": "Elements of a matrix"
+    },
+    {
+      "objectiveId": "a6f3002d-ed0e-428b-a519-a07be19de718",
+      "code": "M2-4.1",
+      "label": "Square and rectangular matrices"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 1,
+    "pageRef": "p194",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Order2×3",
+        "displayValue": "Order 2 × 3",
+        "acceptedForms": [
+          "Order 2 × 3",
+          "Order2×3"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Secon",
+        "displayValue": "Secon",
+        "acceptedForms": [
+          "Secon",
+          "Secon"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "c",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (c): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Theelementinrow1,column3is5",
+        "displayValue": "The element in row 1, column 3 is 5",
+        "acceptedForms": [
+          "The element in row 1, column 3 is 5",
+          "Theelementinrow1,column3is5"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "d",
+      "sequence": 4,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (d): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "row=(042)",
+        "displayValue": "row = (0 4 2)",
+        "acceptedForms": [
+          "row = (0 4 2)",
+          "row=(042)"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

@@ -1,0 +1,203 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p008-q12",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Evaluate 5/6 + 2/3 − 12/35 × 7/9."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Multiplication is buried in the middle of this expression, so clear it before you add or subtract."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p008_q12.jpg",
+      "altText": "Source visual for edmar-csec-p008-q12 from workbook page 8."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply the two fractions, cancelling first.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "7 and 35 share 7; 12 and 9 share 3, giving 4/3 × 1/5"
+        },
+        {
+          "type": "text",
+          "value": "Result: 4/15"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Add the first two fractions.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2/3 = 4/6, so 5/6 + 4/6 = 9/6"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3/2"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Set up the subtraction over a common denominator.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "LCM of 2 and 15 is 30: 3/2 = 45/30 and 4/15 = 8/30"
+        },
+        {
+          "type": "text",
+          "value": "Result: 45/30 − 8/30"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Subtract the numerators and convert to a mixed number.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "45 − 8 = 37, and 37 ÷ 30 = 1 remainder 7"
+        },
+        {
+          "type": "text",
+          "value": "Result: 37/30 = 1 7/30"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Multiply 12/35 by 7/9 first, cancelling common factors, then add 5/6 and 2/3 and subtract the product using a common denominator."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "37/30, or 1 7/30"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The × in the expression is a stronger binding than + or −, so 12/35 × 7/9 is one quantity that must be evaluated before it can be removed from the sum. Cancelling common factors before multiplying keeps the numbers small and avoids simplifying 84/315 afterwards. Addition and subtraction of fractions then only work once every fraction is cut into pieces of the same size, which is what the common denominator 30 provides."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "working_strictly_left_to_right_and_subtr",
+      "wrongValue": "incorrect_1",
+      "misconception": "Working strictly left to right and subtracting 12/35 before multiplying by 7/9.",
+      "correctiveNote": "Avoid this: Working strictly left to right and subtracting 12/35 before multiplying by 7/9."
+    },
+    {
+      "key": "multiplying_84_315_out_and_then_failing_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Multiplying 84/315 out and then failing to simplify it to 4/15.",
+      "correctiveNote": "Avoid this: Multiplying 84/315 out and then failing to simplify it to 4/15."
+    },
+    {
+      "key": "using_6_15_90_as_the_denominator_instead",
+      "wrongValue": "incorrect_3",
+      "misconception": "Using 6 × 15 = 90 as the denominator instead of the LCM 30 and then not simplifying.",
+      "correctiveNote": "Avoid this: Using 6 × 15 = 90 as the denominator instead of the LCM 30 and then not simplifying."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Cancel across the multiplication sign before you multiply — it turns most CSEC fraction products into single-digit arithmetic."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "fraction",
+    "canonicalValue": "37/30",
+    "displayValue": "37/30",
+    "acceptedForms": [
+      "37/30"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Evaluate 1/2 + 1/4 − 3/8 × 2/3."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "fraction",
+      "canonicalValue": "1/2",
+      "displayValue": "1/2",
+      "acceptedForms": [
+        "1/2"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "83b13908-a803-4405-af13-5eaffcecb106",
+      "code": "M1-1.1",
+      "label": "Order of operations"
+    },
+    {
+      "objectiveId": "917ac358-0751-4547-ac86-0a102b0ffd94",
+      "code": "M1-1.1",
+      "label": "Multiplication of fractions"
+    },
+    {
+      "objectiveId": "b9499bba-9117-48cd-abba-fe0c9561126c",
+      "code": "M1-1.1",
+      "label": "Addition and subtraction of fractions"
+    },
+    {
+      "objectiveId": "546914a6-1416-4211-a887-663f8ff22f2d",
+      "code": "M1-1.1",
+      "label": "Cancelling before multiplying"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 12,
+    "pageRef": "p8",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

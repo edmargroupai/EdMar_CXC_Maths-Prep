@@ -1,0 +1,206 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p168-q01",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A rectangular door is 2.40 m high and 0.90 m wide. A wooden brace is fixed from one corner to the opposite corner. a) Calculate the required length of the brace, giving your answer to the nearest centimetre. b) A carpenter has a piece of timber 2.55 m long. Decide whether it is long enough and justify your answer numerically."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The brace is the hypotenuse of a right-angled triangle whose legs are the height and width of the door."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p168_q01.jpg",
+      "altText": "Source visual for edmar-csec-p168-q01 from workbook page 168."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Identify the right-angled triangle.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The height and width meet at a corner at 90°, and the brace joins the opposite corners"
+        },
+        {
+          "type": "text",
+          "value": "Result: legs 2.40 m and 0.90 m, hypotenuse = brace"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Apply Pythagoras' theorem.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "brace² = 2.40² + 0.90² = 5.76 + 0.81"
+        },
+        {
+          "type": "text",
+          "value": "Result: brace² = 6.57"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Take the square root.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "√6.57 = 2.5632…"
+        },
+        {
+          "type": "text",
+          "value": "Result: brace = 2.56 m to the nearest centimetre"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Compare the timber with the required length.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2.55 m against 2.5632 m"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2.55 < 2.5632"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "State the decision with the shortfall.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2.5632 − 2.55 = 0.0132 m"
+        },
+        {
+          "type": "text",
+          "value": "Result: too short by about 1.3 cm"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Apply Pythagoras to the 2.40 m and 0.90 m sides to get the diagonal, then compare that exact value with 2.55 m."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) The brace must be 2.56 m (to the nearest centimetre)  (b) No — the timber is 2.55 m but 2.5632 m is needed, so it falls short by about 0.013 m, roughly 1.3 cm"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The two sides of a rectangle meet at a right angle, so the diagonal is always the hypotenuse of a right-angled triangle and Pythagoras applies directly. In part b the comparison must be made against the unrounded value: rounding to 2.56 m first still gives the right decision here, but rounding before comparing is the habit that produces wrong answers in borderline cases."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "adding_2_40_and_0_90_instead_of_squaring",
+      "wrongValue": "incorrect_1",
+      "misconception": "Adding 2.40 and 0.90 instead of squaring, adding and square-rooting.",
+      "correctiveNote": "Avoid this: Adding 2.40 and 0.90 instead of squaring, adding and square-rooting."
+    },
+    {
+      "key": "rounding_6_57_to_2_6_m_and_then_claiming",
+      "wrongValue": "incorrect_2",
+      "misconception": "Rounding √6.57 to 2.6 m and then claiming 2.55 m is nowhere near.",
+      "correctiveNote": "Avoid this: Rounding √6.57 to 2.6 m and then claiming 2.55 m is nowhere near."
+    },
+    {
+      "key": "answering_no_without_a_numerical_justifi",
+      "wrongValue": "incorrect_3",
+      "misconception": "Answering 'no' without a numerical justification, which the question specifically demands.",
+      "correctiveNote": "Avoid this: Answering 'no' without a numerical justification, which the question specifically demands."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "In 'is it long enough?' questions, keep the full decimal on your calculator and compare with that — only round in the final written statement."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Thebracemustbe2.56m(tothenearestcentimetre)",
+    "displayValue": "The brace must be 2.56 m (to the nearest centimetre)",
+    "acceptedForms": [
+      "The brace must be 2.56 m (to the nearest centimetre)",
+      "Thebracemustbe2.56m(tothenearestcentimetre)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A rectangle is 1.20 m by 0.50 m. How long is its diagonal?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "√(1.44+0.25)=√1.69=1.30m.",
+      "displayValue": "√(1.44 + 0.25) = √1.69 = 1.30 m.",
+      "acceptedForms": [
+        "√(1.44 + 0.25) = √1.69 = 1.30 m.",
+        "√(1.44+0.25)=√1.69=1.30m."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "ed54b82a-a622-471d-a957-650187b93ca0",
+      "code": "M1-1.1",
+      "label": "Pythagoras' theorem"
+    },
+    {
+      "objectiveId": "3446da33-b791-46e7-af69-6a64a53808ea",
+      "code": "M1-1.1",
+      "label": "Rounding to a stated accuracy"
+    },
+    {
+      "objectiveId": "c9d5c57b-9d12-4c8c-adcb-8bc69d732743",
+      "code": "M1-1.1",
+      "label": "Comparing measurements to make a decision"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 1,
+    "pageRef": "p168",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

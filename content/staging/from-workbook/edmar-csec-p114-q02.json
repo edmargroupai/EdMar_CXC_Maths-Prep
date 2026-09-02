@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p114-q02",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The distance d needed to stop a car varies directly as the square of its speed s. A car travelling at 70 km/h requires a stopping distance of 40 m. Find the stopping distance when the speed is 80 km/h."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The distance depends on the square of the speed, so the speeds must be squared before you compare them."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p114_q02.jpg",
+      "altText": "Source visual for edmar-csec-p114-q02 from workbook page 114."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write the variation statement as an equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "d varies directly as s²"
+        },
+        {
+          "type": "text",
+          "value": "Result: d = ks²"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Substitute d = 40 and s = 70 to find k.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "40 = k × 70² = 4900k"
+        },
+        {
+          "type": "text",
+          "value": "Result: k = 40/4900 = 2/245"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Substitute s = 80 into d = ks².",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "d = (2/245) × 6400 = 12800/245"
+        },
+        {
+          "type": "text",
+          "value": "Result: d = 52.2448... m"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Round sensibly for a practical distance.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "12800/245 to 3 significant figures"
+        },
+        {
+          "type": "text",
+          "value": "Result: d ≈ 52.2 m"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Write d = ks², use d = 40 when s = 70 to find k, then substitute s = 80."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "The stopping distance is 12800/245 m ≈ 52.2 m"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Because d is proportional to s², multiplying the speed by a factor multiplies the stopping distance by the square of that factor. Here the speed rises by a factor of 80/70, so the distance rises by (80/70)² ≈ 1.31 — a 14% increase in speed causes roughly a 31% increase in stopping distance. That squared relationship is the reason small increases in speed matter so much on the road."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "using_d_ks_and_scaling_the_distance_by_8",
+      "wrongValue": "incorrect_1",
+      "misconception": "Using d = ks and scaling the distance by 80/70 instead of (80/70)².",
+      "correctiveNote": "Avoid this: Using d = ks and scaling the distance by 80/70 instead of (80/70)²."
+    },
+    {
+      "key": "squaring_only_after_dividing_e_g_computi",
+      "wrongValue": "incorrect_2",
+      "misconception": "Squaring only after dividing, e.g. computing 40 × 80²/70 rather than 40 × (80/70)².",
+      "correctiveNote": "Avoid this: Squaring only after dividing, e.g. computing 40 × 80²/70 rather than 40 × (80/70)²."
+    },
+    {
+      "key": "rounding_k_too_early_and_losing_accuracy",
+      "wrongValue": "incorrect_3",
+      "misconception": "Rounding k too early and losing accuracy in the final answer.",
+      "correctiveNote": "Avoid this: Rounding k too early and losing accuracy in the final answer."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "For a square-law variation you can skip finding k: use d₂ = d₁ × (s₂/s₁)², which is faster and avoids rounding errors."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Thestoppingdistanceis12800/245m≈52.2m",
+    "displayValue": "The stopping distance is 12800/245 m ≈ 52.2 m",
+    "acceptedForms": [
+      "The stopping distance is 12800/245 m ≈ 52.2 m",
+      "Thestoppingdistanceis12800/245m≈52.2m"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "d varies directly as s². If d = 20 when s = 10, find d when s = 30."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=180",
+      "displayValue": "= 180",
+      "acceptedForms": [
+        "= 180",
+        "=180"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "f9b95314-f1c6-4154-aa6e-dda6bcc5a4c1",
+      "code": "M1-1.1",
+      "label": "Direct variation with a square"
+    },
+    {
+      "objectiveId": "7860099e-1a1f-4aa0-aa67-1b3c7f20c591",
+      "code": "M1-1.1",
+      "label": "Constant of variation"
+    },
+    {
+      "objectiveId": "22d11c2c-d7c9-4c7d-a48b-6e523eaa8150",
+      "code": "M1-1.1",
+      "label": "Substitution"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 2,
+    "pageRef": "p114",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

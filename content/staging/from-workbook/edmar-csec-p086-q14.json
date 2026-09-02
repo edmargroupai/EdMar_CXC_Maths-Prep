@@ -1,0 +1,219 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p086-q14",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The table shows the daily screen time, x hours, of 40 students: 0 → 2, 1 → 5, 2 → 9, 3 → 11, 4 → 8, 5 → 4, 6 → 1. (a) State the modal screen time. (b) Calculate the mean screen time. (c) Determine the proportion of students whose screen time was no more than 2 hours. (d) Calculate the percentage of students whose screen time was more than 4 hours."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Check the frequencies total 40, then read every part off the same table."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p086_q14.jpg",
+      "altText": "Source visual for edmar-csec-p086-q14 from workbook page 86."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Find the largest frequency.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "11 students, at 3 hours"
+        },
+        {
+          "type": "text",
+          "value": "Result: Modal screen time = 3 hours"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Multiply each screen time by its frequency and add.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "0(2) + 1(5) + 2(9) + 3(11) + 4(8) + 5(4) + 6(1) = 0 + 5 + 18 + 33 + 32 + 20 + 6"
+        },
+        {
+          "type": "text",
+          "value": "Result: Σfx = 114"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Divide by the 40 students.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "114 ÷ 40"
+        },
+        {
+          "type": "text",
+          "value": "Result: Mean = 2.85 hours"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Count the students on 0, 1 or 2 hours.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2 + 5 + 9 = 16, out of 40"
+        },
+        {
+          "type": "text",
+          "value": "Result: Proportion = 2/5 (0.4)"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Count the students on 5 or 6 hours and convert to a percentage.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "4 + 1 = 5, then 5/40 × 100"
+        },
+        {
+          "type": "text",
+          "value": "Result: 12.5%"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Confirm the total frequency, take the mode from the largest frequency, use Σfx ÷ Σf for the mean, then count the frequencies inside the ranges asked for in (c) and (d)."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) 3 hours  (b) 2.85 hours  (c) 2/5 (0.4, or 40%)  (d) 12.5%"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Σfx totals the screen time of all 40 students at once, so dividing by 40 gives the mean without ever writing the list out in full. 'No more than 2' and 'more than 4' are instructions about which rows to include: the first keeps the 2-hour row, the second excludes the 4-hour row, and reading those boundaries correctly is what the marks are for."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "dividing_fx_by_7_the_number_of_different",
+      "wrongValue": "incorrect_1",
+      "misconception": "Dividing Σfx by 7, the number of different screen times, instead of by 40.",
+      "correctiveNote": "Avoid this: Dividing Σfx by 7, the number of different screen times, instead of by 40."
+    },
+    {
+      "key": "including_the_8_students_on_exactly_4_ho",
+      "wrongValue": "incorrect_2",
+      "misconception": "Including the 8 students on exactly 4 hours in 'more than 4 hours'.",
+      "correctiveNote": "Avoid this: Including the 8 students on exactly 4 hours in 'more than 4 hours'."
+    },
+    {
+      "key": "leaving_out_the_9_students_on_exactly_2_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Leaving out the 9 students on exactly 2 hours from 'no more than 2 hours'.",
+      "correctiveNote": "Avoid this: Leaving out the 9 students on exactly 2 hours from 'no more than 2 hours'."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Underline the comparison words — 'no more than', 'at least', 'more than' — and mark the boundary row in the table before you count."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "3",
+    "displayValue": "3",
+    "acceptedForms": [
+      "3",
+      "3"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Using the same table, how many students had a screen time of at least 4 hours?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "13",
+      "displayValue": "13",
+      "acceptedForms": [
+        "13",
+        "13"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M3-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "5bca0210-2926-43a6-a953-df96b2242a52",
+      "code": "M3-1.1",
+      "label": "Frequency distributions"
+    },
+    {
+      "objectiveId": "33d994fb-c349-4349-a5cc-c974e2b56603",
+      "code": "M3-1.1",
+      "label": "Mode"
+    },
+    {
+      "objectiveId": "825e567b-fd22-47ad-a32a-68ae24e7e1f0",
+      "code": "M3-1.1",
+      "label": "Mean from a frequency table"
+    },
+    {
+      "objectiveId": "d8a02ca6-bf06-472a-aa43-bf859f97e819",
+      "code": "M3-1.1",
+      "label": "Proportion and percentage"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 14,
+    "pageRef": "p86",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

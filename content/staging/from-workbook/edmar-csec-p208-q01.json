@@ -1,0 +1,377 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p208-q01",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 10,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Twenty bags of sugar were weighed to the nearest kg: 3, 38, 17, 33, 28, 12, 43, 38, 31, 30, 11, 8, 23, 18, 26, 50, 22, 35, 39, 5. (g) Complete a frequency table with class intervals 1–10, 11–20, 21–30, 31–40, 41–50. (h) For the class interval 21–30 state (i) the upper class boundary, (ii) the class width, (iii) the class midpoint. (i) Using 2 cm to 10 kg on the x-axis and 1 cm to 1 bag on the y-axis, draw a histogram of the frequency table."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Tally each weight into its interval first, then check the five frequencies add back to 20 before you use them for anything else."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p208_q01.jpg",
+      "altText": "Source visual for edmar-csec-p208-q01 from workbook page 208."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Tally the values into each class interval.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "1–10: 3, 8, 5; 11–20: 12, 17, 11, 18; 21–30: 28, 30, 23, 26, 22; 31–40: 38, 33, 38, 31, 35, 39; 41–50: 43, 50"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3, 4, 5, 6, 2"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Check the frequencies against the number of bags.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3 + 4 + 5 + 6 + 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: 20 bags, so the table is complete"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Find the upper class boundary of 21–30.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Weights are to the nearest kg, so the class stretches half a unit past 30"
+        },
+        {
+          "type": "text",
+          "value": "Result: 30.5 kg"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Find the class width as upper boundary minus lower boundary.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "30.5 − 20.5"
+        },
+        {
+          "type": "text",
+          "value": "Result: 10 kg"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Find the class midpoint by averaging the class limits.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(21 + 30) ÷ 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: 25.5 kg"
+        }
+      ]
+    },
+    {
+      "stepNo": 6,
+      "instruction": "Draw the histogram with the class boundaries on the x-axis and frequency on the y-axis.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Bars from 0.5–10.5, 10.5–20.5, 20.5–30.5, 30.5–40.5, 40.5–50.5 with no gaps; heights 3, 4, 5, 6, 2 (2 cm = 10 kg across, 1 cm = 1 bag up)"
+        },
+        {
+          "type": "text",
+          "value": "Result: Five touching bars of heights 3, 4, 5, 6, 2"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Sort the twenty readings into the five classes and total them, then apply the boundary/width/midpoint definitions to 21–30 and use the frequencies as the bar heights of the histogram."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(g) 1–10: 3 bags; 11–20: 4 bags; 21–30: 5 bags; 31–40: 6 bags; 41–50: 2 bags (total 20).  (h)(i) 30.5 kg  (ii) 10 kg  (iii) 25.5 kg  (i) A histogram of five touching bars with heights 3, 4, 5, 6 and 2, drawn between the class boundaries 0.5, 10.5, 20.5, 30.5, 40.5 and 50.5."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Weights recorded to the nearest kilogram are really intervals: a bag labelled 30 kg lies anywhere from 29.5 to 30.5 kg. That is why the class 21–30 actually runs from 20.5 to 30.5, giving a width of 10 and a boundary of 30.5, while the midpoint 25.5 is the value used to represent every bag in that class. A histogram uses those boundaries so the bars touch, showing that the data is continuous."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "giving_the_class_width_as_30_21_9_instea",
+      "wrongValue": "incorrect_1",
+      "misconception": "Giving the class width as 30 − 21 = 9 instead of using the boundaries.",
+      "correctiveNote": "Avoid this: Giving the class width as 30 − 21 = 9 instead of using the boundaries."
+    },
+    {
+      "key": "quoting_30_as_the_upper_class_boundary_3",
+      "wrongValue": "incorrect_2",
+      "misconception": "Quoting 30 as the upper class boundary — 30 is the upper class limit.",
+      "correctiveNote": "Avoid this: Quoting 30 as the upper class boundary — 30 is the upper class limit."
+    },
+    {
+      "key": "leaving_gaps_between_histogram_bars_whic",
+      "wrongValue": "incorrect_3",
+      "misconception": "Leaving gaps between histogram bars, which is only correct for a bar chart of discrete categories.",
+      "correctiveNote": "Avoid this: Leaving gaps between histogram bars, which is only correct for a bar chart of discrete categories."
+    },
+    {
+      "key": "losing_or_double_counting_a_value_in_the",
+      "wrongValue": "incorrect_4",
+      "misconception": "Losing or double-counting a value in the tally; always check the frequencies sum to the stated total.",
+      "correctiveNote": "Avoid this: Losing or double-counting a value in the tally; always check the frequencies sum to the stated total."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Total your frequency column and compare it with the number given in the question before you go any further — one mis-tallied value ruins every later part."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_dp",
+    "canonicalValue": "30.5",
+    "displayValue": "30.5",
+    "acceptedForms": [
+      "30.5",
+      "30.5"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "precision": {
+      "kind": "decimal_places",
+      "value": 1,
+      "required": true
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "For the class interval 51–60 of data recorded to the nearest kg, state the lower class boundary and the class midpoint."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "Lowerclassboundary50.5kg;midpoint55.5kg.",
+      "displayValue": "Lower class boundary 50.5 kg; midpoint 55.5 kg.",
+      "acceptedForms": [
+        "Lower class boundary 50.5 kg; midpoint 55.5 kg.",
+        "Lowerclassboundary50.5kg;midpoint55.5kg."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M3-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "4d80c12f-d33d-4324-ac90-d957fb08f0ab",
+      "code": "M3-1.1",
+      "label": "Grouped frequency tables"
+    },
+    {
+      "objectiveId": "7aaaa7e9-be8d-46a7-aa1f-60b00e167e2e",
+      "code": "M3-1.1",
+      "label": "Class boundaries, class width and class midpoint"
+    },
+    {
+      "objectiveId": "5802aa40-e180-4cd2-a502-3000f205cdf7",
+      "code": "M3-1.1",
+      "label": "Histograms"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 1,
+    "pageRef": "p208",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "g",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (g): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "numeric_dp",
+        "canonicalValue": "30.5",
+        "displayValue": "30.5",
+        "acceptedForms": [
+          "30.5",
+          "30.5"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0
+        },
+        "precision": {
+          "kind": "decimal_places",
+          "value": 1,
+          "required": true
+        },
+        "normalisation": "numeric_default"
+      }
+    },
+    {
+      "partKey": "h",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (h): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "numeric_exact",
+        "canonicalValue": "10",
+        "displayValue": "10",
+        "acceptedForms": [
+          "10",
+          "10"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0
+        },
+        "normalisation": "numeric_default"
+      }
+    },
+    {
+      "partKey": "a.i",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.i): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "numeric_dp",
+        "canonicalValue": "30.5",
+        "displayValue": "30.5",
+        "acceptedForms": [
+          "30.5",
+          "30.5"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0
+        },
+        "precision": {
+          "kind": "decimal_places",
+          "value": 1,
+          "required": true
+        },
+        "normalisation": "numeric_default"
+      }
+    },
+    {
+      "partKey": "a.ii",
+      "sequence": 4,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.ii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "numeric_exact",
+        "canonicalValue": "10",
+        "displayValue": "10",
+        "acceptedForms": [
+          "10",
+          "10"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0
+        },
+        "normalisation": "numeric_default"
+      }
+    },
+    {
+      "partKey": "a.iii",
+      "sequence": 5,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.iii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "numeric_dp",
+        "canonicalValue": "25.5",
+        "displayValue": "25.5",
+        "acceptedForms": [
+          "25.5",
+          "25.5"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0
+        },
+        "precision": {
+          "kind": "decimal_places",
+          "value": 1,
+          "required": true
+        },
+        "normalisation": "numeric_default"
+      }
+    }
+  ]
+}

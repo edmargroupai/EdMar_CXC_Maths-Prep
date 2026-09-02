@@ -1,0 +1,196 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p013-q06",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The number of days a coach party spent in Jamaica, Cuba and The Bahamas was in the ratio 4 : 3 : 5, and the trip lasted 36 days in total. Calculate: i. the number of days spent in each country  ii. how many more days were spent in The Bahamas than in Cuba."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Twelve equal parts make up the 36 days, so start by finding how many days one part is worth."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p013_q06.jpg",
+      "altText": "Source visual for edmar-csec-p013-q06 from workbook page 13."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Add the ratio parts.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "4 + 3 + 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: 12 parts"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Find the value of one part.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "36 days ÷ 12"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3 days per part"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Find the days in each country.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Jamaica 4 × 3, Cuba 3 × 3, The Bahamas 5 × 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: 12, 9 and 15 days"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Subtract to compare The Bahamas with Cuba.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "15 − 9, or directly (5 − 3) × 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: 6 days"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Add the ratio parts, divide 36 by that total, multiply for each country, then subtract Cuba from The Bahamas."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "i. Jamaica 12 days, Cuba 9 days, The Bahamas 15 days  ii. 6 more days in The Bahamas"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Sharing in a ratio distributes the whole into equal units, so once one unit is known every share is a multiplication. A difference between two shares is itself a whole number of units, which means it can be found either by subtracting the two answers or by subtracting the ratio numbers first and then multiplying — the two routes must agree, and that agreement is a free check."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "dividing_36_by_3_because_there_are_three",
+      "wrongValue": "incorrect_1",
+      "misconception": "Dividing 36 by 3 because there are three countries.",
+      "correctiveNote": "Avoid this: Dividing 36 by 3 because there are three countries."
+    },
+    {
+      "key": "comparing_the_wrong_pair_for_example_jam",
+      "wrongValue": "incorrect_2",
+      "misconception": "Comparing the wrong pair, for example Jamaica and Cuba.",
+      "correctiveNote": "Avoid this: Comparing the wrong pair, for example Jamaica and Cuba."
+    },
+    {
+      "key": "giving_the_difference_in_parts_2_rather_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Giving the difference in parts (2) rather than in days (6).",
+      "correctiveNote": "Avoid this: Giving the difference in parts (2) rather than in days (6)."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When a question asks for a difference, subtract the ratio numbers first and multiply by one part — it is one step instead of three and it cross-checks your shares."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Jamaica12days,Cuba9days,TheBahamas15days",
+    "displayValue": "Jamaica 12 days, Cuba 9 days, The Bahamas 15 days",
+    "acceptedForms": [
+      "Jamaica 12 days, Cuba 9 days, The Bahamas 15 days",
+      "Jamaica12days,Cuba9days,TheBahamas15days"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A 45-day trip is split between three sites in the ratio 2 : 3 : 4. How many more days are spent at the longest site than the shortest?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "10",
+      "displayValue": "10",
+      "acceptedForms": [
+        "10",
+        "10"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "1a09c8f0-6b39-439b-a221-58bf5798e4db",
+      "code": "M1-1.1",
+      "label": "Ratio"
+    },
+    {
+      "objectiveId": "6c74c2f9-8f2a-4aa4-ae97-73ffca4950a9",
+      "code": "M1-1.1",
+      "label": "Sharing a quantity in a given ratio"
+    },
+    {
+      "objectiveId": "480ffa6e-49a5-41c1-a278-fbde6a9ada24",
+      "code": "M1-1.1",
+      "label": "Difference"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 6,
+    "pageRef": "p13",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

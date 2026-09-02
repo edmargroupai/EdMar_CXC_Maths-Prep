@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p123-q07",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A straight line has gradient 3 and passes through the point (2, −4). Determine its equation in the form y = mx + c."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The gradient gives you m straight away; the point is there to pin down c."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p123_q07.jpg",
+      "altText": "Source visual for edmar-csec-p123-q07 from workbook page 123."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write the equation with the known gradient.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "m = 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 3x + c"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Substitute x = 2 and y = −4.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "−4 = 3(2) + c = 6 + c"
+        },
+        {
+          "type": "text",
+          "value": "Result: c = −10"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Write the completed equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Replace c by −10"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 3x − 10"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Check the point satisfies the equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3(2) − 10 = 6 − 10 = −4"
+        },
+        {
+          "type": "text",
+          "value": "Result: Verified"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Write y = 3x + c, substitute the coordinates of the given point to find c, then state the full equation."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "y = 3x − 10"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Infinitely many lines have gradient 3, and they differ only in the value of c — the height at which they cross the y-axis. Supplying one point the line must pass through selects exactly one of them, which is why substituting the coordinates determines c uniquely."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "substituting_the_point_as_x_4_y_2",
+      "wrongValue": "incorrect_1",
+      "misconception": "Substituting the point as x = −4, y = 2.",
+      "correctiveNote": "Avoid this: Substituting the point as x = −4, y = 2."
+    },
+    {
+      "key": "writing_c_10_by_moving_6_across_without_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Writing c = 10 by moving 6 across without changing its sign.",
+      "correctiveNote": "Avoid this: Writing c = 10 by moving 6 across without changing its sign."
+    },
+    {
+      "key": "leaving_the_answer_as_4_3x_c_instead_of_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Leaving the answer as −4 = 3x + c instead of a finished equation.",
+      "correctiveNote": "Avoid this: Leaving the answer as −4 = 3x + c instead of a finished equation."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Always substitute your point back into the finished equation — a one-line check catches a sign slip in c."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "y=3x−10",
+    "displayValue": "y = 3x − 10",
+    "acceptedForms": [
+      "y = 3x − 10",
+      "y=3x−10"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A line has gradient −2 and passes through (3, 1). Find its equation."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "y=−2x+7",
+      "displayValue": "y = −2x + 7",
+      "acceptedForms": [
+        "y = −2x + 7",
+        "y=−2x+7"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-3.2"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "ce81ad39-9b22-48ac-a6a3-cf01c6fed323",
+      "code": "M1-3.2",
+      "label": "Equation of a straight line"
+    },
+    {
+      "objectiveId": "63cfba47-63f3-42d5-ab75-221115c413f3",
+      "code": "M1-3.2",
+      "label": "Gradient-intercept form"
+    },
+    {
+      "objectiveId": "c254c607-f935-4049-ae8a-fb78172eb64c",
+      "code": "M1-3.2",
+      "label": "Substitution"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 7,
+    "pageRef": "p123",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

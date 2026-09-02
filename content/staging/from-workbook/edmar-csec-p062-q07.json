@@ -1,0 +1,171 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p062-q07",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "If a = 2, b = −3 and c = 0, find 4a − 2b + 3c."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Three terms to evaluate; watch the double negative in the middle one."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p062_q07.jpg",
+      "altText": "Source visual for edmar-csec-p062-q07 from workbook page 62."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Substitute the values.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "4(2) − 2(−3) + 3(0)"
+        },
+        {
+          "type": "text",
+          "value": "Result: 8 − (−6) + 0"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Simplify the double negative.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "subtracting −6 is adding 6"
+        },
+        {
+          "type": "text",
+          "value": "Result: 8 + 6 + 0"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Add.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: 14"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Substitute each value with brackets, evaluate each term, then combine."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "14"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The term −2b means −2 multiplied by b, and with b = −3 that product is +6. Anything multiplied by c = 0 vanishes, so the third term contributes nothing - but it is still worth writing down to show the substitution was complete."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_8_6_2_by_not_applying_the_negati",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing 8 − 6 = 2 by not applying the negative to b.",
+      "correctiveNote": "Avoid this: Writing 8 − 6 = 2 by not applying the negative to b."
+    },
+    {
+      "key": "treating_3c_as_3_when_c_0",
+      "wrongValue": "incorrect_2",
+      "misconception": "Treating 3c as 3 when c = 0.",
+      "correctiveNote": "Avoid this: Treating 3c as 3 when c = 0."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Substitute every value inside brackets first and simplify signs on a separate line - do not try to do both at once."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "14",
+    "displayValue": "14",
+    "acceptedForms": [
+      "14",
+      "14"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "If a = 1, b = −2 and c = 0, find 4a − 2b + 3c."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "8",
+      "displayValue": "8",
+      "acceptedForms": [
+        "8",
+        "8"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "1cb90d62-d4e8-41d3-a0f3-51cb432a05ce",
+      "code": "M1-4.1",
+      "label": "Substitution"
+    },
+    {
+      "objectiveId": "cc755f6a-3b1b-44dc-ad17-44d872189dbf",
+      "code": "M1-4.1",
+      "label": "Directed numbers"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 7,
+    "pageRef": "p62",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

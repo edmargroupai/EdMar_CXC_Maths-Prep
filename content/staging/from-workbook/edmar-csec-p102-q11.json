@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p102-q11",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Complete the square for −2x² + 8x + 1 and hence state the maximum value of the expression."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The x² coefficient is negative, so this parabola opens downwards and has a maximum rather than a minimum."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p102_q11.jpg",
+      "altText": "Source visual for edmar-csec-p102-q11 from workbook page 102."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Factor −2 out of the terms containing x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "−2x² + 8x + 1 = −2(x² − 4x) + 1; dividing 8x by −2 gives −4x"
+        },
+        {
+          "type": "text",
+          "value": "Result: −2(x² − 4x) + 1"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Complete the square inside the bracket.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "half of −4 is −2, and (−2)² = 4, so x² − 4x = (x − 2)² − 4"
+        },
+        {
+          "type": "text",
+          "value": "Result: −2[(x − 2)² − 4] + 1"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Multiply the −2 through the bracket and combine constants.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "−2(x − 2)² + 8 + 1"
+        },
+        {
+          "type": "text",
+          "value": "Result: −2(x − 2)² + 9"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Note that −2(x − 2)² is never positive, so the expression is largest when the square is zero.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "−2(x − 2)² ≤ 0, with equality when x = 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: maximum value = 9"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Factor −2 out of the x-terms, complete the square inside, then use the fact that subtracting a positive multiple of a square makes the expression largest when the square is zero."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "−2x² + 8x + 1 = −2(x − 2)² + 9; the maximum value is 9, occurring at x = 2."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Multiplying a square by a negative number flips it: instead of adding a non-negative amount, the term now removes a non-negative amount from 9. The most the expression can ever be is therefore 9, reached only when the square vanishes. This is the same argument as for a minimum, with the inequality reversed by the negative factor."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "factoring_out_2_instead_of_2_and_getting",
+      "wrongValue": "incorrect_1",
+      "misconception": "Factoring out +2 instead of −2 and getting the sign of the inner x-term wrong.",
+      "correctiveNote": "Avoid this: Factoring out +2 instead of −2 and getting the sign of the inner x-term wrong."
+    },
+    {
+      "key": "multiplying_2_by_4_and_writing_8_rather_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Multiplying −2 by −4 and writing −8 rather than +8.",
+      "correctiveNote": "Avoid this: Multiplying −2 by −4 and writing −8 rather than +8."
+    },
+    {
+      "key": "calling_9_a_minimum_because_the_complete",
+      "wrongValue": "incorrect_3",
+      "misconception": "Calling 9 a minimum because the completed form ends in a plus sign.",
+      "correctiveNote": "Avoid this: Calling 9 a minimum because the completed form ends in a plus sign."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Check the sign of the x² coefficient before you start: negative means a maximum, positive means a minimum. State which one you found."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "−2x²+8x+1=−2(x−2)²+9;themaximumvalueis9,occurringatx=2.",
+    "displayValue": "−2x² + 8x + 1 = −2(x − 2)² + 9; the maximum value is 9, occurring at x = 2.",
+    "acceptedForms": [
+      "−2x² + 8x + 1 = −2(x − 2)² + 9; the maximum value is 9, occurring at x = 2.",
+      "−2x²+8x+1=−2(x−2)²+9;themaximumvalueis9,occurringatx=2."
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Find the maximum value of −x² + 6x − 2 by completing the square."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "−(x−3)²+7,sothemaximumvalueis7atx=3.",
+      "displayValue": "−(x − 3)² + 7, so the maximum value is 7 at x = 3.",
+      "acceptedForms": [
+        "−(x − 3)² + 7, so the maximum value is 7 at x = 3.",
+        "−(x−3)²+7,sothemaximumvalueis7atx=3."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "449c4bdd-a728-4fd3-a3c8-4ed9c873ea81",
+      "code": "M1-5.1",
+      "label": "Completing the square with a negative leading coefficient"
+    },
+    {
+      "objectiveId": "75c5a480-951e-4bfd-a5a8-983942be60a1",
+      "code": "M1-5.1",
+      "label": "Maximum value of a quadratic"
+    },
+    {
+      "objectiveId": "a9306a26-1d06-44b1-a455-a5b9def94c80",
+      "code": "M1-5.1",
+      "label": "Non-negativity of a square"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 11,
+    "pageRef": "p102",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

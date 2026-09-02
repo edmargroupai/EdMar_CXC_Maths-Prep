@@ -1,0 +1,283 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p180-q05",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 6,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The vectors a and b are given: a has components 3 and −2, and b has components −1 and 4. (a) Calculate 2a − b. (b) Calculate a + b. (c) Hence determine |3a|."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Vector arithmetic works one row at a time — top with top, bottom with bottom."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p180_q05.jpg",
+      "altText": "Source visual for edmar-csec-p180-q05 from workbook page 180."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Double a.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2 × (3, −2)"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2a = (6, −4)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Subtract b component by component.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "6 − (−1) = 7 and −4 − 4 = −8"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2a − b = (7, −8)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Add a and b.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3 + (−1) = 2 and −2 + 4 = 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: a + b = (2, 2)"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Find |a|.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "|a|² = 3² + (−2)² = 9 + 4 = 13"
+        },
+        {
+          "type": "text",
+          "value": "Result: |a| = √13"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Scale the magnitude.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "|3a| = 3|a| = 3√13"
+        },
+        {
+          "type": "text",
+          "value": "Result: |3a| = 3√13 ≈ 10.8"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Scale and combine components separately for parts a and b, then use |3a| = 3|a| with Pythagoras for part c."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) 2a − b = (7, −8)  (b) a + b = (2, 2)  (c) |3a| = 3√13 ≈ 10.8"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Each component of a column vector describes movement in a direction independent of the other, so operations act on them separately — there is no mixing between rows. Multiplying a vector by 3 triples both components, which triples the hypotenuse too, so |3a| = 3|a|; computing 3a = (9, −6) and starting Pythagoras again gives the same √117 = 3√13."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "mishandling_the_double_negative_when_sub",
+      "wrongValue": "incorrect_1",
+      "misconception": "Mishandling the double negative when subtracting: 6 − (−1) is 7, not 5.",
+      "correctiveNote": "Avoid this: Mishandling the double negative when subtracting: 6 − (−1) is 7, not 5."
+    },
+    {
+      "key": "writing_3a_3_13_by_forgetting_the_square",
+      "wrongValue": "incorrect_2",
+      "misconception": "Writing |3a| = 3 × 13 by forgetting the square root.",
+      "correctiveNote": "Avoid this: Writing |3a| = 3 × 13 by forgetting the square root."
+    },
+    {
+      "key": "computing_a_b_when_part_c_asks_for_3a",
+      "wrongValue": "incorrect_3",
+      "misconception": "Computing |a + b| when part c asks for |3a|.",
+      "correctiveNote": "Avoid this: Computing |a + b| when part c asks for |3a|."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Leave magnitudes in surd form such as 3√13 unless a decimal is requested — the exact form is always accepted and avoids rounding errors."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "2",
+    "displayValue": "2",
+    "acceptedForms": [
+      "2",
+      "2"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "If v has components 4 and −3, find |2v|."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "2",
+      "displayValue": "2",
+      "acceptedForms": [
+        "2",
+        "2"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "171e92f5-0d83-4cc0-ac2e-711ac9e16d4e",
+      "code": "M2-5.1",
+      "label": "Addition and subtraction of column vectors"
+    },
+    {
+      "objectiveId": "14319ffa-2e7e-43f4-a5c6-6ace256dab61",
+      "code": "M2-5.1",
+      "label": "Scalar multiplication"
+    },
+    {
+      "objectiveId": "90d65884-ff06-4cca-ae42-c0c6b1d915d7",
+      "code": "M2-5.1",
+      "label": "Magnitude of a vector"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 5,
+    "pageRef": "p180",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "numeric_exact",
+        "canonicalValue": "2",
+        "displayValue": "2",
+        "acceptedForms": [
+          "2",
+          "2"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0
+        },
+        "normalisation": "numeric_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "=(7,−8)",
+        "displayValue": "= (7, −8)",
+        "acceptedForms": [
+          "= (7, −8)",
+          "=(7,−8)"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "c",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (c): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "|3a|=3√13≈10.8",
+        "displayValue": "|3a| = 3√13 ≈ 10.8",
+        "acceptedForms": [
+          "|3a| = 3√13 ≈ 10.8",
+          "|3a|=3√13≈10.8"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

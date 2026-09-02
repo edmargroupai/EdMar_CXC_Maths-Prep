@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p021-q24",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A tourist exchanges US$1 200 at US$1 = J$155 and a tax of 2% is charged. (a) Calculate the amount in Jamaican dollars before tax. (b) Calculate the tax. (c) Calculate the final amount received."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Convert first, then tax: the 2% is charged on the Jamaican dollar amount the conversion produced."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p021_q24.jpg",
+      "altText": "Source visual for edmar-csec-p021-q24 from workbook page 21."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Convert US dollars to Jamaican dollars.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "1 200 x 155"
+        },
+        {
+          "type": "text",
+          "value": "Result: J$186 000"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Find 2% of the converted amount.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "0.02 x 186 000"
+        },
+        {
+          "type": "text",
+          "value": "Result: J$3 720"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Subtract the tax from the amount before tax.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "186 000 - 3 720"
+        },
+        {
+          "type": "text",
+          "value": "Result: J$182 280"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Check with a single multiplier.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "186 000 x 0.98"
+        },
+        {
+          "type": "text",
+          "value": "Result: J$182 280"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Multiply US$1 200 by 155 to convert, take 2% of that result as tax, then subtract the tax from the converted amount."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) J$186 000  (b) J$3 720  (c) J$182 280"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The tax is a charge on the transaction, so it is calculated on the full converted value and then removed from what the tourist walks away with. Because 2% is deducted, 98% remains, which is why the single multiplier 0.98 reproduces the final figure. Taxing the US dollar amount would give an answer in the wrong currency."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "taking_2_of_us_1_200_and_mixing_currenci",
+      "wrongValue": "incorrect_1",
+      "misconception": "Taking 2% of US$1 200 and mixing currencies.",
+      "correctiveNote": "Avoid this: Taking 2% of US$1 200 and mixing currencies."
+    },
+    {
+      "key": "adding_the_tax_instead_of_subtracting_it",
+      "wrongValue": "incorrect_2",
+      "misconception": "Adding the tax instead of subtracting it.",
+      "correctiveNote": "Avoid this: Adding the tax instead of subtracting it."
+    },
+    {
+      "key": "rounding_j_186_000_before_finding_the_ta",
+      "wrongValue": "incorrect_3",
+      "misconception": "Rounding J$186 000 before finding the tax.",
+      "correctiveNote": "Avoid this: Rounding J$186 000 before finding the tax."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "In multi-step money questions, label every line with its currency. It stops you taxing dollars of the wrong kind."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "J$186000",
+    "displayValue": "J$186 000",
+    "acceptedForms": [
+      "J$186 000",
+      "J$186000"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "US$800 is exchanged at US$1 = J$150 with a 2% charge. What is finally received?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "J$117600",
+      "displayValue": "J$117 600",
+      "acceptedForms": [
+        "J$117 600",
+        "J$117600"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-3.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "65198f26-9930-4cf5-a126-24eca89aecf2",
+      "code": "M1-3.1",
+      "label": "Currency exchange"
+    },
+    {
+      "objectiveId": "1f800b60-9e88-48ab-a117-af3b2428b68e",
+      "code": "M1-3.1",
+      "label": "Percentage of a quantity"
+    },
+    {
+      "objectiveId": "b4343f6a-ff74-4077-a26a-4e11c9e16d5f",
+      "code": "M1-3.1",
+      "label": "Deductions"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 24,
+    "pageRef": "p21",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

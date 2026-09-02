@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p101-q01",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Express x² + 6x + 5 in the form (x + h)² + k by completing the square."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Halve the coefficient of x — that number goes inside the bracket."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p101_q01.jpg",
+      "altText": "Source visual for edmar-csec-p101-q01 from workbook page 101."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Halve the coefficient of x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "6 ÷ 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3, so the bracket is (x + 3)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Note what (x + 3)² actually gives.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(x + 3)² = x² + 6x + 9"
+        },
+        {
+          "type": "text",
+          "value": "Result: 9 too many"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Subtract that extra 9 and add the original constant 5.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x² + 6x + 5 = (x + 3)² − 9 + 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: (x + 3)² − 4"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Check by expanding.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(x + 3)² − 4 = x² + 6x + 9 − 4"
+        },
+        {
+          "type": "text",
+          "value": "Result: x² + 6x + 5 ✓"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Halve the x coefficient to build the squared bracket, subtract the square you introduced, then add the original constant."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x² + 6x + 5 = (x + 3)² − 4. (The same expression also factorises as (x + 1)(x + 5).)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Expanding (x + h)² always produces x² + 2hx + h², so choosing h as half the x coefficient reproduces the first two terms exactly. The square h² that comes along for free is then subtracted to restore the original constant, giving an expression that is identical to the first but written as a shifted square."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "using_the_whole_coefficient_6_in_the_bra",
+      "wrongValue": "incorrect_1",
+      "misconception": "Using the whole coefficient 6 in the bracket instead of half of it.",
+      "correctiveNote": "Avoid this: Using the whole coefficient 6 in the bracket instead of half of it."
+    },
+    {
+      "key": "adding_9_instead_of_subtracting_it",
+      "wrongValue": "incorrect_2",
+      "misconception": "Adding 9 instead of subtracting it.",
+      "correctiveNote": "Avoid this: Adding 9 instead of subtracting it."
+    },
+    {
+      "key": "forgetting_to_bring_the_original_constan",
+      "wrongValue": "incorrect_3",
+      "misconception": "Forgetting to bring the original constant 5 down into the final line.",
+      "correctiveNote": "Avoid this: Forgetting to bring the original constant 5 down into the final line."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "The completed square form hands you the turning point free: (x + 3)² − 4 has its minimum value −4 when x = −3."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "x²+6x+5=(x+3)²−4.(Thesameexpressionalsofactorisesas(x+1)(x+5).)",
+    "displayValue": "x² + 6x + 5 = (x + 3)² − 4. (The same expression also factorises as (x + 1)(x + 5).)",
+    "acceptedForms": [
+      "x² + 6x + 5 = (x + 3)² − 4. (The same expression also factorises as (x + 1)(x + 5).)",
+      "x²+6x+5=(x+3)²−4.(Thesameexpressionalsofactorisesas(x+1)(x+5).)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Express x² + 8x + 3 in the form (x + h)² + k."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "+4)²−13",
+      "displayValue": "+ 4)² − 13",
+      "acceptedForms": [
+        "+ 4)² − 13",
+        "+4)²−13"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "7eec0807-6ff9-44d9-a55a-fae8a82760e0",
+      "code": "M1-5.1",
+      "label": "Completing the square"
+    },
+    {
+      "objectiveId": "2835f9a0-e01e-4ad3-a5a8-21e95c0450b7",
+      "code": "M1-5.1",
+      "label": "Perfect square trinomials"
+    },
+    {
+      "objectiveId": "e50b0377-7d11-4ae1-ac16-d713862de1f7",
+      "code": "M1-5.1",
+      "label": "Equivalent algebraic forms"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 1,
+    "pageRef": "p101",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

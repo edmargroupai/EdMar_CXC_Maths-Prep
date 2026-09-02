@@ -1,0 +1,206 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p137-q09",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Use the grid to solve 0.5x + y = 4 and x − 2y = 2 graphically. Draw both lines and state the solution."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Get each equation into y = mx + c form so the decimal coefficients stop being a nuisance."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p137_q09.jpg",
+      "altText": "Source visual for edmar-csec-p137-q09 from workbook page 137."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Rearrange 0.5x + y = 4.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Subtract 0.5x from both sides"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 4 − 0.5x"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Rearrange x − 2y = 2.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x − 2 = 2y, then divide by 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 0.5x − 1"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Build points for each line.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "y = 4 − 0.5x: (0, 4), (2, 3), (6, 1).  y = 0.5x − 1: (0, -1), (2, 0), (6, 2)"
+        },
+        {
+          "type": "text",
+          "value": "Result: Three points for each line"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Plot both lines and read where they cross.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The lines meet at x = 5, half a square above y = 1"
+        },
+        {
+          "type": "text",
+          "value": "Result: Intersection (5, 1.5)"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Check the solution in both original equations.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "0.5(5) + 1.5 = 2.5 + 1.5 = 4 ✓ and 5 − 2(1.5) = 5 − 3 = 2 ✓"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 5, y = 1.5"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Make y the subject of each equation, plot three points per line on the grid, read the intersection and confirm it by substitution."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "Both lines drawn on the grid; the solution is x = 5, y = 1.5."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The two lines here have gradients -0.5 and +0.5, so one falls exactly as fast as the other rises and they must cross once. That crossing point is the only pair of values satisfying both equations. Decimal gradients are easiest to plot by stepping 2 across and 1 up or down, which lands you exactly on grid corners every time."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "dividing_only_the_x_term_when_rearrangin",
+      "wrongValue": "incorrect_1",
+      "misconception": "Dividing only the x term when rearranging 2y = x − 2, giving y = 0.5x − 2.",
+      "correctiveNote": "Avoid this: Dividing only the x term when rearranging 2y = x − 2, giving y = 0.5x − 2."
+    },
+    {
+      "key": "reading_the_y_value_as_1_or_2_instead_of",
+      "wrongValue": "incorrect_2",
+      "misconception": "Reading the y-value as 1 or 2 instead of the half-square value 1.5.",
+      "correctiveNote": "Avoid this: Reading the y-value as 1 or 2 instead of the half-square value 1.5."
+    },
+    {
+      "key": "plotting_a_gradient_of_0_5_as_a_rise_of_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Plotting a gradient of 0.5 as a rise of 1 for every 1 across.",
+      "correctiveNote": "Avoid this: Plotting a gradient of 0.5 as a rise of 1 for every 1 across."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "For a fractional gradient, choose x-values that clear the fraction — with a half, step across in 2s and you never plot between gridlines."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Bothlinesdrawnonthegrid;thesolutionisx=5,y=1.5.",
+    "displayValue": "Both lines drawn on the grid; the solution is x = 5, y = 1.5.",
+    "acceptedForms": [
+      "Both lines drawn on the grid; the solution is x = 5, y = 1.5.",
+      "Bothlinesdrawnonthegrid;thesolutionisx=5,y=1.5."
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve y = 4 − 0.5x and y = 0.5x graphically."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "Theycrossat(4,2),sox=4,y=2.",
+      "displayValue": "They cross at (4, 2), so x = 4, y = 2.",
+      "acceptedForms": [
+        "They cross at (4, 2), so x = 4, y = 2.",
+        "Theycrossat(4,2),sox=4,y=2."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "82f628f5-6c4b-4199-a732-adcc5b61303a",
+      "code": "M1-5.1",
+      "label": "Rearranging linear equations"
+    },
+    {
+      "objectiveId": "73560106-742d-4b21-ab06-6884adfde663",
+      "code": "M1-5.1",
+      "label": "Drawing straight-line graphs"
+    },
+    {
+      "objectiveId": "20fa6211-2b3b-4d8a-ad3c-9ceb7dca9bba",
+      "code": "M1-5.1",
+      "label": "Graphical solution of simultaneous equations"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 9,
+    "pageRef": "p137",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

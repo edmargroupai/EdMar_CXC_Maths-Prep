@@ -1,0 +1,271 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p154-q02",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 6,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The quadratic function g is defined by g(x) = -x² + 6x + 7. (a) Express g(x) in the form a(x + h)² + k, where a, h and k are constants. (b) Hence state the coordinates of the maximum point of g. (c) Write down the equation of the line of symmetry of the graph of g."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Factor the -1 out of the x terms first — completing the square inside a negative bracket is where most marks are lost."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p154_q02.jpg",
+      "altText": "Source visual for edmar-csec-p154-q02 from workbook page 154."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Factor -1 from the x terms.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "-x² + 6x + 7 = -(x² − 6x) + 7"
+        },
+        {
+          "type": "text",
+          "value": "Result: -(x² − 6x) + 7"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Complete the square inside the bracket.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Half of -6 is -3, and (x − 3)² = x² − 6x + 9, so x² − 6x = (x − 3)² − 9"
+        },
+        {
+          "type": "text",
+          "value": "Result: -[(x − 3)² − 9] + 7"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Expand the -1 back through.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "-(x − 3)² + 9 + 7"
+        },
+        {
+          "type": "text",
+          "value": "Result: g(x) = -(x − 3)² + 16"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Read the maximum point.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "-(x − 3)² is never positive and equals 0 when x = 3, so the greatest value of g is 16"
+        },
+        {
+          "type": "text",
+          "value": "Result: Maximum point (3, 16)"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "State the line of symmetry.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The vertical line through the vertex"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 3"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Take -1 out of the x² and x terms, complete the square inside the bracket, expand the -1 back through and read off the vertex."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) g(x) = -(x − 3)² + 16, so a = -1, h = -3 and k = 16  (b) Maximum point (3, 16)  (c) Line of symmetry x = 3."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "With a negative leading coefficient the squared bracket is subtracted, so the expression is largest when the bracket is zero — the turning point becomes a maximum instead of a minimum. Factoring the -1 out before completing the square keeps the inside a standard x² − 6x, and multiplying back through at the end is what converts the -9 into +9. The vertex form then displays the maximum value and its position at a glance."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "failing_to_multiply_the_9_by_the_factore",
+      "wrongValue": "incorrect_1",
+      "misconception": "Failing to multiply the -9 by the factored -1, giving -(x − 3)² − 2.",
+      "correctiveNote": "Avoid this: Failing to multiply the -9 by the factored -1, giving -(x − 3)² − 2."
+    },
+    {
+      "key": "halving_6_to_get_3_but_forgetting_the_si",
+      "wrongValue": "incorrect_2",
+      "misconception": "Halving 6 to get +3 but forgetting the sign change caused by the factored -1.",
+      "correctiveNote": "Avoid this: Halving 6 to get +3 but forgetting the sign change caused by the factored -1."
+    },
+    {
+      "key": "calling_3_16_a_minimum_because_the_const",
+      "wrongValue": "incorrect_3",
+      "misconception": "Calling (3, 16) a minimum because the constant k is positive.",
+      "correctiveNote": "Avoid this: Calling (3, 16) a minimum because the constant k is positive."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "After completing the square with a negative leading coefficient, expand your answer back out — this is the single most common place to lose a sign."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "g",
+    "displayValue": "g",
+    "acceptedForms": [
+      "g",
+      "g"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Write -x² + 4x + 1 in the form a(x + h)² + k."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "-(x−2)²+5.",
+      "displayValue": "-(x − 2)² + 5.",
+      "acceptedForms": [
+        "-(x − 2)² + 5.",
+        "-(x−2)²+5."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "6114f268-2f54-46ca-a911-4e2d33093aee",
+      "code": "M1-5.1",
+      "label": "Completing the square with a negative coefficient"
+    },
+    {
+      "objectiveId": "cd3b9cf7-b22f-43f9-ab78-6ae7aa5084c0",
+      "code": "M1-5.1",
+      "label": "Maximum point of a quadratic"
+    },
+    {
+      "objectiveId": "a790a4d5-4409-4fed-af4b-e8493c5edf48",
+      "code": "M1-5.1",
+      "label": "Line of symmetry"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 2,
+    "pageRef": "p154",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "g",
+        "displayValue": "g",
+        "acceptedForms": [
+          "g",
+          "g"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Maximumpoint(3,16)",
+        "displayValue": "Maximum point (3, 16)",
+        "acceptedForms": [
+          "Maximum point (3, 16)",
+          "Maximumpoint(3,16)"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "c",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (c): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Lineofsymmetry",
+        "displayValue": "Line of symmetry",
+        "acceptedForms": [
+          "Line of symmetry",
+          "Lineofsymmetry"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

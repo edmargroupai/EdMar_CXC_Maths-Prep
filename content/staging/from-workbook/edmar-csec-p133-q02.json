@@ -1,0 +1,211 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p133-q02",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The graph shows two straight lines L and M, crossing at the marked point P. (a) Write down the coordinates of P. (b) State the solution of y = 2x − 1 and y = −x + 5. (c) Determine the equation of each line from the graph."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Read the crossing point and the two y-intercepts straight from the grid, then get each gradient by counting squares."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p133_q02.jpg",
+      "altText": "Source visual for edmar-csec-p133-q02 from workbook page 133."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Read the coordinates of the marked intersection.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "P sits 2 across and 3 up from the origin"
+        },
+        {
+          "type": "text",
+          "value": "Result: P(2, 3)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "State the solution of the simultaneous pair.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The lines y = 2x − 1 and y = −x + 5 are L and M, and they meet only at P"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 2, y = 3"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Find the equation of L.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "L cuts the y-axis at -1 and rises 2 for every 1 across, so m = 2 and c = -1"
+        },
+        {
+          "type": "text",
+          "value": "Result: L: y = 2x − 1"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Find the equation of M.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "M cuts the y-axis at 5 and falls 1 for every 1 across, so m = -1 and c = 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: M: y = -x + 5"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Check by substituting P into both equations.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2(2) − 1 = 3 ✓ and -(2) + 5 = 3 ✓"
+        },
+        {
+          "type": "text",
+          "value": "Result: P satisfies both"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Read P off the grid, use it as the simultaneous solution, then for each line read the y-intercept and count the rise over the run to get the gradient."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) P(2, 3)  (b) x = 2, y = 3  (c) L: y = 2x − 1 and M: y = -x + 5."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "In the form y = mx + c the number c is the height at which the line crosses the y-axis and m is the amount y changes for a one-unit increase in x. Both can be read directly from a grid, which is why a graph carries the whole equation. The crossing point is the one pair of values that lies on both lines, so it is the solution of the two equations taken together."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "giving_the_gradient_of_m_as_1_instead_of",
+      "wrongValue": "incorrect_1",
+      "misconception": "Giving the gradient of M as 1 instead of -1 by ignoring that the line falls as x increases.",
+      "correctiveNote": "Avoid this: Giving the gradient of M as 1 instead of -1 by ignoring that the line falls as x increases."
+    },
+    {
+      "key": "reading_the_y_intercept_where_the_line_c",
+      "wrongValue": "incorrect_2",
+      "misconception": "Reading the y-intercept where the line crosses the x-axis.",
+      "correctiveNote": "Avoid this: Reading the y-intercept where the line crosses the x-axis."
+    },
+    {
+      "key": "writing_the_intersection_as_3_2",
+      "wrongValue": "incorrect_3",
+      "misconception": "Writing the intersection as (3, 2).",
+      "correctiveNote": "Avoid this: Writing the intersection as (3, 2)."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Count the gradient over a whole number of squares — go across 1 and read the rise, or across 2 and halve — so you never guess a slope."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "P(2,3)",
+    "displayValue": "P(2, 3)",
+    "acceptedForms": [
+      "P(2, 3)",
+      "P(2,3)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A line crosses the y-axis at 4 and falls 2 units for every 1 unit across. What is its equation?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "y=-2x+4.",
+      "displayValue": "y = -2x + 4.",
+      "acceptedForms": [
+        "y = -2x + 4.",
+        "y=-2x+4."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "875eddbe-6cc8-4a92-aed6-88aed5545820",
+      "code": "M1-5.1",
+      "label": "Reading coordinates from a graph"
+    },
+    {
+      "objectiveId": "58a58cb5-563c-4e25-a897-858be7a083c6",
+      "code": "M1-5.1",
+      "label": "Gradient and intercept of a straight line"
+    },
+    {
+      "objectiveId": "471c2f94-61e5-44f0-a28c-a982190aa1e2",
+      "code": "M1-5.1",
+      "label": "y = mx + c"
+    },
+    {
+      "objectiveId": "d744345f-b860-4251-aa18-7b6e7bb4dd52",
+      "code": "M1-5.1",
+      "label": "Graphical solution of simultaneous equations"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 2,
+    "pageRef": "p133",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

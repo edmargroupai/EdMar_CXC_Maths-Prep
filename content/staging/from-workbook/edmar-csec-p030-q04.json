@@ -1,0 +1,196 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p030-q04",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "In a class of 35 students, |A| = 20, |B| = 17, |A ∩ B| = x and 6 students study neither subject. (i) Draw a Venn diagram using expressions in x. (ii) Form an equation for the total number of students. (iii) Find the value of x."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The 20 and the 17 are whole-circle totals, so each already includes the x students in the overlap."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p030_q04.jpg",
+      "altText": "Source visual for edmar-csec-p030-q04 from workbook page 30."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Draw two overlapping circles A and B inside a rectangle U and label the four regions.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "A only = 20 - x, A ∩ B = x, B only = 17 - x, outside both = 6"
+        },
+        {
+          "type": "text",
+          "value": "Result: diagram labelled in x"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Add the four regions and set the sum equal to the class size.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(20 - x) + x + (17 - x) + 6 = 35"
+        },
+        {
+          "type": "text",
+          "value": "Result: 43 - x = 35"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Solve for x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "43 - 35"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 8"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Substitute to complete the diagram and check.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "A only 12, both 8, B only 9, neither 6; 12 + 8 + 9 + 6"
+        },
+        {
+          "type": "text",
+          "value": "Result: 35 students"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Label the four regions as 20 - x, x, 17 - x and 6, add them, set the sum equal to 35 and solve."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) The regions are A only = 20 - x, A ∩ B = x, B only = 17 - x and 6 outside both circles.  (ii) (20 - x) + x + (17 - x) + 6 = 35, that is 43 - x = 35  (iii) x = 8, so 12 study A only and 9 study B only."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Adding |A| and |B| counts the overlap twice, which is exactly why the equation reduces to 43 - x = 35: the 43 is the double-counted total plus the 6 outsiders, and subtracting x once removes the duplication. This is the inclusion-exclusion principle in its simplest form, |A ∪ B| = |A| + |B| - |A ∩ B|."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_20_and_17_in_the_only_regions_in",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing 20 and 17 in the only regions instead of 20 - x and 17 - x.",
+      "correctiveNote": "Avoid this: Writing 20 and 17 in the only regions instead of 20 - x and 17 - x."
+    },
+    {
+      "key": "omitting_the_6_students_who_study_neithe",
+      "wrongValue": "incorrect_2",
+      "misconception": "Omitting the 6 students who study neither subject.",
+      "correctiveNote": "Avoid this: Omitting the 6 students who study neither subject."
+    },
+    {
+      "key": "solving_43_x_35_as_x_78",
+      "wrongValue": "incorrect_3",
+      "misconception": "Solving 43 - x = 35 as x = 78.",
+      "correctiveNote": "Avoid this: Solving 43 - x = 35 as x = 78."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When the question says use expressions in x, the marks are for the labelled diagram as much as for the answer. Draw it and label every region, even the one outside the circles."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "TheregionsareAonly=20-x,A∩B=x,Bonly=17-xand6outsidebothcircles.",
+    "displayValue": "The regions are A only = 20 - x, A ∩ B = x, B only = 17 - x and 6 outside both circles.",
+    "acceptedForms": [
+      "The regions are A only = 20 - x, A ∩ B = x, B only = 17 - x and 6 outside both circles.",
+      "TheregionsareAonly=20-x,A∩B=x,Bonly=17-xand6outsidebothcircles."
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "In a class of 40, |A| = 25, |B| = 22 and 5 take neither. How many take both?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "12",
+      "displayValue": "12",
+      "acceptedForms": [
+        "12",
+        "12"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "5a3a4f71-9bbc-45a0-ac4d-e7ff9f75415d",
+      "code": "M1-1.1",
+      "label": "Venn diagrams"
+    },
+    {
+      "objectiveId": "d850a665-51f6-4efd-ace6-04c218ad3627",
+      "code": "M1-1.1",
+      "label": "Set notation and cardinality"
+    },
+    {
+      "objectiveId": "141a232a-3816-4366-a012-3fbd72f41d3c",
+      "code": "M1-1.1",
+      "label": "Forming and solving a linear equation"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 4,
+    "pageRef": "p30",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

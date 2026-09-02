@@ -1,0 +1,217 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p280-q03",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "(a) Vector PQ = (5, −4) (column vector). If P is the point (−2, 3), determine the coordinates of Q. (b) In pentagon OABCD, OA is parallel to DC and AB is parallel to OD, with OD = 2AB and OA = 2DC. Given OA = a and AB = b, find in terms of a and b, in simplest form: (vi) AD, (vii) BC, and (viii) state the conclusion about AD and BC that follows."
+    },
+    {
+      "type": "text",
+      "value": "Think first: A column vector tells you how far to move, so Q is P shifted by (5, −4); the pentagon then needs OD and DC written in terms of a and b before any route is built."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p280_q03.jpg",
+      "altText": "Source visual for edmar-csec-p280-q03 from workbook page 280."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Add the components of PQ to the coordinates of P.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Q = (−2 + 5, 3 + (−4))"
+        },
+        {
+          "type": "text",
+          "value": "Result: Q = (3, −1)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Translate the two given conditions into vectors. AB is parallel to OD with OD = 2AB, and OA is parallel to DC with OA = 2DC.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "OD = 2b and DC = (1/2)a"
+        },
+        {
+          "type": "text",
+          "value": "Result: OD = 2b, DC = (1/2)a"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Travel from A to D through O.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "AD = AO + OD = −a + 2b"
+        },
+        {
+          "type": "text",
+          "value": "Result: AD = 2b − a"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Travel from B to C through A, O and D.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "BC = BA + AO + OD + DC = −b − a + 2b + (1/2)a"
+        },
+        {
+          "type": "text",
+          "value": "Result: BC = b − (1/2)a = (1/2)(2b − a)"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Compare the two results.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "BC = (1/2)AD"
+        },
+        {
+          "type": "text",
+          "value": "Result: AD and BC are parallel, with AD twice the length of BC"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Add the column vector to the coordinates of P for part (a). For (b), turn the parallel/length statements into OD = 2b and DC = (1/2)a, then build AD and BC as chains of known vectors and compare them."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) Q = (3, −1)  (b) (vi) AD = 2b − a  (vii) BC = b − (1/2)a = (1/2)(2b − a)  (viii) BC = (1/2)AD, so AD and BC are parallel and AD is twice as long as BC."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A column vector is a pure displacement: adding it to a point's coordinates moves that point without changing anything else, which is why Q = P + PQ. In the pentagon, 'parallel' means one vector is a scalar multiple of the other, and the length statements fix the scalar, so OD and DC can be written entirely in a and b. Once both AD and BC are expressed in the same two vectors, one being a multiple of the other proves the parallel relationship and the length ratio in a single line."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "subtracting_the_column_vector_from_p_ins",
+      "wrongValue": "incorrect_1",
+      "misconception": "Subtracting the column vector from P instead of adding it, giving (−7, 7).",
+      "correctiveNote": "Avoid this: Subtracting the column vector from P instead of adding it, giving (−7, 7)."
+    },
+    {
+      "key": "setting_dc_2a_instead_of_1_2_a_read_care",
+      "wrongValue": "incorrect_2",
+      "misconception": "Setting DC = 2a instead of (1/2)a — read carefully which is twice which.",
+      "correctiveNote": "Avoid this: Setting DC = 2a instead of (1/2)a — read carefully which is twice which."
+    },
+    {
+      "key": "losing_a_sign_when_reversing_a_vector_e_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Losing a sign when reversing a vector, e.g. writing BA as +b.",
+      "correctiveNote": "Avoid this: Losing a sign when reversing a vector, e.g. writing BA as +b."
+    },
+    {
+      "key": "stating_only_that_the_two_are_parallel_a",
+      "wrongValue": "incorrect_4",
+      "misconception": "Stating only that the two are parallel and omitting the length relationship.",
+      "correctiveNote": "Avoid this: Stating only that the two are parallel and omitting the length relationship."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Convert every worded condition ('X is parallel to Y and twice as long') into an equation in vectors before you start any route — the algebra then does itself."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Q=(3,−1)",
+    "displayValue": "Q = (3, −1)",
+    "acceptedForms": [
+      "Q = (3, −1)",
+      "Q=(3,−1)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Vector AB = (−3, 6) and A is the point (4, 1). Find the coordinates of B."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=(4−3,1+6)=(1,7)",
+      "displayValue": "= (4 − 3, 1 + 6) = (1, 7)",
+      "acceptedForms": [
+        "= (4 − 3, 1 + 6) = (1, 7)",
+        "=(4−3,1+6)=(1,7)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "fe328174-ea0d-4417-a821-0a2f01cb5043",
+      "code": "M2-5.1",
+      "label": "Column vectors and translation of a point"
+    },
+    {
+      "objectiveId": "650ff3f4-6389-4e9a-a4ff-103f17801873",
+      "code": "M2-5.1",
+      "label": "Position vectors"
+    },
+    {
+      "objectiveId": "5650dd5d-c63d-4a8f-a91e-5a92ed9a5785",
+      "code": "M2-5.1",
+      "label": "Parallel vectors as scalar multiples"
+    },
+    {
+      "objectiveId": "a01b0808-b68b-41d9-a50b-857b01545e90",
+      "code": "M2-5.1",
+      "label": "Vector routes around a polygon"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 3,
+    "pageRef": "p280",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

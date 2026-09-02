@@ -1,0 +1,187 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p098-q07",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the simultaneous equations 3x + y = 10 and x − y = 2."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The y terms are opposites, so one addition clears them."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p098_q07.jpg",
+      "altText": "Source visual for edmar-csec-p098-q07 from workbook page 98."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Add the two equations.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(3x + x) + (y − y) = 10 + 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: 4x = 12"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Divide to find x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "12 ÷ 4"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 3"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Substitute x = 3 into x − y = 2.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3 − y = 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 1"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Check in the first equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3(3) + 1 = 9 + 1"
+        },
+        {
+          "type": "text",
+          "value": "Result: 10 ✓"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Add the equations to eliminate y, find x, then substitute to find y."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = 3, y = 1"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Each equation restricts the possible pairs (x, y) to a line; only one pair lies on both lines. Elimination finds it by combining the equations into one that mentions a single unknown, so no guessing is involved."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "solving_3_y_2_as_y_5_by_adding_instead_o",
+      "wrongValue": "incorrect_1",
+      "misconception": "Solving 3 − y = 2 as y = 5 by adding instead of subtracting.",
+      "correctiveNote": "Avoid this: Solving 3 − y = 2 as y = 5 by adding instead of subtracting."
+    },
+    {
+      "key": "adding_the_equations_but_writing_4x_8",
+      "wrongValue": "incorrect_2",
+      "misconception": "Adding the equations but writing 4x = 8.",
+      "correctiveNote": "Avoid this: Adding the equations but writing 4x = 8."
+    },
+    {
+      "key": "giving_the_answer_as_a_coordinate_pair_i",
+      "wrongValue": "incorrect_3",
+      "misconception": "Giving the answer as a coordinate pair in the wrong order.",
+      "correctiveNote": "Avoid this: Giving the answer as a coordinate pair in the wrong order."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "A step like 3 − y = 2 is easiest handled by adding y to both sides first: 3 = 2 + y, so y = 1 — no sign confusion."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=3,y=1",
+    "displayValue": "= 3, y = 1",
+    "acceptedForms": [
+      "= 3, y = 1",
+      "=3,y=1"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve 4x + y = 13 and x − y = 2."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=3,y=1",
+      "displayValue": "= 3, y = 1",
+      "acceptedForms": [
+        "= 3, y = 1",
+        "=3,y=1"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "928e608b-e007-4c67-a9be-d68d92723f1a",
+      "code": "M1-5.1",
+      "label": "Simultaneous linear equations"
+    },
+    {
+      "objectiveId": "a7e1dc39-34e3-4ed9-ac25-db54e4fc3b38",
+      "code": "M1-5.1",
+      "label": "Elimination by addition"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 7,
+    "pageRef": "p98",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

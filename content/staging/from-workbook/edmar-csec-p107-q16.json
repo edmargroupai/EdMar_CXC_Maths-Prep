@@ -1,0 +1,211 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p107-q16",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A rectangle has length (x + 8) cm and width (x − 3) cm, and an area of 70 cm². Calculate the value(s) of x."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Read the two side expressions from the diagram, multiply them, and set the product equal to 70."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p107_q16.jpg",
+      "altText": "Source visual for edmar-csec-p107-q16 from workbook page 107."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write the area equation from the diagram.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "length (x + 8) cm, width (x − 3) cm"
+        },
+        {
+          "type": "text",
+          "value": "Result: (x + 8)(x − 3) = 70"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Expand the brackets.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x² − 3x + 8x − 24"
+        },
+        {
+          "type": "text",
+          "value": "Result: x² + 5x − 24 = 70"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Rearrange into standard form.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "−24 − 70 = −94"
+        },
+        {
+          "type": "text",
+          "value": "Result: x² + 5x − 94 = 0"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Apply the quadratic formula with a = 1, b = 5, c = −94.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "b² − 4ac = 25 + 376 = 401, and √401 ≈ 20.02"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = (−5 ± √401) / 2"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Evaluate and reject the root that gives a negative width.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x ≈ 7.51 or x ≈ −12.51; the latter makes x − 3 negative"
+        },
+        {
+          "type": "text",
+          "value": "Result: x ≈ 7.51 (2 d.p.)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Form (x + 8)(x − 3) = 70, rearrange to standard form, solve with the quadratic formula and keep only the root that gives positive sides."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = (−5 + √401)/2 ≈ 7.51 (2 d.p.); the root x ≈ −12.51 is rejected because it would give negative side lengths."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The diagram supplies the two linear side expressions and the question supplies their product, which is exactly enough information to pin down x. Expanding turns the geometric statement into a quadratic equation, and the formula solves it whether or not the numbers are friendly. The physical constraint that both x + 8 and x − 3 must be positive eliminates one of the two mathematical roots."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "using_the_perimeter_formula_because_the_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Using the perimeter formula because the diagram shows a rectangle.",
+      "correctiveNote": "Avoid this: Using the perimeter formula because the diagram shows a rectangle."
+    },
+    {
+      "key": "expanding_x_8_x_3_as_x_24",
+      "wrongValue": "incorrect_2",
+      "misconception": "Expanding (x + 8)(x − 3) as x² − 24.",
+      "correctiveNote": "Avoid this: Expanding (x + 8)(x − 3) as x² − 24."
+    },
+    {
+      "key": "presenting_both_roots_as_valid_measureme",
+      "wrongValue": "incorrect_3",
+      "misconception": "Presenting both roots as valid measurements.",
+      "correctiveNote": "Avoid this: Presenting both roots as valid measurements."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Label the diagram with which expression is length and which is width before writing any equation — mislabelling is easy under time pressure."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=(−5+√401)/2≈7.51(2d.p.);therootx≈−12.51isrejectedbecauseitwouldgivenegativesidelengths.",
+    "displayValue": "= (−5 + √401)/2 ≈ 7.51 (2 d.p.); the root x ≈ −12.51 is rejected because it would give negative side lengths.",
+    "acceptedForms": [
+      "= (−5 + √401)/2 ≈ 7.51 (2 d.p.); the root x ≈ −12.51 is rejected because it would give negative side lengths.",
+      "=(−5+√401)/2≈7.51(2d.p.);therootx≈−12.51isrejectedbecauseitwouldgivenegativesidelengths."
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A rectangle has sides (x + 4) cm and (x − 1) cm and area 24 cm². Form the quadratic equation in standard form."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "x²+3x−28=0(givingx=4).",
+      "displayValue": "x² + 3x − 28 = 0 (giving x = 4).",
+      "acceptedForms": [
+        "x² + 3x − 28 = 0 (giving x = 4).",
+        "x²+3x−28=0(givingx=4)."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-6.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "bad57f89-92c9-485a-a79e-715fe6bc976b",
+      "code": "M1-6.1",
+      "label": "Area of a rectangle"
+    },
+    {
+      "objectiveId": "ab8f4a0a-f9ae-4c46-a8e1-346abf197481",
+      "code": "M1-6.1",
+      "label": "Forming and solving a quadratic equation"
+    },
+    {
+      "objectiveId": "f1a931be-fa65-4e73-a91d-bd273e0f9aa9",
+      "code": "M1-6.1",
+      "label": "Quadratic formula"
+    },
+    {
+      "objectiveId": "b59a6536-7c9d-4fc7-a255-04854df3d406",
+      "code": "M1-6.1",
+      "label": "Rejecting invalid solutions"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 16,
+    "pageRef": "p107",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

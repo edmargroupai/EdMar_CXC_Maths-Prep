@@ -1,0 +1,229 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p153-q06",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Complete the table and draw y = 0.5x² − 2x − 2.5 for -2 ≤ x ≤ 6, with x taking the values -2, -1, 0, 1, 2, 3, 4, 5, 6. (a) Complete the table. (b) Draw a smooth curve. (c) State the roots, the axis of symmetry and the minimum value. (d) State the interval for which y < 0."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Square the x-value first, then halve it — doing the operations in that order keeps the decimals under control."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p153_q06.jpg",
+      "altText": "Source visual for edmar-csec-p153-q06 from workbook page 153."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Substitute the first few x-values.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x = -2: 2 + 4 − 2.5 = 3.5;  x = -1: 0.5 + 2 − 2.5 = 0;  x = 0: -2.5;  x = 1: 0.5 − 2 − 2.5 = -4"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 3.5, 0, -2.5, -4"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Substitute the middle values.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x = 2: 2 − 4 − 2.5 = -4.5;  x = 3: 4.5 − 6 − 2.5 = -4;  x = 4: 8 − 8 − 2.5 = -2.5"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = -4.5, -4, -2.5"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Substitute the last two values.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x = 5: 12.5 − 10 − 2.5 = 0;  x = 6: 18 − 12 − 2.5 = 3.5"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 0, 3.5"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Plot the nine points and join them with a smooth curve.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Points (-2, 3.5) through to (6, 3.5) — the values mirror about x = 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: A U-shaped parabola"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Read the roots, axis of symmetry and minimum value.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "y = 0 at x = -1 and x = 5; the vertex is midway at x = 2, where y = -4.5"
+        },
+        {
+          "type": "text",
+          "value": "Result: Roots -1 and 5; axis x = 2; minimum value -4.5"
+        }
+      ]
+    },
+    {
+      "stepNo": 6,
+      "instruction": "State where the curve lies below the x-axis.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Between the two roots"
+        },
+        {
+          "type": "text",
+          "value": "Result: y < 0 for -1 < x < 5"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Substitute each x-value into y = 0.5x² − 2x − 2.5, plot the nine points and join with a smooth curve, then read the roots, axis of symmetry, minimum value and the stretch below the x-axis."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) y = 3.5, 0, -2.5, -4, -4.5, -4, -2.5, 0, 3.5 for x = -2 to 6  (b) A smooth U-shaped curve through those points  (c) Roots x = -1 and x = 5; axis of symmetry x = 2; minimum value -4.5  (d) y < 0 for -1 < x < 5."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The table values mirror each other about x = 2 because a parabola is symmetric about the vertical line through its vertex, and that line always sits midway between the roots — here midway between -1 and 5. Since the coefficient of x² is positive the curve opens upwards, so it dips below the x-axis only on the stretch between the two roots, which is exactly the interval asked for in part (d)."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "halving_before_squaring_so_0_5x_is_compu",
+      "wrongValue": "incorrect_1",
+      "misconception": "Halving before squaring, so 0.5x² is computed as (0.5x)².",
+      "correctiveNote": "Avoid this: Halving before squaring, so 0.5x² is computed as (0.5x)²."
+    },
+    {
+      "key": "sign_errors_with_2x_when_x_is_negative_a",
+      "wrongValue": "incorrect_2",
+      "misconception": "Sign errors with -2x when x is negative: at x = -1 the term is +2, not -2.",
+      "correctiveNote": "Avoid this: Sign errors with -2x when x is negative: at x = -1 the term is +2, not -2."
+    },
+    {
+      "key": "giving_the_interval_for_y_0_as_x_1_or_x_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Giving the interval for y < 0 as x < -1 or x > 5.",
+      "correctiveNote": "Avoid this: Giving the interval for y < 0 as x < -1 or x > 5."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "In a table with decimal coefficients, write the two terms separately before adding — combining in one step is where most arithmetic slips happen."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "y=3.5,0,-2.5,-4,-4.5,-4,-2.5,0,3.5forx=-2to6",
+    "displayValue": "y = 3.5, 0, -2.5, -4, -4.5, -4, -2.5, 0, 3.5 for x = -2 to 6",
+    "acceptedForms": [
+      "y = 3.5, 0, -2.5, -4, -4.5, -4, -2.5, 0, 3.5 for x = -2 to 6",
+      "y=3.5,0,-2.5,-4,-4.5,-4,-2.5,0,3.5forx=-2to6"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "For y = 0.5x² − 2, find y when x = 4."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "8",
+      "displayValue": "8",
+      "acceptedForms": [
+        "8",
+        "8"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "a32be933-b4ec-492e-a8cf-47fa2681437f",
+      "code": "M1-5.1",
+      "label": "Table of values"
+    },
+    {
+      "objectiveId": "8eb01774-f873-46fc-a0eb-39fcee8444cc",
+      "code": "M1-5.1",
+      "label": "Drawing a quadratic graph"
+    },
+    {
+      "objectiveId": "dbb4f4c8-ab5c-42b3-a142-51aa8273360c",
+      "code": "M1-5.1",
+      "label": "Roots and axis of symmetry"
+    },
+    {
+      "objectiveId": "65e8bf96-5848-4fca-a2d3-489d3219670c",
+      "code": "M1-5.1",
+      "label": "Reading an inequality from a graph"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 6,
+    "pageRef": "p153",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

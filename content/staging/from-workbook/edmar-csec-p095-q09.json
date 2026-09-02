@@ -1,0 +1,188 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p095-q09",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Make C the subject of the formula F = 9C/5 + 32 (the Fahrenheit–Celsius conversion)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Strip away the +32 first, then unwind the fraction 9/5 that multiplies C."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p095_q09.jpg",
+      "altText": "Source visual for edmar-csec-p095-q09 from workbook page 95."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Subtract 32 from both sides.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "F − 32 = 9C/5"
+        },
+        {
+          "type": "text",
+          "value": "Result: F − 32 = 9C/5"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Multiply both sides by 5 to clear the denominator.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5(F − 32) = 9C"
+        },
+        {
+          "type": "text",
+          "value": "Result: 5(F − 32) = 9C"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Divide both sides by 9.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5(F − 32) ÷ 9"
+        },
+        {
+          "type": "text",
+          "value": "Result: 5(F − 32)/9 = C"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Write the new subject on the left.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: C = 5(F − 32)/9"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Subtract 32, multiply by 5, then divide by 9."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "C = 5(F − 32)/9"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "To build F from C you multiply by 9, divide by 5 and add 32; reversing that chain in the opposite order gives subtract 32, multiply by 5, divide by 9. Bracketing F − 32 keeps the whole difference attached to the multiplication, which is what makes the conversion correct at every temperature."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "dividing_by_9_before_subtracting_32",
+      "wrongValue": "incorrect_1",
+      "misconception": "Dividing by 9 before subtracting 32.",
+      "correctiveNote": "Avoid this: Dividing by 9 before subtracting 32."
+    },
+    {
+      "key": "losing_the_bracket_and_writing_c_5f_32_9",
+      "wrongValue": "incorrect_2",
+      "misconception": "Losing the bracket and writing C = 5F − 32/9.",
+      "correctiveNote": "Avoid this: Losing the bracket and writing C = 5F − 32/9."
+    },
+    {
+      "key": "swapping_5_and_9_giving_c_9_f_32_5",
+      "wrongValue": "incorrect_3",
+      "misconception": "Swapping 5 and 9, giving C = 9(F − 32)/5.",
+      "correctiveNote": "Avoid this: Swapping 5 and 9, giving C = 9(F − 32)/5."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Check a rearranged conversion formula against a fact you already know — F = 32 must give C = 0, and it does here."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=5(F−32)/9",
+    "displayValue": "= 5(F − 32)/9",
+    "acceptedForms": [
+      "= 5(F − 32)/9",
+      "=5(F−32)/9"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Use your rearranged formula to convert F = 212 into degrees Celsius."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=5(212−32)/9=5(180)/9=100",
+      "displayValue": "= 5(212 − 32)/9 = 5(180)/9 = 100",
+      "acceptedForms": [
+        "= 5(212 − 32)/9 = 5(180)/9 = 100",
+        "=5(212−32)/9=5(180)/9=100"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "d7422fed-c3bf-4827-aa8e-d9d59bfa8f9d",
+      "code": "M1-1.1",
+      "label": "Changing the subject of a formula"
+    },
+    {
+      "objectiveId": "d5057ac8-d515-414d-a3cb-6dd5538083b5",
+      "code": "M1-1.1",
+      "label": "Inverse operations"
+    },
+    {
+      "objectiveId": "3c73546a-616b-48fd-a594-be0d97652165",
+      "code": "M1-1.1",
+      "label": "Clearing fractions"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 9,
+    "pageRef": "p95",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

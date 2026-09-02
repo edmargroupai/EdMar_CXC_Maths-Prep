@@ -1,0 +1,225 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p068-q03",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Copy and complete the table of values for y = 2x − 1 for x = −3, −2, −1, 0, 1, 2, 3. Using a scale of 2 cm to represent 1 unit on the x-axis and 1 cm to represent 1 unit on the y-axis, draw the graph of the function."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Multiply by 2 before subtracting 1 for each value of x."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p068_q03.jpg",
+      "altText": "Source visual for edmar-csec-p068-q03 from workbook page 68."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Substitute the negative x values.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x = −3: 2(−3) − 1 = −7; x = −2: 2(−2) − 1 = −5; x = −1: 2(−1) − 1 = −3"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = −7, −5, −3"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Substitute x = 0.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2(0) − 1"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = −1"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Substitute the positive x values.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x = 1: 2(1) − 1 = 1; x = 2: 3; x = 3: 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 1, 3, 5"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Write the completed table.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x: −3, −2, −1, 0, 1, 2, 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: y: −7, −5, −3, −1, 1, 3, 5"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Draw the axes to the stated scales and plot the points.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2 cm per unit horizontally, 1 cm per unit vertically; y must reach from −7 to 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: Seven points plotted"
+        }
+      ]
+    },
+    {
+      "stepNo": 6,
+      "instruction": "Join the points with a ruled straight line.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The line crosses the y-axis at −1"
+        },
+        {
+          "type": "text",
+          "value": "Result: Straight line graph of y = 2x − 1"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Substitute each x value into y = 2x − 1, list the y values, then plot and join the points using the two different scales given."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "Completed table, y = −7, −5, −3, −1, 1, 3, 5 for x = −3, −2, −1, 0, 1, 2, 3. The graph is a straight line crossing the y-axis at (0, −1) and the x-axis at (0.5, 0)."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The y values rise in steps of 2 because each increase of 1 in x is multiplied by the coefficient 2 before the constant is subtracted. That constant step is exactly what makes the graph a straight line, and the step size is the gradient. Using different scales on the two axes changes how steep the line looks on paper but not the gradient of the function itself."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "subtracting_before_multiplying_for_examp",
+      "wrongValue": "incorrect_1",
+      "misconception": "Subtracting before multiplying, for example computing 2 × (−3 − 1).",
+      "correctiveNote": "Avoid this: Subtracting before multiplying, for example computing 2 × (−3 − 1)."
+    },
+    {
+      "key": "getting_the_sign_wrong_for_negative_x_gi",
+      "wrongValue": "incorrect_2",
+      "misconception": "Getting the sign wrong for negative x, giving y = 7 when x = −3.",
+      "correctiveNote": "Avoid this: Getting the sign wrong for negative x, giving y = 7 when x = −3."
+    },
+    {
+      "key": "using_the_same_scale_on_both_axes_and_ru",
+      "wrongValue": "incorrect_3",
+      "misconception": "Using the same scale on both axes and running out of room for y = −7.",
+      "correctiveNote": "Avoid this: Using the same scale on both axes and running out of room for y = −7."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Check the differences between consecutive y values; for y = 2x − 1 they must all be 2, and any value that breaks the pattern is a mistake."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Completedtable,y=−7,−5,−3,−1,1,3,5forx=−3,−2,−1,0,1,2,3.Thegraphisastraightlinecrossingthey",
+    "displayValue": "Completed table, y = −7, −5, −3, −1, 1, 3, 5 for x = −3, −2, −1, 0, 1, 2, 3. The graph is a straight line crossing the y",
+    "acceptedForms": [
+      "Completed table, y = −7, −5, −3, −1, 1, 3, 5 for x = −3, −2, −1, 0, 1, 2, 3. The graph is a straight line crossing the y",
+      "Completedtable,y=−7,−5,−3,−1,1,3,5forx=−3,−2,−1,0,1,2,3.Thegraphisastraightlinecrossingthey"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Complete the table for y = 3x − 2 when x = −1, 0 and 2."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "y=−5,−2,4",
+      "displayValue": "y = −5, −2, 4",
+      "acceptedForms": [
+        "y = −5, −2, 4",
+        "y=−5,−2,4"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "7cad4e53-054a-4442-a97c-779a6e9fb8b7",
+      "code": "M1-1.1",
+      "label": "Table of values"
+    },
+    {
+      "objectiveId": "0aec59b3-2822-4fce-a2d6-647c17188c97",
+      "code": "M1-1.1",
+      "label": "Substitution"
+    },
+    {
+      "objectiveId": "eabc4dc6-cc81-4b2c-af7c-85457c4c5b5e",
+      "code": "M1-1.1",
+      "label": "Graphs of linear functions"
+    },
+    {
+      "objectiveId": "98afe401-df4e-4f01-abdc-9e002f862a13",
+      "code": "M1-1.1",
+      "label": "Scale on axes"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 3,
+    "pageRef": "p68",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

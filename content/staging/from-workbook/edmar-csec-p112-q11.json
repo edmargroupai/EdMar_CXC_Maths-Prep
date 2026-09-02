@@ -1,0 +1,220 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p112-q11",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the simultaneous equations x − y = 2 and xy = 15."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The second equation is a product, so substitute from the linear equation to get a single quadratic."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p112_q11.jpg",
+      "altText": "Source visual for edmar-csec-p112-q11 from workbook page 112."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Make x the subject of the linear equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x − y = 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = y + 2"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Substitute x = y + 2 into xy = 15.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(y + 2)y = 15"
+        },
+        {
+          "type": "text",
+          "value": "Result: y² + 2y = 15"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Write the quadratic in standard form.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "y² + 2y − 15 = 0"
+        },
+        {
+          "type": "text",
+          "value": "Result: y² + 2y − 15 = 0"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Factorise and solve for y.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(y + 5)(y − 3) = 0"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 3 or y = −5"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Find the matching x from x = y + 2.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "y = 3 → x = 5;  y = −5 → x = −3"
+        },
+        {
+          "type": "text",
+          "value": "Result: (5, 3) and (−3, −5)"
+        }
+      ]
+    },
+    {
+      "stepNo": 6,
+      "instruction": "Check each pair satisfies xy = 15.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5 × 3 = 15 and (−3) × (−5) = 15"
+        },
+        {
+          "type": "text",
+          "value": "Result: Both pairs verified"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Rearrange x − y = 2 to x = y + 2, substitute into xy = 15 and solve the quadratic in y, then find each matching x."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = 5, y = 3  or  x = −3, y = −5"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Substitution turns a two-variable system into one quadratic whose roots are the possible values of one variable. Because a product of two negatives is positive, the negative pair (−3, −5) is a genuine solution and not an error — the equations never said the numbers had to be positive."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "discarding_the_negative_solution_because",
+      "wrongValue": "incorrect_1",
+      "misconception": "Discarding the negative solution because 15 is positive.",
+      "correctiveNote": "Avoid this: Discarding the negative solution because 15 is positive."
+    },
+    {
+      "key": "substituting_into_the_wrong_equation_and",
+      "wrongValue": "incorrect_2",
+      "misconception": "Substituting into the wrong equation and getting a linear result.",
+      "correctiveNote": "Avoid this: Substituting into the wrong equation and getting a linear result."
+    },
+    {
+      "key": "sign_slips_when_factorising_y_2y_15",
+      "wrongValue": "incorrect_3",
+      "misconception": "Sign slips when factorising y² + 2y − 15.",
+      "correctiveNote": "Avoid this: Sign slips when factorising y² + 2y − 15."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When one equation is xy = k, substituting is quicker than elimination — elimination does not work on a product."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=5,y=3",
+    "displayValue": "= 5, y = 3",
+    "acceptedForms": [
+      "= 5, y = 3",
+      "=5,y=3"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve x − y = 1 and xy = 12."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=4,y=3",
+      "displayValue": "= 4, y = 3",
+      "acceptedForms": [
+        "= 4, y = 3",
+        "=4,y=3"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-6.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "1d546b87-8d1a-408e-ab65-244d770a6d73",
+      "code": "M1-6.1",
+      "label": "Simultaneous equations (one linear, one quadratic)"
+    },
+    {
+      "objectiveId": "5ae09442-0684-46b4-a27f-30435acd41bd",
+      "code": "M1-6.1",
+      "label": "Substitution"
+    },
+    {
+      "objectiveId": "11eb95ba-2726-49a8-a672-bd1da5a6b3be",
+      "code": "M1-6.1",
+      "label": "Factorising quadratics"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 11,
+    "pageRef": "p112",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

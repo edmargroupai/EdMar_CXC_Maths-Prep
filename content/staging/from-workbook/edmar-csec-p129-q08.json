@@ -1,0 +1,206 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p129-q08",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The diagram shows quadrilateral PQRS with vertices P(-3, 0), Q(0, 4), R(3, 0) and S(0, -4). (a) Calculate the length of each side."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Read the four vertices off the grid, then it is four applications of the same distance formula."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p129_q08.jpg",
+      "altText": "Source visual for edmar-csec-p129-q08 from workbook page 129."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Read the vertices from the grid.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The marked points are P(-3, 0), Q(0, 4), R(3, 0), S(0, -4)"
+        },
+        {
+          "type": "text",
+          "value": "Result: P(-3, 0), Q(0, 4), R(3, 0), S(0, -4)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Find PQ.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "√((0 − (-3))² + (4 − 0)²) = √(9 + 16)"
+        },
+        {
+          "type": "text",
+          "value": "Result: PQ = 5 units"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Find QR.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "√((3 − 0)² + (0 − 4)²) = √(9 + 16)"
+        },
+        {
+          "type": "text",
+          "value": "Result: QR = 5 units"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Find RS.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "√((0 − 3)² + (-4 − 0)²) = √(9 + 16)"
+        },
+        {
+          "type": "text",
+          "value": "Result: RS = 5 units"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Find SP.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "√((-3 − 0)² + (0 − (-4))²) = √(9 + 16)"
+        },
+        {
+          "type": "text",
+          "value": "Result: SP = 5 units"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Read P, Q, R and S from the graph and apply d = √((x₂ − x₁)² + (y₂ − y₁)²) to the four sides PQ, QR, RS and SP."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) PQ = QR = RS = SP = 5 units — all four sides are 5 units long."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Each side spans 3 units horizontally and 4 units vertically, so each is the hypotenuse of the same 3–4–5 right-angled triangle. Because squaring kills the signs, the direction of travel around the quadrilateral does not change any length. Four equal sides is the defining property of a rhombus, which is what the symmetry of the diagram suggests."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "reading_a_vertex_as_4_0_instead_of_0_4_s",
+      "wrongValue": "incorrect_1",
+      "misconception": "Reading a vertex as (4, 0) instead of (0, 4) — swapping the x- and y-coordinates.",
+      "correctiveNote": "Avoid this: Reading a vertex as (4, 0) instead of (0, 4) — swapping the x- and y-coordinates."
+    },
+    {
+      "key": "forgetting_the_square_root_and_giving_25",
+      "wrongValue": "incorrect_2",
+      "misconception": "Forgetting the square root and giving 25 as a length.",
+      "correctiveNote": "Avoid this: Forgetting the square root and giving 25 as a length."
+    },
+    {
+      "key": "assuming_opposite_sides_must_be_equal_an",
+      "wrongValue": "incorrect_3",
+      "misconception": "Assuming opposite sides must be equal and only calculating two of them.",
+      "correctiveNote": "Avoid this: Assuming opposite sides must be equal and only calculating two of them."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Sketch the horizontal and vertical steps between consecutive vertices before calculating — repeated 3s and 4s are a signal that all the sides will be equal."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "PQ=QR=RS=SP=5units—allfoursidesare5unitslong.",
+    "displayValue": "PQ = QR = RS = SP = 5 units — all four sides are 5 units long.",
+    "acceptedForms": [
+      "PQ = QR = RS = SP = 5 units — all four sides are 5 units long.",
+      "PQ=QR=RS=SP=5units—allfoursidesare5unitslong."
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Find the length of the side joining (0, 6) to (8, 0)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "√(64+36)=10units.",
+      "displayValue": "√(64 + 36) = 10 units.",
+      "acceptedForms": [
+        "√(64 + 36) = 10 units.",
+        "√(64+36)=10units."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-3.2"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "ccd53dd8-3e2e-4282-a8ac-a29061a49329",
+      "code": "M1-3.2",
+      "label": "Coordinate geometry"
+    },
+    {
+      "objectiveId": "e1326ae3-cb67-4588-a68a-e3cc0c69dae6",
+      "code": "M1-3.2",
+      "label": "Distance between two points"
+    },
+    {
+      "objectiveId": "6dce6fa9-49d9-4664-a945-aa8cc23bf3c6",
+      "code": "M1-3.2",
+      "label": "Properties of a rhombus"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 8,
+    "pageRef": "p129",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

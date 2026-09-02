@@ -1,0 +1,173 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p055-q01",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Make x the subject of the formula y = x + 9."
+    },
+    {
+      "type": "text",
+      "value": "Think first: You are rearranging, not solving for a number, so the answer will be an expression in y."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p055_q01.jpg",
+      "altText": "Source visual for edmar-csec-p055-q01 from workbook page 55."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Identify what is being done to x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "9 is added to x"
+        },
+        {
+          "type": "text",
+          "value": "Result: x + 9"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Subtract 9 from both sides.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "the inverse of adding 9"
+        },
+        {
+          "type": "text",
+          "value": "Result: y − 9 = x"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Write x on the left.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "an equation may be read in either direction"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = y − 9"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Undo the addition of 9 by subtracting 9 from both sides."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = y − 9"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Changing the subject uses exactly the same balancing rules as solving an equation; the only difference is that the answer is an expression rather than a number. Subtracting 9 from both sides undoes the addition and leaves x alone on one side. Because equality is symmetric, y − 9 = x and x = y − 9 say the same thing."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_x_y_9_by_repeating_the_operation",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing x = y + 9 by repeating the operation instead of reversing it.",
+      "correctiveNote": "Avoid this: Writing x = y + 9 by repeating the operation instead of reversing it."
+    },
+    {
+      "key": "stopping_at_y_9_x_when_the_question_asks",
+      "wrongValue": "incorrect_2",
+      "misconception": "Stopping at y − 9 = x when the question asks for x as the subject.",
+      "correctiveNote": "Avoid this: Stopping at y − 9 = x when the question asks for x as the subject."
+    },
+    {
+      "key": "trying_to_find_a_numerical_value_for_x_w",
+      "wrongValue": "incorrect_3",
+      "misconception": "Trying to find a numerical value for x when none exists.",
+      "correctiveNote": "Avoid this: Trying to find a numerical value for x when none exists."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Ask yourself what has been done to the wanted letter, then do the opposite to both sides. That single question drives every change-of-subject question in the syllabus."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=y−9",
+    "displayValue": "= y − 9",
+    "acceptedForms": [
+      "= y − 9",
+      "=y−9"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Make x the subject of y = x + 12."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=y−12.",
+      "displayValue": "= y − 12.",
+      "acceptedForms": [
+        "= y − 12.",
+        "=y−12."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "dadc9bbe-60da-4273-a03a-f2481952691e",
+      "code": "M1-4.1",
+      "label": "Changing the subject of a formula"
+    },
+    {
+      "objectiveId": "3a6b17ea-54a8-4a3c-afaa-8dc9c4d40eaf",
+      "code": "M1-4.1",
+      "label": "Inverse operations"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 1,
+    "pageRef": "p55",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

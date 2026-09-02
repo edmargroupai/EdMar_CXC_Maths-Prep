@@ -1,0 +1,211 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p106-q13",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The length of a rectangle is (x + 9) cm and its width is (x − 4) cm. The area is 77 cm². Calculate the value(s) of x."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Area of a rectangle is length × width, so multiply the two expressions and set the product equal to 77."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p106_q13.jpg",
+      "altText": "Source visual for edmar-csec-p106-q13 from workbook page 106."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write the area as a product and set it equal to 77.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "length × width = area"
+        },
+        {
+          "type": "text",
+          "value": "Result: (x + 9)(x − 4) = 77"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Expand the brackets.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x² − 4x + 9x − 36"
+        },
+        {
+          "type": "text",
+          "value": "Result: x² + 5x − 36 = 77"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Rearrange into standard form.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "subtract 77 from both sides: −36 − 77 = −113"
+        },
+        {
+          "type": "text",
+          "value": "Result: x² + 5x − 113 = 0"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Apply the quadratic formula.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "b² − 4ac = 25 + 452 = 477, and √477 ≈ 21.84"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = (−5 ± √477) / 2"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Evaluate both roots and reject the one that gives negative side lengths.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x ≈ 8.42 or x ≈ −13.42; if x ≈ −13.42 then x − 4 is negative, which is impossible for a width"
+        },
+        {
+          "type": "text",
+          "value": "Result: x ≈ 8.42 (2 d.p.)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Form the equation (x + 9)(x − 4) = 77, expand and rearrange, solve with the formula, then discard any root that makes a side length negative."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = (−5 + √477)/2 ≈ 8.42 (2 d.p.). The negative root x ≈ −13.42 is rejected because it would give a negative width."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Multiplying two linear expressions produces a quadratic, so any 'area equals a number' problem with linear sides leads to a quadratic equation. Algebra returns both roots of that equation, but geometry imposes an extra condition the algebra knows nothing about: lengths must be positive. Checking each root against that condition is part of the answer, not an optional extra."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "adding_the_two_expressions_instead_of_mu",
+      "wrongValue": "incorrect_1",
+      "misconception": "Adding the two expressions instead of multiplying them.",
+      "correctiveNote": "Avoid this: Adding the two expressions instead of multiplying them."
+    },
+    {
+      "key": "setting_each_bracket_equal_to_77",
+      "wrongValue": "incorrect_2",
+      "misconception": "Setting each bracket equal to 77.",
+      "correctiveNote": "Avoid this: Setting each bracket equal to 77."
+    },
+    {
+      "key": "keeping_the_negative_root_because_it_sat",
+      "wrongValue": "incorrect_3",
+      "misconception": "Keeping the negative root because it satisfies the equation, without checking the side lengths.",
+      "correctiveNote": "Avoid this: Keeping the negative root because it satisfies the equation, without checking the side lengths."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "In any geometry problem that produces a quadratic, state explicitly why you are rejecting a root — the reasoning earns marks."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=(−5+√477)/2≈8.42(2d.p.).Thenegativerootx≈−13.42isrejectedbecauseitwouldgiveanegativewidth.",
+    "displayValue": "= (−5 + √477)/2 ≈ 8.42 (2 d.p.). The negative root x ≈ −13.42 is rejected because it would give a negative width.",
+    "acceptedForms": [
+      "= (−5 + √477)/2 ≈ 8.42 (2 d.p.). The negative root x ≈ −13.42 is rejected because it would give a negative width.",
+      "=(−5+√477)/2≈8.42(2d.p.).Thenegativerootx≈−13.42isrejectedbecauseitwouldgiveanegativewidth."
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A rectangle has length (x + 3) cm and width x cm, with area 40 cm². Find x."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "x²+3x−40=0,sox=5(rejectingx=−8).",
+      "displayValue": "x² + 3x − 40 = 0, so x = 5 (rejecting x = −8).",
+      "acceptedForms": [
+        "x² + 3x − 40 = 0, so x = 5 (rejecting x = −8).",
+        "x²+3x−40=0,sox=5(rejectingx=−8)."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-6.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "ecc3fd8d-ba7e-42d0-a49f-36f6bdf7c52d",
+      "code": "M1-6.1",
+      "label": "Area of a rectangle"
+    },
+    {
+      "objectiveId": "dbb92c6f-78e3-4131-a03d-acebb2cfe1d1",
+      "code": "M1-6.1",
+      "label": "Forming a quadratic equation"
+    },
+    {
+      "objectiveId": "08c4d75b-f48e-4cfb-ad07-2b3eed21e391",
+      "code": "M1-6.1",
+      "label": "Quadratic formula"
+    },
+    {
+      "objectiveId": "542b4630-7cc5-450f-accc-eb75e83f2ba0",
+      "code": "M1-6.1",
+      "label": "Rejecting invalid solutions"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 13,
+    "pageRef": "p106",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

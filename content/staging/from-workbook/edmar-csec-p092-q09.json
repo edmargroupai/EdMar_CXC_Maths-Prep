@@ -1,0 +1,164 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p092-q09",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Factorise completely: 49m²n² − 100"
+    },
+    {
+      "type": "text",
+      "value": "Think first: m²n² is itself a perfect square — its square root is mn."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p092_q09.jpg",
+      "altText": "Source visual for edmar-csec-p092-q09 from workbook page 92."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write each term as a square.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "49m²n² = (7mn)² and 100 = 10²"
+        },
+        {
+          "type": "text",
+          "value": "Result: (7mn)² − 10²"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Apply the difference of two squares.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Here a = 7mn and b = 10"
+        },
+        {
+          "type": "text",
+          "value": "Result: (7mn − 10)(7mn + 10)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Write both terms as squares, treating 7mn as a single quantity, then apply a² − b² = (a − b)(a + b)."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(7mn − 10)(7mn + 10)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The letter a in the rule can stand for any expression, including a product like 7mn, because the rule depends only on the two terms being squares. Squaring 7mn gives 49m²n², so the whole product is the correct square root."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "square_rooting_only_part_of_the_term_e_g",
+      "wrongValue": "incorrect_1",
+      "misconception": "Square-rooting only part of the term, e.g. writing 7m²n.",
+      "correctiveNote": "Avoid this: Square-rooting only part of the term, e.g. writing 7m²n."
+    },
+    {
+      "key": "giving_the_square_root_of_100_as_50",
+      "wrongValue": "incorrect_2",
+      "misconception": "Giving the square root of 100 as 50.",
+      "correctiveNote": "Avoid this: Giving the square root of 100 as 50."
+    },
+    {
+      "key": "writing_the_answer_as_a_single_squared_b",
+      "wrongValue": "incorrect_3",
+      "misconception": "Writing the answer as a single squared bracket.",
+      "correctiveNote": "Avoid this: Writing the answer as a single squared bracket."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Check that both terms really are perfect squares before using the rule — if either is not, a different method is needed."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "(7mn−10)(7mn+10)",
+    "displayValue": "(7mn − 10)(7mn + 10)",
+    "acceptedForms": [
+      "(7mn − 10)(7mn + 10)",
+      "(7mn−10)(7mn+10)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Factorise 36p²q² − 25."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(6pq−5)(6pq+5)",
+      "displayValue": "(6pq − 5)(6pq + 5)",
+      "acceptedForms": [
+        "(6pq − 5)(6pq + 5)",
+        "(6pq−5)(6pq+5)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M3-2.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "0d839f5c-e75a-4e10-adc2-542b46e101fb",
+      "code": "M3-2.1",
+      "label": "Difference of two squares"
+    },
+    {
+      "objectiveId": "5ff9df22-81c0-44e1-aba4-798b0e86c2c7",
+      "code": "M3-2.1",
+      "label": "Square roots of algebraic terms"
+    },
+    {
+      "objectiveId": "a5de8ad1-5915-480c-a632-b270ac47ead8",
+      "code": "M3-2.1",
+      "label": "Indices"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 9,
+    "pageRef": "p92",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

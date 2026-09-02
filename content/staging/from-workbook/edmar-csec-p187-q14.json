@@ -1,0 +1,271 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p187-q14",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 5,
+  "status": "draft",
+  "marks": 6,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "In triangle OAB, OA = a and OB = b. The point P divides AB so that AP : PB = 2 : 1. (a) Express the vector AB in terms of a and b. (b) Express the vector AP in terms of a and b. (c) Hence show that OP = (1/3)a + (2/3)b."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Convert the ratio into a fraction of the whole: AP : PB = 2 : 1 means AP is two-thirds of AB."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p187_q14.jpg",
+      "altText": "Source visual for edmar-csec-p187-q14 from workbook page 187."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write AB as a route through O.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "AB = AO + OB = −a + b"
+        },
+        {
+          "type": "text",
+          "value": "Result: AB = b − a"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Turn the ratio into a fraction.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "AP : PB = 2 : 1, so AB is divided into 3 equal parts and AP is 2 of them"
+        },
+        {
+          "type": "text",
+          "value": "Result: AP = (2/3)AB"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Substitute for AB.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "AP = (2/3)(b − a)"
+        },
+        {
+          "type": "text",
+          "value": "Result: AP = (2/3)b − (2/3)a"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Write OP as a route through A.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "OP = OA + AP = a + (2/3)b − (2/3)a"
+        },
+        {
+          "type": "text",
+          "value": "Result: OP = (1 − 2/3)a + (2/3)b"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Simplify the coefficient of a.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "1 − 2/3 = 1/3"
+        },
+        {
+          "type": "text",
+          "value": "Result: OP = (1/3)a + (2/3)b"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Write AB as a route through O, take two-thirds of it for AP, then travel O to A to P."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) AB = b − a  (b) AP = (2/3)(b − a) = (2/3)b − (2/3)a  (c) OP = OA + AP = a + (2/3)(b − a) = (1/3)a + (2/3)b, as required"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Any journey between two points can be rerouted through a third, which is why AB becomes AO + OB and turns into b − a. A ratio along a line is a fraction of the whole displacement, so P sits two-thirds of the way from A to B. Notice the coefficients of a and b in the final answer add to 1 — that is the signature of a point lying on the line AB, and a quick way to check this kind of result."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_ab_a_b_instead_of_b_a_the_route_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing AB = a − b instead of b − a; the route runs from A, so AO = −a comes first.",
+      "correctiveNote": "Avoid this: Writing AB = a − b instead of b − a; the route runs from A, so AO = −a comes first."
+    },
+    {
+      "key": "taking_ap_1_2_ab_by_treating_the_ratio_a",
+      "wrongValue": "incorrect_2",
+      "misconception": "Taking AP = (1/2)AB by treating the ratio as a fraction directly instead of 2 parts out of 3.",
+      "correctiveNote": "Avoid this: Taking AP = (1/2)AB by treating the ratio as a fraction directly instead of 2 parts out of 3."
+    },
+    {
+      "key": "stopping_at_op_a_2_3_b_a_without_simplif",
+      "wrongValue": "incorrect_3",
+      "misconception": "Stopping at OP = a + (2/3)(b − a) without simplifying to the required form.",
+      "correctiveNote": "Avoid this: Stopping at OP = a + (2/3)(b − a) without simplifying to the required form."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Check any 'point on a line' vector answer by adding the coefficients — if they do not total 1, the point is not on that line and you have slipped somewhere."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "A",
+    "displayValue": "A",
+    "acceptedForms": [
+      "A",
+      "A"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "In triangle OAB with OA = a and OB = b, M is the midpoint of AB. Express OM in terms of a and b."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "OM=(1/2)a+(1/2)b.",
+      "displayValue": "OM = (1/2)a + (1/2)b.",
+      "acceptedForms": [
+        "OM = (1/2)a + (1/2)b.",
+        "OM=(1/2)a+(1/2)b."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "6ab6a9ad-b73b-4a3d-a48b-4d95cb99b7dd",
+      "code": "M2-5.1",
+      "label": "Route notation for vectors"
+    },
+    {
+      "objectiveId": "1ddfae06-7651-4671-afe2-33065167b975",
+      "code": "M2-5.1",
+      "label": "Dividing a line in a given ratio"
+    },
+    {
+      "objectiveId": "26d063c2-0e28-456c-a485-8e507a346ae1",
+      "code": "M2-5.1",
+      "label": "Position vectors"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 14,
+    "pageRef": "p187",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "A",
+        "displayValue": "A",
+        "acceptedForms": [
+          "A",
+          "A"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "=",
+        "displayValue": "=",
+        "acceptedForms": [
+          "=",
+          "="
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "c",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (c): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "OP=O",
+        "displayValue": "OP = O",
+        "acceptedForms": [
+          "OP = O",
+          "OP=O"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

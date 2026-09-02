@@ -1,0 +1,277 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p260-q01",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 6,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Quadrilateral P is drawn on a square grid with vertices (-7, 7), (-8, 6), (-6, 6) and (-7, 4). On the grid, draw the image of P after (i) a translation by the vector (10, -4), labelling it P', and (ii) a reflection in the line y = 0, labelling it P\"."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Both transformations act on the four vertices one at a time, so find the image of each corner and then join them in the same order."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p260_q01.jpg",
+      "altText": "Source visual for edmar-csec-p260-q01 from workbook page 260."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Read the coordinates of the four vertices of P from the grid.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Top corner, left corner, right corner, bottom corner."
+        },
+        {
+          "type": "text",
+          "value": "Result: P: (-7, 7), (-8, 6), (-6, 6), (-7, 4)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Apply the translation rule: add 10 to every x-coordinate and subtract 4 from every y-coordinate.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(x, y) -> (x + 10, y - 4)"
+        },
+        {
+          "type": "text",
+          "value": "Result: P': (3, 3), (2, 2), (4, 2), (3, 0)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Plot those four points and join them in the same order to draw P'.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "P' is the same size and the same way up as P; only its position changes."
+        },
+        {
+          "type": "text",
+          "value": "Result: Kite P' drawn between x = 2 and x = 4, y = 0 and y = 3"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Apply the reflection in y = 0 (the x-axis): keep each x-coordinate and change the sign of each y-coordinate.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(x, y) -> (x, -y)"
+        },
+        {
+          "type": "text",
+          "value": "Result: P\": (-7, -7), (-8, -6), (-6, -6), (-7, -4)"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Plot those four points and join them to draw P\".",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "P\" is the mirror image of P below the x-axis; it is the same distance from the axis as P but upside down."
+        },
+        {
+          "type": "text",
+          "value": "Result: Kite P\" drawn between x = -8 and x = -6, y = -7 and y = -4"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Read the four vertices of P off the grid, apply the rule (x, y) -> (x + 10, y - 4) for the translation, then the rule (x, y) -> (x, -y) for the reflection in y = 0, and plot each image."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) P' has vertices (3, 3), (2, 2), (4, 2) and (3, 0).  (ii) P\" has vertices (-7, -7), (-8, -6), (-6, -6) and (-7, -4)."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A translation slides every point of a shape by the same displacement, so adding the column vector to each coordinate pair moves the whole figure without turning or resizing it. A reflection in y = 0 sends each point to the point the same perpendicular distance on the other side of the x-axis, which leaves x unchanged and reverses the sign of y. Both are isometries, so the image is always congruent to the object."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "reversing_the_components_of_the_vector_a",
+      "wrongValue": "incorrect_1",
+      "misconception": "Reversing the components of the vector and moving 10 down and 4 across.",
+      "correctiveNote": "Avoid this: Reversing the components of the vector and moving 10 down and 4 across."
+    },
+    {
+      "key": "subtracting_instead_of_adding_the_top_co",
+      "wrongValue": "incorrect_2",
+      "misconception": "Subtracting instead of adding the top component of the translation vector.",
+      "correctiveNote": "Avoid this: Subtracting instead of adding the top component of the translation vector."
+    },
+    {
+      "key": "reflecting_in_x_0_the_y_axis_instead_of_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Reflecting in x = 0 (the y-axis) instead of y = 0, changing the sign of x instead of y.",
+      "correctiveNote": "Avoid this: Reflecting in x = 0 (the y-axis) instead of y = 0, changing the sign of x instead of y."
+    },
+    {
+      "key": "joining_the_image_points_in_a_different_",
+      "wrongValue": "incorrect_4",
+      "misconception": "Joining the image points in a different order, which distorts the shape.",
+      "correctiveNote": "Avoid this: Joining the image points in a different order, which distorts the shape."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Write the object's vertices in a list, transform them one line at a time, then plot. Marks are given for correct coordinates even if your drawing is untidy."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "P'hasvertices(3,3),(2,2),(4,2)an",
+    "displayValue": "P' has vertices (3, 3), (2, 2), (4, 2) an",
+    "acceptedForms": [
+      "P' has vertices (3, 3), (2, 2), (4, 2) an",
+      "P'hasvertices(3,3),(2,2),(4,2)an"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "The point (-5, 3) is translated by the vector (10, -4) and then reflected in y = 0. Where does it end up?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(5,-1)afterthetranslation,then(5,1)afterthereflection.",
+      "displayValue": "(5, -1) after the translation, then (5, 1) after the reflection.",
+      "acceptedForms": [
+        "(5, -1) after the translation, then (5, 1) after the reflection.",
+        "(5,-1)afterthetranslation,then(5,1)afterthereflection."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "6ac9e252-8614-4f70-a9fe-313e62c5aebc",
+      "code": "M1-1.1",
+      "label": "Translation by a column vector"
+    },
+    {
+      "objectiveId": "71edbc7f-8ef5-4c37-a09d-7e2d0024d893",
+      "code": "M1-1.1",
+      "label": "Reflection in the x-axis (y = 0)"
+    },
+    {
+      "objectiveId": "0a30982b-4fe3-4519-a498-c88886b7d45b",
+      "code": "M1-1.1",
+      "label": "Coordinates on a Cartesian grid"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 1,
+    "pageRef": "p260",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "P'hasvertices(3,3),(2,2),(4,2)an",
+        "displayValue": "P' has vertices (3, 3), (2, 2), (4, 2) an",
+        "acceptedForms": [
+          "P' has vertices (3, 3), (2, 2), (4, 2) an",
+          "P'hasvertices(3,3),(2,2),(4,2)an"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.i",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.i): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "P'hasvertices(3,3),(2,2),(4,2)an",
+        "displayValue": "P' has vertices (3, 3), (2, 2), (4, 2) an",
+        "acceptedForms": [
+          "P' has vertices (3, 3), (2, 2), (4, 2) an",
+          "P'hasvertices(3,3),(2,2),(4,2)an"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.ii",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.ii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "P\"hasvertices(-7,-7),(-8,-6),(-6,-6)an",
+        "displayValue": "P\" has vertices (-7, -7), (-8, -6), (-6, -6) an",
+        "acceptedForms": [
+          "P\" has vertices (-7, -7), (-8, -6), (-6, -6) an",
+          "P\"hasvertices(-7,-7),(-8,-6),(-6,-6)an"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

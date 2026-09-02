@@ -1,0 +1,211 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p121-q04",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A table shows values of a linear function f: x = −2, −1, 0, 1, 2 with f(x) = −5, −2, 1, 4, 7. (a) Determine a function rule for f(x). (b) Calculate f(6). (c) Find the element of the domain whose image is 13."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The function is linear, so look for the constant step in f(x) as x increases by 1."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p121_q04.jpg",
+      "altText": "Source visual for edmar-csec-p121-q04 from workbook page 121."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Find the change in f(x) for each increase of 1 in x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "−5 → −2 → 1 → 4 → 7 rises by 3 each time"
+        },
+        {
+          "type": "text",
+          "value": "Result: Gradient = 3"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Read the value of f(x) when x = 0 to get the constant term.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The table gives f(0) = 1"
+        },
+        {
+          "type": "text",
+          "value": "Result: Constant = 1"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Write the rule and test it on another column.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "f(x) = 3x + 1; check x = 2: 3(2) + 1 = 7, which matches"
+        },
+        {
+          "type": "text",
+          "value": "Result: f(x) = 3x + 1"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Calculate f(6).",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "f(6) = 3(6) + 1 = 18 + 1"
+        },
+        {
+          "type": "text",
+          "value": "Result: f(6) = 19"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Solve 3x + 1 = 13 for the input whose image is 13.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3x = 12, so x = 4"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 4"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Find the constant difference in f(x) per unit increase in x to get the gradient, read the value at x = 0 for the constant term, then use the rule forwards for f(6) and backwards for the input giving 13."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) f(x) = 3x + 1  (b) f(6) = 19  (c) x = 4"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A linear function changes by the same amount for every unit step in x, so the constant difference in the table is the gradient. The value at x = 0 is the y-intercept, which is why a table containing x = 0 lets you write the rule with no algebra at all. Part (c) reverses the rule: given the image, solve for the element of the domain that produces it."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "using_the_difference_between_f_x_values_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Using the difference between f(x) values without checking that the x values step by 1.",
+      "correctiveNote": "Avoid this: Using the difference between f(x) values without checking that the x values step by 1."
+    },
+    {
+      "key": "reading_the_constant_from_the_first_colu",
+      "wrongValue": "incorrect_2",
+      "misconception": "Reading the constant from the first column instead of from x = 0.",
+      "correctiveNote": "Avoid this: Reading the constant from the first column instead of from x = 0."
+    },
+    {
+      "key": "substituting_13_for_x_in_part_c_instead_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Substituting 13 for x in part (c) instead of setting f(x) = 13.",
+      "correctiveNote": "Avoid this: Substituting 13 for x in part (c) instead of setting f(x) = 13."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Always verify a rule found from a table against a column you did not use — one check rules out an arithmetic slip."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "f(x)=3x+1",
+    "displayValue": "f(x) = 3x + 1",
+    "acceptedForms": [
+      "f(x) = 3x + 1",
+      "f(x)=3x+1"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A linear function has f(0) = −2 and rises by 5 for each unit increase in x. Find f(3)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "f(3)=13",
+      "displayValue": "f(3) = 13",
+      "acceptedForms": [
+        "f(3) = 13",
+        "f(3)=13"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-3.2"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "55d86585-00f6-4b44-ab95-39f73e376330",
+      "code": "M1-3.2",
+      "label": "Linear functions"
+    },
+    {
+      "objectiveId": "def0360e-bf80-4a67-ac3c-482d79dec2b5",
+      "code": "M1-3.2",
+      "label": "Gradient from a table"
+    },
+    {
+      "objectiveId": "07f195ca-e0dc-484d-a8e0-16cd292e665c",
+      "code": "M1-3.2",
+      "label": "Function notation"
+    },
+    {
+      "objectiveId": "b8a2b187-5b87-45ea-a1ac-021fc85d3595",
+      "code": "M1-3.2",
+      "label": "Solving for the input"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 4,
+    "pageRef": "p121",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

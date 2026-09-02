@@ -1,0 +1,187 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p098-q06",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the simultaneous equations 2x − y = 4 and x + y = 5."
+    },
+    {
+      "type": "text",
+      "value": "Think first: One equation has −y and the other +y, so adding them removes y at once."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p098_q06.jpg",
+      "altText": "Source visual for edmar-csec-p098-q06 from workbook page 98."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Add the two equations.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(2x + x) + (−y + y) = 4 + 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3x = 9"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Divide to find x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "9 ÷ 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 3"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Substitute x = 3 into x + y = 5.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3 + y = 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 2"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Check in the first equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2(3) − 2 = 6 − 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: 4 ✓"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Add the equations to eliminate y, solve for x, then substitute into either equation."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = 3, y = 2"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Adding equations is legitimate because equal quantities added to equal quantities stay equal. Choosing the addition that cancels y converts the system into a one-variable equation whose solution must also satisfy the original pair."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "subtracting_and_ending_up_with_2y_still_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Subtracting and ending up with 2y still in the equation.",
+      "correctiveNote": "Avoid this: Subtracting and ending up with 2y still in the equation."
+    },
+    {
+      "key": "adding_the_constants_as_4_5",
+      "wrongValue": "incorrect_2",
+      "misconception": "Adding the constants as 4 − 5.",
+      "correctiveNote": "Avoid this: Adding the constants as 4 − 5."
+    },
+    {
+      "key": "substituting_x_3_into_the_wrong_side_of_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Substituting x = 3 into the wrong side of the equation.",
+      "correctiveNote": "Avoid this: Substituting x = 3 into the wrong side of the equation."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Number your equations (1) and (2) and label each new line, for example (1) + (2), so the examiner can follow your elimination."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=3,y=2",
+    "displayValue": "= 3, y = 2",
+    "acceptedForms": [
+      "= 3, y = 2",
+      "=3,y=2"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve 3x − y = 7 and x + y = 5."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=3,y=2",
+      "displayValue": "= 3, y = 2",
+      "acceptedForms": [
+        "= 3, y = 2",
+        "=3,y=2"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "f9e33ad5-2d72-4124-a899-c8cfd1a83929",
+      "code": "M1-5.1",
+      "label": "Simultaneous linear equations"
+    },
+    {
+      "objectiveId": "c1b14037-bacc-4984-ac69-467aa6c49a29",
+      "code": "M1-5.1",
+      "label": "Elimination by addition"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 6,
+    "pageRef": "p98",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

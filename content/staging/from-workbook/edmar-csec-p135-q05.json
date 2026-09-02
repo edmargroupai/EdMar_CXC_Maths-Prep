@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p135-q05",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The graph compares the cost, C dollars, of two taxi plans for a journey of d kilometres. (a) State the cost at which the plans are equal. (b) State the distance for which the costs are equal. (c) Write the two equations represented by the graph. (d) State which plan is cheaper for an 8 km journey."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The point where the two lines cross is the only journey for which the plans cost the same — everything else is read from the intercepts and slopes."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p135_q05.jpg",
+      "altText": "Source visual for edmar-csec-p135-q05 from workbook page 135."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Locate the point where the two lines cross.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The lines meet directly above d = 6, level with C = 170"
+        },
+        {
+          "type": "text",
+          "value": "Result: Crossing point (6, 170)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "State the equal cost and the distance at which it happens.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The C-value of the crossing point is the cost; the d-value is the distance"
+        },
+        {
+          "type": "text",
+          "value": "Result: C = $170 at d = 6 km"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Form the equation for Plan A.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Plan A starts at C = 50 when d = 0 and reaches C = 290 at d = 12, so the rate is (290 − 50)/12 = 20"
+        },
+        {
+          "type": "text",
+          "value": "Result: C = 50 + 20d"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Form the equation for Plan B.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Plan B starts at C = 110 and reaches C = 230 at d = 12, so the rate is (230 − 110)/12 = 10"
+        },
+        {
+          "type": "text",
+          "value": "Result: C = 110 + 10d"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Compare the two plans at d = 8.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Plan A: 50 + 20(8) = 210.  Plan B: 110 + 10(8) = 190"
+        },
+        {
+          "type": "text",
+          "value": "Result: Plan B is cheaper at 8 km"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Read the crossing point for parts (a) and (b), read each line's starting cost and cost per kilometre for part (c), then compare the two lines at d = 8."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) $170  (b) 6 km  (c) Plan A: C = 50 + 20d and Plan B: C = 110 + 10d  (d) Plan B is cheaper for an 8 km journey ($190 against $210)."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "In a cost model the intercept is the fixed charge you pay before travelling at all and the gradient is the charge per kilometre. Plan A has the smaller fixed charge but the larger rate, so it wins on short trips and loses on long ones; the crossing point is the exact distance where the two effects balance. Reading which line is lower on the side of the crossing point you care about answers any “which is cheaper” question instantly."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "swapping_the_two_answers_in_a_and_b_cost",
+      "wrongValue": "incorrect_1",
+      "misconception": "Swapping the two answers in (a) and (b) — cost is read on the vertical axis, distance on the horizontal.",
+      "correctiveNote": "Avoid this: Swapping the two answers in (a) and (b) — cost is read on the vertical axis, distance on the horizontal."
+    },
+    {
+      "key": "taking_the_gradient_from_a_single_point_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Taking the gradient from a single point instead of the change between two points.",
+      "correctiveNote": "Avoid this: Taking the gradient from a single point instead of the change between two points."
+    },
+    {
+      "key": "assuming_the_plan_that_is_cheaper_at_the",
+      "wrongValue": "incorrect_3",
+      "misconception": "Assuming the plan that is cheaper at the start is cheaper everywhere.",
+      "correctiveNote": "Avoid this: Assuming the plan that is cheaper at the start is cheaper everywhere."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "For gradients on a real-world graph, use two points that sit exactly on gridlines and far apart — a wide run makes small reading errors matter far less."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "tolerance",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "currency",
+    "canonicalValue": "170.00",
+    "displayValue": "$170",
+    "acceptedForms": [
+      "$170",
+      "$170",
+      "170"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0.005
+    },
+    "precision": {
+      "kind": "decimal_places",
+      "value": 2,
+      "required": true
+    },
+    "normalisation": "currency_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A plan charges $30 plus $15 per km. What is the cost of a 4 km trip?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "currency",
+      "canonicalValue": "30.00",
+      "displayValue": "$30",
+      "acceptedForms": [
+        "$30",
+        "$30",
+        "30"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.005
+      },
+      "precision": {
+        "kind": "decimal_places",
+        "value": 2,
+        "required": true
+      },
+      "normalisation": "currency_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "dd292a79-c3fd-4e6c-a47d-f16697a439cd",
+      "code": "M1-5.1",
+      "label": "Reading information from a graph"
+    },
+    {
+      "objectiveId": "39165c48-b324-4c09-a572-ae0c90545d2b",
+      "code": "M1-5.1",
+      "label": "Gradient as a rate of change"
+    },
+    {
+      "objectiveId": "694c0bc7-9d2b-4396-a493-7c98ab72a86b",
+      "code": "M1-5.1",
+      "label": "y = mx + c in context"
+    },
+    {
+      "objectiveId": "e6b0735b-b3b0-4e16-aa11-4ea6a58d4d62",
+      "code": "M1-5.1",
+      "label": "Comparing linear models"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 5,
+    "pageRef": "p135",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

@@ -1,0 +1,280 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p273-q08",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 6,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Four points P, Q, R and S on level ground mark the outline of a foundation, with QP = 83 m, QR = 153 m, RS = 110 m and angle PQS = 29 degrees. (ii) A vertical post RT stands at R; from Q the angle of elevation of its top T is 21 degrees. Find the height of the post. (iii) Given that QS = 135 m, calculate the perimeter of PQRS. (iv) Determine the bearing of T from R."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The post, the ground distance QR and the line of sight QT form a right-angled triangle, and the perimeter needs the one missing side PS, which the diagonal QS unlocks."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p273_q08.jpg",
+      "altText": "Source visual for edmar-csec-p273-q08 from workbook page 273."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Sketch triangle QRT: the post RT is vertical at R, QR = 153 m lies on level ground, and the angle of elevation at Q is 21 degrees.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The right angle is at R because the post is vertical and the ground is horizontal."
+        },
+        {
+          "type": "text",
+          "value": "Result: Right-angled triangle with QR adjacent to the 21 degree angle"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Use the tangent ratio to find RT.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "tan 21 = RT / QR, so RT = 153 tan 21 = 153 x 0.38386"
+        },
+        {
+          "type": "text",
+          "value": "Result: RT = 58.7 m (3 s.f.)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "For the perimeter, find the missing side PS using the cosine rule in triangle PQS with QP = 83, QS = 135 and the included angle 29 degrees.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "PS squared = 83 squared + 135 squared - 2(83)(135) cos 29 = 6889 + 18225 - 19600.2"
+        },
+        {
+          "type": "text",
+          "value": "Result: PS squared = 5513.8, so PS = 74.3 m"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Add the four sides of the quadrilateral.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Perimeter = PQ + QR + RS + SP = 83 + 153 + 110 + 74.25"
+        },
+        {
+          "type": "text",
+          "value": "Result: Perimeter = 420 m (3 s.f.)"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Consider part (iv).",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "T is the top of a vertical post standing at R, so T lies directly above R and no north direction is marked anywhere on the diagram; a horizontal bearing of T from R therefore has no value that the given information can fix."
+        },
+        {
+          "type": "text",
+          "value": "Result: Part (iv) cannot be answered from the information supplied"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Use tan 21 with the horizontal distance QR to get the post height, then apply the cosine rule in triangle PQS to find PS and add the four sides for the perimeter."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(ii) The post is 58.7 m high (3 s.f.).  (iii) The perimeter of PQRS is 420 m (3 s.f.), using PS = 74.3 m.  (iv) Cannot be determined: T is vertically above R and the diagram gives no north line or bearing data, so no bearing of T from R can be found."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "An angle of elevation is measured from the horizontal, so the sight line, the horizontal ground distance and the vertical height always form a right-angled triangle in which tangent links the height to the ground distance. For the perimeter, the diagonal QS splits the quadrilateral into two triangles; the one containing the unknown side has two sides and the angle between them, which is precisely the cosine rule case."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "using_sin_21_or_cos_21_instead_of_tan_21",
+      "wrongValue": "incorrect_1",
+      "misconception": "Using sin 21 or cos 21 instead of tan 21, which needs the slant distance QT rather than the ground distance.",
+      "correctiveNote": "Avoid this: Using sin 21 or cos 21 instead of tan 21, which needs the slant distance QT rather than the ground distance."
+    },
+    {
+      "key": "forgetting_to_include_ps_in_the_perimete",
+      "wrongValue": "incorrect_2",
+      "misconception": "Forgetting to include PS in the perimeter, or including the diagonal QS in it.",
+      "correctiveNote": "Avoid this: Forgetting to include PS in the perimeter, or including the diagonal QS in it."
+    },
+    {
+      "key": "rounding_ps_to_74_m_before_adding_and_lo",
+      "wrongValue": "incorrect_3",
+      "misconception": "Rounding PS to 74 m before adding and losing the third significant figure.",
+      "correctiveNote": "Avoid this: Rounding PS to 74 m before adding and losing the third significant figure."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Angle of elevation problems almost always reduce to tan = opposite over adjacent, because the given distance is a horizontal ground distance and the unknown is a vertical height."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Thepostis58.7mhigh(3s.f.).",
+    "displayValue": "The post is 58.7 m high (3 s.f.).",
+    "acceptedForms": [
+      "The post is 58.7 m high (3 s.f.).",
+      "Thepostis58.7mhigh(3s.f.)."
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "From a point 40 m from the base of a tower the angle of elevation of the top is 35 degrees. How tall is the tower?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "40",
+      "displayValue": "40",
+      "acceptedForms": [
+        "40",
+        "40"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "aa6bb2f7-3fb2-413f-a713-04ed72fa2a98",
+      "code": "M1-1.1",
+      "label": "Angle of elevation"
+    },
+    {
+      "objectiveId": "8ce59bec-71fc-458e-a3ec-baafc3dff10b",
+      "code": "M1-1.1",
+      "label": "Tangent ratio in a right-angled triangle"
+    },
+    {
+      "objectiveId": "89ba0f50-4621-479f-ab02-d756e76691ef",
+      "code": "M1-1.1",
+      "label": "Cosine rule"
+    },
+    {
+      "objectiveId": "403ad1a9-cb5d-4fb8-af89-c034fc218455",
+      "code": "M1-1.1",
+      "label": "Perimeter of a quadrilateral"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 8,
+    "pageRef": "p273",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a.ii",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.ii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Thepostis58.7mhigh(3s.f.).",
+        "displayValue": "The post is 58.7 m high (3 s.f.).",
+        "acceptedForms": [
+          "The post is 58.7 m high (3 s.f.).",
+          "Thepostis58.7mhigh(3s.f.)."
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.iii",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.iii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "TheperimeterofPQRSis420m(3s.f.),usingPS=74.3m.",
+        "displayValue": "The perimeter of PQRS is 420 m (3 s.f.), using PS = 74.3 m.",
+        "acceptedForms": [
+          "The perimeter of PQRS is 420 m (3 s.f.), using PS = 74.3 m.",
+          "TheperimeterofPQRSis420m(3s.f.),usingPS=74.3m."
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.iv",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.iv): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Cannotbedetermined:TisverticallyaboveRan",
+        "displayValue": "Cannot be determined: T is vertically above R an",
+        "acceptedForms": [
+          "Cannot be determined: T is vertically above R an",
+          "Cannotbedetermined:TisverticallyaboveRan"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

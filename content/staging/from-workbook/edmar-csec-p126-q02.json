@@ -1,0 +1,273 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p126-q02",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 4,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A diagram shows line segment AB with A(−4, −1) and B(2, 7). (a) Calculate the length AB. (b) Determine the coordinates of the midpoint of AB."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Read the two endpoints off the grid first, then the length and midpoint are both formula work."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p126_q02.jpg",
+      "altText": "Source visual for edmar-csec-p126-q02 from workbook page 126."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Read the coordinates of A and B from the diagram.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "A is below the x-axis at the left, B is up and to the right"
+        },
+        {
+          "type": "text",
+          "value": "Result: A(−4, −1), B(2, 7)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Find the horizontal and vertical changes.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x: 2 − (−4) = 6;  y: 7 − (−1) = 8"
+        },
+        {
+          "type": "text",
+          "value": "Result: Change of 6 across and 8 up"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Apply the distance formula.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "AB = √(6² + 8²) = √(36 + 64) = √100"
+        },
+        {
+          "type": "text",
+          "value": "Result: AB = 10 units"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Average the x-coordinates for the midpoint.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(−4 + 2)/2 = −2/2"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = −1"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Average the y-coordinates.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(−1 + 7)/2 = 6/2"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 3"
+        }
+      ]
+    },
+    {
+      "stepNo": 6,
+      "instruction": "State the midpoint.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Combine the averages"
+        },
+        {
+          "type": "text",
+          "value": "Result: M(−1, 3)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Read A and B from the diagram, apply the distance formula √((x₂−x₁)² + (y₂−y₁)²) for the length, then average the coordinates for the midpoint."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) AB = 10 units  (b) Midpoint = (−1, 3)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The distance formula is Pythagoras' theorem applied to the right-angled triangle whose legs are the horizontal and vertical changes between the two points. Squaring removes any negative signs, so the length never depends on which point you call first — unlike the gradient, where order controls the sign. The midpoint averages each coordinate because halfway across and halfway up locates the centre of the segment."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "forgetting_to_square_root_at_the_end_and",
+      "wrongValue": "incorrect_1",
+      "misconception": "Forgetting to square root at the end and giving 100 as the length.",
+      "correctiveNote": "Avoid this: Forgetting to square root at the end and giving 100 as the length."
+    },
+    {
+      "key": "misreading_the_negative_coordinates_of_a",
+      "wrongValue": "incorrect_2",
+      "misconception": "Misreading the negative coordinates of A from the grid.",
+      "correctiveNote": "Avoid this: Misreading the negative coordinates of A from the grid."
+    },
+    {
+      "key": "using_the_midpoint_formula_with_subtract",
+      "wrongValue": "incorrect_3",
+      "misconception": "Using the midpoint formula with subtraction instead of addition.",
+      "correctiveNote": "Avoid this: Using the midpoint formula with subtraction instead of addition."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Look out for the 6-8-10 and 3-4-5 patterns — recognising them turns the distance formula into mental arithmetic."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "A",
+    "displayValue": "A",
+    "acceptedForms": [
+      "A",
+      "A"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Find the length of the segment joining (0, 0) and (5, 12)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "13",
+      "displayValue": "13",
+      "acceptedForms": [
+        "13",
+        "13"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-3.2"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "9a7f936c-46a8-40ee-a6fa-1cf996db064c",
+      "code": "M1-3.2",
+      "label": "Length of a line segment"
+    },
+    {
+      "objectiveId": "b2179944-8d0b-46ca-adf4-fa639b15d4dd",
+      "code": "M1-3.2",
+      "label": "Pythagoras' theorem"
+    },
+    {
+      "objectiveId": "4fd100b0-df81-444c-a1bb-6c879ad45fa9",
+      "code": "M1-3.2",
+      "label": "Midpoint of a line segment"
+    },
+    {
+      "objectiveId": "07f989df-332c-4c8e-af4e-3ee3fc6d1cac",
+      "code": "M1-3.2",
+      "label": "Reading coordinates from a graph"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 2,
+    "pageRef": "p126",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "A",
+        "displayValue": "A",
+        "acceptedForms": [
+          "A",
+          "A"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "=10units",
+        "displayValue": "= 10 units",
+        "acceptedForms": [
+          "= 10 units",
+          "=10units"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

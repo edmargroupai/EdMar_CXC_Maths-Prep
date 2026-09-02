@@ -1,0 +1,210 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p167-q07",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 5,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "In triangle ABC, D lies on AB, E lies on AC and DE is parallel to BC, with AD = 6 cm, DB = 4 cm and AE = 7.5 cm. a) Explain why triangle ADE is similar to triangle ABC. b) Calculate the length of EC. c) The area of triangle ADE is 27 cm². Calculate the area of trapezium DBCE."
+    },
+    {
+      "type": "text",
+      "value": "Think first: DE parallel to BC creates equal corresponding angles, which is exactly what similarity needs — and remember the sides are compared to the whole triangle, not to the small piece."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p167_q07.jpg",
+      "altText": "Source visual for edmar-csec-p167-q07 from workbook page 167."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Match the angles of the two triangles.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "∠ADE = ∠ABC and ∠AED = ∠ACB (corresponding angles, DE parallel to BC); ∠A is common"
+        },
+        {
+          "type": "text",
+          "value": "Result: triangle ADE ~ triangle ABC (AA)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Write the ratio of corresponding sides using the full side AB.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "AB = AD + DB = 6 + 4 = 10, so AD : AB = 6 : 10 = 3 : 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: scale factor 3/5"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Find AC, then EC.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "AE ÷ AC = 3/5, so 7.5 ÷ AC = 3/5, giving AC = 12.5; EC = 12.5 − 7.5"
+        },
+        {
+          "type": "text",
+          "value": "Result: EC = 5 cm"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Convert the length ratio to an area ratio.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Area ADE : area ABC = 3² : 5² = 9 : 25, so area ABC = 27 × 25/9"
+        },
+        {
+          "type": "text",
+          "value": "Result: area ABC = 75 cm²"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Subtract to get the trapezium.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Area DBCE = area ABC − area ADE = 75 − 27"
+        },
+        {
+          "type": "text",
+          "value": "Result: 48 cm²"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Establish AA similarity from the parallel lines, use the ratio AD : AB to find AC and then EC, and square the length ratio to compare areas."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) ∠A is common and ∠ADE = ∠ABC, ∠AED = ∠ACB are corresponding angles because DE is parallel to BC, so the triangles are similar by AA  (b) EC = 5 cm  (c) area of trapezium DBCE = 48 cm²"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Parallel lines force corresponding angles to be equal, so the small triangle is an exact scaled copy of the large one sitting in the same corner. Under a scale factor k every length multiplies by k but every area multiplies by k², because area depends on two perpendicular directions at once. That is why a 3 : 5 length ratio becomes a 9 : 25 area ratio, and the trapezium is simply what is left when the small triangle is removed."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "using_ad_db_6_4_as_the_scale_factor_inst",
+      "wrongValue": "incorrect_1",
+      "misconception": "Using AD : DB = 6 : 4 as the scale factor instead of AD : AB = 6 : 10.",
+      "correctiveNote": "Avoid this: Using AD : DB = 6 : 4 as the scale factor instead of AD : AB = 6 : 10."
+    },
+    {
+      "key": "scaling_the_area_by_3_5_rather_than_3_5",
+      "wrongValue": "incorrect_2",
+      "misconception": "Scaling the area by 3/5 rather than (3/5)².",
+      "correctiveNote": "Avoid this: Scaling the area by 3/5 rather than (3/5)²."
+    },
+    {
+      "key": "giving_the_area_of_the_whole_triangle_ab",
+      "wrongValue": "incorrect_3",
+      "misconception": "Giving the area of the whole triangle ABC as the answer to part c instead of subtracting the small triangle.",
+      "correctiveNote": "Avoid this: Giving the area of the whole triangle ABC as the answer to part c instead of subtracting the small triangle."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "In a 'triangle within a triangle' similarity, always write out the full side of the large triangle first (AB = AD + DB) — the single most common error is comparing a part to a part."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "∠Aiscommonand∠ADE=∠ABC,∠AED=∠ACBarecorrespondinganglesbecauseDEisparalleltoBC,sothetrianglesaresi",
+    "displayValue": "∠A is common and ∠ADE = ∠ABC, ∠AED = ∠ACB are corresponding angles because DE is parallel to BC, so the triangles are si",
+    "acceptedForms": [
+      "∠A is common and ∠ADE = ∠ABC, ∠AED = ∠ACB are corresponding angles because DE is parallel to BC, so the triangles are si",
+      "∠Aiscommonand∠ADE=∠ABC,∠AED=∠ACBarecorrespondinganglesbecauseDEisparalleltoBC,sothetrianglesaresi"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Two similar triangles have corresponding sides in the ratio 2 : 3. The smaller has area 12 cm². What is the area of the larger?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "12",
+      "displayValue": "12",
+      "acceptedForms": [
+        "12",
+        "12"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "1ffa847c-e4b5-457a-ad6f-da3d1622271d",
+      "code": "M1-1.1",
+      "label": "Similar triangles (AA)"
+    },
+    {
+      "objectiveId": "d07bbe75-2216-4926-af6b-bb6252f47ad8",
+      "code": "M1-1.1",
+      "label": "Corresponding angles between parallel lines"
+    },
+    {
+      "objectiveId": "1176c469-fdbe-4275-adce-fe95db502c6c",
+      "code": "M1-1.1",
+      "label": "Ratio of areas of similar figures"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 7,
+    "pageRef": "p167",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "REPLACE_author-id",
+  "questionType": "multiple_choice",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "REPLACE_Question stem — state the problem clearly."
+    },
+    {
+      "type": "math",
+      "latex": "2x + 5 = 17",
+      "style": "display"
+    }
+  ],
+  "options": [
+    {
+      "optionKey": "A",
+      "contentBlocks": [{ "type": "text", "value": "REPLACE_option_A" }],
+      "isCorrect": false
+    },
+    {
+      "optionKey": "B",
+      "contentBlocks": [{ "type": "text", "value": "REPLACE_option_B" }],
+      "isCorrect": true
+    },
+    {
+      "optionKey": "C",
+      "contentBlocks": [{ "type": "text", "value": "REPLACE_option_C" }],
+      "isCorrect": false
+    },
+    {
+      "optionKey": "D",
+      "contentBlocks": [{ "type": "text", "value": "REPLACE_option_D" }],
+      "isCorrect": false
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Isolate the variable.",
+      "contentBlocks": [
+        { "type": "text", "value": "REPLACE_Show subtraction of 5 from both sides." }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "State the answer.",
+      "contentBlocks": [{ "type": "text", "value": "REPLACE_Final value matching option B." }]
+    }
+  ],
+  "strategyBlocks": [
+    { "type": "text", "value": "REPLACE_How to approach this type of question." }
+  ],
+  "finalAnswerBlocks": [
+    { "type": "text", "value": "REPLACE_The correct option is B because …" }
+  ],
+  "whyThisWorks": [
+    { "type": "text", "value": "REPLACE_Link method to the syllabus objective." }
+  ],
+  "commonErrors": [
+    {
+      "key": "sign_error",
+      "wrongOptionKey": "C",
+      "misconception": "REPLACE_What the student did wrong.",
+      "correctiveNote": "REPLACE_How to fix it."
+    }
+  ],
+  "examTip": [
+    { "type": "text", "value": "REPLACE_CXC-style advice for this item type." }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "machine_verified"
+  },
+  "answerSpec": {
+    "answerType": "option_id",
+    "canonicalValue": "B",
+    "displayValue": "B",
+    "acceptedForms": ["B"],
+    "normalisation": "default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      { "type": "text", "value": "REPLACE_Short check — same skill, simpler numbers." }
+    ],
+    "answerSpec": {
+      "answerType": "option_id",
+      "canonicalValue": "B",
+      "displayValue": "B",
+      "acceptedForms": ["B"],
+      "normalisation": "default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": ["REPLACE_M1-1.1"]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "REPLACE_uuid-from-specific_objectives",
+      "code": "REPLACE_M1-1.1",
+      "label": "REPLACE_Short objective label"
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p017-q06",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "$10 000 is invested at 6% per annum compound interest, compounded annually for 2 years. Calculate the total amount."
+    },
+    {
+      "type": "text",
+      "value": "Think first: With compound interest each year's interest joins the principal, so the second year earns on more than the first."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p017_q06.jpg",
+      "altText": "Source visual for edmar-csec-p017-q06 from workbook page 17."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write the compound interest formula.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "A = P(1 + R/100)ⁿ"
+        },
+        {
+          "type": "text",
+          "value": "Result: A = 10000 × 1.06²"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Find the amount after one year.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "10000 × 1.06"
+        },
+        {
+          "type": "text",
+          "value": "Result: $10 600"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Apply the same increase to the new balance.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "10600 × 1.06"
+        },
+        {
+          "type": "text",
+          "value": "Result: $11 236"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "State the total amount.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Equivalently 10000 × 1.1236"
+        },
+        {
+          "type": "text",
+          "value": "Result: $11 236"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Multiply the principal by 1.06 once for each year, or use A = P(1 + R/100)ⁿ with n = 2."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "$11 236"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A 6% increase multiplies a balance by 1.06, so applying it twice multiplies by 1.06² — this is why compound growth is repeated multiplication rather than repeated addition. The extra $36 above the $11 200 that simple interest would give is precisely the 6% earned on the first year's $600 of interest."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "using_simple_interest_and_answering_11_2",
+      "wrongValue": "incorrect_1",
+      "misconception": "Using simple interest and answering $11 200.",
+      "correctiveNote": "Avoid this: Using simple interest and answering $11 200."
+    },
+    {
+      "key": "multiplying_by_0_06_instead_of_1_06_and_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Multiplying by 0.06 instead of 1.06 and losing the principal.",
+      "correctiveNote": "Avoid this: Multiplying by 0.06 instead of 1.06 and losing the principal."
+    },
+    {
+      "key": "multiplying_by_2_1_06_rather_than_1_06",
+      "wrongValue": "incorrect_3",
+      "misconception": "Multiplying by 2 × 1.06 rather than 1.06².",
+      "correctiveNote": "Avoid this: Multiplying by 2 × 1.06 rather than 1.06²."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Convert the rate into a multiplier once — 6% becomes 1.06 — and then compounding is just raising that multiplier to the number of years."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "tolerance",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "currency",
+    "canonicalValue": "11.00",
+    "displayValue": "$11",
+    "acceptedForms": [
+      "$11",
+      "$11",
+      "11"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0.005
+    },
+    "precision": {
+      "kind": "decimal_places",
+      "value": 2,
+      "required": true
+    },
+    "normalisation": "currency_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "$5 000 is invested at 10% per annum compound interest for 2 years. Find the amount."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "currency",
+      "canonicalValue": "6.00",
+      "displayValue": "$6",
+      "acceptedForms": [
+        "$6",
+        "$6",
+        "6"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.005
+      },
+      "precision": {
+        "kind": "decimal_places",
+        "value": 2,
+        "required": true
+      },
+      "normalisation": "currency_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "2e49aec7-a730-4bd3-a8df-9e06945e7d40",
+      "code": "M1-1.1",
+      "label": "Compound interest"
+    },
+    {
+      "objectiveId": "7dca5de8-b5b3-4915-a194-83ccef791ba5",
+      "code": "M1-1.1",
+      "label": "Multiplying factors"
+    },
+    {
+      "objectiveId": "9bb18e0b-5918-43bc-a5a7-d0a15bd851ff",
+      "code": "M1-1.1",
+      "label": "Percentage increase"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 6,
+    "pageRef": "p17",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

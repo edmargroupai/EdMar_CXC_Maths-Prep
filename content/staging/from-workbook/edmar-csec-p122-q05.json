@@ -1,0 +1,173 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p122-q05",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The points A(−2, 5) and B(4, −1) lie on a straight line. Calculate the gradient of AB."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Gradient is the change in y divided by the change in x, taken in the same order for both."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p122_q05.jpg",
+      "altText": "Source visual for edmar-csec-p122-q05 from workbook page 122."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write the gradient formula and label the coordinates.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "A(x₁, y₁) = (−2, 5), B(x₂, y₂) = (4, −1)"
+        },
+        {
+          "type": "text",
+          "value": "Result: m = (y₂ − y₁)/(x₂ − x₁)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Substitute the coordinates.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "m = (−1 − 5)/(4 − (−2))"
+        },
+        {
+          "type": "text",
+          "value": "Result: m = −6/6"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Simplify.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "−6 ÷ 6"
+        },
+        {
+          "type": "text",
+          "value": "Result: m = −1"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Apply the gradient formula m = (y₂ − y₁)/(x₂ − x₁) with A as the first point and B as the second."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "The gradient of AB is −1"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The gradient measures how much y changes for each unit that x increases. Here y falls by 6 while x rises by 6, so the line drops one unit for every unit across — a gradient of −1, which corresponds to a line sloping downwards at 45°. Taking both differences in the same order (B minus A on top and bottom) is what keeps the sign correct."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "subtracting_the_coordinates_in_opposite_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Subtracting the coordinates in opposite orders, giving +1 instead of −1.",
+      "correctiveNote": "Avoid this: Subtracting the coordinates in opposite orders, giving +1 instead of −1."
+    },
+    {
+      "key": "computing_the_change_in_x_over_the_chang",
+      "wrongValue": "incorrect_2",
+      "misconception": "Computing the change in x over the change in y.",
+      "correctiveNote": "Avoid this: Computing the change in x over the change in y."
+    },
+    {
+      "key": "mishandling_4_2_and_writing_2_instead_of",
+      "wrongValue": "incorrect_3",
+      "misconception": "Mishandling 4 − (−2) and writing 2 instead of 6.",
+      "correctiveNote": "Avoid this: Mishandling 4 − (−2) and writing 2 instead of 6."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "A negative gradient means the line falls from left to right — sketch the two points quickly to confirm the sign before you write the answer."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "ThegradientofABis−1",
+    "displayValue": "The gradient of AB is −1",
+    "acceptedForms": [
+      "The gradient of AB is −1",
+      "ThegradientofABis−1"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Find the gradient of the line through (1, 2) and (5, 10)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "m=2",
+      "displayValue": "m = 2",
+      "acceptedForms": [
+        "m = 2",
+        "m=2"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-3.2"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "c2170f40-56cb-45b0-a4c4-04b93ad05d87",
+      "code": "M1-3.2",
+      "label": "Gradient of a line through two points"
+    },
+    {
+      "objectiveId": "06e6ffd0-bb6c-48ad-a70b-509330130d01",
+      "code": "M1-3.2",
+      "label": "Coordinate geometry"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 5,
+    "pageRef": "p122",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

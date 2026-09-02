@@ -1,0 +1,157 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p058-q09",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A binary operation * is defined by a * b = a + 2b. Evaluate 6 * 1."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The second input is doubled before it is added."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p058_q09.jpg",
+      "altText": "Source visual for edmar-csec-p058-q09 from workbook page 58."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Substitute a = 6 and b = 1.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "6 + 2(1)"
+        },
+        {
+          "type": "text",
+          "value": "Result: 6 + 2"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Add.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: 8"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Substitute a = 6 and b = 1 into a + 2b."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "6 * 1 = 8"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The rule weights the two inputs differently - the right-hand one counts twice - so the operation is not commutative: 1 * 6 would be 13. Matching each number to the correct letter is the entire skill being tested."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "doubling_the_first_number_giving_12_1_13",
+      "wrongValue": "incorrect_1",
+      "misconception": "Doubling the first number, giving 12 + 1 = 13.",
+      "correctiveNote": "Avoid this: Doubling the first number, giving 12 + 1 = 13."
+    },
+    {
+      "key": "doubling_the_sum_giving_2_6_1_14",
+      "wrongValue": "incorrect_2",
+      "misconception": "Doubling the sum, giving 2(6 + 1) = 14.",
+      "correctiveNote": "Avoid this: Doubling the sum, giving 2(6 + 1) = 14."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Write 2b as 2 × b in your working so the multiplication is not overlooked."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "6",
+    "displayValue": "6",
+    "acceptedForms": [
+      "6",
+      "6"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "With a * b = a + 2b, find 4 * 3."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "10",
+      "displayValue": "10",
+      "acceptedForms": [
+        "10",
+        "10"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "b3e72382-17fc-4989-ab46-a6773d2c6454",
+      "code": "M1-4.1",
+      "label": "Binary operations"
+    },
+    {
+      "objectiveId": "39f0422a-3bb5-4bd5-a0a6-0d7ace4b0ea6",
+      "code": "M1-4.1",
+      "label": "Substitution"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 9,
+    "pageRef": "p58",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

@@ -1,0 +1,250 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p118-q15",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 4,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "y varies inversely as x. The table gives x = 3, 5, 12 with y = 20 for x = 3 and the other two y values missing. (a) Find the equation connecting y and x. (b) Find the missing values of y when x = 5 and x = 12."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Only one column is complete, and that is all you need to fix the constant."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p118_q15.jpg",
+      "altText": "Source visual for edmar-csec-p118-q15 from workbook page 118."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write the variation statement as an equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "y varies inversely as x"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = k/x"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Use the complete column x = 3, y = 20 to find k.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "20 = k/3"
+        },
+        {
+          "type": "text",
+          "value": "Result: k = 60"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Write the completed equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Replace k by 60"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 60/x"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Substitute x = 5.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "y = 60 ÷ 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 12"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Substitute x = 12.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "y = 60 ÷ 12"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 5"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Write y = k/x, use x = 3, y = 20 to find k, then substitute x = 5 and x = 12 into the completed equation."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) y = 60/x  (b) y = 12 when x = 5, and y = 5 when x = 12"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Inverse variation keeps the product xy constant, so every column of the table multiplies to 60. That single number generates the whole table, and it also explains the symmetry you can see here: x = 5 gives y = 12 and x = 12 gives y = 5."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "multiplying_by_k_instead_of_dividing_whe",
+      "wrongValue": "incorrect_1",
+      "misconception": "Multiplying by k instead of dividing when filling in the table.",
+      "correctiveNote": "Avoid this: Multiplying by k instead of dividing when filling in the table."
+    },
+    {
+      "key": "finding_k_as_3_20_rather_than_3_20",
+      "wrongValue": "incorrect_2",
+      "misconception": "Finding k as 3 ÷ 20 rather than 3 × 20.",
+      "correctiveNote": "Avoid this: Finding k as 3 ÷ 20 rather than 3 × 20."
+    },
+    {
+      "key": "assuming_the_y_values_decrease_by_a_fixe",
+      "wrongValue": "incorrect_3",
+      "misconception": "Assuming the y values decrease by a fixed amount rather than by a fixed product.",
+      "correctiveNote": "Avoid this: Assuming the y values decrease by a fixed amount rather than by a fixed product."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "In an inverse-variation table, check each completed column by multiplying x by y — every product must equal k."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "y=60/",
+    "displayValue": "y = 60/",
+    "acceptedForms": [
+      "y = 60/",
+      "y=60/"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "y varies inversely as x and y = 8 when x = 6. Find y when x = 4."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "y=12",
+      "displayValue": "y = 12",
+      "acceptedForms": [
+        "y = 12",
+        "y=12"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-3.2"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "abef8735-9c48-473b-afdc-ecf23103b1df",
+      "code": "M1-3.2",
+      "label": "Inverse variation"
+    },
+    {
+      "objectiveId": "e9041776-b15a-4a30-a9f6-b98595bc9e2f",
+      "code": "M1-3.2",
+      "label": "Constant of variation"
+    },
+    {
+      "objectiveId": "62cf1f2e-ac6f-4365-a0df-aaf34864e016",
+      "code": "M1-3.2",
+      "label": "Completing a table"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 15,
+    "pageRef": "p118",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "y=60/",
+        "displayValue": "y = 60/",
+        "acceptedForms": [
+          "y = 60/",
+          "y=60/"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "y=12when",
+        "displayValue": "y = 12 when",
+        "acceptedForms": [
+          "y = 12 when",
+          "y=12when"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

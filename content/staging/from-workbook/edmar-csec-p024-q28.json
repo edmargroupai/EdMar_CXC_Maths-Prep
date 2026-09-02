@@ -1,0 +1,270 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p024-q28",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 4,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A hardware store sells paint in two sizes: (A) a 1 litre tin costs $950 and (B) a 5 litre tin costs $4 200. (a) Calculate the cost per litre for each size. (b) Which size is the better buy? (c) How much would a customer save by buying 10 litres using the better option?"
+    },
+    {
+      "type": "text",
+      "value": "Think first: Reduce both tins to a price per litre, then think about how to make exactly 10 litres from each."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p024_q28.jpg",
+      "altText": "Source visual for edmar-csec-p024-q28 from workbook page 24."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Find the cost per litre of the 1 litre tin.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "950 / 1"
+        },
+        {
+          "type": "text",
+          "value": "Result: $950 per litre"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Find the cost per litre of the 5 litre tin.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "4 200 / 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: $840 per litre"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Compare the unit costs.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "840 < 950"
+        },
+        {
+          "type": "text",
+          "value": "Result: the 5 litre tin is the better buy"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Price 10 litres using each option.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "two 5 L tins = 2 x $4 200; ten 1 L tins = 10 x $950"
+        },
+        {
+          "type": "text",
+          "value": "Result: $8 400 and $9 500"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Subtract to find the saving.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "9 500 - 8 400"
+        },
+        {
+          "type": "text",
+          "value": "Result: $1 100"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Divide each tin price by its capacity, pick the lower cost per litre, then price 10 litres both ways and subtract."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) 1 litre tin $950 per litre, 5 litre tin $840 per litre  (b) the 5 litre tin  (c) the customer saves $1 100"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Larger packs usually carry a lower unit price because packaging and handling costs are spread over more product, and dividing by capacity exposes that. The per litre difference of $110 over 10 litres gives the same $1 100, which confirms the full comparison. Checking a shortcut against the long method is a good habit when the numbers allow it."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "comparing_950_with_4_200_directly_and_ch",
+      "wrongValue": "incorrect_1",
+      "misconception": "Comparing $950 with $4 200 directly and choosing the 1 litre tin.",
+      "correctiveNote": "Avoid this: Comparing $950 with $4 200 directly and choosing the 1 litre tin."
+    },
+    {
+      "key": "dividing_5_by_4_200_instead_of_4_200_by_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Dividing 5 by 4 200 instead of 4 200 by 5.",
+      "correctiveNote": "Avoid this: Dividing 5 by 4 200 instead of 4 200 by 5."
+    },
+    {
+      "key": "making_up_10_litres_from_a_mixture_of_ti",
+      "wrongValue": "incorrect_3",
+      "misconception": "Making up 10 litres from a mixture of tin sizes rather than using the better option throughout.",
+      "correctiveNote": "Avoid this: Making up 10 litres from a mixture of tin sizes rather than using the better option throughout."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "In the final part of a best buy question, cost the required quantity twice, once with each option, before subtracting. It protects you when the quantity does not divide neatly."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "tolerance",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "currency",
+    "canonicalValue": "1.00",
+    "displayValue": "$1",
+    "acceptedForms": [
+      "$1",
+      "$1",
+      "1"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0.005
+    },
+    "precision": {
+      "kind": "decimal_places",
+      "value": 2,
+      "required": true
+    },
+    "normalisation": "currency_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A 2 litre bottle costs $520 and a 500 ml bottle costs $145. Which is cheaper per litre?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "The2litrebottle,at$260perlitreagainst$290perlitre",
+      "displayValue": "The 2 litre bottle, at $260 per litre against $290 per litre",
+      "acceptedForms": [
+        "The 2 litre bottle, at $260 per litre against $290 per litre",
+        "The2litrebottle,at$260perlitreagainst$290perlitre"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "a746a47b-cca4-4e9f-a006-4d3d31a1ac95",
+      "code": "M1-1.1",
+      "label": "Best buy"
+    },
+    {
+      "objectiveId": "29510b46-4e86-4eca-a969-992eb77223d4",
+      "code": "M1-1.1",
+      "label": "Unit cost"
+    },
+    {
+      "objectiveId": "cfeaaf3d-486f-4073-afd3-5b75263852ab",
+      "code": "M1-1.1",
+      "label": "Multiples and totals"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 28,
+    "pageRef": "p24",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "currency",
+        "canonicalValue": "1.00",
+        "displayValue": "$1",
+        "acceptedForms": [
+          "$1",
+          "$1",
+          "1"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0.005
+        },
+        "precision": {
+          "kind": "decimal_places",
+          "value": 2,
+          "required": true
+        },
+        "normalisation": "currency_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "the5litretin",
+        "displayValue": "the 5 litre tin",
+        "acceptedForms": [
+          "the 5 litre tin",
+          "the5litretin"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

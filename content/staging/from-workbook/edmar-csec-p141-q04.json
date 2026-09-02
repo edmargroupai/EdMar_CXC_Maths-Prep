@@ -1,0 +1,273 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p141-q04",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 4,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Given that f: x ↦ 3x − 2, g: x ↦ 2x + 5 and h: x ↦ (2x + 3)/(x − 1): (a) Evaluate (i) g(-6) and (ii) fg(3). (b) If f(x) = 8, calculate the value of x. (c) Obtain an expression, in terms of x, for h⁻¹(x)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Three skills are being tested: substituting into a function, composing two of them, and reversing one."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p141_q04.jpg",
+      "altText": "Source visual for edmar-csec-p141-q04 from workbook page 141."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Evaluate g(-6).",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "g(-6) = 2(-6) + 5 = -12 + 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: g(-6) = -7"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Evaluate fg(3): apply g first, then f.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "g(3) = 2(3) + 5 = 11, then f(11) = 3(11) − 2 = 33 − 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: fg(3) = 31"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Solve f(x) = 8.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3x − 2 = 8 → 3x = 10"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 10/3"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Set y = h(x) and clear the fraction.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "y(x − 1) = 2x + 3 → yx − y = 2x + 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: yx − 2x = y + 3"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Factor out x and divide.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x(y − 2) = y + 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = (y + 3)/(y − 2)"
+        }
+      ]
+    },
+    {
+      "stepNo": 6,
+      "instruction": "Write the inverse in terms of x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Replace y by x"
+        },
+        {
+          "type": "text",
+          "value": "Result: h⁻¹(x) = (x + 3)/(x − 2), x ≠ 2"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Substitute directly for (a)(i), work inner-then-outer for (a)(ii), solve 3x − 2 = 8 for (b), and rearrange y = h(x) to make x the subject for (c)."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a)(i) g(-6) = -7  (a)(ii) fg(3) = 31  (b) x = 10/3  (c) h⁻¹(x) = (x + 3)/(x − 2), x ≠ 2."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Every part rests on the same idea: a function is a rule turning an input into an output. Evaluating runs the rule forwards, solving f(x) = 8 runs it backwards for one particular output, and finding the inverse runs it backwards for every output at once. That is why parts (b) and (c) feel like the same algebra — they are."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "computing_fg_3_as_f_first_giving_g_7_ins",
+      "wrongValue": "incorrect_1",
+      "misconception": "Computing fg(3) as f first, giving g(7) instead of f(11).",
+      "correctiveNote": "Avoid this: Computing fg(3) as f first, giving g(7) instead of f(11)."
+    },
+    {
+      "key": "answering_part_b_with_x_2_by_dividing_8_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Answering part (b) with x = 2 by dividing 8 by 3 before adding the 2.",
+      "correctiveNote": "Avoid this: Answering part (b) with x = 2 by dividing 8 by 3 before adding the 2."
+    },
+    {
+      "key": "leaving_x_on_both_sides_in_part_c_instea",
+      "wrongValue": "incorrect_3",
+      "misconception": "Leaving x on both sides in part (c) instead of collecting and factoring.",
+      "correctiveNote": "Avoid this: Leaving x on both sides in part (c) instead of collecting and factoring."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "State any excluded value with an inverse — writing 'x ≠ 2' shows you understand the function and is often worth a mark."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "g(-6)=-7(a)",
+    "displayValue": "g(-6) = -7 (a)",
+    "acceptedForms": [
+      "g(-6) = -7 (a)",
+      "g(-6)=-7(a)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "If f(x) = 5x + 1 and f(x) = 21, find x."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "5",
+      "displayValue": "5",
+      "acceptedForms": [
+        "5",
+        "5"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "f568eb70-9ee8-4c05-a9ec-841fa1f54431",
+      "code": "M1-5.1",
+      "label": "Evaluating a function"
+    },
+    {
+      "objectiveId": "7aa39c56-2193-44b3-ab8c-6899d47c3e8d",
+      "code": "M1-5.1",
+      "label": "Composite functions"
+    },
+    {
+      "objectiveId": "760a4b59-1a94-42bd-a29e-54c0c9d98201",
+      "code": "M1-5.1",
+      "label": "Solving a linear equation"
+    },
+    {
+      "objectiveId": "e1c641a6-b834-4de2-abc8-284e0eb88e45",
+      "code": "M1-5.1",
+      "label": "Inverse of a rational function"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 4,
+    "pageRef": "p141",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a.i",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.i): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "g(-6)=-7(a)",
+        "displayValue": "g(-6) = -7 (a)",
+        "acceptedForms": [
+          "g(-6) = -7 (a)",
+          "g(-6)=-7(a)"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.ii",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.ii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "fg(3)=31",
+        "displayValue": "fg(3) = 31",
+        "acceptedForms": [
+          "fg(3) = 31",
+          "fg(3)=31"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

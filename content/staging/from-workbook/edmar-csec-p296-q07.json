@@ -1,0 +1,217 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p296-q07",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A = (0  -1 / 1  0) represents an anticlockwise rotation of 90 degrees about the origin O, and B = (0  -1 / -1  0) represents a reflection in the line y = -x. (i) Determine the elements of the matrix C representing an anticlockwise rotation of 90 degrees about O followed by a reflection in y = -x. (ii) Describe geometrically the single transformation represented by C. (b) A transformation T is given by the matrix (1  2 / k  -1), where k is a constant, and T maps the point (2, 3) onto (8, 15). Determine the value of k."
+    },
+    {
+      "type": "text",
+      "value": "Think first: For 'A followed by B' the matrices multiply in reverse order, so C = BA; and in part (b) only one entry of the image actually involves k."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p296_q07.jpg",
+      "altText": "Source visual for edmar-csec-p296-q07 from workbook page 296."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Decide the order of the product for 'A followed by B'.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The point is multiplied by A first, then by B: B(Ax) = (BA)x, so C = BA."
+        },
+        {
+          "type": "text",
+          "value": "Result: C = BA"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Multiply out BA.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(0  -1 / -1  0)(0  -1 / 1  0):  top row ((0)(0) + (-1)(1), (0)(-1) + (-1)(0)) = (-1, 0);  bottom row ((-1)(0) + (0)(1), (-1)(-1) + (0)(0)) = (0, 1)"
+        },
+        {
+          "type": "text",
+          "value": "Result: C = (-1  0 / 0  1)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Apply C to a general point to identify the transformation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "C(x / y) = (-x / y), so the x-coordinate changes sign while y stays the same."
+        },
+        {
+          "type": "text",
+          "value": "Result: C is a reflection in the y-axis (x = 0)"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "For (b), multiply T by the column matrix for (2, 3).",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(1  2 / k  -1)(2 / 3) = ((1)(2) + (2)(3) / (k)(2) + (-1)(3)) = (8 / 2k - 3)"
+        },
+        {
+          "type": "text",
+          "value": "Result: Image = (8 / 2k - 3)"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Match the image with (8, 15) and solve.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The first entry already agrees; the second gives 2k - 3 = 15."
+        },
+        {
+          "type": "text",
+          "value": "Result: 2k = 18, so k = 9"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Form the product BA for C, apply C to a general point (x, y) to describe it, then multiply T by the column (2, 3) and match the result with (8, 15)."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) C = (-1  0 / 0  1)  (ii) C represents a reflection in the y-axis, the line x = 0.  (b) k = 9"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Because transformation matrices act on the left of a column vector, doing A and then B corresponds to the single matrix BA; getting this order right is the whole content of part (i). The columns of a 2x2 matrix are the images of (1, 0) and (0, 1), so once C is known its geometric meaning can be read directly. In part (b) the unknown appears in only one row of the product, so only one of the two matched entries produces an equation while the other confirms the working."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "working_out_ab_instead_of_ba_which_gives",
+      "wrongValue": "incorrect_1",
+      "misconception": "Working out AB instead of BA, which gives a reflection in the x-axis.",
+      "correctiveNote": "Avoid this: Working out AB instead of BA, which gives a reflection in the x-axis."
+    },
+    {
+      "key": "assuming_a_rotation_followed_by_a_reflec",
+      "wrongValue": "incorrect_2",
+      "misconception": "Assuming a rotation followed by a reflection must be another rotation.",
+      "correctiveNote": "Avoid this: Assuming a rotation followed by a reflection must be another rotation."
+    },
+    {
+      "key": "writing_the_point_2_3_as_a_row_matrix_an",
+      "wrongValue": "incorrect_3",
+      "misconception": "Writing the point (2, 3) as a row matrix and multiplying on the wrong side.",
+      "correctiveNote": "Avoid this: Writing the point (2, 3) as a row matrix and multiplying on the wrong side."
+    },
+    {
+      "key": "solving_2k_3_15_through_a_sign_slip_on_t",
+      "wrongValue": "incorrect_4",
+      "misconception": "Solving 2k + 3 = 15 through a sign slip on the -1 entry.",
+      "correctiveNote": "Avoid this: Solving 2k + 3 = 15 through a sign slip on the -1 entry."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "A rotation combined with a reflection always gives a reflection, and two reflections always give a rotation; use that as a sanity check on your description."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "C=(-1",
+    "displayValue": "C = (-1",
+    "acceptedForms": [
+      "C = (-1",
+      "C=(-1"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A = (0  -1 / 1  0) is a 90 degree anticlockwise rotation. What is the image of (3, 4) under A?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(-4,3)",
+      "displayValue": "(-4, 3)",
+      "acceptedForms": [
+        "(-4, 3)",
+        "(-4,3)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "2808114b-57df-4b40-a100-a79b9c8ad0cd",
+      "code": "M2-4.1",
+      "label": "Combined transformations and matrix order"
+    },
+    {
+      "objectiveId": "beef2b06-70c5-42b9-ad93-842a192266eb",
+      "code": "M2-4.1",
+      "label": "Matrix multiplication"
+    },
+    {
+      "objectiveId": "95543f27-21aa-4dc1-a5c8-f04f3ccd522d",
+      "code": "M2-4.1",
+      "label": "Reflection in the y-axis"
+    },
+    {
+      "objectiveId": "b8d81a8c-fdfe-4bfd-a8d7-5cd85fa92a43",
+      "code": "M2-4.1",
+      "label": "Matrix transformation of a point"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 7,
+    "pageRef": "p296",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

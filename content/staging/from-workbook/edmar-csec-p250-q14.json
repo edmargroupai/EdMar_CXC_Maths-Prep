@@ -1,0 +1,207 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p250-q14",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 5,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "L, M, N and R lie on a circle with centre O, and PQ is a tangent to the circle at R. Angle PRL = 48° and angle RON = 156°. In the diagram r = angle NLR (at L), e = angle NRQ (between the chord RN and the tangent ray RQ) and a = angle NML (at M). Find r, e and a, giving reasons."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The 156° is an angle at the centre, so the matching angle at the circumference is half of it."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p250_q14.jpg",
+      "altText": "Source visual for edmar-csec-p250-q14 from workbook page 250."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Halve the angle at the centre to get the angle at the circumference on chord NR.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "∠RON = 156° at the centre, and L is on the major arc, so ∠NLR = 156 ÷ 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: r = 78°"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Apply the alternate segment theorem to the tangent and chord RN.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "e is the angle between the tangent RQ and the chord RN, so it equals the angle subtended by RN in the alternate segment, ∠NLR"
+        },
+        {
+          "type": "text",
+          "value": "Result: e = 78°"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Use the straight tangent line to find angle NRL.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "∠QRN + ∠NRL + ∠LRP = 180, so ∠NRL = 180 − 78 − 48"
+        },
+        {
+          "type": "text",
+          "value": "Result: ∠NRL = 54°"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Use the cyclic quadrilateral NMLR, in which angles at M and R are opposite.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "∠NML + ∠NRL = 180, so a = 180 − 54"
+        },
+        {
+          "type": "text",
+          "value": "Result: a = 126°"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Halve the central angle to get r, use the alternate segment theorem for e, then find angle NRL on the straight tangent line and use the cyclic quadrilateral NMLR to get a."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) r = ∠NLR = 78° (angle at the centre, 156°, is twice the angle at the circumference on the same chord NR)  (ii) e = ∠NRQ = 78° (tangent–chord angle equals the angle in the alternate segment, ∠NLR)  (iii) a = ∠NML = 126° (angles on the straight line PRQ give ∠NRL = 180 − 78 − 48 = 54°, and NMLR is a cyclic quadrilateral, so ∠NML = 180 − 54)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Chord NR is the hinge of the whole diagram: the centre sees it at 156°, so every point on the major arc sees it at 78°, and the tangent at R makes that same 78° with it. Once the three angles at R are known, the tangent being a straight line pins down angle NRL, and the cyclic quadrilateral rule converts that into the angle at the opposite vertex M."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "doubling_instead_of_halving_the_angle_at",
+      "wrongValue": "incorrect_1",
+      "misconception": "Doubling instead of halving the angle at the centre.",
+      "correctiveNote": "Avoid this: Doubling instead of halving the angle at the centre."
+    },
+    {
+      "key": "matching_the_tangent_chord_angle_with_th",
+      "wrongValue": "incorrect_2",
+      "misconception": "Matching the tangent–chord angle with the angle on the same side of the chord as the tangent ray.",
+      "correctiveNote": "Avoid this: Matching the tangent–chord angle with the angle on the same side of the chord as the tangent ray."
+    },
+    {
+      "key": "forgetting_that_p_r_and_q_are_collinear_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Forgetting that P, R and Q are collinear, so the three angles at R total 180°, not 360°.",
+      "correctiveNote": "Avoid this: Forgetting that P, R and Q are collinear, so the three angles at R total 180°, not 360°."
+    },
+    {
+      "key": "using_angles_in_the_same_segment_where_o",
+      "wrongValue": "incorrect_4",
+      "misconception": "Using 'angles in the same segment' where opposite angles of a cyclic quadrilateral are needed.",
+      "correctiveNote": "Avoid this: Using 'angles in the same segment' where opposite angles of a cyclic quadrilateral are needed."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Mark the centre angle and its half on the diagram immediately — most tangent-and-centre questions are then a chain of one-line steps."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "r=∠NLR=78°(angleatthecentre,156°,istwicetheangleatthecircumferenceonthesamechordNR)",
+    "displayValue": "r = ∠NLR = 78° (angle at the centre, 156°, is twice the angle at the circumference on the same chord NR)",
+    "acceptedForms": [
+      "r = ∠NLR = 78° (angle at the centre, 156°, is twice the angle at the circumference on the same chord NR)",
+      "r=∠NLR=78°(angleatthecentre,156°,istwicetheangleatthecircumferenceonthesamechordNR)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "An angle at the centre standing on chord AB is 130°. What is the angle AB subtends at a point on the major arc?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "65",
+      "displayValue": "65",
+      "acceptedForms": [
+        "65",
+        "65"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "4a8bf0d9-248a-4808-a8ff-36b6b355fd4d",
+      "code": "M1-1.1",
+      "label": "Angle at the centre is twice the angle at the circumference"
+    },
+    {
+      "objectiveId": "c2fcf88e-eb63-41d1-af91-2d60d38e559a",
+      "code": "M1-1.1",
+      "label": "Alternate segment (tangent–chord) theorem"
+    },
+    {
+      "objectiveId": "511f18b1-abc3-47b2-aeaf-478d6b40a9a5",
+      "code": "M1-1.1",
+      "label": "Angles on a straight line"
+    },
+    {
+      "objectiveId": "1a3f3a87-dfb0-4d8b-a254-e74e50a43338",
+      "code": "M1-1.1",
+      "label": "Cyclic quadrilateral: opposite angles supplementary"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 14,
+    "pageRef": "p250",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

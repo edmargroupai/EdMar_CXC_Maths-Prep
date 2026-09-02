@@ -1,0 +1,173 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p117-q11",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The pressure P of a gas varies inversely as its volume V. Given that P = 8 when V = 4, find the pressure when the volume is 10."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Pressure times volume is constant, so find that product and then divide by the new volume."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p117_q11.jpg",
+      "altText": "Source visual for edmar-csec-p117-q11 from workbook page 117."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write the variation statement as an equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "P varies inversely as V"
+        },
+        {
+          "type": "text",
+          "value": "Result: P = k/V"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Substitute P = 8 and V = 4 to find k.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "8 = k/4"
+        },
+        {
+          "type": "text",
+          "value": "Result: k = 32"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Substitute V = 10 into P = 32/V.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "P = 32 ÷ 10"
+        },
+        {
+          "type": "text",
+          "value": "Result: P = 3.2"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Write P = k/V, find k from P = 8 and V = 4, then substitute V = 10."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "P = 3.2"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "For a fixed quantity of gas at constant temperature the product PV does not change, which is exactly inverse variation. Expanding the gas into a larger volume spreads the same molecules over more space, so the pressure falls in the same proportion that the volume rises."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_p_kv_and_getting_a_larger_pressu",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing P = kV and getting a larger pressure for a larger volume.",
+      "correctiveNote": "Avoid this: Writing P = kV and getting a larger pressure for a larger volume."
+    },
+    {
+      "key": "computing_8_10_4_the_wrong_way_round_as_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Computing 8 × 10 ÷ 4 the wrong way round as 8 × 4 ÷ 10 without understanding why.",
+      "correctiveNote": "Avoid this: Computing 8 × 10 ÷ 4 the wrong way round as 8 × 4 ÷ 10 without understanding why."
+    },
+    {
+      "key": "leaving_the_answer_as_the_fraction_32_10",
+      "wrongValue": "incorrect_3",
+      "misconception": "Leaving the answer as the fraction 32/10 unsimplified when a decimal is expected.",
+      "correctiveNote": "Avoid this: Leaving the answer as the fraction 32/10 unsimplified when a decimal is expected."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "For inverse variation you can use P₁V₁ = P₂V₂ directly — it is the same constant k written twice."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "P=3.2",
+    "displayValue": "P = 3.2",
+    "acceptedForms": [
+      "P = 3.2",
+      "P=3.2"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "P varies inversely as V, with P = 12 when V = 5. Find P when V = 15."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "P=4",
+      "displayValue": "P = 4",
+      "acceptedForms": [
+        "P = 4",
+        "P=4"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-3.2"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "7654ae44-d642-4b3d-af84-6615e90442f9",
+      "code": "M1-3.2",
+      "label": "Inverse variation"
+    },
+    {
+      "objectiveId": "dc147d27-5d03-46e1-a914-b5c1320f5ad5",
+      "code": "M1-3.2",
+      "label": "Constant of variation"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 11,
+    "pageRef": "p117",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

@@ -1,0 +1,229 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p148-q01",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Complete the table and draw the graph of y = x² + 2x − 3 for -4 ≤ x ≤ 2, with x taking the values -4, -3, -2, -1, 0, 1, 2. (a) Complete the table. (b) Draw a smooth curve through the plotted points. (c) State the roots and the coordinates of the minimum point. (d) State the minimum value. (e) Write the equation of the axis of symmetry. (f) State the range for the given domain."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Fill the table one x-value at a time, squaring before you multiply, and the shape of the parabola will appear from the numbers alone."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p148_q01.jpg",
+      "altText": "Source visual for edmar-csec-p148-q01 from workbook page 148."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Substitute the negative x-values.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x = -4: 16 − 8 − 3 = 5;  x = -3: 9 − 6 − 3 = 0;  x = -2: 4 − 4 − 3 = -3;  x = -1: 1 − 2 − 3 = -4"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 5, 0, -3, -4"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Substitute the remaining x-values.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x = 0: -3;  x = 1: 1 + 2 − 3 = 0;  x = 2: 4 + 4 − 3 = 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = -3, 0, 5"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Plot the seven points and join them with a smooth curve.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Points (-4, 5), (-3, 0), (-2, -3), (-1, -4), (0, -3), (1, 0), (2, 5) — no ruler, no corners at the bottom"
+        },
+        {
+          "type": "text",
+          "value": "Result: A U-shaped parabola"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Read the roots and the lowest point.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The curve crosses the x-axis where y = 0, at x = -3 and x = 1; the lowest table value is -4 at x = -1"
+        },
+        {
+          "type": "text",
+          "value": "Result: Roots x = -3 and x = 1; minimum point (-1, -4)"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "State the minimum value and the axis of symmetry.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The minimum value is the y-value at the vertex; the axis is the vertical line through it"
+        },
+        {
+          "type": "text",
+          "value": "Result: Minimum value -4; axis of symmetry x = -1"
+        }
+      ]
+    },
+    {
+      "stepNo": 6,
+      "instruction": "State the range over the given domain.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The y-values run from the minimum -4 up to the largest table value 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: -4 ≤ y ≤ 5"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Substitute each x-value into y = x² + 2x − 3, plot the seven points and join them with a smooth curve, then read the roots, vertex, axis of symmetry and range from the completed table and curve."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) y = 5, 0, -3, -4, -3, 0, 5 for x = -4, -3, -2, -1, 0, 1, 2  (b) A smooth U-shaped curve through those points  (c) Roots x = -3 and x = 1; minimum point (-1, -4)  (d) Minimum value -4  (e) Axis of symmetry x = -1  (f) Range: -4 ≤ y ≤ 5."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A quadratic graph is symmetric about the vertical line through its vertex, which is why the table values 5, 0, -3, -4, -3, 0, 5 read the same forwards and backwards. That symmetry places the vertex halfway between the two roots, at x = (-3 + 1)/2 = -1, and the minimum value is simply the y-value there. The range is the set of outputs the curve actually reaches over the stated domain, so it runs from the vertex up to the highest endpoint value."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "calculating_4_as_16_which_wrecks_the_lef",
+      "wrongValue": "incorrect_1",
+      "misconception": "Calculating (-4)² as -16, which wrecks the left half of the table.",
+      "correctiveNote": "Avoid this: Calculating (-4)² as -16, which wrecks the left half of the table."
+    },
+    {
+      "key": "joining_the_points_with_straight_line_se",
+      "wrongValue": "incorrect_2",
+      "misconception": "Joining the points with straight line segments instead of a smooth curve.",
+      "correctiveNote": "Avoid this: Joining the points with straight line segments instead of a smooth curve."
+    },
+    {
+      "key": "giving_the_minimum_point_as_4_instead_of",
+      "wrongValue": "incorrect_3",
+      "misconception": "Giving the minimum point as -4 instead of the coordinate pair (-1, -4).",
+      "correctiveNote": "Avoid this: Giving the minimum point as -4 instead of the coordinate pair (-1, -4)."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Use the symmetry of your completed table as a free check — if the y-values do not mirror each other about one column, a substitution has gone wrong."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "y=5,0,-3,-4,-3,0,5forx=-4,-3,-2,-1,0,1,2",
+    "displayValue": "y = 5, 0, -3, -4, -3, 0, 5 for x = -4, -3, -2, -1, 0, 1, 2",
+    "acceptedForms": [
+      "y = 5, 0, -3, -4, -3, 0, 5 for x = -4, -3, -2, -1, 0, 1, 2",
+      "y=5,0,-3,-4,-3,0,5forx=-4,-3,-2,-1,0,1,2"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Find y when x = -2 for y = x² + 4x + 1."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "4",
+      "displayValue": "4",
+      "acceptedForms": [
+        "4",
+        "4"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "f2594f12-5829-4a8a-a4f2-cf0fb9845351",
+      "code": "M1-5.1",
+      "label": "Table of values"
+    },
+    {
+      "objectiveId": "e7df67f7-debf-485d-adf2-a3ce899e4f79",
+      "code": "M1-5.1",
+      "label": "Drawing a quadratic graph"
+    },
+    {
+      "objectiveId": "3745e465-2e0d-4790-a7c7-722a63c38a38",
+      "code": "M1-5.1",
+      "label": "Roots of a quadratic"
+    },
+    {
+      "objectiveId": "40200fce-a396-44ed-a8b9-cbe8ae12cabc",
+      "code": "M1-5.1",
+      "label": "Minimum point and axis of symmetry"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 1,
+    "pageRef": "p148",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

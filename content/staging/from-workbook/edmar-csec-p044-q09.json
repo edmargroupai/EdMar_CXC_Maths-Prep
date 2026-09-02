@@ -1,0 +1,279 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p044-q09",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 6,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A map is drawn to a scale of 1 : 20 000, and on the map 1 cm represents n km. Determine (i) the value of n, (ii) the distance on the map, in cm, which corresponds to an actual distance of 4.8 km, and (iii) the actual area, in square kilometres, of a lake which has an area of 12 cm² on the map."
+    },
+    {
+      "type": "text",
+      "value": "Think first: A ratio scale has no units, so 1 cm on the map stands for 20 000 cm on the ground; the work is in converting that to kilometres."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p044_q09.jpg",
+      "altText": "Source visual for edmar-csec-p044-q09 from workbook page 44."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write what 1 cm on the map represents in centimetres.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "scale 1 : 20 000"
+        },
+        {
+          "type": "text",
+          "value": "Result: 20 000 cm"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Convert to kilometres.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "20 000 cm = 200 m = 200 / 1 000 km"
+        },
+        {
+          "type": "text",
+          "value": "Result: n = 0.2 km"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Divide the actual distance by the distance one centimetre represents.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "4.8 / 0.2"
+        },
+        {
+          "type": "text",
+          "value": "Result: 24 cm on the map"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Find the area represented by 1 cm² on the map.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(0.2 km)² = 0.2 x 0.2"
+        },
+        {
+          "type": "text",
+          "value": "Result: 0.04 km²"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Multiply by the map area of the lake.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "12 x 0.04"
+        },
+        {
+          "type": "text",
+          "value": "Result: 0.48 km²"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Convert 20 000 cm to kilometres for n, divide 4.8 km by n for the map distance, then square the linear scale factor to convert areas."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) n = 0.2  (ii) 24 cm on the map  (iii) the actual area of the lake is 0.48 km²"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A scale of 1 : 20 000 multiplies every length by 20 000, so lengths convert with that single factor. Area is a product of two lengths, so it scales by the factor squared: 1 cm² on the map stands for 0.2 km x 0.2 km = 0.04 km², not 0.2 km². Forgetting to square the scale factor is the classic error in map area questions."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "giving_n_2_or_n_20_through_a_slip_in_the",
+      "wrongValue": "incorrect_1",
+      "misconception": "Giving n = 2 or n = 20 through a slip in the cm to km conversion.",
+      "correctiveNote": "Avoid this: Giving n = 2 or n = 20 through a slip in the cm to km conversion."
+    },
+    {
+      "key": "multiplying_12_by_0_2_and_getting_2_4_km",
+      "wrongValue": "incorrect_2",
+      "misconception": "Multiplying 12 by 0.2 and getting 2.4 km² by using the linear factor for area.",
+      "correctiveNote": "Avoid this: Multiplying 12 by 0.2 and getting 2.4 km² by using the linear factor for area."
+    },
+    {
+      "key": "multiplying_4_8_by_0_2_instead_of_dividi",
+      "wrongValue": "incorrect_3",
+      "misconception": "Multiplying 4.8 by 0.2 instead of dividing.",
+      "correctiveNote": "Avoid this: Multiplying 4.8 by 0.2 instead of dividing."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Write the two conversions side by side: length x k, area x k². Once k = 0.2 km per cm is on the page, both parts follow in one line each."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "n=0.2",
+    "displayValue": "n = 0.2",
+    "acceptedForms": [
+      "n = 0.2",
+      "n=0.2"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A map has scale 1 : 50 000. What actual area, in km², does 4 cm² on the map represent?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "1",
+      "displayValue": "1",
+      "acceptedForms": [
+        "1",
+        "1"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "1bcce2f0-4091-4f9d-a778-9a0508b306d7",
+      "code": "M1-1.1",
+      "label": "Ratio scale"
+    },
+    {
+      "objectiveId": "ca19e684-5740-4bf3-a951-052ecca5bf6f",
+      "code": "M1-1.1",
+      "label": "Converting cm to km"
+    },
+    {
+      "objectiveId": "f7862a69-0cc1-4124-a62c-552c5da45c6c",
+      "code": "M1-1.1",
+      "label": "Area scale factor"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 9,
+    "pageRef": "p44",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a.i",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.i): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "n=0.2",
+        "displayValue": "n = 0.2",
+        "acceptedForms": [
+          "n = 0.2",
+          "n=0.2"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.ii",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.ii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "numeric_exact",
+        "canonicalValue": "24",
+        "displayValue": "24",
+        "acceptedForms": [
+          "24",
+          "24"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0
+        },
+        "normalisation": "numeric_default"
+      }
+    },
+    {
+      "partKey": "a.iii",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.iii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "theactualare",
+        "displayValue": "the actual are",
+        "acceptedForms": [
+          "the actual are",
+          "theactualare"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

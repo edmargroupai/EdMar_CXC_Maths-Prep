@@ -1,0 +1,200 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p093-q11",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Factorise completely: (3x + 2)² − 49"
+    },
+    {
+      "type": "text",
+      "value": "Think first: A whole bracket can play the part of 'a' in a² − b², so there is no need to expand anything."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p093_q11.jpg",
+      "altText": "Source visual for edmar-csec-p093-q11 from workbook page 93."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write both terms as squares.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(3x + 2)² is already a square and 49 = 7²"
+        },
+        {
+          "type": "text",
+          "value": "Result: (3x + 2)² − 7²"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Apply the difference of two squares.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Here a = 3x + 2 and b = 7"
+        },
+        {
+          "type": "text",
+          "value": "Result: (3x + 2 − 7)(3x + 2 + 7)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Simplify inside each bracket.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3x + 2 − 7 = 3x − 5 and 3x + 2 + 7 = 3x + 9"
+        },
+        {
+          "type": "text",
+          "value": "Result: (3x − 5)(3x + 9)"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Take the common factor out of the second bracket.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3x + 9 = 3(x + 3)"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3(3x − 5)(x + 3)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Treat 3x + 2 as a single quantity, apply the difference of two squares, simplify each bracket, then remove any remaining common factor."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "3(3x − 5)(x + 3), which is (3x − 5)(3x + 9) fully factorised."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The rule a² − b² = (a − b)(a + b) does not care whether a is a single letter or a whole expression, so a squared bracket can be treated exactly like x². The word 'completely' then demands one more step: the factor 3 inside the second bracket must also come out."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "expanding_3x_2_first_and_creating_unnece",
+      "wrongValue": "incorrect_1",
+      "misconception": "Expanding (3x + 2)² first and creating unnecessary work.",
+      "correctiveNote": "Avoid this: Expanding (3x + 2)² first and creating unnecessary work."
+    },
+    {
+      "key": "stopping_at_3x_5_3x_9_when_the_question_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Stopping at (3x − 5)(3x + 9) when the question says 'completely'.",
+      "correctiveNote": "Avoid this: Stopping at (3x − 5)(3x + 9) when the question says 'completely'."
+    },
+    {
+      "key": "simplifying_3x_2_7_to_3x_5",
+      "wrongValue": "incorrect_3",
+      "misconception": "Simplifying 3x + 2 − 7 to 3x + 5.",
+      "correctiveNote": "Avoid this: Simplifying 3x + 2 − 7 to 3x + 5."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "After any factorisation, look inside each bracket for a further common factor — 'completely' is where the last mark hides."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "3",
+    "displayValue": "3",
+    "acceptedForms": [
+      "3",
+      "3"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Factorise completely (2x + 1)² − 9."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "4",
+      "displayValue": "4",
+      "acceptedForms": [
+        "4",
+        "4"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M3-2.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "5d4006e0-995c-43ba-a304-65c0c3d495c4",
+      "code": "M3-2.1",
+      "label": "Difference of two squares"
+    },
+    {
+      "objectiveId": "6e3a80e4-b129-4caa-a05c-b41f035c968d",
+      "code": "M3-2.1",
+      "label": "Factorising completely"
+    },
+    {
+      "objectiveId": "4547a831-87f9-405d-af28-610a589bdc0d",
+      "code": "M3-2.1",
+      "label": "Common factors"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 11,
+    "pageRef": "p93",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

@@ -1,0 +1,188 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p115-q04",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The cost C of printing leaflets varies directly as the number of leaflets n. If 500 leaflets cost $120, find the cost of printing 750 leaflets."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Cost per leaflet stays the same, so find it once and then multiply."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p115_q04.jpg",
+      "altText": "Source visual for edmar-csec-p115-q04 from workbook page 115."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write the variation statement as an equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "C varies directly as n"
+        },
+        {
+          "type": "text",
+          "value": "Result: C = kn"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Substitute C = 120 and n = 500 to find k.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "120 = 500k, so k = 120 ÷ 500"
+        },
+        {
+          "type": "text",
+          "value": "Result: k = 0.24 (dollars per leaflet)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Substitute n = 750 into C = 0.24n.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "C = 0.24 × 750"
+        },
+        {
+          "type": "text",
+          "value": "Result: C = $180"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Write C = kn, find the cost per leaflet from the given pair, then multiply by 750."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "The cost of printing 750 leaflets is $180"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The constant of variation is simply the price of one leaflet, so direct variation here is the unitary method written algebraically. Because 750 is 1.5 times 500, the cost is 1.5 times $120 — the same answer reached by scaling instead of by finding k."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "adding_120_250_500_to_the_wrong_base_fig",
+      "wrongValue": "incorrect_1",
+      "misconception": "Adding $120 × 250/500 to the wrong base figure.",
+      "correctiveNote": "Avoid this: Adding $120 × 250/500 to the wrong base figure."
+    },
+    {
+      "key": "finding_k_as_500_120_rather_than_120_500",
+      "wrongValue": "incorrect_2",
+      "misconception": "Finding k as 500 ÷ 120 rather than 120 ÷ 500.",
+      "correctiveNote": "Avoid this: Finding k as 500 ÷ 120 rather than 120 ÷ 500."
+    },
+    {
+      "key": "leaving_the_answer_without_a_dollar_sign",
+      "wrongValue": "incorrect_3",
+      "misconception": "Leaving the answer without a dollar sign or units.",
+      "correctiveNote": "Avoid this: Leaving the answer without a dollar sign or units."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Sanity-check money answers by scale: 750 is one and a half times 500, so the cost should be one and a half times $120."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Thecostofprinting750leafletsis$180",
+    "displayValue": "The cost of printing 750 leaflets is $180",
+    "acceptedForms": [
+      "The cost of printing 750 leaflets is $180",
+      "Thecostofprinting750leafletsis$180"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "The cost of 200 pens is $50. Find the cost of 320 pens at the same rate."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "currency",
+      "canonicalValue": "80.00",
+      "displayValue": "$80",
+      "acceptedForms": [
+        "$80",
+        "$80",
+        "80"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.005
+      },
+      "precision": {
+        "kind": "decimal_places",
+        "value": 2,
+        "required": true
+      },
+      "normalisation": "currency_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "62fc7657-195f-44a1-aa02-9791154965bc",
+      "code": "M1-1.1",
+      "label": "Direct variation"
+    },
+    {
+      "objectiveId": "b0ad2ff1-d4fd-462f-abbb-a9f128201470",
+      "code": "M1-1.1",
+      "label": "Constant of variation"
+    },
+    {
+      "objectiveId": "79ac1a80-c17b-4d26-a027-b108f24e879d",
+      "code": "M1-1.1",
+      "label": "Unitary method"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 4,
+    "pageRef": "p115",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

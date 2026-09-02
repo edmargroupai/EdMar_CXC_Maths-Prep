@@ -1,0 +1,210 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p093-q18",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Factorise the quadratic expression 4x² − 20x + 21 completely."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The x² coefficient is not 1, so look for a pair of numbers that multiply to 4 × 21 and add to −20."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p093_q18.jpg",
+      "altText": "Source visual for edmar-csec-p093-q18 from workbook page 93."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply the coefficient of x² by the constant term.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "4 × 21"
+        },
+        {
+          "type": "text",
+          "value": "Result: 84"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Find two numbers with product 84 and sum −20.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Both must be negative since the product is positive and the sum negative: (−6)(−14) = 84 and −6 − 14 = −20"
+        },
+        {
+          "type": "text",
+          "value": "Result: −6 and −14"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Split the middle term using those two numbers.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "−20x becomes −6x − 14x"
+        },
+        {
+          "type": "text",
+          "value": "Result: 4x² − 6x − 14x + 21"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Factorise the first pair and the second pair, then take out the common bracket.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2x(2x − 3) − 7(2x − 3)"
+        },
+        {
+          "type": "text",
+          "value": "Result: (2x − 3)(2x − 7)"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Expand mentally to check.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "4x² − 14x − 6x + 21"
+        },
+        {
+          "type": "text",
+          "value": "Result: 4x² − 20x + 21 ✓"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Multiply the leading coefficient by the constant, find two numbers with that product whose sum is the middle coefficient, split the middle term and factorise in pairs."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "4x² − 20x + 21 = (2x − 3)(2x − 7)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Any factorisation (px + m)(qx + n) has pq equal to the x² coefficient and mn equal to the constant, so the two middle products mq and np must multiply to (pq)(mn) = ac and add to b. Finding that pair of numbers reverses the expansion exactly. Grouping then simply rebuilds the two brackets that produced them."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "looking_for_numbers_that_multiply_to_21_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Looking for numbers that multiply to 21 instead of to 4 × 21 = 84.",
+      "correctiveNote": "Avoid this: Looking for numbers that multiply to 21 instead of to 4 × 21 = 84."
+    },
+    {
+      "key": "choosing_6_and_14_with_the_wrong_signs_g",
+      "wrongValue": "incorrect_2",
+      "misconception": "Choosing 6 and 14 with the wrong signs, giving +20x.",
+      "correctiveNote": "Avoid this: Choosing 6 and 14 with the wrong signs, giving +20x."
+    },
+    {
+      "key": "stopping_after_splitting_the_middle_term",
+      "wrongValue": "incorrect_3",
+      "misconception": "Stopping after splitting the middle term without grouping.",
+      "correctiveNote": "Avoid this: Stopping after splitting the middle term without grouping."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "After grouping, the two brackets you take out must be identical — if they are not, your split was wrong, so go back and re-check the sign pair rather than pressing on."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "4",
+    "displayValue": "4",
+    "acceptedForms": [
+      "4",
+      "4"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Factorise 4x² − 16x + 15."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(2x−3)(2x−5)",
+      "displayValue": "(2x − 3)(2x − 5)",
+      "acceptedForms": [
+        "(2x − 3)(2x − 5)",
+        "(2x−3)(2x−5)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M3-2.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "11c0444d-af58-4a59-a77f-0d3109bf3c9d",
+      "code": "M3-2.1",
+      "label": "Factorising quadratic trinomials"
+    },
+    {
+      "objectiveId": "9afaee7b-1ef2-4705-a4b6-9987be604976",
+      "code": "M3-2.1",
+      "label": "Splitting the middle term"
+    },
+    {
+      "objectiveId": "afd5ecf5-9587-4ef5-aef2-ac7e35f00bb2",
+      "code": "M3-2.1",
+      "label": "Factorising by grouping"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 18,
+    "pageRef": "p93",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

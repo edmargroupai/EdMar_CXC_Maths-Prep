@@ -1,0 +1,173 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p055-q02",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Make n the subject of the formula m = n − 4."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Four is being subtracted from n, so adding 4 to both sides will release it."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p055_q02.jpg",
+      "altText": "Source visual for edmar-csec-p055-q02 from workbook page 55."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Identify what is being done to n.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "4 is subtracted from n"
+        },
+        {
+          "type": "text",
+          "value": "Result: n − 4"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Add 4 to both sides.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "the inverse of subtracting 4"
+        },
+        {
+          "type": "text",
+          "value": "Result: m + 4 = n"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Write n as the subject.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "reverse the sides"
+        },
+        {
+          "type": "text",
+          "value": "Result: n = m + 4"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Add 4 to both sides to undo the subtraction."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "n = m + 4"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Whatever operation acts on the wanted variable is undone by its inverse applied to both sides, which preserves the equality. Here subtraction of 4 is reversed by addition of 4, leaving n by itself. The rearranged formula is not a different relationship — it is the same relationship expressed with n as the output rather than m."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_n_m_4_by_copying_the_operation_r",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing n = m − 4 by copying the operation rather than inverting it.",
+      "correctiveNote": "Avoid this: Writing n = m − 4 by copying the operation rather than inverting it."
+    },
+    {
+      "key": "moving_the_4_across_without_changing_its",
+      "wrongValue": "incorrect_2",
+      "misconception": "Moving the 4 across without changing its sign.",
+      "correctiveNote": "Avoid this: Moving the 4 across without changing its sign."
+    },
+    {
+      "key": "leaving_the_answer_as_m_4_n_without_stat",
+      "wrongValue": "incorrect_3",
+      "misconception": "Leaving the answer as m + 4 = n without stating n first.",
+      "correctiveNote": "Avoid this: Leaving the answer as m + 4 = n without stating n first."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Test your rearrangement with easy numbers. If n = 10 then m = 6, and m + 4 = 10 recovers n, so the rearrangement is right."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "n=m+4",
+    "displayValue": "n = m + 4",
+    "acceptedForms": [
+      "n = m + 4",
+      "n=m+4"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Make n the subject of m = n − 11."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "n=m+11.",
+      "displayValue": "n = m + 11.",
+      "acceptedForms": [
+        "n = m + 11.",
+        "n=m+11."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "cd40c1bd-3e88-4166-aebd-9eb1d77de32d",
+      "code": "M1-4.1",
+      "label": "Changing the subject of a formula"
+    },
+    {
+      "objectiveId": "f4d57d1c-2a51-4c03-ad29-b70fba908107",
+      "code": "M1-4.1",
+      "label": "Inverse operations"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 2,
+    "pageRef": "p55",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

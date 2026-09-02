@@ -1,0 +1,159 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p092-q08",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Factorise completely: 25a² − 64b²"
+    },
+    {
+      "type": "text",
+      "value": "Think first: Both terms are perfect squares and they are subtracted — use the difference of two squares."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p092_q08.jpg",
+      "altText": "Source visual for edmar-csec-p092-q08 from workbook page 92."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write each term as a square.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "25a² = (5a)² and 64b² = (8b)²"
+        },
+        {
+          "type": "text",
+          "value": "Result: (5a)² − (8b)²"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Apply the difference of two squares.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Here a = 5a and b = 8b"
+        },
+        {
+          "type": "text",
+          "value": "Result: (5a − 8b)(5a + 8b)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Write each term as a square, then apply a² − b² = (a − b)(a + b)."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(5a − 8b)(5a + 8b)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The square root of 25a² is 5a because both the number and the letter are square-rooted. Expanding (5a − 8b)(5a + 8b) cancels the two middle terms and returns 25a² − 64b², which confirms the factorisation."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "square_rooting_only_the_number_and_writi",
+      "wrongValue": "incorrect_1",
+      "misconception": "Square-rooting only the number and writing (5a − 8b²).",
+      "correctiveNote": "Avoid this: Square-rooting only the number and writing (5a − 8b²)."
+    },
+    {
+      "key": "writing_5a_8b_instead_of_two_brackets_wi",
+      "wrongValue": "incorrect_2",
+      "misconception": "Writing (5a − 8b)² instead of two brackets with opposite signs.",
+      "correctiveNote": "Avoid this: Writing (5a − 8b)² instead of two brackets with opposite signs."
+    },
+    {
+      "key": "attempting_to_factorise_25a_64b",
+      "wrongValue": "incorrect_3",
+      "misconception": "Attempting to factorise 25a² + 64b².",
+      "correctiveNote": "Avoid this: Attempting to factorise 25a² + 64b²."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Check that both terms really are perfect squares before using the rule — if either is not, a different method is needed."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "(5a−8b)(5a+8b)",
+    "displayValue": "(5a − 8b)(5a + 8b)",
+    "acceptedForms": [
+      "(5a − 8b)(5a + 8b)",
+      "(5a−8b)(5a+8b)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Factorise 9x² − 49y²."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(3x−7y)(3x+7y)",
+      "displayValue": "(3x − 7y)(3x + 7y)",
+      "acceptedForms": [
+        "(3x − 7y)(3x + 7y)",
+        "(3x−7y)(3x+7y)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M3-2.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "15edaff1-f173-4d59-a328-3a4b1e121a85",
+      "code": "M3-2.1",
+      "label": "Difference of two squares"
+    },
+    {
+      "objectiveId": "e2e4302b-2d9e-4fd7-a271-06ef536610e1",
+      "code": "M3-2.1",
+      "label": "Square roots of algebraic terms"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 8,
+    "pageRef": "p92",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

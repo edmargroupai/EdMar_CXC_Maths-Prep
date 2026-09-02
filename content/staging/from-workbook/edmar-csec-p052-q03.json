@@ -1,0 +1,187 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p052-q03",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Expand and simplify (x + 2)(x + 8)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Look for the pattern: the numbers add to give the x-coefficient and multiply to give the constant."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p052_q03.jpg",
+      "altText": "Source visual for edmar-csec-p052-q03 from workbook page 52."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply the first terms.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x × x"
+        },
+        {
+          "type": "text",
+          "value": "Result: x²"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Multiply the outer and inner pairs.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x × 8 = 8x and 2 × x = 2x"
+        },
+        {
+          "type": "text",
+          "value": "Result: 8x + 2x"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Multiply the last terms.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2 × 8"
+        },
+        {
+          "type": "text",
+          "value": "Result: 16"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Combine the middle terms.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "8x + 2x = 10x"
+        },
+        {
+          "type": "text",
+          "value": "Result: x² + 10x + 16"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Multiply the brackets out term by term and then simplify."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x² + 10x + 16"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Multiplying two linear expressions produces a quadratic because the highest-power product is x × x = x². The two cross-products both contain a single x, so they are like terms and merge into one. That structure — square term, sum term, product term — holds for every expansion of this shape."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "reading_2_8_as_10_and_writing_the_consta",
+      "wrongValue": "incorrect_1",
+      "misconception": "Reading 2 × 8 as 10 and writing the constant as 10.",
+      "correctiveNote": "Avoid this: Reading 2 × 8 as 10 and writing the constant as 10."
+    },
+    {
+      "key": "combining_8x_and_2x_incorrectly_as_16x_b",
+      "wrongValue": "incorrect_2",
+      "misconception": "Combining 8x and 2x incorrectly as 16x by multiplying them.",
+      "correctiveNote": "Avoid this: Combining 8x and 2x incorrectly as 16x by multiplying them."
+    },
+    {
+      "key": "dropping_the_x_term_when_writing_the_ans",
+      "wrongValue": "incorrect_3",
+      "misconception": "Dropping the x² term when writing the answer in order.",
+      "correctiveNote": "Avoid this: Dropping the x² term when writing the answer in order."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Write the answer in descending powers of x every time: x² term, x term, then the number. Examiners expect that order and it makes checking easier."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "x²+10x+16",
+    "displayValue": "x² + 10x + 16",
+    "acceptedForms": [
+      "x² + 10x + 16",
+      "x²+10x+16"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Expand and simplify (x + 3)(x + 7)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "x²+10x+21.",
+      "displayValue": "x² + 10x + 21.",
+      "acceptedForms": [
+        "x² + 10x + 21.",
+        "x²+10x+21."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "a457036b-e25b-4378-a770-58a63c7ee2ed",
+      "code": "M1-4.1",
+      "label": "Expanding a product of two binomials"
+    },
+    {
+      "objectiveId": "a5923736-ece5-4a65-a5e5-2d85bd4c36da",
+      "code": "M1-4.1",
+      "label": "Collecting like terms"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 3,
+    "pageRef": "p52",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

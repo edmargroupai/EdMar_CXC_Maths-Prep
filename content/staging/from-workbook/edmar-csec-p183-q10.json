@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p183-q10",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "OACB is a parallelogram in which OA = a and OB = b. (a) Express the vector OC in terms of a and b. (b) Express the vector AC in terms of a and b."
+    },
+    {
+      "type": "text",
+      "value": "Think first: In a parallelogram, opposite sides are equal and parallel, so they represent the very same vector."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p183_q10.jpg",
+      "altText": "Source visual for edmar-csec-p183-q10 from workbook page 183."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Identify the equal sides.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "In parallelogram OACB, AC is opposite and parallel to OB, so AC represents the same vector as OB"
+        },
+        {
+          "type": "text",
+          "value": "Result: AC = b"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Write the route from O to C through A.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "OC = OA + AC"
+        },
+        {
+          "type": "text",
+          "value": "Result: OC = a + b"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Confirm the diagonal interpretation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "OC is the diagonal from O, and the parallelogram law gives the resultant as the sum of the two sides from O"
+        },
+        {
+          "type": "text",
+          "value": "Result: OC = a + b"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "State AC separately for part b.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "From step 1"
+        },
+        {
+          "type": "text",
+          "value": "Result: AC = b"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Use the parallelogram property to identify AC, then travel from O to C via A."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) OC = a + b  (b) AC = b"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Opposite sides of a parallelogram are equal in length and parallel in direction, and those are precisely the two things a vector records — so opposite sides are literally the same vector, regardless of where they are drawn. That is why AC equals OB, and why the diagonal from the common vertex is the sum of the two sides meeting there: the parallelogram law and the triangle law are the same rule seen from two angles."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_ac_a_b_by_confusing_the_side_ac_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing AC = a + b by confusing the side AC with the diagonal OC.",
+      "correctiveNote": "Avoid this: Writing AC = a + b by confusing the side AC with the diagonal OC."
+    },
+    {
+      "key": "giving_ac_b_by_reversing_the_direction_a",
+      "wrongValue": "incorrect_2",
+      "misconception": "Giving AC = −b by reversing the direction; AC runs the same way as OB.",
+      "correctiveNote": "Avoid this: Giving AC = −b by reversing the direction; AC runs the same way as OB."
+    },
+    {
+      "key": "using_the_other_diagonal_ba_a_b_when_oc_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Using the other diagonal BA = a − b when OC was asked for.",
+      "correctiveNote": "Avoid this: Using the other diagonal BA = a − b when OC was asked for."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Mark the arrows on a parallelogram diagram before writing anything — equal sides must have arrows pointing the same way to represent the same vector."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "OC=a+b",
+    "displayValue": "OC = a + b",
+    "acceptedForms": [
+      "OC = a + b",
+      "OC=a+b"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "In parallelogram OACB with OA = a and OB = b, express BC in terms of a and b."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=a.",
+      "displayValue": "= a.",
+      "acceptedForms": [
+        "= a.",
+        "=a."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "4bd98a09-2f35-4669-a7bb-7e7ca770647c",
+      "code": "M2-5.1",
+      "label": "Parallelogram law of vector addition"
+    },
+    {
+      "objectiveId": "2d615f65-352d-47de-ad83-2e5fab7f96fa",
+      "code": "M2-5.1",
+      "label": "Equal vectors in a parallelogram"
+    },
+    {
+      "objectiveId": "d01f0c08-8afc-49d9-a3a1-f1625dc93666",
+      "code": "M2-5.1",
+      "label": "Route notation"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 10,
+    "pageRef": "p183",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

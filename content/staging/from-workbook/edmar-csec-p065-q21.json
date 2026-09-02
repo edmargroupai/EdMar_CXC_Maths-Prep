@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p065-q21",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Simplify (7x⁴ × 2x³) / (21x²)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The coefficients will not divide exactly, so expect a fraction in the answer."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p065_q21.jpg",
+      "altText": "Source visual for edmar-csec-p065-q21 from workbook page 65."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply the coefficients in the numerator.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "7 × 2 = 14"
+        },
+        {
+          "type": "text",
+          "value": "Result: 14"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Add the indices in the numerator.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x⁴ × x³ = x^(4+3)"
+        },
+        {
+          "type": "text",
+          "value": "Result: 14x⁷"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Simplify the number fraction.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "14/21, dividing both by 7"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2/3"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Subtract the indices.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x⁷ ÷ x² = x^(7−2)"
+        },
+        {
+          "type": "text",
+          "value": "Result: (2/3)x⁵"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Combine the numerator, then simplify the numerical fraction and subtract the indices."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(7x⁴ × 2x³) / (21x²) = (2/3)x⁵, which may also be written 2x⁵/3"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The expression is a single fraction, so it can be split into a number part and an x part that are simplified independently. A coefficient fraction that does not reduce to a whole number is perfectly acceptable as a final answer, provided it is in lowest terms. Reducing 14/21 by their highest common factor of 7 is what puts it there."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "rounding_14_21_to_a_decimal_instead_of_l",
+      "wrongValue": "incorrect_1",
+      "misconception": "Rounding 14/21 to a decimal instead of leaving an exact fraction.",
+      "correctiveNote": "Avoid this: Rounding 14/21 to a decimal instead of leaving an exact fraction."
+    },
+    {
+      "key": "cancelling_the_7_in_the_numerator_with_t",
+      "wrongValue": "incorrect_2",
+      "misconception": "Cancelling the 7 in the numerator with the 21 but forgetting the 2 is still there.",
+      "correctiveNote": "Avoid this: Cancelling the 7 in the numerator with the 21 but forgetting the 2 is still there."
+    },
+    {
+      "key": "multiplying_the_indices_4_and_3",
+      "wrongValue": "incorrect_3",
+      "misconception": "Multiplying the indices 4 and 3.",
+      "correctiveNote": "Avoid this: Multiplying the indices 4 and 3."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Leave coefficient fractions exact and in lowest terms; decimals rarely earn full marks in an algebraic simplification."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "(7x⁴×2x³)/(21x²)=(2/3)x⁵,whichmayalsobewritten2x⁵/3",
+    "displayValue": "(7x⁴ × 2x³) / (21x²) = (2/3)x⁵, which may also be written 2x⁵/3",
+    "acceptedForms": [
+      "(7x⁴ × 2x³) / (21x²) = (2/3)x⁵, which may also be written 2x⁵/3",
+      "(7x⁴×2x³)/(21x²)=(2/3)x⁵,whichmayalsobewritten2x⁵/3"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Simplify (5x⁵ × 3x²) / (10x³)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(3/2)x⁴",
+      "displayValue": "(3/2)x⁴",
+      "acceptedForms": [
+        "(3/2)x⁴",
+        "(3/2)x⁴"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "57136682-1dc5-49e5-ad60-05b97c26dafd",
+      "code": "M1-4.1",
+      "label": "Laws of indices"
+    },
+    {
+      "objectiveId": "b31c87f7-099b-4449-a753-8fb1605aa3ab",
+      "code": "M1-4.1",
+      "label": "Multiplication and division laws"
+    },
+    {
+      "objectiveId": "6c4f9cf8-7d5c-476a-a8f6-342aa170e8de",
+      "code": "M1-4.1",
+      "label": "Simplifying fractions"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 21,
+    "pageRef": "p65",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

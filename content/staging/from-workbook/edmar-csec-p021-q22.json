@@ -1,0 +1,188 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p021-q22",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A sofa costs $120 000 cash. A deposit of 20% is required and the balance is paid in 24 equal monthly instalments. Calculate the value of each instalment."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Find how much is still owing after the deposit before you divide anything by 24."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p021_q22.jpg",
+      "altText": "Source visual for edmar-csec-p021-q22 from workbook page 21."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Calculate the deposit.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "20% of $120 000 = 0.20 x 120 000"
+        },
+        {
+          "type": "text",
+          "value": "Result: $24 000"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Find the balance still to be paid.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "$120 000 - $24 000"
+        },
+        {
+          "type": "text",
+          "value": "Result: $96 000"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Divide the balance by the number of instalments.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "96 000 / 24"
+        },
+        {
+          "type": "text",
+          "value": "Result: $4 000 per month"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Take 20% of $120 000 as the deposit, subtract it to find the balance, then divide the balance equally by 24."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "Each instalment is $4 000."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The deposit reduces the debt immediately, so only the remaining balance is spread over the instalments. Dividing the full cash price by 24 would have the buyer paying for the deposit twice. In this particular scheme no interest is charged, since 24 x $4 000 plus the deposit returns exactly the cash price."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "dividing_120_000_by_24_and_ignoring_the_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Dividing $120 000 by 24 and ignoring the deposit.",
+      "correctiveNote": "Avoid this: Dividing $120 000 by 24 and ignoring the deposit."
+    },
+    {
+      "key": "dividing_the_deposit_rather_than_the_bal",
+      "wrongValue": "incorrect_2",
+      "misconception": "Dividing the deposit rather than the balance.",
+      "correctiveNote": "Avoid this: Dividing the deposit rather than the balance."
+    },
+    {
+      "key": "treating_24_months_as_2_and_dividing_by_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Treating 24 months as 2 and dividing by 2.",
+      "correctiveNote": "Avoid this: Treating 24 months as 2 and dividing by 2."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Underline the word balance. In instalment questions it always means cash price minus deposit, and it is the only figure that gets divided."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Eachinstalmentis$4000.",
+    "displayValue": "Each instalment is $4 000.",
+    "acceptedForms": [
+      "Each instalment is $4 000.",
+      "Eachinstalmentis$4000."
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A fridge costs $60 000 cash with a 25% deposit and 15 equal monthly instalments. Find each instalment."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "currency",
+      "canonicalValue": "3.00",
+      "displayValue": "$3",
+      "acceptedForms": [
+        "$3",
+        "$3",
+        "3"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.005
+      },
+      "precision": {
+        "kind": "decimal_places",
+        "value": 2,
+        "required": true
+      },
+      "normalisation": "currency_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-3.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "39488cc8-04dd-4560-a1ad-f5db6eaadcdf",
+      "code": "M1-3.1",
+      "label": "Hire purchase"
+    },
+    {
+      "objectiveId": "573cc1d7-de3a-450c-ac6e-1a020dc97e95",
+      "code": "M1-3.1",
+      "label": "Percentage of a quantity"
+    },
+    {
+      "objectiveId": "43d7c819-d7c5-48d5-a80a-a44de49f6c29",
+      "code": "M1-3.1",
+      "label": "Instalments"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 22,
+    "pageRef": "p21",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

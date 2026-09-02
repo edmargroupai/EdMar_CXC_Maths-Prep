@@ -1,0 +1,221 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p268-q02",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 4,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "In triangle MNP (not drawn to scale), angle MPN = angle PMN = 52 degrees and MN = 12.5 cm. (i) State the type of triangle. (ii) Determine the size of angle PNM."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Two equal angles in a triangle tell you something about its sides straight away, and the third angle then comes from the angle sum."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p268_q02.jpg",
+      "altText": "Source visual for edmar-csec-p268-q02 from workbook page 268."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Compare the two given angles.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "angle MPN = angle PMN = 52 degrees, so two angles of the triangle are equal."
+        },
+        {
+          "type": "text",
+          "value": "Result: Two equal angles"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Name the triangle from that property.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "A triangle with two equal angles has the two sides opposite them equal, so NP = NM."
+        },
+        {
+          "type": "text",
+          "value": "Result: The triangle is isosceles"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Use the angle sum of a triangle to find the third angle.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "angle PNM = 180 - 52 - 52"
+        },
+        {
+          "type": "text",
+          "value": "Result: angle PNM = 76 degrees"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Recognise the two equal base angles to name the triangle, then subtract their total from 180 degrees to get the remaining angle."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) An isosceles triangle.  (ii) angle PNM = 76 degrees."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The base angles of an isosceles triangle are equal, and the converse holds too: equal angles force the sides opposite them to be equal. Since the three interior angles of any triangle always add to 180 degrees, knowing two of them determines the third exactly, with no need for the given length of 12.5 cm."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "calling_the_triangle_equilateral_because",
+      "wrongValue": "incorrect_1",
+      "misconception": "Calling the triangle equilateral because two angles match.",
+      "correctiveNote": "Avoid this: Calling the triangle equilateral because two angles match."
+    },
+    {
+      "key": "dividing_180_by_3_instead_of_subtracting",
+      "wrongValue": "incorrect_2",
+      "misconception": "Dividing 180 by 3 instead of subtracting the two known angles.",
+      "correctiveNote": "Avoid this: Dividing 180 by 3 instead of subtracting the two known angles."
+    },
+    {
+      "key": "trying_to_use_the_12_5_cm_in_a_trigonome",
+      "wrongValue": "incorrect_3",
+      "misconception": "Trying to use the 12.5 cm in a trigonometric calculation when it is not needed for either part.",
+      "correctiveNote": "Avoid this: Trying to use the 12.5 cm in a trigonometric calculation when it is not needed for either part."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Not every number in a question is needed for every part. Ask what each part actually requires before reaching for a formula."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Anisoscelestriangle.",
+    "displayValue": "An isosceles triangle.",
+    "acceptedForms": [
+      "An isosceles triangle.",
+      "Anisoscelestriangle."
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A triangle has two angles of 40 degrees each. What is its third angle, and what type of triangle is it?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "100",
+      "displayValue": "100",
+      "acceptedForms": [
+        "100",
+        "100"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "ce138d43-ed5c-49c4-abcb-5b895546b511",
+      "code": "M1-1.1",
+      "label": "Isosceles triangle properties"
+    },
+    {
+      "objectiveId": "cabc34de-c317-46e3-a780-95c9e63a8a9d",
+      "code": "M1-1.1",
+      "label": "Angle sum of a triangle"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 2,
+    "pageRef": "p268",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a.i",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.i): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Anisoscelestriangle.",
+        "displayValue": "An isosceles triangle.",
+        "acceptedForms": [
+          "An isosceles triangle.",
+          "Anisoscelestriangle."
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.ii",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.ii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "anglePNM=76degrees.",
+        "displayValue": "angle PNM = 76 degrees.",
+        "acceptedForms": [
+          "angle PNM = 76 degrees.",
+          "anglePNM=76degrees."
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

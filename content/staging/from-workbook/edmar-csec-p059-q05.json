@@ -1,0 +1,158 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p059-q05",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the inequality x/3 ≥ 4."
+    },
+    {
+      "type": "text",
+      "value": "Think first: x has been divided by 3, so multiply both sides by 3 to free it."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p059_q05.jpg",
+      "altText": "Source visual for edmar-csec-p059-q05 from workbook page 59."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply both sides by 3 to clear the denominator.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3 × x/3 = x, and 3 × 4 = 12"
+        },
+        {
+          "type": "text",
+          "value": "Result: x ≥ 12"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Check the boundary value in the original inequality.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x = 12 gives 12/3 = 4, and 4 ≥ 4 is true"
+        },
+        {
+          "type": "text",
+          "value": "Result: x ≥ 12 confirmed"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Multiply both sides by 3."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x ≥ 12"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Multiplying by 3 undoes the division by 3, and because 3 is positive the ≥ sign stays as it is. Every number from 12 upwards works: x = 12 gives 4 ≥ 4, which is true, and anything larger gives a value greater than 4."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "dividing_by_3_instead_of_multiplying_giv",
+      "wrongValue": "incorrect_1",
+      "misconception": "Dividing by 3 instead of multiplying, giving x ≥ 4/3.",
+      "correctiveNote": "Avoid this: Dividing by 3 instead of multiplying, giving x ≥ 4/3."
+    },
+    {
+      "key": "flipping_the_sign_to_x_12",
+      "wrongValue": "incorrect_2",
+      "misconception": "Flipping the sign to x ≤ 12.",
+      "correctiveNote": "Avoid this: Flipping the sign to x ≤ 12."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Multiply by the denominator to clear a fraction - and remember it must multiply the whole of the other side too."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "≥12",
+    "displayValue": "≥ 12",
+    "acceptedForms": [
+      "≥ 12",
+      "≥12"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve x/5 ≥ 2."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "≥10",
+      "displayValue": "≥ 10",
+      "acceptedForms": [
+        "≥ 10",
+        "≥10"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "a0b00522-26b2-4df0-ae45-38232e70a299",
+      "code": "M1-4.1",
+      "label": "Linear inequalities"
+    },
+    {
+      "objectiveId": "519f3c77-526d-4135-a6b1-b8af58efbe4a",
+      "code": "M1-4.1",
+      "label": "Inverse operations"
+    },
+    {
+      "objectiveId": "9ad55aa1-2cd8-49ec-a8d6-1322d166efe1",
+      "code": "M1-4.1",
+      "label": "Fractions"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 5,
+    "pageRef": "p59",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

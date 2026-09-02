@@ -1,0 +1,338 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p286-q09",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 5,
+  "status": "draft",
+  "marks": 10,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "In the diagram O, M and N lie on a straight line with M the midpoint of ON, and P is a point above the line with OP = r and PM = s. (a)(i) Sketch the diagram and insert X on OM such that OX = (1/3)OM. (ii) Produce PX to Q such that PX = 4XQ. (b) Write in terms of r and s: (i) OM, (ii) PX, (iii) QM. (c) Show that PN = 2PM + OP."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Only two vectors are given, r along OP and s along PM, so build the position vector of every other point out of those two before answering anything."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p286_q09.jpg",
+      "altText": "Source visual for edmar-csec-p286-q09 from workbook page 286."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "For the sketch, mark X on OM one third of the way from O to M, and extend the line from P through X to Q so that XQ is a quarter of PX.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "OX : XM = 1 : 2, and Q lies beyond X on the same straight line as P and X"
+        },
+        {
+          "type": "text",
+          "value": "Result: X and Q correctly placed on the sketch"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Travel from O to M through P.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "OM = OP + PM = r + s"
+        },
+        {
+          "type": "text",
+          "value": "Result: OM = r + s"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Find OX, then PX by going P → O → X.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "OX = (1/3)(r + s); PX = PO + OX = −r + (1/3)r + (1/3)s"
+        },
+        {
+          "type": "text",
+          "value": "Result: PX = (1/3)s − (2/3)r = (1/3)(s − 2r)"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Find XQ as a quarter of PX, then add it to OX to reach Q.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "XQ = (1/4)PX = (1/12)s − (1/6)r; OQ = (1/3)r + (1/3)s − (1/6)r + (1/12)s"
+        },
+        {
+          "type": "text",
+          "value": "Result: OQ = (1/6)r + (5/12)s"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Subtract OQ from OM to obtain QM.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "QM = (r + s) − ((1/6)r + (5/12)s)"
+        },
+        {
+          "type": "text",
+          "value": "Result: QM = (5/6)r + (7/12)s = (1/12)(10r + 7s)"
+        }
+      ]
+    },
+    {
+      "stepNo": 6,
+      "instruction": "For part (c), use the fact that M is the midpoint of ON, so MN = OM = r + s.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "PN = PM + MN = s + (r + s) = r + 2s, while 2PM + OP = 2s + r"
+        },
+        {
+          "type": "text",
+          "value": "Result: PN = r + 2s = 2PM + OP, as required"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Get OM = r + s from the route O → P → M, place X one third of the way along OM, extend PX by a quarter of its length to reach Q, and use MN = OM to prove the result in (c)."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(b)(i) OM = r + s  (ii) PX = (1/3)(s − 2r) = (1/3)s − (2/3)r  (iii) QM = (5/6)r + (7/12)s = (1/12)(10r + 7s)  (c) PN = PM + MN = s + (r + s) = r + 2s, and 2PM + OP = 2s + r, so PN = 2PM + OP."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Because M is the midpoint of ON, the vector MN is identical to OM — same length, same direction — which is what makes part (c) collapse so neatly. Everything else is built by nose-to-tail addition: a route from one point to another can pass through any points whose vectors you already know, and the middle letters cancel. Splitting a segment in a ratio just means taking that fraction of the whole vector, and 'producing' a line means continuing in the same direction, so XQ keeps the direction of PX."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "treating_om_as_r_or_as_s_alone_instead_o",
+      "wrongValue": "incorrect_1",
+      "misconception": "Treating OM as r or as s alone instead of the sum r + s.",
+      "correctiveNote": "Avoid this: Treating OM as r or as s alone instead of the sum r + s."
+    },
+    {
+      "key": "reading_px_4xq_as_xq_4px_and_stretching_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Reading PX = 4XQ as XQ = 4PX and stretching the line the wrong way.",
+      "correctiveNote": "Avoid this: Reading PX = 4XQ as XQ = 4PX and stretching the line the wrong way."
+    },
+    {
+      "key": "writing_mn_as_om_m_is_the_midpoint_of_on",
+      "wrongValue": "incorrect_3",
+      "misconception": "Writing MN as −OM; M is the midpoint of ON, so MN points the same way as OM.",
+      "correctiveNote": "Avoid this: Writing MN as −OM; M is the midpoint of ON, so MN points the same way as OM."
+    },
+    {
+      "key": "slipping_on_the_fraction_arithmetic_in_q",
+      "wrongValue": "incorrect_4",
+      "misconception": "Slipping on the fraction arithmetic in QM — keep a common denominator of 12.",
+      "correctiveNote": "Avoid this: Slipping on the fraction arithmetic in QM — keep a common denominator of 12."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When a question later says 'show that', work out both sides independently and finish by writing that they are equal — do not start by assuming the result."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "OM=r+s",
+    "displayValue": "OM = r + s",
+    "acceptedForms": [
+      "OM = r + s",
+      "OM=r+s"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "M is the midpoint of ON and OM = a + b. Write ON in terms of a and b."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "ON=2(a+b)=2a+2b",
+      "displayValue": "ON = 2(a + b) = 2a + 2b",
+      "acceptedForms": [
+        "ON = 2(a + b) = 2a + 2b",
+        "ON=2(a+b)=2a+2b"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "f7103058-f458-47ba-a409-45865e04b978",
+      "code": "M2-5.1",
+      "label": "Vector addition and the triangle law"
+    },
+    {
+      "objectiveId": "81b7a935-fd1a-47d9-ac0d-bee29a2bd540",
+      "code": "M2-5.1",
+      "label": "Midpoint of a line segment"
+    },
+    {
+      "objectiveId": "ca8de2f1-de39-41c8-a98d-abdbc0970e51",
+      "code": "M2-5.1",
+      "label": "Dividing and extending a line in a given ratio"
+    },
+    {
+      "objectiveId": "54b39cca-75e9-4ea8-a241-90bc230cd23e",
+      "code": "M2-5.1",
+      "label": "Position vectors"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 9,
+    "pageRef": "p286",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "OM=r+s",
+        "displayValue": "OM = r + s",
+        "acceptedForms": [
+          "OM = r + s",
+          "OM=r+s"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.i",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.i): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "OM=r+s",
+        "displayValue": "OM = r + s",
+        "acceptedForms": [
+          "OM = r + s",
+          "OM=r+s"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.ii",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.ii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "P",
+        "displayValue": "P",
+        "acceptedForms": [
+          "P",
+          "P"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 4,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "QM=(5/6)r+(7/12)s=(1/12)(10r+7s)",
+        "displayValue": "QM = (5/6)r + (7/12)s = (1/12)(10r + 7s)",
+        "acceptedForms": [
+          "QM = (5/6)r + (7/12)s = (1/12)(10r + 7s)",
+          "QM=(5/6)r+(7/12)s=(1/12)(10r+7s)"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.iii",
+      "sequence": 5,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.iii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "QM=(5/6)r+(7/12)s=(1/12)(10r+7s)",
+        "displayValue": "QM = (5/6)r + (7/12)s = (1/12)(10r + 7s)",
+        "acceptedForms": [
+          "QM = (5/6)r + (7/12)s = (1/12)(10r + 7s)",
+          "QM=(5/6)r+(7/12)s=(1/12)(10r+7s)"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

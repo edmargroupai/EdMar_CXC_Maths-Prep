@@ -1,0 +1,271 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p123-q09",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 6,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The equation of a line is 4x − 2y = 10. (a) Express the equation in the form y = mx + c. (b) State the gradient. (c) Determine the x-intercept and the y-intercept."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Rearranging to make y the subject exposes both the gradient and the y-intercept at once."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p123_q09.jpg",
+      "altText": "Source visual for edmar-csec-p123-q09 from workbook page 123."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Move the x term to the right-hand side.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "4x − 2y = 10 becomes −2y = 10 − 4x"
+        },
+        {
+          "type": "text",
+          "value": "Result: −2y = 10 − 4x"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Divide every term by −2.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "y = 10/(−2) − 4x/(−2)"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 2x − 5"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Read the gradient from y = mx + c.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The coefficient of x"
+        },
+        {
+          "type": "text",
+          "value": "Result: Gradient = 2"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Read the y-intercept from the constant term.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "c = −5"
+        },
+        {
+          "type": "text",
+          "value": "Result: y-intercept = −5, at (0, −5)"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Set y = 0 to find the x-intercept.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "0 = 2x − 5, so 2x = 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: x-intercept = 2.5, at (2.5, 0)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Make y the subject of 4x − 2y = 10, read m and c from the result, then set y = 0 to find the x-intercept."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) y = 2x − 5  (b) Gradient = 2  (c) x-intercept = 2.5 at (2.5, 0); y-intercept = −5 at (0, −5)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The form y = mx + c is useful precisely because m and c can be read directly, so any linear equation is worth rearranging before answering questions about slope or intercepts. Dividing by a negative number flips the sign of every term, which is where the gradient turns out positive even though the original equation shows −2y."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "dividing_only_some_terms_by_2_leaving_y_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Dividing only some terms by −2, leaving y = 10 − 2x.",
+      "correctiveNote": "Avoid this: Dividing only some terms by −2, leaving y = 10 − 2x."
+    },
+    {
+      "key": "reading_the_gradient_as_4_straight_from_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Reading the gradient as 4 straight from 4x − 2y = 10.",
+      "correctiveNote": "Avoid this: Reading the gradient as 4 straight from 4x − 2y = 10."
+    },
+    {
+      "key": "swapping_the_two_intercepts_in_the_final",
+      "wrongValue": "incorrect_3",
+      "misconception": "Swapping the two intercepts in the final answer.",
+      "correctiveNote": "Avoid this: Swapping the two intercepts in the final answer."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "After dividing through by a negative, check one term's sign against the original equation before moving on."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "y=2",
+    "displayValue": "y = 2",
+    "acceptedForms": [
+      "y = 2",
+      "y=2"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Write 6x − 3y = 9 in the form y = mx + c and state its gradient."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "y=2x−3;gradient=2",
+      "displayValue": "y = 2x − 3; gradient = 2",
+      "acceptedForms": [
+        "y = 2x − 3; gradient = 2",
+        "y=2x−3;gradient=2"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-3.2"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "faaeee27-103a-438c-a234-3cb218ce5842",
+      "code": "M1-3.2",
+      "label": "Rearranging linear equations"
+    },
+    {
+      "objectiveId": "ee079263-e0b2-4dc1-a04f-75e8e2f4af38",
+      "code": "M1-3.2",
+      "label": "Gradient-intercept form"
+    },
+    {
+      "objectiveId": "cda119aa-9329-4e70-a954-0d5eb7e9106d",
+      "code": "M1-3.2",
+      "label": "Intercepts of a line"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 9,
+    "pageRef": "p123",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "y=2",
+        "displayValue": "y = 2",
+        "acceptedForms": [
+          "y = 2",
+          "y=2"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Gradient=2",
+        "displayValue": "Gradient = 2",
+        "acceptedForms": [
+          "Gradient = 2",
+          "Gradient=2"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "c",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (c): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "x-intercept=2.5at(2.5,0);y-intercept=−5at(0,−5)",
+        "displayValue": "x-intercept = 2.5 at (2.5, 0); y-intercept = −5 at (0, −5)",
+        "acceptedForms": [
+          "x-intercept = 2.5 at (2.5, 0); y-intercept = −5 at (0, −5)",
+          "x-intercept=2.5at(2.5,0);y-intercept=−5at(0,−5)"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

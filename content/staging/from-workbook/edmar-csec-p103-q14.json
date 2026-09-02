@@ -1,0 +1,206 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p103-q14",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve 2x² − 12x + 7 = 0 by completing the square."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Divide through by 2 first so the x² term stands alone — completing the square is much cleaner that way."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p103_q14.jpg",
+      "altText": "Source visual for edmar-csec-p103-q14 from workbook page 103."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Divide every term by 2.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2x² − 12x + 7 = 0 becomes x² − 6x + 3.5 = 0"
+        },
+        {
+          "type": "text",
+          "value": "Result: x² − 6x + 3.5 = 0"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Complete the square on x² − 6x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "half of −6 is −3, and (−3)² = 9"
+        },
+        {
+          "type": "text",
+          "value": "Result: (x − 3)² − 9 + 3.5 = 0"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Combine the constants and isolate the square.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "−9 + 3.5 = −5.5"
+        },
+        {
+          "type": "text",
+          "value": "Result: (x − 3)² = 5.5"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Take the square root of both sides, keeping both signs.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "√5.5 ≈ 2.345"
+        },
+        {
+          "type": "text",
+          "value": "Result: x − 3 = ±2.345"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Add 3 to both sides.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3 + 2.345 and 3 − 2.345"
+        },
+        {
+          "type": "text",
+          "value": "Result: x ≈ 5.35 or x ≈ 0.65"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Divide the whole equation by 2, complete the square, isolate it, then square-root both sides with a ±."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = 3 + √5.5 ≈ 5.35 or x = 3 − √5.5 ≈ 0.65 (2 d.p.)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The method only produces a perfect square when the x² coefficient is 1, so dividing through by 2 is the enabling first move; dividing an equation by a non-zero number does not change its roots. After that the equation reduces to (x − 3)² = 5.5, which two values of x satisfy — one above 3 and one an equal distance below it. That symmetry about x = 3 is the axis of symmetry of the parabola."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "dividing_only_the_x_terms_by_2_and_leavi",
+      "wrongValue": "incorrect_1",
+      "misconception": "Dividing only the x-terms by 2 and leaving the 7 untouched.",
+      "correctiveNote": "Avoid this: Dividing only the x-terms by 2 and leaving the 7 untouched."
+    },
+    {
+      "key": "rounding_5_5_too_early_and_losing_accura",
+      "wrongValue": "incorrect_2",
+      "misconception": "Rounding √5.5 too early and losing accuracy in the final answers.",
+      "correctiveNote": "Avoid this: Rounding √5.5 too early and losing accuracy in the final answers."
+    },
+    {
+      "key": "writing_x_3_5_5_instead_of_taking_the_sq",
+      "wrongValue": "incorrect_3",
+      "misconception": "Writing x = 3 ± 5.5 instead of taking the square root first.",
+      "correctiveNote": "Avoid this: Writing x = 3 ± 5.5 instead of taking the square root first."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Keep the surd exact until the very last line, then round once — rounding mid-working is a common source of lost accuracy marks."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=3+√5.5≈5.35",
+    "displayValue": "= 3 + √5.5 ≈ 5.35",
+    "acceptedForms": [
+      "= 3 + √5.5 ≈ 5.35",
+      "=3+√5.5≈5.35"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve 2x² − 8x + 3 = 0 by completing the square, giving answers to 2 decimal places."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "−2)²=2.5,sox≈3.58",
+      "displayValue": "− 2)² = 2.5, so x ≈ 3.58",
+      "acceptedForms": [
+        "− 2)² = 2.5, so x ≈ 3.58",
+        "−2)²=2.5,sox≈3.58"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "17285007-0e1a-40c0-a46e-c3648a1b8153",
+      "code": "M1-5.1",
+      "label": "Completing the square"
+    },
+    {
+      "objectiveId": "b1bfd9cd-c192-4c5c-a694-51a8b352c756",
+      "code": "M1-5.1",
+      "label": "Solving quadratic equations"
+    },
+    {
+      "objectiveId": "3a8d527b-6c5b-4958-a035-aa0a6fc51702",
+      "code": "M1-5.1",
+      "label": "Surds and decimal approximation"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 14,
+    "pageRef": "p103",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

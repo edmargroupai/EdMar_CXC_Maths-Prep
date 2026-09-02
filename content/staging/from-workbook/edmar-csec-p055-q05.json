@@ -1,0 +1,178 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p055-q05",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Make r the subject of the formula C = 2πr."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Both the 2 and the π are multiplying r, so treat 2π as a single quantity to divide by."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p055_q05.jpg",
+      "altText": "Source visual for edmar-csec-p055-q05 from workbook page 55."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Identify what is multiplying r.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "the factor 2π"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2π"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Divide both sides by 2π.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2πr ÷ 2π = r"
+        },
+        {
+          "type": "text",
+          "value": "Result: C/(2π) = r"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Write r as the subject.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "reverse the sides"
+        },
+        {
+          "type": "text",
+          "value": "Result: r = C/(2π)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Divide both sides by 2π to isolate r."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "r = C/(2π)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "π is a fixed number, so 2π is just a constant multiplier of r and can be divided out in one step. Dividing both sides by that whole factor keeps the equation balanced and leaves r alone. The rearranged formula is genuinely useful: it lets you find a circle's radius directly from a measured circumference."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "dividing_by_2_only_and_writing_r_c_2_for",
+      "wrongValue": "incorrect_1",
+      "misconception": "Dividing by 2 only and writing r = C/2, forgetting that π also multiplies r.",
+      "correctiveNote": "Avoid this: Dividing by 2 only and writing r = C/2, forgetting that π also multiplies r."
+    },
+    {
+      "key": "writing_r_2_c_by_inverting_the_fraction",
+      "wrongValue": "incorrect_2",
+      "misconception": "Writing r = 2π/C by inverting the fraction.",
+      "correctiveNote": "Avoid this: Writing r = 2π/C by inverting the fraction."
+    },
+    {
+      "key": "substituting_a_numerical_value_for_when_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Substituting a numerical value for π when the answer should stay exact.",
+      "correctiveNote": "Avoid this: Substituting a numerical value for π when the answer should stay exact."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When several constants multiply the wanted letter, divide by their product in a single step. Splitting it into two divisions doubles the chance of dropping a factor."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "r=C/(2π)",
+    "displayValue": "r = C/(2π)",
+    "acceptedForms": [
+      "r = C/(2π)",
+      "r=C/(2π)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Make r the subject of A = πr² for positive r."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "r²=A/π,sor=√(A/π).",
+      "displayValue": "r² = A/π, so r = √(A/π).",
+      "acceptedForms": [
+        "r² = A/π, so r = √(A/π).",
+        "r²=A/π,sor=√(A/π)."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "84c837f2-b8df-44f3-aaf5-db8152144a5a",
+      "code": "M1-4.1",
+      "label": "Changing the subject of a formula"
+    },
+    {
+      "objectiveId": "9e10afc4-ca61-4014-a52c-a2996b733853",
+      "code": "M1-4.1",
+      "label": "Inverse operations"
+    },
+    {
+      "objectiveId": "9cc6c64f-cf32-485f-a456-5e5c68d5b290",
+      "code": "M1-4.1",
+      "label": "Circumference of a circle"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 5,
+    "pageRef": "p55",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

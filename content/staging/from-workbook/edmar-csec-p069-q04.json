@@ -1,0 +1,178 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p069-q04",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Determine, algebraically, the x-intercept and the y-intercept of the line y = 3x − 1."
+    },
+    {
+      "type": "text",
+      "value": "Think first: An intercept is where one of the coordinates is zero, so set each coordinate to zero in turn."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p069_q04.jpg",
+      "altText": "Source visual for edmar-csec-p069-q04 from workbook page 69."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Set x = 0 to find the y-intercept.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "y = 3(0) − 1"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = −1, so (0, −1)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Set y = 0 to find the x-intercept.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "0 = 3x − 1"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3x = 1"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Solve for x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x = 1 ÷ 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 1/3, so (1/3, 0)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Put x = 0 to find the y-intercept and y = 0 to find the x-intercept, solving the resulting equation each time."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "y-intercept: (0, −1). x-intercept: (1/3, 0)."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Every point on the y-axis has x = 0, and every point on the x-axis has y = 0. Substituting those values turns the two-variable equation into a simple one-variable equation whose solution is the missing coordinate. This is why intercepts can always be found without drawing anything."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "swapping_the_two_substitutions_and_setti",
+      "wrongValue": "incorrect_1",
+      "misconception": "Swapping the two substitutions and setting y = 0 to find the y-intercept.",
+      "correctiveNote": "Avoid this: Swapping the two substitutions and setting y = 0 to find the y-intercept."
+    },
+    {
+      "key": "giving_the_intercepts_as_single_numbers_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Giving the intercepts as single numbers rather than coordinates.",
+      "correctiveNote": "Avoid this: Giving the intercepts as single numbers rather than coordinates."
+    },
+    {
+      "key": "writing_x_3_by_dividing_the_wrong_way_ro",
+      "wrongValue": "incorrect_3",
+      "misconception": "Writing x = 3 by dividing the wrong way round in 3x = 1.",
+      "correctiveNote": "Avoid this: Writing x = 3 by dividing the wrong way round in 3x = 1."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Say it as you write it: on the y-axis x is zero, on the x-axis y is zero. That sentence prevents the most common intercept error."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "y-intercept:(0,−1).x-intercept:(1/3,0).",
+    "displayValue": "y-intercept: (0, −1). x-intercept: (1/3, 0).",
+    "acceptedForms": [
+      "y-intercept: (0, −1). x-intercept: (1/3, 0).",
+      "y-intercept:(0,−1).x-intercept:(1/3,0)."
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Find the intercepts of y = 2x + 6."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "y-intercept(0,6);x-intercept(−3,0)",
+      "displayValue": "y-intercept (0, 6); x-intercept (−3, 0)",
+      "acceptedForms": [
+        "y-intercept (0, 6); x-intercept (−3, 0)",
+        "y-intercept(0,6);x-intercept(−3,0)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "438f03d7-ffc6-438b-ad6d-c1f5dcfb1333",
+      "code": "M1-1.1",
+      "label": "Intercepts of a straight line"
+    },
+    {
+      "objectiveId": "6ddf9829-5e53-411c-a787-694360b76c25",
+      "code": "M1-1.1",
+      "label": "Solving linear equations"
+    },
+    {
+      "objectiveId": "068c659e-e333-4307-ac98-6a2f4edec77b",
+      "code": "M1-1.1",
+      "label": "Coordinates"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 4,
+    "pageRef": "p69",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

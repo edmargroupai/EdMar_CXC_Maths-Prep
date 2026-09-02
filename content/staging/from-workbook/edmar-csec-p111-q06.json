@@ -1,0 +1,206 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p111-q06",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the simultaneous equations x + y = 6 and xy = 8."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Substitute from the linear equation into the product equation to get a quadratic in one variable."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p111_q06.jpg",
+      "altText": "Source visual for edmar-csec-p111-q06 from workbook page 111."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Make y the subject of the linear equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "from x + y = 6"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 6 − x"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Substitute into xy = 8.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x(6 − x) = 8"
+        },
+        {
+          "type": "text",
+          "value": "Result: 6x − x² = 8"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Rearrange into standard quadratic form.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "bring all terms to the right-hand side"
+        },
+        {
+          "type": "text",
+          "value": "Result: x² − 6x + 8 = 0"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Factorise and solve.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(x − 2)(x − 4) = 0"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 2 or x = 4"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Find the matching y-values.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "y = 6 − 2 = 4; y = 6 − 4 = 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: (2, 4) and (4, 2)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Write y = 6 − x, substitute into xy = 8, rearrange to standard form, factorise and pair the roots."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = 2, y = 4 or x = 4, y = 2"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Knowing a sum and a product of two numbers is exactly the information a quadratic encodes: the numbers are the roots of t² − (sum)t + (product) = 0, which is why x² − 6x + 8 = 0 appears here so directly. The two solutions are the same pair of numbers with the labels swapped, which is typical when the system is symmetric in x and y."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "assuming_x_y_because_the_equations_look_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Assuming x = y because the equations look symmetric.",
+      "correctiveNote": "Avoid this: Assuming x = y because the equations look symmetric."
+    },
+    {
+      "key": "writing_x_6x_8_0_through_a_sign_slip_whe",
+      "wrongValue": "incorrect_2",
+      "misconception": "Writing x² + 6x + 8 = 0 through a sign slip when rearranging.",
+      "correctiveNote": "Avoid this: Writing x² + 6x + 8 = 0 through a sign slip when rearranging."
+    },
+    {
+      "key": "reporting_only_one_of_the_two_ordered_pa",
+      "wrongValue": "incorrect_3",
+      "misconception": "Reporting only one of the two ordered pairs.",
+      "correctiveNote": "Avoid this: Reporting only one of the two ordered pairs."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "If a system gives you a sum and a product, you can write the quadratic down immediately as t² − (sum)t + (product) = 0."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=2,y=4",
+    "displayValue": "= 2, y = 4",
+    "acceptedForms": [
+      "= 2, y = 4",
+      "=2,y=4"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve x + y = 9 and xy = 20."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(4,5)and(5,4)",
+      "displayValue": "(4, 5) and (5, 4)",
+      "acceptedForms": [
+        "(4, 5) and (5, 4)",
+        "(4,5)and(5,4)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-6.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "9426080c-288a-4828-a9c0-03a6ecf8736c",
+      "code": "M1-6.1",
+      "label": "Simultaneous equations, one linear and one non-linear"
+    },
+    {
+      "objectiveId": "e01ef84d-a46a-4b5b-a2ac-39af7e52319c",
+      "code": "M1-6.1",
+      "label": "Substitution method"
+    },
+    {
+      "objectiveId": "671ec12a-f3bb-4d0f-a995-7bc45742cae4",
+      "code": "M1-6.1",
+      "label": "Factorising a quadratic"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 6,
+    "pageRef": "p111",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

@@ -1,0 +1,186 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p017-q05",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "$25 000 is invested at 8% per annum simple interest. Calculate how long it will take to earn $6 000 interest."
+    },
+    {
+      "type": "text",
+      "value": "Think first: This time the unknown is the time, so find one year's interest and see how many of them are needed."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p017_q05.jpg",
+      "altText": "Source visual for edmar-csec-p017-q05 from workbook page 17."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Find one year's interest.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "8% of $25 000 = 25000 × 8/100"
+        },
+        {
+          "type": "text",
+          "value": "Result: $2000 per year"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Set up the equation for T years.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2000T = 6000"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2000T = 6000"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Solve for T.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "T = 6000 ÷ 2000"
+        },
+        {
+          "type": "text",
+          "value": "Result: T = 3"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Work out the interest earned in one year, then divide the target interest by that annual figure."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "3 years"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Because simple interest adds the same amount each year, the total interest is just the annual interest multiplied by the number of years — a straight-line relationship. Finding the annual interest first turns the formula into a single division and makes the answer easy to interpret: three helpings of $2 000."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "dividing_6_000_by_8_or_by_25_000_instead",
+      "wrongValue": "incorrect_1",
+      "misconception": "Dividing $6 000 by 8 or by $25 000 instead of by the annual interest.",
+      "correctiveNote": "Avoid this: Dividing $6 000 by 8 or by $25 000 instead of by the annual interest."
+    },
+    {
+      "key": "giving_the_answer_in_months_without_sayi",
+      "wrongValue": "incorrect_2",
+      "misconception": "Giving the answer in months without saying so.",
+      "correctiveNote": "Avoid this: Giving the answer in months without saying so."
+    },
+    {
+      "key": "using_compound_interest_which_would_reac",
+      "wrongValue": "incorrect_3",
+      "misconception": "Using compound interest, which would reach $6 000 sooner and give a non-whole answer.",
+      "correctiveNote": "Avoid this: Using compound interest, which would reach $6 000 sooner and give a non-whole answer."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "For time or rate questions, always compute one year's interest first — it converts the formula into a single division you can check mentally."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "3",
+    "displayValue": "3",
+    "acceptedForms": [
+      "3",
+      "3"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "$10 000 is invested at 5% per annum simple interest. How long to earn $2 000 interest?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "4",
+      "displayValue": "4",
+      "acceptedForms": [
+        "4",
+        "4"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "a7bb180b-3381-428a-a58f-59ef64013cdc",
+      "code": "M1-1.1",
+      "label": "Simple interest"
+    },
+    {
+      "objectiveId": "ccc657b2-d21a-43b0-a8c2-ac78b0d39e49",
+      "code": "M1-1.1",
+      "label": "Rearranging a formula"
+    },
+    {
+      "objectiveId": "2198aaa0-0fa4-486c-a0b4-9292792edcde",
+      "code": "M1-1.1",
+      "label": "Rate and time"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 5,
+    "pageRef": "p17",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

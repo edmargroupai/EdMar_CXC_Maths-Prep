@@ -1,0 +1,211 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p158-q14",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 5,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Using a ruler, a pencil and a pair of compasses, construct the trapezium ABCD with AB = 8 cm, ∠BAD = 60°, AD = 6 cm, ∠ABC = 90° and AB parallel to CD. Credit is given for clearly drawn construction lines."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Build the two given angles on the fixed side AB first; the parallel condition then decides where C must sit."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p158_q14.jpg",
+      "altText": "Source visual for edmar-csec-p158-q14 from workbook page 158."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Draw AB = 8 cm.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: AB = 8 cm"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Construct a 60° angle at A and mark D on its arm with AD = 6 cm.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Standard 60° arc construction, then compasses set to 6 cm from A"
+        },
+        {
+          "type": "text",
+          "value": "Result: AD = 6 cm, ∠BAD = 60°"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Construct a perpendicular to AB at B, on the same side as D.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Equal arcs each side of B, then equal larger arcs crossing above B"
+        },
+        {
+          "type": "text",
+          "value": "Result: arm of ∠ABC = 90°"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Construct the line through D parallel to AB.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Copy the 60° angle at D on the other side of AD, or mark the equal perpendicular distance above AB"
+        },
+        {
+          "type": "text",
+          "value": "Result: line through D parallel to AB"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Mark C where that parallel meets the perpendicular from B, then join DC and BC.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Check by measurement: DC ≈ 5 cm and BC ≈ 5.2 cm"
+        },
+        {
+          "type": "text",
+          "value": "Result: trapezium ABCD complete"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Draw AB = 8 cm, construct 60° at A and mark AD = 6 cm, construct the perpendicular at B, then draw the line through D parallel to AB and let it cut that perpendicular at C."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "A correctly drawn trapezium ABCD with AB = 8 cm, AD = 6 cm, ∠BAD = 60°, ∠ABC = 90° and DC parallel to AB. Accuracy checks: DC ≈ 5 cm and BC ≈ 5.2 cm (= 6 sin 60°)."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The two given angles at the ends of AB fix the directions of AD and BC, and the given length AD fixes D. Requiring DC parallel to AB forces D and C to lie the same perpendicular distance above AB, so C is the single point where that line crosses the perpendicular from B. The height 6 sin 60° ≈ 5.20 cm and the horizontal shift 6 cos 60° = 3 cm are what make DC = 8 − 3 = 5 cm."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "making_cd_parallel_to_ad_instead_of_to_a",
+      "wrongValue": "incorrect_1",
+      "misconception": "Making CD parallel to AD instead of to AB.",
+      "correctiveNote": "Avoid this: Making CD parallel to AD instead of to AB."
+    },
+    {
+      "key": "erasing_the_arcs_used_for_the_60_and_90_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Erasing the arcs used for the 60° and 90° constructions, losing the method marks.",
+      "correctiveNote": "Avoid this: Erasing the arcs used for the 60° and 90° constructions, losing the method marks."
+    },
+    {
+      "key": "labelling_the_vertices_out_of_order_so_t",
+      "wrongValue": "incorrect_3",
+      "misconception": "Labelling the vertices out of order so the shape crosses over itself.",
+      "correctiveNote": "Avoid this: Labelling the vertices out of order so the shape crosses over itself."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Label vertices strictly in the order given (A, B, C, D around the shape) before you draw — most lost marks in construction come from a correctly built figure with the wrong letters on it."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "correctlydrawntrapeziumABCDwithAB=8cm,AD=6cm,∠BAD=60°,∠ABC=90°andDCparalleltoAB.Accuracychecks:",
+    "displayValue": "correctly drawn trapezium ABCD with AB = 8 cm, AD = 6 cm, ∠BAD = 60°, ∠ABC = 90° and DC parallel to AB. Accuracy checks:",
+    "acceptedForms": [
+      "correctly drawn trapezium ABCD with AB = 8 cm, AD = 6 cm, ∠BAD = 60°, ∠ABC = 90° and DC parallel to AB. Accuracy checks:",
+      "correctlydrawntrapeziumABCDwithAB=8cm,AD=6cm,∠BAD=60°,∠ABC=90°andDCparalleltoAB.Accuracychecks:"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "In this trapezium, how far above AB does D lie?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "6",
+      "displayValue": "6",
+      "acceptedForms": [
+        "6",
+        "6"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "0e6a8e7b-6df2-4b39-aa1e-3fb1a67a8b39",
+      "code": "M1-1.1",
+      "label": "Constructing 60° with compasses"
+    },
+    {
+      "objectiveId": "f98d43c1-c7d8-4250-a134-29fcf9a9132e",
+      "code": "M1-1.1",
+      "label": "Constructing a perpendicular at a point on a line"
+    },
+    {
+      "objectiveId": "8c755815-dca8-4d69-a858-66f9051c33fa",
+      "code": "M1-1.1",
+      "label": "Constructing a line parallel to a given line"
+    },
+    {
+      "objectiveId": "956333ae-f50f-4ce9-aea3-06998bb8344a",
+      "code": "M1-1.1",
+      "label": "Properties of a trapezium"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 14,
+    "pageRef": "p158",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

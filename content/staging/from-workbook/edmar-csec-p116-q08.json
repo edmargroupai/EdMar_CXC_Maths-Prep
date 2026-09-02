@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p116-q08",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The table shows corresponding values of x and y, where y varies directly as x: x = 6, 10, t with y = 3, u, 9. Calculate the values of t and u."
+    },
+    {
+      "type": "text",
+      "value": "Think first: One complete column fixes the constant; the other two columns then give one unknown each."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p116_q08.jpg",
+      "altText": "Source visual for edmar-csec-p116-q08 from workbook page 116."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write the variation statement as an equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "y varies directly as x"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = kx"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Use the complete column x = 6, y = 3 to find k.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3 = 6k"
+        },
+        {
+          "type": "text",
+          "value": "Result: k = 1/2"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Find u, the y value when x = 10.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "u = 1/2 × 10"
+        },
+        {
+          "type": "text",
+          "value": "Result: u = 5"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Find t, the x value when y = 9.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "9 = 1/2 × t, so t = 9 × 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: t = 18"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Write y = kx, find k from x = 6, y = 3, then use k to find u from x = 10 and t from y = 9."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "t = 18 and u = 5"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Once k is known the equation works in both directions: multiply by k to go from x to y, and divide by k to go from y back to x. That is why the same single constant is enough to fill a missing entry in either row of the table."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "multiplying_by_k_when_the_unknown_is_in_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Multiplying by k when the unknown is in the x row instead of dividing.",
+      "correctiveNote": "Avoid this: Multiplying by k when the unknown is in the x row instead of dividing."
+    },
+    {
+      "key": "finding_k_as_6_3_2_rather_than_3_6",
+      "wrongValue": "incorrect_2",
+      "misconception": "Finding k as 6 ÷ 3 = 2 rather than 3 ÷ 6.",
+      "correctiveNote": "Avoid this: Finding k as 6 ÷ 3 = 2 rather than 3 ÷ 6."
+    },
+    {
+      "key": "assuming_t_must_be_14_because_the_x_valu",
+      "wrongValue": "incorrect_3",
+      "misconception": "Assuming t must be 14 because the x values look like they increase by 4.",
+      "correctiveNote": "Avoid this: Assuming t must be 14 because the x values look like they increase by 4."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Label clearly which unknown sits in which row before you start — half the errors in table-variation questions are misplaced unknowns."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "t=18andu=5",
+    "displayValue": "t = 18 and u = 5",
+    "acceptedForms": [
+      "t = 18 and u = 5",
+      "t=18andu=5"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "y varies directly as x with y = 4 when x = 12. Find x when y = 7."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=21",
+      "displayValue": "= 21",
+      "acceptedForms": [
+        "= 21",
+        "=21"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "90078567-eb2e-49ec-af13-bb7ea4e6aa81",
+      "code": "M1-1.1",
+      "label": "Direct variation"
+    },
+    {
+      "objectiveId": "e49d53bc-f7c3-4809-abd8-bff4fca17706",
+      "code": "M1-1.1",
+      "label": "Constant of variation"
+    },
+    {
+      "objectiveId": "6002ca0a-622f-4485-a6ce-c2c160342f75",
+      "code": "M1-1.1",
+      "label": "Solving a simple equation"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 8,
+    "pageRef": "p116",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

@@ -1,0 +1,197 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p067-q01",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Using a scale of 1 cm to represent 1 unit on both axes, draw the graph of y = 4 for −5 ≤ x ≤ 5."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The equation says nothing about x, which is the clue to the shape of the line."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p067_q01.jpg",
+      "altText": "Source visual for edmar-csec-p067-q01 from workbook page 67."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Read what the equation controls.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "y = 4 places no condition on x, so x may take any value from −5 to 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: y is always 4"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Choose points that satisfy it.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Take x = −5, x = 0 and x = 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: (−5, 4), (0, 4), (5, 4)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Set up the axes to the given scale.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "1 cm to 1 unit on both axes, x from −5 to 5 and y from −5 to 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: Axes drawn"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Plot the points and join them with a straight ruled line, extending to x = −5 and x = 5.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Label the line y = 4"
+        },
+        {
+          "type": "text",
+          "value": "Result: A horizontal line 4 units above the x-axis"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Recognise that y = 4 fixes the y-coordinate for every point, plot two or three such points across the given range, and join them."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "A horizontal straight line passing through (0, 4), drawn from (−5, 4) to (5, 4) and labelled y = 4."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Every point on a graph must satisfy the equation of that graph. Since y = 4 imposes a condition only on y, the set of points that satisfy it is every point whose height is 4, whatever its x-coordinate. That collection of points forms a horizontal line, and its gradient is zero because the height never changes as you move along it."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "drawing_a_vertical_line_through_x_4_inst",
+      "wrongValue": "incorrect_1",
+      "misconception": "Drawing a vertical line through x = 4 instead of a horizontal line through y = 4.",
+      "correctiveNote": "Avoid this: Drawing a vertical line through x = 4 instead of a horizontal line through y = 4."
+    },
+    {
+      "key": "plotting_only_the_single_point_0_4_inste",
+      "wrongValue": "incorrect_2",
+      "misconception": "Plotting only the single point (0, 4) instead of a line.",
+      "correctiveNote": "Avoid this: Plotting only the single point (0, 4) instead of a line."
+    },
+    {
+      "key": "stopping_the_line_at_the_axes_rather_tha",
+      "wrongValue": "incorrect_3",
+      "misconception": "Stopping the line at the axes rather than covering the full range −5 ≤ x ≤ 5.",
+      "correctiveNote": "Avoid this: Stopping the line at the axes rather than covering the full range −5 ≤ x ≤ 5."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Read the equation as a rule about one coordinate: y = a number gives a horizontal line, x = a number gives a vertical line."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "horizontalstraightlinepassingthrough(0,4),drawnfrom(−5,4)to(5,4)andlabelledy=4.",
+    "displayValue": "horizontal straight line passing through (0, 4), drawn from (−5, 4) to (5, 4) and labelled y = 4.",
+    "acceptedForms": [
+      "horizontal straight line passing through (0, 4), drawn from (−5, 4) to (5, 4) and labelled y = 4.",
+      "horizontalstraightlinepassingthrough(0,4),drawnfrom(−5,4)to(5,4)andlabelledy=4."
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Draw the graph of y = −2 for −5 ≤ x ≤ 5. What kind of line is it?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "horizontalline2unitsbelowthex-axis,passingthrough(0,−2).",
+      "displayValue": "horizontal line 2 units below the x-axis, passing through (0, −2).",
+      "acceptedForms": [
+        "horizontal line 2 units below the x-axis, passing through (0, −2).",
+        "horizontalline2unitsbelowthex-axis,passingthrough(0,−2)."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "a9566073-8c81-4b45-aacf-c525d9d628ef",
+      "code": "M1-1.1",
+      "label": "Graphs of linear functions"
+    },
+    {
+      "objectiveId": "38fcd588-e09f-4743-aa41-b22ef5652488",
+      "code": "M1-1.1",
+      "label": "Horizontal lines"
+    },
+    {
+      "objectiveId": "aaa70a84-488d-4d1e-a55e-bd4901fb04e4",
+      "code": "M1-1.1",
+      "label": "Plotting on a Cartesian grid"
+    },
+    {
+      "objectiveId": "d35cd47c-f776-4b9f-a419-8686fc93ed5c",
+      "code": "M1-1.1",
+      "label": "Scale"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 1,
+    "pageRef": "p67",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

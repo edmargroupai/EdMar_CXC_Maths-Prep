@@ -1,0 +1,217 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p290-q01",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "(a)(i) Find the matrix product of the 2x2 matrix (-1  3 / 4  h) with the column matrix (k / 5). (ii) Hence find the values of h and k for which (-1  3 / 4  h)(k / 5) = (0 / 0). (b) Using a matrix method, solve the simultaneous equations 2x + 3y = 5 and -5x + y = 13."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Multiply out first and leave the answer in terms of h and k; the zero matrix then turns each entry into an equation."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p290_q01.jpg",
+      "altText": "Source visual for edmar-csec-p290-q01 from workbook page 290."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply each row of the 2x2 matrix by the column matrix.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Top entry: (-1)(k) + (3)(5) = -k + 15.  Bottom entry: (4)(k) + (h)(5) = 4k + 5h."
+        },
+        {
+          "type": "text",
+          "value": "Result: Product = (-k + 15 / 4k + 5h)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Set the product equal to the zero column matrix and equate entries.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "-k + 15 = 0 and 4k + 5h = 0"
+        },
+        {
+          "type": "text",
+          "value": "Result: Two equations in h and k"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Solve for k, then substitute to find h.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "k = 15; then 4(15) + 5h = 0, so 5h = -60"
+        },
+        {
+          "type": "text",
+          "value": "Result: k = 15 and h = -12"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "For (b), write the equations as AX = B and find the determinant of A.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "A = (2  3 / -5  1), X = (x / y), B = (5 / 13);  det A = (2)(1) - (3)(-5) = 2 + 15"
+        },
+        {
+          "type": "text",
+          "value": "Result: det A = 17"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Write the inverse of A and use X = A inverse times B.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "A inverse = (1/17)(1  -3 / 5  2), so X = (1/17)((1)(5) + (-3)(13) / (5)(5) + (2)(13)) = (1/17)(-34 / 51)"
+        },
+        {
+          "type": "text",
+          "value": "Result: X = (-2 / 3), so x = -2 and y = 3"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Multiply row by column to get the product in terms of h and k, set each entry to zero and solve, then write the simultaneous equations as AX = B and use X = A inverse times B."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a)(i) (-k + 15 / 4k + 5h)  (ii) k = 15 and h = -12  (b) x = -2, y = 3"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Each entry of a matrix product is the sum of products of a row of the first matrix with the column of the second, so setting a product equal to the zero matrix gives one ordinary equation per entry. For simultaneous equations, writing them as AX = B lets you undo the multiplication by A: multiplying both sides on the left by A inverse leaves X on its own, and the inverse exists exactly when the determinant is not zero."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "multiplying_corresponding_entries_instea",
+      "wrongValue": "incorrect_1",
+      "misconception": "Multiplying corresponding entries instead of rows by columns.",
+      "correctiveNote": "Avoid this: Multiplying corresponding entries instead of rows by columns."
+    },
+    {
+      "key": "swapping_the_entries_of_the_adjugate_the",
+      "wrongValue": "incorrect_2",
+      "misconception": "Swapping the entries of the adjugate: the leading diagonal entries swap and the other two change sign, not the other way round.",
+      "correctiveNote": "Avoid this: Swapping the entries of the adjugate: the leading diagonal entries swap and the other two change sign, not the other way round."
+    },
+    {
+      "key": "multiplying_b_by_a_inverse_on_the_wrong_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Multiplying B by A inverse on the wrong side; matrix multiplication is not commutative.",
+      "correctiveNote": "Avoid this: Multiplying B by A inverse on the wrong side; matrix multiplication is not commutative."
+    },
+    {
+      "key": "forgetting_to_divide_by_the_determinant",
+      "wrongValue": "incorrect_4",
+      "misconception": "Forgetting to divide by the determinant.",
+      "correctiveNote": "Avoid this: Forgetting to divide by the determinant."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Always check a matrix solution by substituting x and y back into both original equations; it takes ten seconds and catches sign slips in the inverse."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "(a)(i)(-k+15/4k+5h)(ii)k=15andh=-12(b)x=-2,y=3",
+    "displayValue": "(a)(i) (-k + 15 / 4k + 5h)  (ii) k = 15 and h = -12  (b) x = -2, y = 3",
+    "acceptedForms": [
+      "(a)(i) (-k + 15 / 4k + 5h)  (ii) k = 15 and h = -12  (b) x = -2, y = 3",
+      "(a)(i)(-k+15/4k+5h)(ii)k=15andh=-12(b)x=-2,y=3"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Find the determinant and inverse of (2  3 / -5  1)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "det=17;inverse=(1/17)(1-3/52)",
+      "displayValue": "det = 17;  inverse = (1/17)(1  -3 / 5  2)",
+      "acceptedForms": [
+        "det = 17;  inverse = (1/17)(1  -3 / 5  2)",
+        "det=17;inverse=(1/17)(1-3/52)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "72a519e1-dba6-4384-af73-6e2db4743019",
+      "code": "M2-4.1",
+      "label": "Matrix multiplication (2x2 by 2x1)"
+    },
+    {
+      "objectiveId": "8e7aaf4f-e3dc-40ea-a1da-51b20c9f4a9e",
+      "code": "M2-4.1",
+      "label": "Zero matrix"
+    },
+    {
+      "objectiveId": "f0a14de8-1317-4659-a9e4-b8217630f1b2",
+      "code": "M2-4.1",
+      "label": "Determinant and inverse of a 2x2 matrix"
+    },
+    {
+      "objectiveId": "8f818a21-5317-456b-a214-8e27fcc7c704",
+      "code": "M2-4.1",
+      "label": "Solving simultaneous equations with a matrix method"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 1,
+    "pageRef": "p290",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

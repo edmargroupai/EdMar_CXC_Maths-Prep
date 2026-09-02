@@ -1,0 +1,202 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p025-q31",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A worker earns $2 400 per week and receives a 12% increase in salary. (a) Calculate the increase in salary. (b) Calculate his new weekly salary. (c) Calculate his new annual salary based on 52 weeks."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Work out the rise on the old weekly wage first, then build up to the new weekly and finally the yearly figure."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p025_q31.jpg",
+      "altText": "Source visual for edmar-csec-p025-q31 from workbook page 25."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Find 12% of the weekly salary.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "0.12 x 2 400"
+        },
+        {
+          "type": "text",
+          "value": "Result: $288"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Add the increase to the old weekly salary.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "$2 400 + $288"
+        },
+        {
+          "type": "text",
+          "value": "Result: $2 688 per week"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Check with a single multiplier.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2 400 x 1.12"
+        },
+        {
+          "type": "text",
+          "value": "Result: $2 688"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Multiply the new weekly salary by 52.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2 688 x 52"
+        },
+        {
+          "type": "text",
+          "value": "Result: $139 776 per year"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Take 12% of $2 400 for the rise, add it to get the new weekly wage, then multiply by 52 weeks."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) Increase = $288  (b) New weekly salary = $2 688  (c) New annual salary = $139 776"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The increase is calculated on the current wage, so the old weekly figure is the base for the percentage. Annual pay is then the new weekly rate repeated 52 times, since the rise applies to every week of the year. Multiplying by 1.12 and by 52 in either order gives the same annual total, which is a useful check."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "applying_the_12_to_both_the_weekly_and_t",
+      "wrongValue": "incorrect_1",
+      "misconception": "Applying the 12% to both the weekly and the annual salary.",
+      "correctiveNote": "Avoid this: Applying the 12% to both the weekly and the annual salary."
+    },
+    {
+      "key": "giving_288_as_the_new_weekly_salary",
+      "wrongValue": "incorrect_2",
+      "misconception": "Giving $288 as the new weekly salary.",
+      "correctiveNote": "Avoid this: Giving $288 as the new weekly salary."
+    },
+    {
+      "key": "using_12_months_instead_of_52_weeks",
+      "wrongValue": "incorrect_3",
+      "misconception": "Using 12 months instead of 52 weeks.",
+      "correctiveNote": "Avoid this: Using 12 months instead of 52 weeks."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Answer wage questions in the order asked and carry each answer forward. Recalculating from scratch each time is where slips creep in."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Increase=$288",
+    "displayValue": "Increase = $288",
+    "acceptedForms": [
+      "Increase = $288",
+      "Increase=$288"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A worker earning $1 500 per week gets a 10% rise. Find the new annual salary over 52 weeks."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "currency",
+      "canonicalValue": "85.00",
+      "displayValue": "$85",
+      "acceptedForms": [
+        "$85",
+        "$85",
+        "85"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.005
+      },
+      "precision": {
+        "kind": "decimal_places",
+        "value": 2,
+        "required": true
+      },
+      "normalisation": "currency_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "1cd7baba-cc46-4f23-a86b-78c2dbc61f02",
+      "code": "M1-1.1",
+      "label": "Percentage increase"
+    },
+    {
+      "objectiveId": "48824eae-3e90-4570-af3d-64b6ab996869",
+      "code": "M1-1.1",
+      "label": "Wages and salaries"
+    },
+    {
+      "objectiveId": "efa71c42-293f-4531-a9f1-dd4422b6595f",
+      "code": "M1-1.1",
+      "label": "Annual earnings"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 31,
+    "pageRef": "p25",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

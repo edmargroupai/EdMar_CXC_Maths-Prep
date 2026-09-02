@@ -1,0 +1,183 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p195-q04",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A = (2 −1 / 4 3) and B = (5 6 / −2 1). (a) Calculate A + B. (b) Calculate B − A."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Both matrices are 2 × 2, so you can add or subtract the numbers sitting in matching positions."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p195_q04.jpg",
+      "altText": "Source visual for edmar-csec-p195-q04 from workbook page 195."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Confirm both matrices have the same order.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Both are 2 × 2, so addition and subtraction are allowed."
+        },
+        {
+          "type": "text",
+          "value": "Result: Conformable for + and −"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Add the entries in matching positions.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2 + 5 = 7; −1 + 6 = 5; 4 + (−2) = 2; 3 + 1 = 4"
+        },
+        {
+          "type": "text",
+          "value": "Result: A + B = (7 5 / 2 4)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Subtract each entry of A from the matching entry of B.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5 − 2 = 3; 6 − (−1) = 7; −2 − 4 = −6; 1 − 3 = −2"
+        },
+        {
+          "type": "text",
+          "value": "Result: B − A = (3 7 / −6 −2)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Work position by position: top-left with top-left, top-right with top-right, and so on."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) A + B = (7 5 / 2 4)  (b) B − A = (3 7 / −6 −2)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Matrix addition and subtraction are done element by element, so they are only defined when the two matrices have exactly the same order. Order matters for subtraction: B − A is the negative of A − B. Careful handling of the minus signs in 6 − (−1) is where most of the marks are won or lost."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "attempting_to_add_matrices_of_different_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Attempting to add matrices of different orders.",
+      "correctiveNote": "Avoid this: Attempting to add matrices of different orders."
+    },
+    {
+      "key": "computing_a_b_when_b_a_is_asked_for",
+      "wrongValue": "incorrect_2",
+      "misconception": "Computing A − B when B − A is asked for.",
+      "correctiveNote": "Avoid this: Computing A − B when B − A is asked for."
+    },
+    {
+      "key": "getting_6_1_5_instead_of_7",
+      "wrongValue": "incorrect_3",
+      "misconception": "Getting 6 − (−1) = 5 instead of 7.",
+      "correctiveNote": "Avoid this: Getting 6 − (−1) = 5 instead of 7."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Rewrite subtraction of a negative as addition before you calculate: 6 − (−1) becomes 6 + 1."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "A+B=(75/24)",
+    "displayValue": "A + B = (7 5 / 2 4)",
+    "acceptedForms": [
+      "A + B = (7 5 / 2 4)",
+      "A+B=(75/24)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Calculate (1 −3 / 2 0) + (4 3 / −5 6)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(50/−36)",
+      "displayValue": "(5 0 / −3 6)",
+      "acceptedForms": [
+        "(5 0 / −3 6)",
+        "(50/−36)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "6d750131-db70-44d1-ad9b-0d55b91af45d",
+      "code": "M2-4.1",
+      "label": "Addition of matrices"
+    },
+    {
+      "objectiveId": "9ba0fda9-d7ac-49f7-ae57-142fbe6bf37b",
+      "code": "M2-4.1",
+      "label": "Subtraction of matrices"
+    },
+    {
+      "objectiveId": "d9b59919-5839-4ed4-ac36-93798f1101b6",
+      "code": "M2-4.1",
+      "label": "Conformability for addition"
+    },
+    {
+      "objectiveId": "bf563db9-021e-48c3-abc7-22b1199182ac",
+      "code": "M2-4.1",
+      "label": "Directed numbers"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 4,
+    "pageRef": "p195",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

@@ -1,0 +1,242 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p061-q02",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 4,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Given x = 2, y = −5 and z = 3, find: (a) x − 2y  (b) xz²."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Substitute with brackets around every negative value so the signs look after themselves."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p061_q02.jpg",
+      "altText": "Source visual for edmar-csec-p061-q02 from workbook page 61."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Substitute into x − 2y.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2 − 2(−5)"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2 + 10"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Simplify part (a).",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "subtracting a negative gives an addition"
+        },
+        {
+          "type": "text",
+          "value": "Result: 12"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Substitute into xz².",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2 × 3², and 3² = 9"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2 × 9"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Simplify part (b).",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: 18"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Replace each letter by its value, using brackets for the negative, and evaluate part by part."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) 12  (b) 18"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Writing 2(−5) inside brackets makes it clear that the whole product −10 is being subtracted, so the two minus signs combine into a plus. In part (b) the index attaches only to z, not to the product xz, so z is squared first and then multiplied by x."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_2_2_5_8_by_ignoring_the_negative",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing 2 − 2 × 5 = −8 by ignoring the negative sign on y.",
+      "correctiveNote": "Avoid this: Writing 2 − 2 × 5 = −8 by ignoring the negative sign on y."
+    },
+    {
+      "key": "treating_xz_as_xz_giving_36",
+      "wrongValue": "incorrect_2",
+      "misconception": "Treating xz² as (xz)², giving 36.",
+      "correctiveNote": "Avoid this: Treating xz² as (xz)², giving 36."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Always put a negative substituted value in brackets - it is the single cheapest way to protect your signs."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "12",
+    "displayValue": "12",
+    "acceptedForms": [
+      "12",
+      "12"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Given x = 3 and y = −2, find x − 2y."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "7",
+      "displayValue": "7",
+      "acceptedForms": [
+        "7",
+        "7"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "4b374c39-329b-4ad4-ab8f-51fdfb62edb0",
+      "code": "M1-4.1",
+      "label": "Substitution"
+    },
+    {
+      "objectiveId": "137c47c7-99c3-405f-a7e2-8bf6b3b3c368",
+      "code": "M1-4.1",
+      "label": "Directed numbers"
+    },
+    {
+      "objectiveId": "9c653405-efdc-4570-a0d8-7a72a18efd3d",
+      "code": "M1-4.1",
+      "label": "Order of operations"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 2,
+    "pageRef": "p61",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "numeric_exact",
+        "canonicalValue": "12",
+        "displayValue": "12",
+        "acceptedForms": [
+          "12",
+          "12"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0
+        },
+        "normalisation": "numeric_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "numeric_exact",
+        "canonicalValue": "18",
+        "displayValue": "18",
+        "acceptedForms": [
+          "18",
+          "18"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0
+        },
+        "normalisation": "numeric_default"
+      }
+    }
+  ]
+}

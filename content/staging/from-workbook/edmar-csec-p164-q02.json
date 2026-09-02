@@ -1,0 +1,210 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p164-q02",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "In trapezium ABCD, AB is parallel to DC and AD = BC. The angles at A and D are (3x + 10)° and (5x + 10)° respectively. a) Calculate the value of x. b) Calculate all four interior angles of ABCD, giving a reason for each pair of equal angles. c) State the most specific name of the trapezium."
+    },
+    {
+      "type": "text",
+      "value": "Think first: A and D are at the two ends of the same slanted side crossing a pair of parallel lines, so they are co-interior angles."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p164_q02.jpg",
+      "altText": "Source visual for edmar-csec-p164-q02 from workbook page 164."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Identify the angle relationship at A and D.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "AB is parallel to DC and AD is the transversal, so ∠A and ∠D are co-interior and add to 180°"
+        },
+        {
+          "type": "text",
+          "value": "Result: (3x + 10) + (5x + 10) = 180"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Solve for x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "8x + 20 = 180, so 8x = 160"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 20"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Evaluate the two given angles.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3(20) + 10 = 70; 5(20) + 10 = 110"
+        },
+        {
+          "type": "text",
+          "value": "Result: ∠A = 70°, ∠D = 110°"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Use AD = BC to find the remaining angles.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The trapezium is isosceles, so the base angles on each parallel side are equal: ∠B = ∠A and ∠C = ∠D"
+        },
+        {
+          "type": "text",
+          "value": "Result: ∠B = 70°, ∠C = 110°"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Check the quadrilateral angle sum.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "70 + 70 + 110 + 110 = 360"
+        },
+        {
+          "type": "text",
+          "value": "Result: all four angles confirmed"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Use the co-interior pair A and D to form an equation summing to 180°, solve for x, then use AD = BC to copy the angles across to B and C."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) x = 20  (b) ∠A = 70° and ∠B = 70° (equal base angles of an isosceles trapezium); ∠D = 110° and ∠C = 110° (equal base angles on DC, each co-interior with 70°)  (c) an isosceles trapezium"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "When a transversal cuts two parallel lines, the two interior angles on the same side of it must total 180°, because together they wrap round from one parallel line to the other. The extra condition AD = BC makes the figure symmetrical about the perpendicular bisector of AB, and that mirror symmetry is what forces ∠A = ∠B and ∠D = ∠C."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "treating_a_and_d_as_equal_alternate_inst",
+      "wrongValue": "incorrect_1",
+      "misconception": "Treating ∠A and ∠D as equal (alternate) instead of supplementary (co-interior).",
+      "correctiveNote": "Avoid this: Treating ∠A and ∠D as equal (alternate) instead of supplementary (co-interior)."
+    },
+    {
+      "key": "assuming_a_and_c_are_equal_as_in_a_paral",
+      "wrongValue": "incorrect_2",
+      "misconception": "Assuming ∠A and ∠C are equal, as in a parallelogram — that is false here.",
+      "correctiveNote": "Avoid this: Assuming ∠A and ∠C are equal, as in a parallelogram — that is false here."
+    },
+    {
+      "key": "answering_trapezium_for_part_c_when_the_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Answering 'trapezium' for part c when the equal sides make it specifically isosceles.",
+      "correctiveNote": "Avoid this: Answering 'trapezium' for part c when the equal sides make it specifically isosceles."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Label which pair of parallel lines a transversal is crossing before deciding whether angles are equal or supplementary — the U-shape means add to 180°, the Z-shape means equal."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "x=20",
+    "displayValue": "x = 20",
+    "acceptedForms": [
+      "x = 20",
+      "x=20"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "In a trapezium PQRS with PQ parallel to SR, ∠P = 65°. Find ∠S."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "180",
+      "displayValue": "180",
+      "acceptedForms": [
+        "180",
+        "180"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "eb3a32bc-dd06-4e21-af96-6df58a71a051",
+      "code": "M1-1.1",
+      "label": "Co-interior (allied) angles between parallel lines"
+    },
+    {
+      "objectiveId": "05e0bcde-5cb3-45f8-a0f1-b805814b3425",
+      "code": "M1-1.1",
+      "label": "Properties of an isosceles trapezium"
+    },
+    {
+      "objectiveId": "0f926037-d50c-44b8-ad87-e5484d7bb66d",
+      "code": "M1-1.1",
+      "label": "Angle sum of a quadrilateral"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 2,
+    "pageRef": "p164",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

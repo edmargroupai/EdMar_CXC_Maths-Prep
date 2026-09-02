@@ -1,0 +1,214 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p013-q05",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "In a school the ratio of boys to girls is 7 : 9 and there are 128 students in the grade. Calculate: i. the number of boys  ii. the number of girls  iii. the percentage of the class that are girls."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The 128 students are split into 16 equal parts, so find how many students one part holds."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p013_q05.jpg",
+      "altText": "Source visual for edmar-csec-p013-q05 from workbook page 13."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Add the ratio parts.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "7 + 9"
+        },
+        {
+          "type": "text",
+          "value": "Result: 16 parts"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Find how many students one part represents.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "128 ÷ 16"
+        },
+        {
+          "type": "text",
+          "value": "Result: 8 students per part"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Find the number of boys.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "7 × 8"
+        },
+        {
+          "type": "text",
+          "value": "Result: 56 boys"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Find the number of girls.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "9 × 8"
+        },
+        {
+          "type": "text",
+          "value": "Result: 72 girls"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Express the girls as a percentage of the class.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "9/16 × 100% = 900/16"
+        },
+        {
+          "type": "text",
+          "value": "Result: 56.25%"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Add the ratio parts, divide 128 by that total, multiply for boys and girls, then express the girls as a percentage."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "i. 56 boys  ii. 72 girls  iii. 56.25%"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Because the ratio splits the class into 16 equal groups, each group must contain a whole number of students, and 128 ÷ 16 = 8 confirms the ratio is consistent with the class size. The percentage can be taken straight from the ratio rather than from the head count, since 9 parts out of 16 is the same proportion however large the class is; 72/128 gives exactly the same 56.25%."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "dividing_128_by_7_or_by_9_rather_than_by",
+      "wrongValue": "incorrect_1",
+      "misconception": "Dividing 128 by 7 or by 9 rather than by the total 16 parts.",
+      "correctiveNote": "Avoid this: Dividing 128 by 7 or by 9 rather than by the total 16 parts."
+    },
+    {
+      "key": "rounding_56_25_to_56_when_the_question_d",
+      "wrongValue": "incorrect_2",
+      "misconception": "Rounding 56.25% to 56% when the question does not ask for rounding.",
+      "correctiveNote": "Avoid this: Rounding 56.25% to 56% when the question does not ask for rounding."
+    },
+    {
+      "key": "swapping_the_answers_so_the_smaller_rati",
+      "wrongValue": "incorrect_3",
+      "misconception": "Swapping the answers so the smaller ratio number is given the larger group.",
+      "correctiveNote": "Avoid this: Swapping the answers so the smaller ratio number is given the larger group."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "A percentage from a ratio needs only the ratio: part ÷ total × 100. You rarely have to find the actual numbers first."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "56",
+    "displayValue": "56",
+    "acceptedForms": [
+      "56",
+      "56"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "The ratio of boys to girls is 3 : 5 in a class of 40. How many girls are there, and what percentage of the class is that?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "25",
+      "displayValue": "25",
+      "acceptedForms": [
+        "25",
+        "25"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "5148c450-7176-4f74-a285-770855834890",
+      "code": "M1-1.1",
+      "label": "Ratio"
+    },
+    {
+      "objectiveId": "473db904-8a1e-46b1-ae53-92daa3a97dac",
+      "code": "M1-1.1",
+      "label": "Sharing a quantity in a given ratio"
+    },
+    {
+      "objectiveId": "a5b396b9-20b8-43f5-ae43-d97d9b4abe70",
+      "code": "M1-1.1",
+      "label": "Percentage of a total"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 5,
+    "pageRef": "p13",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

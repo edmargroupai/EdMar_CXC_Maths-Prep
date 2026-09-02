@@ -1,0 +1,187 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p052-q01",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Expand and simplify (x + 5)(x + 7)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Every term in the first bracket must multiply every term in the second — four products in all."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p052_q01.jpg",
+      "altText": "Source visual for edmar-csec-p052-q01 from workbook page 52."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply the first terms of each bracket.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x × x"
+        },
+        {
+          "type": "text",
+          "value": "Result: x²"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Multiply the outer and inner pairs.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x × 7 = 7x and 5 × x = 5x"
+        },
+        {
+          "type": "text",
+          "value": "Result: 7x + 5x"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Multiply the last terms.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5 × 7"
+        },
+        {
+          "type": "text",
+          "value": "Result: 35"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Collect the like middle terms.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "7x + 5x = 12x"
+        },
+        {
+          "type": "text",
+          "value": "Result: x² + 12x + 35"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Multiply out using FOIL, then add the two middle terms."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x² + 12x + 35"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Expanding uses the distributive law twice: (x + 5)(x + 7) means x(x + 7) + 5(x + 7). Every term of one bracket must reach every term of the other, which is why there are exactly four products. The x-coefficient in the answer is the sum of the two numbers and the constant is their product, a pattern worth remembering for factorising later."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_only_x_35_by_multiplying_first_w",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing only x² + 35 by multiplying first with first and last with last.",
+      "correctiveNote": "Avoid this: Writing only x² + 35 by multiplying first with first and last with last."
+    },
+    {
+      "key": "adding_5_and_7_to_get_the_constant_term_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Adding 5 and 7 to get the constant term instead of multiplying them.",
+      "correctiveNote": "Avoid this: Adding 5 and 7 to get the constant term instead of multiplying them."
+    },
+    {
+      "key": "forgetting_to_combine_7x_and_5x_into_a_s",
+      "wrongValue": "incorrect_3",
+      "misconception": "Forgetting to combine 7x and 5x into a single term.",
+      "correctiveNote": "Avoid this: Forgetting to combine 7x and 5x into a single term."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "For (x + a)(x + b) the answer is always x² + (a + b)x + ab. Use it as a fast check on the expansion you just wrote out."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "x²+12x+35",
+    "displayValue": "x² + 12x + 35",
+    "acceptedForms": [
+      "x² + 12x + 35",
+      "x²+12x+35"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Expand and simplify (x + 2)(x + 9)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "x²+11x+18.",
+      "displayValue": "x² + 11x + 18.",
+      "acceptedForms": [
+        "x² + 11x + 18.",
+        "x²+11x+18."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "334f92f2-45a6-4175-a379-113b0a4b84c6",
+      "code": "M1-4.1",
+      "label": "Expanding a product of two binomials"
+    },
+    {
+      "objectiveId": "2385911e-56d1-409b-ad10-1034403a10c6",
+      "code": "M1-4.1",
+      "label": "Collecting like terms"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 1,
+    "pageRef": "p52",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

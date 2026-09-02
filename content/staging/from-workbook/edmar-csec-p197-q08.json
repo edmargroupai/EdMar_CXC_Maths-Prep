@@ -1,0 +1,278 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p197-q08",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 8,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Matrices P, Q and R have orders 2 × 3, 3 × 2 and 2 × 2 respectively. (a) State whether PQ is defined, and if so its order. (b) State whether QP is defined, and if so its order. (c) State whether PR is defined, giving a reason. (d) State the order of RP."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Write the two orders side by side: the inner numbers decide whether the product exists, and the outer numbers give its order."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p197_q08.jpg",
+      "altText": "Source visual for edmar-csec-p197-q08 from workbook page 197."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Line up the orders for PQ.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(2 × 3)(3 × 2): the inner numbers are 3 and 3, which match."
+        },
+        {
+          "type": "text",
+          "value": "Result: PQ is defined, order 2 × 2"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Line up the orders for QP.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(3 × 2)(2 × 3): the inner numbers are 2 and 2, which match."
+        },
+        {
+          "type": "text",
+          "value": "Result: QP is defined, order 3 × 3"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Line up the orders for PR.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(2 × 3)(2 × 2): the inner numbers are 3 and 2, which do not match."
+        },
+        {
+          "type": "text",
+          "value": "Result: PR is not defined"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Line up the orders for RP.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(2 × 2)(2 × 3): the inner numbers are 2 and 2, which match."
+        },
+        {
+          "type": "text",
+          "value": "Result: RP is defined, order 2 × 3"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "For each product, line up the orders as (a × b)(c × d) and check b = c; if it holds, the product is a × d."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) PQ is defined and has order 2 × 2  (b) QP is defined and has order 3 × 3  (c) PR is not defined, because the number of columns of P (3) does not equal the number of rows of R (2)  (d) RP has order 2 × 3"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A product row-by-column only makes sense when each row of the first matrix has exactly as many entries as each column of the second, which is the inner-numbers rule. The surviving outer numbers become the shape of the answer. Parts (a) and (b) also show why order matters: PQ and QP are not even the same size."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "checking_the_outer_numbers_instead_of_th",
+      "wrongValue": "incorrect_1",
+      "misconception": "Checking the outer numbers instead of the inner ones.",
+      "correctiveNote": "Avoid this: Checking the outer numbers instead of the inner ones."
+    },
+    {
+      "key": "assuming_that_if_pq_exists_then_qp_must_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Assuming that if PQ exists then QP must have the same order.",
+      "correctiveNote": "Avoid this: Assuming that if PQ exists then QP must have the same order."
+    },
+    {
+      "key": "saying_pr_is_defined_because_both_matric",
+      "wrongValue": "incorrect_3",
+      "misconception": "Saying PR is defined because both matrices contain a 2.",
+      "correctiveNote": "Avoid this: Saying PR is defined because both matrices contain a 2."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Write the orders next to each other, cover the outer numbers with your fingers, and check the two inner numbers match before doing any arithmetic."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "PQisdefine",
+    "displayValue": "PQ is define",
+    "acceptedForms": [
+      "PQ is define",
+      "PQisdefine"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A is 4 × 2 and B is 2 × 5. Is AB defined, and what is its order?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "Yes;ABisoforder4×5",
+      "displayValue": "Yes; AB is of order 4 × 5",
+      "acceptedForms": [
+        "Yes; AB is of order 4 × 5",
+        "Yes;ABisoforder4×5"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "a4cd847f-bf73-496b-a4a6-fa227b57846b",
+      "code": "M2-4.1",
+      "label": "Conformability for matrix multiplication"
+    },
+    {
+      "objectiveId": "51fd8c9b-6f3b-4044-ae26-d169006e8b23",
+      "code": "M2-4.1",
+      "label": "Order of a product matrix"
+    },
+    {
+      "objectiveId": "5e4d0ad5-fdd5-455b-afd2-3461866f5b04",
+      "code": "M2-4.1",
+      "label": "Non-commutativity of matrix multiplication"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 8,
+    "pageRef": "p197",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "PQisdefine",
+        "displayValue": "PQ is define",
+        "acceptedForms": [
+          "PQ is define",
+          "PQisdefine"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "QPisdefine",
+        "displayValue": "QP is define",
+        "acceptedForms": [
+          "QP is define",
+          "QPisdefine"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "c",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (c): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "PRisnotdefined,becausethenumberofcolumnsofP(3)doesnotequalthenumberofrowsofR(2)",
+        "displayValue": "PR is not defined, because the number of columns of P (3) does not equal the number of rows of R (2)",
+        "acceptedForms": [
+          "PR is not defined, because the number of columns of P (3) does not equal the number of rows of R (2)",
+          "PRisnotdefined,becausethenumberofcolumnsofP(3)doesnotequalthenumberofrowsofR(2)"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "d",
+      "sequence": 4,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (d): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "an",
+        "displayValue": "an",
+        "acceptedForms": [
+          "an",
+          "an"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

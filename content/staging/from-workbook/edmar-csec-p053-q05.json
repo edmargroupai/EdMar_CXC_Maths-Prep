@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p053-q05",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Expand and simplify (x + 9)(x − 1)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The −1 still produces a full x-term, so do not let its size fool you."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p053_q05.jpg",
+      "altText": "Source visual for edmar-csec-p053-q05 from workbook page 53."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply the first terms.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x × x"
+        },
+        {
+          "type": "text",
+          "value": "Result: x²"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Multiply the outer and inner pairs.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x × (−1) = −x and 9 × x = 9x"
+        },
+        {
+          "type": "text",
+          "value": "Result: −x + 9x"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Multiply the last terms.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "9 × (−1)"
+        },
+        {
+          "type": "text",
+          "value": "Result: −9"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Collect the middle terms.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "9x − x = 8x"
+        },
+        {
+          "type": "text",
+          "value": "Result: x² + 8x − 9"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Multiply out all four products, then combine the like terms."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x² + 8x − 9"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The distributive law generates four products, and the two containing a single x combine into the middle term. Here 9 + (−1) = 8 and 9 × (−1) = −9, so the quadratic is x² + 8x − 9. The negative constant confirms that the two brackets have opposite signs, exactly as they do."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "ignoring_the_x_term_because_the_coeffici",
+      "wrongValue": "incorrect_1",
+      "misconception": "Ignoring the −x term because the coefficient is 1.",
+      "correctiveNote": "Avoid this: Ignoring the −x term because the coefficient is 1."
+    },
+    {
+      "key": "writing_the_constant_as_9",
+      "wrongValue": "incorrect_2",
+      "misconception": "Writing the constant as +9.",
+      "correctiveNote": "Avoid this: Writing the constant as +9."
+    },
+    {
+      "key": "getting_10x_by_subtracting_rather_than_a",
+      "wrongValue": "incorrect_3",
+      "misconception": "Getting 10x by subtracting rather than adding the cross-terms.",
+      "correctiveNote": "Avoid this: Getting 10x by subtracting rather than adding the cross-terms."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Read a bare x as 1x while you are collecting terms. Making the invisible coefficient visible prevents it from being dropped."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "x²+8x−9",
+    "displayValue": "x² + 8x − 9",
+    "acceptedForms": [
+      "x² + 8x − 9",
+      "x²+8x−9"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Expand and simplify (x + 7)(x − 1)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "x²+6x−7.",
+      "displayValue": "x² + 6x − 7.",
+      "acceptedForms": [
+        "x² + 6x − 7.",
+        "x²+6x−7."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "d70852e2-5809-47bb-a9a5-9dbb08b5ea8b",
+      "code": "M1-4.1",
+      "label": "Expanding a product of two binomials"
+    },
+    {
+      "objectiveId": "e6c2220d-be4d-4b65-ab8c-656ab5e9e2cd",
+      "code": "M1-4.1",
+      "label": "Multiplication of directed numbers"
+    },
+    {
+      "objectiveId": "e5018cee-30ef-4b75-a899-be85faa44202",
+      "code": "M1-4.1",
+      "label": "Collecting like terms"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 5,
+    "pageRef": "p53",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

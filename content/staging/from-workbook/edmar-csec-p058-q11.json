@@ -1,0 +1,176 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p058-q11",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A binary operation o is defined by a o b = a² + b. Evaluate 2 o (3 o 4)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The bracket is an instruction to work out the inner operation first and feed its answer into the outer one."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p058_q11.jpg",
+      "altText": "Source visual for edmar-csec-p058-q11 from workbook page 58."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Evaluate the bracket 3 o 4.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3² + 4 = 9 + 4"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3 o 4 = 13"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Replace the bracket by 13.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: 2 o 13"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Apply the rule again with a = 2, b = 13.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2² + 13 = 4 + 13"
+        },
+        {
+          "type": "text",
+          "value": "Result: 17"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Evaluate 3 o 4 first, then use that result as the right-hand input of 2 o (...)."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "2 o (3 o 4) = 17"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Brackets have the same priority with a binary operation as they do in ordinary arithmetic: the inner value must exist before the outer operation can use it. Because this operation is not associative, working left to right instead would give a different and wrong answer, so the bracket genuinely matters."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "working_left_to_right_and_evaluating_2_o",
+      "wrongValue": "incorrect_1",
+      "misconception": "Working left to right and evaluating 2 o 3 first.",
+      "correctiveNote": "Avoid this: Working left to right and evaluating 2 o 3 first."
+    },
+    {
+      "key": "squaring_13_instead_of_2_in_the_final_st",
+      "wrongValue": "incorrect_2",
+      "misconception": "Squaring 13 instead of 2 in the final step.",
+      "correctiveNote": "Avoid this: Squaring 13 instead of 2 in the final step."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "In nested binary operations, write the value of the bracket down as its own line before continuing."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "2",
+    "displayValue": "2",
+    "acceptedForms": [
+      "2",
+      "2"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "With a o b = a² + b, evaluate 1 o (2 o 3)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "8",
+      "displayValue": "8",
+      "acceptedForms": [
+        "8",
+        "8"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "97fe180c-619e-4d34-a7f5-a0dc60c9e975",
+      "code": "M1-4.1",
+      "label": "Binary operations"
+    },
+    {
+      "objectiveId": "f89df689-8261-40d0-a57a-38adec8cf8ef",
+      "code": "M1-4.1",
+      "label": "Order of operations"
+    },
+    {
+      "objectiveId": "eaa12d0c-2e24-4c64-ab1c-96c7763f0444",
+      "code": "M1-4.1",
+      "label": "Nested operations"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 11,
+    "pageRef": "p58",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

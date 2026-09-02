@@ -1,0 +1,202 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p159-q16",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Using a ruler, a pencil and a pair of compasses, construct triangle PQR with PQ = 8 cm, ∠PQR = 120° and QR = 5 cm."
+    },
+    {
+      "type": "text",
+      "value": "Think first: This is a side–angle–side construction, and 120° is simply 180° minus a constructed 60°."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p159_q16.jpg",
+      "altText": "Source visual for edmar-csec-p159-q16 from workbook page 159."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Draw PQ = 8 cm.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: PQ = 8 cm"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Extend PQ beyond Q to give a straight line through Q.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "120° is the supplement of 60°, so a 60° angle measured from the extension gives 120° with QP"
+        },
+        {
+          "type": "text",
+          "value": "Result: working line through Q"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Construct 60° at Q from the extension.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Centre Q, arc cutting the line; same radius from that intersection cuts the arc — join Q to the crossing"
+        },
+        {
+          "type": "text",
+          "value": "Result: ∠PQR = 120°"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Mark R on that arm with QR = 5 cm.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Compasses set to 5 cm, centre Q"
+        },
+        {
+          "type": "text",
+          "value": "Result: QR = 5 cm"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Join PR and check its length.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Cosine rule: PR² = 8² + 5² − 2(8)(5)cos120° = 129"
+        },
+        {
+          "type": "text",
+          "value": "Result: PR ≈ 11.4 cm"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Draw PQ = 8 cm, construct 120° at Q by building 60° from the extension of PQ, mark R 5 cm along that arm, and join PR."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "A correctly constructed triangle PQR with PQ = 8 cm, QR = 5 cm and the included angle ∠PQR = 120°. Accuracy check: PR ≈ 11.4 cm."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Two sides and the angle between them fix a triangle uniquely, which is why side–angle–side works as a construction. Because 60° is the one angle compasses give directly (from an equilateral triangle), every multiple and supplement of 60° — 30°, 90°, 120° — is reachable by combining that construction with bisection or extension."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "drawing_the_60_on_the_wrong_side_of_q_pr",
+      "wrongValue": "incorrect_1",
+      "misconception": "Drawing the 60° on the wrong side of Q, producing 60° instead of 120°.",
+      "correctiveNote": "Avoid this: Drawing the 60° on the wrong side of Q, producing 60° instead of 120°."
+    },
+    {
+      "key": "marking_qr_5_cm_along_qp_instead_of_alon",
+      "wrongValue": "incorrect_2",
+      "misconception": "Marking QR = 5 cm along QP instead of along the new arm.",
+      "correctiveNote": "Avoid this: Marking QR = 5 cm along QP instead of along the new arm."
+    },
+    {
+      "key": "checking_with_pythagoras_the_triangle_is",
+      "wrongValue": "incorrect_3",
+      "misconception": "Checking with Pythagoras — the triangle is obtuse, not right-angled, so the cosine rule is the correct check.",
+      "correctiveNote": "Avoid this: Checking with Pythagoras — the triangle is obtuse, not right-angled, so the cosine rule is the correct check."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Remember the compass angle family: 60° direct, 30° by bisecting it, 90° by perpendicular, 120° as 180° − 60°. Recognising which one a question wants saves minutes."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "correctlyconstructedtrianglePQRwithPQ=8cm,QR=5cmandtheincludedangle∠PQR=120°.Accuracycheck:PR≈11",
+    "displayValue": "correctly constructed triangle PQR with PQ = 8 cm, QR = 5 cm and the included angle ∠PQR = 120°. Accuracy check: PR ≈ 11",
+    "acceptedForms": [
+      "correctly constructed triangle PQR with PQ = 8 cm, QR = 5 cm and the included angle ∠PQR = 120°. Accuracy check: PR ≈ 11",
+      "correctlyconstructedtrianglePQRwithPQ=8cm,QR=5cmandtheincludedangle∠PQR=120°.Accuracycheck:PR≈11"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Two sides of a triangle are 6 cm and 7 cm with an included angle of 120°. How long is the third side?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "√(36+49+42)=√127≈11.3cm.",
+      "displayValue": "√(36 + 49 + 42) = √127 ≈ 11.3 cm.",
+      "acceptedForms": [
+        "√(36 + 49 + 42) = √127 ≈ 11.3 cm.",
+        "√(36+49+42)=√127≈11.3cm."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "4ea8ef92-9c04-4b79-abef-76c2b52d13a7",
+      "code": "M1-1.1",
+      "label": "Constructing 60° with compasses"
+    },
+    {
+      "objectiveId": "6d28b30e-4b94-40a3-a178-a9884aa375fc",
+      "code": "M1-1.1",
+      "label": "Side–angle–side construction"
+    },
+    {
+      "objectiveId": "2df01b35-2d51-4e11-aa77-a844cee3e2d8",
+      "code": "M1-1.1",
+      "label": "Cosine rule as an accuracy check"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 16,
+    "pageRef": "p159",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

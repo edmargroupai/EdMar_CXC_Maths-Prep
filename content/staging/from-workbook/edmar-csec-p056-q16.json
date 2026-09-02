@@ -1,0 +1,158 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p056-q16",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The voltage across a resistor is given by V = IR, where I is the current and R is the resistance. Make R the subject of the formula, then find R when V = 24 V and I = 3."
+    },
+    {
+      "type": "text",
+      "value": "Think first: This is a one-step rearrangement followed by a one-step substitution."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p056_q16.jpg",
+      "altText": "Source visual for edmar-csec-p056-q16 from workbook page 56."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Divide both sides by I.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "V/I = IR/I"
+        },
+        {
+          "type": "text",
+          "value": "Result: R = V/I"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Substitute V = 24 and I = 3.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "24/3"
+        },
+        {
+          "type": "text",
+          "value": "Result: R = 8"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Divide both sides by I to make R the subject, then substitute V = 24 and I = 3."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "R = V/I, and when V = 24 V and I = 3, R = 8 ohms"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Because V, I and R are linked by a single product, any one of them can be found from the other two by dividing or multiplying. Rearranging first means you can reuse R = V/I for any pair of values without redoing the algebra each time."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_r_iv_instead_of_v_i",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing R = IV instead of V/I.",
+      "correctiveNote": "Avoid this: Writing R = IV instead of V/I."
+    },
+    {
+      "key": "dividing_the_current_by_the_voltage_givi",
+      "wrongValue": "incorrect_2",
+      "misconception": "Dividing the current by the voltage, giving 3/24 = 0.125.",
+      "correctiveNote": "Avoid this: Dividing the current by the voltage, giving 3/24 = 0.125."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "State the rearranged formula on its own line before substituting - examiners award a mark for the correct transposition."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "R=V/I,andwhenV=24VandI=3,R=8ohms",
+    "displayValue": "R = V/I, and when V = 24 V and I = 3, R = 8 ohms",
+    "acceptedForms": [
+      "R = V/I, and when V = 24 V and I = 3, R = 8 ohms",
+      "R=V/I,andwhenV=24VandI=3,R=8ohms"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Using R = V/I, find R when V = 45 V and I = 9."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "R=5ohms",
+      "displayValue": "R = 5 ohms",
+      "acceptedForms": [
+        "R = 5 ohms",
+        "R=5ohms"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "cb72d664-c0d4-4476-abff-1520e8438bcd",
+      "code": "M1-4.1",
+      "label": "Transposition of formulae"
+    },
+    {
+      "objectiveId": "a1745fed-2bf8-4b35-a380-caa4f1edd8cb",
+      "code": "M1-4.1",
+      "label": "Substitution"
+    },
+    {
+      "objectiveId": "dfce8bc3-7db1-4054-a1e0-56a01fd54f75",
+      "code": "M1-4.1",
+      "label": "Ohm's law"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 16,
+    "pageRef": "p56",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

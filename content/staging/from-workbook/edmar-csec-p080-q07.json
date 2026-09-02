@@ -1,0 +1,287 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p080-q07",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 6,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Sixty students named the school club they preferred: Sports 18, Music 12, Drama 9, Art 6, Debate 15. (a) Calculate the angle of the sector representing Drama. (b) Calculate the angle of the sector representing Debate. (c) Complete the pie chart to represent the information, labelling each sector."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Find the angle that represents one student first — then every sector is a single multiplication."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p080_q07.jpg",
+      "altText": "Source visual for edmar-csec-p080-q07 from workbook page 80."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Find the angle representing one student.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "360° ÷ 60"
+        },
+        {
+          "type": "text",
+          "value": "Result: 6° per student"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Multiply the Drama frequency by 6°.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "9 × 6"
+        },
+        {
+          "type": "text",
+          "value": "Result: Drama = 54°"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Multiply the Debate frequency by 6°.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "15 × 6"
+        },
+        {
+          "type": "text",
+          "value": "Result: Debate = 90°"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Work out the remaining sectors and check the total.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Sports 18 × 6 = 108°, Music 12 × 6 = 72°, Art 6 × 6 = 36°; 108 + 72 + 54 + 36 + 90 = 360"
+        },
+        {
+          "type": "text",
+          "value": "Result: All five angles found"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Draw and label the sectors.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Start at the radius already drawn and measure each angle in turn with a protractor, labelling as you go"
+        },
+        {
+          "type": "text",
+          "value": "Result: Completed, labelled pie chart"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Divide 360° by the 60 students to get the angle per student, multiply by each frequency, and check the five angles total 360° before drawing."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) 54°  (b) 90°  (c) Sports 108°, Music 72°, Drama 54°, Art 36°, Debate 90° — five labelled sectors totalling 360°."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A pie chart represents each category by its share of a whole turn, so a sector angle is the category's fraction of the total multiplied by 360°. Finding the angle for a single student once turns every sector into one quick multiplication and makes the 360° check easy."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "using_100_instead_of_360_and_producing_p",
+      "wrongValue": "incorrect_1",
+      "misconception": "Using 100 instead of 360 and producing percentages where angles are required.",
+      "correctiveNote": "Avoid this: Using 100 instead of 360 and producing percentages where angles are required."
+    },
+    {
+      "key": "rounding_each_angle_separately_so_that_t",
+      "wrongValue": "incorrect_2",
+      "misconception": "Rounding each angle separately so that the sectors no longer total 360°.",
+      "correctiveNote": "Avoid this: Rounding each angle separately so that the sectors no longer total 360°."
+    },
+    {
+      "key": "measuring_every_sector_from_the_same_sta",
+      "wrongValue": "incorrect_3",
+      "misconception": "Measuring every sector from the same starting line instead of from the end of the previous sector.",
+      "correctiveNote": "Avoid this: Measuring every sector from the same starting line instead of from the end of the previous sector."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Total your sector angles and confirm they make 360° before you pick up the protractor."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "54",
+    "displayValue": "54",
+    "acceptedForms": [
+      "54",
+      "54"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "In a pie chart representing 40 people, what angle represents 10 people?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "90",
+      "displayValue": "90",
+      "acceptedForms": [
+        "90",
+        "90"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M3-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "a15ee569-cac5-48ad-a8ab-1085eddef29c",
+      "code": "M3-1.1",
+      "label": "Pie charts"
+    },
+    {
+      "objectiveId": "89ae5750-693e-4e5c-a9b7-e4f0f78de20c",
+      "code": "M3-1.1",
+      "label": "Sector angles from frequencies"
+    },
+    {
+      "objectiveId": "d9661e82-55df-4e71-ab08-8e33422d68d3",
+      "code": "M3-1.1",
+      "label": "Proportion"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 7,
+    "pageRef": "p80",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "numeric_exact",
+        "canonicalValue": "54",
+        "displayValue": "54",
+        "acceptedForms": [
+          "54",
+          "54"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0
+        },
+        "normalisation": "numeric_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "numeric_exact",
+        "canonicalValue": "90",
+        "displayValue": "90",
+        "acceptedForms": [
+          "90",
+          "90"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0
+        },
+        "normalisation": "numeric_default"
+      }
+    },
+    {
+      "partKey": "c",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (c): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Sports108°,Musi",
+        "displayValue": "Sports 108°, Musi",
+        "acceptedForms": [
+          "Sports 108°, Musi",
+          "Sports108°,Musi"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

@@ -1,0 +1,300 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p242-q08",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 6,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A, B, C and D lie on a circle with centre O; AOC and BOD are straight lines through the centre. Angle CBD = 49° and angle OAB = 37°. Angle x is the angle AOB at the centre and angle y is the angle BDC at D. (i) Write down the mathematical names of the straight lines BC and OA. Then determine, with reasons: (a) angle x, (b) angle y."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Two radii to the ends of a chord always make an isosceles triangle — that is what unlocks the angle at the centre here."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p242_q08.jpg",
+      "altText": "Source visual for edmar-csec-p242-q08 from workbook page 242."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Name the two lines from where their endpoints lie.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "BC joins two points on the circumference; OA joins the centre to a point on the circumference"
+        },
+        {
+          "type": "text",
+          "value": "Result: BC is a chord; OA is a radius"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Note what kind of triangle OAB is.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "OA and OB are both radii of the same circle, so OA = OB"
+        },
+        {
+          "type": "text",
+          "value": "Result: triangle OAB is isosceles"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Use the base angles of the isosceles triangle.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Base angles are equal, so ∠OBA = ∠OAB = 37°"
+        },
+        {
+          "type": "text",
+          "value": "Result: ∠OBA = 37°"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Apply the angle sum of triangle OAB.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x = 180° − 37° − 37°"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 106°"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Use the diameter BOD to find the angle at C in triangle BCD.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "BD is a diameter, so ∠BCD is the angle in a semicircle"
+        },
+        {
+          "type": "text",
+          "value": "Result: ∠BCD = 90°"
+        }
+      ]
+    },
+    {
+      "stepNo": 6,
+      "instruction": "Apply the angle sum of triangle BCD.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "y = 180° − 90° − 49°"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 41°"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Name BC and OA from their positions in the circle, use the isosceles triangle OAB to get the angle at the centre, then use the right angle in the semicircle on diameter BD to finish triangle BCD."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) BC is a chord; OA is a radius.  (a) x = 106° — triangle OAB is isosceles (OA = OB, radii), so ∠OBA = 37° and x = 180° − 2(37°).  (b) y = 41° — BD is a diameter, so ∠BCD = 90° (angle in a semicircle), and y = 180° − 90° − 49°."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Every radius of a circle has the same length, so any triangle with two radii as sides is automatically isosceles and its base angles are equal — this converts a single given angle into two. The right angle at C comes from BD being a diameter: an angle at the circumference standing on a diameter is half the straight angle of 180° at the centre, so it is always 90°."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "calling_oa_a_diameter_or_a_chord_instead",
+      "wrongValue": "incorrect_1",
+      "misconception": "Calling OA a diameter or a chord instead of a radius.",
+      "correctiveNote": "Avoid this: Calling OA a diameter or a chord instead of a radius."
+    },
+    {
+      "key": "assuming_aob_2_37_by_misapplying_the_ang",
+      "wrongValue": "incorrect_2",
+      "misconception": "Assuming ∠AOB = 2 × 37° by misapplying the angle-at-the-centre rule — that rule needs an angle at the circumference standing on the same arc.",
+      "correctiveNote": "Avoid this: Assuming ∠AOB = 2 × 37° by misapplying the angle-at-the-centre rule — that rule needs an angle at the circumference standing on the same arc."
+    },
+    {
+      "key": "forgetting_that_bd_passes_through_o_and_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Forgetting that BD passes through O and so is a diameter, and missing the right angle at C.",
+      "correctiveNote": "Avoid this: Forgetting that BD passes through O and so is a diameter, and missing the right angle at C."
+    },
+    {
+      "key": "using_49_at_the_wrong_vertex_of_triangle",
+      "wrongValue": "incorrect_4",
+      "misconception": "Using 49° at the wrong vertex of triangle BCD.",
+      "correctiveNote": "Avoid this: Using 49° at the wrong vertex of triangle BCD."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Whenever a line in a circle passes through the centre, write 'diameter' beside it — that single word usually hands you a 90° angle somewhere on the circumference."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "B",
+    "displayValue": "B",
+    "acceptedForms": [
+      "B",
+      "B"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "In a circle centre O, P and Q are on the circumference and ∠OPQ = 25°. Find ∠POQ."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "130",
+      "displayValue": "130",
+      "acceptedForms": [
+        "130",
+        "130"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "93a1e39a-37ea-42ee-af02-3548e01ede63",
+      "code": "M1-1.1",
+      "label": "Chord and radius"
+    },
+    {
+      "objectiveId": "34770302-7be1-4148-a9e0-81dee71696da",
+      "code": "M1-1.1",
+      "label": "Isosceles triangle formed by two radii"
+    },
+    {
+      "objectiveId": "2a43c9c3-5358-4124-a907-ae5bb9ce74a3",
+      "code": "M1-1.1",
+      "label": "Angle sum of a triangle"
+    },
+    {
+      "objectiveId": "2c48f40e-4fae-4604-aeaf-ab6d742ce0bc",
+      "code": "M1-1.1",
+      "label": "Angle in a semicircle"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 8,
+    "pageRef": "p242",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a.i",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.i): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "B",
+        "displayValue": "B",
+        "acceptedForms": [
+          "B",
+          "B"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "chord;O",
+        "displayValue": "chord; O",
+        "acceptedForms": [
+          "chord; O",
+          "chord;O"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "isisosceles(O",
+        "displayValue": "is isosceles (O",
+        "acceptedForms": [
+          "is isosceles (O",
+          "isisosceles(O"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

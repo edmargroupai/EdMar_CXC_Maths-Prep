@@ -1,0 +1,174 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p096-q10",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Make h the subject of the formula V = πr²h (the volume of a cylinder)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: h is multiplied by the whole quantity πr², so divide by that quantity as one block."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p096_q10.jpg",
+      "altText": "Source visual for edmar-csec-p096-q10 from workbook page 96."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Identify the coefficient of h.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "V = (πr²) × h"
+        },
+        {
+          "type": "text",
+          "value": "Result: the coefficient is πr²"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Divide both sides by πr².",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "V ÷ πr² = πr²h ÷ πr²"
+        },
+        {
+          "type": "text",
+          "value": "Result: V/(πr²) = h"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Write the new subject on the left.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: h = V/(πr²)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Divide both sides by πr² in a single step."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "h = V/(πr²)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Although πr² contains a squared letter, it is a single multiplying factor as far as h is concerned, so one division removes all of it. Because r is not the subject here, the square never has to be undone."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "square_rooting_unnecessarily_because_of_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Square-rooting unnecessarily because of the r².",
+      "correctiveNote": "Avoid this: Square-rooting unnecessarily because of the r²."
+    },
+    {
+      "key": "dividing_by_r_instead_of_r",
+      "wrongValue": "incorrect_2",
+      "misconception": "Dividing by πr instead of πr².",
+      "correctiveNote": "Avoid this: Dividing by πr instead of πr²."
+    },
+    {
+      "key": "writing_h_v_r_ambiguously_without_bracke",
+      "wrongValue": "incorrect_3",
+      "misconception": "Writing h = V/π r² ambiguously without brackets.",
+      "correctiveNote": "Avoid this: Writing h = V/π r² ambiguously without brackets."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Before rearranging, underline the subject — everything not underlined is a coefficient to be divided away in one move."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "h=V/(πr²)",
+    "displayValue": "h = V/(πr²)",
+    "acceptedForms": [
+      "h = V/(πr²)",
+      "h=V/(πr²)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Make h the subject of V = (1/3)πr²h."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "h=3V/(πr²)",
+      "displayValue": "h = 3V/(πr²)",
+      "acceptedForms": [
+        "h = 3V/(πr²)",
+        "h=3V/(πr²)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "1212c954-972d-4dd9-aa79-91174905db72",
+      "code": "M1-1.1",
+      "label": "Changing the subject of a formula"
+    },
+    {
+      "objectiveId": "508d957d-ecd8-4987-a074-c11cc0d74842",
+      "code": "M1-1.1",
+      "label": "Inverse operations"
+    },
+    {
+      "objectiveId": "1147b17f-11b0-4aec-ae85-99056d952e14",
+      "code": "M1-1.1",
+      "label": "Volume of a cylinder"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 10,
+    "pageRef": "p96",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

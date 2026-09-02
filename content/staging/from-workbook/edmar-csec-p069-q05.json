@@ -1,0 +1,174 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p069-q05",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Determine, algebraically, the coordinates of the points at which the line 2x + 5y = 20 cuts each of the axes."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The equation is not in y = mx + c form, but the intercept method does not need it to be."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p069_q05.jpg",
+      "altText": "Source visual for edmar-csec-p069-q05 from workbook page 69."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Set x = 0 for the y-axis crossing.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2(0) + 5y = 20, so 5y = 20"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 4, giving (0, 4)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Set y = 0 for the x-axis crossing.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2x + 5(0) = 20, so 2x = 20"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 10, giving (10, 0)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "State both points as coordinates.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: (0, 4) and (10, 0)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Substitute x = 0 to find where the line cuts the y-axis, then y = 0 to find where it cuts the x-axis."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "The line cuts the y-axis at (0, 4) and the x-axis at (10, 0)."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Any equation connecting x and y describes the points that satisfy it, so the axis crossings are found by imposing the defining property of each axis. There is no need to rearrange into y = mx + c first; substituting zero is quicker and less error-prone. These two points are also enough to draw the whole line, since two points determine a straight line."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "rearranging_incorrectly_while_trying_to_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Rearranging incorrectly while trying to reach y = mx + c form.",
+      "correctiveNote": "Avoid this: Rearranging incorrectly while trying to reach y = mx + c form."
+    },
+    {
+      "key": "giving_the_answers_as_x_10_and_y_4_witho",
+      "wrongValue": "incorrect_2",
+      "misconception": "Giving the answers as x = 10 and y = 4 without coordinates.",
+      "correctiveNote": "Avoid this: Giving the answers as x = 10 and y = 4 without coordinates."
+    },
+    {
+      "key": "dividing_20_by_2_when_solving_5y_20",
+      "wrongValue": "incorrect_3",
+      "misconception": "Dividing 20 by 2 when solving 5y = 20.",
+      "correctiveNote": "Avoid this: Dividing 20 by 2 when solving 5y = 20."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "For a line given as ax + by = c, cover up one term to find the other intercept; it is the fastest reliable method in the exam."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Thelinecutsthey-axisat(0,4)andthex-axisat(10,0).",
+    "displayValue": "The line cuts the y-axis at (0, 4) and the x-axis at (10, 0).",
+    "acceptedForms": [
+      "The line cuts the y-axis at (0, 4) and the x-axis at (10, 0).",
+      "Thelinecutsthey-axisat(0,4)andthex-axisat(10,0)."
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Where does 3x + 4y = 12 cut the axes?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(0,3)and(4,0)",
+      "displayValue": "(0, 3) and (4, 0)",
+      "acceptedForms": [
+        "(0, 3) and (4, 0)",
+        "(0,3)and(4,0)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "a8dda5a6-d337-4562-a169-32a837a69b86",
+      "code": "M1-1.1",
+      "label": "Intercepts of a straight line"
+    },
+    {
+      "objectiveId": "4fd1c4c7-eda4-4069-a517-8b724dc6f3f0",
+      "code": "M1-1.1",
+      "label": "Linear equations in two variables"
+    },
+    {
+      "objectiveId": "72598286-5707-49df-ae7e-ee983751cb0e",
+      "code": "M1-1.1",
+      "label": "Solving linear equations"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 5,
+    "pageRef": "p69",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

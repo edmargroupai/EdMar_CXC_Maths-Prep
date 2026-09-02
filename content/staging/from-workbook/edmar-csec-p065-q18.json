@@ -1,0 +1,196 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p065-q18",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Simplify (8x⁴ × 2x⁵) / (4x⁵)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The x⁵ on the top and the x⁵ on the bottom are not the whole story, so combine the top first."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p065_q18.jpg",
+      "altText": "Source visual for edmar-csec-p065-q18 from workbook page 65."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply the coefficients in the numerator.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "8 × 2 = 16"
+        },
+        {
+          "type": "text",
+          "value": "Result: 16"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Add the indices in the numerator.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x⁴ × x⁵ = x^(4+5)"
+        },
+        {
+          "type": "text",
+          "value": "Result: 16x⁹"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Divide the coefficients.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "16 ÷ 4 = 4"
+        },
+        {
+          "type": "text",
+          "value": "Result: 4"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Subtract the indices.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x⁹ ÷ x⁵ = x^(9−5)"
+        },
+        {
+          "type": "text",
+          "value": "Result: 4x⁴"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Multiply out the numerator, then divide coefficients and subtract indices."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(8x⁴ × 2x⁵) / (4x⁵) = 4x⁴"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Cancelling only works between a single factor on top and a single factor on the bottom. Here the numerator is a product of two powers, so it must be collapsed into one power before the division law applies. Once it is 16x⁹ over 4x⁵, dividing coefficients and subtracting indices is a single clean step."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "cancelling_the_x_in_the_numerator_agains",
+      "wrongValue": "incorrect_1",
+      "misconception": "Cancelling the x⁵ in the numerator against the x⁵ in the denominator before combining the top.",
+      "correctiveNote": "Avoid this: Cancelling the x⁵ in the numerator against the x⁵ in the denominator before combining the top."
+    },
+    {
+      "key": "multiplying_the_indices_4_and_5_to_get_x",
+      "wrongValue": "incorrect_2",
+      "misconception": "Multiplying the indices 4 and 5 to get x²⁰.",
+      "correctiveNote": "Avoid this: Multiplying the indices 4 and 5 to get x²⁰."
+    },
+    {
+      "key": "dividing_8_by_4_and_ignoring_the_2",
+      "wrongValue": "incorrect_3",
+      "misconception": "Dividing 8 by 4 and ignoring the 2.",
+      "correctiveNote": "Avoid this: Dividing 8 by 4 and ignoring the 2."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Never cancel across an unsimplified product; simplify the numerator to one term first, then cancel."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "(8x⁴×2x⁵)/(4x⁵)=4x⁴",
+    "displayValue": "(8x⁴ × 2x⁵) / (4x⁵) = 4x⁴",
+    "acceptedForms": [
+      "(8x⁴ × 2x⁵) / (4x⁵) = 4x⁴",
+      "(8x⁴×2x⁵)/(4x⁵)=4x⁴"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Simplify (6x³ × 3x⁴) / (9x⁵)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "2",
+      "displayValue": "2",
+      "acceptedForms": [
+        "2",
+        "2"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "e90cc4fa-b6fb-4ab2-ae2e-b253e7e4380a",
+      "code": "M1-4.1",
+      "label": "Laws of indices"
+    },
+    {
+      "objectiveId": "e426d130-25fe-44c3-a140-5aa5a3d47014",
+      "code": "M1-4.1",
+      "label": "Multiplication law"
+    },
+    {
+      "objectiveId": "cad582eb-f30a-4c43-a0fd-73cdafa34fa5",
+      "code": "M1-4.1",
+      "label": "Division law"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 18,
+    "pageRef": "p65",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

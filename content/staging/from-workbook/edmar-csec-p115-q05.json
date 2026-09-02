@@ -1,0 +1,173 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p115-q05",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The force F acting on an object varies directly as its acceleration a. Given that F = 18 when a = 6, find the value of F when a = 10."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Force divided by acceleration is a fixed constant, so one pair of values unlocks the rest."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p115_q05.jpg",
+      "altText": "Source visual for edmar-csec-p115-q05 from workbook page 115."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write the variation statement as an equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "F varies directly as a"
+        },
+        {
+          "type": "text",
+          "value": "Result: F = ka"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Substitute F = 18 and a = 6 to find k.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "18 = 6k"
+        },
+        {
+          "type": "text",
+          "value": "Result: k = 3"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Substitute a = 10 into F = 3a.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "F = 3 × 10"
+        },
+        {
+          "type": "text",
+          "value": "Result: F = 30"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Write F = ka, find k from F = 18 and a = 6, then substitute a = 10."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "F = 30"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The constant k is the mass of the object, which does not change as the acceleration changes. That is why F ÷ a gives the same value for every pair, and why a single measurement is enough to predict the force at any other acceleration."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "multiplying_18_by_10_without_first_divid",
+      "wrongValue": "incorrect_1",
+      "misconception": "Multiplying 18 by 10 without first dividing by 6.",
+      "correctiveNote": "Avoid this: Multiplying 18 by 10 without first dividing by 6."
+    },
+    {
+      "key": "confusing_which_quantity_is_the_subject_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Confusing which quantity is the subject when writing F = ka.",
+      "correctiveNote": "Avoid this: Confusing which quantity is the subject when writing F = ka."
+    },
+    {
+      "key": "assuming_f_increases_by_10_because_a_inc",
+      "wrongValue": "incorrect_3",
+      "misconception": "Assuming F increases by 10 because a increased by 4.",
+      "correctiveNote": "Avoid this: Assuming F increases by 10 because a increased by 4."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Set out direct variation in three lines every time — equation, find k, substitute — so no step is skipped under exam pressure."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "F=30",
+    "displayValue": "F = 30",
+    "acceptedForms": [
+      "F = 30",
+      "F=30"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "F varies directly as a and F = 24 when a = 8. Find F when a = 5."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "F=15",
+      "displayValue": "F = 15",
+      "acceptedForms": [
+        "F = 15",
+        "F=15"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "9014cae0-0d77-4059-ac9f-5dbd382e09c8",
+      "code": "M1-1.1",
+      "label": "Direct variation"
+    },
+    {
+      "objectiveId": "3c6ad034-deb7-4e63-a53b-08d7546e55fb",
+      "code": "M1-1.1",
+      "label": "Constant of variation"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 5,
+    "pageRef": "p115",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

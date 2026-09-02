@@ -1,0 +1,337 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p238-q09",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 8,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A distance–time graph shows a car's three-stage journey from Town A to Town C and back. Stage 1: 0 km at 06:00 rising to 40 km at 07:00; the car then stands still until 07:30. Stage 2: 40 km at 07:30 rising to 100 km (Town C) at 08:30; the car stands still until 08:45. Stage 3: 100 km at 08:45 falling to 0 km at 10:00. (i) State the time of day the car arrived at Town C. (ii) Calculate the total stopped time in minutes. (iii) Determine the constant speed during Stage 2. (iv) Calculate the average speed for the time the car was moving."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Every horizontal piece of the graph is a stop, and 'average speed while moving' means you must take the stopped time out of the total before dividing."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p238_q09.jpg",
+      "altText": "Source visual for edmar-csec-p238-q09 from workbook page 238."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Find where the graph first reaches its highest value, 100 km.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The graph tops out at 100 km, labelled C, at the 08:30 gridline"
+        },
+        {
+          "type": "text",
+          "value": "Result: arrived at C at 08:30"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Add the lengths of the two horizontal sections.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "07:00 to 07:30 is 30 min; 08:30 to 08:45 is 15 min"
+        },
+        {
+          "type": "text",
+          "value": "Result: total stopped time = 45 minutes"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Read the rise and the time for Stage 2.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "From 40 km at 07:30 to 100 km at 08:30 — that is 60 km in 1 hour"
+        },
+        {
+          "type": "text",
+          "value": "Result: Stage 2 speed = 60 km/h"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Find the total distance travelled over the whole journey.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "100 km out to C plus 100 km back to A"
+        },
+        {
+          "type": "text",
+          "value": "Result: 200 km"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Find the moving time by subtracting the stops from the total time.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "06:00 to 10:00 is 4 h = 240 min; 240 − 45 = 195 min = 3.25 h"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3 h 15 min = 3.25 h"
+        }
+      ]
+    },
+    {
+      "stepNo": 6,
+      "instruction": "Divide the total distance by the moving time.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "200 ÷ 3.25"
+        },
+        {
+          "type": "text",
+          "value": "Result: ≈ 61.5 km/h"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Read the corner points off the graph, add the two flat sections for the stopped time, use the Stage 2 rise over its hour for the constant speed, then divide the whole 200 km by the moving time only."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) 08:30  (ii) 45 minutes  (iii) 60 km/h  (iv) about 61.5 km/h (200 km ÷ 3.25 h = 61.54 km/h)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The car's distance from A is plotted, so a rising line means moving away, a falling line means returning, and a flat line means no change of position — a stop. The gradient of each sloping section is therefore the speed on that leg. The return leg still adds 100 km of travel even though the graph goes down, which is why the total distance is 200 km and not 0."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "taking_the_total_distance_as_100_km_and_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Taking the total distance as 100 km and forgetting the return journey.",
+      "correctiveNote": "Avoid this: Taking the total distance as 100 km and forgetting the return journey."
+    },
+    {
+      "key": "dividing_by_the_full_4_hours_instead_of_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Dividing by the full 4 hours instead of the 3.25 hours of actual motion.",
+      "correctiveNote": "Avoid this: Dividing by the full 4 hours instead of the 3.25 hours of actual motion."
+    },
+    {
+      "key": "reading_times_of_day_as_plain_numbers_so",
+      "wrongValue": "incorrect_3",
+      "misconception": "Reading times of day as plain numbers, so 08:45 becomes 8.45 hours.",
+      "correctiveNote": "Avoid this: Reading times of day as plain numbers, so 08:45 becomes 8.45 hours."
+    },
+    {
+      "key": "missing_the_shorter_15_minute_stop_at_c_",
+      "wrongValue": "incorrect_4",
+      "misconception": "Missing the shorter 15-minute stop at C because it spans only half a grid square.",
+      "correctiveNote": "Avoid this: Missing the shorter 15-minute stop at C because it spans only half a grid square."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Label every corner of a travel graph with its coordinates (time, distance) before answering — each part of the question then becomes a one-line calculation."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "08",
+    "displayValue": "08",
+    "acceptedForms": [
+      "08",
+      "08"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A cyclist covers 45 km between 09:00 and 12:00 but rests for 30 minutes. What is her average speed while moving?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "18",
+      "displayValue": "18",
+      "acceptedForms": [
+        "18",
+        "18"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "8b9a7621-4d0f-4185-ab70-f1edd55212d0",
+      "code": "M1-1.1",
+      "label": "Distance–time graphs"
+    },
+    {
+      "objectiveId": "2d34f80f-9e06-4d91-adf2-9fb0b9d29d51",
+      "code": "M1-1.1",
+      "label": "Gradient as speed"
+    },
+    {
+      "objectiveId": "2f4688d3-b08d-4df4-a4cc-7bdd27b4c2d9",
+      "code": "M1-1.1",
+      "label": "Average speed = distance ÷ time"
+    },
+    {
+      "objectiveId": "d2cf78bd-f46a-4ec7-a684-8b5cdaa0a5b4",
+      "code": "M1-1.1",
+      "label": "Reading times of day from an axis"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 9,
+    "pageRef": "p238",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a.i",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.i): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "numeric_exact",
+        "canonicalValue": "08",
+        "displayValue": "08",
+        "acceptedForms": [
+          "08",
+          "08"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0
+        },
+        "normalisation": "numeric_default"
+      }
+    },
+    {
+      "partKey": "a.ii",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.ii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "numeric_exact",
+        "canonicalValue": "45",
+        "displayValue": "45",
+        "acceptedForms": [
+          "45",
+          "45"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0
+        },
+        "normalisation": "numeric_default"
+      }
+    },
+    {
+      "partKey": "a.iii",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.iii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "numeric_exact",
+        "canonicalValue": "60",
+        "displayValue": "60",
+        "acceptedForms": [
+          "60",
+          "60"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0
+        },
+        "normalisation": "numeric_default"
+      }
+    },
+    {
+      "partKey": "a.iv",
+      "sequence": 4,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.iv): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "about61.5km/h(200km÷3.25h=61.54km/h)",
+        "displayValue": "about 61.5 km/h (200 km ÷ 3.25 h = 61.54 km/h)",
+        "acceptedForms": [
+          "about 61.5 km/h (200 km ÷ 3.25 h = 61.54 km/h)",
+          "about61.5km/h(200km÷3.25h=61.54km/h)"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

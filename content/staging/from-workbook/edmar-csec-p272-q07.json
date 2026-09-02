@@ -1,0 +1,298 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p272-q07",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 8,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A triangular field LMP on horizontal ground has LM = 120 m, LP = 150 m and PM = 180 m, with a north line drawn at L. (i) Calculate angle MLP. (ii) The bearing of P from L is 210 degrees. (a) Find the bearing of M from L. (b) Calculate angle NLP and hence find the bearing of L from P."
+    },
+    {
+      "type": "text",
+      "value": "Think first: All three sides are known, so the angle at L comes from the cosine rule; after that the whole question is about turning angles into compass directions."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p272_q07.jpg",
+      "altText": "Source visual for edmar-csec-p272-q07 from workbook page 272."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write the cosine rule for the angle at L using the three sides.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "cos(MLP) = (LP squared + LM squared - PM squared) / (2 x LP x LM) = (22500 + 14400 - 32400) / (2 x 150 x 120)"
+        },
+        {
+          "type": "text",
+          "value": "Result: cos(angle MLP) = 4500 / 36000 = 0.125"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Take the inverse cosine.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The positive cosine tells you the angle is acute."
+        },
+        {
+          "type": "text",
+          "value": "Result: angle MLP = 82.8 degrees (1 d.p.)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "For (ii)(a), start from the bearing of P and turn back towards M.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "In the diagram M lies clockwise of north but anticlockwise of P, so the bearing of M from L = 210 - 82.8"
+        },
+        {
+          "type": "text",
+          "value": "Result: Bearing of M from L = 127.2, i.e. 127 degrees"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "For (ii)(b), find the geometric angle NLP between the north line at L and the line LP.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "A bearing of 210 degrees is measured clockwise from north, so the angle you actually draw from the north ray round to LP is 360 - 210 = 150 degrees on the anticlockwise side."
+        },
+        {
+          "type": "text",
+          "value": "Result: angle NLP = 150 degrees"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Use the parallel north lines at L and P to get the back bearing.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The north line at P is parallel to the north line at L, so the bearing of L from P = 210 - 180."
+        },
+        {
+          "type": "text",
+          "value": "Result: Bearing of L from P = 030 degrees"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Rearrange the cosine rule to find angle MLP from the three sides, then subtract that angle from the bearing of P to reach M, and use the fact that the north lines at L and P are parallel to get the back bearing."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) angle MLP = 82.8 degrees  (ii)(a) The bearing of M from L is 127 degrees  (ii)(b) angle NLP = 150 degrees and the bearing of L from P is 030 degrees."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The cosine rule is the only rule that connects three sides to an angle, and rearranging it isolates the cosine of the angle you want. Bearings are directions measured clockwise from north, so any two directions from the same point differ by the angle between them; that is why subtracting angle MLP from the bearing of P gives the bearing of M. Back bearings differ by 180 degrees because the north lines at any two points on a plan are parallel, so the two bearings are co-interior angles across the line joining them."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "putting_the_side_opposite_the_required_a",
+      "wrongValue": "incorrect_1",
+      "misconception": "Putting the side opposite the required angle in the wrong place in the cosine rule.",
+      "correctiveNote": "Avoid this: Putting the side opposite the required angle in the wrong place in the cosine rule."
+    },
+    {
+      "key": "adding_angle_mlp_to_210_degrees_which_wo",
+      "wrongValue": "incorrect_2",
+      "misconception": "Adding angle MLP to 210 degrees, which would put M in the wrong quadrant.",
+      "correctiveNote": "Avoid this: Adding angle MLP to 210 degrees, which would put M in the wrong quadrant."
+    },
+    {
+      "key": "writing_angle_nlp_as_210_degrees_confusi",
+      "wrongValue": "incorrect_3",
+      "misconception": "Writing angle NLP as 210 degrees, confusing the bearing with the drawn angle.",
+      "correctiveNote": "Avoid this: Writing angle NLP as 210 degrees, confusing the bearing with the drawn angle."
+    },
+    {
+      "key": "giving_the_back_bearing_as_390_degrees_i",
+      "wrongValue": "incorrect_4",
+      "misconception": "Giving the back bearing as 390 degrees instead of subtracting 180.",
+      "correctiveNote": "Avoid this: Giving the back bearing as 390 degrees instead of subtracting 180."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Bearings are always written with three figures, so 30 degrees must be recorded as 030 degrees."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "angleMLP=82.8degrees(ii)",
+    "displayValue": "angle MLP = 82.8 degrees (ii)",
+    "acceptedForms": [
+      "angle MLP = 82.8 degrees (ii)",
+      "angleMLP=82.8degrees(ii)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A triangle has sides 5, 7 and 8. Find the angle between the sides of length 5 and 7."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "cosA=(25+49-64)/70=0.1429,soA=81.8degrees(1d.p.)",
+      "displayValue": "cos A = (25 + 49 - 64)/70 = 0.1429, so A = 81.8 degrees (1 d.p.)",
+      "acceptedForms": [
+        "cos A = (25 + 49 - 64)/70 = 0.1429, so A = 81.8 degrees (1 d.p.)",
+        "cosA=(25+49-64)/70=0.1429,soA=81.8degrees(1d.p.)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "4b01a448-e7f5-484d-a8b9-e4ba105c2861",
+      "code": "M1-1.1",
+      "label": "Cosine rule for an angle"
+    },
+    {
+      "objectiveId": "930752d9-20de-4b89-a0ee-d0a3cd93718b",
+      "code": "M1-1.1",
+      "label": "Bearings measured clockwise from north"
+    },
+    {
+      "objectiveId": "35092a33-ca10-4207-a244-5c272fa2a69d",
+      "code": "M1-1.1",
+      "label": "Back bearings and parallel north lines"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 7,
+    "pageRef": "p272",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a.i",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.i): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "angleMLP=82.8degrees(ii)",
+        "displayValue": "angle MLP = 82.8 degrees (ii)",
+        "acceptedForms": [
+          "angle MLP = 82.8 degrees (ii)",
+          "angleMLP=82.8degrees(ii)"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.ii",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.ii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "ThebearingofMfromLis127degrees(ii)",
+        "displayValue": "The bearing of M from L is 127 degrees (ii)",
+        "acceptedForms": [
+          "The bearing of M from L is 127 degrees (ii)",
+          "ThebearingofMfromLis127degrees(ii)"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "ThebearingofMfromLis127degrees(ii)",
+        "displayValue": "The bearing of M from L is 127 degrees (ii)",
+        "acceptedForms": [
+          "The bearing of M from L is 127 degrees (ii)",
+          "ThebearingofMfromLis127degrees(ii)"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 4,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "angleNLP=150degreesan",
+        "displayValue": "angle NLP = 150 degrees an",
+        "acceptedForms": [
+          "angle NLP = 150 degrees an",
+          "angleNLP=150degreesan"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

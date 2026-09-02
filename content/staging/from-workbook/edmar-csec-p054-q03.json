@@ -1,0 +1,178 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p054-q03",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the equation 5(x + 6) = 20."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Twenty divides neatly by five, so dividing both sides first is the cleanest opening move."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p054_q03.jpg",
+      "altText": "Source visual for edmar-csec-p054-q03 from workbook page 54."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Divide both sides by 5.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "20 ÷ 5 = 4"
+        },
+        {
+          "type": "text",
+          "value": "Result: x + 6 = 4"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Subtract 6 from both sides.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "4 − 6"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = −2"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Check by substitution.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5(−2 + 6) = 5 × 4"
+        },
+        {
+          "type": "text",
+          "value": "Result: 20, which matches the right-hand side"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Divide both sides by 5, then subtract 6 to isolate x."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = −2"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Dividing both sides by 5 is the inverse of the multiplication that produced 5(x + 6), so it removes the outer factor while preserving equality. What remains, x + 6 = 4, is undone by subtracting 6. The negative solution is entirely legitimate: it simply means x sits two units below zero, and substituting it back confirms the original equation holds."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "rejecting_x_2_on_the_grounds_that_it_is_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Rejecting x = −2 on the grounds that it is negative.",
+      "correctiveNote": "Avoid this: Rejecting x = −2 on the grounds that it is negative."
+    },
+    {
+      "key": "expanding_as_5x_6_20_by_not_multiplying_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Expanding as 5x + 6 = 20 by not multiplying the 6.",
+      "correctiveNote": "Avoid this: Expanding as 5x + 6 = 20 by not multiplying the 6."
+    },
+    {
+      "key": "adding_6_rather_than_subtracting_it_afte",
+      "wrongValue": "incorrect_3",
+      "misconception": "Adding 6 rather than subtracting it after dividing.",
+      "correctiveNote": "Avoid this: Adding 6 rather than subtracting it after dividing."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Always substitute your answer back into the original equation, not into a line of your own working. That way an earlier slip cannot hide behind a later one."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=−2",
+    "displayValue": "= −2",
+    "acceptedForms": [
+      "= −2",
+      "=−2"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve 3(x + 8) = 9."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "+8=3,sox=−5.",
+      "displayValue": "+ 8 = 3, so x = −5.",
+      "acceptedForms": [
+        "+ 8 = 3, so x = −5.",
+        "+8=3,sox=−5."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "b1a9f38e-1769-4070-a284-66de337b5e5b",
+      "code": "M1-4.1",
+      "label": "Solving linear equations"
+    },
+    {
+      "objectiveId": "a4e67224-dde7-46eb-a352-dfbf2ad3ae6e",
+      "code": "M1-4.1",
+      "label": "Expanding brackets"
+    },
+    {
+      "objectiveId": "ea6e417b-6e16-4c9c-aabb-50baa0539645",
+      "code": "M1-4.1",
+      "label": "Inverse operations"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 3,
+    "pageRef": "p54",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

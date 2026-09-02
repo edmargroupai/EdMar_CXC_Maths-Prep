@@ -1,0 +1,186 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p009-q01",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Find the exact value of (2.4 × 6.5 − 3.6)/1.2."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Everything above the fraction bar is a single number, so finish the numerator completely before dividing."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p009_q01.jpg",
+      "altText": "Source visual for edmar-csec-p009-q01 from workbook page 9."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply the two decimals in the numerator.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "24 × 65 = 1560, and there are two decimal places in total"
+        },
+        {
+          "type": "text",
+          "value": "Result: 15.6"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Subtract to finish the numerator.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "15.6 − 3.6"
+        },
+        {
+          "type": "text",
+          "value": "Result: 12"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Divide the numerator by the denominator.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "12 ÷ 1.2 = 120 ÷ 12"
+        },
+        {
+          "type": "text",
+          "value": "Result: 10"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Multiply 2.4 by 6.5, subtract 3.6 to close the numerator, then divide by 1.2."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "10"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A fraction bar is a grouping symbol: it brackets the whole numerator, so the multiplication and subtraction above it are completed before any division happens. Multiplying both parts of 12 ÷ 1.2 by 10 turns a decimal divisor into a whole-number one without changing the value, which is why the answer is exact rather than rounded."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "dividing_3_6_by_1_2_first_and_subtractin",
+      "wrongValue": "incorrect_1",
+      "misconception": "Dividing 3.6 by 1.2 first and subtracting afterwards.",
+      "correctiveNote": "Avoid this: Dividing 3.6 by 1.2 first and subtracting afterwards."
+    },
+    {
+      "key": "misplacing_the_decimal_point_in_2_4_6_5_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Misplacing the decimal point in 2.4 × 6.5 and getting 1.56 or 156.",
+      "correctiveNote": "Avoid this: Misplacing the decimal point in 2.4 × 6.5 and getting 1.56 or 156."
+    },
+    {
+      "key": "leaving_the_answer_as_12_1_2_without_car",
+      "wrongValue": "incorrect_3",
+      "misconception": "Leaving the answer as 12 ÷ 1.2 without carrying out the division.",
+      "correctiveNote": "Avoid this: Leaving the answer as 12 ÷ 1.2 without carrying out the division."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When a divisor is a decimal, multiply the numerator and denominator by 10, 100 or 1000 until the divisor is a whole number — the division then needs no decimal juggling."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "10",
+    "displayValue": "10",
+    "acceptedForms": [
+      "10",
+      "10"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Find the exact value of (1.5 × 4.2 − 0.3)/0.6."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "10",
+      "displayValue": "10",
+      "acceptedForms": [
+        "10",
+        "10"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.2"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "4b77ea86-93b5-4f39-a4de-3f474ca03837",
+      "code": "M1-1.2",
+      "label": "Order of operations"
+    },
+    {
+      "objectiveId": "74a739ea-f65d-4450-a891-aae23e49e896",
+      "code": "M1-1.2",
+      "label": "Decimal multiplication"
+    },
+    {
+      "objectiveId": "5676c205-6265-4568-a266-10c1eff58d56",
+      "code": "M1-1.2",
+      "label": "Decimal division"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 1,
+    "pageRef": "p9",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

@@ -1,0 +1,276 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p038-q05",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 6,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A field is in the shape of a sector of a circle with centre O and diameter 28 m, and angle POZ is 90°. Taking π = 22/7, calculate (i) the area of the field and (ii) the perimeter of the field. (Part (b) introduces a separate triangular prism ABCDEF with right-angled cross section ABC, AB = 6 cm and BC = 10 cm; its question continues beyond this extract and is not answered here.)"
+    },
+    {
+      "type": "text",
+      "value": "Think first: A 90° sector is exactly a quarter of a circle, so work out the whole circle first and take a quarter."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p038_q05.jpg",
+      "altText": "Source visual for edmar-csec-p038-q05 from workbook page 38."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Find the radius from the diameter.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "28 / 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: r = 14 m"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Write the fraction of the circle the sector occupies.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "90 / 360"
+        },
+        {
+          "type": "text",
+          "value": "Result: one quarter"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Calculate the sector area.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "¼ x (22/7) x 14² = ¼ x (22/7) x 196 = ¼ x 616"
+        },
+        {
+          "type": "text",
+          "value": "Result: 154 m²"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Calculate the arc length PZ.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "¼ x 2 x (22/7) x 14 = ¼ x 88"
+        },
+        {
+          "type": "text",
+          "value": "Result: 22 m"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Add the arc to the two radii OP and OZ for the perimeter.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "22 + 14 + 14"
+        },
+        {
+          "type": "text",
+          "value": "Result: 50 m"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Halve the diameter to get the radius, take one quarter of the circle area for the sector area, then add the arc length to the two straight radii for the perimeter."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) The area of the field is 154 m².  (ii) The perimeter of the field is 50 m."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A sector is a fraction of a circle set by its angle, so both its area and its arc are that same fraction of the full circle values. The perimeter of a sector is not just the arc: the boundary of the field also runs along the two radii back to the centre, which adds 2r. Using 22/7 with a radius that is a multiple of 7 keeps every step exact."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "using_28_m_as_the_radius_instead_of_the_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Using 28 m as the radius instead of the diameter.",
+      "correctiveNote": "Avoid this: Using 28 m as the radius instead of the diameter."
+    },
+    {
+      "key": "giving_the_perimeter_as_the_arc_length_a",
+      "wrongValue": "incorrect_2",
+      "misconception": "Giving the perimeter as the arc length alone and omitting the two radii.",
+      "correctiveNote": "Avoid this: Giving the perimeter as the arc length alone and omitting the two radii."
+    },
+    {
+      "key": "using_the_arc_length_formula_for_the_are",
+      "wrongValue": "incorrect_3",
+      "misconception": "Using the arc length formula for the area or the other way round.",
+      "correctiveNote": "Avoid this: Using the arc length formula for the area or the other way round."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Trace the boundary of the shaded region with your pencil before computing a perimeter. Whatever your pencil travels along is what you must add."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Theare",
+    "displayValue": "The are",
+    "acceptedForms": [
+      "The are",
+      "Theare"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A quarter circle has radius 7 cm. Using π = 22/7, find its area and perimeter."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "Area38.5cm²,perimeter25cm",
+      "displayValue": "Area 38.5 cm², perimeter 25 cm",
+      "acceptedForms": [
+        "Area 38.5 cm², perimeter 25 cm",
+        "Area38.5cm²,perimeter25cm"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "befb32e6-77c7-40ff-a5f7-87b5970320f7",
+      "code": "M1-1.1",
+      "label": "Area of a sector"
+    },
+    {
+      "objectiveId": "5beb4580-3865-4072-a92c-2afb4b7a8117",
+      "code": "M1-1.1",
+      "label": "Arc length"
+    },
+    {
+      "objectiveId": "a20e8382-4672-4402-a436-7b54f25b6e48",
+      "code": "M1-1.1",
+      "label": "Perimeter of a sector"
+    },
+    {
+      "objectiveId": "dff5bbd7-6760-4316-a083-cfbcd3b8cfc2",
+      "code": "M1-1.1",
+      "label": "Radius from diameter"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 5,
+    "pageRef": "p38",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a.i",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.i): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Theare",
+        "displayValue": "The are",
+        "acceptedForms": [
+          "The are",
+          "Theare"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.ii",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.ii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Theperimeterofthefiel",
+        "displayValue": "The perimeter of the fiel",
+        "acceptedForms": [
+          "The perimeter of the fiel",
+          "Theperimeterofthefiel"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "is154m².",
+        "displayValue": "is 154 m².",
+        "acceptedForms": [
+          "is 154 m².",
+          "is154m²."
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

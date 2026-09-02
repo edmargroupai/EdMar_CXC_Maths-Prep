@@ -1,0 +1,178 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p102-q09",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Complete the square for x² − 6x + 13 and hence state the minimum value of the expression."
+    },
+    {
+      "type": "text",
+      "value": "Think first: A square can never be negative, so the smallest the expression can be is whatever is left when the square is zero."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p102_q09.jpg",
+      "altText": "Source visual for edmar-csec-p102-q09 from workbook page 102."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Halve the coefficient of x and square it.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "half of −6 is −3, and (−3)² = 9"
+        },
+        {
+          "type": "text",
+          "value": "Result: x² − 6x = (x − 3)² − 9"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Substitute this back into the expression.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(x − 3)² − 9 + 13"
+        },
+        {
+          "type": "text",
+          "value": "Result: (x − 3)² + 4"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Note that a square is never negative, so the expression is smallest when the square is zero.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(x − 3)² ≥ 0, with equality when x = 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: minimum value = 4"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Write the expression as (x − 3)² + k, then argue that the minimum occurs when the bracket is zero."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x² − 6x + 13 = (x − 3)² + 4; the minimum value is 4, occurring at x = 3."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Once a quadratic is written as a square plus a constant, the square carries all the variation and the constant sets the floor. Since (x − 3)² is zero at x = 3 and positive everywhere else, the expression is never smaller than 4. That constant is exactly the y-coordinate of the vertex of the parabola."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "stating_the_minimum_as_x_3_instead_of_4_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Stating the minimum as x = 3 instead of 4 — x = 3 is where the minimum occurs, not the minimum itself.",
+      "correctiveNote": "Avoid this: Stating the minimum as x = 3 instead of 4 — x = 3 is where the minimum occurs, not the minimum itself."
+    },
+    {
+      "key": "forgetting_to_subtract_the_9_after_squar",
+      "wrongValue": "incorrect_2",
+      "misconception": "Forgetting to subtract the 9 after squaring.",
+      "correctiveNote": "Avoid this: Forgetting to subtract the 9 after squaring."
+    },
+    {
+      "key": "giving_the_minimum_as_13_the_value_at_x_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Giving the minimum as 13, the value at x = 0.",
+      "correctiveNote": "Avoid this: Giving the minimum as 13, the value at x = 0."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Distinguish clearly between 'the minimum value' (the k) and 'the value of x at which it occurs' (the solution of the bracket = 0) — questions often ask for both."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "x²−6x+13=(x−3)²+4;theminimumvalueis4,occurringatx=3.",
+    "displayValue": "x² − 6x + 13 = (x − 3)² + 4; the minimum value is 4, occurring at x = 3.",
+    "acceptedForms": [
+      "x² − 6x + 13 = (x − 3)² + 4; the minimum value is 4, occurring at x = 3.",
+      "x²−6x+13=(x−3)²+4;theminimumvalueis4,occurringatx=3."
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Find the minimum value of x² − 4x + 9 by completing the square."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "−2)²+5,sotheminimumvalueis5atx=2.",
+      "displayValue": "− 2)² + 5, so the minimum value is 5 at x = 2.",
+      "acceptedForms": [
+        "− 2)² + 5, so the minimum value is 5 at x = 2.",
+        "−2)²+5,sotheminimumvalueis5atx=2."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "080ae0e3-b89f-43f2-a3ae-9824fd71a60d",
+      "code": "M1-5.1",
+      "label": "Completing the square"
+    },
+    {
+      "objectiveId": "25cc8526-dbe7-4e76-a093-3ce55e3d082f",
+      "code": "M1-5.1",
+      "label": "Minimum value of a quadratic"
+    },
+    {
+      "objectiveId": "ee0a25ff-c621-4605-a784-560c7f80abc9",
+      "code": "M1-5.1",
+      "label": "Non-negativity of a square"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 9,
+    "pageRef": "p102",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

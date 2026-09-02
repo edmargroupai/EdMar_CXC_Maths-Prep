@@ -1,0 +1,201 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p034-q02",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A prism, not drawn to scale, has cross section PQRST and length 20 cm. PQRST is made up of rectangle PQRT and a semicircle RST, with PQ = 6 cm and QR = 5 cm. Using π = 3.14, (i) calculate the area of the cross section PQRST. (Only part (i) appears in this extract.)"
+    },
+    {
+      "type": "text",
+      "value": "Think first: The cross section is a composite shape, so split it into the rectangle and the semicircle and add their areas."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p034_q02.jpg",
+      "altText": "Source visual for edmar-csec-p034-q02 from workbook page 34."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Find the area of rectangle PQRT.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "PQ x QR = 6 x 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: 30 cm²"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Identify the diameter and radius of the semicircle.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "TR is opposite PQ in the rectangle, so TR = 6 cm and r = 6 / 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: r = 3 cm"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Find the area of the semicircle.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "½ x π x r² = ½ x 3.14 x 3²= ½ x 3.14 x 9"
+        },
+        {
+          "type": "text",
+          "value": "Result: 14.13 cm²"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Add the two areas.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "30 + 14.13"
+        },
+        {
+          "type": "text",
+          "value": "Result: 44.13 cm²"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Find the rectangle's area from PQ and QR, note that the semicircle's diameter equals TR = PQ = 6 cm so its radius is 3 cm, then add the two areas."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) The area of the cross section PQRST is 44.13 cm²."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Areas of non-overlapping parts add, so a composite figure can always be broken into shapes whose formulas you know. The semicircle sits on the side TR of the rectangle, and opposite sides of a rectangle are equal, which is what fixes its diameter at 6 cm without any extra measurement. Halving the full circle area gives the semicircle because a diameter divides a circle into two equal pieces."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "using_6_cm_as_the_radius_of_the_semicirc",
+      "wrongValue": "incorrect_1",
+      "misconception": "Using 6 cm as the radius of the semicircle instead of the diameter.",
+      "correctiveNote": "Avoid this: Using 6 cm as the radius of the semicircle instead of the diameter."
+    },
+    {
+      "key": "using_the_full_circle_area_and_forgettin",
+      "wrongValue": "incorrect_2",
+      "misconception": "Using the full circle area and forgetting to halve it.",
+      "correctiveNote": "Avoid this: Using the full circle area and forgetting to halve it."
+    },
+    {
+      "key": "multiplying_by_the_20_cm_length_which_gi",
+      "wrongValue": "incorrect_3",
+      "misconception": "Multiplying by the 20 cm length, which gives the volume of the prism rather than the area of the cross section.",
+      "correctiveNote": "Avoid this: Multiplying by the 20 cm length, which gives the volume of the prism rather than the area of the cross section."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Mark the radius on the diagram as soon as you spot the circle. Half of every radius error in this topic starts with reading a diameter as a radius."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "TheareaofthecrosssectionPQRSTis44.13cm².",
+    "displayValue": "The area of the cross section PQRST is 44.13 cm².",
+    "acceptedForms": [
+      "The area of the cross section PQRST is 44.13 cm².",
+      "TheareaofthecrosssectionPQRSTis44.13cm²."
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A shape is a 4 cm by 3 cm rectangle with a semicircle of diameter 4 cm on top. Using π = 3.14, find its area."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_dp",
+      "canonicalValue": "18.28",
+      "displayValue": "18.28",
+      "acceptedForms": [
+        "18.28",
+        "18.28"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "precision": {
+        "kind": "decimal_places",
+        "value": 2,
+        "required": true
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "4c62cdf6-acb1-42b8-a8d8-f5dda0f2ca33",
+      "code": "M1-1.1",
+      "label": "Area of a rectangle"
+    },
+    {
+      "objectiveId": "6ac6af92-5335-453e-abff-2c16c62f7f5e",
+      "code": "M1-1.1",
+      "label": "Area of a semicircle"
+    },
+    {
+      "objectiveId": "e0beef68-1eda-4f7c-abb1-fec6cc1029cf",
+      "code": "M1-1.1",
+      "label": "Composite plane figures"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 2,
+    "pageRef": "p34",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

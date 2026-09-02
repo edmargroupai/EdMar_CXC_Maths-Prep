@@ -1,0 +1,206 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p066-q06",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Factorise completely: 4t² − t."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The second term is 1 × t, and that 1 must not disappear."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p066_q06.jpg",
+      "altText": "Source visual for edmar-csec-p066-q06 from workbook page 66."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write each term as a product.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "4t² = 4 × t × t and t = 1 × t"
+        },
+        {
+          "type": "text",
+          "value": "Result: t is in both"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Identify the HCF.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Coefficients 4 and 1 share only 1"
+        },
+        {
+          "type": "text",
+          "value": "Result: HCF = t"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Divide each term by t.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "4t² ÷ t = 4t and t ÷ t = 1"
+        },
+        {
+          "type": "text",
+          "value": "Result: 4t and 1"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Write the factorised form.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: t(4t − 1)"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Check by expanding.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "t × 4t − t × 1"
+        },
+        {
+          "type": "text",
+          "value": "Result: 4t² − t"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Take out the common letter t and be careful about what the second term leaves behind."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "4t² − t = t(4t − 1)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Dividing a term by itself leaves 1, not nothing. Because t ÷ t = 1, the bracket must contain −1 to preserve the original expression. Dropping that 1 would change 4t² − t into 4t², a different expression altogether, which is why expanding back is such a reliable check."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_t_4t_and_losing_the_second_term_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing t(4t) and losing the second term entirely.",
+      "correctiveNote": "Avoid this: Writing t(4t) and losing the second term entirely."
+    },
+    {
+      "key": "writing_t_4t_0",
+      "wrongValue": "incorrect_2",
+      "misconception": "Writing t(4t − 0).",
+      "correctiveNote": "Avoid this: Writing t(4t − 0)."
+    },
+    {
+      "key": "taking_out_t_when_the_second_term_has_on",
+      "wrongValue": "incorrect_3",
+      "misconception": "Taking out t² when the second term has only one t.",
+      "correctiveNote": "Avoid this: Taking out t² when the second term has only one t."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Whenever a term is identical to the factor you are removing, write 1 in the bracket; a blank space is the single most common factorising error."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "4",
+    "displayValue": "4",
+    "acceptedForms": [
+      "4",
+      "4"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Factorise completely: 9k² − k."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "k(9k−1)",
+      "displayValue": "k(9k − 1)",
+      "acceptedForms": [
+        "k(9k − 1)",
+        "k(9k−1)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "060eba33-4291-4073-a192-051abe668a80",
+      "code": "M1-4.1",
+      "label": "Factorising"
+    },
+    {
+      "objectiveId": "6484b152-580f-493a-a249-806af5ce503c",
+      "code": "M1-4.1",
+      "label": "Highest common factor"
+    },
+    {
+      "objectiveId": "d1ff99a5-b044-4408-a63e-87e927227072",
+      "code": "M1-4.1",
+      "label": "Index notation"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 6,
+    "pageRef": "p66",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

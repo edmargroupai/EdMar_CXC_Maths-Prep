@@ -1,0 +1,187 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p097-q03",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the simultaneous equations x + y = 10 and x − y = 2."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Adding removes y and subtracting removes x, so either move gives an instant result."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p097_q03.jpg",
+      "altText": "Source visual for edmar-csec-p097-q03 from workbook page 97."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Add the two equations.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(x + x) + (y − y) = 10 + 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2x = 12"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Divide to find x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "12 ÷ 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 6"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Substitute x = 6 into x + y = 10.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "6 + y = 10"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 4"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Check in the second equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "6 − 4"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2 ✓"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Add the equations to find x, then substitute into either equation to find y."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = 6, y = 4"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A sum-and-difference pair is the simplest kind of simultaneous system: adding gives twice the larger unknown and subtracting gives twice the smaller one. The point (6, 4) is the only pair that satisfies both conditions at once."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "dividing_12_by_2_incorrectly_or_forgetti",
+      "wrongValue": "incorrect_1",
+      "misconception": "Dividing 12 by 2 incorrectly or forgetting to divide at all.",
+      "correctiveNote": "Avoid this: Dividing 12 by 2 incorrectly or forgetting to divide at all."
+    },
+    {
+      "key": "substituting_into_the_wrong_equation_and",
+      "wrongValue": "incorrect_2",
+      "misconception": "Substituting into the wrong equation and not checking.",
+      "correctiveNote": "Avoid this: Substituting into the wrong equation and not checking."
+    },
+    {
+      "key": "assuming_x_y_2_means_y_x_2",
+      "wrongValue": "incorrect_3",
+      "misconception": "Assuming x − y = 2 means y − x = 2.",
+      "correctiveNote": "Avoid this: Assuming x − y = 2 means y − x = 2."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "For a pair like x + y = a and x − y = b you can quote x = (a + b)/2 and y = (a − b)/2, but always show the addition step for the method mark."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=6,y=4",
+    "displayValue": "= 6, y = 4",
+    "acceptedForms": [
+      "= 6, y = 4",
+      "=6,y=4"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve x + y = 14 and x − y = 4."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=9,y=5",
+      "displayValue": "= 9, y = 5",
+      "acceptedForms": [
+        "= 9, y = 5",
+        "=9,y=5"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "28ec1c3d-14b5-4db0-aeee-db2d589172f1",
+      "code": "M1-5.1",
+      "label": "Simultaneous linear equations"
+    },
+    {
+      "objectiveId": "9305a2ac-3795-4e8e-a7e6-b9c7c7f3ec00",
+      "code": "M1-5.1",
+      "label": "Elimination by addition and subtraction"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 3,
+    "pageRef": "p97",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

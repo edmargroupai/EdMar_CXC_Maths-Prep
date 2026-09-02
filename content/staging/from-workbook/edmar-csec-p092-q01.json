@@ -1,0 +1,173 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p092-q01",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Factorise completely: 3x + 3y + 2ax + 2ay"
+    },
+    {
+      "type": "text",
+      "value": "Think first: Four terms with no factor common to all of them — that is the signal to group them in pairs."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p092_q01.jpg",
+      "altText": "Source visual for edmar-csec-p092-q01 from workbook page 92."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Group the terms in pairs.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(3x + 3y) + (2ax + 2ay)"
+        },
+        {
+          "type": "text",
+          "value": "Result: Two pairs"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Take the common factor out of each pair.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3 from the first pair, 2a from the second"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3(x + y) + 2a(x + y)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Take out the common bracket.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(x + y) appears in both terms"
+        },
+        {
+          "type": "text",
+          "value": "Result: (x + y)(3 + 2a)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Pair the terms so that each pair has a common factor, take that factor out, then take out the bracket the two pairs share."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(x + y)(3 + 2a)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Grouping works because factorising each pair reveals the same bracket in both terms, and that bracket can then be taken out exactly like a common number or letter. Expanding the answer returns the four original terms, which is the check."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "taking_out_only_2_instead_of_2a_from_2ax",
+      "wrongValue": "incorrect_1",
+      "misconception": "Taking out only 2 instead of 2a from 2ax + 2ay, so the two brackets do not match.",
+      "correctiveNote": "Avoid this: Taking out only 2 instead of 2a from 2ax + 2ay, so the two brackets do not match."
+    },
+    {
+      "key": "stopping_at_3_x_y_2a_x_y_which_is_a_sum_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Stopping at 3(x + y) + 2a(x + y), which is a sum and not yet a product.",
+      "correctiveNote": "Avoid this: Stopping at 3(x + y) + 2a(x + y), which is a sum and not yet a product."
+    },
+    {
+      "key": "pairing_terms_that_share_nothing_such_as",
+      "wrongValue": "incorrect_3",
+      "misconception": "Pairing terms that share nothing, such as 3x with 2ay.",
+      "correctiveNote": "Avoid this: Pairing terms that share nothing, such as 3x with 2ay."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "After grouping, the two brackets must be identical — if they are not, re-pair the terms before going on."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "+y)(3+2a)",
+    "displayValue": "+ y)(3 + 2a)",
+    "acceptedForms": [
+      "+ y)(3 + 2a)",
+      "+y)(3+2a)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Factorise 5p + 5q + bp + bq."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(p+q)(5+b)",
+      "displayValue": "(p + q)(5 + b)",
+      "acceptedForms": [
+        "(p + q)(5 + b)",
+        "(p+q)(5+b)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M3-2.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "223ea0c4-44ed-498f-ace6-7be467cba143",
+      "code": "M3-2.1",
+      "label": "Factorisation by grouping"
+    },
+    {
+      "objectiveId": "2077c6af-87ae-4ecd-a235-705be5ba92f1",
+      "code": "M3-2.1",
+      "label": "Common factors"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 1,
+    "pageRef": "p92",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p016-q01",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The simple interest on $18 000 for 4 years is $5 040. a. Calculate the rate percent per annum.  b. Calculate the total amount at the end of 4 years."
+    },
+    {
+      "type": "text",
+      "value": "Think first: You are given the interest and asked for the rate, so rearrange the simple interest formula instead of using it forwards."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p016_q01.jpg",
+      "altText": "Source visual for edmar-csec-p016-q01 from workbook page 16."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write down the simple interest formula.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "I = PRT/100"
+        },
+        {
+          "type": "text",
+          "value": "Result: I = PRT/100"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Substitute the given values.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5040 = (18000 × R × 4)/100"
+        },
+        {
+          "type": "text",
+          "value": "Result: 5040 = 720R"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Solve for R.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "R = 5040 ÷ 720"
+        },
+        {
+          "type": "text",
+          "value": "Result: R = 7, so 7% per annum"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Find the total amount.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "A = P + I = 18000 + 5040"
+        },
+        {
+          "type": "text",
+          "value": "Result: $23 040"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Substitute the known values into I = PRT/100 and solve for R, then add the interest to the principal to get the amount."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "a. 7% per annum  b. $23 040"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Simple interest grows by the same fixed amount every year because it is always charged on the original principal, which is why I = PRT/100 is linear in each of P, R and T. That linearity is what lets the formula be rearranged for any single unknown. The amount is not a new calculation: it is the principal returned plus all the interest it earned."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "treating_5_040_as_the_amount_rather_than",
+      "wrongValue": "incorrect_1",
+      "misconception": "Treating $5 040 as the amount rather than the interest and subtracting it from $18 000.",
+      "correctiveNote": "Avoid this: Treating $5 040 as the amount rather than the interest and subtracting it from $18 000."
+    },
+    {
+      "key": "forgetting_the_100_and_getting_a_rate_of",
+      "wrongValue": "incorrect_2",
+      "misconception": "Forgetting the ÷ 100 and getting a rate of 0.07%.",
+      "correctiveNote": "Avoid this: Forgetting the ÷ 100 and getting a rate of 0.07%."
+    },
+    {
+      "key": "giving_5_040_as_the_final_answer_to_part",
+      "wrongValue": "incorrect_3",
+      "misconception": "Giving $5 040 as the final answer to part b.",
+      "correctiveNote": "Avoid this: Giving $5 040 as the final answer to part b."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Write I = PRT/100 out in full and label which letter is unknown before substituting — it turns every simple interest question into the same one-line rearrangement."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "7%",
+    "displayValue": "7%",
+    "acceptedForms": [
+      "7%",
+      "7%"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "The simple interest on $5 000 for 2 years is $600. Find the rate per annum."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "6%",
+      "displayValue": "6%",
+      "acceptedForms": [
+        "6%",
+        "6%"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "cd34cb29-6b6f-4816-a6c7-cf67a8180fa7",
+      "code": "M1-1.1",
+      "label": "Simple interest"
+    },
+    {
+      "objectiveId": "d4f1ef6c-4127-4f79-a98e-b51dad3f4b72",
+      "code": "M1-1.1",
+      "label": "Rearranging a formula"
+    },
+    {
+      "objectiveId": "a8419cc2-f239-4fba-a647-4e67afc12da6",
+      "code": "M1-1.1",
+      "label": "Principal, interest and amount"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 1,
+    "pageRef": "p16",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

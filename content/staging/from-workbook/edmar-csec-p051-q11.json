@@ -1,0 +1,206 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p051-q11",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Simplify (2x − 5)/4 − (6x − 3)/3 as a single fraction."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Expect a negative x-term in the answer, because the second fraction is the larger of the two."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p051_q11.jpg",
+      "altText": "Source visual for edmar-csec-p051-q11 from workbook page 51."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Find the lowest common denominator of 4 and 3.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "LCM of 4 and 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: 12"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Rewrite each fraction over 12.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(2x − 5) is multiplied by 3; (6x − 3) is multiplied by 4"
+        },
+        {
+          "type": "text",
+          "value": "Result: [3(2x − 5) − 4(6x − 3)]/12"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Expand the numerator.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3(2x − 5) = 6x − 15 and −4(6x − 3) = −24x + 12"
+        },
+        {
+          "type": "text",
+          "value": "Result: 6x − 15 − 24x + 12"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Collect like terms.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "6x − 24x = −18x and −15 + 12 = −3"
+        },
+        {
+          "type": "text",
+          "value": "Result: (−18x − 3)/12"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Divide numerator and denominator by 3.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "−18x ÷ 3 = −6x, −3 ÷ 3 = −1, 12 ÷ 3 = 4"
+        },
+        {
+          "type": "text",
+          "value": "Result: −(6x + 1)/4"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Rewrite both fractions over 12, expand the numerator watching the signs, then simplify by a common factor."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "−(6x + 1)/4, equivalently (−6x − 3)/12 in unsimplified form or −(18x + 3)/12"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Rescaling each fraction to the common denominator 12 preserves value while making the numerators directly subtractable. The minus in front of the second fraction multiplies both terms of its numerator, so −4(6x − 3) becomes −24x + 12 and the constant actually increases. The final division by 3 is legitimate because 3 is a factor of every term in the numerator and of the denominator."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_4_6x_3_as_24x_12_and_losing_the_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing −4(6x − 3) as −24x − 12 and losing the sign on the constant.",
+      "correctiveNote": "Avoid this: Writing −4(6x − 3) as −24x − 12 and losing the sign on the constant."
+    },
+    {
+      "key": "stopping_at_18x_3_12_without_cancelling_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Stopping at (−18x − 3)/12 without cancelling the common factor of 3.",
+      "correctiveNote": "Avoid this: Stopping at (−18x − 3)/12 without cancelling the common factor of 3."
+    },
+    {
+      "key": "treating_the_answer_as_wrong_because_it_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Treating the answer as wrong because it is negative — a negative result is perfectly normal here.",
+      "correctiveNote": "Avoid this: Treating the answer as wrong because it is negative — a negative result is perfectly normal here."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When the answer comes out negative, factor the minus sign to the front rather than leaving it scattered. −(6x + 1)/4 is easier to read and to mark than (−6x − 1)/4."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "−(6x+1)/4,equivalently(−6x−3)/12inunsimplifiedform",
+    "displayValue": "−(6x + 1)/4, equivalently (−6x − 3)/12 in unsimplified form",
+    "acceptedForms": [
+      "−(6x + 1)/4, equivalently (−6x − 3)/12 in unsimplified form",
+      "−(6x+1)/4,equivalently(−6x−3)/12inunsimplifiedform"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Simplify (x − 2)/3 − (4x − 1)/2 as a single fraction."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "[2(x−2)−3(4x−1)]/6=(−10x−1)/6=−(10x+1)/6.",
+      "displayValue": "[2(x − 2) − 3(4x − 1)]/6 = (−10x − 1)/6 = −(10x + 1)/6.",
+      "acceptedForms": [
+        "[2(x − 2) − 3(4x − 1)]/6 = (−10x − 1)/6 = −(10x + 1)/6.",
+        "[2(x−2)−3(4x−1)]/6=(−10x−1)/6=−(10x+1)/6."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "88ef77e3-bd36-4758-a48f-674189079f6e",
+      "code": "M1-4.1",
+      "label": "Subtraction of algebraic fractions"
+    },
+    {
+      "objectiveId": "7319bd22-1a72-4abe-a60c-06205c88405f",
+      "code": "M1-4.1",
+      "label": "Lowest common multiple"
+    },
+    {
+      "objectiveId": "41cf0148-9b5b-411d-ab07-637e6bf5f9ce",
+      "code": "M1-4.1",
+      "label": "Factorising out a common factor"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 11,
+    "pageRef": "p51",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

@@ -1,0 +1,244 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p200-q13",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 4,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The matrices X, A and B satisfy 2X − A = B, where A = (2 −4 / 6 0) and B = (8 2 / −2 10). (a) Determine 2X. (b) Hence determine X."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Get 2X on its own first by adding A to both sides; only then halve everything to reach X."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p200_q13.jpg",
+      "altText": "Source visual for edmar-csec-p200-q13 from workbook page 200."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Add A to both sides to isolate 2X.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2X − A = B becomes 2X = B + A."
+        },
+        {
+          "type": "text",
+          "value": "Result: 2X = B + A"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Add the matching entries of B and A.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "8 + 2 = 10; 2 + (−4) = −2; −2 + 6 = 4; 10 + 0 = 10"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2X = (10 −2 / 4 10)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Halve every entry of 2X.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "10 ÷ 2 = 5; −2 ÷ 2 = −1; 4 ÷ 2 = 2; 10 ÷ 2 = 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: X = (5 −1 / 2 5)"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Check by substituting back.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2X − A = (10 −2 / 4 10) − (2 −4 / 6 0) = (8 2 / −2 10)"
+        },
+        {
+          "type": "text",
+          "value": "Result: Equals B, so X is correct"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Add A to B to obtain 2X, then multiply that result by ½ to obtain X."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) 2X = B + A = (10 −2 / 4 10)  (b) X = ½(2X) = (5 −1 / 2 5)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Matrix equations obey the same rearrangement rules as ordinary equations because addition and scalar multiplication act entry by entry. Halving a matrix means halving every element, not just the first one. Substituting the answer back reconstructs B exactly, which is a full verification."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "computing_b_a_instead_of_b_a_when_moving",
+      "wrongValue": "incorrect_1",
+      "misconception": "Computing B − A instead of B + A when moving A across.",
+      "correctiveNote": "Avoid this: Computing B − A instead of B + A when moving A across."
+    },
+    {
+      "key": "halving_only_some_entries_of_2x",
+      "wrongValue": "incorrect_2",
+      "misconception": "Halving only some entries of 2X.",
+      "correctiveNote": "Avoid this: Halving only some entries of 2X."
+    },
+    {
+      "key": "dividing_the_entries_of_a_or_b_by_2_as_w",
+      "wrongValue": "incorrect_3",
+      "misconception": "Dividing the entries of A or B by 2 as well as those of 2X.",
+      "correctiveNote": "Avoid this: Dividing the entries of A or B by 2 as well as those of 2X."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Isolate the multiple of the unknown completely before dividing — mixing the two operations is where marks disappear."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "2",
+    "displayValue": "2",
+    "acceptedForms": [
+      "2",
+      "2"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "If 3Y = (9 −6 / 12 0), find Y."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "Y=(3−2/40)",
+      "displayValue": "Y = (3 −2 / 4 0)",
+      "acceptedForms": [
+        "Y = (3 −2 / 4 0)",
+        "Y=(3−2/40)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "9fc4f3b8-9a1d-4736-a100-d77047248f78",
+      "code": "M2-4.1",
+      "label": "Rearranging a matrix equation"
+    },
+    {
+      "objectiveId": "4fa9b16e-bec3-4141-a1f7-1deeffa21e23",
+      "code": "M2-4.1",
+      "label": "Matrix addition"
+    },
+    {
+      "objectiveId": "2c1716ca-b4ab-485c-aec1-eb542000d1b7",
+      "code": "M2-4.1",
+      "label": "Scalar multiplication and division"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 13,
+    "pageRef": "p200",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "numeric_exact",
+        "canonicalValue": "2",
+        "displayValue": "2",
+        "acceptedForms": [
+          "2",
+          "2"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0
+        },
+        "normalisation": "numeric_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "+",
+        "displayValue": "+",
+        "acceptedForms": [
+          "+",
+          "+"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

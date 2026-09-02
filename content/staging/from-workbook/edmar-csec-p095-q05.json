@@ -1,0 +1,174 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p095-q05",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Make h the subject of the formula A = bh/2 (the area of a triangle)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Clear the fraction first, then deal with what is left multiplying h."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p095_q05.jpg",
+      "altText": "Source visual for edmar-csec-p095-q05 from workbook page 95."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply both sides by 2 to clear the denominator.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2A = 2 × bh/2"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2A = bh"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Divide both sides by b.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2A ÷ b = bh ÷ b"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2A/b = h"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Write the new subject on the left.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: h = 2A/b"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Multiply both sides by 2 to remove the denominator, then divide by b."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "h = 2A/b"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Dividing by 2 and multiplying by b are the two operations applied to h, so undoing them in reverse order — multiply by 2 first, then divide by b — releases h. Clearing the fraction before dividing keeps the working tidy and avoids stacked fractions."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "dividing_by_b_before_clearing_the_fracti",
+      "wrongValue": "incorrect_1",
+      "misconception": "Dividing by b before clearing the fraction and producing a messy compound fraction.",
+      "correctiveNote": "Avoid this: Dividing by b before clearing the fraction and producing a messy compound fraction."
+    },
+    {
+      "key": "writing_h_a_2b_by_multiplying_the_denomi",
+      "wrongValue": "incorrect_2",
+      "misconception": "Writing h = A/(2b) by multiplying the denominator by 2 instead of the numerator.",
+      "correctiveNote": "Avoid this: Writing h = A/(2b) by multiplying the denominator by 2 instead of the numerator."
+    },
+    {
+      "key": "forgetting_that_2_multiplies_a_not_b",
+      "wrongValue": "incorrect_3",
+      "misconception": "Forgetting that 2 multiplies A, not b.",
+      "correctiveNote": "Avoid this: Forgetting that 2 multiplies A, not b."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When a formula contains a fraction, multiply through by the denominator as your very first move — every later step is then fraction-free."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "h=2A/b",
+    "displayValue": "h = 2A/b",
+    "acceptedForms": [
+      "h = 2A/b",
+      "h=2A/b"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Make b the subject of A = bh/2."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=2A/h",
+      "displayValue": "= 2A/h",
+      "acceptedForms": [
+        "= 2A/h",
+        "=2A/h"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "3bf769ee-3a50-40b0-a70d-82f769a2cc3d",
+      "code": "M1-1.1",
+      "label": "Changing the subject of a formula"
+    },
+    {
+      "objectiveId": "6dedb1a3-5517-4ccd-a72b-dc358d4aee60",
+      "code": "M1-1.1",
+      "label": "Clearing fractions"
+    },
+    {
+      "objectiveId": "f412488d-4fd8-44b4-a245-0a9efa622666",
+      "code": "M1-1.1",
+      "label": "Area of a triangle"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 5,
+    "pageRef": "p95",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

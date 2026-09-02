@@ -1,0 +1,210 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p093-q20",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Factorise the quadratic expression 12x² + 7x − 10 completely."
+    },
+    {
+      "type": "text",
+      "value": "Think first: A large product like 12 × (−10) has many factor pairs, so work through them in order rather than guessing brackets."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p093_q20.jpg",
+      "altText": "Source visual for edmar-csec-p093-q20 from workbook page 93."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply the coefficient of x² by the constant term.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "12 × (−10)"
+        },
+        {
+          "type": "text",
+          "value": "Result: −120"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Find two numbers with product −120 and sum 7.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "15 × (−8) = −120 and 15 − 8 = 7"
+        },
+        {
+          "type": "text",
+          "value": "Result: 15 and −8"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Split the middle term.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "7x becomes 15x − 8x"
+        },
+        {
+          "type": "text",
+          "value": "Result: 12x² + 15x − 8x − 10"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Factorise each pair and take out the common bracket.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3x(4x + 5) − 2(4x + 5)"
+        },
+        {
+          "type": "text",
+          "value": "Result: (4x + 5)(3x − 2)"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Check by expanding.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "12x² − 8x + 15x − 10"
+        },
+        {
+          "type": "text",
+          "value": "Result: 12x² + 7x − 10 ✓"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Form the product ac = −120, find the pair with sum +7, split the middle term and factorise by grouping."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "12x² + 7x − 10 = (4x + 5)(3x − 2)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The middle coefficient of a quadratic is always the sum of the two cross products formed when the brackets are expanded, and those cross products multiply to ac. Locating them turns factorising into an ordinary factor-pair search, which works no matter how large the leading coefficient is."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "searching_for_numbers_multiplying_to_10_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Searching for numbers multiplying to 10 rather than to 120.",
+      "correctiveNote": "Avoid this: Searching for numbers multiplying to 10 rather than to 120."
+    },
+    {
+      "key": "losing_a_sign_when_factorising_the_secon",
+      "wrongValue": "incorrect_2",
+      "misconception": "Losing a sign when factorising the second pair — it is −2(4x + 5), not +2(4x − 5).",
+      "correctiveNote": "Avoid this: Losing a sign when factorising the second pair — it is −2(4x + 5), not +2(4x − 5)."
+    },
+    {
+      "key": "splitting_correctly_but_grouping_the_wro",
+      "wrongValue": "incorrect_3",
+      "misconception": "Splitting correctly but grouping the wrong terms together.",
+      "correctiveNote": "Avoid this: Splitting correctly but grouping the wrong terms together."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "List the factor pairs of the product systematically (1×120, 2×60, 3×40, 4×30, 5×24, 6×20, 8×15, 10×12) — the right pair is always in that list, so you never need to guess."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "12",
+    "displayValue": "12",
+    "acceptedForms": [
+      "12",
+      "12"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Factorise 12x² − 7x − 10."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(3x+2)(4x−5)",
+      "displayValue": "(3x + 2)(4x − 5)",
+      "acceptedForms": [
+        "(3x + 2)(4x − 5)",
+        "(3x+2)(4x−5)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M3-2.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "9bcb2a31-4a44-419e-a106-8af70f1f5821",
+      "code": "M3-2.1",
+      "label": "Factorising quadratic trinomials"
+    },
+    {
+      "objectiveId": "a812de17-56ea-4136-a8f8-4fd0ff257c46",
+      "code": "M3-2.1",
+      "label": "Splitting the middle term"
+    },
+    {
+      "objectiveId": "59de9a52-dbb4-43cd-a35b-0033a6ab810f",
+      "code": "M3-2.1",
+      "label": "Factorising by grouping"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 20,
+    "pageRef": "p93",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

@@ -1,0 +1,196 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p064-q16",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Simplify (5x⁴ × 2x³) / (10x²)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Deal with the numbers and the powers of x as two separate jobs."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p064_q16.jpg",
+      "altText": "Source visual for edmar-csec-p064-q16 from workbook page 64."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply the coefficients in the numerator.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5 × 2 = 10"
+        },
+        {
+          "type": "text",
+          "value": "Result: 10"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Add the indices in the numerator.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x⁴ × x³ = x^(4+3)"
+        },
+        {
+          "type": "text",
+          "value": "Result: 10x⁷"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Divide the coefficients.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "10 ÷ 10 = 1"
+        },
+        {
+          "type": "text",
+          "value": "Result: 1"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Subtract the indices.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x⁷ ÷ x² = x^(7−2)"
+        },
+        {
+          "type": "text",
+          "value": "Result: x⁵"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Simplify the numerator first by multiplying coefficients and adding indices, then divide by the denominator by dividing coefficients and subtracting indices."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(5x⁴ × 2x³) / (10x²) = x⁵"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Powers of the same base record repeated multiplication, so multiplying stacks the factors together and the indices add, while dividing cancels matched factors and the indices subtract. The coefficients are ordinary numbers and follow ordinary arithmetic. Splitting the expression into a number part and an x part means neither rule gets applied to the wrong thing."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "multiplying_the_indices_instead_of_addin",
+      "wrongValue": "incorrect_1",
+      "misconception": "Multiplying the indices instead of adding them in the numerator.",
+      "correctiveNote": "Avoid this: Multiplying the indices instead of adding them in the numerator."
+    },
+    {
+      "key": "dividing_the_indices_instead_of_subtract",
+      "wrongValue": "incorrect_2",
+      "misconception": "Dividing the indices instead of subtracting them.",
+      "correctiveNote": "Avoid this: Dividing the indices instead of subtracting them."
+    },
+    {
+      "key": "writing_the_answer_as_1x_or_forgetting_t",
+      "wrongValue": "incorrect_3",
+      "misconception": "Writing the answer as 1x⁵ or forgetting the coefficient became 1.",
+      "correctiveNote": "Avoid this: Writing the answer as 1x⁵ or forgetting the coefficient became 1."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Always finish the numerator completely before you divide; a single tidy fraction is far easier to cancel than three terms at once."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "(5x⁴×2x³)/(10x²)=x⁵",
+    "displayValue": "(5x⁴ × 2x³) / (10x²) = x⁵",
+    "acceptedForms": [
+      "(5x⁴ × 2x³) / (10x²) = x⁵",
+      "(5x⁴×2x³)/(10x²)=x⁵"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Simplify (3x⁵ × 4x²) / (6x³)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "2",
+      "displayValue": "2",
+      "acceptedForms": [
+        "2",
+        "2"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "19ff170b-ab0e-410e-afe7-9f35d36dba3e",
+      "code": "M1-4.1",
+      "label": "Laws of indices"
+    },
+    {
+      "objectiveId": "12156138-0624-4107-aaa5-69b2eefef2ac",
+      "code": "M1-4.1",
+      "label": "Multiplication law a^m × a^n = a^(m+n)"
+    },
+    {
+      "objectiveId": "85f74abd-6a09-419d-a48a-6df3f5a15b22",
+      "code": "M1-4.1",
+      "label": "Division law a^m ÷ a^n = a^(m−n)"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 16,
+    "pageRef": "p64",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

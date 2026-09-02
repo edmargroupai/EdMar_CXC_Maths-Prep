@@ -1,0 +1,206 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p023-q27",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Two brands of rice are sold as Brand A: 5 kg for $1 750 and Brand B: 8 kg for $2 880. (a) Calculate the cost per kilogram for each brand. (b) Which brand is the better buy? (c) How much would a customer save when buying 16 kg of the cheaper brand instead of the more expensive one?"
+    },
+    {
+      "type": "text",
+      "value": "Think first: The packs are different sizes, so the only fair comparison is the cost of one kilogram."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p023_q27.jpg",
+      "altText": "Source visual for edmar-csec-p023-q27 from workbook page 23."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Find Brand A's cost per kilogram.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "1 750 / 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: $350 per kg"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Find Brand B's cost per kilogram.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2 880 / 8"
+        },
+        {
+          "type": "text",
+          "value": "Result: $360 per kg"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Compare the two unit costs.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "350 < 360"
+        },
+        {
+          "type": "text",
+          "value": "Result: Brand A is cheaper"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Cost 16 kg of each brand.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "16 x 350 = $5 600 and 16 x 360 = $5 760"
+        },
+        {
+          "type": "text",
+          "value": "Result: $5 600 and $5 760"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Subtract to find the saving.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5 760 - 5 600"
+        },
+        {
+          "type": "text",
+          "value": "Result: $160"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Divide each pack price by its mass to get a cost per kilogram, choose the smaller, then cost 16 kg both ways and subtract."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) Brand A $350 per kg, Brand B $360 per kg  (b) Brand A is the better buy  (c) The customer saves $160"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Unit cost strips away pack size so two different offers can be ranked on a single scale. Once the gap per kilogram is known, the saving on any quantity is that gap multiplied by the quantity, so $10 per kg over 16 kg gives $160 directly. Costing both baskets in full is the safer route under exam pressure."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "assuming_the_larger_pack_must_be_cheaper",
+      "wrongValue": "incorrect_1",
+      "misconception": "Assuming the larger pack must be cheaper per kilogram.",
+      "correctiveNote": "Avoid this: Assuming the larger pack must be cheaper per kilogram."
+    },
+    {
+      "key": "dividing_the_mass_by_the_price_instead_o",
+      "wrongValue": "incorrect_2",
+      "misconception": "Dividing the mass by the price instead of the price by the mass.",
+      "correctiveNote": "Avoid this: Dividing the mass by the price instead of the price by the mass."
+    },
+    {
+      "key": "finding_the_saving_on_one_kilogram_and_f",
+      "wrongValue": "incorrect_3",
+      "misconception": "Finding the saving on one kilogram and forgetting to scale it to 16 kg.",
+      "correctiveNote": "Avoid this: Finding the saving on one kilogram and forgetting to scale it to 16 kg."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Write units beside every number, such as $ per kg rather than just 350. A wrong division then becomes obvious as you write it."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "BrandA$350perkg,BrandB$360perkg",
+    "displayValue": "Brand A $350 per kg, Brand B $360 per kg",
+    "acceptedForms": [
+      "Brand A $350 per kg, Brand B $360 per kg",
+      "BrandA$350perkg,BrandB$360perkg"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Brand X is 4 kg for $960 and Brand Y is 6 kg for $1 380. Which is cheaper per kg?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "BrandYat$230perkg,sinceBrandXis$240perkg",
+      "displayValue": "Brand Y at $230 per kg, since Brand X is $240 per kg",
+      "acceptedForms": [
+        "Brand Y at $230 per kg, since Brand X is $240 per kg",
+        "BrandYat$230perkg,sinceBrandXis$240perkg"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "c1dcabe3-66c5-4674-a069-a3396c144f89",
+      "code": "M1-1.1",
+      "label": "Best buy"
+    },
+    {
+      "objectiveId": "63279305-6388-4c2e-a577-0f24cf5c3b94",
+      "code": "M1-1.1",
+      "label": "Unit cost"
+    },
+    {
+      "objectiveId": "2a2f99d6-3e29-4f51-aa94-c3d284c706f8",
+      "code": "M1-1.1",
+      "label": "Proportion"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 27,
+    "pageRef": "p23",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

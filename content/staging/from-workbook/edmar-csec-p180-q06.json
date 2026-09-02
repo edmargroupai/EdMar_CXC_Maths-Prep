@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p180-q06",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The diagram shows the vectors a and b drawn from the origin O on a coordinate grid, with a reaching the point (3, 2) and b reaching the point (−3, 3). (a) Write a and b as column vectors."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Read each arrow as 'how far across, then how far up' from the origin to the arrowhead."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p180_q06.jpg",
+      "altText": "Source visual for edmar-csec-p180-q06 from workbook page 180."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Follow the arrow labelled a from O.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "It runs 3 units to the right and 2 units up, ending at (3, 2)"
+        },
+        {
+          "type": "text",
+          "value": "Result: a = (3, 2)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Follow the arrow labelled b from O.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "It runs 3 units to the left and 3 units up, ending at (−3, 3)"
+        },
+        {
+          "type": "text",
+          "value": "Result: b = (−3, 3)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Apply the sign convention.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Right and up are positive; left and down are negative, so the horizontal component of b is negative"
+        },
+        {
+          "type": "text",
+          "value": "Result: signs confirmed"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Write both in column form.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Top entry is the horizontal step, bottom entry is the vertical step"
+        },
+        {
+          "type": "text",
+          "value": "Result: a = (3, 2) and b = (−3, 3)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Follow each arrow from O to its tip, counting the horizontal steps first and then the vertical steps, keeping left and down negative."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) a is the column vector with components 3 and 2; b is the column vector with components −3 and 3."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A vector drawn from the origin has components identical to the coordinates of its endpoint, because both describe the same journey out from O. The order in a column vector is fixed — horizontal on top, vertical below — and the signs record direction, so a leftward step is a negative first component. Getting the sign right is what distinguishes b from the vector (3, 3)."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_b_as_3_3_and_losing_the_negative",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing b as (3, 3) and losing the negative sign for the leftward movement.",
+      "correctiveNote": "Avoid this: Writing b as (3, 3) and losing the negative sign for the leftward movement."
+    },
+    {
+      "key": "reversing_the_order_and_writing_2_3_for_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Reversing the order and writing (2, 3) for a.",
+      "correctiveNote": "Avoid this: Reversing the order and writing (2, 3) for a."
+    },
+    {
+      "key": "counting_the_fine_sub_gridlines_instead_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Counting the fine sub-gridlines instead of the labelled units.",
+      "correctiveNote": "Avoid this: Counting the fine sub-gridlines instead of the labelled units."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Check which labelled gridline the arrowhead sits on before writing components — fine sub-gridlines are the usual cause of an off-by-one reading."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "aisthecolumnvectorwithcomponents3and2;bisthecolumnvectorwithcomponents−3and3.",
+    "displayValue": "a is the column vector with components 3 and 2; b is the column vector with components −3 and 3.",
+    "acceptedForms": [
+      "a is the column vector with components 3 and 2; b is the column vector with components −3 and 3.",
+      "aisthecolumnvectorwithcomponents3and2;bisthecolumnvectorwithcomponents−3and3."
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "An arrow runs from the origin to the point (−4, −1). Write it as a column vector."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "Thecolumnvectorwithcomponents−4and−1.",
+      "displayValue": "The column vector with components −4 and −1.",
+      "acceptedForms": [
+        "The column vector with components −4 and −1.",
+        "Thecolumnvectorwithcomponents−4and−1."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "2bcc61f2-9073-493d-ad48-c14717eb5097",
+      "code": "M2-5.1",
+      "label": "Reading vectors from a grid"
+    },
+    {
+      "objectiveId": "28b598e0-7dae-4d9c-ae94-bc9b73f3b1f8",
+      "code": "M2-5.1",
+      "label": "Column vector notation"
+    },
+    {
+      "objectiveId": "e35dada3-abc3-4098-a4d7-ced363bae96e",
+      "code": "M2-5.1",
+      "label": "Sign conventions for direction"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 6,
+    "pageRef": "p180",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

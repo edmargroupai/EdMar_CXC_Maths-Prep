@@ -1,0 +1,321 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p077-q03",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 8,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The numbers of books read by 16 students during one month are 2, 4, 1, 3, 2, 5, 4, 2, 0, 3, 2, 6, 1, 4, 2, 3. (a) Copy and complete a frequency table using the headings Number of books, Tally and Frequency. (b) Determine the modal number of books read. (c) Determine the median number of books read. (d) Find the probability that a student chosen at random read more than 3 books."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Tally first — every later answer falls straight out of the frequency table."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p077_q03.jpg",
+      "altText": "Source visual for edmar-csec-p077-q03 from workbook page 77."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Tally the 16 values from 0 books up to 6 books.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "0 → 1; 1 → 2; 2 → 5; 3 → 3; 4 → 3; 5 → 1; 6 → 1"
+        },
+        {
+          "type": "text",
+          "value": "Result: Frequencies 1, 2, 5, 3, 3, 1, 1 totalling 16"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Pick the value with the highest frequency.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5 students read 2 books, more than for any other value"
+        },
+        {
+          "type": "text",
+          "value": "Result: Mode = 2 books"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Locate the middle of the 16 ordered values.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The median is the mean of the 8th and 9th values; the running total reaches 8 at 2 books and 9 at 3 books"
+        },
+        {
+          "type": "text",
+          "value": "Result: (2 + 3) ÷ 2 = 2.5 books"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Count the students who read more than 3 books.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "4, 5 or 6 books: 3 + 1 + 1"
+        },
+        {
+          "type": "text",
+          "value": "Result: 5 students"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Write the probability as a fraction of the 16 students.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5 out of 16"
+        },
+        {
+          "type": "text",
+          "value": "Result: 5/16"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Build the frequency table, read the mode off it, use the running total to locate the 8th and 9th values for the median, then count the students who read more than 3 books."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) 0 → 1, 1 → 2, 2 → 5, 3 → 3, 4 → 3, 5 → 1, 6 → 1 (total 16)  (b) 2 books  (c) 2.5 books  (d) 5/16"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A frequency table reorders raw data into counts without losing any of it, so every measure of central tendency can be read from the same table. The running total then converts a position in the ordered list into a value, which is exactly what the median needs, and probability is simply the frequency of the wanted outcomes over the total frequency."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "taking_the_median_as_the_8th_value_only_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Taking the median as the 8th value only, instead of averaging the 8th and 9th for an even number of values.",
+      "correctiveNote": "Avoid this: Taking the median as the 8th value only, instead of averaging the 8th and 9th for an even number of values."
+    },
+    {
+      "key": "giving_the_mode_as_5_the_highest_frequen",
+      "wrongValue": "incorrect_2",
+      "misconception": "Giving the mode as 5, the highest frequency, instead of 2, the value that occurs most often.",
+      "correctiveNote": "Avoid this: Giving the mode as 5, the highest frequency, instead of 2, the value that occurs most often."
+    },
+    {
+      "key": "including_students_who_read_exactly_3_bo",
+      "wrongValue": "incorrect_3",
+      "misconception": "Including students who read exactly 3 books in 'more than 3 books'.",
+      "correctiveNote": "Avoid this: Including students who read exactly 3 books in 'more than 3 books'."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Check that your frequencies add to the stated number of items before using them — one miscount corrupts every part of the question."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "0",
+    "displayValue": "0",
+    "acceptedForms": [
+      "0",
+      "0"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "In a set of 10 ordered values, which two positions do you average to find the median?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "The5thand6thvalues.",
+      "displayValue": "The 5th and 6th values.",
+      "acceptedForms": [
+        "The 5th and 6th values.",
+        "The5thand6thvalues."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M3-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "24d63c2c-3c0b-4532-a448-0b35bdd5c3f2",
+      "code": "M3-1.1",
+      "label": "Frequency tables and tallying"
+    },
+    {
+      "objectiveId": "13070ade-27bd-4ee8-af91-3471c9d172e9",
+      "code": "M3-1.1",
+      "label": "Mode"
+    },
+    {
+      "objectiveId": "ba91c562-ce41-4638-a4a4-cf02aa3dce6d",
+      "code": "M3-1.1",
+      "label": "Median of an even-sized data set"
+    },
+    {
+      "objectiveId": "193ce633-debc-4aeb-abd2-f081a3cd3281",
+      "code": "M3-1.1",
+      "label": "Simple probability"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 3,
+    "pageRef": "p77",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "numeric_exact",
+        "canonicalValue": "0",
+        "displayValue": "0",
+        "acceptedForms": [
+          "0",
+          "0"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0
+        },
+        "normalisation": "numeric_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "numeric_exact",
+        "canonicalValue": "2",
+        "displayValue": "2",
+        "acceptedForms": [
+          "2",
+          "2"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0
+        },
+        "normalisation": "numeric_default"
+      }
+    },
+    {
+      "partKey": "c",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (c): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "numeric_dp",
+        "canonicalValue": "2.5",
+        "displayValue": "2.5",
+        "acceptedForms": [
+          "2.5",
+          "2.5"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0
+        },
+        "precision": {
+          "kind": "decimal_places",
+          "value": 1,
+          "required": true
+        },
+        "normalisation": "numeric_default"
+      }
+    },
+    {
+      "partKey": "d",
+      "sequence": 4,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (d): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "fraction",
+        "canonicalValue": "5/16",
+        "displayValue": "5/16",
+        "acceptedForms": [
+          "5/16"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0
+        },
+        "normalisation": "numeric_default"
+      }
+    }
+  ]
+}

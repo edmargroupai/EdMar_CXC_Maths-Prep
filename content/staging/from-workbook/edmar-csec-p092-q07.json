@@ -1,0 +1,159 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p092-q07",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Factorise completely: x² − 81"
+    },
+    {
+      "type": "text",
+      "value": "Think first: Two terms, both perfect squares, separated by a minus sign — that is the difference of two squares."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p092_q07.jpg",
+      "altText": "Source visual for edmar-csec-p092-q07 from workbook page 92."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write each term as a square.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x² = (x)² and 81 = 9²"
+        },
+        {
+          "type": "text",
+          "value": "Result: x² − 9²"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Apply a² − b² = (a − b)(a + b).",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Here a = x and b = 9"
+        },
+        {
+          "type": "text",
+          "value": "Result: (x − 9)(x + 9)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Write each term as a square and apply a² − b² = (a − b)(a + b)."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(x − 9)(x + 9)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Expanding (x − 9)(x + 9) gives x² + 9x − 9x − 81, and the two middle terms cancel to leave only the difference of the squares. That cancellation is the whole reason the rule exists, and it works only when the squares are subtracted, never added."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_x_9_instead_of_two_different_bra",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing (x − 9)² instead of two different brackets.",
+      "correctiveNote": "Avoid this: Writing (x − 9)² instead of two different brackets."
+    },
+    {
+      "key": "trying_to_factorise_x_81_which_does_not_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Trying to factorise x² + 81, which does not factorise over the real numbers.",
+      "correctiveNote": "Avoid this: Trying to factorise x² + 81, which does not factorise over the real numbers."
+    },
+    {
+      "key": "writing_the_factors_as_x_81_x_81_instead",
+      "wrongValue": "incorrect_3",
+      "misconception": "Writing the factors as (x − 81)(x + 81) instead of using the square root of 81.",
+      "correctiveNote": "Avoid this: Writing the factors as (x − 81)(x + 81) instead of using the square root of 81."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Check that both terms really are perfect squares before using the rule — if either is not, a different method is needed."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "−9)(x+9)",
+    "displayValue": "− 9)(x + 9)",
+    "acceptedForms": [
+      "− 9)(x + 9)",
+      "−9)(x+9)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Factorise x² − 144."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "−12)(x+12)",
+      "displayValue": "− 12)(x + 12)",
+      "acceptedForms": [
+        "− 12)(x + 12)",
+        "−12)(x+12)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M3-2.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "4f6a6df5-7f29-405d-a2c1-9870e3ad8364",
+      "code": "M3-2.1",
+      "label": "Difference of two squares"
+    },
+    {
+      "objectiveId": "3142e4dc-cfa6-41c7-a277-2e42e72cd2e7",
+      "code": "M3-2.1",
+      "label": "Square roots of algebraic terms"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 7,
+    "pageRef": "p92",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

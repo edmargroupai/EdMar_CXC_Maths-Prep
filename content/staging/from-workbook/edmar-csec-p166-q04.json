@@ -1,0 +1,210 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p166-q04",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Line segments AC and BD intersect at O, with AO = OC and BO = OD. a) Prove that triangle AOB is congruent to triangle COD, stating the congruence case used. b) Hence prove that AB = CD. c) Use a pair of equal alternate angles to show that AB is parallel to CD."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The crossing point O gives you a pair of vertically opposite angles, which is exactly the angle wedged between the two given equal sides."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p166_q04.jpg",
+      "altText": "Source visual for edmar-csec-p166-q04 from workbook page 166."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "List the equal parts of triangles AOB and COD.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "AO = OC (given); ∠AOB = ∠COD (vertically opposite angles); BO = OD (given)"
+        },
+        {
+          "type": "text",
+          "value": "Result: side, included angle, side"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "State the congruence.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Two sides and the angle between them are equal"
+        },
+        {
+          "type": "text",
+          "value": "Result: triangle AOB ≅ triangle COD (SAS)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Read off the third pair of sides.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "AB and CD are corresponding sides of the congruent triangles"
+        },
+        {
+          "type": "text",
+          "value": "Result: AB = CD"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Read off a pair of corresponding angles at A and C.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "∠BAO = ∠DCO (corresponding angles of congruent triangles)"
+        },
+        {
+          "type": "text",
+          "value": "Result: ∠BAO = ∠DCO"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Interpret those angles for the line AC.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "AC is a transversal cutting AB and CD, and ∠BAO and ∠DCO are alternate angles; equal alternate angles mean the lines are parallel"
+        },
+        {
+          "type": "text",
+          "value": "Result: AB is parallel to CD"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Pair the two given equal sides with the vertically opposite angle between them to get SAS, then read off equal corresponding sides and angles."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) Triangle AOB ≅ triangle COD by SAS (AO = OC, ∠AOB = ∠COD vertically opposite, BO = OD)  (b) AB = CD as corresponding sides of congruent triangles  (c) ∠BAO = ∠DCO are equal alternate angles for AB and CD with transversal AC, so AB is parallel to CD"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "SAS works because fixing two sides and the angle wedged between them leaves no freedom in the third side. The vertically opposite angle is the key: it is equal automatically wherever two straight lines cross, so the diagram supplies the middle ingredient without it being stated. Part c then runs the alternate-angle rule backwards — equal alternate angles are not just a consequence of parallel lines, they are a test for them."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "using_oab_and_ocd_as_the_included_angle_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Using ∠OAB and ∠OCD as the included angle — the included angle must be at O, between the two given sides.",
+      "correctiveNote": "Avoid this: Using ∠OAB and ∠OCD as the included angle — the included angle must be at O, between the two given sides."
+    },
+    {
+      "key": "quoting_ssa_which_is_not_a_valid_congrue",
+      "wrongValue": "incorrect_2",
+      "misconception": "Quoting SSA, which is not a valid congruence case.",
+      "correctiveNote": "Avoid this: Quoting SSA, which is not a valid congruence case."
+    },
+    {
+      "key": "saying_ab_is_parallel_to_cd_because_the_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Saying AB is parallel to CD because the diagram looks that way, instead of naming the equal alternate angles.",
+      "correctiveNote": "Avoid this: Saying AB is parallel to CD because the diagram looks that way, instead of naming the equal alternate angles."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Whenever two lines cross in a proof diagram, immediately mark the vertically opposite angles as equal — that free fact completes most SAS proofs."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "TriangleAOB≅triangleCODbySAS(AO=OC,∠AOB=∠CODverticallyopposite,BO=OD)",
+    "displayValue": "Triangle AOB ≅ triangle COD by SAS (AO = OC, ∠AOB = ∠COD vertically opposite, BO = OD)",
+    "acceptedForms": [
+      "Triangle AOB ≅ triangle COD by SAS (AO = OC, ∠AOB = ∠COD vertically opposite, BO = OD)",
+      "TriangleAOB≅triangleCODbySAS(AO=OC,∠AOB=∠CODverticallyopposite,BO=OD)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Two lines cross at O. One angle at O is 47°. What is the angle vertically opposite it?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "47",
+      "displayValue": "47",
+      "acceptedForms": [
+        "47",
+        "47"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "f118713f-38a9-426e-af1c-7ce12ad79b50",
+      "code": "M1-1.1",
+      "label": "Congruent triangles (SAS)"
+    },
+    {
+      "objectiveId": "2bb182e3-c615-4618-adfa-e2208b78ae27",
+      "code": "M1-1.1",
+      "label": "Vertically opposite angles"
+    },
+    {
+      "objectiveId": "c7ec554e-7af3-413d-a3d3-aa070a4fa1f5",
+      "code": "M1-1.1",
+      "label": "Alternate angles and the test for parallel lines"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 4,
+    "pageRef": "p166",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

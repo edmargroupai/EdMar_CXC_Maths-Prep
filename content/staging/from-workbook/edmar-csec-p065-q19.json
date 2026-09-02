@@ -1,0 +1,215 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p065-q19",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 5,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Simplify (9x^(1/2) × 3x⁴) / (3x⁵ × 6x²)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Fractional indices obey exactly the same addition and subtraction rules as whole-number ones."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p065_q19.jpg",
+      "altText": "Source visual for edmar-csec-p065-q19 from workbook page 65."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Simplify the numerator.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "9 × 3 = 27 and x^(1/2) × x⁴ = x^(1/2 + 4)"
+        },
+        {
+          "type": "text",
+          "value": "Result: 27x^(9/2)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Simplify the denominator.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3 × 6 = 18 and x⁵ × x² = x^(5+2)"
+        },
+        {
+          "type": "text",
+          "value": "Result: 18x⁷"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Divide the coefficients.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "27 ÷ 18 = 3/2"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3/2"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Subtract the indices.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "9/2 − 7 = 9/2 − 14/2"
+        },
+        {
+          "type": "text",
+          "value": "Result: x^(−5/2)"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Write the negative index as a fraction.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x^(−5/2) = 1/x^(5/2)"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3/(2x^(5/2))"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Collapse the numerator and the denominator each into a single term, then divide the coefficients and subtract the indices."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(9x^(1/2) × 3x⁴) / (3x⁵ × 6x²) = (3/2)x^(−5/2), that is 3/(2x^(5/2))"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Indices need not be whole numbers for the laws to hold; x^(1/2) is just the square root of x, and adding 1/2 to 4 is the same kind of operation as adding 1 to 4. Writing 4 as 8/2 and 7 as 14/2 keeps every index over the same denominator so the arithmetic stays reliable. The final negative index is then rewritten as a fraction to present the answer in its usual form."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "ignoring_the_fraction_and_treating_x_1_2",
+      "wrongValue": "incorrect_1",
+      "misconception": "Ignoring the fraction and treating x^(1/2) as x.",
+      "correctiveNote": "Avoid this: Ignoring the fraction and treating x^(1/2) as x."
+    },
+    {
+      "key": "subtracting_the_indices_in_the_wrong_ord",
+      "wrongValue": "incorrect_2",
+      "misconception": "Subtracting the indices in the wrong order, giving x^(5/2).",
+      "correctiveNote": "Avoid this: Subtracting the indices in the wrong order, giving x^(5/2)."
+    },
+    {
+      "key": "cancelling_27_with_only_the_3_in_the_den",
+      "wrongValue": "incorrect_3",
+      "misconception": "Cancelling 27 with only the 3 in the denominator and forgetting the 6.",
+      "correctiveNote": "Avoid this: Cancelling 27 with only the 3 in the denominator and forgetting the 6."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Convert every index to a fraction over a common denominator before adding or subtracting; mixed whole numbers and halves are where marks are lost."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "(9x^(1/2)×3x⁴)/(3x⁵×6x²)=(3/2)x^(−5/2),thatis3/(2x^(5/2))",
+    "displayValue": "(9x^(1/2) × 3x⁴) / (3x⁵ × 6x²) = (3/2)x^(−5/2), that is 3/(2x^(5/2))",
+    "acceptedForms": [
+      "(9x^(1/2) × 3x⁴) / (3x⁵ × 6x²) = (3/2)x^(−5/2), that is 3/(2x^(5/2))",
+      "(9x^(1/2)×3x⁴)/(3x⁵×6x²)=(3/2)x^(−5/2),thatis3/(2x^(5/2))"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Simplify (4x^(1/2) × 2x³) / (2x⁴)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "4",
+      "displayValue": "4",
+      "acceptedForms": [
+        "4",
+        "4"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "55180bf8-804d-453c-a669-87fe2fa3882a",
+      "code": "M1-4.1",
+      "label": "Laws of indices"
+    },
+    {
+      "objectiveId": "93035f6c-49a8-41e6-af0b-fcac1aa7b57f",
+      "code": "M1-4.1",
+      "label": "Fractional indices"
+    },
+    {
+      "objectiveId": "0036d7c4-236d-4bf9-aead-edb06da1deda",
+      "code": "M1-4.1",
+      "label": "Multiplication and division laws"
+    },
+    {
+      "objectiveId": "3d1bd190-1d11-4287-af26-12b6119269c7",
+      "code": "M1-4.1",
+      "label": "Negative indices"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 19,
+    "pageRef": "p65",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

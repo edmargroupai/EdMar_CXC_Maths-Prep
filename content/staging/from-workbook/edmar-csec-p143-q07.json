@@ -1,0 +1,178 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p143-q07",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Given that f: x ↦ 3x + 7 and g: x ↦ (4x − 9)/5, calculate fg(10)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The function next to the number goes first, so evaluate g(10) and then feed the result into f."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p143_q07.jpg",
+      "altText": "Source visual for edmar-csec-p143-q07 from workbook page 143."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Substitute x = 10 into g.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "g(10) = (4(10) − 9)/5 = (40 − 9)/5"
+        },
+        {
+          "type": "text",
+          "value": "Result: g(10) = 31/5 = 6.2"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Substitute that value into f.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "f(31/5) = 3(31/5) + 7 = 93/5 + 7"
+        },
+        {
+          "type": "text",
+          "value": "Result: 93/5 + 35/5"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Add the fractions.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(93 + 35)/5"
+        },
+        {
+          "type": "text",
+          "value": "Result: fg(10) = 128/5 = 25.6"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Substitute x = 10 into g, then substitute that output into f."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "fg(10) = 128/5 = 25.6"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Composite notation fg means 'do g, then do f', so the inner function converts 10 into 6.2 and the outer function converts 6.2 into 25.6. Keeping the intermediate value as the fraction 31/5 rather than a rounded decimal guarantees the final answer is exact, which matters whenever the inner output is not a whole number."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "doing_f_first_and_calculating_g_37_inste",
+      "wrongValue": "incorrect_1",
+      "misconception": "Doing f first and calculating g(37) instead.",
+      "correctiveNote": "Avoid this: Doing f first and calculating g(37) instead."
+    },
+    {
+      "key": "rounding_6_2_to_6_before_substituting_wh",
+      "wrongValue": "incorrect_2",
+      "misconception": "Rounding 6.2 to 6 before substituting, which gives 25.",
+      "correctiveNote": "Avoid this: Rounding 6.2 to 6 before substituting, which gives 25."
+    },
+    {
+      "key": "dividing_only_the_4x_by_5_and_forgetting",
+      "wrongValue": "incorrect_3",
+      "misconception": "Dividing only the 4x by 5 and forgetting the -9.",
+      "correctiveNote": "Avoid this: Dividing only the 4x by 5 and forgetting the -9."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Write the intermediate result on its own line — examiners award method marks for a correct g(10) even if the final arithmetic slips."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "fg(10)=128/5=25.6",
+    "displayValue": "fg(10) = 128/5 = 25.6",
+    "acceptedForms": [
+      "fg(10) = 128/5 = 25.6",
+      "fg(10)=128/5=25.6"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "If f(x) = 2x + 1 and g(x) = x/2, find fg(6)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "g(6)=3,thenf(3)=7.",
+      "displayValue": "g(6) = 3, then f(3) = 7.",
+      "acceptedForms": [
+        "g(6) = 3, then f(3) = 7.",
+        "g(6)=3,thenf(3)=7."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "a501f53d-4591-444f-a5fb-abdf0b79d55d",
+      "code": "M1-5.1",
+      "label": "Evaluating a function"
+    },
+    {
+      "objectiveId": "80938a12-808f-4a87-a821-a9c9e77a6614",
+      "code": "M1-5.1",
+      "label": "Composite functions"
+    },
+    {
+      "objectiveId": "e8ea39b4-8cb3-4611-a9f2-8a84adce431c",
+      "code": "M1-5.1",
+      "label": "Order of composition"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 7,
+    "pageRef": "p143",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

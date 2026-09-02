@@ -1,0 +1,316 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p085-q13",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 10,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A double bar chart shows library visits by students in Grades 7 to 11 over two terms. Term 1: 40, 50, 45, 60, 70. Term 2: 60, 60, 55, 75, 80. (a) How many Grade 9 visits were recorded in Term 2? (b) Calculate the total number of visits recorded in Term 2. (c) Which grade showed the greatest increase from Term 1 to Term 2? (d) Calculate the percentage increase in visits by Grade 10 students. (e) Describe ONE trend shown by the chart and give ONE possible inference."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Read both bars for each grade before answering anything — every part compares the pair."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p085_q13.jpg",
+      "altText": "Source visual for edmar-csec-p085-q13 from workbook page 85."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Read both bars for every grade.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Term 1: 40, 50, 45, 60, 70; Term 2: 60, 60, 55, 75, 80 for Grades 7 to 11"
+        },
+        {
+          "type": "text",
+          "value": "Result: Grade 9 in Term 2 = 55 visits"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Add the five Term 2 values.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "60 + 60 + 55 + 75 + 80"
+        },
+        {
+          "type": "text",
+          "value": "Result: 330 visits"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Subtract Term 1 from Term 2 for each grade.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Grade 7 +20, Grade 8 +10, Grade 9 +10, Grade 10 +15, Grade 11 +10"
+        },
+        {
+          "type": "text",
+          "value": "Result: Grade 7 shows the greatest increase"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Find the percentage increase for Grade 10.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "15/60 × 100"
+        },
+        {
+          "type": "text",
+          "value": "Result: 25%"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Tabulate the two terms grade by grade, add the Term 2 column, subtract to find each grade's increase, and use increase ÷ Term 1 × 100 for the percentage."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) 55 visits  (b) 330 visits  (c) Grade 7, with an increase of 20 visits  (d) 25%  (e) Trend: every grade made more visits in Term 2 than in Term 1, and the number of visits generally rises with grade level. Inference: library use grew across the school in Term 2, possibly because of examination preparation, which would also explain why the higher grades visit most."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A double bar chart places two related frequencies side by side, so a difference can be read directly as the gap between neighbouring bars. Turning those differences into percentages of the original value makes changes comparable between grades: a rise of 15 means far more for a grade starting at 40 than for one starting at 70."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "adding_both_terms_when_only_the_term_2_t",
+      "wrongValue": "incorrect_1",
+      "misconception": "Adding both terms when only the Term 2 total is wanted.",
+      "correctiveNote": "Avoid this: Adding both terms when only the Term 2 total is wanted."
+    },
+    {
+      "key": "choosing_grade_11_for_the_greatest_incre",
+      "wrongValue": "incorrect_2",
+      "misconception": "Choosing Grade 11 for the greatest increase because its bars are the tallest, instead of comparing the gaps.",
+      "correctiveNote": "Avoid this: Choosing Grade 11 for the greatest increase because its bars are the tallest, instead of comparing the gaps."
+    },
+    {
+      "key": "dividing_the_increase_by_the_term_2_figu",
+      "wrongValue": "incorrect_3",
+      "misconception": "Dividing the increase by the Term 2 figure instead of the Term 1 figure.",
+      "correctiveNote": "Avoid this: Dividing the increase by the Term 2 figure instead of the Term 1 figure."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Copy the chart into a small two-row table before answering — you then read each bar once instead of five times."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "55",
+    "displayValue": "55",
+    "acceptedForms": [
+      "55",
+      "55"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Visits rise from 40 in Term 1 to 60 in Term 2. What is the percentage increase?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "50%",
+      "displayValue": "50%",
+      "acceptedForms": [
+        "50%",
+        "50%"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M3-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "f2b0c28f-5297-4215-a582-e3c2849a1ea0",
+      "code": "M3-1.1",
+      "label": "Reading a double bar chart"
+    },
+    {
+      "objectiveId": "d980d32f-56ae-42db-a19a-5bbe84dede78",
+      "code": "M3-1.1",
+      "label": "Totals from a chart"
+    },
+    {
+      "objectiveId": "bc2d7cb7-4c00-4b33-a212-f736df2a76d7",
+      "code": "M3-1.1",
+      "label": "Increase and percentage increase"
+    },
+    {
+      "objectiveId": "e35a4f6e-3200-4191-aa2d-40705f3e1490",
+      "code": "M3-1.1",
+      "label": "Trends and inferences"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 13,
+    "pageRef": "p85",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "numeric_exact",
+        "canonicalValue": "55",
+        "displayValue": "55",
+        "acceptedForms": [
+          "55",
+          "55"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0
+        },
+        "normalisation": "numeric_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "numeric_exact",
+        "canonicalValue": "330",
+        "displayValue": "330",
+        "acceptedForms": [
+          "330",
+          "330"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0
+        },
+        "normalisation": "numeric_default"
+      }
+    },
+    {
+      "partKey": "c",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (c): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Grade7,withanincreaseof20visits",
+        "displayValue": "Grade 7, with an increase of 20 visits",
+        "acceptedForms": [
+          "Grade 7, with an increase of 20 visits",
+          "Grade7,withanincreaseof20visits"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "d",
+      "sequence": 4,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (d): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "25%",
+        "displayValue": "25%",
+        "acceptedForms": [
+          "25%",
+          "25%"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "e",
+      "sequence": 5,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (e): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "thenumberofvisitsgenerallyriseswithgradelevel.Inference:libraryusegrewacrosstheschoolinTerm2,possibly",
+        "displayValue": "the number of visits generally rises with grade level. Inference: library use grew across the school in Term 2, possibly",
+        "acceptedForms": [
+          "the number of visits generally rises with grade level. Inference: library use grew across the school in Term 2, possibly",
+          "thenumberofvisitsgenerallyriseswithgradelevel.Inference:libraryusegrewacrosstheschoolinTerm2,possibly"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

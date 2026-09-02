@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p022-q26",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Three supermarkets sell the same 1.5 L bottle of cooking oil: Super Mart $780 per bottle, Family Foods 3 bottles for $2 250, Budget Store 10% discount on $820. Reduce each offer to a price per bottle and decide which store gives the best buy. (The workbook prints the stem and table only; the lettered parts are not in this extract.)"
+    },
+    {
+      "type": "text",
+      "value": "Think first: Every offer is for the same 1.5 L bottle, so you only need the price of a single bottle in each case."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p022_q26.jpg",
+      "altText": "Source visual for edmar-csec-p022-q26 from workbook page 22."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write down Super Mart's price per bottle.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "given directly"
+        },
+        {
+          "type": "text",
+          "value": "Result: $780 per bottle"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Divide Family Foods' offer by the number of bottles.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2 250 / 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: $750 per bottle"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Apply the discount to Budget Store's price.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "90% of $820 = 0.90 x 820"
+        },
+        {
+          "type": "text",
+          "value": "Result: $738 per bottle"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Compare the three unit prices.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "738 < 750 < 780"
+        },
+        {
+          "type": "text",
+          "value": "Result: Budget Store is cheapest"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Read Super Mart directly, divide Family Foods by 3, apply the 10% discount to Budget Store, then compare the three unit prices."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "Price per bottle: Super Mart $780, Family Foods $750, Budget Store $738. Budget Store offers the best buy."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Offers can only be compared once they are expressed in the same units, here dollars per bottle. A multi-buy deal and a percentage discount look very different on the shelf, but reducing both to a unit price puts them on one scale. Since all three bottles are the same 1.5 L size, price per bottle ranks the stores exactly as price per litre would."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "comparing_2_250_with_780_and_820_without",
+      "wrongValue": "incorrect_1",
+      "misconception": "Comparing $2 250 with $780 and $820 without dividing by 3.",
+      "correctiveNote": "Avoid this: Comparing $2 250 with $780 and $820 without dividing by 3."
+    },
+    {
+      "key": "taking_10_of_820_as_the_price_rather_tha",
+      "wrongValue": "incorrect_2",
+      "misconception": "Taking 10% of $820 as the price rather than as the discount.",
+      "correctiveNote": "Avoid this: Taking 10% of $820 as the price rather than as the discount."
+    },
+    {
+      "key": "assuming_the_biggest_headline_discount_m",
+      "wrongValue": "incorrect_3",
+      "misconception": "Assuming the biggest headline discount must be the best deal.",
+      "correctiveNote": "Avoid this: Assuming the biggest headline discount must be the best deal."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Reduce every offer to the cost of one before comparing anything. It turns a confusing table into three numbers you can simply rank."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Priceperbottle:SuperMart$780,FamilyFoods$750,BudgetStore$738.BudgetStoreoffersthebestbuy.",
+    "displayValue": "Price per bottle: Super Mart $780, Family Foods $750, Budget Store $738. Budget Store offers the best buy.",
+    "acceptedForms": [
+      "Price per bottle: Super Mart $780, Family Foods $750, Budget Store $738. Budget Store offers the best buy.",
+      "Priceperbottle:SuperMart$780,FamilyFoods$750,BudgetStore$738.BudgetStoreoffersthebestbuy."
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Shop A sells juice at $240 per bottle and Shop B sells 4 bottles for $920. Which is cheaper per bottle?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "ShopB,at$230perbottle",
+      "displayValue": "Shop B, at $230 per bottle",
+      "acceptedForms": [
+        "Shop B, at $230 per bottle",
+        "ShopB,at$230perbottle"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "38be6ef3-2ec9-46b8-a0c0-6aaf87c8c7fa",
+      "code": "M1-1.1",
+      "label": "Best buy"
+    },
+    {
+      "objectiveId": "0636b08f-ae7e-4547-a89d-a398978c68ef",
+      "code": "M1-1.1",
+      "label": "Unit cost"
+    },
+    {
+      "objectiveId": "15b6ae1d-c79c-4d7c-a182-bf1dd278bec6",
+      "code": "M1-1.1",
+      "label": "Percentage discount"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 26,
+    "pageRef": "p22",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p051-q13",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Simplify (6x + 5)/4 + (5x − 3)/6 as a single fraction."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The lowest common multiple of 4 and 6 is 12, not 24 — using the smallest one keeps the arithmetic clean."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p051_q13.jpg",
+      "altText": "Source visual for edmar-csec-p051-q13 from workbook page 51."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Find the lowest common denominator of 4 and 6.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "LCM of 4 and 6"
+        },
+        {
+          "type": "text",
+          "value": "Result: 12"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Rewrite each fraction over 12.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(6x + 5) is multiplied by 3; (5x − 3) is multiplied by 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: [3(6x + 5) + 2(5x − 3)]/12"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Expand the numerator.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "18x + 15 and 10x − 6"
+        },
+        {
+          "type": "text",
+          "value": "Result: 18x + 15 + 10x − 6"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Collect like terms.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "18x + 10x = 28x and 15 − 6 = 9"
+        },
+        {
+          "type": "text",
+          "value": "Result: 28x + 9"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Rewrite both fractions over 12, expand the numerators, then collect like terms."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(28x + 9)/12"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Each fraction is multiplied top and bottom by whatever turns its denominator into 12, so its value is untouched while its form becomes compatible with the other. Addition then applies only to numerators. Although 28 and 12 share a factor of 4, the constant 9 does not, so no common factor runs through the whole numerator and the fraction is already in its simplest form."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "using_24_as_the_common_denominator_and_f",
+      "wrongValue": "incorrect_1",
+      "misconception": "Using 24 as the common denominator and forgetting to simplify at the end.",
+      "correctiveNote": "Avoid this: Using 24 as the common denominator and forgetting to simplify at the end."
+    },
+    {
+      "key": "cancelling_28x_12_down_to_7x_3_while_lea",
+      "wrongValue": "incorrect_2",
+      "misconception": "Cancelling 28x/12 down to 7x/3 while leaving the 9 behind.",
+      "correctiveNote": "Avoid this: Cancelling 28x/12 down to 7x/3 while leaving the 9 behind."
+    },
+    {
+      "key": "expanding_2_5x_3_as_10x_3",
+      "wrongValue": "incorrect_3",
+      "misconception": "Expanding 2(5x − 3) as 10x − 3.",
+      "correctiveNote": "Avoid this: Expanding 2(5x − 3) as 10x − 3."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "A common factor may only be cancelled if it divides every single term of the numerator as well as the denominator. Test the constant term before you cancel anything."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "(28x+9)/12",
+    "displayValue": "(28x + 9)/12",
+    "acceptedForms": [
+      "(28x + 9)/12",
+      "(28x+9)/12"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Simplify (4x + 3)/6 + (2x − 1)/4 as a single fraction."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "[2(4x+3)+3(2x−1)]/12=(14x+3)/12.",
+      "displayValue": "[2(4x + 3) + 3(2x − 1)]/12 = (14x + 3)/12.",
+      "acceptedForms": [
+        "[2(4x + 3) + 3(2x − 1)]/12 = (14x + 3)/12.",
+        "[2(4x+3)+3(2x−1)]/12=(14x+3)/12."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "75d43845-c723-486d-ae40-166ed8878726",
+      "code": "M1-4.1",
+      "label": "Addition of algebraic fractions"
+    },
+    {
+      "objectiveId": "f1484bde-b97c-40c4-a3bd-9932d47656f3",
+      "code": "M1-4.1",
+      "label": "Lowest common multiple"
+    },
+    {
+      "objectiveId": "6c5b4bdb-31e6-4c8d-a190-ff901f254fda",
+      "code": "M1-4.1",
+      "label": "Expanding brackets"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 13,
+    "pageRef": "p51",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

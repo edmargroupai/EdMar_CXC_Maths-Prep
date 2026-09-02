@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p050-q02",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Simplify the algebraic fraction (x² + 7x)/(x² − 49)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Both the top and the bottom will factorise, and the whole point is to reveal a factor they share."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p050_q02.jpg",
+      "altText": "Source visual for edmar-csec-p050-q02 from workbook page 50."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Factorise the numerator by removing the common factor x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x² + 7x = x(x + 7)"
+        },
+        {
+          "type": "text",
+          "value": "Result: x(x + 7)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Factorise the denominator as a difference of two squares.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x² − 49 = x² − 7², so it is (x + 7)(x − 7)"
+        },
+        {
+          "type": "text",
+          "value": "Result: (x + 7)(x − 7)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Write the fraction in factorised form.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "numerator over denominator"
+        },
+        {
+          "type": "text",
+          "value": "Result: x(x + 7)/[(x + 7)(x − 7)]"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Cancel the common factor (x + 7).",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "valid provided x ≠ −7"
+        },
+        {
+          "type": "text",
+          "value": "Result: x/(x − 7)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Factorise the numerator by taking out x, factorise the denominator as a difference of two squares, then cancel the common bracket."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x/(x − 7), for x ≠ 7 and x ≠ −7"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "An algebraic fraction only simplifies when the top and bottom share a whole factor, not merely a matching term. Factorising turns a sum into a product, and only then is (x + 7) a genuine factor of both parts that can be divided out. The difference of two squares is the key here because x² − 49 hides the very bracket the numerator produces."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "cancelling_the_x_terms_or_the_individual",
+      "wrongValue": "incorrect_1",
+      "misconception": "Cancelling the x² terms or the individual numbers straight from x² + 7x over x² − 49 without factorising first.",
+      "correctiveNote": "Avoid this: Cancelling the x² terms or the individual numbers straight from x² + 7x over x² − 49 without factorising first."
+    },
+    {
+      "key": "writing_x_49_as_x_7_instead_of_x_7_x_7",
+      "wrongValue": "incorrect_2",
+      "misconception": "Writing x² − 49 as (x − 7)² instead of (x + 7)(x − 7).",
+      "correctiveNote": "Avoid this: Writing x² − 49 as (x − 7)² instead of (x + 7)(x − 7)."
+    },
+    {
+      "key": "forgetting_to_state_or_notice_that_x_can",
+      "wrongValue": "incorrect_3",
+      "misconception": "Forgetting to state or notice that x cannot equal 7 or −7.",
+      "correctiveNote": "Avoid this: Forgetting to state or notice that x cannot equal 7 or −7."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Whenever you see a subtraction of two perfect squares, test it as a² − b² = (a + b)(a − b) before trying anything else — it is the fastest factorisation in the syllabus."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "x/(x−7),forx≠7andx≠−7",
+    "displayValue": "x/(x − 7), for x ≠ 7 and x ≠ −7",
+    "acceptedForms": [
+      "x/(x − 7), for x ≠ 7 and x ≠ −7",
+      "x/(x−7),forx≠7andx≠−7"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Simplify (x² + 5x)/(x² − 25)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "x(x+5)/[(x+5)(x−5)]=x/(x−5).",
+      "displayValue": "x(x + 5)/[(x + 5)(x − 5)] = x/(x − 5).",
+      "acceptedForms": [
+        "x(x + 5)/[(x + 5)(x − 5)] = x/(x − 5).",
+        "x(x+5)/[(x+5)(x−5)]=x/(x−5)."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "c01dc922-f406-4a73-a151-79277b093fa2",
+      "code": "M1-4.1",
+      "label": "Factorising by taking out a common factor"
+    },
+    {
+      "objectiveId": "1f026b58-22dc-4015-a02d-11e67bba42dd",
+      "code": "M1-4.1",
+      "label": "Difference of two squares"
+    },
+    {
+      "objectiveId": "7c5836dc-0679-4ad1-a717-9b83ae7e3e69",
+      "code": "M1-4.1",
+      "label": "Simplifying algebraic fractions"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 2,
+    "pageRef": "p50",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

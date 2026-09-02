@@ -1,0 +1,202 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p228-q12",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Grade 11 students were surveyed about the job sector they are most likely to seek employment in. On the pie chart the sectors are: Health care 90° (marked as a right angle), ICT 67.5°, Agriculture 40.5°, Government 4p°, Education 3p° and Real estate 2p°. Find the value of p (and hence the angle of each remaining sector)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The right-angle mark on the health care sector is data: it tells you that sector is 90°."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p228_q12.jpg",
+      "altText": "Source visual for edmar-csec-p228-q12 from workbook page 228."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write down all six sector angles, using 90° for the right-angled health care sector.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "90, 67.5, 40.5, 4p, 3p and 2p"
+        },
+        {
+          "type": "text",
+          "value": "Result: Six angles, three of them in terms of p"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Set the sum of the angles equal to a whole turn.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "4p + 3p + 2p + 90 + 67.5 + 40.5 = 360"
+        },
+        {
+          "type": "text",
+          "value": "Result: 9p + 198 = 360"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Solve for p.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "9p = 360 − 198 = 162, so p = 162 ÷ 9"
+        },
+        {
+          "type": "text",
+          "value": "Result: p = 18"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Substitute back to check the six angles total 360°.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Government 4(18) = 72°, Education 3(18) = 54°, Real estate 2(18) = 36°; 72 + 54 + 36 + 90 + 67.5 + 40.5"
+        },
+        {
+          "type": "text",
+          "value": "Result: 360° ✓"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Add all six sector angles, set the sum equal to 360°, and solve the resulting linear equation for p."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "p = 18, giving Government = 72°, Education = 54° and Real estate = 36° (with Health care 90°, ICT 67.5° and Agriculture 40.5°)."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The sectors of a pie chart meet at the centre, so their angles are angles at a point and must total exactly 360°. Writing three unknown sectors as multiples of the same letter turns that fact into a single linear equation, and the right-angle symbol supplies the sixth angle without it needing to be stated in words."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "ignoring_the_right_angle_mark_and_leavin",
+      "wrongValue": "incorrect_1",
+      "misconception": "Ignoring the right-angle mark and leaving the health care sector as an unknown.",
+      "correctiveNote": "Avoid this: Ignoring the right-angle mark and leaving the health care sector as an unknown."
+    },
+    {
+      "key": "adding_only_the_terms_in_p_and_setting_9",
+      "wrongValue": "incorrect_2",
+      "misconception": "Adding only the terms in p and setting 9p = 360.",
+      "correctiveNote": "Avoid this: Adding only the terms in p and setting 9p = 360."
+    },
+    {
+      "key": "arithmetic_slips_with_the_decimals_67_5_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Arithmetic slips with the decimals 67.5 and 40.5 — they add to a neat 108.",
+      "correctiveNote": "Avoid this: Arithmetic slips with the decimals 67.5 and 40.5 — they add to a neat 108."
+    },
+    {
+      "key": "stopping_at_p_18_when_the_sector_angles_",
+      "wrongValue": "incorrect_4",
+      "misconception": "Stopping at p = 18 when the sector angles themselves are wanted.",
+      "correctiveNote": "Avoid this: Stopping at p = 18 when the sector angles themselves are wanted."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Substitute your value back and confirm the angles total 360° — a pie chart question always gives you that free check."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "p=18,givingGovernment=72°,Education=54°andRealestate=36°(withHealthcare90°,ICT67.5°andAgriculture",
+    "displayValue": "p = 18, giving Government = 72°, Education = 54° and Real estate = 36° (with Health care 90°, ICT 67.5° and Agriculture ",
+    "acceptedForms": [
+      "p = 18, giving Government = 72°, Education = 54° and Real estate = 36° (with Health care 90°, ICT 67.5° and Agriculture ",
+      "p=18,givingGovernment=72°,Education=54°andRealestate=36°(withHealthcare90°,ICT67.5°andAgriculture"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A pie chart has sectors of 5k°, 3k° and 120°. Find k."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "8",
+      "displayValue": "8",
+      "acceptedForms": [
+        "8",
+        "8"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M3-2.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "9ffd2ae8-09dd-4b10-a082-3bcf9c8772b5",
+      "code": "M3-2.1",
+      "label": "Angles at a point (360°)"
+    },
+    {
+      "objectiveId": "e85776a5-7529-4f20-a961-1eb4654ca035",
+      "code": "M3-2.1",
+      "label": "Forming and solving a linear equation"
+    },
+    {
+      "objectiveId": "58db5450-36ac-48fb-a3d4-4f21a23d9971",
+      "code": "M3-2.1",
+      "label": "Pie charts"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 12,
+    "pageRef": "p228",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

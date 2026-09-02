@@ -1,0 +1,216 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p015-q10",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Lily spends her monthly allowance on clothes, food and savings in the ratio 6 : 5 : 4. Her total allowance is $1,500. Calculate: i. the amount spent on clothes  ii. the amount saved  iii. what percentage of the allowance was spent on food."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The order of the ratio matches the order of the words: clothes 6, food 5, savings 4."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p015_q10.jpg",
+      "altText": "Source visual for edmar-csec-p015-q10 from workbook page 15."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Add the ratio parts.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "6 + 5 + 4"
+        },
+        {
+          "type": "text",
+          "value": "Result: 15 parts"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Find the value of one part.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "$1500 ÷ 15"
+        },
+        {
+          "type": "text",
+          "value": "Result: $100 per part"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Find the amount spent on clothes.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "6 × $100"
+        },
+        {
+          "type": "text",
+          "value": "Result: $600"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Find the amount saved.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "4 × $100"
+        },
+        {
+          "type": "text",
+          "value": "Result: $400"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Express food as a percentage of the allowance.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5/15 × 100% = 1/3 × 100%"
+        },
+        {
+          "type": "text",
+          "value": "Result: 33 1/3% (33.3% to 1 d.p.)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Add the parts, value one part, multiply for clothes and savings, then turn food's parts into a percentage of the total."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "i. $600 on clothes  ii. $400 saved  iii. 33 1/3%, about 33.3%"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Each ratio number counts equal $100 units, so the three amounts are fixed as soon as one unit is known, and they must add back to $1500. The percentage comes from the parts alone: 5 out of 15 is one third of the allowance regardless of its size. Because one third is a recurring decimal, the exact fraction 33 1/3% is the safer answer unless a rounding instruction is given."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "matching_the_ratio_numbers_to_the_wrong_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Matching the ratio numbers to the wrong categories, for example saving $600.",
+      "correctiveNote": "Avoid this: Matching the ratio numbers to the wrong categories, for example saving $600."
+    },
+    {
+      "key": "rounding_33_333_to_33_without_being_aske",
+      "wrongValue": "incorrect_2",
+      "misconception": "Rounding 33.333…% to 33% without being asked to.",
+      "correctiveNote": "Avoid this: Rounding 33.333…% to 33% without being asked to."
+    },
+    {
+      "key": "dividing_1500_by_3_because_there_are_thr",
+      "wrongValue": "incorrect_3",
+      "misconception": "Dividing $1500 by 3 because there are three categories.",
+      "correctiveNote": "Avoid this: Dividing $1500 by 3 because there are three categories."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When a percentage turns out to be recurring, quote it as an exact fraction of a percent unless the question tells you how to round."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "tolerance",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "currency",
+    "canonicalValue": "600.00",
+    "displayValue": "$600",
+    "acceptedForms": [
+      "$600",
+      "$600",
+      "600"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0.005
+    },
+    "precision": {
+      "kind": "decimal_places",
+      "value": 2,
+      "required": true
+    },
+    "normalisation": "currency_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "$800 is split in the ratio 3 : 4 : 1. What percentage of the total is the middle share?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "50%",
+      "displayValue": "50%",
+      "acceptedForms": [
+        "50%",
+        "50%"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "a648f1ba-9359-4fe6-abf5-d66ad70923e0",
+      "code": "M1-1.1",
+      "label": "Ratio"
+    },
+    {
+      "objectiveId": "8e5ff754-e881-4c09-a43c-cb9c46afd54b",
+      "code": "M1-1.1",
+      "label": "Sharing a quantity in a given ratio"
+    },
+    {
+      "objectiveId": "818aea87-e3b1-4ea0-aff5-ac0a3e917927",
+      "code": "M1-1.1",
+      "label": "Percentage of a total"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 10,
+    "pageRef": "p15",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

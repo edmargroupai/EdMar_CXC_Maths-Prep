@@ -1,0 +1,180 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p050-q01",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Simplify the algebraic fraction 4/(5x) × 15x/16."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Multiplying fractions means multiply across the top and across the bottom, but cancelling common factors first keeps the numbers small."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p050_q01.jpg",
+      "altText": "Source visual for edmar-csec-p050-q01 from workbook page 50."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply the numerators and the denominators.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(4 × 15x) over (5x × 16)"
+        },
+        {
+          "type": "text",
+          "value": "Result: 60x/(80x)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Cancel the common factor x from top and bottom.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x ÷ x = 1, valid since x ≠ 0"
+        },
+        {
+          "type": "text",
+          "value": "Result: 60/80"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Divide numerator and denominator by 20.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "60 ÷ 20 = 3, 80 ÷ 20 = 4"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3/4"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Write the product as one fraction, then cancel the common numerical factors and the common x."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "3/4"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A fraction's value is unchanged when the numerator and denominator are divided by the same non-zero quantity, so cancelling is not 'crossing out' — it is dividing both parts by the same factor. Here the x appears once on top and once on the bottom, so it divides out completely and the answer carries no variable at all. That is why a product of algebraic fractions can simplify to a pure number."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "cancelling_the_x_in_5x_with_the_x_in_15x",
+      "wrongValue": "incorrect_1",
+      "misconception": "Cancelling the x in 5x with the x in 15x before writing the single fraction, and then losing track of the 4 and 16.",
+      "correctiveNote": "Avoid this: Cancelling the x in 5x with the x in 15x before writing the single fraction, and then losing track of the 4 and 16."
+    },
+    {
+      "key": "adding_the_fractions_instead_of_multiply",
+      "wrongValue": "incorrect_2",
+      "misconception": "Adding the fractions instead of multiplying them.",
+      "correctiveNote": "Avoid this: Adding the fractions instead of multiplying them."
+    },
+    {
+      "key": "leaving_the_answer_as_60x_80x_without_si",
+      "wrongValue": "incorrect_3",
+      "misconception": "Leaving the answer as 60x/80x without simplifying.",
+      "correctiveNote": "Avoid this: Leaving the answer as 60x/80x without simplifying."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Cancel before you multiply out. Spotting the common factors first turns awkward numbers like 60 and 80 into a one-step simplification."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "fraction",
+    "canonicalValue": "3/4",
+    "displayValue": "3/4",
+    "acceptedForms": [
+      "3/4"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Simplify 3/(4y) × 8y/9."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "24",
+      "displayValue": "24",
+      "acceptedForms": [
+        "24",
+        "24"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "1a607400-e55d-41ae-a1b2-67ce2e1d9dff",
+      "code": "M1-4.1",
+      "label": "Multiplication of algebraic fractions"
+    },
+    {
+      "objectiveId": "10449bd3-aee7-4271-ada3-22f56e6b0234",
+      "code": "M1-4.1",
+      "label": "Cancelling common factors"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 1,
+    "pageRef": "p50",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

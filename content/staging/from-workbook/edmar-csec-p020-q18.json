@@ -1,0 +1,202 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p020-q18",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A trader bought 500 oranges for $2 000. 50 oranges were spoiled and the rest were sold at $6 each. (a) Calculate the total revenue. (b) Calculate the percentage profit or loss."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Only the oranges actually sold bring in money, but all 500 were paid for."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p020_q18.jpg",
+      "altText": "Source visual for edmar-csec-p020-q18 from workbook page 20."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Find the number of oranges actually sold.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "500 - 50"
+        },
+        {
+          "type": "text",
+          "value": "Result: 450 oranges"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Multiply by the price per orange to get the revenue.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "450 x $6"
+        },
+        {
+          "type": "text",
+          "value": "Result: $2 700"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Compare revenue with cost price.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "$2 700 - $2 000"
+        },
+        {
+          "type": "text",
+          "value": "Result: $700 profit"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Express the profit as a percentage of the cost price.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(700 / 2 000) x 100"
+        },
+        {
+          "type": "text",
+          "value": "Result: 35% profit"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Find how many oranges were sold, multiply by the selling price for the revenue, compare with the $2 000 cost, then express the difference as a percentage of the cost."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) Total revenue = $2 700  (b) A profit of 35%"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Spoiled stock is a real cost: the trader paid for all 500 oranges but earned from only 450, so the effective cost per orange sold rises from $4.00 to about $4.44. Percentage profit still uses the full $2 000 outlay as its base because that is the money actually risked. This is why wastage eats into a margin so quickly."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "multiplying_500_by_6_and_ignoring_the_sp",
+      "wrongValue": "incorrect_1",
+      "misconception": "Multiplying 500 by $6 and ignoring the spoiled oranges.",
+      "correctiveNote": "Avoid this: Multiplying 500 by $6 and ignoring the spoiled oranges."
+    },
+    {
+      "key": "using_the_cost_of_only_the_450_sold_oran",
+      "wrongValue": "incorrect_2",
+      "misconception": "Using the cost of only the 450 sold oranges as the base.",
+      "correctiveNote": "Avoid this: Using the cost of only the 450 sold oranges as the base."
+    },
+    {
+      "key": "dividing_the_profit_by_the_revenue_inste",
+      "wrongValue": "incorrect_3",
+      "misconception": "Dividing the profit by the revenue instead of the cost.",
+      "correctiveNote": "Avoid this: Dividing the profit by the revenue instead of the cost."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Read any sentence about wastage twice, then write two separate numbers: how many were bought and how many were sold."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Totalrevenue=$2700",
+    "displayValue": "Total revenue = $2 700",
+    "acceptedForms": [
+      "Total revenue = $2 700",
+      "Totalrevenue=$2700"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A trader buys 200 mangoes for $600, 20 spoil, and the rest sell at $5 each. Find the percentage profit."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "currency",
+      "canonicalValue": "50.00",
+      "displayValue": "$50",
+      "acceptedForms": [
+        "$50",
+        "$50",
+        "50"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.005
+      },
+      "precision": {
+        "kind": "decimal_places",
+        "value": 2,
+        "required": true
+      },
+      "normalisation": "currency_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-3.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "83ab5b8b-9170-4036-ad22-adbe120d794f",
+      "code": "M1-3.1",
+      "label": "Profit and loss"
+    },
+    {
+      "objectiveId": "4988e450-9505-42a2-a7c2-d502851dd978",
+      "code": "M1-3.1",
+      "label": "Percentage profit"
+    },
+    {
+      "objectiveId": "10264da5-70a0-4ae4-ad22-8986819e2b33",
+      "code": "M1-3.1",
+      "label": "Cost price and revenue"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 18,
+    "pageRef": "p20",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

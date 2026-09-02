@@ -1,0 +1,287 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p234-q05",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 6,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A distance–time graph shows an athlete's 5-hour journey: distance rises steadily from 0 km to 12 km during the first 2 hours, stays at 12 km from 2 hours to 3.5 hours, then falls steadily back to 0 km at 5 hours. (i) Find the average speed during the first 2 hours. (ii) Say what the athlete did between 2 hours and 3 hours. (iii) Find the average speed on the return journey."
+    },
+    {
+      "type": "text",
+      "value": "Think first: On a distance–time graph the steepness of a line is the speed, and a flat line means no distance is being covered at all."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p234_q05.jpg",
+      "altText": "Source visual for edmar-csec-p234-q05 from workbook page 234."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Read the distance reached at the end of the first 2 hours.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The line climbs from 0 km at t = 0 to 12 km at t = 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: 12 km in 2 h"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Divide that distance by the time.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "12 ÷ 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: 6 km/h"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Look at the shape of the graph between t = 2 and t = 3.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The graph is horizontal at 12 km, so the distance from the start does not change"
+        },
+        {
+          "type": "text",
+          "value": "Result: the athlete was at rest"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Read off where the return journey starts and ends.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The line falls from 12 km at t = 3.5 h to 0 km at t = 5 h"
+        },
+        {
+          "type": "text",
+          "value": "Result: 12 km in 1.5 h"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Divide the return distance by the return time.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "12 ÷ 1.5"
+        },
+        {
+          "type": "text",
+          "value": "Result: 8 km/h"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Read the distance covered and the time taken for each straight section off the graph, then divide distance by time for the speeds."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) 6 km/h  (ii) The athlete rested — he stayed 12 km from the start, covering no further distance.  (iii) 8 km/h"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Distance–time graphs turn motion into gradient. A steeper line covers more distance in the same time, so the gradient is the speed; a horizontal line has gradient zero, meaning the object is not moving. Because the return line falls, the athlete is moving back towards the start, but speed is still just the distance covered divided by the time taken."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "reading_the_flat_section_as_stopped_for_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Reading the flat section as 'stopped for 1 hour' when the graph is flat from 2 h to 3.5 h — read the endpoints carefully.",
+      "correctiveNote": "Avoid this: Reading the flat section as 'stopped for 1 hour' when the graph is flat from 2 h to 3.5 h — read the endpoints carefully."
+    },
+    {
+      "key": "using_the_whole_5_hours_instead_of_only_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Using the whole 5 hours instead of only the 1.5 hours of the return leg.",
+      "correctiveNote": "Avoid this: Using the whole 5 hours instead of only the 1.5 hours of the return leg."
+    },
+    {
+      "key": "calling_the_return_speed_negative_speed_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Calling the return speed negative — speed is never negative; only velocity has direction.",
+      "correctiveNote": "Avoid this: Calling the return speed negative — speed is never negative; only velocity has direction."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Mark the coordinates of every corner of a travel graph before answering — most of the marks come from reading those points correctly."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "6",
+    "displayValue": "6",
+    "acceptedForms": [
+      "6",
+      "6"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A cyclist's distance–time graph rises from 0 km to 15 km in 3 hours. What is the average speed?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "5",
+      "displayValue": "5",
+      "acceptedForms": [
+        "5",
+        "5"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "2641bb9a-98d4-4ed2-a7dc-35dc992d6e52",
+      "code": "M1-1.1",
+      "label": "Distance–time graphs"
+    },
+    {
+      "objectiveId": "a85b435c-004a-4611-a575-fa44b48022d6",
+      "code": "M1-1.1",
+      "label": "Gradient as speed"
+    },
+    {
+      "objectiveId": "1dc22fc4-0d37-41df-a4c0-31a003df81b4",
+      "code": "M1-1.1",
+      "label": "Average speed = distance ÷ time"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 5,
+    "pageRef": "p234",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a.i",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.i): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "numeric_exact",
+        "canonicalValue": "6",
+        "displayValue": "6",
+        "acceptedForms": [
+          "6",
+          "6"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0
+        },
+        "normalisation": "numeric_default"
+      }
+    },
+    {
+      "partKey": "a.ii",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.ii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Theathletereste",
+        "displayValue": "The athlete reste",
+        "acceptedForms": [
+          "The athlete reste",
+          "Theathletereste"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.iii",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.iii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "numeric_exact",
+        "canonicalValue": "8",
+        "displayValue": "8",
+        "acceptedForms": [
+          "8",
+          "8"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0
+        },
+        "normalisation": "numeric_default"
+      }
+    }
+  ]
+}

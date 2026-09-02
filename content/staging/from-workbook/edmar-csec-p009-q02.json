@@ -1,0 +1,186 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p009-q02",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Find the exact value of the expression shown in the crop: (2.4 × 6.5 − 3.6)/1.2."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The fraction bar groups the whole top line, so build the numerator first and divide only once it is a single number."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p009_q02.jpg",
+      "altText": "Source visual for edmar-csec-p009-q02 from workbook page 9."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply the decimals on the top line.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "24 × 65 = 1560 with two decimal places"
+        },
+        {
+          "type": "text",
+          "value": "Result: 15.6"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Complete the numerator.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "15.6 − 3.6"
+        },
+        {
+          "type": "text",
+          "value": "Result: 12"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Divide by the denominator.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Multiply both parts by 10: 120 ÷ 12"
+        },
+        {
+          "type": "text",
+          "value": "Result: 10"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Evaluate 2.4 × 6.5, subtract 3.6, then divide the result by 1.2."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "10"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The horizontal bar acts as a bracket around 2.4 × 6.5 − 3.6, which fixes the order: multiply, subtract, then divide. Scaling numerator and denominator by the same factor of 10 leaves the quotient unchanged but replaces the decimal divisor 1.2 with the whole number 12, so the final step is plain division."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "dividing_3_6_by_1_2_before_the_subtracti",
+      "wrongValue": "incorrect_1",
+      "misconception": "Dividing 3.6 by 1.2 before the subtraction is done.",
+      "correctiveNote": "Avoid this: Dividing 3.6 by 1.2 before the subtraction is done."
+    },
+    {
+      "key": "reading_the_bar_as_if_it_applied_only_to",
+      "wrongValue": "incorrect_2",
+      "misconception": "Reading the bar as if it applied only to 3.6.",
+      "correctiveNote": "Avoid this: Reading the bar as if it applied only to 3.6."
+    },
+    {
+      "key": "getting_1_56_instead_of_15_6_by_mishandl",
+      "wrongValue": "incorrect_3",
+      "misconception": "Getting 1.56 instead of 15.6 by mishandling the decimal places.",
+      "correctiveNote": "Avoid this: Getting 1.56 instead of 15.6 by mishandling the decimal places."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Redraw a printed fraction with explicit brackets — (2.4 × 6.5 − 3.6) ÷ 1.2 — before touching the numbers; it removes almost every order-of-operations slip."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "10",
+    "displayValue": "10",
+    "acceptedForms": [
+      "10",
+      "10"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Find the exact value of (3.2 × 2.5 − 2)/1.5."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "4",
+      "displayValue": "4",
+      "acceptedForms": [
+        "4",
+        "4"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.2"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "91cb4a65-41f9-4e95-aa86-d0ce296f4001",
+      "code": "M1-1.2",
+      "label": "Order of operations"
+    },
+    {
+      "objectiveId": "2c480f3b-a025-45fe-a2c0-2633fcdd5d51",
+      "code": "M1-1.2",
+      "label": "Decimal multiplication"
+    },
+    {
+      "objectiveId": "cce5c519-aa1b-4a29-afba-69282feceede",
+      "code": "M1-1.2",
+      "label": "Decimal division"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 2,
+    "pageRef": "p9",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

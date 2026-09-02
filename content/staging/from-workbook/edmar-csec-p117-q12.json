@@ -1,0 +1,178 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p117-q12",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The speed v of a journey varies inversely as the time t taken. If the speed is 60 km/h when the time taken is 2 hours, find the speed when the time taken is 3 hours."
+    },
+    {
+      "type": "text",
+      "value": "Think first: For a fixed journey, speed multiplied by time is the distance — and that does not change."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p117_q12.jpg",
+      "altText": "Source visual for edmar-csec-p117-q12 from workbook page 117."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write the variation statement as an equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "v varies inversely as t"
+        },
+        {
+          "type": "text",
+          "value": "Result: v = k/t"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Substitute v = 60 and t = 2 to find k.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "60 = k/2"
+        },
+        {
+          "type": "text",
+          "value": "Result: k = 120 (km)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Substitute t = 3 into v = 120/t.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "v = 120 ÷ 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: v = 40 km/h"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Write v = k/t, find k from v = 60 when t = 2, then substitute t = 3."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "The speed is 40 km/h"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The constant of variation is the distance of the journey, 120 km, which is the same whichever speed is used. Taking longer to cover the same distance means travelling more slowly, and inverse variation captures that trade-off exactly."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "treating_the_relationship_as_direct_and_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Treating the relationship as direct and getting 90 km/h.",
+      "correctiveNote": "Avoid this: Treating the relationship as direct and getting 90 km/h."
+    },
+    {
+      "key": "interpreting_k_as_a_speed_rather_than_a_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Interpreting k as a speed rather than a distance.",
+      "correctiveNote": "Avoid this: Interpreting k as a speed rather than a distance."
+    },
+    {
+      "key": "omitting_the_units_km_h_from_the_final_a",
+      "wrongValue": "incorrect_3",
+      "misconception": "Omitting the units km/h from the final answer.",
+      "correctiveNote": "Avoid this: Omitting the units km/h from the final answer."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Give the constant of variation a meaning in context — here it is the journey distance, and naming it makes the answer easy to check."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Thespeedis40km/h",
+    "displayValue": "The speed is 40 km/h",
+    "acceptedForms": [
+      "The speed is 40 km/h",
+      "Thespeedis40km/h"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "v varies inversely as t, with v = 50 km/h when t = 3 h. Find v when t = 5 h."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=30km/h",
+      "displayValue": "= 30 km/h",
+      "acceptedForms": [
+        "= 30 km/h",
+        "=30km/h"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-3.2"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "cf14415e-748f-4d24-a23a-9067a5d1910e",
+      "code": "M1-3.2",
+      "label": "Inverse variation"
+    },
+    {
+      "objectiveId": "942b5407-0ce2-4d12-a98a-60a6c216b791",
+      "code": "M1-3.2",
+      "label": "Constant of variation"
+    },
+    {
+      "objectiveId": "b2e8c05c-9835-4133-aa27-12120e2ba667",
+      "code": "M1-3.2",
+      "label": "Speed, distance and time"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 12,
+    "pageRef": "p117",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

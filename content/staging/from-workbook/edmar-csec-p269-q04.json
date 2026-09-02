@@ -1,0 +1,286 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p269-q04",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 6,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "From a harbour H the bearing of ship Q is 069 degrees and the bearing of ship R is 151 degrees. Q is 175 km from H and R is 242 km from H. (i) Complete the diagram to show this information. (ii) Calculate QR, the distance between the two ships, to the nearest km. (iii) Calculate how far due south of H ship R is."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The two bearings are both measured from the same north line at H, so the angle between the ships at H is simply the difference of the bearings."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p269_q04.jpg",
+      "altText": "Source visual for edmar-csec-p269-q04 from workbook page 269."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Label the diagram: mark HQ = 175 km, HR = 242 km, the bearing 069 degrees to Q and the bearing 151 degrees to R, both measured clockwise from the north line at H.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The 069 degree angle is already shown; add the 151 degree angle and the two distances."
+        },
+        {
+          "type": "text",
+          "value": "Result: Diagram completed"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Find the angle at H inside the triangle.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "angle QHR = 151 - 69"
+        },
+        {
+          "type": "text",
+          "value": "Result: angle QHR = 82 degrees"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Apply the cosine rule in triangle QHR.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "QR squared = 175 squared + 242 squared - 2(175)(242) cos 82 = 30625 + 58564 - 11787.9"
+        },
+        {
+          "type": "text",
+          "value": "Result: QR squared = 77401.1"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Take the square root and round.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "square root of 77401.1 = 278.21"
+        },
+        {
+          "type": "text",
+          "value": "Result: QR = 278 km"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "For the southward distance, note that the bearing 151 degrees makes an angle of 180 - 151 = 29 degrees with the due-south direction from H.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Southward distance = 242 cos 29 = 242 x 0.87462"
+        },
+        {
+          "type": "text",
+          "value": "Result: 211.7 km, i.e. about 212 km due south"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Find angle QHR as the difference of the bearings, apply the cosine rule in triangle QHR to get QR, then drop a perpendicular from R to the north-south line through H and use the cosine ratio for the southward distance."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) HQ = 175 km on a bearing of 069 degrees and HR = 242 km on a bearing of 151 degrees, both measured clockwise from north at H.  (ii) QR = 278 km  (iii) R is 211.7 km (about 212 km) due south of H."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Bearings are all measured clockwise from the same north direction, so subtracting one from the other gives the true angle between the two paths at the observation point. With two sides and the included angle known, the cosine rule is the only rule that fits, and it returns the third side directly. For part (iii) the southward displacement is the component of HR along the north-south line, and since the bearing is 29 degrees away from due south that component is 242 cos 29."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "adding_the_bearings_instead_of_subtracti",
+      "wrongValue": "incorrect_1",
+      "misconception": "Adding the bearings instead of subtracting them.",
+      "correctiveNote": "Avoid this: Adding the bearings instead of subtracting them."
+    },
+    {
+      "key": "using_the_sine_rule_when_only_two_sides_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Using the sine rule when only two sides and the included angle are known.",
+      "correctiveNote": "Avoid this: Using the sine rule when only two sides and the included angle are known."
+    },
+    {
+      "key": "using_sin_29_instead_of_cos_29_which_giv",
+      "wrongValue": "incorrect_3",
+      "misconception": "Using sin 29 instead of cos 29, which gives the east-west distance rather than the southward one.",
+      "correctiveNote": "Avoid this: Using sin 29 instead of cos 29, which gives the east-west distance rather than the southward one."
+    },
+    {
+      "key": "forgetting_to_take_the_square_root_at_th",
+      "wrongValue": "incorrect_4",
+      "misconception": "Forgetting to take the square root at the end of the cosine rule.",
+      "correctiveNote": "Avoid this: Forgetting to take the square root at the end of the cosine rule."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Always sketch the north line at the point the bearing is measured from; the included angle in the triangle then becomes obvious rather than guessed."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "HQ=175kmon",
+    "displayValue": "HQ = 175 km on",
+    "acceptedForms": [
+      "HQ = 175 km on",
+      "HQ=175kmon"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A ship sails 100 km from port on a bearing of 160 degrees. How far south of the port is it?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "100",
+      "displayValue": "100",
+      "acceptedForms": [
+        "100",
+        "100"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "2c284c1e-9dcc-4b16-a918-e70e82cc4882",
+      "code": "M1-1.1",
+      "label": "Bearings measured clockwise from north"
+    },
+    {
+      "objectiveId": "f07b4ff8-db91-433b-a91a-9857fadedaa3",
+      "code": "M1-1.1",
+      "label": "Angle between two bearings"
+    },
+    {
+      "objectiveId": "c427a39c-663a-4892-a62e-7d6fa898d2ab",
+      "code": "M1-1.1",
+      "label": "Cosine rule"
+    },
+    {
+      "objectiveId": "8cfcfafe-5a10-4a1c-a5a0-be430d0df6ee",
+      "code": "M1-1.1",
+      "label": "Resolving a distance into a north-south component"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 4,
+    "pageRef": "p269",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a.i",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.i): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "HQ=175kmon",
+        "displayValue": "HQ = 175 km on",
+        "acceptedForms": [
+          "HQ = 175 km on",
+          "HQ=175kmon"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.ii",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.ii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "QR=278km",
+        "displayValue": "QR = 278 km",
+        "acceptedForms": [
+          "QR = 278 km",
+          "QR=278km"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.iii",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.iii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Ris211.7km(about212km)duesouthofH.",
+        "displayValue": "R is 211.7 km (about 212 km) due south of H.",
+        "acceptedForms": [
+          "R is 211.7 km (about 212 km) due south of H.",
+          "Ris211.7km(about212km)duesouthofH."
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

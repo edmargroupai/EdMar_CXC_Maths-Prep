@@ -1,0 +1,217 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p278-q01",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "OPQL is a parallelogram with OP = r and OL = s. T is the point such that vector PQ = vector QT. M divides PL in the ratio 2 : 1. (i) Find, in terms of r and s, a) vector PL and b) vector OM. (ii) Prove that O, M and T are collinear."
+    },
+    {
+      "type": "text",
+      "value": "Think first: In a parallelogram opposite sides are equal vectors, so PQ is just s — that single fact unlocks both T and M."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p278_q01.jpg",
+      "altText": "Source visual for edmar-csec-p278-q01 from workbook page 278."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Travel from P to L through O using the triangle law.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "PL = PO + OL = −r + s"
+        },
+        {
+          "type": "text",
+          "value": "Result: PL = s − r"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Find PM, remembering M divides PL in the ratio 2 : 1 so PM is two-thirds of PL.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "PM = (2/3)(s − r)"
+        },
+        {
+          "type": "text",
+          "value": "Result: PM = (2/3)s − (2/3)r"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Add OP and PM to reach M from O.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "OM = r + (2/3)s − (2/3)r"
+        },
+        {
+          "type": "text",
+          "value": "Result: OM = (1/3)r + (2/3)s = (1/3)(r + 2s)"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Express OT. Since OPQL is a parallelogram, PQ = OL = s, and QT = PQ = s as well.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "OT = OP + PQ + QT = r + s + s"
+        },
+        {
+          "type": "text",
+          "value": "Result: OT = r + 2s"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Compare OT with OM.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "OT = r + 2s = 3 × (1/3)(r + 2s) = 3 OM"
+        },
+        {
+          "type": "text",
+          "value": "Result: OT = 3 OM, so OT is parallel to OM and they share the point O — hence O, M and T are collinear"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Use PQ = OL = s to place Q and T, build PL by going P → O → L, take two-thirds of PL to reach M from P, then show OT is a scalar multiple of OM."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) a) PL = s − r  b) OM = (1/3)(r + 2s) = (1/3)r + (2/3)s.  (ii) OT = r + 2s = 3 OM; since OT is a scalar multiple of OM and both start at O, the points O, M and T lie on the same straight line."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A vector route between two points can be built from any chain of known vectors, so P → O → L gives PL without needing coordinates. A ratio along a line converts directly into a fraction of the whole vector, which is why PM = (2/3)PL. Collinearity is proved when one vector equals a number times another and the two vectors share a starting point — parallel plus a common point forces a single straight line."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_pl_r_s_by_going_the_wrong_way_ro",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing PL = r − s by going the wrong way round; PL starts at P, so the r term must be negative.",
+      "correctiveNote": "Avoid this: Writing PL = r − s by going the wrong way round; PL starts at P, so the r term must be negative."
+    },
+    {
+      "key": "taking_pm_as_1_2_pl_or_2_1_pl_instead_of",
+      "wrongValue": "incorrect_2",
+      "misconception": "Taking PM as (1/2)PL or (2/1)PL instead of (2/3)PL.",
+      "correctiveNote": "Avoid this: Taking PM as (1/2)PL or (2/1)PL instead of (2/3)PL."
+    },
+    {
+      "key": "assuming_pq_r_in_parallelogram_opql_the_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Assuming PQ = r; in parallelogram OPQL the side PQ matches OL, not OP.",
+      "correctiveNote": "Avoid this: Assuming PQ = r; in parallelogram OPQL the side PQ matches OL, not OP."
+    },
+    {
+      "key": "stopping_after_showing_ot_and_om_are_par",
+      "wrongValue": "incorrect_4",
+      "misconception": "Stopping after showing OT and OM are parallel without mentioning the common point O.",
+      "correctiveNote": "Avoid this: Stopping after showing OT and OM are parallel without mentioning the common point O."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "For a collinearity proof, always end with the sentence naming the shared point — 'parallel and share point O, therefore collinear' — because that is where the mark sits."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "a)PL=s−r",
+    "displayValue": "a) PL = s − r",
+    "acceptedForms": [
+      "a) PL = s − r",
+      "a)PL=s−r"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "In a parallelogram OABC with OA = p and OC = q, write vector AC in terms of p and q."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=AO+OC=q−p",
+      "displayValue": "= AO + OC = q − p",
+      "acceptedForms": [
+        "= AO + OC = q − p",
+        "=AO+OC=q−p"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "6ed15e3c-0b8b-4eb3-a9e7-b2c1575dd7d0",
+      "code": "M2-5.1",
+      "label": "Vector addition and the triangle law"
+    },
+    {
+      "objectiveId": "0d85c098-e93a-44d4-a272-51cf80e778d1",
+      "code": "M2-5.1",
+      "label": "Parallelogram properties in vectors"
+    },
+    {
+      "objectiveId": "ed964146-15b2-4905-a230-83bceefcfe49",
+      "code": "M2-5.1",
+      "label": "Dividing a line in a given ratio"
+    },
+    {
+      "objectiveId": "64f31aec-4635-40c1-a00d-275cb49231a2",
+      "code": "M2-5.1",
+      "label": "Collinearity of points"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 1,
+    "pageRef": "p278",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

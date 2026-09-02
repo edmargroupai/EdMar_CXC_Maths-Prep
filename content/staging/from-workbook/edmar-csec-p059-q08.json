@@ -1,0 +1,153 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p059-q08",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the inequality −2x ≤ 8."
+    },
+    {
+      "type": "text",
+      "value": "Think first: You are about to divide by a negative number, which is the one situation that reverses the inequality sign."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p059_q08.jpg",
+      "altText": "Source visual for edmar-csec-p059-q08 from workbook page 59."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Divide both sides by −2, and reverse the inequality sign because the divisor is negative.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "8 ÷ (−2) = −4, and ≤ becomes ≥"
+        },
+        {
+          "type": "text",
+          "value": "Result: x ≥ −4"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Check with a test value from the solution set.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x = 0: −2(0) = 0, and 0 ≤ 8 is true"
+        },
+        {
+          "type": "text",
+          "value": "Result: x ≥ −4 confirmed"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Divide both sides by −2 and reverse the inequality sign."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x ≥ −4"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Multiplying or dividing by a negative number reflects every value about zero, which reverses their order: −3 is greater than −5, but doubling and negating turns 6 into a value smaller than 10. Reversing the inequality sign restores the correct order. An alternative that avoids the rule entirely is to add 2x to both sides, giving 0 ≤ 8 + 2x, then −8 ≤ 2x, so x ≥ −4."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "forgetting_to_reverse_the_sign_and_writi",
+      "wrongValue": "incorrect_1",
+      "misconception": "Forgetting to reverse the sign and writing x ≤ −4.",
+      "correctiveNote": "Avoid this: Forgetting to reverse the sign and writing x ≤ −4."
+    },
+    {
+      "key": "dividing_8_by_2_and_ignoring_the_negativ",
+      "wrongValue": "incorrect_2",
+      "misconception": "Dividing 8 by 2 and ignoring the negative, giving x ≥ 4.",
+      "correctiveNote": "Avoid this: Dividing 8 by 2 and ignoring the negative, giving x ≥ 4."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "After dividing by a negative, always test one value from your answer in the original inequality."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "≥−4",
+    "displayValue": "≥ −4",
+    "acceptedForms": [
+      "≥ −4",
+      "≥−4"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve −3x ≤ 12."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "≥−4",
+      "displayValue": "≥ −4",
+      "acceptedForms": [
+        "≥ −4",
+        "≥−4"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "04fb329f-79ba-491f-ac6d-9428b6d7531f",
+      "code": "M1-4.1",
+      "label": "Linear inequalities"
+    },
+    {
+      "objectiveId": "83eb794d-e030-4714-af0c-31674b952dc1",
+      "code": "M1-4.1",
+      "label": "Dividing by a negative number"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 8,
+    "pageRef": "p59",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

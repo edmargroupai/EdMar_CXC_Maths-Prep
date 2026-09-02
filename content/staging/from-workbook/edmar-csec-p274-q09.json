@@ -1,0 +1,217 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p274-q09",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 5,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "E, F, G and H are on level ground. In the diagram HG = 5.3 m, HF = 11 m, GF = 6.9 m, angle EHG = 54° and x = angle GHF. (i) Show that x = 29.5°, correct to 1 decimal place. (ii) A vertical tower GT stands at G and is secured by wire to E, F and H. The angle of elevation of the top T from F is 31°. Find the length of wire from T to F. (iii) The bearing of E from H is 228°. Find the bearing of (a) H from E, (b) G from H."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Every part here is either a cosine-rule triangle, a right-angled triangle standing on the ground, or a bearing turned through a known angle — sort out which before you start."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p274_q09.jpg",
+      "altText": "Source visual for edmar-csec-p274-q09 from workbook page 274."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "In triangle HGF write the cosine rule for the angle x at H, opposite side GF.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "cos x = (HG² + HF² − GF²) / (2 × HG × HF)"
+        },
+        {
+          "type": "text",
+          "value": "Result: cos x = (5.3² + 11² − 6.9²) / (2 × 5.3 × 11)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Evaluate the numerator and denominator, then take the inverse cosine.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(28.09 + 121 − 47.61)/116.6 = 101.48/116.6 = 0.8703"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 29.5° (1 d.p.)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "For the wire, use right-angled triangle FGT with the right angle at G, base FG = 6.9 m and angle of elevation 31° at F.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "cos 31° = FG / FT, so FT = 6.9 ÷ cos 31°"
+        },
+        {
+          "type": "text",
+          "value": "Result: FT = 6.9 ÷ 0.8572 = 8.05 m"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Find the bearing of H from E by taking the back bearing of 228°.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "228° is more than 180°, so subtract 180°"
+        },
+        {
+          "type": "text",
+          "value": "Result: Bearing of H from E = 048°"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Find the bearing of G from H by turning 54° from HE towards HG, which is the anticlockwise (decreasing) direction.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "228° − 54°"
+        },
+        {
+          "type": "text",
+          "value": "Result: Bearing of G from H = 174°"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Use the cosine rule in triangle HGF (all three sides known) to find x. For the wire FT, note the tower is vertical at G so triangle FGT is right-angled at G with FG = 6.9 m and elevation 31°. For the bearings, use the back-bearing rule and add or subtract the 54° at H."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) cos x = 0.8703 so x = 29.5° (1 d.p.)  (ii) FT = 8.05 m of wire  (iii) a) 048°  b) 174°"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The cosine rule links all three sides of a triangle to one angle, so knowing HG, HF and GF fixes the angle between HG and HF completely. The tower is vertical, so the wire FT, the ground distance FG and the tower GT form a right-angled triangle in which the elevation angle at F ties the hypotenuse to the known base. Bearings are directions measured clockwise from north, so reversing a direction changes it by exactly 180°, and rotating from one ray to another at the same point changes the bearing by the angle between them."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "using_hf_or_the_wrong_pair_of_sides_as_t",
+      "wrongValue": "incorrect_1",
+      "misconception": "Using HF or the wrong pair of sides as the 'included' sides for angle x.",
+      "correctiveNote": "Avoid this: Using HF or the wrong pair of sides as the 'included' sides for angle x."
+    },
+    {
+      "key": "taking_gt_rather_than_ft_as_the_wire_len",
+      "wrongValue": "incorrect_2",
+      "misconception": "Taking GT rather than FT as the wire length — the wire is the slant, not the tower.",
+      "correctiveNote": "Avoid this: Taking GT rather than FT as the wire length — the wire is the slant, not the tower."
+    },
+    {
+      "key": "adding_180_to_228_instead_of_subtracting",
+      "wrongValue": "incorrect_3",
+      "misconception": "Adding 180° to 228° instead of subtracting, giving an impossible bearing of 408°.",
+      "correctiveNote": "Avoid this: Adding 180° to 228° instead of subtracting, giving an impossible bearing of 408°."
+    },
+    {
+      "key": "adding_the_54_to_228_when_the_diagram_sh",
+      "wrongValue": "incorrect_4",
+      "misconception": "Adding the 54° to 228° when the diagram shows G lies clockwise-back from E.",
+      "correctiveNote": "Avoid this: Adding the 54° to 228° when the diagram shows G lies clockwise-back from E."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Write the cosine rule already rearranged for the angle before substituting; it stops you dividing by the wrong product."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "cosx=0.8703sox=29.5°(1d.p.)",
+    "displayValue": "cos x = 0.8703 so x = 29.5° (1 d.p.)",
+    "acceptedForms": [
+      "cos x = 0.8703 so x = 29.5° (1 d.p.)",
+      "cosx=0.8703sox=29.5°(1d.p.)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "In triangle ABC, AB = 4 cm, AC = 7 cm and BC = 5 cm. Find angle BAC to 1 decimal place."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "cosA=(16+49−25)/(2×4×7)=40/56=0.7143,soangleBAC=44.4°",
+      "displayValue": "cos A = (16 + 49 − 25)/(2×4×7) = 40/56 = 0.7143, so angle BAC = 44.4°",
+      "acceptedForms": [
+        "cos A = (16 + 49 − 25)/(2×4×7) = 40/56 = 0.7143, so angle BAC = 44.4°",
+        "cosA=(16+49−25)/(2×4×7)=40/56=0.7143,soangleBAC=44.4°"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "583e768e-60ed-43f7-a077-67bd5481c326",
+      "code": "M1-1.1",
+      "label": "Cosine rule"
+    },
+    {
+      "objectiveId": "13ab682b-82fb-4eb3-ab42-74465a118af1",
+      "code": "M1-1.1",
+      "label": "Right-angled trigonometry"
+    },
+    {
+      "objectiveId": "ab1b87e4-ae6a-4f29-aa16-03d78753b7c5",
+      "code": "M1-1.1",
+      "label": "Angle of elevation"
+    },
+    {
+      "objectiveId": "cd4e8fe3-47b4-4c9b-a8ca-543485248666",
+      "code": "M1-1.1",
+      "label": "Bearings"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 9,
+    "pageRef": "p274",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

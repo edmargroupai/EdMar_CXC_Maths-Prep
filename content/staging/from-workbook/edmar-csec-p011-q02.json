@@ -1,0 +1,214 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p011-q02",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A piece of ribbon 96 m long is cut into three pieces in the ratio 2 : 5 : 9. Calculate: i. the length of the longest piece  ii. the length of the shortest piece  iii. the difference in length between the longest and shortest pieces."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The largest ratio number gives the longest piece and the smallest gives the shortest, so identify them before calculating."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p011_q02.jpg",
+      "altText": "Source visual for edmar-csec-p011-q02 from workbook page 11."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Add the ratio parts.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2 + 5 + 9"
+        },
+        {
+          "type": "text",
+          "value": "Result: 16 parts"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Find the length of one part.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "96 m ÷ 16"
+        },
+        {
+          "type": "text",
+          "value": "Result: 6 m per part"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Find the longest piece.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "9 × 6 m"
+        },
+        {
+          "type": "text",
+          "value": "Result: 54 m"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Find the shortest piece.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2 × 6 m"
+        },
+        {
+          "type": "text",
+          "value": "Result: 12 m"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Subtract to get the difference.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "54 m − 12 m"
+        },
+        {
+          "type": "text",
+          "value": "Result: 42 m"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Total the parts, find the length of one part, then multiply by 9 and by 2 and subtract."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "i. 54 m  ii. 12 m  iii. 42 m"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Dividing in a ratio means cutting the whole into equal units and handing out an agreed number of units to each share, so the ordering of the shares always matches the ordering of the ratio numbers. The difference can also be read straight off the ratio: 9 − 2 = 7 parts, and 7 × 6 m = 42 m, which is a useful check on the two lengths you found."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "multiplying_96_by_the_ratio_numbers_inst",
+      "wrongValue": "incorrect_1",
+      "misconception": "Multiplying 96 by the ratio numbers instead of dividing first.",
+      "correctiveNote": "Avoid this: Multiplying 96 by the ratio numbers instead of dividing first."
+    },
+    {
+      "key": "assuming_the_pieces_come_in_the_order_th",
+      "wrongValue": "incorrect_2",
+      "misconception": "Assuming the pieces come in the order they are listed and calling 2 the longest.",
+      "correctiveNote": "Avoid this: Assuming the pieces come in the order they are listed and calling 2 the longest."
+    },
+    {
+      "key": "adding_the_longest_and_shortest_instead_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Adding the longest and shortest instead of subtracting when a difference is asked for.",
+      "correctiveNote": "Avoid this: Adding the longest and shortest instead of subtracting when a difference is asked for."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Check a ratio answer by adding the shares back up — 12 + 30 + 54 must return the original 96 m."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "54",
+    "displayValue": "54",
+    "acceptedForms": [
+      "54",
+      "54"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A rope 120 cm long is cut in the ratio 1 : 3 : 8. What is the difference between the longest and shortest pieces?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "70",
+      "displayValue": "70",
+      "acceptedForms": [
+        "70",
+        "70"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "f3e6da47-3219-4982-a76e-e500d9c6ec1a",
+      "code": "M1-1.1",
+      "label": "Ratio"
+    },
+    {
+      "objectiveId": "f57f6619-24f7-4d63-a8ae-925aa08e37a5",
+      "code": "M1-1.1",
+      "label": "Sharing a quantity in a given ratio"
+    },
+    {
+      "objectiveId": "1c7789ad-77df-44c8-a28f-2f81cf5ecc9d",
+      "code": "M1-1.1",
+      "label": "Difference"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 2,
+    "pageRef": "p11",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

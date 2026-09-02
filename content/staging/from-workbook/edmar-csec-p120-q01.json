@@ -1,0 +1,297 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p120-q01",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 8,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "An arrow diagram represents the relation x → x², with domain elements −2, −1, 0, 1, 2 mapped into the set {4, 1, 0}. (c) Write the relation as a set of ordered pairs. (d) State the domain. (e) State the range. (f) Explain why the relation is a function."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Apply the rule x → x² to each element on the left and read off what the diagram already shows."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p120_q01.jpg",
+      "altText": "Source visual for edmar-csec-p120-q01 from workbook page 120."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Apply the rule x → x² to each element of the domain.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(−2)² = 4, (−1)² = 1, 0² = 0, 1² = 1, 2² = 4"
+        },
+        {
+          "type": "text",
+          "value": "Result: Images: 4, 1, 0, 1, 4"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Write each input with its image as an ordered pair.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Pair each x with x²"
+        },
+        {
+          "type": "text",
+          "value": "Result: {(−2, 4), (−1, 1), (0, 0), (1, 1), (2, 4)}"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "State the domain — the set of first elements.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The inputs on the left of the diagram"
+        },
+        {
+          "type": "text",
+          "value": "Result: {−2, −1, 0, 1, 2}"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "State the range — the set of images actually used, each listed once.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "4, 1, 0 appear as images"
+        },
+        {
+          "type": "text",
+          "value": "Result: {0, 1, 4}"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Apply the definition of a function.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Each element on the left has exactly one arrow leaving it"
+        },
+        {
+          "type": "text",
+          "value": "Result: The relation is a function"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Square each domain element to get its image, list the results as ordered pairs, then read the domain and range from the two sets and apply the definition of a function."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(c) {(−2, 4), (−1, 1), (0, 0), (1, 1), (2, 4)}  (d) Domain = {−2, −1, 0, 1, 2}  (e) Range = {0, 1, 4}  (f) It is a function because every element of the domain has exactly one image — no input is mapped to two different outputs."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A relation is a function when each input is assigned one and only one output; nothing forbids two different inputs sharing an output. Here −2 and 2 both map to 4, and −1 and 1 both map to 1, yet each individual input still has a single arrow leaving it, so the definition is satisfied. Sets list each element once, which is why the range has three members even though five arrows are drawn."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "listing_1_and_4_twice_in_the_range_becau",
+      "wrongValue": "incorrect_1",
+      "misconception": "Listing 1 and 4 twice in the range because two arrows point to each.",
+      "correctiveNote": "Avoid this: Listing 1 and 4 twice in the range because two arrows point to each."
+    },
+    {
+      "key": "deciding_it_is_not_a_function_because_tw",
+      "wrongValue": "incorrect_2",
+      "misconception": "Deciding it is not a function because two inputs share the same image.",
+      "correctiveNote": "Avoid this: Deciding it is not a function because two inputs share the same image."
+    },
+    {
+      "key": "writing_the_ordered_pairs_backwards_as_i",
+      "wrongValue": "incorrect_3",
+      "misconception": "Writing the ordered pairs backwards as (image, input).",
+      "correctiveNote": "Avoid this: Writing the ordered pairs backwards as (image, input)."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "For 'why is it a function', quote the definition and point at the diagram: one arrow out of each domain element."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "{(−2,4),(−1,1),(0,0),(1,1),(2,4)}",
+    "displayValue": "{(−2, 4), (−1, 1), (0, 0), (1, 1), (2, 4)}",
+    "acceptedForms": [
+      "{(−2, 4), (−1, 1), (0, 0), (1, 1), (2, 4)}",
+      "{(−2,4),(−1,1),(0,0),(1,1),(2,4)}"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Is {(1, 5), (2, 5), (3, 7)} a function? State its range."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "Yes,itisafunction;range={5,7}",
+      "displayValue": "Yes, it is a function; range = {5, 7}",
+      "acceptedForms": [
+        "Yes, it is a function; range = {5, 7}",
+        "Yes,itisafunction;range={5,7}"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-3.2"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "4b2b1d4b-dcf5-491a-ae5d-1f41be3e2822",
+      "code": "M1-3.2",
+      "label": "Relations and functions"
+    },
+    {
+      "objectiveId": "c6d7d7c4-e7cb-4d65-a6c3-5c44a5ac5aa9",
+      "code": "M1-3.2",
+      "label": "Ordered pairs"
+    },
+    {
+      "objectiveId": "9b4368a7-c992-42e2-a872-39c289edde6c",
+      "code": "M1-3.2",
+      "label": "Domain and range"
+    },
+    {
+      "objectiveId": "15202028-5c22-4bff-a6a4-a2b2cd1ac7f6",
+      "code": "M1-3.2",
+      "label": "Test for a function"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 1,
+    "pageRef": "p120",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "c",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (c): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "{(−2,4),(−1,1),(0,0),(1,1),(2,4)}",
+        "displayValue": "{(−2, 4), (−1, 1), (0, 0), (1, 1), (2, 4)}",
+        "acceptedForms": [
+          "{(−2, 4), (−1, 1), (0, 0), (1, 1), (2, 4)}",
+          "{(−2,4),(−1,1),(0,0),(1,1),(2,4)}"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "d",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (d): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Domain={−2,−1,0,1,2}(e)Range={0,1,4}(f)Itis",
+        "displayValue": "Domain = {−2, −1, 0, 1, 2} (e) Range = {0, 1, 4} (f) It is",
+        "acceptedForms": [
+          "Domain = {−2, −1, 0, 1, 2} (e) Range = {0, 1, 4} (f) It is",
+          "Domain={−2,−1,0,1,2}(e)Range={0,1,4}(f)Itis"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "e",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (e): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "functionbecauseeveryelementofthedomainhasexactlyoneimage—noinputismappe",
+        "displayValue": "function because every element of the domain has exactly one image — no input is mappe",
+        "acceptedForms": [
+          "function because every element of the domain has exactly one image — no input is mappe",
+          "functionbecauseeveryelementofthedomainhasexactlyoneimage—noinputismappe"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "f",
+      "sequence": 4,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (f): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "totwodifferentoutputs.",
+        "displayValue": "to two different outputs.",
+        "acceptedForms": [
+          "to two different outputs.",
+          "totwodifferentoutputs."
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

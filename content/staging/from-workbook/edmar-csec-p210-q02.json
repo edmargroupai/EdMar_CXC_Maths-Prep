@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p210-q02",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A farm's banana production, to the nearest tonne, was: 2010 → 150, 2011 → 275, 2012 → 100, 2013 → 40, 2014 → 125, 2015 → 210. (a) Draw a bar chart using 1 cm to 1 year on the x-axis and 1 cm to 25 tonnes on the y-axis. (b) Determine the range of the production between 2010 and 2015. (c)(i) In which year was production greatest, and (ii) how is that shown on the bar chart? (d)(i) Between which two consecutive years was the change in production greatest, and (ii) how is that shown on the bar chart?"
+    },
+    {
+      "type": "text",
+      "value": "Think first: Every part here is read from the same six numbers, so work with the table and treat the bar chart as a picture of it."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p210_q02.jpg",
+      "altText": "Source visual for edmar-csec-p210-q02 from workbook page 210."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Set up the axes and draw one equal-width bar for each year.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Years along the x-axis (1 cm each); heights 150, 275, 100, 40, 125, 210 tonnes with 1 cm representing 25 tonnes, so 6 cm, 11 cm, 4 cm, 1.6 cm, 5 cm, 8.4 cm"
+        },
+        {
+          "type": "text",
+          "value": "Result: Six separated bars of equal width"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Find the range by subtracting the smallest value from the largest.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "275 (2011) − 40 (2013)"
+        },
+        {
+          "type": "text",
+          "value": "Result: 235 tonnes"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Identify the year with the greatest production.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "275 tonnes is the largest value"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2011"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Work out the change between each pair of consecutive years.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2010→2011: +125; 2011→2012: −175; 2012→2013: −60; 2013→2014: +85; 2014→2015: +85"
+        },
+        {
+          "type": "text",
+          "value": "Result: The largest change is 175 tonnes, between 2011 and 2012"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Plot one bar per year to the given scale, subtract the smallest production from the largest for the range, then compare the six values (and the differences between consecutive values) to answer the reading questions."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) A bar chart with six equal, separated bars of heights 150, 275, 100, 40, 125 and 210 tonnes (1 cm = 25 tonnes).  (b) Range = 275 − 40 = 235 tonnes.  (c)(i) 2011  (ii) It is the tallest bar on the chart.  (d)(i) Between 2011 and 2012 (a fall of 175 tonnes)  (ii) It is the largest difference in height between two neighbouring bars."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A bar chart converts each number into a length, so comparisons of size become comparisons of height. The range measures the spread of the data by using only the two extreme values, which on the chart are simply the tallest and shortest bars. Change between consecutive years is a difference, and a difference shows up as a step in height between adjacent bars."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "giving_the_range_as_40_to_275_instead_of",
+      "wrongValue": "incorrect_1",
+      "misconception": "Giving the range as '40 to 275' instead of a single number, 235 tonnes.",
+      "correctiveNote": "Avoid this: Giving the range as '40 to 275' instead of a single number, 235 tonnes."
+    },
+    {
+      "key": "reading_the_greatest_change_as_the_chang",
+      "wrongValue": "incorrect_2",
+      "misconception": "Reading the greatest change as the change to or from the tallest bar, rather than comparing all five consecutive differences.",
+      "correctiveNote": "Avoid this: Reading the greatest change as the change to or from the tallest bar, rather than comparing all five consecutive differences."
+    },
+    {
+      "key": "drawing_bars_of_unequal_width_or_joining",
+      "wrongValue": "incorrect_3",
+      "misconception": "Drawing bars of unequal width, or joining them like a histogram.",
+      "correctiveNote": "Avoid this: Drawing bars of unequal width, or joining them like a histogram."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When a question says 'greatest change', list all the consecutive differences in a line before choosing — the biggest bar and the biggest change are usually not the same pair."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Abarchartwithsixequal,separatedbarsofheights150,275,100,40,125and210tonnes(1cm=25tonnes).",
+    "displayValue": "A bar chart with six equal, separated bars of heights 150, 275, 100, 40, 125 and 210 tonnes (1 cm = 25 tonnes).",
+    "acceptedForms": [
+      "A bar chart with six equal, separated bars of heights 150, 275, 100, 40, 125 and 210 tonnes (1 cm = 25 tonnes).",
+      "Abarchartwithsixequal,separatedbarsofheights150,275,100,40,125and210tonnes(1cm=25tonnes)."
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Production over three years is 80, 210 and 150 tonnes. State the range and the greatest change between consecutive years."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "Range=130tonnes;greatestchange=130tonnes,betweenthefirstandsecondyears.",
+      "displayValue": "Range = 130 tonnes; greatest change = 130 tonnes, between the first and second years.",
+      "acceptedForms": [
+        "Range = 130 tonnes; greatest change = 130 tonnes, between the first and second years.",
+        "Range=130tonnes;greatestchange=130tonnes,betweenthefirstandsecondyears."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M3-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "94ce1b12-3e9a-48bb-a79a-dad3440cadb6",
+      "code": "M3-1.1",
+      "label": "Bar charts"
+    },
+    {
+      "objectiveId": "0fb825c6-c570-425c-a224-2c40a63b89a3",
+      "code": "M3-1.1",
+      "label": "Range of a data set"
+    },
+    {
+      "objectiveId": "7e695a71-d081-4347-a514-befcb07da2b7",
+      "code": "M3-1.1",
+      "label": "Interpreting change between data values"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 2,
+    "pageRef": "p210",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

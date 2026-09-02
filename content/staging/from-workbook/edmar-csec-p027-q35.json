@@ -1,0 +1,221 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p027-q35",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Mrs. Clarke's gross salary is $3 600 per month, with deductions of income tax at 15% of gross salary and National Insurance at 4% of gross salary. (a) Calculate her monthly income tax. (b) Calculate her National Insurance deduction. (c) Calculate her net monthly salary. (d) Calculate her net annual salary."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Both deductions are percentages of the same gross figure, so $3 600 is the base for each."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p027_q35.jpg",
+      "altText": "Source visual for edmar-csec-p027-q35 from workbook page 27."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Find the income tax.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "0.15 x 3 600"
+        },
+        {
+          "type": "text",
+          "value": "Result: $540"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Find the National Insurance deduction.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "0.04 x 3 600"
+        },
+        {
+          "type": "text",
+          "value": "Result: $144"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Add the deductions and subtract from gross pay.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "$540 + $144 = $684, then $3 600 - $684"
+        },
+        {
+          "type": "text",
+          "value": "Result: $2 916 per month"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Check with a single multiplier.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "100% - 19% = 81%, so 3 600 x 0.81"
+        },
+        {
+          "type": "text",
+          "value": "Result: $2 916"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Multiply the net monthly salary by 12.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2 916 x 12"
+        },
+        {
+          "type": "text",
+          "value": "Result: $34 992 per year"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Take 15% and 4% of $3 600 separately, subtract both from the gross to get net monthly pay, then multiply by 12 for the year."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) Income tax = $540  (b) National Insurance = $144  (c) Net monthly salary = $2 916  (d) Net annual salary = $34 992"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Gross pay is what is earned and net pay is what is received after deductions, and both deductions here are charged on the gross figure rather than one after the other. Since 15% + 4% = 19% is removed, 81% remains, which is why the single multiplier reproduces the net pay. Annual net pay is the monthly net repeated 12 times."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "taking_the_4_off_the_amount_left_after_t",
+      "wrongValue": "incorrect_1",
+      "misconception": "Taking the 4% off the amount left after tax rather than off the gross salary.",
+      "correctiveNote": "Avoid this: Taking the 4% off the amount left after tax rather than off the gross salary."
+    },
+    {
+      "key": "multiplying_the_gross_salary_by_12_and_t",
+      "wrongValue": "incorrect_2",
+      "misconception": "Multiplying the gross salary by 12 and then deducting.",
+      "correctiveNote": "Avoid this: Multiplying the gross salary by 12 and then deducting."
+    },
+    {
+      "key": "giving_684_as_the_net_salary_instead_of_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Giving $684 as the net salary instead of as the total deductions.",
+      "correctiveNote": "Avoid this: Giving $684 as the net salary instead of as the total deductions."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When several deductions are all percentages of the same gross figure, add the percentages first and use one multiplier."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Incometax=$540",
+    "displayValue": "Income tax = $540",
+    "acceptedForms": [
+      "Income tax = $540",
+      "Incometax=$540"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Gross monthly pay is $4 000 with deductions of 10% tax and 5% insurance. Find the net monthly pay."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "currency",
+      "canonicalValue": "3.00",
+      "displayValue": "$3",
+      "acceptedForms": [
+        "$3",
+        "$3",
+        "3"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.005
+      },
+      "precision": {
+        "kind": "decimal_places",
+        "value": 2,
+        "required": true
+      },
+      "normalisation": "currency_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "4a869b7e-a771-4d5e-a033-1f937b97fdde",
+      "code": "M1-1.1",
+      "label": "Wages and salaries"
+    },
+    {
+      "objectiveId": "db0c59d2-fff0-47c5-aedf-9af769ed8122",
+      "code": "M1-1.1",
+      "label": "Deductions from gross pay"
+    },
+    {
+      "objectiveId": "b244b4e6-c35d-42b7-a249-886a1640b8aa",
+      "code": "M1-1.1",
+      "label": "Gross and net income"
+    },
+    {
+      "objectiveId": "800ce9bc-40f8-401d-ac5c-8100335870c8",
+      "code": "M1-1.1",
+      "label": "Percentage of a quantity"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 35,
+    "pageRef": "p27",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

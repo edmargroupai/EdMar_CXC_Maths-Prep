@@ -1,0 +1,303 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p282-q05",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 8,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Given the column vectors WX = (5, −1), XY = (−3, 7) and ZY = (8, −7), determine each of the following: (i) a vector other than (5, −1) that is parallel to WX, (ii) WY, (iii) XZ, (iv) |XY|."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Column vectors add and subtract component by component, and the only trap here is that ZY points the wrong way for the route you need in part (iii)."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p282_q05.jpg",
+      "altText": "Source visual for edmar-csec-p282-q05 from workbook page 282."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply WX by any scalar other than 1 to produce a parallel vector.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2 × (5, −1) = (10, −2); any multiple such as (15, −3) or (−5, 1) also works"
+        },
+        {
+          "type": "text",
+          "value": "Result: (10, −2)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Add WX and XY component by component to get WY.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(5 + (−3), −1 + 7)"
+        },
+        {
+          "type": "text",
+          "value": "Result: WY = (2, 6)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Reverse ZY to get YZ, since the route X → Y → Z needs YZ.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "YZ = −ZY = (−8, 7)"
+        },
+        {
+          "type": "text",
+          "value": "Result: YZ = (−8, 7)"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Add XY and YZ.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(−3 + (−8), 7 + 7)"
+        },
+        {
+          "type": "text",
+          "value": "Result: XZ = (−11, 14)"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Apply Pythagoras to the components of XY.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "|XY| = √((−3)² + 7²) = √(9 + 49) = √58"
+        },
+        {
+          "type": "text",
+          "value": "Result: |XY| = √58 ≈ 7.62"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Multiply WX by any convenient scalar for (i); add WX and XY for WY; for XZ go X → Y → Z, using YZ = −ZY; then apply Pythagoras to the components of XY."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) (10, −2) — any non-zero multiple of (5, −1) other than itself  (ii) WY = (2, 6)  (iii) XZ = (−11, 14)  (iv) |XY| = √58 ≈ 7.62 units"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Two vectors are parallel exactly when one is a scalar multiple of the other, so scaling the components keeps the direction and only changes the length. Adding vectors nose-to-tail cancels the middle letter — WX + XY leaves WY — which is why the components simply add. Reversing a vector flips the sign of both components, so ZY becomes YZ, and the magnitude is just the hypotenuse of the right triangle whose legs are the two components."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "giving_5_1_itself_or_the_zero_vector_as_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Giving (5, −1) itself, or the zero vector, as the parallel vector.",
+      "correctiveNote": "Avoid this: Giving (5, −1) itself, or the zero vector, as the parallel vector."
+    },
+    {
+      "key": "using_zy_directly_in_the_chain_x_y_z_ins",
+      "wrongValue": "incorrect_2",
+      "misconception": "Using ZY directly in the chain X → Y → Z instead of reversing it to YZ.",
+      "correctiveNote": "Avoid this: Using ZY directly in the chain X → Y → Z instead of reversing it to YZ."
+    },
+    {
+      "key": "adding_an_x_component_to_a_y_component_w",
+      "wrongValue": "incorrect_3",
+      "misconception": "Adding an x-component to a y-component when the columns are written horizontally.",
+      "correctiveNote": "Avoid this: Adding an x-component to a y-component when the columns are written horizontally."
+    },
+    {
+      "key": "squaring_3_as_9_when_finding_the_magnitu",
+      "wrongValue": "incorrect_4",
+      "misconception": "Squaring −3 as −9 when finding the magnitude.",
+      "correctiveNote": "Avoid this: Squaring −3 as −9 when finding the magnitude."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Write column-vector chains with the letters lined up (WX + XY = WY) and check that the inner letters match before you compute anything."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "(10,−2)—anynon-zeromultipleof(5,−1)otherthanitself",
+    "displayValue": "(10, −2) — any non-zero multiple of (5, −1) other than itself",
+    "acceptedForms": [
+      "(10, −2) — any non-zero multiple of (5, −1) other than itself",
+      "(10,−2)—anynon-zeromultipleof(5,−1)otherthanitself"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "If AB = (4, −3) and BC = (−1, 8), find AC and |AB|."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=(3,5);|AB|=√(16+9)=5",
+      "displayValue": "= (3, 5); |AB| = √(16 + 9) = 5",
+      "acceptedForms": [
+        "= (3, 5); |AB| = √(16 + 9) = 5",
+        "=(3,5);|AB|=√(16+9)=5"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "2d1326bf-5a7e-4f4e-abba-3feb383a3ea2",
+      "code": "M2-5.1",
+      "label": "Column vectors"
+    },
+    {
+      "objectiveId": "ad636286-8ce7-4008-a93a-21ee7965da3d",
+      "code": "M2-5.1",
+      "label": "Parallel vectors as scalar multiples"
+    },
+    {
+      "objectiveId": "5366261e-12dd-426c-aa12-b45e9afcad00",
+      "code": "M2-5.1",
+      "label": "Vector addition using the triangle law"
+    },
+    {
+      "objectiveId": "9bc80457-e6a1-4e07-a5d6-0597249607fb",
+      "code": "M2-5.1",
+      "label": "Magnitude of a vector"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 5,
+    "pageRef": "p282",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a.i",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.i): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "(10,−2)—anynon-zeromultipleof(5,−1)otherthanitself",
+        "displayValue": "(10, −2) — any non-zero multiple of (5, −1) other than itself",
+        "acceptedForms": [
+          "(10, −2) — any non-zero multiple of (5, −1) other than itself",
+          "(10,−2)—anynon-zeromultipleof(5,−1)otherthanitself"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.ii",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.ii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "WY=(2,6)",
+        "displayValue": "WY = (2, 6)",
+        "acceptedForms": [
+          "WY = (2, 6)",
+          "WY=(2,6)"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.iii",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.iii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "XZ=(−11,14)",
+        "displayValue": "XZ = (−11, 14)",
+        "acceptedForms": [
+          "XZ = (−11, 14)",
+          "XZ=(−11,14)"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.iv",
+      "sequence": 4,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.iv): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "|XY|=√58≈7.62units",
+        "displayValue": "|XY| = √58 ≈ 7.62 units",
+        "acceptedForms": [
+          "|XY| = √58 ≈ 7.62 units",
+          "|XY|=√58≈7.62units"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

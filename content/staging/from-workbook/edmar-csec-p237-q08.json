@@ -1,0 +1,221 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p237-q08",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A speed–time graph shows an athlete's race: the speed rises steadily from 0 m/s at 0 s to 12 m/s at 6 s, stays at 12 m/s until 10 s, then falls steadily to 0 m/s at 13 s. (i) Determine a) the maximum speed, b) the number of seconds for which the speed was constant, c) the total distance covered. (ii) State the time-period during which a) the speed was increasing, b) the speed was decreasing, c) the acceleration was zero."
+    },
+    {
+      "type": "text",
+      "value": "Think first: On a speed–time graph the height is speed and the area underneath is distance — so the whole question is read off one trapezium."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p237_q08.jpg",
+      "altText": "Source visual for edmar-csec-p237-q08 from workbook page 237."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Read the greatest height reached by the graph.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The graph levels off at the 12 line"
+        },
+        {
+          "type": "text",
+          "value": "Result: maximum speed = 12 m/s"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Read where the horizontal section starts and ends.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Flat from t = 6 s to t = 10 s, so 10 − 6"
+        },
+        {
+          "type": "text",
+          "value": "Result: constant for 4 seconds"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Identify the shape under the graph.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "A trapezium with parallel sides 13 s (whole base) and 4 s (the flat top), and height 12 m/s"
+        },
+        {
+          "type": "text",
+          "value": "Result: trapezium, sides 13 and 4, height 12"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Apply the trapezium area formula.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Area = ½ × (13 + 4) × 12 = ½ × 17 × 12"
+        },
+        {
+          "type": "text",
+          "value": "Result: total distance = 102 m"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Match each section of the graph to the description asked for.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Rising line = speeding up, flat line = no change in speed, falling line = slowing down"
+        },
+        {
+          "type": "text",
+          "value": "Result: 0–6 s rising, 6–10 s flat, 10–13 s falling"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Read the maximum height and the flat section straight off the graph, then find the total distance as the area of the trapezium formed by the three straight sections."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) a) 12 m/s  b) 4 seconds  c) 102 m  (ii) a) from 0 s to 6 s  b) from 10 s to 13 s  c) from 6 s to 10 s"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Distance is speed multiplied by time, and on a speed–time graph that product is exactly the area of the strip under the curve — so the whole distance is the area of the trapezium. Acceleration is the gradient of the graph, so a horizontal section means the gradient is zero and the athlete is neither speeding up nor slowing down, even though he is still running at 12 m/s."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "confusing_a_speed_time_graph_with_a_dist",
+      "wrongValue": "incorrect_1",
+      "misconception": "Confusing a speed–time graph with a distance–time graph and reading the flat part as 'at rest' — here the athlete is moving fastest.",
+      "correctiveNote": "Avoid this: Confusing a speed–time graph with a distance–time graph and reading the flat part as 'at rest' — here the athlete is moving fastest."
+    },
+    {
+      "key": "finding_only_the_rectangle_and_missing_t",
+      "wrongValue": "incorrect_2",
+      "misconception": "Finding only the rectangle and missing the two triangles (or vice versa).",
+      "correctiveNote": "Avoid this: Finding only the rectangle and missing the two triangles (or vice versa)."
+    },
+    {
+      "key": "using_12_as_the_base_of_the_trapezium_in",
+      "wrongValue": "incorrect_3",
+      "misconception": "Using 12 as the base of the trapezium instead of the times 13 and 4.",
+      "correctiveNote": "Avoid this: Using 12 as the base of the trapezium instead of the times 13 and 4."
+    },
+    {
+      "key": "giving_the_acceleration_zero_period_as_t",
+      "wrongValue": "incorrect_4",
+      "misconception": "Giving the acceleration-zero period as 'the whole race' because the acceleration graph looks flat.",
+      "correctiveNote": "Avoid this: Giving the acceleration-zero period as 'the whole race' because the acceleration graph looks flat."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Write 'area under speed–time graph = distance' beside the graph before you start, and split the shape into a rectangle plus triangles if the trapezium formula feels risky."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "a)12m/s",
+    "displayValue": "a) 12 m/s",
+    "acceptedForms": [
+      "a) 12 m/s",
+      "a)12m/s"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A car accelerates uniformly from 0 to 20 m/s in 8 s. How far does it travel in that time?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "80",
+      "displayValue": "80",
+      "acceptedForms": [
+        "80",
+        "80"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "446893ed-a51f-4c0a-a440-8184d57ee669",
+      "code": "M1-1.1",
+      "label": "Speed–time graphs"
+    },
+    {
+      "objectiveId": "ea478822-d0ea-4f07-afa6-220a360ed09e",
+      "code": "M1-1.1",
+      "label": "Area under a speed–time graph as distance"
+    },
+    {
+      "objectiveId": "5b4235d9-17f9-46b1-a629-6c892c26c3ca",
+      "code": "M1-1.1",
+      "label": "Area of a trapezium"
+    },
+    {
+      "objectiveId": "3e8cba22-353b-42a7-ac9d-1f9d7f100b02",
+      "code": "M1-1.1",
+      "label": "Acceleration as gradient"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 8,
+    "pageRef": "p237",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

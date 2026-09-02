@@ -1,0 +1,332 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p046-q10",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 5,
+  "status": "draft",
+  "marks": 10,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "PMQROS is the cross-section of a play area in a park. PQRS is a rectangle and PMQ is a semicircle on PQ. O is the mid-point of RS, OP = OQ = 15 m, angle POQ = 40°, and the perpendicular distance from O to PQ is 14.1 m. Using π = 22/7: (a)(i) determine the value of angle OPQ, (a)(ii) calculate the length of OR, (b) calculate the area of the shaded portion (the semicircle PMQ together with triangle OPQ), and (c) find the perimeter of the cross-section PMQROS."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Triangle OPQ is isosceles because OP = OQ, and everything else in the question is built on the length of PQ, so find PQ early."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p046_q10.jpg",
+      "altText": "Source visual for edmar-csec-p046-q10 from workbook page 46."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Use the isosceles triangle OPQ to find the base angles.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "OP = OQ so angle OPQ = angle OQP = (180° - 40°) / 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: angle OPQ = 70°"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Find PQ using the sine rule in triangle OPQ.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "PQ / sin 40° = 15 / sin 70°, so PQ = 15 sin 40° / sin 70°"
+        },
+        {
+          "type": "text",
+          "value": "Result: PQ = 10.26 m"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Find OR, half of RS, since RS = PQ in the rectangle and O is the mid-point of RS.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "10.26 / 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: OR = 5.13 m"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Find the area of the semicircle PMQ, whose radius is half of PQ.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "½ π r² = ½ x (22/7) x 5.13²= ½ x (22/7) x 26.32"
+        },
+        {
+          "type": "text",
+          "value": "Result: 41.4 m²"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Find the area of triangle OPQ.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "½ x OP x OQ x sin 40° = ½ x 15 x 15 x 0.6428"
+        },
+        {
+          "type": "text",
+          "value": "Result: 72.3 m²"
+        }
+      ]
+    },
+    {
+      "stepNo": 6,
+      "instruction": "Add the two areas for the shaded portion, then trace the boundary for the perimeter.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "shaded = 41.4 + 72.3; perimeter = arc PMQ + QR + RO + OS + SP = (22/7)(5.13) + 14.1 + 5.13 + 5.13 + 14.1"
+        },
+        {
+          "type": "text",
+          "value": "Result: 113.7 m² and 54.6 m"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Use the isosceles triangle to get the base angles, find PQ by the sine rule, halve it for OR and for the semicircle radius, add the semicircle and triangle areas for the shaded region, then trace the boundary for the perimeter."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a)(i) angle OPQ = 70°  (a)(ii) OR = 5.13 m (to 3 s.f.)  (b) shaded area = 41.4 + 72.3 = 113.7 m² (to 1 d.p.)  (c) perimeter of PMQROS = 54.6 m (to 1 d.p.)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "OP = OQ forces triangle OPQ to be isosceles, so the two base angles share what is left of 180° after the 40° at O. Because PQRS is a rectangle, RS equals PQ, and O being the mid-point makes OR exactly half of it; the same half of PQ is the radius of the semicircle standing on PQ. The shaded region is made of two non-overlapping pieces, so their areas add, while the perimeter follows only the outer boundary, which is the curved arc plus the two vertical sides and the full bottom RS."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "using_pq_as_the_radius_of_the_semicircle",
+      "wrongValue": "incorrect_1",
+      "misconception": "Using PQ as the radius of the semicircle instead of half of PQ.",
+      "correctiveNote": "Avoid this: Using PQ as the radius of the semicircle instead of half of PQ."
+    },
+    {
+      "key": "including_pq_itself_in_the_perimeter_whe",
+      "wrongValue": "incorrect_2",
+      "misconception": "Including PQ itself in the perimeter, when it is an internal line and not part of the boundary.",
+      "correctiveNote": "Avoid this: Including PQ itself in the perimeter, when it is an internal line and not part of the boundary."
+    },
+    {
+      "key": "using_x_base_x_height_with_the_15_m_slan",
+      "wrongValue": "incorrect_3",
+      "misconception": "Using ½ x base x height with the 15 m slant instead of the 14.1 m perpendicular height.",
+      "correctiveNote": "Avoid this: Using ½ x base x height with the 15 m slant instead of the 14.1 m perpendicular height."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "In composite figures, shade the region you are asked for and outline the boundary you are asked for in two different colours. Areas add across the shading, perimeters follow only the outline."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=41.4+72.3=113.7m²(to1",
+    "displayValue": "= 41.4 + 72.3 = 113.7 m² (to 1",
+    "acceptedForms": [
+      "= 41.4 + 72.3 = 113.7 m² (to 1",
+      "=41.4+72.3=113.7m²(to1"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "In triangle OPQ, OP = OQ = 10 cm and angle POQ = 50°. Find angle OPQ and the area of the triangle."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "angleOPQ=65°,area=½x10x10xsin50°=38.3cm²",
+      "displayValue": "angle OPQ = 65°, area = ½ x 10 x 10 x sin 50° = 38.3 cm²",
+      "acceptedForms": [
+        "angle OPQ = 65°, area = ½ x 10 x 10 x sin 50° = 38.3 cm²",
+        "angleOPQ=65°,area=½x10x10xsin50°=38.3cm²"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "f50aa739-8996-4cad-a8b1-d037f4224310",
+      "code": "M1-1.1",
+      "label": "Angles in an isosceles triangle"
+    },
+    {
+      "objectiveId": "1a43f7a5-26a0-4015-aeef-a573285ff0dd",
+      "code": "M1-1.1",
+      "label": "Sine rule"
+    },
+    {
+      "objectiveId": "76910575-23bf-4df2-a746-8d4bb55b91ae",
+      "code": "M1-1.1",
+      "label": "Area of a triangle using ½ab sin C"
+    },
+    {
+      "objectiveId": "efb74833-8c4d-4b57-a4b2-fedc36175afb",
+      "code": "M1-1.1",
+      "label": "Area and arc length of a semicircle"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 10,
+    "pageRef": "p46",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "=41.4+72.3=113.7m²(to1",
+        "displayValue": "= 41.4 + 72.3 = 113.7 m² (to 1",
+        "acceptedForms": [
+          "= 41.4 + 72.3 = 113.7 m² (to 1",
+          "=41.4+72.3=113.7m²(to1"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.i",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.i): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "angleOPQ=70°(a)",
+        "displayValue": "angle OPQ = 70° (a)",
+        "acceptedForms": [
+          "angle OPQ = 70° (a)",
+          "angleOPQ=70°(a)"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.ii",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.ii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "OR=5.13m(to3s.f.)",
+        "displayValue": "OR = 5.13 m (to 3 s.f.)",
+        "acceptedForms": [
+          "OR = 5.13 m (to 3 s.f.)",
+          "OR=5.13m(to3s.f.)"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 4,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "shade",
+        "displayValue": "shade",
+        "acceptedForms": [
+          "shade",
+          "shade"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "c",
+      "sequence": 5,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (c): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "perimeterofPMQROS=54.6m(to1",
+        "displayValue": "perimeter of PMQROS = 54.6 m (to 1",
+        "acceptedForms": [
+          "perimeter of PMQROS = 54.6 m (to 1",
+          "perimeterofPMQROS=54.6m(to1"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

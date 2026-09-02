@@ -1,0 +1,172 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p056-q14",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Make n the subject of the formula T = 3(m - 2n)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: n sits inside a bracket and carries a minus sign, so expect the final step to involve dividing by a negative or moving n across."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p056_q14.jpg",
+      "altText": "Source visual for edmar-csec-p056-q14 from workbook page 56."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Divide both sides by 3.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "T/3 = 3(m - 2n)/3"
+        },
+        {
+          "type": "text",
+          "value": "Result: T/3 = m - 2n"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Add 2n to both sides and subtract T/3.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "T/3 + 2n = m, so 2n = m - T/3"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2n = m - T/3"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Divide both sides by 2.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "n = (m - T/3)/2 = (3m - T)/6"
+        },
+        {
+          "type": "text",
+          "value": "Result: n = (3m - T)/6"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Divide by 3 to open up the bracket, isolate the 2n term, then divide by 2."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "n = (3m - T)/6, equivalently n = m/2 - T/6"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Moving the -2n across the equals sign turns it positive, which avoids dividing by a negative number and the sign errors that follow. Combining m - T/3 over a common denominator of 3 and then halving gives the tidy single fraction (3m - T)/6."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "dividing_by_3_but_only_applying_it_to_m_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Dividing by 3 but only applying it to m, giving T/3 = m - 2n/3.",
+      "correctiveNote": "Avoid this: Dividing by 3 but only applying it to m, giving T/3 = m - 2n/3."
+    },
+    {
+      "key": "leaving_n_negative_writing_n_t_3_m_2_whi",
+      "wrongValue": "incorrect_2",
+      "misconception": "Leaving n negative: writing n = (T/3 - m)/2, which is the negative of the correct answer.",
+      "correctiveNote": "Avoid this: Leaving n negative: writing n = (T/3 - m)/2, which is the negative of the correct answer."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When the subject has a minus sign in front, move that term to the other side rather than dividing through by a negative."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "n=(3m-T)/6,equivalentlyn=m/2-T/6",
+    "displayValue": "n = (3m - T)/6, equivalently n = m/2 - T/6",
+    "acceptedForms": [
+      "n = (3m - T)/6, equivalently n = m/2 - T/6",
+      "n=(3m-T)/6,equivalentlyn=m/2-T/6"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Make n the subject of T = 2(m - n)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "n=m-T/2,",
+      "displayValue": "n = m - T/2,",
+      "acceptedForms": [
+        "n = m - T/2,",
+        "n=m-T/2,"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "befb5a37-b79d-4e02-af0a-427e9a0f6724",
+      "code": "M1-4.1",
+      "label": "Transposition of formulae"
+    },
+    {
+      "objectiveId": "b249e400-3a79-4b23-a024-9ebaee6d4b55",
+      "code": "M1-4.1",
+      "label": "Brackets"
+    },
+    {
+      "objectiveId": "069aec2d-84e9-4e00-a062-fcddbcb790fc",
+      "code": "M1-4.1",
+      "label": "Negative terms"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 14,
+    "pageRef": "p56",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

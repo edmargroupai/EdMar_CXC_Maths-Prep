@@ -1,0 +1,174 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p026-q33",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A sales representative earns a basic salary of $1 800 per week plus 5% commission on sales. In one week she made sales totalling $75 000. (a) Calculate the commission earned. (b) Calculate her total earnings for the week."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Commission is a percentage of sales, not of salary, so the $75 000 is the base."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p026_q33.jpg",
+      "altText": "Source visual for edmar-csec-p026-q33 from workbook page 26."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Find 5% of the sales figure.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "0.05 x 75 000"
+        },
+        {
+          "type": "text",
+          "value": "Result: $3 750"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Add the basic weekly salary.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "$1 800 + $3 750"
+        },
+        {
+          "type": "text",
+          "value": "Result: $5 550"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Find 5% of the total sales for the commission, then add the fixed basic salary."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) Commission = $3 750  (b) Total earnings for the week = $5 550"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A commission scheme pays a guaranteed basic plus a share of what the seller brings in, so the two parts have different bases and must be found separately. Taking 5% of the salary would reward the employee for existing rather than for selling. Adding the two gives gross earnings for the week."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "taking_5_of_1_800_instead_of_5_of_75_000",
+      "wrongValue": "incorrect_1",
+      "misconception": "Taking 5% of $1 800 instead of 5% of $75 000.",
+      "correctiveNote": "Avoid this: Taking 5% of $1 800 instead of 5% of $75 000."
+    },
+    {
+      "key": "giving_3_750_as_the_total_earnings",
+      "wrongValue": "incorrect_2",
+      "misconception": "Giving $3 750 as the total earnings.",
+      "correctiveNote": "Avoid this: Giving $3 750 as the total earnings."
+    },
+    {
+      "key": "treating_the_5_as_a_deduction_and_subtra",
+      "wrongValue": "incorrect_3",
+      "misconception": "Treating the 5% as a deduction and subtracting it.",
+      "correctiveNote": "Avoid this: Treating the 5% as a deduction and subtracting it."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Identify what the percentage is of before calculating. In commission questions it is always the sales figure."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Commission=$3750",
+    "displayValue": "Commission = $3 750",
+    "acceptedForms": [
+      "Commission = $3 750",
+      "Commission=$3750"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A seller earns a basic $1 000 plus 4% commission on sales of $50 000. Find her total earnings."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "currency",
+      "canonicalValue": "3.00",
+      "displayValue": "$3",
+      "acceptedForms": [
+        "$3",
+        "$3",
+        "3"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.005
+      },
+      "precision": {
+        "kind": "decimal_places",
+        "value": 2,
+        "required": true
+      },
+      "normalisation": "currency_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "a2f29c35-89ea-465c-a34f-3ba6f0db3a96",
+      "code": "M1-1.1",
+      "label": "Wages and salaries"
+    },
+    {
+      "objectiveId": "bcffcc1d-c658-488e-ad10-679287e93b6a",
+      "code": "M1-1.1",
+      "label": "Commission"
+    },
+    {
+      "objectiveId": "c1a44493-33db-4b48-a8ba-0341f89a732a",
+      "code": "M1-1.1",
+      "label": "Percentage of a quantity"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 33,
+    "pageRef": "p26",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

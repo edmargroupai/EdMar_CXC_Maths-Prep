@@ -1,0 +1,197 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p067-q05",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "On the same axes used in Question 1, draw the graph of x = −3 and state the coordinates of the point at which the two lines intersect."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The line y = 4 is already drawn; x = −3 is the other kind of line, and where they cross is fixed by both equations at once."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p067_q05.jpg",
+      "altText": "Source visual for edmar-csec-p067-q05 from workbook page 67."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Read what the equation controls.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x = −3 places no condition on y, so y may take any value"
+        },
+        {
+          "type": "text",
+          "value": "Result: x is always −3"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Draw the line.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "A vertical straight line through the x-axis at −3, covering the full height of the grid"
+        },
+        {
+          "type": "text",
+          "value": "Result: Line labelled x = −3"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Find where it meets y = 4.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The point must satisfy both x = −3 and y = 4"
+        },
+        {
+          "type": "text",
+          "value": "Result: (−3, 4)"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "State the coordinates.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x-coordinate first, then y-coordinate"
+        },
+        {
+          "type": "text",
+          "value": "Result: (−3, 4)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Draw x = −3 as a vertical line, then read off the point where it meets the horizontal line y = 4."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = −3 is a vertical line 3 units to the left of the y-axis. The two lines intersect at (−3, 4)."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A point of intersection is the one place where both equations are true at the same time. Here y = 4 fixes the height and x = −3 fixes the horizontal position, so together they pin down exactly one point. This is the graphical meaning of solving a pair of equations simultaneously, and it works the same way for slanted lines."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_the_intersection_as_4_3_with_the",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing the intersection as (4, −3) with the coordinates reversed.",
+      "correctiveNote": "Avoid this: Writing the intersection as (4, −3) with the coordinates reversed."
+    },
+    {
+      "key": "drawing_x_3_as_a_horizontal_line",
+      "wrongValue": "incorrect_2",
+      "misconception": "Drawing x = −3 as a horizontal line.",
+      "correctiveNote": "Avoid this: Drawing x = −3 as a horizontal line."
+    },
+    {
+      "key": "trying_to_read_the_point_off_the_grid_in",
+      "wrongValue": "incorrect_3",
+      "misconception": "Trying to read the point off the grid instead of using the two equations directly.",
+      "correctiveNote": "Avoid this: Trying to read the point off the grid instead of using the two equations directly."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Coordinates are always written along the corridor and then up the stairs: x first, y second."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=−3isaverticalline3unitstotheleftofthey-axis.Thetwolinesintersectat(−3,4).",
+    "displayValue": "= −3 is a vertical line 3 units to the left of the y-axis. The two lines intersect at (−3, 4).",
+    "acceptedForms": [
+      "= −3 is a vertical line 3 units to the left of the y-axis. The two lines intersect at (−3, 4).",
+      "=−3isaverticalline3unitstotheleftofthey-axis.Thetwolinesintersectat(−3,4)."
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Where do the lines y = −1 and x = 2 intersect?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(2,−1)",
+      "displayValue": "(2, −1)",
+      "acceptedForms": [
+        "(2, −1)",
+        "(2,−1)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "82dba2e4-d9e0-430e-af92-a16fef454990",
+      "code": "M1-1.1",
+      "label": "Graphs of linear functions"
+    },
+    {
+      "objectiveId": "a90eef4a-fc54-4983-a464-bd8151fbe3f6",
+      "code": "M1-1.1",
+      "label": "Vertical lines"
+    },
+    {
+      "objectiveId": "da1293e8-fe46-4c7c-a9e9-7f8635cf124b",
+      "code": "M1-1.1",
+      "label": "Point of intersection"
+    },
+    {
+      "objectiveId": "0c4ff4a7-5cb4-49b2-aa5b-8532c0ad56ea",
+      "code": "M1-1.1",
+      "label": "Coordinates"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 5,
+    "pageRef": "p67",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

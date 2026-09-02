@@ -1,0 +1,206 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p119-q16",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The variable p varies inversely as q. The table gives q = 4, a, 10 with p = 15, 6, b. (a) Find the equation connecting p and q. (b) Find the value of a. (c) Find the value of b."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The first column is complete, so start there and let the constant fill in the rest."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p119_q16.jpg",
+      "altText": "Source visual for edmar-csec-p119-q16 from workbook page 119."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write the variation statement as an equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "p varies inversely as q"
+        },
+        {
+          "type": "text",
+          "value": "Result: p = k/q"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Use the complete column q = 4, p = 15 to find k.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "15 = k/4"
+        },
+        {
+          "type": "text",
+          "value": "Result: k = 60"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Write the completed equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Replace k by 60"
+        },
+        {
+          "type": "text",
+          "value": "Result: p = 60/q"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Find a, the q value that gives p = 6.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "6 = 60/a, so a = 60 ÷ 6"
+        },
+        {
+          "type": "text",
+          "value": "Result: a = 10"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Find b, the p value when q = 10.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "b = 60 ÷ 10"
+        },
+        {
+          "type": "text",
+          "value": "Result: b = 6"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Write p = k/q, find k from q = 4, p = 15, then use the equation to find a (a q value) and b (a p value)."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) p = 60/q  (b) a = 10  (c) b = 6"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Because pq is constant at 60, the equation can be read in either direction: divide 60 by q to get p, or divide 60 by p to get q. That is why an unknown in the top row and an unknown in the bottom row are handled by the same single relationship."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "dividing_q_by_k_instead_of_k_by_q_when_t",
+      "wrongValue": "incorrect_1",
+      "misconception": "Dividing q by k instead of k by q when the unknown is in the top row.",
+      "correctiveNote": "Avoid this: Dividing q by k instead of k by q when the unknown is in the top row."
+    },
+    {
+      "key": "finding_k_as_4_15_rather_than_4_15",
+      "wrongValue": "incorrect_2",
+      "misconception": "Finding k as 4 ÷ 15 rather than 4 × 15.",
+      "correctiveNote": "Avoid this: Finding k as 4 ÷ 15 rather than 4 × 15."
+    },
+    {
+      "key": "stopping_after_part_b_without_using_the_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Stopping after part (b) without using the same k for part (c).",
+      "correctiveNote": "Avoid this: Stopping after part (b) without using the same k for part (c)."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Write the equation with the value of k substituted before answering the later parts — each part is then a one-line calculation."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "p=60/q",
+    "displayValue": "p = 60/q",
+    "acceptedForms": [
+      "p = 60/q",
+      "p=60/q"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "p varies inversely as q, with p = 9 when q = 4. Find q when p = 12."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "q=3",
+      "displayValue": "q = 3",
+      "acceptedForms": [
+        "q = 3",
+        "q=3"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-3.2"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "571f6a40-b1c7-4fbf-aec8-eb684418ef99",
+      "code": "M1-3.2",
+      "label": "Inverse variation"
+    },
+    {
+      "objectiveId": "466ab004-874f-4c46-ae04-677c88c43afb",
+      "code": "M1-3.2",
+      "label": "Constant of variation"
+    },
+    {
+      "objectiveId": "3b08c1ab-2950-4162-ad6a-8efc4dc47586",
+      "code": "M1-3.2",
+      "label": "Rearranging to find an unknown in either row"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 16,
+    "pageRef": "p119",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

@@ -1,0 +1,272 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p009-q03",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 4,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Calculate the exact value of: (i) 0.04 × 2.5  (ii) 7(2.4 − 0.9)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Both parts are exact decimal work, so count decimal places carefully rather than reaching for a rounded answer."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p009_q03.jpg",
+      "altText": "Source visual for edmar-csec-p009-q03 from workbook page 9."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply (i) as whole numbers.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "4 × 25 = 100"
+        },
+        {
+          "type": "text",
+          "value": "Result: 100"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Restore the decimal places in (i).",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "0.04 has 2 places, 2.5 has 1, so the answer has 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: 0.100 = 0.1"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Work out the bracket in (ii).",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2.4 − 0.9"
+        },
+        {
+          "type": "text",
+          "value": "Result: 1.5"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Multiply the bracket by 7.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "7 × 1.5"
+        },
+        {
+          "type": "text",
+          "value": "Result: 10.5"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "For (i) multiply as whole numbers and restore the decimal places; for (ii) clear the bracket first, then multiply."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) 0.1  (ii) 10.5"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Multiplying decimals is whole-number multiplication plus bookkeeping: the number of decimal places in the answer is the total number in the two factors, because each place is a division by 10. In (ii) the bracket is a grouping symbol, so the subtraction is completed before the multiplication; doing 7 × 2.4 − 0.9 instead would multiply only part of what the bracket contains."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_0_04_2_5_as_0_01_by_losing_a_dec",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing 0.04 × 2.5 as 0.01 by losing a decimal place.",
+      "correctiveNote": "Avoid this: Writing 0.04 × 2.5 as 0.01 by losing a decimal place."
+    },
+    {
+      "key": "multiplying_only_the_first_term_inside_t",
+      "wrongValue": "incorrect_2",
+      "misconception": "Multiplying only the first term inside the bracket by 7.",
+      "correctiveNote": "Avoid this: Multiplying only the first term inside the bracket by 7."
+    },
+    {
+      "key": "rounding_10_5_to_11_when_an_exact_value_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Rounding 10.5 to 11 when an exact value is asked for.",
+      "correctiveNote": "Avoid this: Rounding 10.5 to 11 when an exact value is asked for."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Check a decimal product by estimating first: 0.04 × 2.5 is about 0.04 × 2.5 = one tenth, so 0.1 is credible and 0.01 is not."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_dp",
+    "canonicalValue": "0.1",
+    "displayValue": "0.1",
+    "acceptedForms": [
+      "0.1",
+      "0.1"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "precision": {
+      "kind": "decimal_places",
+      "value": 1,
+      "required": true
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Calculate the exact value of 0.05 × 1.4 and of 6(3.2 − 1.7)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_dp",
+      "canonicalValue": "0.07",
+      "displayValue": "0.07",
+      "acceptedForms": [
+        "0.07",
+        "0.07"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "precision": {
+        "kind": "decimal_places",
+        "value": 2,
+        "required": true
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.2"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "7daf1cb7-1e6d-4c55-a0c6-bcbc77490b9d",
+      "code": "M1-1.2",
+      "label": "Decimal multiplication"
+    },
+    {
+      "objectiveId": "1fedf141-16f9-4df4-a7a3-829fedd75c4f",
+      "code": "M1-1.2",
+      "label": "Place value"
+    },
+    {
+      "objectiveId": "66fe0d62-8229-4964-a3a5-c6aeabed6816",
+      "code": "M1-1.2",
+      "label": "Brackets and the distributive law"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 3,
+    "pageRef": "p9",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a.i",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.i): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "numeric_dp",
+        "canonicalValue": "0.1",
+        "displayValue": "0.1",
+        "acceptedForms": [
+          "0.1",
+          "0.1"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0
+        },
+        "precision": {
+          "kind": "decimal_places",
+          "value": 1,
+          "required": true
+        },
+        "normalisation": "numeric_default"
+      }
+    },
+    {
+      "partKey": "a.ii",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.ii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "numeric_dp",
+        "canonicalValue": "10.5",
+        "displayValue": "10.5",
+        "acceptedForms": [
+          "10.5",
+          "10.5"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0
+        },
+        "precision": {
+          "kind": "decimal_places",
+          "value": 1,
+          "required": true
+        },
+        "normalisation": "numeric_default"
+      }
+    }
+  ]
+}

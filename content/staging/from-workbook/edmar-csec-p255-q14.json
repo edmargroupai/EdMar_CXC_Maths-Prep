@@ -1,0 +1,198 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p255-q14",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A graph shows triangle ABC with the right angle at A, and its image A'B'C' after a single transformation. (i) Write down the coordinates of the vertices of triangle ABC. (ii) Write down the coordinates of the vertices of triangle A'B'C'. (iii) Describe fully the transformation that maps triangle ABC onto triangle A'B'C'."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Compare the two triangles first: same size but turned, with the horizontal side becoming vertical — that points to a rotation, not a reflection or translation."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p255_q14.jpg",
+      "altText": "Source visual for edmar-csec-p255-q14 from workbook page 255."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Read the coordinates of the object.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The right angle is at A, with AC vertical and AB horizontal"
+        },
+        {
+          "type": "text",
+          "value": "Result: A(3, 2), B(6, 2), C(3, 4)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Read the coordinates of the image.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "A'B' is now vertical of length 3 and A'C' horizontal of length 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: A'(3, −3), B'(3, −6), C'(5, −3)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Decide the type of transformation from the side lengths and orientation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Lengths are unchanged (3 and 2), so it is not an enlargement; the horizontal side AB becomes the vertical side A'B', so the shape has been turned through 90°, clockwise"
+        },
+        {
+          "type": "text",
+          "value": "Result: A rotation of 90° clockwise"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Find the centre by using the fact that it is equidistant from each point and its image.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Test (0.5, −0.5): A(3, 2) is at (2.5, 2.5) from it and A'(3, −3) is at (2.5, −2.5), a quarter turn clockwise; the same works for B → B' and C → C'"
+        },
+        {
+          "type": "text",
+          "value": "Result: Centre (0.5, −0.5)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Read the six vertices off the grid, notice the sides swap between horizontal and vertical with the shape unchanged in size, then find the rotation angle and locate the centre by testing a candidate point on all three vertices."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) A(3, 2), B(6, 2), C(3, 4)  (ii) A'(3, −3), B'(3, −6), C'(5, −3)  (iii) A rotation through 90° clockwise (that is, 270° anticlockwise) about the centre (0.5, −0.5)."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A rotation keeps every length and angle the same but turns the whole figure about a fixed point, so equal side lengths with swapped directions identify it at once. The centre is the one point that does not move: it is the same distance from each object point as from its image, which is why testing a candidate on all three vertices confirms it."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "describing_the_transformation_as_a_refle",
+      "wrongValue": "incorrect_1",
+      "misconception": "Describing the transformation as a reflection because the image looks 'flipped'.",
+      "correctiveNote": "Avoid this: Describing the transformation as a reflection because the image looks 'flipped'."
+    },
+    {
+      "key": "giving_the_angle_without_the_direction_o",
+      "wrongValue": "incorrect_2",
+      "misconception": "Giving the angle without the direction, or the direction without a centre — a full description needs type, angle, direction and centre.",
+      "correctiveNote": "Avoid this: Giving the angle without the direction, or the direction without a centre — a full description needs type, angle, direction and centre."
+    },
+    {
+      "key": "reading_the_image_coordinates_with_the_s",
+      "wrongValue": "incorrect_3",
+      "misconception": "Reading the image coordinates with the signs of the negative y-values wrong.",
+      "correctiveNote": "Avoid this: Reading the image coordinates with the signs of the negative y-values wrong."
+    },
+    {
+      "key": "assuming_the_centre_must_be_the_origin",
+      "wrongValue": "incorrect_4",
+      "misconception": "Assuming the centre must be the origin.",
+      "correctiveNote": "Avoid this: Assuming the centre must be the origin."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "To locate a rotation centre, join each point to its image, draw the perpendicular bisectors of two of those segments, and take their crossing point."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "A(3,2),B(6,2),C(3,4)",
+    "displayValue": "A(3, 2), B(6, 2), C(3, 4)",
+    "acceptedForms": [
+      "A(3, 2), B(6, 2), C(3, 4)",
+      "A(3,2),B(6,2),C(3,4)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Rotate the point (4, 1) through 90° clockwise about the origin."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(1,−4).",
+      "displayValue": "(1, −4).",
+      "acceptedForms": [
+        "(1, −4).",
+        "(1,−4)."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "1ab0cc6e-77ad-4d37-a145-709358a54331",
+      "code": "M1-1.1",
+      "label": "Reading coordinates from a graph"
+    },
+    {
+      "objectiveId": "16c0e07f-4e71-4db0-a203-8f4f0035621a",
+      "code": "M1-1.1",
+      "label": "Rotation as a transformation"
+    },
+    {
+      "objectiveId": "d332d0ad-9c7f-4946-a9d1-d99a24ed9098",
+      "code": "M1-1.1",
+      "label": "Describing a transformation fully (type, angle, direction, centre)"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 14,
+    "pageRef": "p255",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

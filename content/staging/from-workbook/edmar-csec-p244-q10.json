@@ -1,0 +1,286 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p244-q10",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 5,
+  "status": "draft",
+  "marks": 6,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "E, C, G and F lie on a circle, EG is a diameter, the tangent AEB at E is parallel to the line CFD, angle AEC = 68° and angle EFD = 106°. Determine, with a reason for each: (i) angle ECD, (ii) angle CEG, (iii) angle CGF."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Two facts do the work here: a tangent is perpendicular to the diameter through the point of contact, and the tangent–chord angle equals the angle in the alternate segment."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p244_q10.jpg",
+      "altText": "Source visual for edmar-csec-p244-q10 from workbook page 244."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Compare angle AEC with angle ECD using the parallel lines.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "AEB is parallel to CD and EC is a transversal, so angle AEC and angle ECD are alternate angles"
+        },
+        {
+          "type": "text",
+          "value": "Result: ∠ECD = 68°"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Use the right angle between the tangent and the diameter at E.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "∠AEG = 90° because the tangent AEB is perpendicular to the diameter EG at the point of contact E; then ∠CEG = ∠AEG − ∠AEC = 90 − 68"
+        },
+        {
+          "type": "text",
+          "value": "Result: ∠CEG = 22°"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Find angle CGE from the tangent–chord angle at E.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "∠AEC is the angle between the tangent and chord EC, so it equals the angle in the alternate segment, ∠EGC"
+        },
+        {
+          "type": "text",
+          "value": "Result: ∠CGE = 68°"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Find angle EGF from angles in the same segment.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "∠EGF and ∠ECF stand on the same chord EF and lie in the same segment, and ∠ECF = ∠ECD = 68° because F lies on CD"
+        },
+        {
+          "type": "text",
+          "value": "Result: ∠EGF = 68°"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Add the two angles at G.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "∠CGF = ∠CGE + ∠EGF = 68 + 68"
+        },
+        {
+          "type": "text",
+          "value": "Result: ∠CGF = 136°"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Use the parallel lines to move the 68° from E to C, use the perpendicular tangent to split the 90° at E, and add two equal angles at G to build angle CGF."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) ∠ECD = 68° (alternate angles, AEB parallel to CD)  (ii) ∠CEG = 22° (the tangent is perpendicular to the diameter EG at E, so 90° − 68°)  (iii) ∠CGF = 136° (∠CGE = 68° by the alternate segment theorem and ∠EGF = ∠ECF = 68° as angles in the same segment). The 106° at F is not needed for these three parts."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The alternate segment theorem links a direction outside the circle (the tangent) with an angle inside it, so the single given 68° can be carried right across the diagram. The parallel line CD repeats that 68° at C, and because angles standing on the same chord from the same side are equal, it reappears at G. Splitting the right angle between tangent and diameter converts the same 68° into the 22° at E."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "matching_the_tangent_chord_angle_with_an",
+      "wrongValue": "incorrect_1",
+      "misconception": "Matching the tangent–chord angle with an angle in the wrong segment (the one on the same side as the tangent ray).",
+      "correctiveNote": "Avoid this: Matching the tangent–chord angle with an angle in the wrong segment (the one on the same side as the tangent ray)."
+    },
+    {
+      "key": "assuming_angle_ceg_is_68_because_it_look",
+      "wrongValue": "incorrect_2",
+      "misconception": "Assuming angle CEG is 68° because it 'looks the same' — the diagram is not drawn to scale.",
+      "correctiveNote": "Avoid this: Assuming angle CEG is 68° because it 'looks the same' — the diagram is not drawn to scale."
+    },
+    {
+      "key": "trying_to_force_every_given_number_into_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Trying to force every given number into every part; some data belongs to other parts of the question.",
+      "correctiveNote": "Avoid this: Trying to force every given number into every part; some data belongs to other parts of the question."
+    },
+    {
+      "key": "quoting_angles_in_a_triangle_as_a_reason",
+      "wrongValue": "incorrect_4",
+      "misconception": "Quoting 'angles in a triangle' as a reason where a circle theorem is required.",
+      "correctiveNote": "Avoid this: Quoting 'angles in a triangle' as a reason where a circle theorem is required."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Write the reason beside each angle as you get it — in circle theorem questions the reasons carry as many marks as the numbers."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "∠EC",
+    "displayValue": "∠EC",
+    "acceptedForms": [
+      "∠EC",
+      "∠EC"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A tangent touches a circle at P and a chord PQ makes an angle of 40° with it. What is the angle subtended by PQ in the alternate segment?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "40",
+      "displayValue": "40",
+      "acceptedForms": [
+        "40",
+        "40"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "c3a71803-c4a1-43c9-a57a-1ca417696de1",
+      "code": "M1-1.1",
+      "label": "Alternate angles between parallel lines"
+    },
+    {
+      "objectiveId": "1fe81087-1a8a-453f-a90e-bd7da09dca39",
+      "code": "M1-1.1",
+      "label": "Tangent perpendicular to the diameter at the point of contact"
+    },
+    {
+      "objectiveId": "df4a6a9b-79e2-40db-a7d0-25baf86a2831",
+      "code": "M1-1.1",
+      "label": "Alternate segment (tangent–chord) theorem"
+    },
+    {
+      "objectiveId": "c8e51b6a-6cb9-4c58-ac00-3b67e2e1059d",
+      "code": "M1-1.1",
+      "label": "Angles in the same segment"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 10,
+    "pageRef": "p244",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a.i",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.i): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "∠EC",
+        "displayValue": "∠EC",
+        "acceptedForms": [
+          "∠EC",
+          "∠EC"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.ii",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.ii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "∠CEG=22°(thetangentisperpendiculartothediameterEGatE,so90°−68°)",
+        "displayValue": "∠CEG = 22° (the tangent is perpendicular to the diameter EG at E, so 90° − 68°)",
+        "acceptedForms": [
+          "∠CEG = 22° (the tangent is perpendicular to the diameter EG at E, so 90° − 68°)",
+          "∠CEG=22°(thetangentisperpendiculartothediameterEGatE,so90°−68°)"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.iii",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.iii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "∠CGF=136°(∠CGE=68°bythealternatesegmenttheoreman",
+        "displayValue": "∠CGF = 136° (∠CGE = 68° by the alternate segment theorem an",
+        "acceptedForms": [
+          "∠CGF = 136° (∠CGE = 68° by the alternate segment theorem an",
+          "∠CGF=136°(∠CGE=68°bythealternatesegmenttheoreman"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

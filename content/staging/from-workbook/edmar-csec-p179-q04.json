@@ -1,0 +1,250 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p179-q04",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 4,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The vectors p and q are given: p has components −6 and 9, and q has components 2 and −3. (a) Find the scalar k such that p = kq. (b) State TWO geometric relationships between p and q."
+    },
+    {
+      "type": "text",
+      "value": "Think first: If one vector is a multiple of another, the same multiplier must work for both components."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p179_q04.jpg",
+      "altText": "Source visual for edmar-csec-p179-q04 from workbook page 179."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Compare the top components.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "−6 = k × 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: k = −3"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Check with the bottom components.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "−3 × (−3) = 9"
+        },
+        {
+          "type": "text",
+          "value": "Result: k = −3 confirmed for both"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Interpret the fact that k exists.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "One vector is a scalar multiple of the other"
+        },
+        {
+          "type": "text",
+          "value": "Result: p and q are parallel"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Interpret the sign of k.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "k is negative"
+        },
+        {
+          "type": "text",
+          "value": "Result: p and q point in opposite directions"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Interpret the size of k.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "|k| = 3, so |p| = 3|q| (√117 against √13)"
+        },
+        {
+          "type": "text",
+          "value": "Result: p is three times as long as q"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Divide corresponding components to find k, confirm it works for both, then interpret the sign and size of k geometrically."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) k = −3  (b) Two relationships: p and q are parallel (each is a scalar multiple of the other), and they point in opposite directions with p three times as long as q"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Multiplying a vector by a scalar stretches it without changing the line it lies along, so any pair related by p = kq must be parallel. The sign of k records the direction — negative means reversed — while its size records the stretch factor. That is why a single number k captures both geometric facts at once."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "getting_k_from_one_component_and_not_che",
+      "wrongValue": "incorrect_1",
+      "misconception": "Getting k from one component and not checking it fits the other.",
+      "correctiveNote": "Avoid this: Getting k from one component and not checking it fits the other."
+    },
+    {
+      "key": "saying_the_vectors_point_the_same_way_be",
+      "wrongValue": "incorrect_2",
+      "misconception": "Saying the vectors point the same way because they are parallel, ignoring the negative sign.",
+      "correctiveNote": "Avoid this: Saying the vectors point the same way because they are parallel, ignoring the negative sign."
+    },
+    {
+      "key": "giving_they_are_both_vectors_as_a_geomet",
+      "wrongValue": "incorrect_3",
+      "misconception": "Giving 'they are both vectors' as a geometric relationship.",
+      "correctiveNote": "Avoid this: Giving 'they are both vectors' as a geometric relationship."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Whenever you find a scalar k linking two vectors, note two things at once: parallel (always), and same or opposite direction (from the sign of k)."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "k=−3",
+    "displayValue": "k = −3",
+    "acceptedForms": [
+      "k = −3",
+      "k=−3"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Is the vector with components 4 and −6 a scalar multiple of the vector with components −2 and 3? If so, what is the scalar?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "Yes,k=−2.",
+      "displayValue": "Yes, k = −2.",
+      "acceptedForms": [
+        "Yes, k = −2.",
+        "Yes,k=−2."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "81ea9d8e-7236-4daa-ab67-f69569069e7a",
+      "code": "M2-5.1",
+      "label": "Scalar multiplication of vectors"
+    },
+    {
+      "objectiveId": "c16b42fc-a552-4263-a975-9f452a5a4d34",
+      "code": "M2-5.1",
+      "label": "Parallel vectors"
+    },
+    {
+      "objectiveId": "da2cf1c1-4426-4c2b-a125-16593770a851",
+      "code": "M2-5.1",
+      "label": "Magnitude of a vector"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 4,
+    "pageRef": "p179",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "k=−3",
+        "displayValue": "k = −3",
+        "acceptedForms": [
+          "k = −3",
+          "k=−3"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Tworelationships:pan",
+        "displayValue": "Two relationships: p an",
+        "acceptedForms": [
+          "Two relationships: p an",
+          "Tworelationships:pan"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

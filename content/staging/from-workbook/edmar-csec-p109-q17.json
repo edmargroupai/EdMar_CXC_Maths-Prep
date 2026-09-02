@@ -1,0 +1,206 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p109-q17",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Seven pencils and five erasers cost $11.60. Five pencils and three erasers cost $7.60. Find the cost of one pencil and one eraser, and hence the cost of eight erasers."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Set up two equations in the two unit prices, eliminate one, and keep the final 'hence' about eight erasers in view."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p109_q17.jpg",
+      "altText": "Source visual for edmar-csec-p109-q17 from workbook page 109."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Let p be the cost of a pencil and e the cost of an eraser, then write the two equations.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "one equation per purchase"
+        },
+        {
+          "type": "text",
+          "value": "Result: 7p + 5e = 11.60 ... (1);  5p + 3e = 7.60 ... (2)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Scale both equations so the e-coefficients are equal.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(1) × 3 gives 21p + 15e = 34.80; (2) × 5 gives 25p + 15e = 38.00"
+        },
+        {
+          "type": "text",
+          "value": "Result: 21p + 15e = 34.80;  25p + 15e = 38.00"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Subtract to eliminate e.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "25p − 21p = 4p and 38.00 − 34.80 = 3.20"
+        },
+        {
+          "type": "text",
+          "value": "Result: 4p = 3.20, so p = 0.80"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Substitute p = 0.80 into equation (1) to find e.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "7(0.80) = 5.60, so 5e = 11.60 − 5.60 = 6.00"
+        },
+        {
+          "type": "text",
+          "value": "Result: e = 1.20"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Multiply the eraser price by 8, and check in equation (2).",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "8 × 1.20 = 9.60; check 5(0.80) + 3(1.20) = 4.00 + 3.60 = 7.60"
+        },
+        {
+          "type": "text",
+          "value": "Result: 8 erasers cost $9.60"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Write both equations, scale so the eraser terms match, subtract to find the pencil price, substitute back for the eraser price, then multiply by 8."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "A pencil costs $0.80 and an eraser costs $1.20; eight erasers cost $9.60."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Each purchase gives a linear equation in the two unit prices, and the two are independent because the ratios 7:5 and 5:3 differ. Scaling to make both eraser coefficients 15 lets a single subtraction remove e completely. Once both unit prices are known, any other combination of the two items can be costed directly."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "dividing_11_60_by_12_to_get_an_average_i",
+      "wrongValue": "incorrect_1",
+      "misconception": "Dividing $11.60 by 12 to get an 'average' item price.",
+      "correctiveNote": "Avoid this: Dividing $11.60 by 12 to get an 'average' item price."
+    },
+    {
+      "key": "losing_a_decimal_place_when_scaling_for_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Losing a decimal place when scaling, for example writing 34.8 as 348.",
+      "correctiveNote": "Avoid this: Losing a decimal place when scaling, for example writing 34.8 as 348."
+    },
+    {
+      "key": "answering_only_the_unit_prices_and_skipp",
+      "wrongValue": "incorrect_3",
+      "misconception": "Answering only the unit prices and skipping the cost of eight erasers.",
+      "correctiveNote": "Avoid this: Answering only the unit prices and skipping the cost of eight erasers."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Give money answers to exactly two decimal places in your final line, even when the arithmetic lands on a whole number of dollars."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "pencilcosts$0.80andanerasercosts$1.20;eighteraserscost$9.60.",
+    "displayValue": "pencil costs $0.80 and an eraser costs $1.20; eight erasers cost $9.60.",
+    "acceptedForms": [
+      "pencil costs $0.80 and an eraser costs $1.20; eight erasers cost $9.60.",
+      "pencilcosts$0.80andanerasercosts$1.20;eighteraserscost$9.60."
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Three pens and two rulers cost $8.50; one pen and one ruler cost $3.25. Find the cost of a pen."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "pencosts$2.00(andaruler$1.25).",
+      "displayValue": "pen costs $2.00 (and a ruler $1.25).",
+      "acceptedForms": [
+        "pen costs $2.00 (and a ruler $1.25).",
+        "pencosts$2.00(andaruler$1.25)."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-6.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "3d221c3b-a1c6-492e-a1c4-d1d54dca2656",
+      "code": "M1-6.1",
+      "label": "Forming simultaneous equations from words"
+    },
+    {
+      "objectiveId": "5b76f126-2926-442f-a27d-a0907db48d35",
+      "code": "M1-6.1",
+      "label": "Elimination method"
+    },
+    {
+      "objectiveId": "6d73fa58-25e1-4f3e-a1c5-d8d4eb407f3d",
+      "code": "M1-6.1",
+      "label": "Working with money to two decimal places"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 17,
+    "pageRef": "p109",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

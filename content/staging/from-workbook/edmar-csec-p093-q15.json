@@ -1,0 +1,173 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p093-q15",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Factorise completely: x² − 15x + 56"
+    },
+    {
+      "type": "text",
+      "value": "Think first: A positive constant with a negative middle term means both numbers must be negative."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p093_q15.jpg",
+      "altText": "Source visual for edmar-csec-p093-q15 from workbook page 93."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Decide the signs.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The product is +56 and the sum is −15, so both numbers are negative"
+        },
+        {
+          "type": "text",
+          "value": "Result: Both brackets take a minus sign"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Find two numbers with product 56 and sum 15 in size.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Factor pairs of 56: 1 and 56, 2 and 28, 4 and 14, 7 and 8"
+        },
+        {
+          "type": "text",
+          "value": "Result: 7 and 8"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Write the brackets and check.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(x − 7)(x − 8) = x² − 8x − 7x + 56"
+        },
+        {
+          "type": "text",
+          "value": "Result: x² − 15x + 56"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Decide the signs from the constant and middle terms, find the pair of factors of 56 that add to 15, and write both brackets with minus signs."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(x − 7)(x − 8)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The signs are decided before any numbers are chosen: a positive constant means the two numbers share a sign, and a negative middle coefficient makes that shared sign negative. Once the signs are fixed, only the sizes of the factors remain to be found."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_x_7_x_8_which_gives_a_middle_ter",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing (x + 7)(x + 8), which gives a middle term of +15x.",
+      "correctiveNote": "Avoid this: Writing (x + 7)(x + 8), which gives a middle term of +15x."
+    },
+    {
+      "key": "writing_x_7_x_8_which_gives_a_negative_c",
+      "wrongValue": "incorrect_2",
+      "misconception": "Writing (x − 7)(x + 8), which gives a negative constant term.",
+      "correctiveNote": "Avoid this: Writing (x − 7)(x + 8), which gives a negative constant term."
+    },
+    {
+      "key": "choosing_1_and_56_without_checking_that_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Choosing 1 and 56 without checking that the sum must be 15.",
+      "correctiveNote": "Avoid this: Choosing 1 and 56 without checking that the sum must be 15."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Read the sign of the constant first: positive means the two signs match, negative means they differ."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "−7)(x−8)",
+    "displayValue": "− 7)(x − 8)",
+    "acceptedForms": [
+      "− 7)(x − 8)",
+      "−7)(x−8)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Factorise x² − 11x + 30."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "−5)(x−6)",
+      "displayValue": "− 5)(x − 6)",
+      "acceptedForms": [
+        "− 5)(x − 6)",
+        "−5)(x−6)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M3-2.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "276da339-d3d8-4cfa-a84f-229bc7d55c63",
+      "code": "M3-2.1",
+      "label": "Factorising quadratic trinomials"
+    },
+    {
+      "objectiveId": "34bbf9d6-7b35-402b-a5c1-66821864ca84",
+      "code": "M3-2.1",
+      "label": "Signs in a quadratic factorisation"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 15,
+    "pageRef": "p93",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

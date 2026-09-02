@@ -1,0 +1,210 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p175-q01",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 5,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "P, Q and R lie on the same horizontal line with Q between P and R. A vertical mast RT is observed from P and from Q. PQ = 20 m, and the angles of elevation of T are 32° from P and 48° from Q. a) Let QR = x m and RT = h m, and write two equations for h using tangent. b) Hence show that x tan 48° = (x + 20) tan 32°. c) Calculate x and the height of the mast, giving each answer to 3 significant figures."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Two right-angled triangles share the same vertical side h, so writing h twice and equating is the whole method."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p175_q01.jpg",
+      "altText": "Source visual for edmar-csec-p175-q01 from workbook page 175."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Use triangle QRT.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "tan 48° = h ÷ QR = h ÷ x"
+        },
+        {
+          "type": "text",
+          "value": "Result: h = x tan 48°"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Use triangle PRT.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "PR = PQ + QR = x + 20, and tan 32° = h ÷ (x + 20)"
+        },
+        {
+          "type": "text",
+          "value": "Result: h = (x + 20) tan 32°"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Equate the two expressions for h.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Both equal the same height h"
+        },
+        {
+          "type": "text",
+          "value": "Result: x tan 48° = (x + 20) tan 32°"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Collect the x terms and solve.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x(tan 48° − tan 32°) = 20 tan 32°, so x = 12.4974 ÷ 0.48574"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 25.7 m (3 s.f.)"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Substitute back to find h.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "h = 25.7284 × tan 48° = 28.574"
+        },
+        {
+          "type": "text",
+          "value": "Result: h = 28.6 m (3 s.f.)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Write h = x tan 48° from triangle QRT and h = (x + 20) tan 32° from triangle PRT, equate them and solve for x, then substitute back for h."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) h = x tan 48° and h = (x + 20) tan 32°  (b) equating the two gives x tan 48° = (x + 20) tan 32°  (c) x = 25.7 m and the mast is 28.6 m high (both to 3 significant figures)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The mast is the common side of two right-angled triangles standing on the same horizontal line, so expressing its height twice creates a single equation in the one unknown horizontal distance. The nearer observation point always gives the larger angle of elevation, which is why tan 48° − tan 32° is positive and x comes out positive. Only after x is known can the height be recovered."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "using_pr_20_instead_of_pr_x_20",
+      "wrongValue": "incorrect_1",
+      "misconception": "Using PR = 20 instead of PR = x + 20.",
+      "correctiveNote": "Avoid this: Using PR = 20 instead of PR = x + 20."
+    },
+    {
+      "key": "rounding_x_to_25_7_before_computing_h_wh",
+      "wrongValue": "incorrect_2",
+      "misconception": "Rounding x to 25.7 before computing h, which shifts the height in the third significant figure.",
+      "correctiveNote": "Avoid this: Rounding x to 25.7 before computing h, which shifts the height in the third significant figure."
+    },
+    {
+      "key": "pairing_48_with_the_far_point_p_and_32_w",
+      "wrongValue": "incorrect_3",
+      "misconception": "Pairing 48° with the far point P and 32° with the near point Q.",
+      "correctiveNote": "Avoid this: Pairing 48° with the far point P and 32° with the near point Q."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Keep the unrounded value of x in your calculator memory when substituting back — round only the final answers to the stated accuracy."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "h=xtan48°andh=(x+20)tan32°",
+    "displayValue": "h = x tan 48° and h = (x + 20) tan 32°",
+    "acceptedForms": [
+      "h = x tan 48° and h = (x + 20) tan 32°",
+      "h=xtan48°andh=(x+20)tan32°"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "From a point 40 m from the base of a tower, the angle of elevation of the top is 35°. How tall is the tower?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "40",
+      "displayValue": "40",
+      "acceptedForms": [
+        "40",
+        "40"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "9e7dc89e-e44a-4dea-a3d8-2bda78e88c21",
+      "code": "M1-1.1",
+      "label": "Angles of elevation"
+    },
+    {
+      "objectiveId": "99377c65-b2db-4f09-a7a9-b26d31af8fa8",
+      "code": "M1-1.1",
+      "label": "Tangent ratio"
+    },
+    {
+      "objectiveId": "c6cf79ac-b272-4d7f-ade7-af92060413d7",
+      "code": "M1-1.1",
+      "label": "Solving a linear equation with trigonometric coefficients"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 1,
+    "pageRef": "p175",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

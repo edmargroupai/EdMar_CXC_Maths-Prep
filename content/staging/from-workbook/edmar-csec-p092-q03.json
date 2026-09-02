@@ -1,0 +1,178 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p092-q03",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Factorise completely: 8x² + 12xy − 10x − 15y"
+    },
+    {
+      "type": "text",
+      "value": "Think first: The minus sign in the middle means the second pair needs a negative factor taken out."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p092_q03.jpg",
+      "altText": "Source visual for edmar-csec-p092-q03 from workbook page 92."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Group the terms in pairs.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(8x² + 12xy) + (−10x − 15y)"
+        },
+        {
+          "type": "text",
+          "value": "Result: Two pairs"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Take the common factor out of each pair.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "4x from the first pair; −5 from the second so that the bracket matches"
+        },
+        {
+          "type": "text",
+          "value": "Result: 4x(2x + 3y) − 5(2x + 3y)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Take out the common bracket.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(2x + 3y) appears in both terms"
+        },
+        {
+          "type": "text",
+          "value": "Result: (2x + 3y)(4x − 5)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Group in pairs, take out 4x from the first pair and −5 from the second so that the brackets match, then take out the common bracket."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(2x + 3y)(4x − 5)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Pulling out a negative factor from the second pair is what makes the two brackets identical; with +5 the signs inside would be reversed and nothing would cancel. Once the brackets match, the common bracket factors out like any other common factor."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "taking_out_5_instead_of_5_leaving_2x_3y_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Taking out +5 instead of −5, leaving (2x + 3y) and (−2x − 3y).",
+      "correctiveNote": "Avoid this: Taking out +5 instead of −5, leaving (2x + 3y) and (−2x − 3y)."
+    },
+    {
+      "key": "forgetting_to_change_the_signs_inside_th",
+      "wrongValue": "incorrect_2",
+      "misconception": "Forgetting to change the signs inside the bracket after removing a negative factor.",
+      "correctiveNote": "Avoid this: Forgetting to change the signs inside the bracket after removing a negative factor."
+    },
+    {
+      "key": "leaving_the_answer_as_a_sum_of_two_produ",
+      "wrongValue": "incorrect_3",
+      "misconception": "Leaving the answer as a sum of two products instead of a single product.",
+      "correctiveNote": "Avoid this: Leaving the answer as a sum of two products instead of a single product."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When the third term is negative, plan from the start to take a negative factor out of the second pair."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "(2x+3y)(4x−5)",
+    "displayValue": "(2x + 3y)(4x − 5)",
+    "acceptedForms": [
+      "(2x + 3y)(4x − 5)",
+      "(2x+3y)(4x−5)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Factorise 6x² + 9xy − 4x − 6y."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(2x+3y)(3x−2)",
+      "displayValue": "(2x + 3y)(3x − 2)",
+      "acceptedForms": [
+        "(2x + 3y)(3x − 2)",
+        "(2x+3y)(3x−2)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M3-2.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "11a7eb02-f9e2-454c-ad49-3f481eae75f6",
+      "code": "M3-2.1",
+      "label": "Factorisation by grouping"
+    },
+    {
+      "objectiveId": "75c23699-f87f-483a-a026-268b3efca976",
+      "code": "M3-2.1",
+      "label": "Common factors"
+    },
+    {
+      "objectiveId": "9b81e935-cd86-447b-ad74-63ab3bb4e798",
+      "code": "M3-2.1",
+      "label": "Removing a negative common factor"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 3,
+    "pageRef": "p92",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

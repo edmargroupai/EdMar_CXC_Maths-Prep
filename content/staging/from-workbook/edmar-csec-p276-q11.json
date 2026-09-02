@@ -1,0 +1,286 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p276-q11",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 6,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "From a harbour H the bearing of buoy S is 185° and the bearing of buoy Q is 311°. HQ = 5.4 km and HS = 3.5 km. (i) State the value of angle QHS. (ii) Calculate QS, the distance between the buoys. (iv) Calculate the bearing of S from Q."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The two bearings are measured from the same point H, so the angle between them is just their difference — and that angle sits between the two known sides."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p276_q11.jpg",
+      "altText": "Source visual for edmar-csec-p276-q11 from workbook page 276."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Subtract the two bearings measured at H.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "311° − 185°"
+        },
+        {
+          "type": "text",
+          "value": "Result: Angle QHS = 126°"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Apply the cosine rule in triangle QHS.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "QS² = 5.4² + 3.5² − 2(5.4)(3.5)cos 126° = 29.16 + 12.25 + 22.22"
+        },
+        {
+          "type": "text",
+          "value": "Result: QS² = 63.63, so QS = 7.98 km"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Use the sine rule to find angle HQS, opposite the known side HS.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "sin(HQS)/3.5 = sin 126°/7.98, so sin(HQS) = 3.5 × 0.8090 ÷ 7.98 = 0.3550"
+        },
+        {
+          "type": "text",
+          "value": "Result: Angle HQS = 20.8°"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Find the bearing of H from Q as the back bearing of 311°.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "311° − 180°"
+        },
+        {
+          "type": "text",
+          "value": "Result: Bearing of H from Q = 131°"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Add angle HQS, since S lies clockwise of QH as seen from Q.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "131° + 20.8°"
+        },
+        {
+          "type": "text",
+          "value": "Result: Bearing of S from Q = 151.8° (about 152°)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Subtract the bearings to get angle QHS, use the cosine rule with HQ, HS and that angle to find QS, then use the sine rule to find angle HQS and combine it with the back bearing of HQ to get the bearing of S from Q."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) angle QHS = 126°  (ii) QS = 7.98 km (about 8.0 km)  (iv) bearing of S from Q = 151.8°, i.e. about 152°"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Bearings from a common point are directions on the same protractor, so their difference is the true angle of the triangle at that point. With two sides and the included angle, the cosine rule gives the third side; the sine rule then unlocks a second angle. Finally, a bearing at Q must be measured from Q's own north line, which is why you start from the back bearing of HQ and turn by the triangle's angle at Q."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "using_360_126_234_as_the_triangle_angle_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Using 360° − 126° = 234° as the triangle angle; a triangle angle can never exceed 180°.",
+      "correctiveNote": "Avoid this: Using 360° − 126° = 234° as the triangle angle; a triangle angle can never exceed 180°."
+    },
+    {
+      "key": "forgetting_that_cos_126_is_negative_whic",
+      "wrongValue": "incorrect_2",
+      "misconception": "Forgetting that cos 126° is negative, which makes the two squares be added to, not subtracted from, the total.",
+      "correctiveNote": "Avoid this: Forgetting that cos 126° is negative, which makes the two squares be added to, not subtracted from, the total."
+    },
+    {
+      "key": "measuring_the_final_bearing_from_h_s_nor",
+      "wrongValue": "incorrect_3",
+      "misconception": "Measuring the final bearing from H's north line instead of Q's.",
+      "correctiveNote": "Avoid this: Measuring the final bearing from H's north line instead of Q's."
+    },
+    {
+      "key": "adding_instead_of_subtracting_when_formi",
+      "wrongValue": "incorrect_4",
+      "misconception": "Adding instead of subtracting when forming the back bearing 311° − 180°.",
+      "correctiveNote": "Avoid this: Adding instead of subtracting when forming the back bearing 311° − 180°."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Draw a fresh north arrow at every point you are asked to take a bearing from — bearings are always measured at the point named after the word 'from'."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "angleQHS=126°",
+    "displayValue": "angle QHS = 126°",
+    "acceptedForms": [
+      "angle QHS = 126°",
+      "angleQHS=126°"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "From P, the bearing of A is 040° and the bearing of B is 130°. What is angle APB?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "130",
+      "displayValue": "130",
+      "acceptedForms": [
+        "130",
+        "130"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "c8eda92f-d65f-4ef2-a412-f05b5e6e18bb",
+      "code": "M1-1.1",
+      "label": "Bearings"
+    },
+    {
+      "objectiveId": "a4c26091-c654-4c1b-aebb-062a6cfbd1a4",
+      "code": "M1-1.1",
+      "label": "Angle between two bearings"
+    },
+    {
+      "objectiveId": "d90e3b49-40d1-45c8-a551-17078fbae59a",
+      "code": "M1-1.1",
+      "label": "Cosine rule"
+    },
+    {
+      "objectiveId": "acddc839-ddff-4fcb-a95b-1515db77b4f0",
+      "code": "M1-1.1",
+      "label": "Sine rule"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 11,
+    "pageRef": "p276",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a.i",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.i): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "angleQHS=126°",
+        "displayValue": "angle QHS = 126°",
+        "acceptedForms": [
+          "angle QHS = 126°",
+          "angleQHS=126°"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.ii",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.ii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "QS=7.98km(about8.0km)",
+        "displayValue": "QS = 7.98 km (about 8.0 km)",
+        "acceptedForms": [
+          "QS = 7.98 km (about 8.0 km)",
+          "QS=7.98km(about8.0km)"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.iv",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.iv): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "bearingofSfromQ=151.8°,",
+        "displayValue": "bearing of S from Q = 151.8°,",
+        "acceptedForms": [
+          "bearing of S from Q = 151.8°,",
+          "bearingofSfromQ=151.8°,"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

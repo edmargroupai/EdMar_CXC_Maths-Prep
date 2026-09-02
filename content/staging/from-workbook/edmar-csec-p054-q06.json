@@ -1,0 +1,210 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p054-q06",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the equation 8x − 2(3x − 8) = 24."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The bracket is multiplied by −2, so both terms inside it change sign on expansion."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p054_q06.jpg",
+      "altText": "Source visual for edmar-csec-p054-q06 from workbook page 54."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Expand the bracket.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "−2 × 3x = −6x and −2 × (−8) = +16"
+        },
+        {
+          "type": "text",
+          "value": "Result: 8x − 6x + 16 = 24"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Collect the like terms.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "8x − 6x = 2x"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2x + 16 = 24"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Subtract 16 from both sides.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "24 − 16"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2x = 8"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Divide both sides by 2.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "8 ÷ 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 4"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Check by substitution.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "8(4) − 2(12 − 8) = 32 − 8"
+        },
+        {
+          "type": "text",
+          "value": "Result: 24, which matches"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Expand −2(3x − 8), collect like terms, then isolate x."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = 4"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Multiplying a bracket by a negative number reverses the sign of every term inside, so −2(3x − 8) becomes −6x + 16 rather than −6x − 16. After expansion the left side collapses to a single linear expression, and the equation is unwound by subtracting the constant and dividing by the coefficient of x. Each of those operations is applied to both sides, which is what keeps the equation balanced."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_2_3x_8_as_6x_16",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing −2(3x − 8) as −6x − 16.",
+      "correctiveNote": "Avoid this: Writing −2(3x − 8) as −6x − 16."
+    },
+    {
+      "key": "collecting_8x_6x_as_2x_or_as_14x",
+      "wrongValue": "incorrect_2",
+      "misconception": "Collecting 8x − 6x as 2x² or as 14x.",
+      "correctiveNote": "Avoid this: Collecting 8x − 6x as 2x² or as 14x."
+    },
+    {
+      "key": "forgetting_to_divide_the_right_hand_side",
+      "wrongValue": "incorrect_3",
+      "misconception": "Forgetting to divide the right-hand side by 2 at the last step.",
+      "correctiveNote": "Avoid this: Forgetting to divide the right-hand side by 2 at the last step."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "After expanding, quickly re-read the sign in front of every term. Two seconds of checking there is worth more than any amount of speed later in the question."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=4",
+    "displayValue": "= 4",
+    "acceptedForms": [
+      "= 4",
+      "=4"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve 9x − 3(2x − 5) = 27."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "3",
+      "displayValue": "3",
+      "acceptedForms": [
+        "3",
+        "3"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "3d363637-3abc-4592-a55c-6797cd05d624",
+      "code": "M1-4.1",
+      "label": "Solving linear equations"
+    },
+    {
+      "objectiveId": "b5db6c9c-c2af-47ba-a20f-bd97ce8d632b",
+      "code": "M1-4.1",
+      "label": "Expanding brackets"
+    },
+    {
+      "objectiveId": "0f9e382c-c01c-437c-a7e0-5263a83c5706",
+      "code": "M1-4.1",
+      "label": "Collecting like terms"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 6,
+    "pageRef": "p54",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

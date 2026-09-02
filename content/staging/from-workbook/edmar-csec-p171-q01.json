@@ -1,0 +1,206 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p171-q01",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A right-angled triangle has perpendicular sides a and b, hypotenuse c, and acute angle θ between the side b and the hypotenuse c, with a opposite θ. a) Express c in terms of a and b. b) Write an expression for sin θ + cos θ in terms of a, b and c. c) Given that a : b = 3 : 4, determine the exact value of sin θ + cos θ."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Identify which side is opposite θ and which is adjacent before writing any ratio."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p171_q01.jpg",
+      "altText": "Source visual for edmar-csec-p171-q01 from workbook page 171."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Apply Pythagoras to the two perpendicular sides.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "c² = a² + b²"
+        },
+        {
+          "type": "text",
+          "value": "Result: c = √(a² + b²)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Identify the sides relative to θ.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "a is opposite θ and b is adjacent to θ, with c the hypotenuse"
+        },
+        {
+          "type": "text",
+          "value": "Result: sin θ = a/c, cos θ = b/c"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Add the two ratios.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "a/c + b/c"
+        },
+        {
+          "type": "text",
+          "value": "Result: sin θ + cos θ = (a + b)/c"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Introduce the given ratio.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "a : b = 3 : 4, so write a = 3k and b = 4k"
+        },
+        {
+          "type": "text",
+          "value": "Result: c = √(9k² + 16k²) = 5k"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Substitute into (a + b)/c.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(3k + 4k)/5k, and the k cancels"
+        },
+        {
+          "type": "text",
+          "value": "Result: 7/5"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Use Pythagoras for c, write the two ratios with respect to θ and add them, then substitute a = 3k, b = 4k to get a numerical value."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) c = √(a² + b²)  (b) sin θ + cos θ = (a + b)/c  (c) sin θ + cos θ = 7/5 (= 1.4)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Trigonometric ratios compare sides, so they depend only on the shape of the triangle and not on its size — which is why introducing the scale factor k and then cancelling it is legitimate. A 3 : 4 ratio of legs always produces the 3-4-5 triangle, so the exact value 7/5 holds for every triangle with those proportions, however large."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_sin_b_c_because_b_looks_like_the",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing sin θ = b/c because b looks like the 'main' side — always check which side is opposite the angle.",
+      "correctiveNote": "Avoid this: Writing sin θ = b/c because b looks like the 'main' side — always check which side is opposite the angle."
+    },
+    {
+      "key": "adding_the_ratios_as_a_b_2c_or_multiplyi",
+      "wrongValue": "incorrect_2",
+      "misconception": "Adding the ratios as (a + b)/(2c) or multiplying instead of adding.",
+      "correctiveNote": "Avoid this: Adding the ratios as (a + b)/(2c) or multiplying instead of adding."
+    },
+    {
+      "key": "assuming_a_3_and_b_4_as_actual_lengths_u",
+      "wrongValue": "incorrect_3",
+      "misconception": "Assuming a = 3 and b = 4 as actual lengths; using a = 3k, b = 4k shows the answer is independent of size.",
+      "correctiveNote": "Avoid this: Assuming a = 3 and b = 4 as actual lengths; using a = 3k, b = 4k shows the answer is independent of size."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When a question gives a ratio rather than lengths, set the parts as multiples of k straight away — the k always cancels in a trigonometric ratio."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "c=√(a²+b²)",
+    "displayValue": "c = √(a² + b²)",
+    "acceptedForms": [
+      "c = √(a² + b²)",
+      "c=√(a²+b²)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "In a right-angled triangle the legs are in the ratio 5 : 12. Find sin θ + cos θ where θ faces the shorter leg."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(5+12)/13=17/13.",
+      "displayValue": "(5 + 12)/13 = 17/13.",
+      "acceptedForms": [
+        "(5 + 12)/13 = 17/13.",
+        "(5+12)/13=17/13."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "b8de4892-8360-4999-a494-58f56f8c5a29",
+      "code": "M1-1.1",
+      "label": "Pythagoras' theorem"
+    },
+    {
+      "objectiveId": "0d792a7e-de04-4c7f-ace4-fe653a176808",
+      "code": "M1-1.1",
+      "label": "Sine and cosine ratios in a right-angled triangle"
+    },
+    {
+      "objectiveId": "d9fd6345-f103-4ccf-a056-283b7e15f2f0",
+      "code": "M1-1.1",
+      "label": "Working with ratios"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 1,
+    "pageRef": "p171",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

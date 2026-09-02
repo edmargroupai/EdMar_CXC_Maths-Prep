@@ -1,0 +1,178 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p104-q02",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the quadratic equation y² + y − 12 = 0."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The variable is y rather than x, but the method is unchanged — find two numbers multiplying to −12 and adding to +1."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p104_q02.jpg",
+      "altText": "Source visual for edmar-csec-p104-q02 from workbook page 104."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Find two numbers whose product is −12 and whose sum is +1.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "+4 × (−3) = −12 and 4 + (−3) = 1"
+        },
+        {
+          "type": "text",
+          "value": "Result: +4 and −3"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Write the expression in factorised form.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "y² + y − 12 = (y + 4)(y − 3)"
+        },
+        {
+          "type": "text",
+          "value": "Result: (y + 4)(y − 3) = 0"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Set each factor to zero and solve.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "y + 4 = 0 or y − 3 = 0"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = −4 or y = 3"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Factorise into two brackets and apply the zero product property."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "y = −4 or y = 3"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A negative constant term tells you the two numbers have opposite signs, and the coefficient of y tells you which of them is larger in size. Here the sum is +1, so the positive number 4 outweighs the negative 3. Once factorised, each bracket gives one root through the zero product property."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "using_4_and_3_which_gives_a_middle_term_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Using −4 and +3, which gives a middle term of −y instead of +y.",
+      "correctiveNote": "Avoid this: Using −4 and +3, which gives a middle term of −y instead of +y."
+    },
+    {
+      "key": "reading_the_coefficient_of_y_as_0_becaus",
+      "wrongValue": "incorrect_2",
+      "misconception": "Reading the coefficient of y as 0 because no number is written in front of it.",
+      "correctiveNote": "Avoid this: Reading the coefficient of y as 0 because no number is written in front of it."
+    },
+    {
+      "key": "reversing_the_signs_when_solving_each_br",
+      "wrongValue": "incorrect_3",
+      "misconception": "Reversing the signs when solving each bracket.",
+      "correctiveNote": "Avoid this: Reversing the signs when solving each bracket."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When no number is shown in front of the variable, the coefficient is 1 — write it in if it helps you keep track."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "y=−4",
+    "displayValue": "y = −4",
+    "acceptedForms": [
+      "y = −4",
+      "y=−4"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve y² + 2y − 15 = 0."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "y=−5",
+      "displayValue": "y = −5",
+      "acceptedForms": [
+        "y = −5",
+        "y=−5"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-6.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "4043f4ed-f69b-4191-a270-a56d70b8b7a4",
+      "code": "M1-6.1",
+      "label": "Factorising a quadratic"
+    },
+    {
+      "objectiveId": "268dc33e-9def-4929-a7c5-f7123ac697ef",
+      "code": "M1-6.1",
+      "label": "Zero product property"
+    },
+    {
+      "objectiveId": "bac7663b-9b25-499c-aaff-e5d4dd7cdd8e",
+      "code": "M1-6.1",
+      "label": "Solving quadratic equations"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 2,
+    "pageRef": "p104",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

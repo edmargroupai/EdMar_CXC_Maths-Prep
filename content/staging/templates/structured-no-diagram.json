@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "REPLACE_author-id",
+  "questionType": "structured",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 4,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "REPLACE_Shared context for parts (a) and (b)."
+    }
+  ],
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "(a) REPLACE_Part a question."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "numeric_exact",
+        "canonicalValue": "12",
+        "displayValue": "12",
+        "acceptedForms": ["12"],
+        "tolerance": { "kind": "absolute", "value": 0 },
+        "normalisation": "numeric_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "(b) REPLACE_Part b question."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "numeric_exact",
+        "canonicalValue": "5",
+        "displayValue": "5",
+        "acceptedForms": ["5"],
+        "tolerance": { "kind": "absolute", "value": 0 },
+        "normalisation": "numeric_default"
+      }
+    }
+  ],
+  "solutionSteps": [
+    {
+      "partKey": "a",
+      "stepNo": 1,
+      "instruction": "Work part (a).",
+      "contentBlocks": [{ "type": "text", "value": "REPLACE_Solution for part a." }]
+    },
+    {
+      "partKey": "b",
+      "stepNo": 1,
+      "instruction": "Work part (b).",
+      "contentBlocks": [{ "type": "text", "value": "REPLACE_Solution for part b." }]
+    }
+  ],
+  "strategyBlocks": [
+    { "type": "text", "value": "REPLACE_Plan both parts before calculating." }
+  ],
+  "finalAnswerBlocks": [
+    { "type": "text", "value": "(a) 12, (b) 5" }
+  ],
+  "whyThisWorks": [
+    { "type": "text", "value": "REPLACE_Why the method is valid for both parts." }
+  ],
+  "commonErrors": [
+    {
+      "key": "part_a_arithmetic",
+      "partKey": "a",
+      "wrongValue": "10",
+      "misconception": "REPLACE_Error in part (a) only.",
+      "correctiveNote": "REPLACE_Fix for part (a)."
+    },
+    {
+      "key": "part_b_units",
+      "partKey": "b",
+      "wrongValue": "50",
+      "misconception": "REPLACE_Error in part (b) only.",
+      "correctiveNote": "REPLACE_Fix for part (b)."
+    }
+  ],
+  "examTip": [
+    { "type": "text", "value": "REPLACE_Label answers (a) and (b) clearly in the exam booklet." }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "machine_verified"
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "12",
+    "displayValue": "12",
+    "acceptedForms": ["12"],
+    "tolerance": { "kind": "absolute", "value": 0 },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      { "type": "text", "value": "REPLACE_One-line check on the skill from part (a)." }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "12",
+      "displayValue": "12",
+      "acceptedForms": ["12"],
+      "tolerance": { "kind": "absolute", "value": 0 },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": ["REPLACE_M1-2.1"]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "REPLACE_uuid-from-specific_objectives",
+      "code": "REPLACE_M1-2.1",
+      "label": "REPLACE_Short objective label"
+    }
+  ]
+}

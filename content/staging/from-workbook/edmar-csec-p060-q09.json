@@ -1,0 +1,196 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p060-q09",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Lisa has $56 to buy no more than 70 balloons for a party. Red balloons cost $0.75 each and green balloons cost $0.50 each. She must buy at least 15 red balloons, and more green balloons than red balloons. Taking x as the number of red balloons and y as the number of green balloons, write all the inequalities that represent this situation."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Take the statement one phrase at a time and turn each restriction into its own inequality."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p060_q09.jpg",
+      "altText": "Source visual for edmar-csec-p060-q09 from workbook page 60."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Translate 'no more than 70 balloons' - the total x + y cannot exceed 70.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "'no more than' means ≤"
+        },
+        {
+          "type": "text",
+          "value": "Result: x + y ≤ 70"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Translate the cost restriction using $0.75 per red and $0.50 per green, within $56.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "0.75x + 0.50y cannot exceed 56"
+        },
+        {
+          "type": "text",
+          "value": "Result: 0.75x + 0.50y ≤ 56"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Translate 'at least 15 red balloons'.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "'at least' means ≥"
+        },
+        {
+          "type": "text",
+          "value": "Result: x ≥ 15"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Translate 'more green balloons than red balloons'.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "strictly more, so no equals sign"
+        },
+        {
+          "type": "text",
+          "value": "Result: y > x"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Translate each condition separately: the total number of balloons, the total cost, the minimum number of red, and the comparison between green and red."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x + y ≤ 70;  0.75x + 0.50y ≤ 56;  x ≥ 15;  y > x"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Each English phrase maps onto one symbol: 'no more than' and 'at most' give ≤, 'at least' gives ≥, and 'more than' gives the strict >. The cost inequality needs the price of each colour attached to the matching variable, so the coefficients 0.75 and 0.50 carry the units of dollars per balloon. Together the four inequalities describe a region of the x-y plane, and any point in it is a purchase Lisa can afford."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "using_for_no_more_than_instead_of",
+      "wrongValue": "incorrect_1",
+      "misconception": "Using ≥ for 'no more than' instead of ≤.",
+      "correctiveNote": "Avoid this: Using ≥ for 'no more than' instead of ≤."
+    },
+    {
+      "key": "writing_y_x_for_more_green_than_red_when",
+      "wrongValue": "incorrect_2",
+      "misconception": "Writing y ≥ x for 'more green than red' when the comparison is strict.",
+      "correctiveNote": "Avoid this: Writing y ≥ x for 'more green than red' when the comparison is strict."
+    },
+    {
+      "key": "mixing_up_the_prices_writing_0_50x_0_75y",
+      "wrongValue": "incorrect_3",
+      "misconception": "Mixing up the prices, writing 0.50x + 0.75y ≤ 56.",
+      "correctiveNote": "Avoid this: Mixing up the prices, writing 0.50x + 0.75y ≤ 56."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Highlight the comparison words in the question - 'at least', 'no more than', 'more than' - and write the matching symbol beside each before forming any inequality."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "+y≤70;",
+    "displayValue": "+ y ≤ 70;",
+    "acceptedForms": [
+      "+ y ≤ 70;",
+      "+y≤70;"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A shop sells pens at $2 and books at $5. Write an inequality for buying p pens and b books for no more than $40."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "2",
+      "displayValue": "2",
+      "acceptedForms": [
+        "2",
+        "2"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "ce5d90f1-6b1e-40da-ad10-50ddf3d1e57b",
+      "code": "M1-4.1",
+      "label": "Formulating inequalities"
+    },
+    {
+      "objectiveId": "b88fe25f-2012-45be-aa45-72813407e6f5",
+      "code": "M1-4.1",
+      "label": "Linear inequalities in two variables"
+    },
+    {
+      "objectiveId": "f855f88b-85da-4b5c-a09f-756306a98512",
+      "code": "M1-4.1",
+      "label": "Word problems"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 9,
+    "pageRef": "p60",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

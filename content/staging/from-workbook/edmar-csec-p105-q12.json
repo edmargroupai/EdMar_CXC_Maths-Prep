@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p105-q12",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the quadratic equation x² − 3x − 1 = 0."
+    },
+    {
+      "type": "text",
+      "value": "Think first: No whole numbers multiply to −1 and add to −3, so reach for the quadratic formula."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p105_q12.jpg",
+      "altText": "Source visual for edmar-csec-p105-q12 from workbook page 105."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write down a, b and c.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "comparing with ax² + bx + c = 0"
+        },
+        {
+          "type": "text",
+          "value": "Result: a = 1, b = −3, c = −1"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Evaluate the discriminant.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(−3)² − 4(1)(−1) = 9 + 4"
+        },
+        {
+          "type": "text",
+          "value": "Result: 13"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Substitute into the formula.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x = (3 ± √13) / 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = (3 ± √13) / 2"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Evaluate both roots to two decimal places.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "√13 ≈ 3.6056, so (3 + 3.6056)/2 and (3 − 3.6056)/2"
+        },
+        {
+          "type": "text",
+          "value": "Result: x ≈ 3.30 or x ≈ −0.30"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Identify a, b and c, substitute into the quadratic formula, and evaluate exactly and then to 2 decimal places."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = (3 + √13)/2 ≈ 3.30 or x = (3 − √13)/2 ≈ −0.30 (2 d.p.)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The discriminant is 13, positive but not a perfect square, so the equation has two real irrational roots and cannot factorise over the integers. The formula delivers them directly. Note that −b becomes +3 because b itself is negative — that sign handling is where the formula most often goes wrong."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_b_as_3_when_b_3",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing −b as −3 when b = −3.",
+      "correctiveNote": "Avoid this: Writing −b as −3 when b = −3."
+    },
+    {
+      "key": "computing_4ac_as_4_and_subtracting_incor",
+      "wrongValue": "incorrect_2",
+      "misconception": "Computing 4ac as −4 and subtracting incorrectly, giving a discriminant of 5.",
+      "correctiveNote": "Avoid this: Computing 4ac as −4 and subtracting incorrectly, giving a discriminant of 5."
+    },
+    {
+      "key": "dividing_only_part_of_the_numerator_by_2",
+      "wrongValue": "incorrect_3",
+      "misconception": "Dividing only part of the numerator by 2.",
+      "correctiveNote": "Avoid this: Dividing only part of the numerator by 2."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Put brackets around negative values of b and c when you substitute — (−3)² is 9, but −3² is −9."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=(3+√13)/2≈3.30",
+    "displayValue": "= (3 + √13)/2 ≈ 3.30",
+    "acceptedForms": [
+      "= (3 + √13)/2 ≈ 3.30",
+      "=(3+√13)/2≈3.30"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve x² − 5x + 2 = 0, giving answers to 2 decimal places."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=(5±√17)/2,sox≈4.56",
+      "displayValue": "= (5 ± √17)/2, so x ≈ 4.56",
+      "acceptedForms": [
+        "= (5 ± √17)/2, so x ≈ 4.56",
+        "=(5±√17)/2,sox≈4.56"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-6.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "5889a5c3-3ab5-4bc2-af85-d5eb1db5f433",
+      "code": "M1-6.1",
+      "label": "Quadratic formula"
+    },
+    {
+      "objectiveId": "7a023607-5f1c-4086-a1bf-6f6b47d532c4",
+      "code": "M1-6.1",
+      "label": "Discriminant"
+    },
+    {
+      "objectiveId": "eea35e26-7e04-420b-af14-e030e469b6fd",
+      "code": "M1-6.1",
+      "label": "Decimal approximation"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 12,
+    "pageRef": "p105",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

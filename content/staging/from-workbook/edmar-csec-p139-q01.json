@@ -1,0 +1,225 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p139-q01",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 5,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Given that f(x) = (x + 1)/(2x − 5), g(x) = (2x − 5)/(x + 1) and h(x) = (5x + 1)/(2x − 1): (i) Evaluate f(3) and g(4). (ii) Show that h(3) = 3. (iii) Write down the expression for f⁻¹(x)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Evaluating means substituting the number into the top and the bottom separately; finding an inverse means making x the subject."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p139_q01.jpg",
+      "altText": "Source visual for edmar-csec-p139-q01 from workbook page 139."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Evaluate f(3).",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "f(3) = (3 + 1)/(2(3) − 5) = 4/(6 − 5) = 4/1"
+        },
+        {
+          "type": "text",
+          "value": "Result: f(3) = 4"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Evaluate g(4).",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "g(4) = (2(4) − 5)/(4 + 1) = (8 − 5)/5"
+        },
+        {
+          "type": "text",
+          "value": "Result: g(4) = 3/5"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Substitute x = 3 into h.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "h(3) = (5(3) + 1)/(2(3) − 1) = 16/5"
+        },
+        {
+          "type": "text",
+          "value": "Result: h(3) = 16/5 = 3.2, not 3"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Note where the value 3 does occur.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "h(4) = (5(4) + 1)/(2(4) − 1) = 21/7 = 3, which matches f(3) = 4 because h is the inverse of f"
+        },
+        {
+          "type": "text",
+          "value": "Result: h(4) = 3"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Set y = f(x) and clear the fraction to find the inverse.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "y(2x − 5) = x + 1 → 2xy − 5y = x + 1 → x(2y − 1) = 5y + 1"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = (5y + 1)/(2y − 1)"
+        }
+      ]
+    },
+    {
+      "stepNo": 6,
+      "instruction": "Write the inverse as a function of x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Replace y by x"
+        },
+        {
+          "type": "text",
+          "value": "Result: f⁻¹(x) = (5x + 1)/(2x − 1), x ≠ 1/2"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Substitute the given values into each rational expression, then invert f by writing y = f(x), clearing the fraction and solving for x."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) f(3) = 4 and g(4) = 3/5  (ii) Substituting gives h(3) = 16/5 = 3.2, so the printed statement h(3) = 3 does not hold as written; the value 3 is produced by h(4) = 21/7 = 3  (iii) f⁻¹(x) = (5x + 1)/(2x − 1), x ≠ 1/2."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "An inverse function undoes the original, so finding it means asking which input produced a given output — exactly what making x the subject does. The algebra reveals something worth noticing: f⁻¹ turns out to be h itself. That is why f(3) = 4 forces h(4) = 3, and it is a useful self-check whenever you invert a rational function."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "multiplying_top_and_bottom_by_x_when_sub",
+      "wrongValue": "incorrect_1",
+      "misconception": "Multiplying top and bottom by x when substituting instead of just replacing x by the number.",
+      "correctiveNote": "Avoid this: Multiplying top and bottom by x when substituting instead of just replacing x by the number."
+    },
+    {
+      "key": "failing_to_collect_the_x_terms_on_one_si",
+      "wrongValue": "incorrect_2",
+      "misconception": "Failing to collect the x terms on one side, so x cannot be factored out.",
+      "correctiveNote": "Avoid this: Failing to collect the x terms on one side, so x cannot be factored out."
+    },
+    {
+      "key": "giving_the_inverse_as_1_f_x_the_reciproc",
+      "wrongValue": "incorrect_3",
+      "misconception": "Giving the inverse as 1/f(x) — the reciprocal is not the inverse function.",
+      "correctiveNote": "Avoid this: Giving the inverse as 1/f(x) — the reciprocal is not the inverse function."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "After finding an inverse, test it: run one value through f, then through f⁻¹, and check you return to where you started."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "f(3)=4andg(4)=3/5",
+    "displayValue": "f(3) = 4 and g(4) = 3/5",
+    "acceptedForms": [
+      "f(3) = 4 and g(4) = 3/5",
+      "f(3)=4andg(4)=3/5"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "If f(x) = (x + 2)/(x − 1), find f(4)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "f(4)=6/3=2.",
+      "displayValue": "f(4) = 6/3 = 2.",
+      "acceptedForms": [
+        "f(4) = 6/3 = 2.",
+        "f(4)=6/3=2."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "1fc9eee8-ef45-4426-a342-626bbc58247d",
+      "code": "M1-5.1",
+      "label": "Evaluating a function"
+    },
+    {
+      "objectiveId": "b9c84e66-01f8-4eb2-adb9-6bf362e2ee77",
+      "code": "M1-5.1",
+      "label": "Algebraic fractions"
+    },
+    {
+      "objectiveId": "d2ab52f5-431d-408c-a3ef-a9dbbc4c05ab",
+      "code": "M1-5.1",
+      "label": "Inverse of a function"
+    },
+    {
+      "objectiveId": "598308f2-533c-4c4d-ad03-20352c2b3f6a",
+      "code": "M1-5.1",
+      "label": "Making a variable the subject"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 1,
+    "pageRef": "p139",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

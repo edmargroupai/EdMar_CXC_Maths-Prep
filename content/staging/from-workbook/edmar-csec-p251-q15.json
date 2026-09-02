@@ -1,0 +1,286 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p251-q15",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 5,
+  "status": "draft",
+  "marks": 6,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "K, L, M and N lie on a circle with centre O, and XY is a tangent to the circle at K. In the diagram the tangent–chord angle to KN is 56° (marked between KX and KN), angle MKO = 12° and angle LKY = 48°. (i) Find angle KOL, giving reasons for each step. (ii)(b) Find angle LMN."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Two radii to the ends of a chord always make an isosceles triangle — that is the route to an angle at the centre."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p251_q15.jpg",
+      "altText": "Source visual for edmar-csec-p251-q15 from workbook page 251."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Use the right angle between the tangent and the radius OK.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "∠OKY = 90° (tangent perpendicular to radius at the point of contact), so ∠OKL = 90 − 48"
+        },
+        {
+          "type": "text",
+          "value": "Result: ∠OKL = 42°"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Use the isosceles triangle formed by the two radii.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "OK = OL (radii of the same circle), so ∠OLK = ∠OKL = 42°"
+        },
+        {
+          "type": "text",
+          "value": "Result: Both base angles are 42°"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Apply the angle sum of triangle KOL.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "∠KOL = 180 − 42 − 42"
+        },
+        {
+          "type": "text",
+          "value": "Result: ∠KOL = 96°"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Find angle NKL from the angles on the straight tangent line XKY.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "∠XKN + ∠NKL + ∠LKY = 180, so ∠NKL = 180 − 56 − 48"
+        },
+        {
+          "type": "text",
+          "value": "Result: ∠NKL = 76°"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Use the cyclic quadrilateral KNML, in which K and M are opposite vertices.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "∠NKL + ∠LMN = 180, so ∠LMN = 180 − 76"
+        },
+        {
+          "type": "text",
+          "value": "Result: ∠LMN = 104°"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Subtract the 48° from the tangent–radius right angle to get angle OKL, use OK = OL to get the other base angle, then find angle KOL; for angle LMN use the angles on the straight tangent line at K and the cyclic quadrilateral KNML."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) ∠KOL = 96°: the tangent is perpendicular to the radius OK, so ∠OKL = 90° − 48° = 42°; OK = OL are radii, so ∠OLK = 42°; the angle sum of triangle KOL then gives 180 − 42 − 42 = 96°.  (ii)(b) ∠LMN = 104°: the angles on the straight line XKY give ∠NKL = 180 − 56 − 48 = 76°, and KNML is a cyclic quadrilateral, so ∠LMN = 180 − 76 = 104°. (A check: the tangent–chord angle of 48° gives ∠KNL = 48°, so the centre angle ∠KOL = 96° as found.)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Every radius meets the tangent at 90°, so angles measured from the tangent can always be converted into angles measured from a radius. Because two radii to the same chord are equal, the triangle they form is isosceles and its apex angle at the centre follows from the angle sum. The angles at K along the tangent line add to a straight angle, giving the interior angle of the cyclic quadrilateral, and opposite angles of a cyclic quadrilateral are supplementary."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "treating_okl_as_48_instead_of_90_48",
+      "wrongValue": "incorrect_1",
+      "misconception": "Treating ∠OKL as 48° instead of 90° − 48°.",
+      "correctiveNote": "Avoid this: Treating ∠OKL as 48° instead of 90° − 48°."
+    },
+    {
+      "key": "forgetting_that_ok_ol_makes_triangle_kol",
+      "wrongValue": "incorrect_2",
+      "misconception": "Forgetting that OK = OL makes triangle KOL isosceles and assuming it is equilateral or right-angled.",
+      "correctiveNote": "Avoid this: Forgetting that OK = OL makes triangle KOL isosceles and assuming it is equilateral or right-angled."
+    },
+    {
+      "key": "adding_the_angles_at_k_to_360_rather_tha",
+      "wrongValue": "incorrect_3",
+      "misconception": "Adding the angles at K to 360° rather than 180° along the straight tangent.",
+      "correctiveNote": "Avoid this: Adding the angles at K to 360° rather than 180° along the straight tangent."
+    },
+    {
+      "key": "pairing_the_wrong_vertices_of_the_cyclic",
+      "wrongValue": "incorrect_4",
+      "misconception": "Pairing the wrong vertices of the cyclic quadrilateral (K with N rather than K with M).",
+      "correctiveNote": "Avoid this: Pairing the wrong vertices of the cyclic quadrilateral (K with N rather than K with M)."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Draw in the radii to both ends of a chord whenever a centre angle is wanted — the isosceles triangle is nearly always the quickest route."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "∠KOL=96°:thetangentisperpendiculartotheradiusOK,so∠OKL=90°−48°=42°;OK=OLareradii,so∠OLK=42°;",
+    "displayValue": "∠KOL = 96°: the tangent is perpendicular to the radius OK, so ∠OKL = 90° − 48° = 42°; OK = OL are radii, so ∠OLK = 42°; ",
+    "acceptedForms": [
+      "∠KOL = 96°: the tangent is perpendicular to the radius OK, so ∠OKL = 90° − 48° = 42°; OK = OL are radii, so ∠OLK = 42°; ",
+      "∠KOL=96°:thetangentisperpendiculartotheradiusOK,so∠OKL=90°−48°=42°;OK=OLareradii,so∠OLK=42°;"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A tangent at K makes an angle of 30° with chord KL. What is the angle KOL at the centre?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "60",
+      "displayValue": "60",
+      "acceptedForms": [
+        "60",
+        "60"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "b89d1491-a26e-4b1f-ab9b-f4ce20ec524c",
+      "code": "M1-1.1",
+      "label": "Tangent perpendicular to the radius at the point of contact"
+    },
+    {
+      "objectiveId": "413d685e-7417-4acf-aadb-54a6da127ad5",
+      "code": "M1-1.1",
+      "label": "Isosceles triangle formed by two radii"
+    },
+    {
+      "objectiveId": "88ef8884-59f5-41c9-aec7-4d420f00ad49",
+      "code": "M1-1.1",
+      "label": "Angle sum of a triangle"
+    },
+    {
+      "objectiveId": "54979247-3881-4754-abdf-3a24b1074be2",
+      "code": "M1-1.1",
+      "label": "Cyclic quadrilateral: opposite angles supplementary"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 15,
+    "pageRef": "p251",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a.i",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.i): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "∠KOL=96°:thetangentisperpendiculartotheradiusOK,so∠OKL=90°−48°=42°;OK=OLareradii,so∠OLK=42°;",
+        "displayValue": "∠KOL = 96°: the tangent is perpendicular to the radius OK, so ∠OKL = 90° − 48° = 42°; OK = OL are radii, so ∠OLK = 42°; ",
+        "acceptedForms": [
+          "∠KOL = 96°: the tangent is perpendicular to the radius OK, so ∠OKL = 90° − 48° = 42°; OK = OL are radii, so ∠OLK = 42°; ",
+          "∠KOL=96°:thetangentisperpendiculartotheradiusOK,so∠OKL=90°−48°=42°;OK=OLareradii,so∠OLK=42°;"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.ii",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.ii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "∠LMN=104°:theanglesonthestraightlineXKYgive∠NKL=180−56−48=76°,an",
+        "displayValue": "∠LMN = 104°: the angles on the straight line XKY give ∠NKL = 180 − 56 − 48 = 76°, an",
+        "acceptedForms": [
+          "∠LMN = 104°: the angles on the straight line XKY give ∠NKL = 180 − 56 − 48 = 76°, an",
+          "∠LMN=104°:theanglesonthestraightlineXKYgive∠NKL=180−56−48=76°,an"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "∠LMN=104°:theanglesonthestraightlineXKYgive∠NKL=180−56−48=76°,an",
+        "displayValue": "∠LMN = 104°: the angles on the straight line XKY give ∠NKL = 180 − 56 − 48 = 76°, an",
+        "acceptedForms": [
+          "∠LMN = 104°: the angles on the straight line XKY give ∠NKL = 180 − 56 − 48 = 76°, an",
+          "∠LMN=104°:theanglesonthestraightlineXKYgive∠NKL=180−56−48=76°,an"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

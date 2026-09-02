@@ -1,0 +1,217 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p293-q04",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "(a) Calculate the values of x and y in the matrix equation (1  5 / 2  y)(-4  1 / 2  9) = (x  46 / 6  65). (b) A transformation T, represented by the matrix (0  1 / 1  0), maps S(2, 5) onto S'(5, 2). Describe fully the single transformation T."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Multiply out the left side entry by entry and match with the right side; each position gives its own equation."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p293_q04.jpg",
+      "altText": "Source visual for edmar-csec-p293-q04 from workbook page 293."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Find the top-left entry of the product.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(1)(-4) + (5)(2) = -4 + 10"
+        },
+        {
+          "type": "text",
+          "value": "Result: Top-left = 6, and this equals x, so x = 6"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Check the top-right entry to confirm the multiplication.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(1)(1) + (5)(9) = 1 + 45 = 46, which matches the given entry."
+        },
+        {
+          "type": "text",
+          "value": "Result: Top row confirmed"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Form an equation from the bottom-left entry.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(2)(-4) + (y)(2) = -8 + 2y, and this must equal 6"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2y = 14, so y = 7"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Verify with the bottom-right entry.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(2)(1) + (7)(9) = 2 + 63 = 65, which matches."
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 7 confirmed"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "For (b), see what the matrix does to a general point.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(0  1 / 1  0)(x / y) = (y / x), and indeed S(2, 5) goes to (5, 2). Swapping the coordinates is reflection in y = x."
+        },
+        {
+          "type": "text",
+          "value": "Result: T is a reflection in the line y = x"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Work out each of the four entries of the product in terms of y, match them with the given matrix to find x and y, then interpret the effect of the matrix on coordinates for part (b)."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) x = 6 and y = 7.  (b) T is a reflection in the line y = x."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Two matrices are equal only when every corresponding pair of elements is equal, so a single matrix equation is really four ordinary equations at once, and you can pick whichever position gives the simplest one. A transformation matrix acts on the position vector of a point, so reading off its effect on a general column (x, y) identifies the transformation for every point at once, not just the one given."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "multiplying_corresponding_entries_instea",
+      "wrongValue": "incorrect_1",
+      "misconception": "Multiplying corresponding entries instead of rows into columns.",
+      "correctiveNote": "Avoid this: Multiplying corresponding entries instead of rows into columns."
+    },
+    {
+      "key": "solving_for_y_from_the_bottom_right_entr",
+      "wrongValue": "incorrect_2",
+      "misconception": "Solving for y from the bottom-right entry and getting confused by the arithmetic with 65.",
+      "correctiveNote": "Avoid this: Solving for y from the bottom-right entry and getting confused by the arithmetic with 65."
+    },
+    {
+      "key": "answering_reflection_without_stating_the",
+      "wrongValue": "incorrect_3",
+      "misconception": "Answering 'reflection' without stating the mirror line y = x.",
+      "correctiveNote": "Avoid this: Answering 'reflection' without stating the mirror line y = x."
+    },
+    {
+      "key": "saying_it_is_a_rotation_of_90_degrees_wh",
+      "wrongValue": "incorrect_4",
+      "misconception": "Saying it is a rotation of 90 degrees, which sends (2, 5) to (-5, 2), not (5, 2).",
+      "correctiveNote": "Avoid this: Saying it is a rotation of 90 degrees, which sends (2, 5) to (-5, 2), not (5, 2)."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When only some entries contain unknowns, use the entries that are fully numerical as a free accuracy check on your multiplication."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "x=6andy=7.",
+    "displayValue": "x = 6 and y = 7.",
+    "acceptedForms": [
+      "x = 6 and y = 7.",
+      "x=6andy=7."
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Where does the matrix (0  1 / 1  0) send the point (-3, 8)?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(8,-3)",
+      "displayValue": "(8, -3)",
+      "acceptedForms": [
+        "(8, -3)",
+        "(8,-3)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "0e58a30f-8f63-4cf7-a931-525a2725fea3",
+      "code": "M2-4.1",
+      "label": "Matrix multiplication"
+    },
+    {
+      "objectiveId": "125e49d8-609d-4e30-a591-72962ad51334",
+      "code": "M2-4.1",
+      "label": "Equating corresponding elements"
+    },
+    {
+      "objectiveId": "c9d5c751-e1d3-43f9-a332-bdd898977199",
+      "code": "M2-4.1",
+      "label": "Matrix representation of a transformation"
+    },
+    {
+      "objectiveId": "5eb48193-8ce3-427a-a272-8f9c5079a283",
+      "code": "M2-4.1",
+      "label": "Reflection in the line y = x"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 4,
+    "pageRef": "p293",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

@@ -1,0 +1,172 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p062-q09",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "If y = −4, evaluate y² + 3y − 7."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Squaring a negative gives a positive, but the middle term stays negative - keep the two separate."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p062_q09.jpg",
+      "altText": "Source visual for edmar-csec-p062-q09 from workbook page 62."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Substitute y = −4.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(−4)² + 3(−4) − 7"
+        },
+        {
+          "type": "text",
+          "value": "Result: 16 + (−12) − 7"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Simplify the middle term.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "adding −12 is subtracting 12"
+        },
+        {
+          "type": "text",
+          "value": "Result: 16 − 12 − 7"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Combine left to right.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "16 − 12 = 4, then 4 − 7"
+        },
+        {
+          "type": "text",
+          "value": "Result: −3"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Substitute y = −4 in brackets, evaluate each term, then combine left to right."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "−3"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "(−4)² means (−4) × (−4), which is +16, whereas 3y keeps the sign of y and gives −12. Bracketing the substituted value is what separates these two behaviours; without brackets the squared term is easily written as −16."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_4_as_16_by_not_bracketing_the_ne",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing −4² as −16 by not bracketing the negative before squaring.",
+      "correctiveNote": "Avoid this: Writing −4² as −16 by not bracketing the negative before squaring."
+    },
+    {
+      "key": "making_3_4_positive_giving_16_12_7_21",
+      "wrongValue": "incorrect_2",
+      "misconception": "Making 3(−4) positive, giving 16 + 12 − 7 = 21.",
+      "correctiveNote": "Avoid this: Making 3(−4) positive, giving 16 + 12 − 7 = 21."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Whenever you substitute a negative number, put it in brackets - especially under an index."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "−3",
+    "displayValue": "−3",
+    "acceptedForms": [
+      "−3",
+      "−3"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "If y = −2, evaluate y² + 3y − 7."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "−9",
+      "displayValue": "−9",
+      "acceptedForms": [
+        "−9",
+        "−9"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "77ce4e8e-15d1-466b-a99c-0e0bb704faa0",
+      "code": "M1-4.1",
+      "label": "Substitution"
+    },
+    {
+      "objectiveId": "702e494a-dd8b-4e0d-ac48-a1aeb8c3f88b",
+      "code": "M1-4.1",
+      "label": "Directed numbers"
+    },
+    {
+      "objectiveId": "67c994ca-1d1a-4122-a9ff-9394864c6e15",
+      "code": "M1-4.1",
+      "label": "Quadratic expressions"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 9,
+    "pageRef": "p62",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

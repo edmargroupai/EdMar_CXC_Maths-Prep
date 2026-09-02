@@ -1,0 +1,196 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p065-q22",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Simplify (x⁴ × 12x³) / (2x² × 4x⁵)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Simplify the top and the bottom separately before you compare them."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p065_q22.jpg",
+      "altText": "Source visual for edmar-csec-p065-q22 from workbook page 65."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Simplify the numerator.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "1 × 12 = 12 and x⁴ × x³ = x^(4+3)"
+        },
+        {
+          "type": "text",
+          "value": "Result: 12x⁷"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Simplify the denominator.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2 × 4 = 8 and x² × x⁵ = x^(2+5)"
+        },
+        {
+          "type": "text",
+          "value": "Result: 8x⁷"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Subtract the indices.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x⁷ ÷ x⁷ = x^(7−7) = x⁰ = 1"
+        },
+        {
+          "type": "text",
+          "value": "Result: 1"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Simplify the number fraction.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "12/8, dividing both by 4"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3/2"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Collapse the numerator and the denominator into single terms, then divide coefficients and subtract indices."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(x⁴ × 12x³) / (2x² × 4x⁵) = 3/2"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "When the same power appears on the top and the bottom, subtracting the indices gives x⁰, and any non-zero base raised to the power zero equals 1. That is why the letters vanish completely and only the number fraction survives. The zero index is not a special case invented for convenience; it follows directly from the division law."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_the_answer_as_3_2_x_instead_of_s",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing the answer as (3/2)x⁰ instead of simplifying x⁰ to 1.",
+      "correctiveNote": "Avoid this: Writing the answer as (3/2)x⁰ instead of simplifying x⁰ to 1."
+    },
+    {
+      "key": "assuming_the_x_terms_cannot_cancel_becau",
+      "wrongValue": "incorrect_2",
+      "misconception": "Assuming the x terms cannot cancel because the individual indices differ.",
+      "correctiveNote": "Avoid this: Assuming the x terms cannot cancel because the individual indices differ."
+    },
+    {
+      "key": "leaving_the_fraction_as_12_8",
+      "wrongValue": "incorrect_3",
+      "misconception": "Leaving the fraction as 12/8.",
+      "correctiveNote": "Avoid this: Leaving the fraction as 12/8."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When every letter cancels, say so explicitly by writing x⁰ = 1; it shows the examiner you used the law rather than guessing."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "(x⁴×12x³)/(2x²×4x⁵)=3/2",
+    "displayValue": "(x⁴ × 12x³) / (2x² × 4x⁵) = 3/2",
+    "acceptedForms": [
+      "(x⁴ × 12x³) / (2x² × 4x⁵) = 3/2",
+      "(x⁴×12x³)/(2x²×4x⁵)=3/2"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Simplify (x² × 10x⁴) / (5x³ × x³)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "2",
+      "displayValue": "2",
+      "acceptedForms": [
+        "2",
+        "2"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "6d38bf91-5f79-4aa9-aaea-4df1d07cfbbc",
+      "code": "M1-4.1",
+      "label": "Laws of indices"
+    },
+    {
+      "objectiveId": "f5501ef9-1065-4d59-a190-19652b2c679a",
+      "code": "M1-4.1",
+      "label": "Multiplication and division laws"
+    },
+    {
+      "objectiveId": "3d28460c-fccd-4f55-a1a0-69623b88add6",
+      "code": "M1-4.1",
+      "label": "Zero index"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 22,
+    "pageRef": "p65",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

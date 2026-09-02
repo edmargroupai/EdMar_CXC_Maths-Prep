@@ -1,0 +1,217 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p257-q16",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Three triangles are drawn on a square grid: X with vertices (0, 2), (6, 2), (4, 4); Y with vertices (0, −2), (6, −2), (4, −4); Z with vertices (−2, 0), (−2, 6), (−4, 4). (i) X is mapped onto Y by a reflection — state the equation of the mirror line. (ii) Describe fully the transformation which maps X onto Z. (iii) Translate Y using the vector (−7, 1) and label the image V. (iv) Enlarge X about the centre C(0, 0) by scale factor 1/2 and label the image W."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Write down the vertices of all three triangles first; every part is then a comparison of coordinates."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p257_q16.jpg",
+      "altText": "Source visual for edmar-csec-p257-q16 from workbook page 257."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Compare X with Y vertex by vertex.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(0, 2) → (0, −2), (6, 2) → (6, −2), (4, 4) → (4, −4): the x-coordinates are unchanged and the y-coordinates change sign"
+        },
+        {
+          "type": "text",
+          "value": "Result: Reflection in the x-axis, y = 0"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Compare X with Z vertex by vertex.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(0, 2) → (−2, 0), (6, 2) → (−2, 6), (4, 4) → (−4, 4): each point (x, y) becomes (−y, x)"
+        },
+        {
+          "type": "text",
+          "value": "Result: A quarter turn anticlockwise about the origin"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "State the transformation for X onto Z in full.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Type, angle, direction and centre are all required"
+        },
+        {
+          "type": "text",
+          "value": "Result: Rotation of 90° anticlockwise about (0, 0)"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Translate Y by the vector (−7, 1).",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Subtract 7 from each x and add 1 to each y: (0,−2) → (−7,−1); (6,−2) → (−1,−1); (4,−4) → (−3,−3)"
+        },
+        {
+          "type": "text",
+          "value": "Result: Triangle V at (−7, −1), (−1, −1), (−3, −3)"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Enlarge X about the origin by scale factor 1/2.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Halve each coordinate: (0,2) → (0,1); (6,2) → (3,1); (4,4) → (2,2)"
+        },
+        {
+          "type": "text",
+          "value": "Result: Triangle W at (0, 1), (3, 1), (2, 2)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Match each vertex of X with its partner in Y and in Z to identify the mirror line and the rotation, then apply the given vector and scale factor to produce V and W."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) The mirror line is the x-axis, y = 0.  (ii) A rotation of 90° anticlockwise about the origin (0, 0).  (iii) Triangle V has vertices (−7, −1), (−1, −1) and (−3, −3).  (iv) Triangle W has vertices (0, 1), (3, 1) and (2, 2)."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Each transformation leaves a fingerprint in the coordinates: a reflection in the x-axis keeps x and negates y; a 90° anticlockwise rotation about the origin sends (x, y) to (−y, x); a translation adds a fixed vector to every point; and an enlargement about the origin multiplies every coordinate by the scale factor. Checking the rule on all three vertices, not just one, is what proves the description is correct."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "giving_the_mirror_line_as_the_x_axis_wit",
+      "wrongValue": "incorrect_1",
+      "misconception": "Giving the mirror line as 'the x-axis' without the equation y = 0, or writing x = 0.",
+      "correctiveNote": "Avoid this: Giving the mirror line as 'the x-axis' without the equation y = 0, or writing x = 0."
+    },
+    {
+      "key": "stating_the_rotation_as_clockwise_or_omi",
+      "wrongValue": "incorrect_2",
+      "misconception": "Stating the rotation as clockwise, or omitting the centre.",
+      "correctiveNote": "Avoid this: Stating the rotation as clockwise, or omitting the centre."
+    },
+    {
+      "key": "applying_the_translation_vector_to_the_w",
+      "wrongValue": "incorrect_3",
+      "misconception": "Applying the translation vector to the wrong triangle (X instead of Y).",
+      "correctiveNote": "Avoid this: Applying the translation vector to the wrong triangle (X instead of Y)."
+    },
+    {
+      "key": "multiplying_coordinates_by_2_instead_of_",
+      "wrongValue": "incorrect_4",
+      "misconception": "Multiplying coordinates by 2 instead of 1/2 for the enlargement.",
+      "correctiveNote": "Avoid this: Multiplying coordinates by 2 instead of 1/2 for the enlargement."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Test any suspected rule on every vertex — a rule that works for one point can easily be the wrong transformation."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Themirrorlineisthex-axis,y=0.",
+    "displayValue": "The mirror line is the x-axis, y = 0.",
+    "acceptedForms": [
+      "The mirror line is the x-axis, y = 0.",
+      "Themirrorlineisthex-axis,y=0."
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Under a 90° anticlockwise rotation about the origin, where does (3, 1) go?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(−1,3).",
+      "displayValue": "(−1, 3).",
+      "acceptedForms": [
+        "(−1, 3).",
+        "(−1,3)."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "ce2d2ab9-b485-4a21-a4a6-1a78878cb3ab",
+      "code": "M1-1.1",
+      "label": "Reflection and mirror lines"
+    },
+    {
+      "objectiveId": "5009be4f-59cc-498b-a4c3-9c3e22fc0887",
+      "code": "M1-1.1",
+      "label": "Rotation about the origin"
+    },
+    {
+      "objectiveId": "dac1bae1-8c70-4fa2-a34b-8b1fd4826b5e",
+      "code": "M1-1.1",
+      "label": "Translation by a column vector"
+    },
+    {
+      "objectiveId": "beea0b7a-31c0-47b0-abc9-018b54af9c1e",
+      "code": "M1-1.1",
+      "label": "Enlargement with a fractional scale factor"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 16,
+    "pageRef": "p257",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

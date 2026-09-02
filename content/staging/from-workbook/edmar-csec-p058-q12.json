@@ -1,0 +1,172 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p058-q12",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A binary operation is defined by a △ b = (a + b)/2. Evaluate (6 △ 4) △ 8."
+    },
+    {
+      "type": "text",
+      "value": "Think first: This operation takes the average of its two inputs, so do the bracket first and then average again."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p058_q12.jpg",
+      "altText": "Source visual for edmar-csec-p058-q12 from workbook page 58."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Evaluate the bracket 6 △ 4.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(6 + 4)/2 = 10/2"
+        },
+        {
+          "type": "text",
+          "value": "Result: 6 △ 4 = 5"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Replace the bracket by 5.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: 5 △ 8"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Apply the rule with a = 5, b = 8.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(5 + 8)/2 = 13/2"
+        },
+        {
+          "type": "text",
+          "value": "Result: 6.5"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Evaluate 6 △ 4 inside the bracket, then combine that result with 8 using the same rule."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(6 △ 4) △ 8 = 6.5, that is 13/2"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The rule is simply the mean of the two numbers. Averaging is not associative: averaging 6 and 4 first and then with 8 gives 6.5, whereas averaging 4 and 8 first would give 6 - so the bracket controls the answer, and a non-integer result is perfectly normal."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "adding_all_three_numbers_and_dividing_by",
+      "wrongValue": "incorrect_1",
+      "misconception": "Adding all three numbers and dividing by 3, giving 6.",
+      "correctiveNote": "Avoid this: Adding all three numbers and dividing by 3, giving 6."
+    },
+    {
+      "key": "dividing_only_one_of_the_numbers_by_2",
+      "wrongValue": "incorrect_2",
+      "misconception": "Dividing only one of the numbers by 2.",
+      "correctiveNote": "Avoid this: Dividing only one of the numbers by 2."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "A fractional answer is not a warning sign - only re-check when the value is impossible for the context."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "(6△4)△8=6.5,thatis13/2",
+    "displayValue": "(6 △ 4) △ 8 = 6.5, that is 13/2",
+    "acceptedForms": [
+      "(6 △ 4) △ 8 = 6.5, that is 13/2",
+      "(6△4)△8=6.5,thatis13/2"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "With a △ b = (a + b)/2, evaluate (2 △ 6) △ 10."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "7",
+      "displayValue": "7",
+      "acceptedForms": [
+        "7",
+        "7"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "ae8c0e99-c4d1-42f6-a849-dfda9d225f4e",
+      "code": "M1-4.1",
+      "label": "Binary operations"
+    },
+    {
+      "objectiveId": "ada36990-49dc-46d4-a0da-86159bd6841a",
+      "code": "M1-4.1",
+      "label": "Order of operations"
+    },
+    {
+      "objectiveId": "a0a52dc1-9c7d-4136-ad63-0bdbfbe4904f",
+      "code": "M1-4.1",
+      "label": "Averages"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 12,
+    "pageRef": "p58",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

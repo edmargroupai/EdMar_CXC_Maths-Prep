@@ -1,0 +1,230 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p196-q06",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 4,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "P = (1 −2 / 3 4) and Q = (5 1 / −1 2). (a) Calculate 2P − Q. (b) Find the 2 × 2 zero matrix Z such that P + Z = P."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Do the scalar multiplication first, then the subtraction — exactly the order of operations you use with numbers."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p196_q06.jpg",
+      "altText": "Source visual for edmar-csec-p196-q06 from workbook page 196."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply every entry of P by 2.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2(1) = 2; 2(−2) = −4; 2(3) = 6; 2(4) = 8"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2P = (2 −4 / 6 8)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Subtract each entry of Q from the matching entry of 2P.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2 − 5 = −3; −4 − 1 = −5; 6 − (−1) = 7; 8 − 2 = 6"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2P − Q = (−3 −5 / 7 6)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Decide what must be added to each entry of P to leave it unchanged.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Adding 0 to any number leaves it alone, so every entry of Z must be 0."
+        },
+        {
+          "type": "text",
+          "value": "Result: Z = (0 0 / 0 0)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Double every entry of P, subtract the matching entry of Q, then recall what matrix leaves P unchanged under addition."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) 2P − Q = (−3 −5 / 7 6)  (b) Z = (0 0 / 0 0), the 2 × 2 zero matrix."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Scalar multiplication is applied before addition or subtraction, just as with ordinary algebra. The zero matrix plays the same role for matrices that the number 0 plays for numbers: it is the additive identity, so adding it changes nothing. It must have the same order as P for the addition to be defined at all."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "subtracting_q_from_p_first_and_then_doub",
+      "wrongValue": "incorrect_1",
+      "misconception": "Subtracting Q from P first and then doubling.",
+      "correctiveNote": "Avoid this: Subtracting Q from P first and then doubling."
+    },
+    {
+      "key": "slipping_on_6_1_which_is_7_not_5",
+      "wrongValue": "incorrect_2",
+      "misconception": "Slipping on 6 − (−1), which is 7, not 5.",
+      "correctiveNote": "Avoid this: Slipping on 6 − (−1), which is 7, not 5."
+    },
+    {
+      "key": "writing_the_identity_matrix_instead_of_t",
+      "wrongValue": "incorrect_3",
+      "misconception": "Writing the identity matrix instead of the zero matrix in part (b).",
+      "correctiveNote": "Avoid this: Writing the identity matrix instead of the zero matrix in part (b)."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "In expressions like 2P − Q, compute the scalar multiple in full before you touch the subtraction."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "2",
+    "displayValue": "2",
+    "acceptedForms": [
+      "2",
+      "2"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "With P as above, calculate 3P."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(3−6/912)",
+      "displayValue": "(3 −6 / 9 12)",
+      "acceptedForms": [
+        "(3 −6 / 9 12)",
+        "(3−6/912)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "1513843f-9df9-4a50-af24-c0287c61c916",
+      "code": "M2-4.1",
+      "label": "Scalar multiplication"
+    },
+    {
+      "objectiveId": "09e0bd83-29eb-4d7a-a9c5-fb516fe9173b",
+      "code": "M2-4.1",
+      "label": "Subtraction of matrices"
+    },
+    {
+      "objectiveId": "9baa631a-6f86-4157-ac08-5058b308200d",
+      "code": "M2-4.1",
+      "label": "Zero matrix as the additive identity"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 6,
+    "pageRef": "p196",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "numeric_exact",
+        "canonicalValue": "2",
+        "displayValue": "2",
+        "acceptedForms": [
+          "2",
+          "2"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0
+        },
+        "normalisation": "numeric_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Z=(00/00),the2×2zeromatr",
+        "displayValue": "Z = (0 0 / 0 0), the 2 × 2 zero matr",
+        "acceptedForms": [
+          "Z = (0 0 / 0 0), the 2 × 2 zero matr",
+          "Z=(00/00),the2×2zeromatr"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

@@ -1,0 +1,261 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p301-q12",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 4,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Given the linear equations 2x + 5y = 6 and 3x + 4y = 8: (i) write them in the form AX = B where A, X and B are matrices; (ii) a) calculate the determinant of A, b) show that A inverse = (-4/7  5/7 / 3/7  -2/7), c) use A inverse to solve for x and y."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The coefficients form A, the unknowns form X and the constants form B, in that order, so the matrix form writes itself."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p301_q12.jpg",
+      "altText": "Source visual for edmar-csec-p301-q12 from workbook page 301."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Read the coefficients into a 2x2 matrix, the unknowns into a column and the constants into a column.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Keep the equations in the order given so the rows match."
+        },
+        {
+          "type": "text",
+          "value": "Result: (2  5 / 3  4)(x / y) = (6 / 8), so A = (2  5 / 3  4), X = (x / y), B = (6 / 8)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Calculate the determinant of A.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "det A = (2)(4) - (5)(3) = 8 - 15"
+        },
+        {
+          "type": "text",
+          "value": "Result: det A = -7"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Form the adjugate and divide by the determinant to verify the given inverse.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Adjugate = (4  -5 / -3  2), so A inverse = (1/-7)(4  -5 / -3  2) = (-4/7  5/7 / 3/7  -2/7)"
+        },
+        {
+          "type": "text",
+          "value": "Result: The given inverse is confirmed"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Multiply the inverse by B to find X.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Top: (-4/7)(6) + (5/7)(8) = -24/7 + 40/7 = 16/7.  Bottom: (3/7)(6) + (-2/7)(8) = 18/7 - 16/7 = 2/7"
+        },
+        {
+          "type": "text",
+          "value": "Result: X = (16/7 / 2/7)"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "State and check the solution.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2(16/7) + 5(2/7) = 32/7 + 10/7 = 42/7 = 6, and 3(16/7) + 4(2/7) = 48/7 + 8/7 = 56/7 = 8"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 16/7 and y = 2/7"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Build A, X and B from the equations, compute the determinant, form the adjugate and divide to verify the given inverse, then multiply that inverse by B to obtain x and y."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) (2  5 / 3  4)(x / y) = (6 / 8)  (ii)a) det A = -7  b) A inverse = (1/-7)(4  -5 / -3  2) = (-4/7  5/7 / 3/7  -2/7) as required  c) x = 16/7 and y = 2/7"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Multiplying out AX reproduces the left-hand sides of the two equations, which is why the matrix form is equivalent to the original pair. Multiplying both sides of AX = B on the left by A inverse gives (A inverse A)X = A inverse B, and since A inverse A is the identity this isolates X. The negative determinant is not a problem: it simply flips the sign of every entry of the adjugate, which is exactly the pattern of signs in the given inverse."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "placing_the_constants_inside_a_or_writin",
+      "wrongValue": "incorrect_1",
+      "misconception": "Placing the constants inside A or writing X as a row matrix.",
+      "correctiveNote": "Avoid this: Placing the constants inside A or writing X as a row matrix."
+    },
+    {
+      "key": "losing_the_minus_sign_of_the_determinant",
+      "wrongValue": "incorrect_2",
+      "misconception": "Losing the minus sign of the determinant and getting the inverse with all signs reversed.",
+      "correctiveNote": "Avoid this: Losing the minus sign of the determinant and getting the inverse with all signs reversed."
+    },
+    {
+      "key": "multiplying_b_by_a_inverse_in_the_wrong_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Multiplying B by A inverse in the wrong order.",
+      "correctiveNote": "Avoid this: Multiplying B by A inverse in the wrong order."
+    },
+    {
+      "key": "converting_16_7_to_a_rounded_decimal_whe",
+      "wrongValue": "incorrect_4",
+      "misconception": "Converting 16/7 to a rounded decimal when an exact fraction is expected.",
+      "correctiveNote": "Avoid this: Converting 16/7 to a rounded decimal when an exact fraction is expected."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When a 'show that' gives you the inverse, still derive it yourself; you can then use the printed version with confidence in the next part even if your own arithmetic wobbled."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "(25/34)",
+    "displayValue": "(2 5 / 3 4)",
+    "acceptedForms": [
+      "(2 5 / 3 4)",
+      "(25/34)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Write 4x - y = 3 and x + 2y = 5 in the form AX = B."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(4-1/12)(x/y)=(3/5)",
+      "displayValue": "(4  -1 / 1  2)(x / y) = (3 / 5)",
+      "acceptedForms": [
+        "(4  -1 / 1  2)(x / y) = (3 / 5)",
+        "(4-1/12)(x/y)=(3/5)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "774a3238-69f8-48f6-a548-0f6ab3d2609c",
+      "code": "M2-4.1",
+      "label": "Matrix form of simultaneous equations"
+    },
+    {
+      "objectiveId": "ea24bc2a-f9d4-4bf8-ad2e-94d51f68fdf3",
+      "code": "M2-4.1",
+      "label": "Determinant of a 2x2 matrix"
+    },
+    {
+      "objectiveId": "e5bf8082-e04b-4ac8-adae-c6631b0ad8c2",
+      "code": "M2-4.1",
+      "label": "Inverse of a 2x2 matrix"
+    },
+    {
+      "objectiveId": "24cf4766-b82f-4fc5-abe2-dcd40a1c2063",
+      "code": "M2-4.1",
+      "label": "Solving AX = B by X = A inverse times B"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 12,
+    "pageRef": "p301",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a.i",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.i): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "(25/34)",
+        "displayValue": "(2 5 / 3 4)",
+        "acceptedForms": [
+          "(2 5 / 3 4)",
+          "(25/34)"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.ii",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.ii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "/y)=(6/8)(ii)",
+        "displayValue": "/ y) = (6 / 8) (ii)",
+        "acceptedForms": [
+          "/ y) = (6 / 8) (ii)",
+          "/y)=(6/8)(ii)"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

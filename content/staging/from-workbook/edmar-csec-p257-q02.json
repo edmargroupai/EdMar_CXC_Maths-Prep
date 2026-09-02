@@ -1,0 +1,184 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p257-q02",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "This crop is the last part, (iv), of question 16 on page 257, where triangle X has vertices (0, 2), (6, 2) and (4, 4): 'On the diagram, enlarge triangle X about the centre C(0, 0) by scale factor 1/2. Label this image W.'"
+    },
+    {
+      "type": "text",
+      "value": "Think first: An enlargement centred on the origin with a fractional scale factor simply multiplies each coordinate by that factor."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p257_q02.jpg",
+      "altText": "Source visual for edmar-csec-p257-q02 from workbook page 257."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write down the vertices of triangle X from the grid.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Read from the diagram of question 16"
+        },
+        {
+          "type": "text",
+          "value": "Result: (0, 2), (6, 2), (4, 4)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Multiply each coordinate by the scale factor, since the centre is the origin.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Image = (x/2, y/2)"
+        },
+        {
+          "type": "text",
+          "value": "Result: (0, 1), (3, 1), (2, 2)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Plot and join the three image points and label them W.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Each image point lies on the line from the origin to its object point, half as far out; every side is half as long as in X"
+        },
+        {
+          "type": "text",
+          "value": "Result: Triangle W with vertices (0, 1), (3, 1) and (2, 2)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Multiply each vertex of triangle X by 1/2, plot the three image points and join them, labelling the triangle W."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "Triangle W has vertices (0, 1), (3, 1) and (2, 2) — triangle X halved in size about the origin, with each side half the length of the corresponding side of X."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "An enlargement with centre the origin scales the position vector of every point, so the coordinates are simply multiplied by the scale factor. A factor between 0 and 1 still counts as an enlargement in mathematics even though the image is smaller; the shape stays similar to the object, with all angles unchanged and all lengths in the ratio 1 : 2."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "dividing_only_one_coordinate_or_subtract",
+      "wrongValue": "incorrect_1",
+      "misconception": "Dividing only one coordinate, or subtracting 1/2 instead of multiplying.",
+      "correctiveNote": "Avoid this: Dividing only one coordinate, or subtracting 1/2 instead of multiplying."
+    },
+    {
+      "key": "calling_a_scale_factor_of_1_2_a_reductio",
+      "wrongValue": "incorrect_2",
+      "misconception": "Calling a scale factor of 1/2 a 'reduction' and treating it as a different transformation.",
+      "correctiveNote": "Avoid this: Calling a scale factor of 1/2 a 'reduction' and treating it as a different transformation."
+    },
+    {
+      "key": "placing_the_image_on_the_wrong_side_of_t",
+      "wrongValue": "incorrect_3",
+      "misconception": "Placing the image on the wrong side of the origin by using a factor of −1/2.",
+      "correctiveNote": "Avoid this: Placing the image on the wrong side of the origin by using a factor of −1/2."
+    },
+    {
+      "key": "forgetting_to_label_the_image_w_as_instr",
+      "wrongValue": "incorrect_4",
+      "misconception": "Forgetting to label the image W as instructed.",
+      "correctiveNote": "Avoid this: Forgetting to label the image W as instructed."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "With centre (0, 0), an enlargement is just 'multiply both coordinates by k' — check by confirming the origin, object point and image point are in a straight line."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "TriangleWhasvertices(0,1),(3,1)and(2,2)—triangleXhalvedinsizeabouttheorigin,witheachsidehalfthe",
+    "displayValue": "Triangle W has vertices (0, 1), (3, 1) and (2, 2) — triangle X halved in size about the origin, with each side half the ",
+    "acceptedForms": [
+      "Triangle W has vertices (0, 1), (3, 1) and (2, 2) — triangle X halved in size about the origin, with each side half the ",
+      "TriangleWhasvertices(0,1),(3,1)and(2,2)—triangleXhalvedinsizeabouttheorigin,witheachsidehalfthe"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Enlarge (8, −6) about the origin by scale factor 1/2."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(4,−3).",
+      "displayValue": "(4, −3).",
+      "acceptedForms": [
+        "(4, −3).",
+        "(4,−3)."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "eed4c060-4e91-4061-a6cb-d64775647df7",
+      "code": "M1-1.1",
+      "label": "Enlargement about the origin"
+    },
+    {
+      "objectiveId": "8f573791-d2e5-4190-af71-03caeb577dfd",
+      "code": "M1-1.1",
+      "label": "Fractional scale factor"
+    },
+    {
+      "objectiveId": "f34bd06d-165c-4bb6-accf-f5cedfa2ae6e",
+      "code": "M1-1.1",
+      "label": "Image coordinates"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 2,
+    "pageRef": "p257",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

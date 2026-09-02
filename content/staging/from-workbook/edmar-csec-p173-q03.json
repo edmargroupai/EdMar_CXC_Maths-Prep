@@ -1,0 +1,215 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p173-q03",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A right-angled triangle has side lengths 9, 12 and 15, with the right angle between the sides 9 and 12. The acute angles are θ (between the 12-side and the hypotenuse) and φ (between the 9-side and the hypotenuse). a) Write the exact values of sin θ and cos φ, and hence state a relationship between them. b) Explain why θ + φ = 90°. c) Evaluate sin θ + cos θ exactly."
+    },
+    {
+      "type": "text",
+      "value": "Think first: θ and φ sit at opposite ends of the same hypotenuse, so what is 'opposite' for one is 'adjacent' for the other."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p173_q03.jpg",
+      "altText": "Source visual for edmar-csec-p173-q03 from workbook page 173."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write sin θ.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The side opposite θ is 9 and the hypotenuse is 15"
+        },
+        {
+          "type": "text",
+          "value": "Result: sin θ = 9/15 = 3/5"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Write cos φ.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The side adjacent to φ is 9 and the hypotenuse is 15"
+        },
+        {
+          "type": "text",
+          "value": "Result: cos φ = 9/15 = 3/5"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "State the relationship.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Both equal 3/5"
+        },
+        {
+          "type": "text",
+          "value": "Result: sin θ = cos φ"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Use the angle sum for part b.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The three angles total 180° and one of them is the right angle: θ + φ + 90 = 180"
+        },
+        {
+          "type": "text",
+          "value": "Result: θ + φ = 90°"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Find cos θ and add.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The side adjacent to θ is 12, so cos θ = 12/15 = 4/5; then 3/5 + 4/5"
+        },
+        {
+          "type": "text",
+          "value": "Result: sin θ + cos θ = 7/5"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Write each ratio from the triangle, notice the two fractions are identical, then use the angle sum to explain the complementary relationship."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) sin θ = 3/5 and cos φ = 3/5, so sin θ = cos φ  (b) The angles of a triangle sum to 180° and one angle is 90°, so θ + φ = 180° − 90° = 90°; the two acute angles are complementary  (c) sin θ + cos θ = 3/5 + 4/5 = 7/5"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "In a right-angled triangle the two acute angles must be complementary, because the right angle already uses half of the 180°. The side opposite one acute angle is the side adjacent to the other, so their sine and cosine swap roles: sin θ = cos(90° − θ). That identity is not a coincidence of these numbers — it holds for every right-angled triangle."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "using_the_hypotenuse_15_as_one_of_the_pe",
+      "wrongValue": "incorrect_1",
+      "misconception": "Using the hypotenuse 15 as one of the perpendicular sides.",
+      "correctiveNote": "Avoid this: Using the hypotenuse 15 as one of the perpendicular sides."
+    },
+    {
+      "key": "writing_cos_12_15_by_taking_the_wrong_si",
+      "wrongValue": "incorrect_2",
+      "misconception": "Writing cos φ = 12/15 by taking the wrong side as adjacent to φ.",
+      "correctiveNote": "Avoid this: Writing cos φ = 12/15 by taking the wrong side as adjacent to φ."
+    },
+    {
+      "key": "giving_sin_cos_as_a_decimal_such_as_1_4_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Giving sin θ + cos θ as a decimal such as 1.4 when the question asks for an exact value.",
+      "correctiveNote": "Avoid this: Giving sin θ + cos θ as a decimal such as 1.4 when the question asks for an exact value."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Memorise sin θ = cos(90° − θ); it turns many 'find the relationship' questions into a one-line answer."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "sinθ=3/5andcosφ=3/5,sosinθ=cosφ",
+    "displayValue": "sin θ = 3/5 and cos φ = 3/5, so sin θ = cos φ",
+    "acceptedForms": [
+      "sin θ = 3/5 and cos φ = 3/5, so sin θ = cos φ",
+      "sinθ=3/5andcosφ=3/5,sosinθ=cosφ"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "If sin 35° = 0.574, what is cos 55°?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_dp",
+      "canonicalValue": "0.574",
+      "displayValue": "0.574",
+      "acceptedForms": [
+        "0.574",
+        "0.574"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "precision": {
+        "kind": "decimal_places",
+        "value": 3,
+        "required": true
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "1ed272f9-bfd1-49a1-aaaa-72e3037717b9",
+      "code": "M1-1.1",
+      "label": "Sine and cosine ratios"
+    },
+    {
+      "objectiveId": "de48506f-1f20-4ee5-ac0c-7026ad1b3968",
+      "code": "M1-1.1",
+      "label": "Complementary angles"
+    },
+    {
+      "objectiveId": "56924625-bf87-4def-ad6a-804a5b14048c",
+      "code": "M1-1.1",
+      "label": "Angle sum of a triangle"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 3,
+    "pageRef": "p173",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p261-q01",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Part (i) of question 8 on this page: the trapezium A on the square grid has vertices (-5, 4), (-4, 4), (-3, 2) and (-5, 2). Draw the image of A after a reflection in the line x = -1 and label this image A'."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The mirror line x = -1 is vertical, so every point keeps its height and simply flips across to the other side of that line."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p261_q01.jpg",
+      "altText": "Source visual for edmar-csec-p261-q01 from workbook page 261."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Read the vertices of trapezium A from the grid.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Two on y = 4 and two on y = 2."
+        },
+        {
+          "type": "text",
+          "value": "Result: A: (-5, 4), (-4, 4), (-3, 2), (-5, 2)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Work out the rule for reflecting in the vertical line x = -1.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "A point at distance d to the left of x = -1 goes to distance d to the right, so x -> -1 + (-1 - x) = -2 - x, and y is unchanged."
+        },
+        {
+          "type": "text",
+          "value": "Result: (x, y) -> (-2 - x, y)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Apply the rule to each vertex.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(-5, 4) -> (3, 4);  (-4, 4) -> (2, 4);  (-3, 2) -> (1, 2);  (-5, 2) -> (3, 2)"
+        },
+        {
+          "type": "text",
+          "value": "Result: A': (3, 4), (2, 4), (1, 2), (3, 2)"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Plot the four image points and join them in the same order to draw A'.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Check: each vertex of A' is the same horizontal distance from x = -1 as its object, on the opposite side."
+        },
+        {
+          "type": "text",
+          "value": "Result: Trapezium A' drawn to the right of x = -1"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "For a reflection in x = -1, the image of (x, y) is (-2 - x, y). Apply this to each vertex of A, then plot and join the images."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "A' has vertices (3, 4), (2, 4), (1, 2) and (3, 2)."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Reflection fixes every point on the mirror line and sends every other point to the point the same perpendicular distance away on the opposite side. Because the mirror x = -1 is vertical, the perpendicular direction is horizontal, so heights are untouched and only x changes. The image is congruent to the object but its orientation is reversed."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "reflecting_in_the_y_axis_and_getting_5_4",
+      "wrongValue": "incorrect_1",
+      "misconception": "Reflecting in the y-axis and getting (5, 4) instead of (3, 4).",
+      "correctiveNote": "Avoid this: Reflecting in the y-axis and getting (5, 4) instead of (3, 4)."
+    },
+    {
+      "key": "counting_the_distance_to_the_mirror_line",
+      "wrongValue": "incorrect_2",
+      "misconception": "Counting the distance to the mirror line from the wrong side.",
+      "correctiveNote": "Avoid this: Counting the distance to the mirror line from the wrong side."
+    },
+    {
+      "key": "changing_the_y_coordinates_as_well_as_th",
+      "wrongValue": "incorrect_3",
+      "misconception": "Changing the y-coordinates as well as the x-coordinates.",
+      "correctiveNote": "Avoid this: Changing the y-coordinates as well as the x-coordinates."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "For a reflection in x = a, use x' = 2a - x; for a reflection in y = b, use y' = 2b - y. Test the formula on one vertex by counting squares before trusting it on the rest."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "A'hasvertices(3,4),(2,4),(1,2)and(3,2).",
+    "displayValue": "A' has vertices (3, 4), (2, 4), (1, 2) and (3, 2).",
+    "acceptedForms": [
+      "A' has vertices (3, 4), (2, 4), (1, 2) and (3, 2).",
+      "A'hasvertices(3,4),(2,4),(1,2)and(3,2)."
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Reflect the point (-6, 1) in the line x = -1."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(4,1)",
+      "displayValue": "(4, 1)",
+      "acceptedForms": [
+        "(4, 1)",
+        "(4,1)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "4c7def31-1639-4eac-a316-2ce122bc467b",
+      "code": "M1-1.1",
+      "label": "Reflection in a vertical line"
+    },
+    {
+      "objectiveId": "193347a8-b2af-4a14-aa49-440d03ec947d",
+      "code": "M1-1.1",
+      "label": "Perpendicular distance from a mirror line"
+    },
+    {
+      "objectiveId": "da9c25f5-f27d-477b-a98d-bbe83640b1fb",
+      "code": "M1-1.1",
+      "label": "Coordinates on a Cartesian grid"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 1,
+    "pageRef": "p261",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

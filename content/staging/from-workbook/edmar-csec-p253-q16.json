@@ -1,0 +1,293 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p253-q16",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 8,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A circle has centre O; EH and EF are tangents to the circle from the external point E, FOG and JOH are straight lines (diameters), and angle FEH = 44°. Calculate, giving reasons, (i) angle EHF, (ii) angle FGH, (iii) angle JHE, (iv) angle JGH."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Two tangents from the same external point are equal in length, so triangle EFH is isosceles — that gives the first angle and the rest follows."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p253_q16.jpg",
+      "altText": "Source visual for edmar-csec-p253-q16 from workbook page 253."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Use the equal tangents to make triangle EFH isosceles.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "EH = EF (tangents from an external point are equal), so ∠EHF = ∠EFH = (180 − 44) ÷ 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: ∠EHF = 68°"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Apply the alternate segment theorem at F.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "∠EFH is the angle between the tangent EF and the chord FH, so it equals the angle subtended by FH in the alternate segment, ∠FGH"
+        },
+        {
+          "type": "text",
+          "value": "Result: ∠FGH = 68°"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Use the tangent–radius right angle at H, remembering J, O, H are collinear.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "EH is a tangent and OH is a radius, so ∠OHE = 90°; since JOH is a straight line, ∠JHE is the same angle"
+        },
+        {
+          "type": "text",
+          "value": "Result: ∠JHE = 90°"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Use the diameter JH to find the angle it subtends at G.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "JOH is a diameter and G lies on the circumference, so ∠JGH is an angle in a semicircle"
+        },
+        {
+          "type": "text",
+          "value": "Result: ∠JGH = 90°"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Use the isosceles tangent triangle for angle EHF, carry that angle into the circle with the alternate segment theorem for angle FGH, then use the tangent–radius right angle and the semicircle right angle for the last two."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) ∠EHF = 68° (EH = EF, tangents from an external point are equal, so triangle EFH is isosceles: (180 − 44) ÷ 2)  (ii) ∠FGH = 68° (tangent–chord angle ∠EFH equals the angle in the alternate segment)  (iii) ∠JHE = 90° (the tangent EH is perpendicular to the radius OH, and J, O, H lie on a straight line)  (iv) ∠JGH = 90° (angle in a semicircle, since JOH is a diameter)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The two tangents from E are mirror images in the line OE, so the triangle they form with the chord FH is isosceles and the 44° at E splits the remaining 136° evenly. The alternate segment theorem then converts the tangent–chord angle at F into an angle standing on FH inside the circle. The last two parts use the two right angles that circles hand you free: tangent-to-radius, and any angle subtended by a diameter."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "halving_44_instead_of_halving_180_44",
+      "wrongValue": "incorrect_1",
+      "misconception": "Halving 44° instead of halving 180° − 44°.",
+      "correctiveNote": "Avoid this: Halving 44° instead of halving 180° − 44°."
+    },
+    {
+      "key": "matching_the_tangent_chord_angle_to_the_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Matching the tangent–chord angle to the angle in the wrong segment.",
+      "correctiveNote": "Avoid this: Matching the tangent–chord angle to the angle in the wrong segment."
+    },
+    {
+      "key": "missing_that_joh_being_a_straight_line_m",
+      "wrongValue": "incorrect_3",
+      "misconception": "Missing that JOH being a straight line makes ∠JHE the same as ∠OHE.",
+      "correctiveNote": "Avoid this: Missing that JOH being a straight line makes ∠JHE the same as ∠OHE."
+    },
+    {
+      "key": "assuming_fgh_and_jgh_must_be_different_s",
+      "wrongValue": "incorrect_4",
+      "misconception": "Assuming ∠FGH and ∠JGH must be different simply because they are different parts of the question.",
+      "correctiveNote": "Avoid this: Assuming ∠FGH and ∠JGH must be different simply because they are different parts of the question."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "With two tangents from one point, immediately mark the equal lengths and the two right angles at the points of contact — most of the working then falls out of one isosceles triangle."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "∠EHF=68°(EH=EF,tangentsfromanexternalpointareequal,sotriangleEFHisisosceles:(180−44)÷2)",
+    "displayValue": "∠EHF = 68° (EH = EF, tangents from an external point are equal, so triangle EFH is isosceles: (180 − 44) ÷ 2)",
+    "acceptedForms": [
+      "∠EHF = 68° (EH = EF, tangents from an external point are equal, so triangle EFH is isosceles: (180 − 44) ÷ 2)",
+      "∠EHF=68°(EH=EF,tangentsfromanexternalpointareequal,sotriangleEFHisisosceles:(180−44)÷2)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Two tangents from a point A touch a circle at B and C, and angle BAC = 50°. Find angle ABC."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "65",
+      "displayValue": "65",
+      "acceptedForms": [
+        "65",
+        "65"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "6942cfcf-4d02-45bd-aaed-0d148c7f3004",
+      "code": "M1-1.1",
+      "label": "Equal tangents from an external point"
+    },
+    {
+      "objectiveId": "18348c41-1a69-42dc-afe8-128eff77bace",
+      "code": "M1-1.1",
+      "label": "Base angles of an isosceles triangle"
+    },
+    {
+      "objectiveId": "8f949c06-dbc6-4602-a08d-55fd2e3edb62",
+      "code": "M1-1.1",
+      "label": "Alternate segment (tangent–chord) theorem"
+    },
+    {
+      "objectiveId": "2152aa6a-ba84-4689-abfe-f654cc6f241f",
+      "code": "M1-1.1",
+      "label": "Tangent perpendicular to radius; angle in a semicircle"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 16,
+    "pageRef": "p253",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a.i",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.i): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "∠EHF=68°(EH=EF,tangentsfromanexternalpointareequal,sotriangleEFHisisosceles:(180−44)÷2)",
+        "displayValue": "∠EHF = 68° (EH = EF, tangents from an external point are equal, so triangle EFH is isosceles: (180 − 44) ÷ 2)",
+        "acceptedForms": [
+          "∠EHF = 68° (EH = EF, tangents from an external point are equal, so triangle EFH is isosceles: (180 − 44) ÷ 2)",
+          "∠EHF=68°(EH=EF,tangentsfromanexternalpointareequal,sotriangleEFHisisosceles:(180−44)÷2)"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.ii",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.ii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "∠FGH=68°(tangent–chor",
+        "displayValue": "∠FGH = 68° (tangent–chor",
+        "acceptedForms": [
+          "∠FGH = 68° (tangent–chor",
+          "∠FGH=68°(tangent–chor"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.iii",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.iii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "∠JHE=90°(thetangentEHisperpendiculartotheradiusOH,an",
+        "displayValue": "∠JHE = 90° (the tangent EH is perpendicular to the radius OH, an",
+        "acceptedForms": [
+          "∠JHE = 90° (the tangent EH is perpendicular to the radius OH, an",
+          "∠JHE=90°(thetangentEHisperpendiculartotheradiusOH,an"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.iv",
+      "sequence": 4,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.iv): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "∠JGH=90°(anglein",
+        "displayValue": "∠JGH = 90° (angle in",
+        "acceptedForms": [
+          "∠JGH = 90° (angle in",
+          "∠JGH=90°(anglein"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

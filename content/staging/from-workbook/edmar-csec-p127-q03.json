@@ -1,0 +1,229 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p127-q03",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The endpoints of a line segment are C(1.5, −2) and D(6.5, 4). (a) Determine the coordinates of the midpoint. (b) Calculate the length CD, giving the answer in exact form and to 3 significant figures."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Decimal coordinates change nothing — the same two formulas apply."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p127_q03.jpg",
+      "altText": "Source visual for edmar-csec-p127-q03 from workbook page 127."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Average the x-coordinates for the midpoint.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(1.5 + 6.5)/2 = 8/2"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 4"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Average the y-coordinates.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(−2 + 4)/2 = 2/2"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 1"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "State the midpoint.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Combine the averages"
+        },
+        {
+          "type": "text",
+          "value": "Result: M(4, 1)"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Find the horizontal and vertical changes.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x: 6.5 − 1.5 = 5;  y: 4 − (−2) = 6"
+        },
+        {
+          "type": "text",
+          "value": "Result: 5 across and 6 up"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Apply the distance formula and leave the surd.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "CD = √(5² + 6²) = √(25 + 36)"
+        },
+        {
+          "type": "text",
+          "value": "Result: CD = √61 (exact)"
+        }
+      ]
+    },
+    {
+      "stepNo": 6,
+      "instruction": "Evaluate and round to 3 significant figures.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "√61 = 7.8102..."
+        },
+        {
+          "type": "text",
+          "value": "Result: CD ≈ 7.81 units"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Average the coordinates for the midpoint, then use the distance formula, leaving the surd for the exact answer before rounding."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) Midpoint = (4, 1)  (b) CD = √61 units exactly, which is 7.81 units to 3 significant figures"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Exact form means leaving the surd untouched, because √61 is an irrational number that no decimal can capture perfectly. Rounding is done only at the very end, after all the squaring and adding, so no accuracy is lost along the way. The midpoint calculation is unaffected by the decimals since averaging works identically for any real numbers."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "rounding_61_during_the_working_and_then_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Rounding √61 during the working and then squaring the rounded value.",
+      "correctiveNote": "Avoid this: Rounding √61 during the working and then squaring the rounded value."
+    },
+    {
+      "key": "giving_7_8_or_7_810_instead_of_3_signifi",
+      "wrongValue": "incorrect_2",
+      "misconception": "Giving 7.8 or 7.810 instead of 3 significant figures.",
+      "correctiveNote": "Avoid this: Giving 7.8 or 7.810 instead of 3 significant figures."
+    },
+    {
+      "key": "subtracting_the_y_coordinates_as_4_2_and",
+      "wrongValue": "incorrect_3",
+      "misconception": "Subtracting the y-coordinates as 4 − 2 and getting a vertical change of 2.",
+      "correctiveNote": "Avoid this: Subtracting the y-coordinates as 4 − 2 and getting a vertical change of 2."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When a question asks for exact form, leave the surd — writing only a decimal loses the exact-answer mark even if the rounding is right."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Midpoint=(4,1)",
+    "displayValue": "Midpoint = (4, 1)",
+    "acceptedForms": [
+      "Midpoint = (4, 1)",
+      "Midpoint=(4,1)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Find the exact length of the segment joining (1, 1) and (4, 5)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "5",
+      "displayValue": "5",
+      "acceptedForms": [
+        "5",
+        "5"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-3.2"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "2448b58e-0173-455e-abb2-4bfef6fffc55",
+      "code": "M1-3.2",
+      "label": "Midpoint of a line segment"
+    },
+    {
+      "objectiveId": "c8a193e2-5e57-4def-add7-94d2523b45bb",
+      "code": "M1-3.2",
+      "label": "Length of a line segment"
+    },
+    {
+      "objectiveId": "460abd43-14d9-484c-a02a-9c65f687f522",
+      "code": "M1-3.2",
+      "label": "Pythagoras' theorem"
+    },
+    {
+      "objectiveId": "4c68460c-df02-4e06-a514-4d1c2069fea4",
+      "code": "M1-3.2",
+      "label": "Surds and significant figures"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 3,
+    "pageRef": "p127",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

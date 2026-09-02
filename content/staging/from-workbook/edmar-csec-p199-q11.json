@@ -1,0 +1,243 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p199-q11",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 6,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A = (1 2 / 0 3) and B = (4 −1 / 2 5). (a) Calculate AB. (b) Calculate BA. (c) Hence show that matrix multiplication is not commutative for A and B."
+    },
+    {
+      "type": "text",
+      "value": "Think first: You must do the two multiplications separately — the order of the letters changes which rows meet which columns."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p199_q11.jpg",
+      "altText": "Source visual for edmar-csec-p199-q11 from workbook page 199."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply the rows of A into the columns of B.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "1(4) + 2(2) = 8; 1(−1) + 2(5) = 9; 0(4) + 3(2) = 6; 0(−1) + 3(5) = 15"
+        },
+        {
+          "type": "text",
+          "value": "Result: AB = (8 9 / 6 15)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Now multiply the rows of B into the columns of A.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "4(1) + (−1)(0) = 4; 4(2) + (−1)(3) = 5; 2(1) + 5(0) = 2; 2(2) + 5(3) = 19"
+        },
+        {
+          "type": "text",
+          "value": "Result: BA = (4 5 / 2 19)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Compare the two products.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "8 ≠ 4 in the top-left position alone is enough."
+        },
+        {
+          "type": "text",
+          "value": "Result: AB ≠ BA"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Compute AB with rows of A into columns of B, compute BA with rows of B into columns of A, then compare the two results entry by entry."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) AB = (8 9 / 6 15)  (b) BA = (4 5 / 2 19)  (c) The two products differ — for example the entry in row 1, column 1 is 8 in AB but 4 in BA — so AB ≠ BA and matrix multiplication is not commutative for these matrices."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "In a product, the first matrix supplies the rows and the second supplies the columns, so swapping the letters changes every pairing. That is why AB and BA are generally different matrices even when both are defined and the same size. One mismatched entry is all that is needed to prove non-commutativity."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "calculating_ab_and_then_writing_the_same",
+      "wrongValue": "incorrect_1",
+      "misconception": "Calculating AB and then writing the same answer for BA.",
+      "correctiveNote": "Avoid this: Calculating AB and then writing the same answer for BA."
+    },
+    {
+      "key": "mixing_rows_of_a_with_rows_of_b",
+      "wrongValue": "incorrect_2",
+      "misconception": "Mixing rows of A with rows of B.",
+      "correctiveNote": "Avoid this: Mixing rows of A with rows of B."
+    },
+    {
+      "key": "answering_c_with_a_general_statement_ins",
+      "wrongValue": "incorrect_3",
+      "misconception": "Answering (c) with a general statement instead of pointing to the actual difference in the computed matrices.",
+      "correctiveNote": "Avoid this: Answering (c) with a general statement instead of pointing to the actual difference in the computed matrices."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "For a 'show that' part, quote the specific entries that differ — a bare 'they are not equal' rarely earns the mark."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "A",
+    "displayValue": "A",
+    "acceptedForms": [
+      "A",
+      "A"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Calculate (2 0 / 0 2) × (1 5 / 3 4)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(210/68)",
+      "displayValue": "(2 10 / 6 8)",
+      "acceptedForms": [
+        "(2 10 / 6 8)",
+        "(210/68)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "c3ff17f1-3b04-4157-aaf3-3cc66fe15e75",
+      "code": "M2-4.1",
+      "label": "Matrix multiplication"
+    },
+    {
+      "objectiveId": "21592250-1729-4465-a727-9c62bee92e39",
+      "code": "M2-4.1",
+      "label": "Row-by-column rule"
+    },
+    {
+      "objectiveId": "d3d89758-cdba-4e82-ae83-724cbd3c3921",
+      "code": "M2-4.1",
+      "label": "Commutativity"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 11,
+    "pageRef": "p199",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "A",
+        "displayValue": "A",
+        "acceptedForms": [
+          "A",
+          "A"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "=(89/615)",
+        "displayValue": "= (8 9 / 6 15)",
+        "acceptedForms": [
+          "= (8 9 / 6 15)",
+          "=(89/615)"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "c",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (c): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Thetwoproductsdiffer—forexampletheentryinrow1,column1is8inA",
+        "displayValue": "The two products differ — for example the entry in row 1, column 1 is 8 in A",
+        "acceptedForms": [
+          "The two products differ — for example the entry in row 1, column 1 is 8 in A",
+          "Thetwoproductsdiffer—forexampletheentryinrow1,column1is8inA"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p248-q13",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "W, X and U lie on a circle, TV is a tangent to the circle at U, UW is a diameter and triangle WXU is isosceles (WX = XU). Angle z is the angle between the chord UX and the tangent UV. Using appropriate theorems, state three reasons explaining why z = 45°."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Build the 45° in three linked steps: a right angle from the diameter, equal base angles from the isosceles triangle, then the tangent–chord link."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p248_q13.jpg",
+      "altText": "Source visual for edmar-csec-p248-q13 from workbook page 248."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Use the diameter to fix the angle at X.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "UW is a diameter and X is on the circumference, so ∠WXU is the angle in a semicircle"
+        },
+        {
+          "type": "text",
+          "value": "Result: ∠WXU = 90°"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Share the remaining angle sum between the two equal base angles.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Triangle WXU is isosceles with WX = XU, so ∠XWU = ∠XUW = (180 − 90) ÷ 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: ∠XWU = ∠XUW = 45°"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Transfer the base angle to the tangent using the alternate segment theorem.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "z is the angle between the tangent UV and the chord UX, so it equals the angle subtended by UX in the alternate segment, ∠XWU"
+        },
+        {
+          "type": "text",
+          "value": "Result: z = 45°"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Get the right angle at X from the diameter, split the remaining 90° equally between the two base angles, then carry ∠XWU across to the tangent using the alternate segment theorem."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "Reason 1: ∠WXU = 90°, the angle in a semicircle, because UW is a diameter.  Reason 2: triangle WXU is isosceles with WX = XU, so the base angles are equal and ∠XUW = ∠XWU = (180 − 90) ÷ 2 = 45°.  Reason 3: z = ∠XUV is the angle between the tangent TV and the chord UX, which equals the angle in the alternate segment, ∠XWU = 45°. (Equivalently, the tangent is perpendicular to the diameter UW, so z = 90° − ∠XUW = 45°.)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The diameter guarantees a right angle at X, which leaves exactly 90° to be shared between the two base angles; equal sides force them to be equal, so each is 45°. The alternate segment theorem then says the tangent makes the same angle with a chord as that chord subtends from the far arc, so the 45° found inside the triangle is repeated between the tangent and UX."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "assuming_the_triangle_is_isosceles_about",
+      "wrongValue": "incorrect_1",
+      "misconception": "Assuming the triangle is isosceles about the wrong pair of sides, giving base angles at the wrong vertices.",
+      "correctiveNote": "Avoid this: Assuming the triangle is isosceles about the wrong pair of sides, giving base angles at the wrong vertices."
+    },
+    {
+      "key": "using_the_tangent_radius_right_angle_but",
+      "wrongValue": "incorrect_2",
+      "misconception": "Using the tangent–radius right angle but forgetting to subtract the 45°.",
+      "correctiveNote": "Avoid this: Using the tangent–radius right angle but forgetting to subtract the 45°."
+    },
+    {
+      "key": "stating_the_answer_as_45_because_the_dia",
+      "wrongValue": "incorrect_3",
+      "misconception": "Stating the answer as '45° because the diagram looks symmetrical' with no theorem named.",
+      "correctiveNote": "Avoid this: Stating the answer as '45° because the diagram looks symmetrical' with no theorem named."
+    },
+    {
+      "key": "naming_only_two_reasons_when_the_questio",
+      "wrongValue": "incorrect_4",
+      "misconception": "Naming only two reasons when the question explicitly asks for three.",
+      "correctiveNote": "Avoid this: Naming only two reasons when the question explicitly asks for three."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Number your reasons 1, 2, 3 to match the spaces given — the mark scheme awards one mark per distinct theorem."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Reason1:∠WXU=90°,theangleinasemicircle,becauseUWisadiameter.Reason2:triangleWXUisisosceleswithWX",
+    "displayValue": "Reason 1: ∠WXU = 90°, the angle in a semicircle, because UW is a diameter.  Reason 2: triangle WXU is isosceles with WX ",
+    "acceptedForms": [
+      "Reason 1: ∠WXU = 90°, the angle in a semicircle, because UW is a diameter.  Reason 2: triangle WXU is isosceles with WX ",
+      "Reason1:∠WXU=90°,theangleinasemicircle,becauseUWisadiameter.Reason2:triangleWXUisisosceleswithWX"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A tangent at U meets chord UX so that the angle between them is 62°. What is the angle subtended by UX in the alternate segment?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "62",
+      "displayValue": "62",
+      "acceptedForms": [
+        "62",
+        "62"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "7a177429-1dbd-40ff-a49c-a66acc3cb19c",
+      "code": "M1-1.1",
+      "label": "Angle in a semicircle"
+    },
+    {
+      "objectiveId": "94629e81-97e7-4337-a4fe-ab970602cea6",
+      "code": "M1-1.1",
+      "label": "Base angles of an isosceles triangle"
+    },
+    {
+      "objectiveId": "142ae327-18cd-4178-afba-475664a4901c",
+      "code": "M1-1.1",
+      "label": "Alternate segment (tangent–chord) theorem"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 13,
+    "pageRef": "p248",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

@@ -1,0 +1,196 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p065-q20",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Simplify (10 × 5x³) / (25x²)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Only the x terms carry indices here; the 10 is a plain number."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p065_q20.jpg",
+      "altText": "Source visual for edmar-csec-p065-q20 from workbook page 65."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply the coefficients in the numerator.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "10 × 5 = 50"
+        },
+        {
+          "type": "text",
+          "value": "Result: 50x³"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Divide the coefficients.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "50 ÷ 25 = 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Subtract the indices.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x³ ÷ x² = x^(3−2)"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2x"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Write the answer.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x¹ is written simply as x"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2x"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Multiply the numerator out, then divide the coefficients and subtract the indices."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(10 × 5x³) / (25x²) = 2x"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A term with no visible index has index 1, so x³ ÷ x² leaves x¹, written as x. The numbers and the letters are independent factors, which is why the coefficients can be divided separately from the powers. Recognising that the constant 10 carries no x at all keeps it out of the index arithmetic."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "giving_x_by_dividing_the_indices_instead",
+      "wrongValue": "incorrect_1",
+      "misconception": "Giving x² by dividing the indices instead of subtracting.",
+      "correctiveNote": "Avoid this: Giving x² by dividing the indices instead of subtracting."
+    },
+    {
+      "key": "leaving_the_answer_as_2x_rather_than_2x",
+      "wrongValue": "incorrect_2",
+      "misconception": "Leaving the answer as 2x¹ rather than 2x.",
+      "correctiveNote": "Avoid this: Leaving the answer as 2x¹ rather than 2x."
+    },
+    {
+      "key": "multiplying_10_by_25_somewhere_in_the_wo",
+      "wrongValue": "incorrect_3",
+      "misconception": "Multiplying 10 by 25 somewhere in the working.",
+      "correctiveNote": "Avoid this: Multiplying 10 by 25 somewhere in the working."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Treat a bare number in a product as having x⁰; it makes clear that it contributes nothing to the index calculation."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "(10×5x³)/(25x²)=2x",
+    "displayValue": "(10 × 5x³) / (25x²) = 2x",
+    "acceptedForms": [
+      "(10 × 5x³) / (25x²) = 2x",
+      "(10×5x³)/(25x²)=2x"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Simplify (6 × 4x⁵) / (8x³)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "3",
+      "displayValue": "3",
+      "acceptedForms": [
+        "3",
+        "3"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "d6d4caad-4f3d-4485-a923-a25065efbec8",
+      "code": "M1-4.1",
+      "label": "Laws of indices"
+    },
+    {
+      "objectiveId": "348a7671-98bb-42ac-a16c-f070468c16bc",
+      "code": "M1-4.1",
+      "label": "Division law"
+    },
+    {
+      "objectiveId": "f2b63e35-f015-47d9-a35d-88ee046545cd",
+      "code": "M1-4.1",
+      "label": "Simplifying numerical coefficients"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 20,
+    "pageRef": "p65",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

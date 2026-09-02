@@ -1,0 +1,210 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p064-q17",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Simplify (6x² × 4x⁻⁵) / (12x³)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: A negative index is handled by the same addition and subtraction rules as a positive one."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p064_q17.jpg",
+      "altText": "Source visual for edmar-csec-p064-q17 from workbook page 64."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply the coefficients in the numerator.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "6 × 4 = 24"
+        },
+        {
+          "type": "text",
+          "value": "Result: 24"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Add the indices in the numerator.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x² × x⁻⁵ = x^(2 + (−5))"
+        },
+        {
+          "type": "text",
+          "value": "Result: 24x⁻³"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Divide the coefficients.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "24 ÷ 12 = 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Subtract the indices.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x⁻³ ÷ x³ = x^(−3−3)"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2x⁻⁶"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Write the negative index as a fraction.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x⁻⁶ = 1/x⁶"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2/x⁶"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Combine the numerator by adding indices, divide by the denominator by subtracting indices, then rewrite the negative index as a fraction."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(6x² × 4x⁻⁵) / (12x³) = 2x⁻⁶, that is 2/x⁶"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The index laws are defined so that they keep working when the index is negative or zero. A negative index simply records division rather than multiplication, so x⁻⁶ means 1/x⁶. Because the rules extend consistently, you can add and subtract the indices exactly as usual and only convert to a fraction at the very end."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "adding_2_and_5_instead_of_2_and_5",
+      "wrongValue": "incorrect_1",
+      "misconception": "Adding 2 and 5 instead of 2 and −5.",
+      "correctiveNote": "Avoid this: Adding 2 and 5 instead of 2 and −5."
+    },
+    {
+      "key": "moving_the_whole_term_coefficient_includ",
+      "wrongValue": "incorrect_2",
+      "misconception": "Moving the whole term, coefficient included, into the denominator to give 1/(2x⁶).",
+      "correctiveNote": "Avoid this: Moving the whole term, coefficient included, into the denominator to give 1/(2x⁶)."
+    },
+    {
+      "key": "changing_the_sign_of_the_index_at_the_wr",
+      "wrongValue": "incorrect_3",
+      "misconception": "Changing the sign of the index at the wrong stage of the working.",
+      "correctiveNote": "Avoid this: Changing the sign of the index at the wrong stage of the working."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Keep the indices negative through the working and convert to a fraction only in the final line; converting early makes the subtraction step much harder to control."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "(6x²×4x⁻⁵)/(12x³)=2x⁻⁶,thatis2/x⁶",
+    "displayValue": "(6x² × 4x⁻⁵) / (12x³) = 2x⁻⁶, that is 2/x⁶",
+    "acceptedForms": [
+      "(6x² × 4x⁻⁵) / (12x³) = 2x⁻⁶, that is 2/x⁶",
+      "(6x²×4x⁻⁵)/(12x³)=2x⁻⁶,thatis2/x⁶"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Simplify (10x³ × 2x⁻⁴) / (5x²)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "4",
+      "displayValue": "4",
+      "acceptedForms": [
+        "4",
+        "4"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "971dfe0a-9bce-4525-a154-38d24352c68a",
+      "code": "M1-4.1",
+      "label": "Laws of indices"
+    },
+    {
+      "objectiveId": "4ca038cf-15a6-4340-ac06-f6325632f8e8",
+      "code": "M1-4.1",
+      "label": "Negative indices"
+    },
+    {
+      "objectiveId": "8a505946-7e58-4f0d-a51f-2824ca377800",
+      "code": "M1-4.1",
+      "label": "Multiplication and division laws for indices"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 17,
+    "pageRef": "p64",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

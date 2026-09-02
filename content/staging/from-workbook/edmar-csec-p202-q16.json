@@ -1,0 +1,246 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p202-q16",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 4,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A shop sells notebooks, pens and rulers on Monday and Tuesday. The quantity matrix Q = (8 12 5 / 10 9 7) has row 1 for Monday and row 2 for Tuesday, and the price matrix p = (6 / 3 / 4) gives the price in dollars of a notebook, a pen and a ruler. (a) State why the product Qp is defined. (b) Calculate Qp. (c) Interpret each element of Qp in the context of the question."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Multiplying quantities by prices in the right order gives money, and the row-by-column rule does the whole calculation in one go."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p202_q16.jpg",
+      "altText": "Source visual for edmar-csec-p202-q16 from workbook page 202."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Compare the columns of Q with the rows of p.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Q is 2 × 3 and p is 3 × 1; the inner numbers are both 3."
+        },
+        {
+          "type": "text",
+          "value": "Result: Qp is defined, order 2 × 1"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Multiply the Monday row into the price column.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "8(6) + 12(3) + 5(4) = 48 + 36 + 20"
+        },
+        {
+          "type": "text",
+          "value": "Result: 104"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Multiply the Tuesday row into the price column.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "10(6) + 9(3) + 7(4) = 60 + 27 + 28"
+        },
+        {
+          "type": "text",
+          "value": "Result: 115"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Write the product as a column and attach the meaning.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Each entry pairs quantities with the matching prices and adds."
+        },
+        {
+          "type": "text",
+          "value": "Result: Qp = (104 / 115) dollars"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Check that the 3 columns of Q match the 3 rows of p, multiply each day's row into the price column, then read the answers as money."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) Q has 3 columns and p has 3 rows; since these agree, Qp is defined and has order 2 × 1  (b) Qp = (104 / 115)  (c) The first element, 104, is the total money in dollars taken on Monday; the second element, 115, is the total money in dollars taken on Tuesday."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Each entry of Qp multiplies every quantity by the price of that same item and adds the results, which is exactly how a shop totals a day's takings. Putting the prices in a column is what lines each price up with its own column of quantities. If the price matrix were written as a row, the product would not be defined at all."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "trying_to_compute_pq_which_is_not_define",
+      "wrongValue": "incorrect_1",
+      "misconception": "Trying to compute pQ, which is not defined.",
+      "correctiveNote": "Avoid this: Trying to compute pQ, which is not defined."
+    },
+    {
+      "key": "pairing_the_wrong_price_with_an_item_by_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Pairing the wrong price with an item by writing the prices in a different order.",
+      "correctiveNote": "Avoid this: Pairing the wrong price with an item by writing the prices in a different order."
+    },
+    {
+      "key": "giving_the_answer_as_a_number_without_sa",
+      "wrongValue": "incorrect_3",
+      "misconception": "Giving the answer as a number without saying it is money for a particular day.",
+      "correctiveNote": "Avoid this: Giving the answer as a number without saying it is money for a particular day."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "In a costing question, arrange quantities as rows and prices as a column — the shape then guarantees the arithmetic pairs correctly."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Qhas3columnsan",
+    "displayValue": "Q has 3 columns an",
+    "acceptedForms": [
+      "Q has 3 columns an",
+      "Qhas3columnsan"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "If Wednesday's sales were 5 notebooks, 4 pens and 2 rulers, what were the takings at the same prices?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "currency",
+      "canonicalValue": "5.00",
+      "displayValue": "$5",
+      "acceptedForms": [
+        "$5",
+        "$5",
+        "5"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.005
+      },
+      "precision": {
+        "kind": "decimal_places",
+        "value": 2,
+        "required": true
+      },
+      "normalisation": "currency_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "fc28a027-a1b2-4ed6-ad5e-0cdaccb9558b",
+      "code": "M2-4.1",
+      "label": "Conformability for multiplication"
+    },
+    {
+      "objectiveId": "9be8fa9f-d976-423c-a126-03050a19a800",
+      "code": "M2-4.1",
+      "label": "Matrix multiplication"
+    },
+    {
+      "objectiveId": "27b4c13b-e20d-4131-a5a1-0b233c86c0e9",
+      "code": "M2-4.1",
+      "label": "Interpreting a matrix product in context"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 16,
+    "pageRef": "p202",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Qhas3columnsan",
+        "displayValue": "Q has 3 columns an",
+        "acceptedForms": [
+          "Q has 3 columns an",
+          "Qhas3columnsan"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Qp=(104/115)",
+        "displayValue": "Qp = (104 / 115)",
+        "acceptedForms": [
+          "Qp = (104 / 115)",
+          "Qp=(104/115)"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

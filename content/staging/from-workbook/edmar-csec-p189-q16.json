@@ -1,0 +1,197 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p189-q16",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "In triangle OAB, M is the midpoint of OA and N is the midpoint of OB, with OA = a and OB = b. (a) Express OM and ON in terms of a and b. (b) Show that MN = ½(b − a). (c) State TWO geometric relationships between MN and AB."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Halving each side from O gives the two midpoints immediately, and the segment joining them is just the difference of those halves."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p189_q16.jpg",
+      "altText": "Source visual for edmar-csec-p189-q16 from workbook page 189."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Halve OA and OB to reach the two midpoints.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "M is halfway along OA and N is halfway along OB."
+        },
+        {
+          "type": "text",
+          "value": "Result: OM = ½a, ON = ½b"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Route the journey from M to N through O.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "MN = MO + ON = −½a + ½b"
+        },
+        {
+          "type": "text",
+          "value": "Result: MN = ½(b − a)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Write AB in terms of a and b.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "AB = AO + OB = −a + b"
+        },
+        {
+          "type": "text",
+          "value": "Result: AB = b − a"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Compare MN with AB.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "MN = ½AB, a scalar multiple, so the two segments point the same way."
+        },
+        {
+          "type": "text",
+          "value": "Result: MN is parallel to AB and half its length"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Write OM and ON as halves of a and b, form MN = ON − OM, then compare the result with AB = b − a."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) OM = ½a and ON = ½b  (b) MN = MO + ON = −½a + ½b = ½(b − a)  (c) MN is parallel to AB, and MN is half the length of AB."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "When one vector is a scalar multiple of another, the two line segments must be parallel, and the size of the scalar gives the ratio of their lengths. Here the scalar is ½, so MN is parallel to AB and exactly half as long. This is the midpoint theorem, proved by algebra rather than by congruent triangles."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_mn_a_b_by_taking_the_journey_in_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing MN = ½a − ½b by taking the journey in the wrong direction.",
+      "correctiveNote": "Avoid this: Writing MN = ½a − ½b by taking the journey in the wrong direction."
+    },
+    {
+      "key": "saying_mn_equals_ab_because_both_are_b_a",
+      "wrongValue": "incorrect_2",
+      "misconception": "Saying MN equals AB because both are ½(b − a) in form, ignoring the factor.",
+      "correctiveNote": "Avoid this: Saying MN equals AB because both are ½(b − a) in form, ignoring the factor."
+    },
+    {
+      "key": "giving_only_one_geometric_relationship_w",
+      "wrongValue": "incorrect_3",
+      "misconception": "Giving only one geometric relationship when two are asked for.",
+      "correctiveNote": "Avoid this: Giving only one geometric relationship when two are asked for."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Whenever a vector answer comes out as k times another vector, say the word 'parallel' — that is the mark the examiner is looking for."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "OM=½aandON=½b",
+    "displayValue": "OM = ½a and ON = ½b",
+    "acceptedForms": [
+      "OM = ½a and ON = ½b",
+      "OM=½aandON=½b"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "In the same triangle, P is the midpoint of AB. Express MP in terms of a and b."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "OP=½(a+b),soMP=OP−OM=½(a+b)−½a=½b",
+      "displayValue": "OP = ½(a + b), so MP = OP − OM = ½(a + b) − ½a = ½b",
+      "acceptedForms": [
+        "OP = ½(a + b), so MP = OP − OM = ½(a + b) − ½a = ½b",
+        "OP=½(a+b),soMP=OP−OM=½(a+b)−½a=½b"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "26234fe9-99c7-48e6-acba-e5d2ab0c1aa5",
+      "code": "M2-5.1",
+      "label": "Vector addition and subtraction"
+    },
+    {
+      "objectiveId": "266bd79f-823e-4e9a-a12f-600619069d2b",
+      "code": "M2-5.1",
+      "label": "Midpoints in vector form"
+    },
+    {
+      "objectiveId": "313b1598-c6d7-4b06-a28a-efe70f15781f",
+      "code": "M2-5.1",
+      "label": "Scalar multiple of a vector"
+    },
+    {
+      "objectiveId": "a71ae291-f2bc-4a72-ad12-7e5853b1a884",
+      "code": "M2-5.1",
+      "label": "Midpoint theorem for a triangle"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 16,
+    "pageRef": "p189",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

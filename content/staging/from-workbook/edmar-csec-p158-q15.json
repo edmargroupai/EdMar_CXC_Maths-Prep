@@ -1,0 +1,197 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p158-q15",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Using a ruler, a pencil and a pair of compasses: (i) Construct accurately the square ABCD with sides 6 cm."
+    },
+    {
+      "type": "text",
+      "value": "Think first: One accurately constructed right angle is all a square needs — the rest is equal arcs of 6 cm."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p158_q15.jpg",
+      "altText": "Source visual for edmar-csec-p158-q15 from workbook page 158."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Draw a base line and mark AB = 6 cm.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: AB = 6 cm"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Construct a perpendicular to AB at A.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Arcs of equal radius each side of A on the line, then equal larger arcs from those two points crossing above A"
+        },
+        {
+          "type": "text",
+          "value": "Result: 90° at A"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Mark D on the perpendicular with AD = 6 cm.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Compasses set to 6 cm, centre A"
+        },
+        {
+          "type": "text",
+          "value": "Result: AD = 6 cm"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Draw arcs of radius 6 cm from B and from D; call the crossing point C.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: C fixed"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Join BC and DC, then check the figure.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "All four sides 6 cm; each diagonal should measure 6√2 ≈ 8.5 cm"
+        },
+        {
+          "type": "text",
+          "value": "Result: square ABCD complete"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Draw AB = 6 cm, construct a perpendicular at A, mark D 6 cm along it, then cut arcs of radius 6 cm from B and D to locate C."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) A square ABCD with all four sides 6 cm and all angles 90°. Accuracy check: each diagonal measures 6√2 ≈ 8.5 cm."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A quadrilateral with four equal sides and one right angle must be a square: the equal arcs guarantee the rhombus, and the constructed perpendicular upgrades it to a square. Because the construction uses only compasses and a straight edge, the right angle is exact rather than eyeballed."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "using_a_protractor_or_set_square_instead",
+      "wrongValue": "incorrect_1",
+      "misconception": "Using a protractor or set square instead of compasses.",
+      "correctiveNote": "Avoid this: Using a protractor or set square instead of compasses."
+    },
+    {
+      "key": "setting_the_compasses_to_slightly_differ",
+      "wrongValue": "incorrect_2",
+      "misconception": "Setting the compasses to slightly different radii for the two 6 cm arcs, so C is off.",
+      "correctiveNote": "Avoid this: Setting the compasses to slightly different radii for the two 6 cm arcs, so C is off."
+    },
+    {
+      "key": "erasing_construction_arcs_before_the_wor",
+      "wrongValue": "incorrect_3",
+      "misconception": "Erasing construction arcs before the work is marked.",
+      "correctiveNote": "Avoid this: Erasing construction arcs before the work is marked."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Keep the compasses locked at 6 cm for every side arc — reopening them mid-construction is the commonest source of a lopsided square."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "AsquareABCDwithallfoursides6cmandallangles90°.Accuracycheck:eachdiagonalmeasures6√2≈8.5cm.",
+    "displayValue": "A square ABCD with all four sides 6 cm and all angles 90°. Accuracy check: each diagonal measures 6√2 ≈ 8.5 cm.",
+    "acceptedForms": [
+      "A square ABCD with all four sides 6 cm and all angles 90°. Accuracy check: each diagonal measures 6√2 ≈ 8.5 cm.",
+      "AsquareABCDwithallfoursides6cmandallangles90°.Accuracycheck:eachdiagonalmeasures6√2≈8.5cm."
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "What angle does a diagonal of a square make with a side?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "45",
+      "displayValue": "45",
+      "acceptedForms": [
+        "45",
+        "45"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "f55bdd1c-bc27-41ac-ac36-a36af765b464",
+      "code": "M1-1.1",
+      "label": "Constructing a perpendicular at a point on a line"
+    },
+    {
+      "objectiveId": "bbb4cd0d-0aeb-4d55-ac14-c94398b17b70",
+      "code": "M1-1.1",
+      "label": "Properties of a square"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 15,
+    "pageRef": "p158",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

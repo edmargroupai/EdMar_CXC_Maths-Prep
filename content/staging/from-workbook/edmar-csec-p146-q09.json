@@ -1,0 +1,206 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p146-q09",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Given that f(x) = (2x + 1)/3 and g(x) = 4x + 5, determine the values of: (i) fg(2) and (ii) f⁻¹(3)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: One part runs the functions forwards and the other runs f backwards."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p146_q09.jpg",
+      "altText": "Source visual for edmar-csec-p146-q09 from workbook page 146."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Evaluate g(2).",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "g(2) = 4(2) + 5 = 8 + 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: g(2) = 13"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Substitute into f.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "f(13) = (2(13) + 1)/3 = 27/3"
+        },
+        {
+          "type": "text",
+          "value": "Result: fg(2) = 9"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Find f⁻¹ by making x the subject of y = (2x + 1)/3.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3y = 2x + 1 → 2x = 3y − 1"
+        },
+        {
+          "type": "text",
+          "value": "Result: f⁻¹(x) = (3x − 1)/2"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Substitute x = 3 into the inverse.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(3(3) − 1)/2 = 8/2"
+        },
+        {
+          "type": "text",
+          "value": "Result: f⁻¹(3) = 4"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Check the inverse value.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "f(4) = (2(4) + 1)/3 = 9/3 = 3 ✓"
+        },
+        {
+          "type": "text",
+          "value": "Result: Confirmed"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Evaluate g(2) and feed it into f for part (i); for part (ii) solve (2x + 1)/3 = 3, or derive f⁻¹ and substitute."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) fg(2) = 9  (ii) f⁻¹(3) = 4."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The inverse answers the question 'which input does f send to 3?', so it is found by undoing each operation in reverse order: f multiplies by 2, adds 1 and divides by 3, so f⁻¹ multiplies by 3, subtracts 1 and divides by 2. Because the inverse undoes f exactly, substituting the answer back into f is a complete check."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "reading_fg_2_as_f_2_g_2",
+      "wrongValue": "incorrect_1",
+      "misconception": "Reading fg(2) as f(2) × g(2).",
+      "correctiveNote": "Avoid this: Reading fg(2) as f(2) × g(2)."
+    },
+    {
+      "key": "multiplying_only_the_2x_by_3_when_cleari",
+      "wrongValue": "incorrect_2",
+      "misconception": "Multiplying only the 2x by 3 when clearing the denominator.",
+      "correctiveNote": "Avoid this: Multiplying only the 2x by 3 when clearing the denominator."
+    },
+    {
+      "key": "confusing_f_3_with_1_f_3",
+      "wrongValue": "incorrect_3",
+      "misconception": "Confusing f⁻¹(3) with 1/f(3).",
+      "correctiveNote": "Avoid this: Confusing f⁻¹(3) with 1/f(3)."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "For f⁻¹(a) you never need the full formula — just solve f(x) = a. It is faster and less error-prone under time pressure."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "fg(2)=9",
+    "displayValue": "fg(2) = 9",
+    "acceptedForms": [
+      "fg(2) = 9",
+      "fg(2)=9"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "If f(x) = (x − 1)/2, find f⁻¹(4)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "Solve(x−1)/2=4:x−1=8,sox=9.",
+      "displayValue": "Solve (x − 1)/2 = 4: x − 1 = 8, so x = 9.",
+      "acceptedForms": [
+        "Solve (x − 1)/2 = 4: x − 1 = 8, so x = 9.",
+        "Solve(x−1)/2=4:x−1=8,sox=9."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "8b8b43db-a0f8-44db-a5ae-cf844cfafcb9",
+      "code": "M1-5.1",
+      "label": "Composite functions"
+    },
+    {
+      "objectiveId": "7e34d7bd-9e55-4844-a801-2a6d621a4dba",
+      "code": "M1-5.1",
+      "label": "Evaluating a function"
+    },
+    {
+      "objectiveId": "465c6192-33b2-46c4-a7cc-fd1196ce98cb",
+      "code": "M1-5.1",
+      "label": "Inverse of a function"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 9,
+    "pageRef": "p146",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

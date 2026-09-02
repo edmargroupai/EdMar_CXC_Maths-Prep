@@ -1,0 +1,167 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p058-q10",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A binary operation * is defined by a * b = √(a² + b²). Find 3 * 4."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Square each input, add the results, and only then take the square root."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p058_q10.jpg",
+      "altText": "Source visual for edmar-csec-p058-q10 from workbook page 58."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Substitute a = 3 and b = 4.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3² + 4² = 9 + 16"
+        },
+        {
+          "type": "text",
+          "value": "Result: √25"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Take the square root.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: 5"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Substitute a = 3 and b = 4, evaluate inside the root first, then take the square root."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "3 * 4 = 5"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Everything under the root sign must be worked out before the root is taken - the root acts as a bracket. This particular rule is Pythagoras' theorem in disguise, which is why the familiar 3, 4, 5 △ appears and the answer is a whole number."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "taking_the_roots_separately_9_16_3_4_7",
+      "wrongValue": "incorrect_1",
+      "misconception": "Taking the roots separately: √9 + √16 = 3 + 4 = 7.",
+      "correctiveNote": "Avoid this: Taking the roots separately: √9 + √16 = 3 + 4 = 7."
+    },
+    {
+      "key": "adding_first_and_then_squaring_giving_49",
+      "wrongValue": "incorrect_2",
+      "misconception": "Adding first and then squaring, giving √49.",
+      "correctiveNote": "Avoid this: Adding first and then squaring, giving √49."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Treat a square root sign as an invisible bracket: finish the arithmetic inside it before you root."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "3",
+    "displayValue": "3",
+    "acceptedForms": [
+      "3",
+      "3"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "With a * b = √(a² + b²), find 6 * 8."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "10",
+      "displayValue": "10",
+      "acceptedForms": [
+        "10",
+        "10"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "7a36a0c6-001d-4ee8-ac18-fa904e360c9f",
+      "code": "M1-4.1",
+      "label": "Binary operations"
+    },
+    {
+      "objectiveId": "6adc452b-3cb9-4548-adf6-b71ad3e88261",
+      "code": "M1-4.1",
+      "label": "Substitution"
+    },
+    {
+      "objectiveId": "05829e8a-993f-4228-a411-4cbe331fef96",
+      "code": "M1-4.1",
+      "label": "Square roots"
+    },
+    {
+      "objectiveId": "f32b93c7-aaa1-4cfc-a426-797e485d7efb",
+      "code": "M1-4.1",
+      "label": "Pythagoras' theorem"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 10,
+    "pageRef": "p58",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

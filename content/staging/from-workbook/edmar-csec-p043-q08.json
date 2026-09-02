@@ -1,0 +1,247 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p043-q08",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 6,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Taking π = 22/7, a rectangular tank with base 50 cm by 40 cm is filled with water to a depth of 15 cm. (a) Calculate the volume of water in the tank. (b) A cylindrical container of radius 20 cm and height 21 cm, completely filled with water, is used to fetch more water. (i) All the water in this container is added to the tank. Calculate the TOTAL volume of water now in the rectangular tank."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Only the water counts, not the tank, so use the depth of 15 cm rather than the tank's full height."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p043_q08.jpg",
+      "altText": "Source visual for edmar-csec-p043-q08 from workbook page 43."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Find the volume of water already in the tank.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "50 x 40 x 15"
+        },
+        {
+          "type": "text",
+          "value": "Result: 30 000 cm³"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Find the volume of the cylindrical container.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "π r² h = (22/7) x 20² x 21 = (22/7) x 400 x 21 = 22 x 400 x 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: 26 400 cm³"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Add the two volumes.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "30 000 + 26 400"
+        },
+        {
+          "type": "text",
+          "value": "Result: 56 400 cm³"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Multiply base area by water depth for the tank, use π r² h for the cylinder, then add the two volumes."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) The volume of water in the tank is 30 000 cm³.  (b)(i) The total volume of water now in the tank is 56 400 cm³."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Water takes the shape of its container, so the volume in the tank is the base area times the depth reached, not the tank's full capacity. Pouring water from one container into another does not change how much there is, so the volumes simply add. Using π = 22/7 with a height of 21 cm cancels the 7 exactly, which is why the cylinder gives a whole number."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "using_a_tank_height_instead_of_the_15_cm",
+      "wrongValue": "incorrect_1",
+      "misconception": "Using a tank height instead of the 15 cm depth of water.",
+      "correctiveNote": "Avoid this: Using a tank height instead of the 15 cm depth of water."
+    },
+    {
+      "key": "using_the_diameter_20_cm_as_the_radius_o",
+      "wrongValue": "incorrect_2",
+      "misconception": "Using the diameter 20 cm as the radius or halving it unnecessarily.",
+      "correctiveNote": "Avoid this: Using the diameter 20 cm as the radius or halving it unnecessarily."
+    },
+    {
+      "key": "multiplying_the_two_volumes_instead_of_a",
+      "wrongValue": "incorrect_3",
+      "misconception": "Multiplying the two volumes instead of adding them.",
+      "correctiveNote": "Avoid this: Multiplying the two volumes instead of adding them."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Keep every volume in the same unit and label each line, tank water and cylinder water. Adding volumes is easy, but only when both are in cm³."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Thevolumeofwaterinthetankis30000cm³.(b)",
+    "displayValue": "The volume of water in the tank is 30 000 cm³. (b)",
+    "acceptedForms": [
+      "The volume of water in the tank is 30 000 cm³. (b)",
+      "Thevolumeofwaterinthetankis30000cm³.(b)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A tank with base 30 cm by 20 cm holds water 10 cm deep. A cylinder of radius 7 cm and height 10 cm, using π = 22/7, is poured in. Find the total volume."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "7",
+      "displayValue": "7",
+      "acceptedForms": [
+        "7",
+        "7"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "7a943d5d-8a58-4c13-aa8a-a240bd957fe4",
+      "code": "M1-1.1",
+      "label": "Volume of a cuboid"
+    },
+    {
+      "objectiveId": "43fcf60f-3826-41b9-ab2c-4ea7584a3b94",
+      "code": "M1-1.1",
+      "label": "Volume of a cylinder"
+    },
+    {
+      "objectiveId": "04d1128c-f97a-4116-ac24-3eeae3117d83",
+      "code": "M1-1.1",
+      "label": "Combining volumes"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 8,
+    "pageRef": "p43",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Thevolumeofwaterinthetankis30000cm³.(b)",
+        "displayValue": "The volume of water in the tank is 30 000 cm³. (b)",
+        "acceptedForms": [
+          "The volume of water in the tank is 30 000 cm³. (b)",
+          "Thevolumeofwaterinthetankis30000cm³.(b)"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Thetotalvolumeofwaternowinthetankis56400cm³.",
+        "displayValue": "The total volume of water now in the tank is 56 400 cm³.",
+        "acceptedForms": [
+          "The total volume of water now in the tank is 56 400 cm³.",
+          "Thetotalvolumeofwaternowinthetankis56400cm³."
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.i",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.i): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Thetotalvolumeofwaternowinthetankis56400cm³.",
+        "displayValue": "The total volume of water now in the tank is 56 400 cm³.",
+        "acceptedForms": [
+          "The total volume of water now in the tank is 56 400 cm³.",
+          "Thetotalvolumeofwaternowinthetankis56400cm³."
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

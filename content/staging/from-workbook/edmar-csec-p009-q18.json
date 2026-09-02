@@ -1,0 +1,191 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p009-q18",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Evaluate the expression shown in the crop: (18.2 + 7.8)/(9.5 − 4.5)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Treat the top line and the bottom line as two separate calculations, then divide one by the other."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p009_q18.jpg",
+      "altText": "Source visual for edmar-csec-p009-q18 from workbook page 9."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Work out the top line.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "18.2 + 7.8"
+        },
+        {
+          "type": "text",
+          "value": "Result: 26"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Work out the bottom line.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "9.5 − 4.5"
+        },
+        {
+          "type": "text",
+          "value": "Result: 5"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Divide the two results.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "26 ÷ 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: 5.2"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Complete the numerator, complete the denominator, then carry out the division."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "5.2"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The horizontal bar is a grouping symbol acting on everything above it and everything below it, so the addition and the subtraction are both finished before a single division is done. Because 18.2 + 7.8 gives an exact 26 and 9.5 − 4.5 an exact 5, the quotient is exact and no rounding is required."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "cancelling_individual_numbers_across_the",
+      "wrongValue": "incorrect_1",
+      "misconception": "Cancelling individual numbers across the bar, such as pairing 7.8 with 4.5.",
+      "correctiveNote": "Avoid this: Cancelling individual numbers across the bar, such as pairing 7.8 with 4.5."
+    },
+    {
+      "key": "doing_18_2_7_8_9_5_4_5_by_reading_the_fr",
+      "wrongValue": "incorrect_2",
+      "misconception": "Doing 18.2 + 7.8 ÷ 9.5 − 4.5 by reading the fraction as one flat line.",
+      "correctiveNote": "Avoid this: Doing 18.2 + 7.8 ÷ 9.5 − 4.5 by reading the fraction as one flat line."
+    },
+    {
+      "key": "giving_5_r_1_rather_than_5_2",
+      "wrongValue": "incorrect_3",
+      "misconception": "Giving 5 r 1 rather than 5.2.",
+      "correctiveNote": "Avoid this: Giving 5 r 1 rather than 5.2."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Rewrite every printed fraction with brackets before you calculate; it costs five seconds and protects the whole question."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_dp",
+    "canonicalValue": "5.2",
+    "displayValue": "5.2",
+    "acceptedForms": [
+      "5.2",
+      "5.2"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "precision": {
+      "kind": "decimal_places",
+      "value": 1,
+      "required": true
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Evaluate (15.5 + 4.5)/(6.8 − 2.8)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "5",
+      "displayValue": "5",
+      "acceptedForms": [
+        "5",
+        "5"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.2"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "97f61aa5-1ebc-4e30-a644-dbd54627f53c",
+      "code": "M1-1.2",
+      "label": "Order of operations"
+    },
+    {
+      "objectiveId": "e75fd4c4-81fd-4db0-a042-3b9f500a9640",
+      "code": "M1-1.2",
+      "label": "Decimal addition and subtraction"
+    },
+    {
+      "objectiveId": "596f70c2-d0e2-4980-afb0-1f3204263252",
+      "code": "M1-1.2",
+      "label": "Division"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 18,
+    "pageRef": "p9",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

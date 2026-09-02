@@ -1,0 +1,188 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p096-q11",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Make a the subject of the formula s = ut + ½at²."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The term containing a is ½at², so isolate that term before undoing the ½ and the t²."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p096_q11.jpg",
+      "altText": "Source visual for edmar-csec-p096-q11 from workbook page 96."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Subtract ut from both sides.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "s − ut = ½at²"
+        },
+        {
+          "type": "text",
+          "value": "Result: s − ut = ½at²"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Multiply both sides by 2.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2(s − ut) = at²"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2(s − ut) = at²"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Divide both sides by t².",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2(s − ut) ÷ t²"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2(s − ut)/t² = a"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Write the new subject on the left.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: a = 2(s − ut)/t²"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Subtract ut, multiply through by 2 to clear the half, then divide by t²."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "a = 2(s − ut)/t², which can also be written a = (2s − 2ut)/t²"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Only one term contains a, so the strategy is always the same: move every other term to the far side, then strip the coefficient off the remaining term. Multiplying by 2 clears the half and dividing by t² removes the last factor, leaving a alone."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "dividing_by_t_before_removing_ut_which_d",
+      "wrongValue": "incorrect_1",
+      "misconception": "Dividing by t² before removing ut, which drags an extra term into the fraction.",
+      "correctiveNote": "Avoid this: Dividing by t² before removing ut, which drags an extra term into the fraction."
+    },
+    {
+      "key": "writing_a_2s_ut_t_and_losing_the_bracket",
+      "wrongValue": "incorrect_2",
+      "misconception": "Writing a = 2s − ut/t² and losing the bracket.",
+      "correctiveNote": "Avoid this: Writing a = 2s − ut/t² and losing the bracket."
+    },
+    {
+      "key": "dividing_by_t_instead_of_t",
+      "wrongValue": "incorrect_3",
+      "misconception": "Dividing by t instead of t².",
+      "correctiveNote": "Avoid this: Dividing by t instead of t²."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Locate the single term containing the new subject first; everything else in the formula simply has to be moved out of the way."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=2(s−ut)/t²,whichcanalsobewrittena=(2s−2ut)/t²",
+    "displayValue": "= 2(s − ut)/t², which can also be written a = (2s − 2ut)/t²",
+    "acceptedForms": [
+      "= 2(s − ut)/t², which can also be written a = (2s − 2ut)/t²",
+      "=2(s−ut)/t²,whichcanalsobewrittena=(2s−2ut)/t²"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Make u the subject of s = ut + ½at²."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "u=(2s−at²)/(2t)",
+      "displayValue": "u = (2s − at²)/(2t)",
+      "acceptedForms": [
+        "u = (2s − at²)/(2t)",
+        "u=(2s−at²)/(2t)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "84b70877-8335-4be8-a31e-2b59b8838db8",
+      "code": "M1-1.1",
+      "label": "Changing the subject of a formula"
+    },
+    {
+      "objectiveId": "108d817e-84e0-4a38-a99d-2b1228e2f5c5",
+      "code": "M1-1.1",
+      "label": "Clearing fractions"
+    },
+    {
+      "objectiveId": "e6b068cd-a76d-4340-a533-3f0263455463",
+      "code": "M1-1.1",
+      "label": "Equations of motion"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 11,
+    "pageRef": "p96",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p097-q04",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the simultaneous equations 2x + y = 7 and x − y = 1."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The y terms are +y and −y, so add the equations straight away — and do not be alarmed if the answers are fractions."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p097_q04.jpg",
+      "altText": "Source visual for edmar-csec-p097-q04 from workbook page 97."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Add the two equations.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(2x + x) + (y − y) = 7 + 1"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3x = 8"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Divide to find x, leaving the answer as a fraction.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "8 ÷ 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 8/3"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Substitute into x − y = 1.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "8/3 − y = 1, so y = 8/3 − 1 = 8/3 − 3/3"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 5/3"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Check in the first equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2(8/3) + 5/3 = 16/3 + 5/3 = 21/3"
+        },
+        {
+          "type": "text",
+          "value": "Result: 7 ✓"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Add the equations to eliminate y, solve for x as a fraction, then substitute back."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = 8/3, y = 5/3 (that is, x = 2 2/3 and y = 1 2/3)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The two lines still cross at exactly one point; there is simply no reason for that crossing point to have whole-number coordinates. Elimination locates it just as reliably, and keeping the values as exact fractions avoids the rounding errors that decimals would introduce."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "assuming_an_error_has_been_made_because_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Assuming an error has been made because the answer is not a whole number and restarting.",
+      "correctiveNote": "Avoid this: Assuming an error has been made because the answer is not a whole number and restarting."
+    },
+    {
+      "key": "rounding_8_3_to_2_7_and_getting_a_y_valu",
+      "wrongValue": "incorrect_2",
+      "misconception": "Rounding 8/3 to 2.7 and getting a y value that fails the check.",
+      "correctiveNote": "Avoid this: Rounding 8/3 to 2.7 and getting a y value that fails the check."
+    },
+    {
+      "key": "writing_8_3_1_as_7_3_instead_of_5_3",
+      "wrongValue": "incorrect_3",
+      "misconception": "Writing 8/3 − 1 as 7/3 instead of 5/3.",
+      "correctiveNote": "Avoid this: Writing 8/3 − 1 as 7/3 instead of 5/3."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Leave fractional solutions as exact fractions unless the question asks for decimals — an exact answer can never lose accuracy marks."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=8/3,y=5/3(thatis,x=22/3andy=12/3)",
+    "displayValue": "= 8/3, y = 5/3 (that is, x = 2 2/3 and y = 1 2/3)",
+    "acceptedForms": [
+      "= 8/3, y = 5/3 (that is, x = 2 2/3 and y = 1 2/3)",
+      "=8/3,y=5/3(thatis,x=22/3andy=12/3)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve 2x + y = 9 and x − y = 3."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=4,y=1",
+      "displayValue": "= 4, y = 1",
+      "acceptedForms": [
+        "= 4, y = 1",
+        "=4,y=1"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "7044b68e-27f3-4f85-a92d-1d90870fcdca",
+      "code": "M1-5.1",
+      "label": "Simultaneous linear equations"
+    },
+    {
+      "objectiveId": "8a779cae-e3bc-4137-a9d5-6ad4dfa9c484",
+      "code": "M1-5.1",
+      "label": "Elimination by addition"
+    },
+    {
+      "objectiveId": "9aa5ead3-6e05-43ed-a715-7f32e569a0d8",
+      "code": "M1-5.1",
+      "label": "Working with fractional solutions"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 4,
+    "pageRef": "p97",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

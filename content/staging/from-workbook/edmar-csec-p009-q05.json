@@ -1,0 +1,196 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p009-q05",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Evaluate (2.4 × 10⁴)/0.6 and (i) express your answer in standard form."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Separate the number part from the power of ten and divide only the number part."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p009_q05.jpg",
+      "altText": "Source visual for edmar-csec-p009-q05 from workbook page 9."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Split the calculation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(2.4 ÷ 0.6) × 10⁴"
+        },
+        {
+          "type": "text",
+          "value": "Result: (2.4 ÷ 0.6) × 10⁴"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Divide the decimal parts.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2.4 ÷ 0.6 = 24 ÷ 6"
+        },
+        {
+          "type": "text",
+          "value": "Result: 4"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Reassemble the answer.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: 4 × 10⁴"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Check the standard-form condition and state the ordinary value.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "4 lies between 1 and 10"
+        },
+        {
+          "type": "text",
+          "value": "Result: 4 × 10⁴ = 40 000"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Divide 2.4 by 0.6 to get the front number, keep the 10⁴ unchanged, then confirm the result is already in standard form."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "4 × 10⁴, which is 40 000"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Division is associative over a product, so (2.4 × 10⁴) ÷ 0.6 can be regrouped as (2.4 ÷ 0.6) × 10⁴ — the power of ten is untouched because nothing was divided into it. Standard form then only requires the front number to sit between 1 and 10, and 4 already does, so no index adjustment is needed."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "dividing_the_index_by_0_6_as_well_as_the",
+      "wrongValue": "incorrect_1",
+      "misconception": "Dividing the index by 0.6 as well as the front number.",
+      "correctiveNote": "Avoid this: Dividing the index by 0.6 as well as the front number."
+    },
+    {
+      "key": "reading_2_4_0_6_as_0_4_by_misplacing_the",
+      "wrongValue": "incorrect_2",
+      "misconception": "Reading 2.4 ÷ 0.6 as 0.4 by misplacing the decimal point.",
+      "correctiveNote": "Avoid this: Reading 2.4 ÷ 0.6 as 0.4 by misplacing the decimal point."
+    },
+    {
+      "key": "writing_40_10_and_calling_it_standard_fo",
+      "wrongValue": "incorrect_3",
+      "misconception": "Writing 40 × 10³ and calling it standard form.",
+      "correctiveNote": "Avoid this: Writing 40 × 10³ and calling it standard form."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Turn a decimal division into whole numbers by scaling both parts equally — 2.4 ÷ 0.6 becomes 24 ÷ 6, which you can do in your head."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "4",
+    "displayValue": "4",
+    "acceptedForms": [
+      "4",
+      "4"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Evaluate (3.6 × 10⁵)/0.9 and give the answer in standard form."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "4",
+      "displayValue": "4",
+      "acceptedForms": [
+        "4",
+        "4"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.2"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "b5856e84-a0a0-4c55-a722-3d2823a43ad2",
+      "code": "M1-1.2",
+      "label": "Standard form"
+    },
+    {
+      "objectiveId": "012666a9-762f-46b9-aae4-1f84667d2930",
+      "code": "M1-1.2",
+      "label": "Division of decimals"
+    },
+    {
+      "objectiveId": "9deff705-e913-4715-a77c-ce4deafe11c6",
+      "code": "M1-1.2",
+      "label": "Laws of indices"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 5,
+    "pageRef": "p9",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

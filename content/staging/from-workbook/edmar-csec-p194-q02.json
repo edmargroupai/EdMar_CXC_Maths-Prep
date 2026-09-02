@@ -1,0 +1,178 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p194-q02",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Three matrices are given: A = (1 0 / 0 1), B = (2 −1 4 / 3 0 5) and C = (7 2 / −3 6). (a) State which matrix is the identity matrix. (b) State which matrix is rectangular. (c) State the order of EACH matrix."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Identify each matrix by its shape and by the pattern of its entries — no arithmetic is needed at all."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p194_q02.jpg",
+      "altText": "Source visual for edmar-csec-p194-q02 from workbook page 194."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Look for 1s on the leading diagonal and 0s everywhere else.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "A has 1, 1 down the diagonal from top left, with 0s off it."
+        },
+        {
+          "type": "text",
+          "value": "Result: A is the identity matrix"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Find the matrix whose row count differs from its column count.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "B has 2 rows and 3 columns."
+        },
+        {
+          "type": "text",
+          "value": "Result: B is rectangular"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Count rows then columns for each matrix.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "A: 2 rows, 2 columns. B: 2 rows, 3 columns. C: 2 rows, 2 columns."
+        },
+        {
+          "type": "text",
+          "value": "Result: A is 2 × 2, B is 2 × 3, C is 2 × 2"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Look for the square matrix with 1s down the leading diagonal and 0s elsewhere, then count rows and columns for each matrix."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) A is the identity matrix  (b) B is rectangular  (c) A is of order 2 × 2, B is of order 2 × 3, and C is of order 2 × 2."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The identity matrix must be square and carry 1s only on the leading diagonal, because that is the pattern that leaves any conformable matrix unchanged when multiplied. C is square too, but its entries do not fit the pattern, so it is not the identity. Shape alone settles which matrix is rectangular."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "calling_c_the_identity_because_it_is_squ",
+      "wrongValue": "incorrect_1",
+      "misconception": "Calling C the identity because it is square.",
+      "correctiveNote": "Avoid this: Calling C the identity because it is square."
+    },
+    {
+      "key": "describing_b_as_3_2_by_counting_columns_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Describing B as 3 × 2 by counting columns first.",
+      "correctiveNote": "Avoid this: Describing B as 3 × 2 by counting columns first."
+    },
+    {
+      "key": "thinking_a_matrix_of_0s_is_the_identity_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Thinking a matrix of 0s is the identity — that is the zero matrix.",
+      "correctiveNote": "Avoid this: Thinking a matrix of 0s is the identity — that is the zero matrix."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "The identity matrix is the matrix version of the number 1: square, with 1s on the diagonal, and it leaves other matrices unchanged under multiplication."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Aistheidentitymatrix",
+    "displayValue": "A is the identity matrix",
+    "acceptedForms": [
+      "A is the identity matrix",
+      "Aistheidentitymatrix"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Write down the 3 × 3 identity matrix."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(100/010/001)",
+      "displayValue": "(1 0 0 / 0 1 0 / 0 0 1)",
+      "acceptedForms": [
+        "(1 0 0 / 0 1 0 / 0 0 1)",
+        "(100/010/001)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "1bb11623-750c-4908-afc4-2605af70a177",
+      "code": "M2-4.1",
+      "label": "Identity matrix"
+    },
+    {
+      "objectiveId": "96d7bcf3-d793-40e5-a43d-4740440b6703",
+      "code": "M2-4.1",
+      "label": "Square and rectangular matrices"
+    },
+    {
+      "objectiveId": "707d7c20-563d-4be0-a030-a555ac6e9468",
+      "code": "M2-4.1",
+      "label": "Order of a matrix"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 2,
+    "pageRef": "p194",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

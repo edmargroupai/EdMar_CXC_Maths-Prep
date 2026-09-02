@@ -1,0 +1,178 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p060-q10",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A farmer plants potatoes and corn on a 10-hectare piece of land. The number of hectares of corn planted must be at least twice the number of hectares of potatoes. (a) Let p be the number of hectares of potatoes and c the number of hectares of corn. (b) Write two inequalities to represent this situation."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The land available sets a limit on the total, and the phrase 'at least twice' sets a comparison between the two crops."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p060_q10.jpg",
+      "altText": "Source visual for edmar-csec-p060-q10 from workbook page 60."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Use the defined variables.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "p = hectares of potatoes, c = hectares of corn"
+        },
+        {
+          "type": "text",
+          "value": "Result: p and c defined"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Translate the land restriction - the two crops together cannot exceed 10 hectares.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "total planted ≤ land available"
+        },
+        {
+          "type": "text",
+          "value": "Result: p + c ≤ 10"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Translate 'corn must be at least twice the potatoes'.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "'at least' means ≥, and twice the potatoes is 2p"
+        },
+        {
+          "type": "text",
+          "value": "Result: c ≥ 2p"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Turn the 10-hectare limit into one inequality and the 'at least twice' comparison into another."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) p = number of hectares of potatoes, c = number of hectares of corn  (b) p + c ≤ 10 and c ≥ 2p"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The first inequality is a resource constraint: the field is fixed at 10 hectares, and the farmer need not use all of it, so ≤ rather than =. The second is a comparison constraint, and the word 'twice' becomes the coefficient 2 attached to p, not to c. Reading it aloud as 'corn is at least double the potatoes' makes the direction of the sign clear."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_2c_p_attaching_the_2_to_the_wron",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing 2c ≥ p, attaching the 2 to the wrong crop.",
+      "correctiveNote": "Avoid this: Writing 2c ≥ p, attaching the 2 to the wrong crop."
+    },
+    {
+      "key": "using_p_c_10_which_wrongly_forces_every_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Using p + c = 10, which wrongly forces every hectare to be planted.",
+      "correctiveNote": "Avoid this: Using p + c = 10, which wrongly forces every hectare to be planted."
+    },
+    {
+      "key": "reversing_at_least_to_give_c_2p",
+      "wrongValue": "incorrect_3",
+      "misconception": "Reversing 'at least' to give c ≤ 2p.",
+      "correctiveNote": "Avoid this: Reversing 'at least' to give c ≤ 2p."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Attach the multiplier to the quantity being doubled, and say the sentence out loud to check which side is larger."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "p=numberofhectaresofpotatoes,c=numberofhectaresofcorn",
+    "displayValue": "p = number of hectares of potatoes, c = number of hectares of corn",
+    "acceptedForms": [
+      "p = number of hectares of potatoes, c = number of hectares of corn",
+      "p=numberofhectaresofpotatoes,c=numberofhectaresofcorn"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A baker makes m muffins and s scones, at most 60 items in total, with at least three times as many muffins as scones. Write the two inequalities."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "m+s≤60andm≥3s",
+      "displayValue": "m + s ≤ 60 and m ≥ 3s",
+      "acceptedForms": [
+        "m + s ≤ 60 and m ≥ 3s",
+        "m+s≤60andm≥3s"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "7bbcdfd8-ebbb-4cb2-a3ed-220f18e7c435",
+      "code": "M1-4.1",
+      "label": "Formulating inequalities"
+    },
+    {
+      "objectiveId": "18a86caf-0005-4002-aca3-a2041159886b",
+      "code": "M1-4.1",
+      "label": "Linear inequalities in two variables"
+    },
+    {
+      "objectiveId": "0d76a5b1-1993-4f30-a5cd-ed50a0b90ec9",
+      "code": "M1-4.1",
+      "label": "Word problems"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 10,
+    "pageRef": "p60",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

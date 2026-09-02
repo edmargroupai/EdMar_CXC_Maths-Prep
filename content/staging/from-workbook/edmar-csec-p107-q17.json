@@ -1,0 +1,201 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p107-q17",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A square has side (2x − 5) cm and an area of 49 cm². Calculate the value(s) of x and hence determine the length of each side."
+    },
+    {
+      "type": "text",
+      "value": "Think first: A square's area is the side squared, so the equation is already in completed-square form."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p107_q17.jpg",
+      "altText": "Source visual for edmar-csec-p107-q17 from workbook page 107."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write the area equation from the diagram.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "area of a square = side²"
+        },
+        {
+          "type": "text",
+          "value": "Result: (2x − 5)² = 49"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Take the square root of both sides, keeping both signs.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "√49 = 7"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2x − 5 = 7 or 2x − 5 = −7"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Solve each linear equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2x = 12 gives x = 6; 2x = −2 gives x = −1"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 6 or x = −1"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Test each value in the side expression and keep the one that is positive.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x = 6 gives 2(6) − 5 = 7; x = −1 gives 2(−1) − 5 = −7, which is impossible"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 6, side = 7 cm"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Set (2x − 5)² = 49, square-root both sides with a ±, solve the two linear equations, then check which value gives a positive side."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = 6 (rejecting x = −1, which gives a negative side); each side is 7 cm."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Squaring destroys sign information, so undoing it with a square root reintroduces two possibilities — that is where the second root comes from. Both values satisfy the algebraic equation, but only x = 6 produces a side of positive length. The check is quick because you only need to substitute into the single side expression."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_2x_5_7_only_and_never_considerin",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing 2x − 5 = 7 only and never considering −7.",
+      "correctiveNote": "Avoid this: Writing 2x − 5 = 7 only and never considering −7."
+    },
+    {
+      "key": "expanding_to_4x_20x_25_49_and_doing_far_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Expanding to 4x² − 20x + 25 = 49 and doing far more work than needed.",
+      "correctiveNote": "Avoid this: Expanding to 4x² − 20x + 25 = 49 and doing far more work than needed."
+    },
+    {
+      "key": "giving_x_6_as_the_side_length_instead_of",
+      "wrongValue": "incorrect_3",
+      "misconception": "Giving x = 6 as the side length instead of 7 cm.",
+      "correctiveNote": "Avoid this: Giving x = 6 as the side length instead of 7 cm."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When a question asks for x and then 'hence' the length, make sure your final line answers both — the length is not the same number as x."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=6(rejectingx=−1,whichgivesanegativeside);eachsideis7cm.",
+    "displayValue": "= 6 (rejecting x = −1, which gives a negative side); each side is 7 cm.",
+    "acceptedForms": [
+      "= 6 (rejecting x = −1, which gives a negative side); each side is 7 cm.",
+      "=6(rejectingx=−1,whichgivesanegativeside);eachsideis7cm."
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A square has side (3x − 2) cm and area 25 cm². Find x and the side length."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "3",
+      "displayValue": "3",
+      "acceptedForms": [
+        "3",
+        "3"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-6.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "d925244e-a80a-43e6-aade-94495e54776f",
+      "code": "M1-6.1",
+      "label": "Area of a square"
+    },
+    {
+      "objectiveId": "35ff97a0-e316-4a1b-a83b-b24fa05deb01",
+      "code": "M1-6.1",
+      "label": "Square roots of both sides"
+    },
+    {
+      "objectiveId": "a908f1e5-99d3-4f45-aa3a-c4b6f7399a33",
+      "code": "M1-6.1",
+      "label": "Solving linear equations"
+    },
+    {
+      "objectiveId": "95d8d4c3-6380-41a9-aa3a-de0ddeee1533",
+      "code": "M1-6.1",
+      "label": "Rejecting invalid solutions"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 17,
+    "pageRef": "p107",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

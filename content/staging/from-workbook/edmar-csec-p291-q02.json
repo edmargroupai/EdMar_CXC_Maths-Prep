@@ -1,0 +1,303 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p291-q02",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 8,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "W = (3  6 / -2  5). (a)(i) Find the 2x2 matrix L such that W + L is the zero matrix. (ii) Find the 2x2 matrix P such that WP is the identity matrix. (b) A right-angled triangle M has vertices X(1, 1), Y(3, 1) and Z(3, 4). M is transformed by the matrix N = (0  1 / 1  0) to give the image M'. Find the coordinates of the vertices of M'."
+    },
+    {
+      "type": "text",
+      "value": "Think first: L is the additive inverse of W and P is the multiplicative inverse of W, so one part needs sign changes and the other needs a determinant."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p291_q02.jpg",
+      "altText": "Source visual for edmar-csec-p291-q02 from workbook page 291."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "For L, change the sign of every element of W so that each pair adds to zero.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3 + (-3) = 0, 6 + (-6) = 0, -2 + 2 = 0, 5 + (-5) = 0"
+        },
+        {
+          "type": "text",
+          "value": "Result: L = (-3  -6 / 2  -5)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "For P, note that WP = I means P is the inverse of W, so first find det W.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "det W = (3)(5) - (6)(-2) = 15 + 12"
+        },
+        {
+          "type": "text",
+          "value": "Result: det W = 27"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Swap the leading diagonal entries, change the sign of the other two, and divide by the determinant.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "P = (1/27)(5  -6 / 2  3)"
+        },
+        {
+          "type": "text",
+          "value": "Result: P = (5/27  -2/9 / 2/27  1/9)"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "For (b), write each vertex as a column matrix and multiply on the left by N.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "N(1 / 1) = ((0)(1) + (1)(1) / (1)(1) + (0)(1)) = (1 / 1);  N(3 / 1) = (1 / 3);  N(3 / 4) = (4 / 3)"
+        },
+        {
+          "type": "text",
+          "value": "Result: X'(1, 1), Y'(1, 3), Z'(4, 3)"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "State the image triangle.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "N = (0  1 / 1  0) swaps the two coordinates, which is a reflection in the line y = x."
+        },
+        {
+          "type": "text",
+          "value": "Result: M' has vertices (1, 1), (1, 3) and (4, 3)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Write L as the negative of W, compute the inverse of W for P using the determinant and adjugate, then multiply N by each vertex written as a column matrix."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a)(i) L = (-3  -6 / 2  -5)  (ii) P = (1/27)(5  -6 / 2  3) = (5/27  -2/9 / 2/27  1/9)  (b) M' has vertices X'(1, 1), Y'(1, 3), Z'(4, 3)."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Adding matrices works entry by entry, so the matrix that cancels W must be the one whose entries are the negatives of W's. Multiplication is different: WP = I says P undoes W, and for a 2x2 matrix that inverse is the adjugate divided by the determinant. Transforming a point means multiplying its position vector, written as a column, by the transformation matrix, which is why the image coordinates come out one vertex at a time."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "confusing_the_additive_inverse_with_the_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Confusing the additive inverse with the multiplicative inverse and giving L as the inverse of W.",
+      "correctiveNote": "Avoid this: Confusing the additive inverse with the multiplicative inverse and giving L as the inverse of W."
+    },
+    {
+      "key": "dividing_by_the_wrong_determinant_for_ex",
+      "wrongValue": "incorrect_2",
+      "misconception": "Dividing by the wrong determinant, for example 15 - 12 = 3 instead of 15 + 12 = 27.",
+      "correctiveNote": "Avoid this: Dividing by the wrong determinant, for example 15 - 12 = 3 instead of 15 + 12 = 27."
+    },
+    {
+      "key": "writing_the_vertices_as_row_matrices_and",
+      "wrongValue": "incorrect_3",
+      "misconception": "Writing the vertices as row matrices and multiplying in the wrong order.",
+      "correctiveNote": "Avoid this: Writing the vertices as row matrices and multiplying in the wrong order."
+    },
+    {
+      "key": "leaving_p_without_the_factor_1_27",
+      "wrongValue": "incorrect_4",
+      "misconception": "Leaving P without the factor 1/27.",
+      "correctiveNote": "Avoid this: Leaving P without the factor 1/27."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Check any inverse you find by multiplying it back by the original matrix; you should get (1  0 / 0  1) exactly."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "L=(-3-6/2-5)",
+    "displayValue": "L = (-3 -6 / 2 -5)",
+    "acceptedForms": [
+      "L = (-3 -6 / 2 -5)",
+      "L=(-3-6/2-5)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "What is the image of (5, 2) under the matrix (0  1 / 1  0)?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(2,5)",
+      "displayValue": "(2, 5)",
+      "acceptedForms": [
+        "(2, 5)",
+        "(2,5)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "6d1795af-7be3-4e09-a7d4-1769199bf3dd",
+      "code": "M2-4.1",
+      "label": "Zero matrix and additive inverse"
+    },
+    {
+      "objectiveId": "82ec2b8a-5dda-4ff8-aad6-8e79a9515b72",
+      "code": "M2-4.1",
+      "label": "Identity matrix and multiplicative inverse"
+    },
+    {
+      "objectiveId": "4e865be0-c441-4b36-adf3-9db03320c66a",
+      "code": "M2-4.1",
+      "label": "Determinant of a 2x2 matrix"
+    },
+    {
+      "objectiveId": "0174ca19-daf9-4256-a68b-234102cd258d",
+      "code": "M2-4.1",
+      "label": "Matrix transformation of coordinates"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 2,
+    "pageRef": "p291",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "L=(-3-6/2-5)",
+        "displayValue": "L = (-3 -6 / 2 -5)",
+        "acceptedForms": [
+          "L = (-3 -6 / 2 -5)",
+          "L=(-3-6/2-5)"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.i",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.i): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "L=(-3-6/2-5)",
+        "displayValue": "L = (-3 -6 / 2 -5)",
+        "acceptedForms": [
+          "L = (-3 -6 / 2 -5)",
+          "L=(-3-6/2-5)"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.ii",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.ii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "P=(1/27)(5-6/23)=(5/27-2/9/2/271/9)",
+        "displayValue": "P = (1/27)(5 -6 / 2 3) = (5/27 -2/9 / 2/27 1/9)",
+        "acceptedForms": [
+          "P = (1/27)(5 -6 / 2 3) = (5/27 -2/9 / 2/27 1/9)",
+          "P=(1/27)(5-6/23)=(5/27-2/9/2/271/9)"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 4,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "M'hasverticesX'(1,1),Y'(1,3),Z'(4,3).",
+        "displayValue": "M' has vertices X'(1, 1), Y'(1, 3), Z'(4, 3).",
+        "acceptedForms": [
+          "M' has vertices X'(1, 1), Y'(1, 3), Z'(4, 3).",
+          "M'hasverticesX'(1,1),Y'(1,3),Z'(4,3)."
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

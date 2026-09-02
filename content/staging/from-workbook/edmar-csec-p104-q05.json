@@ -1,0 +1,178 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p104-q05",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the quadratic equation 4x² − 9 = 0."
+    },
+    {
+      "type": "text",
+      "value": "Think first: There is no x term — this is a difference of two squares, so it splits immediately."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p104_q05.jpg",
+      "altText": "Source visual for edmar-csec-p104-q05 from workbook page 104."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write each term as a square.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "4x² = (2x)² and 9 = 3²"
+        },
+        {
+          "type": "text",
+          "value": "Result: (2x)² − 3² = 0"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Apply the difference of two squares.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "a² − b² = (a − b)(a + b)"
+        },
+        {
+          "type": "text",
+          "value": "Result: (2x − 3)(2x + 3) = 0"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Set each factor to zero and solve.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2x − 3 = 0 or 2x + 3 = 0"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 3/2 or x = −3/2"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Recognise 4x² − 9 as (2x)² − 3², factorise it, and solve each bracket."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = 3/2 or x = −3/2 (that is, x = ±1.5)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A quadratic with no linear term is symmetric about the y-axis, so its two roots are equal in size and opposite in sign. The difference-of-squares factorisation makes that symmetry explicit. You could equally rearrange to x² = 9/4 and take the square root of both sides, remembering the ±."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "giving_only_x_1_5_and_missing_the_negati",
+      "wrongValue": "incorrect_1",
+      "misconception": "Giving only x = 1.5 and missing the negative root.",
+      "correctiveNote": "Avoid this: Giving only x = 1.5 and missing the negative root."
+    },
+    {
+      "key": "taking_the_square_root_of_4x_as_2x",
+      "wrongValue": "incorrect_2",
+      "misconception": "Taking the square root of 4x² as 2x².",
+      "correctiveNote": "Avoid this: Taking the square root of 4x² as 2x²."
+    },
+    {
+      "key": "trying_to_use_the_ac_method_when_direct_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Trying to use the ac method when direct factorisation is far quicker.",
+      "correctiveNote": "Avoid this: Trying to use the ac method when direct factorisation is far quicker."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Whenever a quadratic has no x term, check for a difference of two squares before doing anything else."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=3/2",
+    "displayValue": "= 3/2",
+    "acceptedForms": [
+      "= 3/2",
+      "=3/2"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve 9x² − 16 = 0."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=4/3",
+      "displayValue": "= 4/3",
+      "acceptedForms": [
+        "= 4/3",
+        "=4/3"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-6.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "a3d6093e-8945-4eb0-adee-a5d60742fbd4",
+      "code": "M1-6.1",
+      "label": "Difference of two squares"
+    },
+    {
+      "objectiveId": "4bbeb072-9294-4f2d-a247-19edea1e2bc3",
+      "code": "M1-6.1",
+      "label": "Zero product property"
+    },
+    {
+      "objectiveId": "0aa2100d-b918-4d90-aefe-7bf0dee6ae27",
+      "code": "M1-6.1",
+      "label": "Square roots"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 5,
+    "pageRef": "p104",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

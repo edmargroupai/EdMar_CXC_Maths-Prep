@@ -1,0 +1,187 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p019-q14",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "In a class of 80 students, 52 are girls. (a) What percentage are girls? (b) What percentage are boys?"
+    },
+    {
+      "type": "text",
+      "value": "Think first: Every percentage is a fraction of the whole written in hundredths, so decide what the whole is first: here it is the 80 students."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p019_q14.jpg",
+      "altText": "Source visual for edmar-csec-p019-q14 from workbook page 19."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write the girls as a fraction of the class.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "52 / 80"
+        },
+        {
+          "type": "text",
+          "value": "Result: 13/20"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Multiply by 100 to convert to a percentage.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(52 / 80) x 100"
+        },
+        {
+          "type": "text",
+          "value": "Result: 65%"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Find the number of boys.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "80 - 52"
+        },
+        {
+          "type": "text",
+          "value": "Result: 28 boys"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Convert the boys to a percentage, or subtract from 100%.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(28 / 80) x 100 = 35%, and 100% - 65% = 35%"
+        },
+        {
+          "type": "text",
+          "value": "Result: 35%"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Write the number of girls as a fraction of the total and multiply by 100, then get the boys either by subtracting from 100% or by repeating the process."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) 65% are girls  (b) 35% are boys"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A percentage is a fraction rewritten with denominator 100. Girls and boys make up the whole class, so their fractions add to 1 and their percentages add to 100%. That is why the second answer can be found by subtraction, and why the subtraction also checks the first answer."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "dividing_80_by_52_instead_of_52_by_80",
+      "wrongValue": "incorrect_1",
+      "misconception": "Dividing 80 by 52 instead of 52 by 80.",
+      "correctiveNote": "Avoid this: Dividing 80 by 52 instead of 52 by 80."
+    },
+    {
+      "key": "forgetting_to_multiply_by_100_and_writin",
+      "wrongValue": "incorrect_2",
+      "misconception": "Forgetting to multiply by 100 and writing 0.65%.",
+      "correctiveNote": "Avoid this: Forgetting to multiply by 100 and writing 0.65%."
+    },
+    {
+      "key": "not_noticing_that_the_two_answers_must_t",
+      "wrongValue": "incorrect_3",
+      "misconception": "Not noticing that the two answers must total 100%.",
+      "correctiveNote": "Avoid this: Not noticing that the two answers must total 100%."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Name the whole before dividing. The quantity following out of, in a class of, or of the is the denominator."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "65%",
+    "displayValue": "65%",
+    "acceptedForms": [
+      "65%",
+      "65%"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "In a group of 50 people, 30 wear glasses. What percentage do not wear glasses?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "40%",
+      "displayValue": "40%",
+      "acceptedForms": [
+        "40%",
+        "40%"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-3.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "a44d54bf-ae4c-4883-aea3-123570014069",
+      "code": "M1-3.1",
+      "label": "Expressing one quantity as a percentage of another"
+    },
+    {
+      "objectiveId": "414e5692-065f-4ae0-a1e4-87da231576b9",
+      "code": "M1-3.1",
+      "label": "Complementary percentages"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 14,
+    "pageRef": "p19",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

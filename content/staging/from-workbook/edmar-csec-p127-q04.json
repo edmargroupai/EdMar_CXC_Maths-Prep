@@ -1,0 +1,206 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p127-q04",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "M(3, −2) is the midpoint of AB. The coordinates of A are (−1, 5). Determine the coordinates of B."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The midpoint formula is being run backwards: you know the average and one of the two numbers."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p127_q04.jpg",
+      "altText": "Source visual for edmar-csec-p127-q04 from workbook page 127."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write the midpoint condition for the x-coordinates.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(−1 + x_B)/2 = 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: −1 + x_B = 6"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Solve for the x-coordinate of B.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x_B = 6 + 1"
+        },
+        {
+          "type": "text",
+          "value": "Result: x_B = 7"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Write the midpoint condition for the y-coordinates.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(5 + y_B)/2 = −2"
+        },
+        {
+          "type": "text",
+          "value": "Result: 5 + y_B = −4"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Solve for the y-coordinate of B.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "y_B = −4 − 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: y_B = −9"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Check by finding the midpoint of A(−1, 5) and B(7, −9).",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "((−1 + 7)/2, (5 + (−9))/2) = (3, −2)"
+        },
+        {
+          "type": "text",
+          "value": "Result: Matches M, so B is correct"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Set the midpoint formula equal to (3, −2) with A(−1, 5) known, and solve for each coordinate of B."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "B = (7, −9)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Because M is the average of A and B, the step from A to M is repeated exactly to reach B — that is why doubling the midpoint and subtracting A gives the answer in one line: B = (2×3 − (−1), 2×(−2) − 5) = (7, −9). Solving the two equations separately reaches the same place and makes the reasoning visible."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "averaging_m_and_a_instead_of_extending_p",
+      "wrongValue": "incorrect_1",
+      "misconception": "Averaging M and A instead of extending past M.",
+      "correctiveNote": "Avoid this: Averaging M and A instead of extending past M."
+    },
+    {
+      "key": "sign_errors_when_solving_5_y_b_4",
+      "wrongValue": "incorrect_2",
+      "misconception": "Sign errors when solving 5 + y_B = −4.",
+      "correctiveNote": "Avoid this: Sign errors when solving 5 + y_B = −4."
+    },
+    {
+      "key": "giving_b_as_5_9_by_forgetting_the_1_when",
+      "wrongValue": "incorrect_3",
+      "misconception": "Giving B as (5, −9) by forgetting the +1 when solving for x_B.",
+      "correctiveNote": "Avoid this: Giving B as (5, −9) by forgetting the +1 when solving for x_B."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "For 'find the other endpoint' questions, use B = 2M − A coordinate by coordinate, then check by recomputing the midpoint."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=(7,−9)",
+    "displayValue": "= (7, −9)",
+    "acceptedForms": [
+      "= (7, −9)",
+      "=(7,−9)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "M(1, 4) is the midpoint of PQ and P is (−3, 2). Find Q."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "Q=(5,6)",
+      "displayValue": "Q = (5, 6)",
+      "acceptedForms": [
+        "Q = (5, 6)",
+        "Q=(5,6)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-3.2"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "783c170e-bcd2-471e-a590-3f1a81af8c82",
+      "code": "M1-3.2",
+      "label": "Midpoint of a line segment"
+    },
+    {
+      "objectiveId": "109e0124-e496-45ba-a4c3-5a3b546a92e9",
+      "code": "M1-3.2",
+      "label": "Working backwards from a formula"
+    },
+    {
+      "objectiveId": "615f673a-9208-4deb-aefd-79b8184e8b3c",
+      "code": "M1-3.2",
+      "label": "Solving linear equations"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 4,
+    "pageRef": "p127",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

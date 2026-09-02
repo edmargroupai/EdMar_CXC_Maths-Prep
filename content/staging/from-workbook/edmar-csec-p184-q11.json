@@ -1,0 +1,206 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p184-q11",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A hiker follows the route OABC shown on the coordinate grid: 6 km east from O to A, 8 km north from A to B, then 3 km west from B to C. (a) Write the total displacement from O to C as a column vector, taking east and north as positive."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Displacement depends only on where you start and where you finish, not on the path taken."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p184_q11.jpg",
+      "altText": "Source visual for edmar-csec-p184-q11 from workbook page 184."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write each leg as a column vector.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "6 km east = (6, 0); 8 km north = (0, 8); 3 km west = (−3, 0)"
+        },
+        {
+          "type": "text",
+          "value": "Result: three column vectors"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Add the horizontal components.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "6 + 0 + (−3)"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3 km east"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Add the vertical components.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "0 + 8 + 0"
+        },
+        {
+          "type": "text",
+          "value": "Result: 8 km north"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Write the resultant displacement.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Horizontal on top, vertical below"
+        },
+        {
+          "type": "text",
+          "value": "Result: OC = (3, 8)"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Check against the grid.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "C is plotted at (3, 8), which matches the displacement from the origin"
+        },
+        {
+          "type": "text",
+          "value": "Result: confirmed"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Write each leg as a column vector using the sign convention, then add the three vectors component by component."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) The total displacement from O to C is the column vector with components 3 and 8, that is 3 km east and 8 km north."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Because west is the opposite of east, the 3 km west leg simply subtracts from the eastward total — the sign convention does the work automatically. Displacement is a vector, so the three legs combine nose to tail into one resultant that depends only on the endpoints; the hiker actually walked 6 + 8 + 3 = 17 km, but ended up displaced by a vector of magnitude √(9 + 64) = √73 ≈ 8.54 km."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "adding_the_distances_to_get_17_and_calli",
+      "wrongValue": "incorrect_1",
+      "misconception": "Adding the distances to get 17 and calling that the displacement.",
+      "correctiveNote": "Avoid this: Adding the distances to get 17 and calling that the displacement."
+    },
+    {
+      "key": "writing_the_west_leg_as_3_0_and_getting_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Writing the west leg as (3, 0) and getting (9, 8).",
+      "correctiveNote": "Avoid this: Writing the west leg as (3, 0) and getting (9, 8)."
+    },
+    {
+      "key": "putting_the_north_component_on_top_and_t",
+      "wrongValue": "incorrect_3",
+      "misconception": "Putting the north component on top and the east component below.",
+      "correctiveNote": "Avoid this: Putting the north component on top and the east component below."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Convert every compass instruction into a signed column vector before adding — north and east positive, south and west negative — and the arithmetic takes care of itself."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "ThetotaldisplacementfromOtoCisthecolumnvectorwithcomponents3and8,thatis3kmeastand8kmnorth.",
+    "displayValue": "The total displacement from O to C is the column vector with components 3 and 8, that is 3 km east and 8 km north.",
+    "acceptedForms": [
+      "The total displacement from O to C is the column vector with components 3 and 8, that is 3 km east and 8 km north.",
+      "ThetotaldisplacementfromOtoCisthecolumnvectorwithcomponents3and8,thatis3kmeastand8kmnorth."
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A walker goes 5 km north then 2 km south. Write the total displacement as a column vector."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "Components0and3,thatis3kmnorth.",
+      "displayValue": "Components 0 and 3, that is 3 km north.",
+      "acceptedForms": [
+        "Components 0 and 3, that is 3 km north.",
+        "Components0and3,thatis3kmnorth."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "af410b34-75c9-4ac3-a0ee-c05d0b965bda",
+      "code": "M2-5.1",
+      "label": "Vector addition of displacements"
+    },
+    {
+      "objectiveId": "423774c9-61aa-4165-a721-b61ad81882b1",
+      "code": "M2-5.1",
+      "label": "Sign conventions for compass directions"
+    },
+    {
+      "objectiveId": "f4a1b552-7384-48d1-ad44-3da93c05434c",
+      "code": "M2-5.1",
+      "label": "Column vectors"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 11,
+    "pageRef": "p184",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

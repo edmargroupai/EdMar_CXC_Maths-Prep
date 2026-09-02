@@ -1,0 +1,221 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p047-q11",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A cylindrical water container of radius 12 cm and height 20 cm is completely filled with water, and a pipe at its base dispenses the water into cone-shaped cups of radius 3 cm and height 8 cm. (a) Calculate the volume of water in the cylindrical container, in litres, correct to 2 decimal places. (1 000 cm³ = 1 litre)"
+    },
+    {
+      "type": "text",
+      "value": "Think first: Part (a) only asks about the cylinder, so the cone measurements are not needed yet."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p047_q11.jpg",
+      "altText": "Source visual for edmar-csec-p047-q11 from workbook page 47."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write down the formula for the volume of a cylinder.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "r is the radius, h is the height"
+        },
+        {
+          "type": "text",
+          "value": "Result: V = πr²h"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Substitute r = 12 cm and h = 20 cm.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "12² = 144, and 144 × 20 = 2880"
+        },
+        {
+          "type": "text",
+          "value": "Result: V = 2880π cm³"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Evaluate using the π key on your calculator.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2880 × 3.14159265… "
+        },
+        {
+          "type": "text",
+          "value": "Result: V = 9047.7868… cm³"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Convert to litres by dividing by 1 000.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "9047.7868 ÷ 1000"
+        },
+        {
+          "type": "text",
+          "value": "Result: 9.0477… litres"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Round to 2 decimal places.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "the third decimal is 7, so round the second up"
+        },
+        {
+          "type": "text",
+          "value": "Result: 9.05 litres"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Use V = πr²h with r = 12 cm and h = 20 cm to get the volume in cm³, then divide by 1 000 to convert to litres."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) 9.05 litres (2 d.p.)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A cylinder is a prism with a circular cross-section, so its volume is just the area of the circular base, πr², stacked through the height h. Because every horizontal slice is the same circle, multiplying base area by height counts the whole solid exactly once. Converting cm³ to litres is a matter of scale only: 1 000 identical cubic centimetres fill one litre, so the number of litres is always the number of cubic centimetres divided by 1 000."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "using_the_diameter_12_cm_as_if_it_were_t",
+      "wrongValue": "incorrect_1",
+      "misconception": "Using the diameter 12 cm as if it were the radius, or halving the 12 cm when it is already the radius.",
+      "correctiveNote": "Avoid this: Using the diameter 12 cm as if it were the radius, or halving the 12 cm when it is already the radius."
+    },
+    {
+      "key": "multiplying_by_1_000_instead_of_dividing",
+      "wrongValue": "incorrect_2",
+      "misconception": "Multiplying by 1 000 instead of dividing when converting cm³ to litres.",
+      "correctiveNote": "Avoid this: Multiplying by 1 000 instead of dividing when converting cm³ to litres."
+    },
+    {
+      "key": "rounding_the_cm_value_first_and_then_con",
+      "wrongValue": "incorrect_3",
+      "misconception": "Rounding the cm³ value first and then converting, which loses accuracy in the second decimal place.",
+      "correctiveNote": "Avoid this: Rounding the cm³ value first and then converting, which loses accuracy in the second decimal place."
+    },
+    {
+      "key": "using_the_cone_s_3_cm_and_8_cm_somewhere",
+      "wrongValue": "incorrect_4",
+      "misconception": "Using the cone's 3 cm and 8 cm somewhere in part (a), where they play no role.",
+      "correctiveNote": "Avoid this: Using the cone's 3 cm and 8 cm somewhere in part (a), where they play no role."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Keep the answer in terms of π (2880π) until the very last line, then convert and round once. Rounding only at the end protects the 2 decimal places the question is marked on."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_dp",
+    "canonicalValue": "9.05",
+    "displayValue": "9.05",
+    "acceptedForms": [
+      "9.05",
+      "9.05"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "precision": {
+      "kind": "decimal_places",
+      "value": 2,
+      "required": true
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A cylindrical tank has radius 10 cm and height 25 cm. Find its volume in litres, correct to 2 decimal places."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=π×10²×25=2500π=7853.98cm³=7.85litres.",
+      "displayValue": "= π × 10² × 25 = 2500π = 7853.98 cm³ = 7.85 litres.",
+      "acceptedForms": [
+        "= π × 10² × 25 = 2500π = 7853.98 cm³ = 7.85 litres.",
+        "=π×10²×25=2500π=7853.98cm³=7.85litres."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "3461da01-3497-4459-a150-462dc6c175cf",
+      "code": "M1-1.1",
+      "label": "Volume of a cylinder"
+    },
+    {
+      "objectiveId": "f69245df-385f-43ab-a6cd-94542a755ce4",
+      "code": "M1-1.1",
+      "label": "Unit conversion (cm³ to litres)"
+    },
+    {
+      "objectiveId": "50bf65a9-88db-4f8c-a451-859014584920",
+      "code": "M1-1.1",
+      "label": "Rounding to decimal places"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 11,
+    "pageRef": "p47",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

@@ -1,0 +1,251 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p069-q06",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 4,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A straight line cuts the x-axis at (−3, 0) and the y-axis at (0, 6). (a) Using the formula m = (y₂ − y₁)/(x₂ − x₁), determine the gradient of the line. (b) Hence write the equation of the line in the form y = mx + c."
+    },
+    {
+      "type": "text",
+      "value": "Think first: You already have the y-intercept in front of you, so once the gradient is found the equation is complete."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p069_q06.jpg",
+      "altText": "Source visual for edmar-csec-p069-q06 from workbook page 69."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Label the two points.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(x₁, y₁) = (−3, 0) and (x₂, y₂) = (0, 6)"
+        },
+        {
+          "type": "text",
+          "value": "Result: Points labelled"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Substitute into the gradient formula.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "m = (6 − 0)/(0 − (−3))"
+        },
+        {
+          "type": "text",
+          "value": "Result: m = 6/3"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Simplify.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: m = 2"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Identify c from the y-axis crossing.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The line cuts the y-axis at (0, 6)"
+        },
+        {
+          "type": "text",
+          "value": "Result: c = 6"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Write the equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "y = mx + c with m = 2 and c = 6"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 2x + 6"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Apply the gradient formula to the two given points, then read c straight from the y-axis crossing and assemble y = mx + c."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) m = 2  (b) y = 2x + 6"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The gradient measures how much y changes for each unit change in x, which is exactly what the difference of the y values divided by the difference of the x values computes. In y = mx + c, c is the value of y when x = 0, so the point where the line meets the y-axis hands you c directly. Subtracting a negative x value is what produces the +3 in the denominator, so the sign work must be done carefully."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "mixing_up_the_order_and_computing_x_x_y_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Mixing up the order and computing (x₂ − x₁)/(y₂ − y₁).",
+      "correctiveNote": "Avoid this: Mixing up the order and computing (x₂ − x₁)/(y₂ − y₁)."
+    },
+    {
+      "key": "getting_6_0_3_2_by_dropping_the_negative",
+      "wrongValue": "incorrect_2",
+      "misconception": "Getting 6/(0 − 3) = −2 by dropping the negative sign on −3.",
+      "correctiveNote": "Avoid this: Getting 6/(0 − 3) = −2 by dropping the negative sign on −3."
+    },
+    {
+      "key": "using_3_as_the_value_of_c_because_it_is_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Using −3 as the value of c because it is the x-intercept.",
+      "correctiveNote": "Avoid this: Using −3 as the value of c because it is the x-intercept."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Write the subtraction of a negative in brackets, 0 − (−3), before simplifying; that single habit removes most gradient sign errors."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "m=2",
+    "displayValue": "m = 2",
+    "acceptedForms": [
+      "m = 2",
+      "m=2"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A line cuts the x-axis at (2, 0) and the y-axis at (0, −4). Find its gradient and equation."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "m=2andy=2x−4",
+      "displayValue": "m = 2 and y = 2x − 4",
+      "acceptedForms": [
+        "m = 2 and y = 2x − 4",
+        "m=2andy=2x−4"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "10d5cac4-967c-4ca1-af9d-6182e6ca0730",
+      "code": "M1-1.1",
+      "label": "Gradient from two points"
+    },
+    {
+      "objectiveId": "ced31eba-725e-40c2-a50b-5143a7d40467",
+      "code": "M1-1.1",
+      "label": "Equation of a straight line"
+    },
+    {
+      "objectiveId": "47c0d048-9fe5-423d-ac6d-10813739a8b2",
+      "code": "M1-1.1",
+      "label": "y-intercept"
+    },
+    {
+      "objectiveId": "a741be4a-9ad2-498b-a0f7-67802f07f429",
+      "code": "M1-1.1",
+      "label": "y = mx + c"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 6,
+    "pageRef": "p69",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "m=2",
+        "displayValue": "m = 2",
+        "acceptedForms": [
+          "m = 2",
+          "m=2"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "y=2",
+        "displayValue": "y = 2",
+        "acceptedForms": [
+          "y = 2",
+          "y=2"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

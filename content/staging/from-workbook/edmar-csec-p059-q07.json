@@ -1,0 +1,153 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p059-q07",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the inequality 2y − 6 ≥ y + 4."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Subtract y from both sides to leave a single y term."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p059_q07.jpg",
+      "altText": "Source visual for edmar-csec-p059-q07 from workbook page 59."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Subtract y from both sides.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2y − y − 6 ≥ 4"
+        },
+        {
+          "type": "text",
+          "value": "Result: y − 6 ≥ 4"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Add 6 to both sides.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "y ≥ 4 + 6"
+        },
+        {
+          "type": "text",
+          "value": "Result: y ≥ 10"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Subtract y from both sides, then add 6."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "y ≥ 10"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Because the coefficient of y is already 1 after collecting terms, no division is needed and the ≥ sign is never at risk. The boundary value y = 10 satisfies the inequality exactly: 14 ≥ 14."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "adding_y_to_both_sides_producing_3y_6_4",
+      "wrongValue": "incorrect_1",
+      "misconception": "Adding y to both sides, producing 3y − 6 ≥ 4.",
+      "correctiveNote": "Avoid this: Adding y to both sides, producing 3y − 6 ≥ 4."
+    },
+    {
+      "key": "subtracting_6_instead_of_adding_it_givin",
+      "wrongValue": "incorrect_2",
+      "misconception": "Subtracting 6 instead of adding it, giving y ≥ −2.",
+      "correctiveNote": "Avoid this: Subtracting 6 instead of adding it, giving y ≥ −2."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Substitute the boundary value into both sides at the end - if they come out equal, your working is almost certainly right."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "y≥10",
+    "displayValue": "y ≥ 10",
+    "acceptedForms": [
+      "y ≥ 10",
+      "y≥10"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve 3y − 5 ≥ 2y + 1."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "y≥6",
+      "displayValue": "y ≥ 6",
+      "acceptedForms": [
+        "y ≥ 6",
+        "y≥6"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "89a7e156-eed6-4e0c-a4fc-7e5a1f5dfaa3",
+      "code": "M1-4.1",
+      "label": "Linear inequalities"
+    },
+    {
+      "objectiveId": "061ec37a-5f04-4621-a208-6612a381b450",
+      "code": "M1-4.1",
+      "label": "Collecting like terms"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 7,
+    "pageRef": "p59",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

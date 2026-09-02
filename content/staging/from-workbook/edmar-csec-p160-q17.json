@@ -1,0 +1,202 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p160-q17",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Using a ruler, a pencil and a pair of compasses, construct triangle ABC such that AB = 8 cm, ∠BAC = 30° and AC = 10 cm."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The 30° is not a direct compass angle — get it by constructing 60° and bisecting it."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p160_q17.jpg",
+      "altText": "Source visual for edmar-csec-p160-q17 from workbook page 160."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Draw AB = 8 cm.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: AB = 8 cm"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Construct a 60° angle at A.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Centre A, arc cutting AB at X; same radius centre X cuts the arc at Y; AY is at 60°"
+        },
+        {
+          "type": "text",
+          "value": "Result: 60° at A"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Bisect the 60° angle.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Equal arcs from X and Y crossing inside the angle; join A to the crossing"
+        },
+        {
+          "type": "text",
+          "value": "Result: ∠BAC = 30°"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Mark C on the bisector with AC = 10 cm.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Compasses set to 10 cm, centre A"
+        },
+        {
+          "type": "text",
+          "value": "Result: AC = 10 cm"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Join BC and check its length.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Cosine rule: BC² = 8² + 10² − 2(8)(10)cos30° = 25.44"
+        },
+        {
+          "type": "text",
+          "value": "Result: BC ≈ 5.0 cm"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Draw AB = 8 cm, construct 60° at A and bisect it to get 30°, mark C 10 cm along that arm, then join BC."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "A correctly constructed triangle ABC with AB = 8 cm, AC = 10 cm and ∠BAC = 30°. Accuracy check: BC ≈ 5.0 cm."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Angle bisection halves an angle exactly using only equal radii, so 30° comes from 60° with no protractor. Once the angle at A and both sides through A are set, the third vertex is determined, and the cosine rule gives the one length that verifies the whole drawing."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "trying_to_construct_30_directly_instead_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Trying to construct 30° directly instead of bisecting 60°.",
+      "correctiveNote": "Avoid this: Trying to construct 30° directly instead of bisecting 60°."
+    },
+    {
+      "key": "bisecting_with_the_compasses_reset_to_a_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Bisecting with the compasses reset to a different radius between the two arcs.",
+      "correctiveNote": "Avoid this: Bisecting with the compasses reset to a different radius between the two arcs."
+    },
+    {
+      "key": "assuming_bc_must_be_long_because_the_two",
+      "wrongValue": "incorrect_3",
+      "misconception": "Assuming BC must be long because the two given sides are long — here BC is the shortest side.",
+      "correctiveNote": "Avoid this: Assuming BC must be long because the two given sides are long — here BC is the shortest side."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When a construction asks for 30°, 45° or 15°, look for the bisection route first — those angles are never a single compass step."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "correctlyconstructedtriangleABCwithAB=8cm,AC=10cmand∠BAC=30°.Accuracycheck:BC≈5.0cm.",
+    "displayValue": "correctly constructed triangle ABC with AB = 8 cm, AC = 10 cm and ∠BAC = 30°. Accuracy check: BC ≈ 5.0 cm.",
+    "acceptedForms": [
+      "correctly constructed triangle ABC with AB = 8 cm, AC = 10 cm and ∠BAC = 30°. Accuracy check: BC ≈ 5.0 cm.",
+      "correctlyconstructedtriangleABCwithAB=8cm,AC=10cmand∠BAC=30°.Accuracycheck:BC≈5.0cm."
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "How would you construct a 45° angle with compasses only?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "Constructa90°perpendicular,thenbisectit.",
+      "displayValue": "Construct a 90° perpendicular, then bisect it.",
+      "acceptedForms": [
+        "Construct a 90° perpendicular, then bisect it.",
+        "Constructa90°perpendicular,thenbisectit."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "747908c5-884f-4e49-a1f0-9df9a6042498",
+      "code": "M1-1.1",
+      "label": "Constructing 60° with compasses"
+    },
+    {
+      "objectiveId": "cc82b861-4510-4ec9-ad18-1d7cf848efc4",
+      "code": "M1-1.1",
+      "label": "Bisecting an angle"
+    },
+    {
+      "objectiveId": "c40a2b9d-1e32-404b-af41-7b7b75c01123",
+      "code": "M1-1.1",
+      "label": "Side–angle–side construction"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 17,
+    "pageRef": "p160",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

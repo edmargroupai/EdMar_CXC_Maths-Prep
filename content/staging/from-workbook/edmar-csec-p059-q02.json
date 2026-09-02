@@ -1,0 +1,167 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p059-q02",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the inequality 5y + 1 ≤ 3y + 9."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Collect the y terms on the left and the constants on the right, then divide."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p059_q02.jpg",
+      "altText": "Source visual for edmar-csec-p059-q02 from workbook page 59."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Subtract 3y from both sides.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5y − 3y + 1 ≤ 9"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2y + 1 ≤ 9"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Subtract 1 from both sides.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2y ≤ 9 − 1"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2y ≤ 8"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Divide both sides by 2.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2y/2 ≤ 8/2"
+        },
+        {
+          "type": "text",
+          "value": "Result: y ≤ 4"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Subtract 3y and then 1 from both sides, and finally divide by 2."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "y ≤ 4"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Dividing by the positive number 2 leaves the direction of the inequality untouched. The ≤ sign means 4 is included in the solution, so y = 4 is a valid answer - substituting it gives 21 ≤ 21, which is true."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "dropping_the_equal_to_part_and_writing_y",
+      "wrongValue": "incorrect_1",
+      "misconception": "Dropping the 'equal to' part and writing y < 4.",
+      "correctiveNote": "Avoid this: Dropping the 'equal to' part and writing y < 4."
+    },
+    {
+      "key": "dividing_only_the_8_by_2_and_leaving_2y_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Dividing only the 8 by 2 and leaving 2y on the left.",
+      "correctiveNote": "Avoid this: Dividing only the 8 by 2 and leaving 2y on the left."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Check your answer by substituting the boundary value back into the original inequality."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "y≤4",
+    "displayValue": "y ≤ 4",
+    "acceptedForms": [
+      "y ≤ 4",
+      "y≤4"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve 4y + 3 ≤ 2y + 11."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "y≤4",
+      "displayValue": "y ≤ 4",
+      "acceptedForms": [
+        "y ≤ 4",
+        "y≤4"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "06911726-157c-47c2-a90c-b6d75e126410",
+      "code": "M1-4.1",
+      "label": "Linear inequalities"
+    },
+    {
+      "objectiveId": "c2b0a238-d180-47c7-a670-a0bca0d21281",
+      "code": "M1-4.1",
+      "label": "Collecting like terms"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 2,
+    "pageRef": "p59",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

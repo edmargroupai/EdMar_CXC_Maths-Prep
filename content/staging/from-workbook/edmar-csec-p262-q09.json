@@ -1,0 +1,211 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p262-q09",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Triangles P, Q and R are drawn on a grid: P has vertices (1, 0), (1, -2) and (2, -3); Q has vertices (-1, 4), (-1, 2) and (-2, 1); R has vertices (3, 4), (3, 2) and (4, 1). Describe fully the single transformation that maps (v) triangle P onto triangle R, and (vi) triangle R onto triangle Q."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Compare matching vertices: if the shape stays the same way round and the same size, look for a translation or rotation; if it is flipped, look for a reflection."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p262_q09.jpg",
+      "altText": "Source visual for edmar-csec-p262-q09 from workbook page 262."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Read the vertices of the three triangles from the grid.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Take them in the same order around each triangle."
+        },
+        {
+          "type": "text",
+          "value": "Result: P: (1, 0), (1, -2), (2, -3);  Q: (-1, 4), (-1, 2), (-2, 1);  R: (3, 4), (3, 2), (4, 1)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Pair the vertices of P with those of R and find the change in coordinates.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(1, 0) -> (3, 4);  (1, -2) -> (3, 2);  (2, -3) -> (4, 1). Each x rises by 2 and each y rises by 4."
+        },
+        {
+          "type": "text",
+          "value": "Result: Every point moves by the same vector (2, 4)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "State the transformation P -> R fully.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The same displacement for every point, with size and orientation unchanged, is a translation."
+        },
+        {
+          "type": "text",
+          "value": "Result: Translation by the vector (2, 4)"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Now pair the vertices of R with those of Q.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(3, 4) -> (-1, 4);  (3, 2) -> (-1, 2);  (4, 1) -> (-2, 1). The y-values are unchanged and each x satisfies x' = 2 - x."
+        },
+        {
+          "type": "text",
+          "value": "Result: x -> 2 - x, y -> y"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Identify the mirror line by finding the midpoint of an object-image pair.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Midpoint of x = 3 and x = -1 is x = 1; midpoint of x = 4 and x = -2 is also x = 1."
+        },
+        {
+          "type": "text",
+          "value": "Result: Reflection in the line x = 1"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Read the vertices of each triangle from the grid, pair up corresponding vertices, and see what single rule takes each object point to its image point."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(v) A translation by the vector (2, 4), i.e. 2 units right and 4 units up.  (vi) A reflection in the line x = 1."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A transformation is identified by what it does to corresponding points. When every image point is the object point plus the same fixed displacement, the transformation must be a translation, and the vector is that displacement. When corresponding points sit at equal distances on opposite sides of a fixed line with everything on that line fixed, the transformation is a reflection, and the mirror line is the perpendicular bisector of any object-image segment."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "giving_a_translation_vector_with_the_com",
+      "wrongValue": "incorrect_1",
+      "misconception": "Giving a translation vector with the components the wrong way round.",
+      "correctiveNote": "Avoid this: Giving a translation vector with the components the wrong way round."
+    },
+    {
+      "key": "saying_reflection_without_stating_the_eq",
+      "wrongValue": "incorrect_2",
+      "misconception": "Saying 'reflection' without stating the equation of the mirror line, which loses marks for an incomplete description.",
+      "correctiveNote": "Avoid this: Saying 'reflection' without stating the equation of the mirror line, which loses marks for an incomplete description."
+    },
+    {
+      "key": "assuming_the_mirror_is_the_y_axis_becaus",
+      "wrongValue": "incorrect_3",
+      "misconception": "Assuming the mirror is the y-axis because both triangles straddle it, instead of finding the midpoint x = 1.",
+      "correctiveNote": "Avoid this: Assuming the mirror is the y-axis because both triangles straddle it, instead of finding the midpoint x = 1."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "'Describe fully' means state the type of transformation AND all of its data: vector for a translation; mirror line for a reflection; centre, angle and direction for a rotation; centre and scale factor for an enlargement."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Atranslationbythevector(2,4),i.e.2unitsrightand4unitsup.",
+    "displayValue": "A translation by the vector (2, 4), i.e. 2 units right and 4 units up.",
+    "acceptedForms": [
+      "A translation by the vector (2, 4), i.e. 2 units right and 4 units up.",
+      "Atranslationbythevector(2,4),i.e.2unitsrightand4unitsup."
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Under a reflection in the line x = 1, where does the point (5, -3) go?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(-3,-3)",
+      "displayValue": "(-3, -3)",
+      "acceptedForms": [
+        "(-3, -3)",
+        "(-3,-3)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "96f6ac24-75f0-47c0-a27c-012fbf5df766",
+      "code": "M1-1.1",
+      "label": "Describing transformations fully"
+    },
+    {
+      "objectiveId": "691eec48-5c09-4579-a7ae-92c2da0af265",
+      "code": "M1-1.1",
+      "label": "Translation vector"
+    },
+    {
+      "objectiveId": "792f2da2-109b-4d4d-ae2f-94a17cb73b3e",
+      "code": "M1-1.1",
+      "label": "Reflection in a vertical line"
+    },
+    {
+      "objectiveId": "2ef809da-d5f3-4772-a902-97637d9d13ec",
+      "code": "M1-1.1",
+      "label": "Matching corresponding vertices"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 9,
+    "pageRef": "p262",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

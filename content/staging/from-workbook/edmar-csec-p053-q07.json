@@ -1,0 +1,200 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p053-q07",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Expand and simplify (3x − 2)(3x − 4)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Both brackets subtract, so the middle term will be negative and the constant positive."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p053_q07.jpg",
+      "altText": "Source visual for edmar-csec-p053-q07 from workbook page 53."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply 3x by both terms of the second bracket.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3x × 3x = 9x² and 3x × (−4) = −12x"
+        },
+        {
+          "type": "text",
+          "value": "Result: 9x² − 12x"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Multiply −2 by both terms of the second bracket.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(−2) × 3x = −6x and (−2) × (−4) = +8"
+        },
+        {
+          "type": "text",
+          "value": "Result: −6x + 8"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Add the two partial expansions.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "9x² − 12x − 6x + 8"
+        },
+        {
+          "type": "text",
+          "value": "Result: 9x² − 12x − 6x + 8"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Collect like terms.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "−12x − 6x = −18x"
+        },
+        {
+          "type": "text",
+          "value": "Result: 9x² − 18x + 8"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Multiply each term of the first bracket by each term of the second, then collect the x-terms."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "9x² − 18x + 8"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The leading coefficient 9 comes from 3 × 3, since both brackets contribute a 3x. Both cross-products are negative because each pairs a positive 3x with a negative number, so they add rather than cancel. The constant is positive because (−2) × (−4) = 8, following the usual rule for multiplying two negatives."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "getting_the_constant_as_8",
+      "wrongValue": "incorrect_1",
+      "misconception": "Getting the constant as −8.",
+      "correctiveNote": "Avoid this: Getting the constant as −8."
+    },
+    {
+      "key": "combining_12x_and_6x_as_6x_by_subtractin",
+      "wrongValue": "incorrect_2",
+      "misconception": "Combining −12x and −6x as −6x by subtracting them.",
+      "correctiveNote": "Avoid this: Combining −12x and −6x as −6x by subtracting them."
+    },
+    {
+      "key": "writing_6x_for_the_first_term_by_adding_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Writing 6x² for the first term by adding the coefficients instead of multiplying.",
+      "correctiveNote": "Avoid this: Writing 6x² for the first term by adding the coefficients instead of multiplying."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "In an expansion of (ax + b)(cx + d), check the leading term is ac x² and the constant is bd before you worry about the middle. Those two are the easiest marks to secure."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "9",
+    "displayValue": "9",
+    "acceptedForms": [
+      "9",
+      "9"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Expand and simplify (2x − 5)(2x − 3)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "4",
+      "displayValue": "4",
+      "acceptedForms": [
+        "4",
+        "4"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "74e25068-bdd7-44b4-a5d6-235f84f19aad",
+      "code": "M1-4.1",
+      "label": "Expanding a product of two binomials with coefficients"
+    },
+    {
+      "objectiveId": "d8bd8b9c-d8d5-416f-a5d0-563aa888ccd1",
+      "code": "M1-4.1",
+      "label": "Multiplication of directed numbers"
+    },
+    {
+      "objectiveId": "0cc9d4df-abd9-49ca-a905-23af7abb8b7d",
+      "code": "M1-4.1",
+      "label": "Collecting like terms"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 7,
+    "pageRef": "p53",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

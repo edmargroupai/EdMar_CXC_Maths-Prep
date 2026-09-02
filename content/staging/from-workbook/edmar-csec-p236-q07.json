@@ -1,0 +1,239 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p236-q07",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A distance–time graph shows a train's journey from station A to station B: the distance rises steadily from 0 km at 0 minutes to 100 km at B after 40 minutes, then stays at 100 km until 60 minutes. (i) For how many minutes was the train at rest at B? (ii) Determine the average speed in km/h from A to B. The train then travels on to station C, 50 km beyond B, at an average speed of 60 km/h. (iii) Calculate the time in minutes for the journey B to C. (iv) Draw the line segment describing the journey from B to C."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Every flat section of a distance–time graph is a stop, and every sloping section is motion whose gradient gives the speed — watch the minutes-to-hours conversion."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p236_q07.jpg",
+      "altText": "Source visual for edmar-csec-p236-q07 from workbook page 236."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Read the start and end of the horizontal part of the graph.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The graph is flat at 100 km from t = 40 min to t = 60 min"
+        },
+        {
+          "type": "text",
+          "value": "Result: at rest for 20 minutes"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Read the distance and time for the A-to-B leg.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "0 km to 100 km, taking 40 minutes"
+        },
+        {
+          "type": "text",
+          "value": "Result: 100 km in 40 min"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Convert the time to hours, then divide.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "40 min = 40/60 h = 2/3 h; speed = 100 ÷ 2/3 = 100 × 3/2"
+        },
+        {
+          "type": "text",
+          "value": "Result: 150 km/h"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Use time = distance ÷ speed for the B-to-C leg.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "50 ÷ 60 h = 5/6 h"
+        },
+        {
+          "type": "text",
+          "value": "Result: 5/6 h = 50 minutes"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Fix the two endpoints of the new segment on the graph.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The train leaves B at t = 60 min at 100 km and arrives at C 50 km further on, 50 minutes later"
+        },
+        {
+          "type": "text",
+          "value": "Result: from (60, 100) to (110, 150)"
+        }
+      ]
+    },
+    {
+      "stepNo": 6,
+      "instruction": "Join those two points with a straight line.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Constant average speed means a straight segment"
+        },
+        {
+          "type": "text",
+          "value": "Result: straight line from (60 min, 100 km) to (110 min, 150 km)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Read the endpoints of the flat section for the rest time, convert 40 minutes to hours for the A-to-B speed, use time = distance ÷ speed for B to C, and then plot the new segment from where the graph left off."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) 20 minutes  (ii) 150 km/h  (iii) 50 minutes  (iv) A straight line segment from (60 min, 100 km) to (110 min, 150 km)."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Average speed is total distance divided by total time, so the gradient of a distance–time line is exactly the speed of that leg. Since speed is asked in km/h, the time must be in hours before dividing — 40 minutes is two-thirds of an hour, not 0.40 of one. The final segment must begin where the graph stopped, at 60 minutes and 100 km, because the train has not moved during the rest."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "dividing_by_40_instead_of_by_2_3_of_an_h",
+      "wrongValue": "incorrect_1",
+      "misconception": "Dividing by 40 instead of by 2/3 of an hour, giving 2.5 instead of 150 km/h.",
+      "correctiveNote": "Avoid this: Dividing by 40 instead of by 2/3 of an hour, giving 2.5 instead of 150 km/h."
+    },
+    {
+      "key": "writing_40_minutes_as_0_4_hours",
+      "wrongValue": "incorrect_2",
+      "misconception": "Writing 40 minutes as 0.4 hours.",
+      "correctiveNote": "Avoid this: Writing 40 minutes as 0.4 hours."
+    },
+    {
+      "key": "starting_the_b_to_c_segment_at_t_40_min_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Starting the B-to-C segment at t = 40 min instead of t = 60 min.",
+      "correctiveNote": "Avoid this: Starting the B-to-C segment at t = 40 min instead of t = 60 min."
+    },
+    {
+      "key": "drawing_the_b_to_c_line_ending_at_50_km_",
+      "wrongValue": "incorrect_4",
+      "misconception": "Drawing the B-to-C line ending at 50 km rather than 150 km — C is 50 km beyond B.",
+      "correctiveNote": "Avoid this: Drawing the B-to-C line ending at 50 km rather than 150 km — C is 50 km beyond B."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Convert every time to hours the moment you see 'km/h' in the question, before any dividing happens."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "20",
+    "displayValue": "20",
+    "acceptedForms": [
+      "20",
+      "20"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A bus covers 30 km in 24 minutes. What is its average speed in km/h?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "75",
+      "displayValue": "75",
+      "acceptedForms": [
+        "75",
+        "75"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "34b96a14-4c9f-4c61-aa9b-b7ad35f7b3b7",
+      "code": "M1-1.1",
+      "label": "Distance–time graphs"
+    },
+    {
+      "objectiveId": "439cdb50-dad8-45f7-a229-ccc1488cadf0",
+      "code": "M1-1.1",
+      "label": "Average speed = distance ÷ time"
+    },
+    {
+      "objectiveId": "ee6ffacc-ff1a-4575-a361-441a2a6b67e2",
+      "code": "M1-1.1",
+      "label": "Converting minutes to hours"
+    },
+    {
+      "objectiveId": "544ceae3-dde1-4b5c-a015-26043ee8bae3",
+      "code": "M1-1.1",
+      "label": "Drawing a travel-graph segment"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 7,
+    "pageRef": "p236",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

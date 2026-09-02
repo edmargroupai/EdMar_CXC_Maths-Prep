@@ -1,0 +1,173 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p092-q04",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Factorise completely: 9a² − 6ab + 12a − 8b"
+    },
+    {
+      "type": "text",
+      "value": "Think first: Look for the pairing that leaves the same bracket twice."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p092_q04.jpg",
+      "altText": "Source visual for edmar-csec-p092-q04 from workbook page 92."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Group the terms in pairs.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(9a² − 6ab) + (12a − 8b)"
+        },
+        {
+          "type": "text",
+          "value": "Result: Two pairs"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Take the common factor out of each pair.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3a from 9a² − 6ab, and 4 from 12a − 8b"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3a(3a − 2b) + 4(3a − 2b)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Take out the common bracket.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(3a − 2b) appears in both terms"
+        },
+        {
+          "type": "text",
+          "value": "Result: (3a − 2b)(3a + 4)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Group the first two and the last two terms, take out 3a and then 4, and finish by taking out the shared bracket."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(3a − 2b)(3a + 4)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Grouping works because factorising each pair reveals the same bracket in both terms, and that bracket can then be taken out exactly like a common number or letter. Expanding the answer returns the four original terms, which is the check."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "taking_out_3_instead_of_3a_from_9a_6ab",
+      "wrongValue": "incorrect_1",
+      "misconception": "Taking out 3 instead of 3a from 9a² − 6ab.",
+      "correctiveNote": "Avoid this: Taking out 3 instead of 3a from 9a² − 6ab."
+    },
+    {
+      "key": "writing_3a_2b_3a_4_and_losing_track_of_t",
+      "wrongValue": "incorrect_2",
+      "misconception": "Writing (3a − 2b)(3a − 4) and losing track of the sign on the +12a.",
+      "correctiveNote": "Avoid this: Writing (3a − 2b)(3a − 4) and losing track of the sign on the +12a."
+    },
+    {
+      "key": "stopping_before_the_common_bracket_has_b",
+      "wrongValue": "incorrect_3",
+      "misconception": "Stopping before the common bracket has been taken out.",
+      "correctiveNote": "Avoid this: Stopping before the common bracket has been taken out."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Check your factorisation by expanding: all four original terms must reappear, signs included."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "(3a−2b)(3a+4)",
+    "displayValue": "(3a − 2b)(3a + 4)",
+    "acceptedForms": [
+      "(3a − 2b)(3a + 4)",
+      "(3a−2b)(3a+4)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Factorise 4x² − 6xy + 10x − 15y."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(2x−3y)(2x+5)",
+      "displayValue": "(2x − 3y)(2x + 5)",
+      "acceptedForms": [
+        "(2x − 3y)(2x + 5)",
+        "(2x−3y)(2x+5)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M3-2.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "45b7055f-ebba-4ad9-ac96-cc9bda099f05",
+      "code": "M3-2.1",
+      "label": "Factorisation by grouping"
+    },
+    {
+      "objectiveId": "e300598e-dfcf-48ee-a643-ddd72946e465",
+      "code": "M3-2.1",
+      "label": "Common factors"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 4,
+    "pageRef": "p92",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

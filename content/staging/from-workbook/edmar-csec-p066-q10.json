@@ -1,0 +1,210 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p066-q10",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Factorise completely: 3x³ + 6x²."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The common power of x is the lower one, x², not x³."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p066_q10.jpg",
+      "altText": "Source visual for edmar-csec-p066-q10 from workbook page 66."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Find the HCF of the coefficients.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3 and 6 share the factor 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Find the lowest power of x common to both terms.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x³ and x² both contain x²"
+        },
+        {
+          "type": "text",
+          "value": "Result: x²"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Combine into the full HCF.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3 × x²"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3x²"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Divide each term by 3x².",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3x³ ÷ 3x² = x and 6x² ÷ 3x² = 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: x and 2"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Write the factorised form.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: 3x²(x + 2)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Take the HCF of the coefficients together with the lowest power of x present in both terms."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "3x³ + 6x² = 3x²(x + 2)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A power can only be taken out as far as the smallest index present, because that is all every term has to give. Since x³ contains x² with one x to spare, and x² contains x² exactly, the common factor is x². Dividing then uses the index law x³ ÷ x² = x^(3−2), which is why a single x remains in the bracket."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "taking_out_x_and_leaving_a_fraction_in_t",
+      "wrongValue": "incorrect_1",
+      "misconception": "Taking out x³ and leaving a fraction in the bracket.",
+      "correctiveNote": "Avoid this: Taking out x³ and leaving a fraction in the bracket."
+    },
+    {
+      "key": "taking_out_only_x_and_stopping_leaving_3",
+      "wrongValue": "incorrect_2",
+      "misconception": "Taking out only x and stopping, leaving 3x(x² + 2x).",
+      "correctiveNote": "Avoid this: Taking out only x and stopping, leaving 3x(x² + 2x)."
+    },
+    {
+      "key": "writing_3x_x_6x",
+      "wrongValue": "incorrect_3",
+      "misconception": "Writing 3x²(x + 6x²).",
+      "correctiveNote": "Avoid this: Writing 3x²(x + 6x²)."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "For letters, the common factor always carries the smallest index that appears; for numbers, the largest common value."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "3",
+    "displayValue": "3",
+    "acceptedForms": [
+      "3",
+      "3"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Factorise completely: 5y⁴ + 10y³."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "5",
+      "displayValue": "5",
+      "acceptedForms": [
+        "5",
+        "5"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "a83dc4e9-aada-45b1-a6e4-d63b888c5181",
+      "code": "M1-4.1",
+      "label": "Factorising"
+    },
+    {
+      "objectiveId": "50cb808c-e26d-46a1-a3e8-00bebc1656fd",
+      "code": "M1-4.1",
+      "label": "Highest common factor with indices"
+    },
+    {
+      "objectiveId": "fc3ad520-8c10-4388-ab02-b729d5c7465d",
+      "code": "M1-4.1",
+      "label": "Laws of indices"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 10,
+    "pageRef": "p66",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

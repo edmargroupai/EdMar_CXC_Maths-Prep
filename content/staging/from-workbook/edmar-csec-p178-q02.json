@@ -1,0 +1,236 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p178-q02",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 4,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The vector a is the column vector with components 6 and 8. (a) Calculate |a|, the magnitude of a. (b) Write down a unit vector in the direction of a."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The two components are the legs of a right-angled triangle whose hypotenuse is the magnitude."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p178_q02.jpg",
+      "altText": "Source visual for edmar-csec-p178-q02 from workbook page 178."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Apply Pythagoras to the components.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "|a|² = 6² + 8² = 36 + 64"
+        },
+        {
+          "type": "text",
+          "value": "Result: |a|² = 100"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Take the square root.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "√100"
+        },
+        {
+          "type": "text",
+          "value": "Result: |a| = 10"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Divide the vector by its magnitude.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(1/10) × (6, 8)"
+        },
+        {
+          "type": "text",
+          "value": "Result: unit vector = (0.6, 0.8)"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Check the unit vector.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "0.6² + 0.8² = 0.36 + 0.64 = 1"
+        },
+        {
+          "type": "text",
+          "value": "Result: magnitude 1 confirmed"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Apply Pythagoras to the components for the magnitude, then divide the vector by that magnitude to get the unit vector."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) |a| = 10  (b) the unit vector is (1/10)(6, 8) = (0.6, 0.8), that is the column vector with components 3/5 and 4/5"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A column vector describes a horizontal step and a vertical step, which meet at a right angle, so its length is exactly the hypotenuse Pythagoras gives. Dividing every component by that length scales the arrow down to length 1 without turning it, so the direction is preserved while the size becomes the standard unit — which is why a unit vector is the pure statement of direction."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "adding_the_components_to_get_14_instead_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Adding the components to get 14 instead of using Pythagoras.",
+      "correctiveNote": "Avoid this: Adding the components to get 14 instead of using Pythagoras."
+    },
+    {
+      "key": "forgetting_the_square_root_and_giving_a_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Forgetting the square root and giving |a| = 100.",
+      "correctiveNote": "Avoid this: Forgetting the square root and giving |a| = 100."
+    },
+    {
+      "key": "dividing_only_one_component_by_the_magni",
+      "wrongValue": "incorrect_3",
+      "misconception": "Dividing only one component by the magnitude.",
+      "correctiveNote": "Avoid this: Dividing only one component by the magnitude."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Always verify a unit vector by squaring and adding its components — the total must be exactly 1."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "|a|=10",
+    "displayValue": "|a| = 10",
+    "acceptedForms": [
+      "|a| = 10",
+      "|a|=10"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Find the magnitude of the vector with components 5 and 12, and a unit vector in its direction."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "Magnitude13;unitvector(5/13,12/13).",
+      "displayValue": "Magnitude 13; unit vector (5/13, 12/13).",
+      "acceptedForms": [
+        "Magnitude 13; unit vector (5/13, 12/13).",
+        "Magnitude13;unitvector(5/13,12/13)."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "e5a085ea-1d6e-450c-af4e-6943a54c72f5",
+      "code": "M2-5.1",
+      "label": "Magnitude of a vector"
+    },
+    {
+      "objectiveId": "071383c1-f0a8-4f7e-aae0-0018c5055f8d",
+      "code": "M2-5.1",
+      "label": "Unit vectors"
+    },
+    {
+      "objectiveId": "cd1cd5fc-5b38-43f4-aaf4-611c4265f193",
+      "code": "M2-5.1",
+      "label": "Pythagoras' theorem"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 2,
+    "pageRef": "p178",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "|a|=10",
+        "displayValue": "|a| = 10",
+        "acceptedForms": [
+          "|a| = 10",
+          "|a|=10"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "theunitvectoris(1/10)(6,8)=(0.6,0.8),thatisthecolumnvectorwithcomponents3/5an",
+        "displayValue": "the unit vector is (1/10)(6, 8) = (0.6, 0.8), that is the column vector with components 3/5 an",
+        "acceptedForms": [
+          "the unit vector is (1/10)(6, 8) = (0.6, 0.8), that is the column vector with components 3/5 an",
+          "theunitvectoris(1/10)(6,8)=(0.6,0.8),thatisthecolumnvectorwithcomponents3/5an"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

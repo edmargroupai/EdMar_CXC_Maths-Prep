@@ -1,0 +1,164 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p092-q10",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Factorise completely: 16x²y² − 121z²"
+    },
+    {
+      "type": "text",
+      "value": "Think first: Take the square root of every part of each term — number and letters alike."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p092_q10.jpg",
+      "altText": "Source visual for edmar-csec-p092-q10 from workbook page 92."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write each term as a square.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "16x²y² = (4xy)² and 121z² = (11z)²"
+        },
+        {
+          "type": "text",
+          "value": "Result: (4xy)² − (11z)²"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Apply the difference of two squares.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Here a = 4xy and b = 11z"
+        },
+        {
+          "type": "text",
+          "value": "Result: (4xy − 11z)(4xy + 11z)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Write both terms as squares and apply a² − b² = (a − b)(a + b)."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(4xy − 11z)(4xy + 11z)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Squaring a product squares each of its parts, so the square root of 16x²y² is 4xy. With both terms written as squares the rule applies directly, and expanding the two brackets cancels the middle terms to return the original expression."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "forgetting_to_square_root_the_y_and_writ",
+      "wrongValue": "incorrect_1",
+      "misconception": "Forgetting to square-root the y and writing (4xy² − 11z).",
+      "correctiveNote": "Avoid this: Forgetting to square-root the y and writing (4xy² − 11z)."
+    },
+    {
+      "key": "using_11_as_the_square_root_of_121z_with",
+      "wrongValue": "incorrect_2",
+      "misconception": "Using 11 as the square root of 121z² without the z.",
+      "correctiveNote": "Avoid this: Using 11 as the square root of 121z² without the z."
+    },
+    {
+      "key": "trying_to_factorise_the_sum_16x_y_121z",
+      "wrongValue": "incorrect_3",
+      "misconception": "Trying to factorise the sum 16x²y² + 121z².",
+      "correctiveNote": "Avoid this: Trying to factorise the sum 16x²y² + 121z²."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Check that both terms really are perfect squares before using the rule — if either is not, a different method is needed."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "(4xy−11z)(4xy+11z)",
+    "displayValue": "(4xy − 11z)(4xy + 11z)",
+    "acceptedForms": [
+      "(4xy − 11z)(4xy + 11z)",
+      "(4xy−11z)(4xy+11z)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Factorise 9a²b² − 64c²."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(3ab−8c)(3ab+8c)",
+      "displayValue": "(3ab − 8c)(3ab + 8c)",
+      "acceptedForms": [
+        "(3ab − 8c)(3ab + 8c)",
+        "(3ab−8c)(3ab+8c)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M3-2.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "199def91-3703-46db-afdf-73275fb9b78a",
+      "code": "M3-2.1",
+      "label": "Difference of two squares"
+    },
+    {
+      "objectiveId": "0e6d01b5-763b-41c4-a0ef-e3c9580a0e1f",
+      "code": "M3-2.1",
+      "label": "Square roots of algebraic terms"
+    },
+    {
+      "objectiveId": "4c12e7fc-384f-43ad-aa40-37aac7fd6097",
+      "code": "M3-2.1",
+      "label": "Indices"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 10,
+    "pageRef": "p92",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

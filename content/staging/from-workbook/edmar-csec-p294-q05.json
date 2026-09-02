@@ -1,0 +1,282 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p294-q05",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 6,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A = (0  -1 / 1  0) represents a rotation of 90 degrees anticlockwise about the origin O, and B = (0  -1 / -1  0) represents a reflection in the line y = -x. (i) Write the coordinates of P', the image of P(7, 11) after a rotation of 90 degrees anticlockwise about O. (ii) T is the combined transformation A followed by B; determine the elements of the matrix representing T. (iii) Describe geometrically the transformation represented by T. (b) The matrix C = (3  k / 6  4) is singular; determine the value of k."
+    },
+    {
+      "type": "text",
+      "value": "Think first: For a combined transformation, the matrix of the second transformation goes on the left, because it acts on the image the first one produced."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p294_q05.jpg",
+      "altText": "Source visual for edmar-csec-p294-q05 from workbook page 294."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply A by the position vector of P.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(0  -1 / 1  0)(7 / 11) = ((0)(7) + (-1)(11) / (1)(7) + (0)(11)) = (-11 / 7)"
+        },
+        {
+          "type": "text",
+          "value": "Result: P'(-11, 7)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "For A followed by B, write the combined matrix as BA, not AB.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The point is first multiplied by A, then that result is multiplied by B: B(A x) = (BA)x."
+        },
+        {
+          "type": "text",
+          "value": "Result: T = BA"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Work out BA.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(0  -1 / -1  0)(0  -1 / 1  0):  top row ((0)(0) + (-1)(1), (0)(-1) + (-1)(0)) = (-1, 0);  bottom row ((-1)(0) + (0)(1), (-1)(-1) + (0)(0)) = (0, 1)"
+        },
+        {
+          "type": "text",
+          "value": "Result: T = (-1  0 / 0  1)"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Apply T to a general point to describe it.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(-1  0 / 0  1)(x / y) = (-x / y): the x-coordinate changes sign and the y-coordinate is unchanged."
+        },
+        {
+          "type": "text",
+          "value": "Result: T is a reflection in the y-axis (the line x = 0)"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "For (b), a singular matrix has determinant zero.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "det C = (3)(4) - (k)(6) = 12 - 6k = 0"
+        },
+        {
+          "type": "text",
+          "value": "Result: k = 2"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Multiply A by the column vector for P, form the product BA for the combined transformation, read off the geometric effect of that matrix on a general point, then set det C = 0 for part (b)."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) P'(-11, 7)  (ii) T = (-1  0 / 0  1)  (iii) T is a reflection in the y-axis, the line x = 0.  (b) k = 2"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A transformation matrix acts on the left of a column vector, so applying A and then B gives B(Ax), which by associativity equals (BA)x; the matrix of a combined transformation is therefore the product with the second transformation written first. Reading the columns of a 2x2 transformation matrix tells you where (1, 0) and (0, 1) go, which pins the transformation down completely. A matrix is singular when its determinant is zero, because then it has no inverse and cannot be undone."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "computing_ab_instead_of_ba_and_getting_1",
+      "wrongValue": "incorrect_1",
+      "misconception": "Computing AB instead of BA and getting (1  0 / 0  -1), a reflection in the x-axis.",
+      "correctiveNote": "Avoid this: Computing AB instead of BA and getting (1  0 / 0  -1), a reflection in the x-axis."
+    },
+    {
+      "key": "writing_the_point_as_a_row_matrix_which_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Writing the point as a row matrix, which makes the multiplication impossible.",
+      "correctiveNote": "Avoid this: Writing the point as a row matrix, which makes the multiplication impossible."
+    },
+    {
+      "key": "describing_t_as_a_rotation_because_two_t",
+      "wrongValue": "incorrect_3",
+      "misconception": "Describing T as a rotation because two transformations were combined.",
+      "correctiveNote": "Avoid this: Describing T as a rotation because two transformations were combined."
+    },
+    {
+      "key": "setting_the_determinant_equal_to_1_rathe",
+      "wrongValue": "incorrect_4",
+      "misconception": "Setting the determinant equal to 1 rather than 0 for a singular matrix.",
+      "correctiveNote": "Avoid this: Setting the determinant equal to 1 rather than 0 for a singular matrix."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Remember 'last first': in a combined transformation the matrix applied last is written on the left of the product."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "P'(-11,7)",
+    "displayValue": "P'(-11, 7)",
+    "acceptedForms": [
+      "P'(-11, 7)",
+      "P'(-11,7)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "What is the image of (4, -6) under the matrix (-1  0 / 0  1)?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(-4,-6)",
+      "displayValue": "(-4, -6)",
+      "acceptedForms": [
+        "(-4, -6)",
+        "(-4,-6)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "c86b6ef3-6d34-479a-a5ea-e40765b23544",
+      "code": "M2-4.1",
+      "label": "Matrix transformation of a point"
+    },
+    {
+      "objectiveId": "6107167d-6d07-4501-abbe-4c6057cb9331",
+      "code": "M2-4.1",
+      "label": "Combined transformations and the order of matrix products"
+    },
+    {
+      "objectiveId": "44774e85-8a33-42b1-afca-1b82bfee2c09",
+      "code": "M2-4.1",
+      "label": "Reflection in the y-axis"
+    },
+    {
+      "objectiveId": "b648446d-54b4-4c12-a6fc-a7afbab40df2",
+      "code": "M2-4.1",
+      "label": "Singular matrix and zero determinant"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 5,
+    "pageRef": "p294",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a.i",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.i): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "P'(-11,7)",
+        "displayValue": "P'(-11, 7)",
+        "acceptedForms": [
+          "P'(-11, 7)",
+          "P'(-11,7)"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.ii",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.ii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "T=(-10/01)",
+        "displayValue": "T = (-1 0 / 0 1)",
+        "acceptedForms": [
+          "T = (-1 0 / 0 1)",
+          "T=(-10/01)"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.iii",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.iii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Tis",
+        "displayValue": "T is",
+        "acceptedForms": [
+          "T is",
+          "Tis"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

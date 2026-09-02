@@ -1,0 +1,167 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p061-q05",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "If p = 2, q = −3 and r = −1, find pq + pr."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Two products, both involving a negative, then a sum."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p061_q05.jpg",
+      "altText": "Source visual for edmar-csec-p061-q05 from workbook page 61."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Evaluate pq.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(2)(−3)"
+        },
+        {
+          "type": "text",
+          "value": "Result: −6"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Evaluate pr.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(2)(−1)"
+        },
+        {
+          "type": "text",
+          "value": "Result: −2"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Add the two results.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "−6 + (−2)"
+        },
+        {
+          "type": "text",
+          "value": "Result: −8"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Substitute and evaluate each product separately, then add them."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "−8"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Each term is worked out on its own before they are combined, which keeps the signs manageable. Adding a negative is the same as subtracting, so −6 + (−2) moves further down the number line to −8. You could also factorise first: pq + pr = p(q + r) = 2(−4) = −8, which is a useful check."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "adding_the_numbers_and_ignoring_the_sign",
+      "wrongValue": "incorrect_1",
+      "misconception": "Adding the numbers and ignoring the signs, giving 8.",
+      "correctiveNote": "Avoid this: Adding the numbers and ignoring the signs, giving 8."
+    },
+    {
+      "key": "treating_6_2_as_6_2_4",
+      "wrongValue": "incorrect_2",
+      "misconception": "Treating −6 + (−2) as −6 + 2 = −4.",
+      "correctiveNote": "Avoid this: Treating −6 + (−2) as −6 + 2 = −4."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Where an expression has a common factor, factorising gives you a quick second route to check your answer."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "−8",
+    "displayValue": "−8",
+    "acceptedForms": [
+      "−8",
+      "−8"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "If p = 3, q = −2 and r = −4, find pq + pr."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "−18",
+      "displayValue": "−18",
+      "acceptedForms": [
+        "−18",
+        "−18"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "18d98614-7ef8-4466-a311-f7d7d92077ed",
+      "code": "M1-4.1",
+      "label": "Substitution"
+    },
+    {
+      "objectiveId": "462bf249-b41d-4f11-ae88-bd2a10bb1902",
+      "code": "M1-4.1",
+      "label": "Directed numbers"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 5,
+    "pageRef": "p61",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

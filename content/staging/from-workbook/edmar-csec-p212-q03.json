@@ -1,0 +1,212 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p212-q03",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The speeds, to the nearest km/h, of 90 vehicles passing a checkpoint are grouped as 0–19 (5), 20–39 (11), 40–59 (26), 60–79 (37), 80–99 (9), 100–119 (2). (a) For the class 20–39 state (i) the upper class limit, (ii) the class width, (iii) the speed at or below which 16 vehicles passed. (b) Complete the cumulative frequency column. (c) Draw the cumulative frequency curve using 2 cm to 20 km/h on the x-axis and 2 cm to 10 vehicles on the y-axis. (d)(i) Use the graph to estimate the speed at or below which 50% of the vehicles were driving."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Cumulative frequency is a running total, and each running total belongs at the upper class boundary of its class, not at the middle."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p212_q03.jpg",
+      "altText": "Source visual for edmar-csec-p212-q03 from workbook page 212."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Read off the limits and width of the class 20–39.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Upper class limit is the larger number written in the class; boundaries are 19.5 and 39.5, so width = 39.5 − 19.5"
+        },
+        {
+          "type": "text",
+          "value": "Result: Upper class limit 39; class width 20"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Interpret the cumulative frequency of 16.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5 + 11 = 16 vehicles fall in the classes 0–19 and 20–39, all with speeds up to the upper boundary 39.5"
+        },
+        {
+          "type": "text",
+          "value": "Result: 16 vehicles travelled at 39.5 km/h or less (i.e. no more than 39 km/h as recorded)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Complete the cumulative frequency column by running totals.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5; 5+11=16; 16+26=42; 42+37=79; 79+9=88; 88+2=90"
+        },
+        {
+          "type": "text",
+          "value": "Result: 5, 16, 42, 79, 88, 90"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Plot the cumulative frequencies against the upper class boundaries and join with a smooth curve.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(19.5, 5), (39.5, 16), (59.5, 42), (79.5, 79), (99.5, 88), (119.5, 90), starting from (−0.5, 0)"
+        },
+        {
+          "type": "text",
+          "value": "Result: A smooth S-shaped cumulative frequency curve"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Read the median from the curve at half the total frequency.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "50% of 90 = 45; the 45th value lies in 60–79: 59.5 + (45 − 42)/37 × 20 ≈ 61"
+        },
+        {
+          "type": "text",
+          "value": "Result: About 61 km/h"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Add the frequencies in turn to complete the cumulative frequency column, plot each total against its upper class boundary, then read across from half the total frequency to estimate the median speed."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a)(i) 39  (ii) 20 km/h  (iii) 39.5 km/h (the upper class boundary of 20–39).  (b) Cumulative frequencies: 5, 16, 42, 79, 88, 90.  (c) Points (19.5, 5), (39.5, 16), (59.5, 42), (79.5, 79), (99.5, 88), (119.5, 90) joined by a smooth curve.  (d)(i) Reading across at a cumulative frequency of 45 gives a speed of about 61 km/h."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A cumulative frequency curve answers the question 'how many are at most this value?', so each running total must be plotted at the top edge of its class — the only speed by which all of those vehicles have certainly been counted. Reading back from half the total frequency then gives the middle value of the whole distribution, which is the median."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "plotting_cumulative_frequency_against_th",
+      "wrongValue": "incorrect_1",
+      "misconception": "Plotting cumulative frequency against the class midpoint instead of the upper class boundary.",
+      "correctiveNote": "Avoid this: Plotting cumulative frequency against the class midpoint instead of the upper class boundary."
+    },
+    {
+      "key": "giving_the_class_width_as_39_20_19",
+      "wrongValue": "incorrect_2",
+      "misconception": "Giving the class width as 39 − 20 = 19.",
+      "correctiveNote": "Avoid this: Giving the class width as 39 − 20 = 19."
+    },
+    {
+      "key": "reading_the_median_from_the_frequency_co",
+      "wrongValue": "incorrect_3",
+      "misconception": "Reading the median from the frequency column instead of the cumulative frequency curve.",
+      "correctiveNote": "Avoid this: Reading the median from the frequency column instead of the cumulative frequency curve."
+    },
+    {
+      "key": "forgetting_that_the_last_cumulative_freq",
+      "wrongValue": "incorrect_4",
+      "misconception": "Forgetting that the last cumulative frequency must equal the total, 90.",
+      "correctiveNote": "Avoid this: Forgetting that the last cumulative frequency must equal the total, 90."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Check your final cumulative frequency equals the total stated in the question — if it does not, one of your additions is wrong."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "(a)(i)39(ii)20km/h(iii)39.5km/h(theupperclassboundaryof20–39).(b)Cumulativefrequencies:5,16,42,79",
+    "displayValue": "(a)(i) 39  (ii) 20 km/h  (iii) 39.5 km/h (the upper class boundary of 20–39).  (b) Cumulative frequencies: 5, 16, 42, 79",
+    "acceptedForms": [
+      "(a)(i) 39  (ii) 20 km/h  (iii) 39.5 km/h (the upper class boundary of 20–39).  (b) Cumulative frequencies: 5, 16, 42, 79",
+      "(a)(i)39(ii)20km/h(iii)39.5km/h(theupperclassboundaryof20–39).(b)Cumulativefrequencies:5,16,42,79"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Classes 0–9, 10–19, 20–29 have frequencies 4, 10 and 6. Write the cumulative frequencies and the point you would plot for the middle class."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "Cumulativefrequencies4,14,20;plot(19.5,14).",
+      "displayValue": "Cumulative frequencies 4, 14, 20; plot (19.5, 14).",
+      "acceptedForms": [
+        "Cumulative frequencies 4, 14, 20; plot (19.5, 14).",
+        "Cumulativefrequencies4,14,20;plot(19.5,14)."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M3-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "8d5c356d-276c-4c03-ab16-3f60330fcacf",
+      "code": "M3-1.1",
+      "label": "Cumulative frequency tables and curves"
+    },
+    {
+      "objectiveId": "a9821777-6f73-41e9-ae67-580b4477f01c",
+      "code": "M3-1.1",
+      "label": "Class limits, boundaries and width"
+    },
+    {
+      "objectiveId": "8d2beb63-3b6a-4070-a17b-13d4d5d54ca6",
+      "code": "M3-1.1",
+      "label": "Estimating the median from a cumulative frequency curve"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 3,
+    "pageRef": "p212",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

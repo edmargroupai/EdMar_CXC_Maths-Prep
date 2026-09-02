@@ -1,0 +1,201 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p098-q05",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the simultaneous equations 3x + 2y = 11 and x + y = 5."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The second equation has a coefficient of 1, which makes substitution the quickest route."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p098_q05.jpg",
+      "altText": "Source visual for edmar-csec-p098-q05 from workbook page 98."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Make y the subject of the second equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x + y = 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 5 − x"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Substitute this into the first equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3x + 2(5 − x) = 11"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3x + 10 − 2x = 11"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Simplify and solve for x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x + 10 = 11"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 1"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Substitute back to find y.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "y = 5 − 1"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 4"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Check in the first equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3(1) + 2(4) = 3 + 8"
+        },
+        {
+          "type": "text",
+          "value": "Result: 11 ✓"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Rearrange x + y = 5 to make y the subject, substitute into the first equation and solve for x."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = 1, y = 4"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Substitution replaces one unknown by an expression that is guaranteed to be equal to it, so the resulting equation carries exactly the same information but involves only one letter. Both equations still hold, which is why the values found satisfy the pair."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "substituting_5_x_without_brackets_giving",
+      "wrongValue": "incorrect_1",
+      "misconception": "Substituting 5 − x without brackets, giving 3x + 10 − x.",
+      "correctiveNote": "Avoid this: Substituting 5 − x without brackets, giving 3x + 10 − x."
+    },
+    {
+      "key": "multiplying_only_the_5_by_2_and_forgetti",
+      "wrongValue": "incorrect_2",
+      "misconception": "Multiplying only the 5 by 2 and forgetting the −x.",
+      "correctiveNote": "Avoid this: Multiplying only the 5 by 2 and forgetting the −x."
+    },
+    {
+      "key": "finding_x_and_stopping_without_calculati",
+      "wrongValue": "incorrect_3",
+      "misconception": "Finding x and stopping without calculating y.",
+      "correctiveNote": "Avoid this: Finding x and stopping without calculating y."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When any unknown has a coefficient of 1, substitution usually beats elimination — look for that equation first."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=1,y=4",
+    "displayValue": "= 1, y = 4",
+    "acceptedForms": [
+      "= 1, y = 4",
+      "=1,y=4"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve 4x + 3y = 18 and x + y = 5."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=3,y=2",
+      "displayValue": "= 3, y = 2",
+      "acceptedForms": [
+        "= 3, y = 2",
+        "=3,y=2"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "c60becca-d091-4585-ad1b-c0c315875a4a",
+      "code": "M1-5.1",
+      "label": "Simultaneous linear equations"
+    },
+    {
+      "objectiveId": "383d9a06-38f9-41d2-a5af-e5e5acd4de8b",
+      "code": "M1-5.1",
+      "label": "Substitution method"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 5,
+    "pageRef": "p98",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

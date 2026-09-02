@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p104-q03",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the quadratic equation 2x² + x − 6 = 0."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The coefficient of x² is 2, so split the middle term using two numbers that multiply to 2 × (−6) = −12."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p104_q03.jpg",
+      "altText": "Source visual for edmar-csec-p104-q03 from workbook page 104."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply the leading coefficient by the constant.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2 × (−6) = −12; find two numbers multiplying to −12 and adding to +1"
+        },
+        {
+          "type": "text",
+          "value": "Result: +4 and −3"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Split the middle term using those numbers.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2x² + 4x − 3x − 6"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2x² + 4x − 3x − 6 = 0"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Factorise in pairs.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2x(x + 2) − 3(x + 2)"
+        },
+        {
+          "type": "text",
+          "value": "Result: (x + 2)(2x − 3) = 0"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Set each factor to zero and solve.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x + 2 = 0 or 2x − 3 = 0"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = −2 or x = 3/2"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Split +x into +4x − 3x, factorise in pairs, then set each bracket to zero."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = −2 or x = 3/2 (that is, 1.5)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Splitting the middle term works because the two chosen numbers reproduce both the required product ac and the required sum b, which is exactly the pattern produced when two brackets are expanded. Grouping then exposes the common bracket, giving the factorisation. The zero product property finishes the job."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "looking_for_numbers_that_multiply_to_6_i",
+      "wrongValue": "incorrect_1",
+      "misconception": "Looking for numbers that multiply to −6 instead of −12.",
+      "correctiveNote": "Avoid this: Looking for numbers that multiply to −6 instead of −12."
+    },
+    {
+      "key": "solving_2x_3_0_as_x_3_rather_than_x_1_5",
+      "wrongValue": "incorrect_2",
+      "misconception": "Solving 2x − 3 = 0 as x = 3 rather than x = 1.5.",
+      "correctiveNote": "Avoid this: Solving 2x − 3 = 0 as x = 3 rather than x = 1.5."
+    },
+    {
+      "key": "grouping_incorrectly_and_losing_a_sign_i",
+      "wrongValue": "incorrect_3",
+      "misconception": "Grouping incorrectly and losing a sign in the second pair.",
+      "correctiveNote": "Avoid this: Grouping incorrectly and losing a sign in the second pair."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When a ≠ 1, always use the ac product to choose your split — guessing brackets wastes time in the exam."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=−2",
+    "displayValue": "= −2",
+    "acceptedForms": [
+      "= −2",
+      "=−2"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve 3x² + 5x − 2 = 0."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=1/3",
+      "displayValue": "= 1/3",
+      "acceptedForms": [
+        "= 1/3",
+        "=1/3"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-6.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "4fa295f8-2c73-4950-af6b-00732d318ed9",
+      "code": "M1-6.1",
+      "label": "Factorising when the leading coefficient is not 1"
+    },
+    {
+      "objectiveId": "4071ff8c-2e52-42a3-a7b7-2e372f40a0c6",
+      "code": "M1-6.1",
+      "label": "Splitting the middle term"
+    },
+    {
+      "objectiveId": "1cc508a6-2184-43a3-a9d5-980561275d1a",
+      "code": "M1-6.1",
+      "label": "Zero product property"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 3,
+    "pageRef": "p104",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

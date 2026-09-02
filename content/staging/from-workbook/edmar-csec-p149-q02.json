@@ -1,0 +1,197 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p149-q02",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The graph represents y = -x² + 4x + 5. (a) State the x-intercepts. (b) State the y-intercept. (c) State the maximum value and the value of x at which it occurs. (d) Write the equation of the axis of symmetry."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The curve opens downwards because of the negative x² term, so its turning point is a maximum."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p149_q02.jpg",
+      "altText": "Source visual for edmar-csec-p149-q02 from workbook page 149."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Read where the curve crosses the x-axis.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The curve meets the axis at x = -1 and x = 5, confirmed by -x² + 4x + 5 = 0 → x² − 4x − 5 = 0 → (x − 5)(x + 1) = 0"
+        },
+        {
+          "type": "text",
+          "value": "Result: x-intercepts x = -1 and x = 5"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Read where the curve crosses the y-axis.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Put x = 0: y = 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: y-intercept 5"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Locate the highest point of the curve.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The vertex sits midway between the roots, at x = (-1 + 5)/2 = 2, and y = -(2)² + 4(2) + 5 = 9"
+        },
+        {
+          "type": "text",
+          "value": "Result: Maximum value 9 at x = 2"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "State the axis of symmetry.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The vertical line through the vertex"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 2"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Read where the curve meets each axis, locate the highest point of the curve, and use the symmetry of the parabola to write the axis of symmetry."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) x-intercepts at x = -1 and x = 5  (b) y-intercept 5  (c) Maximum value 9, occurring at x = 2  (d) Axis of symmetry x = 2."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The sign of the x² coefficient decides the shape: negative means the arms point downwards, so the turning point is the highest value the function reaches. A parabola is symmetric, so the vertex always sits exactly halfway between the two x-intercepts — that gives the x-value of the maximum without any further algebra, and substituting it gives the maximum value itself."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "calling_9_the_maximum_point_rather_than_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Calling 9 the maximum point rather than the maximum value — the point is (2, 9).",
+      "correctiveNote": "Avoid this: Calling 9 the maximum point rather than the maximum value — the point is (2, 9)."
+    },
+    {
+      "key": "reading_the_y_intercept_as_an_x_value",
+      "wrongValue": "incorrect_2",
+      "misconception": "Reading the y-intercept as an x-value.",
+      "correctiveNote": "Avoid this: Reading the y-intercept as an x-value."
+    },
+    {
+      "key": "assuming_the_axis_of_symmetry_is_the_y_a",
+      "wrongValue": "incorrect_3",
+      "misconception": "Assuming the axis of symmetry is the y-axis whenever the curve looks central on the grid.",
+      "correctiveNote": "Avoid this: Assuming the axis of symmetry is the y-axis whenever the curve looks central on the grid."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Halve the sum of the two roots to find the axis of symmetry — it is quicker and safer than reading the vertex position off the grid."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "x-interceptsatx=-1andx=5",
+    "displayValue": "x-intercepts at x = -1 and x = 5",
+    "acceptedForms": [
+      "x-intercepts at x = -1 and x = 5",
+      "x-interceptsatx=-1andx=5"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A parabola cuts the x-axis at x = 2 and x = 8. What is its axis of symmetry?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=5.",
+      "displayValue": "= 5.",
+      "acceptedForms": [
+        "= 5.",
+        "=5."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "83ec8440-8d03-45c0-a823-d9b97b2186c3",
+      "code": "M1-5.1",
+      "label": "Reading a quadratic graph"
+    },
+    {
+      "objectiveId": "acfa3041-e60a-4170-a2c1-e17e4acb18f3",
+      "code": "M1-5.1",
+      "label": "Roots and intercepts"
+    },
+    {
+      "objectiveId": "31e41b6e-5dd7-4dad-a212-e07cd8d42419",
+      "code": "M1-5.1",
+      "label": "Maximum point of a parabola"
+    },
+    {
+      "objectiveId": "9e51ebc5-5f9f-48ef-a55f-962a3c607dfa",
+      "code": "M1-5.1",
+      "label": "Axis of symmetry"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 2,
+    "pageRef": "p149",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

@@ -1,0 +1,188 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p026-q34",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Mr. James earns $28 per hour for a 40-hour week and overtime is paid at double time. In one week he earned $1 344. (a) Calculate his normal weekly pay without overtime. (b) Calculate the overtime rate."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Both parts come from the basic rate of $28 per hour; the $1 344 is there for a later part."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p026_q34.jpg",
+      "altText": "Source visual for edmar-csec-p026-q34 from workbook page 26."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply the hourly rate by the basic hours.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "28 x 40"
+        },
+        {
+          "type": "text",
+          "value": "Result: $1 120"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Double the basic rate for double time.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2 x $28"
+        },
+        {
+          "type": "text",
+          "value": "Result: $56 per hour"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Sense-check against the $1 344 earned.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "$1 344 - $1 120 = $224, and 224 / 56 = 4"
+        },
+        {
+          "type": "text",
+          "value": "Result: 4 hours of overtime, consistent"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Multiply the hourly rate by 40 hours for normal pay, and double the hourly rate for the overtime rate."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) Normal weekly pay = $1 120  (b) Overtime rate = $56 per hour"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Normal pay is fixed by the contracted hours and does not depend on what was actually earned that week, so it comes from the rate and the 40 hours alone. Double time simply means twice the basic hourly rate. The $1 344 total then makes sense: $224 of it is overtime, which at $56 an hour is exactly 4 extra hours."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "dividing_1_344_by_40_and_calling_that_th",
+      "wrongValue": "incorrect_1",
+      "misconception": "Dividing $1 344 by 40 and calling that the hourly rate.",
+      "correctiveNote": "Avoid this: Dividing $1 344 by 40 and calling that the hourly rate."
+    },
+    {
+      "key": "reading_double_time_as_time_and_a_half_a",
+      "wrongValue": "incorrect_2",
+      "misconception": "Reading double time as time and a half and using $42.",
+      "correctiveNote": "Avoid this: Reading double time as time and a half and using $42."
+    },
+    {
+      "key": "assuming_normal_weekly_pay_must_equal_th",
+      "wrongValue": "incorrect_3",
+      "misconception": "Assuming normal weekly pay must equal the $1 344 actually earned.",
+      "correctiveNote": "Avoid this: Assuming normal weekly pay must equal the $1 344 actually earned."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Extra information in the stem is often meant for a later part. Answer the part in front of you with the data it needs, then use the leftover figure as a check."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Normalweeklypay=$1120",
+    "displayValue": "Normal weekly pay = $1 120",
+    "acceptedForms": [
+      "Normal weekly pay = $1 120",
+      "Normalweeklypay=$1120"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A worker earns $30 per hour for a 40-hour week with overtime at double time. Find the normal weekly pay and the overtime rate."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "currency",
+      "canonicalValue": "1.00",
+      "displayValue": "$1",
+      "acceptedForms": [
+        "$1",
+        "$1",
+        "1"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.005
+      },
+      "precision": {
+        "kind": "decimal_places",
+        "value": 2,
+        "required": true
+      },
+      "normalisation": "currency_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "a888372f-e633-47f4-a535-62779f99cf4f",
+      "code": "M1-1.1",
+      "label": "Wages and salaries"
+    },
+    {
+      "objectiveId": "9d93a8b5-b773-477b-a7c8-5f3e97c27115",
+      "code": "M1-1.1",
+      "label": "Hourly rate"
+    },
+    {
+      "objectiveId": "1b4af5f0-7fbc-48d9-a9f8-f9e464b8bef3",
+      "code": "M1-1.1",
+      "label": "Overtime at double time"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 34,
+    "pageRef": "p26",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

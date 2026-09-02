@@ -1,0 +1,182 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p039-q06",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Taking π = 22/7, the diagram shows the cross-section of a circular metal disc of radius 21 mm with a square hole of side 6 mm at its centre. Calculate the area of the metal in the cross-section, that is the area of the circle minus the area of the square hole. (The workbook prints the stem and diagram here; the lettered parts continue beyond this extract.)"
+    },
+    {
+      "type": "text",
+      "value": "Think first: The metal is what is left when the square hole is removed from the circle, so this is a subtraction of areas."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p039_q06.jpg",
+      "altText": "Source visual for edmar-csec-p039-q06 from workbook page 39."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Calculate the area of the circular disc.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "π r² = (22/7) x 21² = (22/7) x 441 = 22 x 63"
+        },
+        {
+          "type": "text",
+          "value": "Result: 1 386 mm²"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Calculate the area of the square hole.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "6 x 6"
+        },
+        {
+          "type": "text",
+          "value": "Result: 36 mm²"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Subtract the hole from the disc.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "1 386 - 36"
+        },
+        {
+          "type": "text",
+          "value": "Result: 1 350 mm²"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Find the area of the whole circle using π = 22/7, find the area of the square hole, and subtract."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "The area of metal in the cross-section is 1 350 mm²."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Removing a region from a shape removes exactly its area, so the metal left is the circle's area minus the square's. The position of the hole makes no difference to the area as long as it lies entirely inside the disc, which is why being at the centre is not used in the calculation. Choosing 22/7 with a radius of 21 mm keeps the arithmetic exact, since 441 divides by 7."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "using_21_mm_as_the_diameter_and_working_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Using 21 mm as the diameter and working with r = 10.5 mm.",
+      "correctiveNote": "Avoid this: Using 21 mm as the diameter and working with r = 10.5 mm."
+    },
+    {
+      "key": "subtracting_the_side_length_6_mm_from_th",
+      "wrongValue": "incorrect_2",
+      "misconception": "Subtracting the side length 6 mm from the area instead of the area 36 mm².",
+      "correctiveNote": "Avoid this: Subtracting the side length 6 mm from the area instead of the area 36 mm²."
+    },
+    {
+      "key": "squaring_22_7_x_21_rather_than_squaring_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Squaring 22/7 x 21 rather than squaring only the radius.",
+      "correctiveNote": "Avoid this: Squaring 22/7 x 21 rather than squaring only the radius."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "For any shape with a hole, write area = outer shape - inner shape as a single line before substituting numbers. It keeps the subtraction from being forgotten."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Theareaofmetalinthecross-sectionis1350mm².",
+    "displayValue": "The area of metal in the cross-section is 1 350 mm².",
+    "acceptedForms": [
+      "The area of metal in the cross-section is 1 350 mm².",
+      "Theareaofmetalinthecross-sectionis1350mm²."
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A circle of radius 7 cm has a square hole of side 3 cm cut from it. Using π = 22/7, find the remaining area."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "145",
+      "displayValue": "145",
+      "acceptedForms": [
+        "145",
+        "145"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "b5007c88-080d-4bec-ab5f-dfc694a21444",
+      "code": "M1-1.1",
+      "label": "Area of a circle"
+    },
+    {
+      "objectiveId": "a349e96f-90f8-427e-abf3-1b6cca138ffd",
+      "code": "M1-1.1",
+      "label": "Area of a square"
+    },
+    {
+      "objectiveId": "7a209ea7-1190-4707-a807-eec1ce67c335",
+      "code": "M1-1.1",
+      "label": "Composite areas and removed regions"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 6,
+    "pageRef": "p39",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

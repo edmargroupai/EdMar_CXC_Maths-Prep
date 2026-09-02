@@ -1,0 +1,195 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p053-q08",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Expand and simplify (4x + 3)(7x + 2)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: All the signs are positive, so the only real work is keeping the four products straight."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p053_q08.jpg",
+      "altText": "Source visual for edmar-csec-p053-q08 from workbook page 53."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply 4x by both terms of the second bracket.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "4x × 7x = 28x² and 4x × 2 = 8x"
+        },
+        {
+          "type": "text",
+          "value": "Result: 28x² + 8x"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Multiply 3 by both terms of the second bracket.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3 × 7x = 21x and 3 × 2 = 6"
+        },
+        {
+          "type": "text",
+          "value": "Result: 21x + 6"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Add the two partial expansions.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "28x² + 8x + 21x + 6"
+        },
+        {
+          "type": "text",
+          "value": "Result: 28x² + 8x + 21x + 6"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Collect like terms.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "8x + 21x = 29x"
+        },
+        {
+          "type": "text",
+          "value": "Result: 28x² + 29x + 6"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Multiply term by term and then combine the two x-terms."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "28x² + 29x + 6"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The x² coefficient is 4 × 7 = 28 and the constant is 3 × 2 = 6, while the middle coefficient 29 comes from the two cross-products 4 × 2 and 3 × 7. Notice that the middle term is not the sum of the numbers alone once coefficients are involved — each number is paired with the other bracket's coefficient. That is the essential difference from the (x + a)(x + b) case."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "using_3_2_5_as_the_middle_coefficient_as",
+      "wrongValue": "incorrect_1",
+      "misconception": "Using 3 + 2 = 5 as the middle coefficient, as if the leading coefficients were 1.",
+      "correctiveNote": "Avoid this: Using 3 + 2 = 5 as the middle coefficient, as if the leading coefficients were 1."
+    },
+    {
+      "key": "pairing_the_terms_wrongly_for_example_co",
+      "wrongValue": "incorrect_2",
+      "misconception": "Pairing the terms wrongly, for example computing 4x × 3 as a cross-product.",
+      "correctiveNote": "Avoid this: Pairing the terms wrongly, for example computing 4x × 3 as a cross-product."
+    },
+    {
+      "key": "writing_28x_instead_of_28x_for_the_leadi",
+      "wrongValue": "incorrect_3",
+      "misconception": "Writing 28x instead of 28x² for the leading term.",
+      "correctiveNote": "Avoid this: Writing 28x instead of 28x² for the leading term."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Draw a small 2 by 2 grid for the four products when the coefficients are awkward. It guarantees you generate every pair exactly once."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "28",
+    "displayValue": "28",
+    "acceptedForms": [
+      "28",
+      "28"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Expand and simplify (5x + 2)(3x + 4)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "15",
+      "displayValue": "15",
+      "acceptedForms": [
+        "15",
+        "15"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "1303c79e-16c3-4d2a-a90b-88c295332399",
+      "code": "M1-4.1",
+      "label": "Expanding a product of two binomials with coefficients"
+    },
+    {
+      "objectiveId": "1df0515c-5424-4d8f-a78c-a54002191fec",
+      "code": "M1-4.1",
+      "label": "Collecting like terms"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 8,
+    "pageRef": "p53",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

@@ -16,6 +16,8 @@
     "test:scripts": "vitest run --config vitest.config.ts",
     "render-math": "tsx scripts/render-math.ts",
     "validate:content": "tsx scripts/validate-content.ts",
+    "validate:staging": "tsx scripts/validate-staging.ts",
+    "convert:workbook": "tsx scripts/convert-questions-with-solutions.ts",
     "gen:taxonomy": "node scripts/gen-taxonomy-seed.mjs",
     "extract:syllabus": "python scripts/extract-syllabus.py"
   },

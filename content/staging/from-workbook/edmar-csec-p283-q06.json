@@ -1,0 +1,282 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p283-q06",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 6,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "OPQ is a triangle in which ARB and AOQ are straight lines. B is the midpoint of PQ, R is the midpoint of AB, R lies on OP with OR : RP = 1 : 3, OP = 4a and OQ = 8b. Find, in terms of a and/or b in simplest form: (iv) PQ, (v) PR, (vi) RB."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Take O as origin: once you have the position vectors of P, Q, R and B, every answer is a subtraction."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p283_q06.jpg",
+      "altText": "Source visual for edmar-csec-p283-q06 from workbook page 283."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Subtract the position vectors of P and Q.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "PQ = OQ − OP = 8b − 4a"
+        },
+        {
+          "type": "text",
+          "value": "Result: PQ = 8b − 4a"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Use the ratio OR : RP = 1 : 3 to locate R on OP.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "OR is one of four equal parts of OP, so OR = (1/4)(4a)"
+        },
+        {
+          "type": "text",
+          "value": "Result: OR = a"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Find PR by subtracting the position vectors of P and R.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "PR = OR − OP = a − 4a"
+        },
+        {
+          "type": "text",
+          "value": "Result: PR = −3a"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Find B, the midpoint of PQ, using the midpoint rule.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "OB = (1/2)(OP + OQ) = (1/2)(4a + 8b)"
+        },
+        {
+          "type": "text",
+          "value": "Result: OB = 2a + 4b"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Subtract OR from OB to get RB.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "RB = OB − OR = (2a + 4b) − a"
+        },
+        {
+          "type": "text",
+          "value": "Result: RB = a + 4b"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Write PQ as OQ − OP, use OR : RP = 1 : 3 to get OR = (1/4)OP = a, find B as the midpoint of PQ, then subtract to get RB."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(iv) PQ = 8b − 4a  (v) PR = −3a  (vi) RB = a + 4b"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Choosing O as the origin turns every point into a position vector, and the vector from one point to another is always 'position of the finish minus position of the start'. A ratio of 1 : 3 along OP means OP is cut into four equal pieces, so OR is a quarter of OP. The midpoint rule is simply the average of the two end position vectors, which places B exactly halfway along PQ."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "reading_or_rp_1_3_as_or_1_3_op_instead_o",
+      "wrongValue": "incorrect_1",
+      "misconception": "Reading OR : RP = 1 : 3 as OR = (1/3)OP instead of (1/4)OP.",
+      "correctiveNote": "Avoid this: Reading OR : RP = 1 : 3 as OR = (1/3)OP instead of (1/4)OP."
+    },
+    {
+      "key": "writing_pq_op_oq_and_getting_the_sign_of",
+      "wrongValue": "incorrect_2",
+      "misconception": "Writing PQ = OP − OQ and getting the sign of every term wrong.",
+      "correctiveNote": "Avoid this: Writing PQ = OP − OQ and getting the sign of every term wrong."
+    },
+    {
+      "key": "giving_pr_as_3a_and_forgetting_the_direc",
+      "wrongValue": "incorrect_3",
+      "misconception": "Giving PR as 3a and forgetting the direction is from P back towards O.",
+      "correctiveNote": "Avoid this: Giving PR as 3a and forgetting the direction is from P back towards O."
+    },
+    {
+      "key": "trying_to_find_a_first_when_b_and_r_are_",
+      "wrongValue": "incorrect_4",
+      "misconception": "Trying to find A first when B and R are enough to reach RB.",
+      "correctiveNote": "Avoid this: Trying to find A first when B and R are enough to reach RB."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "A ratio m : n along a line always splits it into m + n equal parts — write down the total number of parts before taking any fraction."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "PQ=8",
+    "displayValue": "PQ = 8",
+    "acceptedForms": [
+      "PQ = 8",
+      "PQ=8"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "OP = 6a and OQ = 10b. Find the position vector of the midpoint of PQ."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(1/2)(6a+10b)=3a+5b",
+      "displayValue": "(1/2)(6a + 10b) = 3a + 5b",
+      "acceptedForms": [
+        "(1/2)(6a + 10b) = 3a + 5b",
+        "(1/2)(6a+10b)=3a+5b"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "7cadb1f0-2f13-4165-ac5f-705646d18c50",
+      "code": "M2-5.1",
+      "label": "Position vectors"
+    },
+    {
+      "objectiveId": "332f93bd-5ef9-4e69-a8ec-95a3f6d01772",
+      "code": "M2-5.1",
+      "label": "Vector subtraction"
+    },
+    {
+      "objectiveId": "28d776c2-b4fe-4ed9-a9b3-363c29c6bf0e",
+      "code": "M2-5.1",
+      "label": "Midpoint of a line segment"
+    },
+    {
+      "objectiveId": "17c4e4b1-871b-4f2f-aab9-ad4cc19c3305",
+      "code": "M2-5.1",
+      "label": "Dividing a line in a given ratio"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 6,
+    "pageRef": "p283",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a.iv",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.iv): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "PQ=8",
+        "displayValue": "PQ = 8",
+        "acceptedForms": [
+          "PQ = 8",
+          "PQ=8"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.v",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.v): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "PR=−3",
+        "displayValue": "PR = −3",
+        "acceptedForms": [
+          "PR = −3",
+          "PR=−3"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "c",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (c): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "R",
+        "displayValue": "R",
+        "acceptedForms": [
+          "R",
+          "R"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

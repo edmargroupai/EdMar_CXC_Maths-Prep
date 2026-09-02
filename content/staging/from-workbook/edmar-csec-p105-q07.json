@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p105-q07",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the equation (2x + 1)(x − 3) = 4."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The brackets are already there, but the right-hand side is 4, so expand and rearrange before factorising."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p105_q07.jpg",
+      "altText": "Source visual for edmar-csec-p105-q07 from workbook page 105."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Expand the double brackets.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2x·x + 2x·(−3) + 1·x + 1·(−3) = 2x² − 6x + x − 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2x² − 5x − 3 = 4"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Subtract 4 from both sides.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "−3 − 4 = −7"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2x² − 5x − 7 = 0"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Use the ac method to split the middle term.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2 × (−7) = −14; two numbers multiplying to −14 and adding to −5 are −7 and +2, giving 2x² − 7x + 2x − 7"
+        },
+        {
+          "type": "text",
+          "value": "Result: x(2x − 7) + 1(2x − 7)"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Factorise and solve each bracket.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(2x − 7)(x + 1) = 0"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 7/2 or x = −1"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Expand, move the 4 across to get zero on the right, then factorise using the ac method."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = 7/2 (3.5) or x = −1"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Expanding turns the product form into standard form, which is the only form where the factorising and zero-product steps are valid. The factorisation that comes out afterwards is different from the original brackets, because subtracting 4 changed the constant term. Substituting x = −1 gives (−1)(−4) = 4, confirming the root."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "setting_2x_1_4_and_x_3_4_straight_from_t",
+      "wrongValue": "incorrect_1",
+      "misconception": "Setting 2x + 1 = 4 and x − 3 = 4 straight from the original equation.",
+      "correctiveNote": "Avoid this: Setting 2x + 1 = 4 and x − 3 = 4 straight from the original equation."
+    },
+    {
+      "key": "making_a_sign_slip_when_collecting_6x_x",
+      "wrongValue": "incorrect_2",
+      "misconception": "Making a sign slip when collecting −6x + x.",
+      "correctiveNote": "Avoid this: Making a sign slip when collecting −6x + x."
+    },
+    {
+      "key": "forgetting_to_subtract_4_from_the_consta",
+      "wrongValue": "incorrect_3",
+      "misconception": "Forgetting to subtract 4 from the constant term.",
+      "correctiveNote": "Avoid this: Forgetting to subtract 4 from the constant term."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "If a question already gives brackets equal to a non-zero number, expect to expand — the given brackets are almost never the ones you finish with."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=7/2(3.5)",
+    "displayValue": "= 7/2 (3.5)",
+    "acceptedForms": [
+      "= 7/2 (3.5)",
+      "=7/2(3.5)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve (x + 2)(x − 1) = 4."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=2",
+      "displayValue": "= 2",
+      "acceptedForms": [
+        "= 2",
+        "=2"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-6.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "7b2b4001-3af1-40b0-a9fa-f92108e9248a",
+      "code": "M1-6.1",
+      "label": "Expanding double brackets"
+    },
+    {
+      "objectiveId": "eb289f49-9e78-42e2-a517-3fdb53a721c5",
+      "code": "M1-6.1",
+      "label": "Rearranging to standard quadratic form"
+    },
+    {
+      "objectiveId": "18a40391-b8a8-43ca-af02-7c6cf717d84c",
+      "code": "M1-6.1",
+      "label": "Factorising when the leading coefficient is not 1"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 7,
+    "pageRef": "p105",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

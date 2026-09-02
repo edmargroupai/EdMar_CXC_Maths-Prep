@@ -1,0 +1,202 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p020-q20",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A shopkeeper marks up goods by 25%. Calculate the selling price of an item that cost $3 200."
+    },
+    {
+      "type": "text",
+      "value": "Think first: A mark-up is added to the cost price, so the selling price is more than 100% of the cost."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p020_q20.jpg",
+      "altText": "Source visual for edmar-csec-p020-q20 from workbook page 20."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write the selling price as a percentage of the cost price.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "100% + 25%"
+        },
+        {
+          "type": "text",
+          "value": "Result: 125%"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Convert to a multiplier.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "125 / 100"
+        },
+        {
+          "type": "text",
+          "value": "Result: 1.25"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Multiply the cost price by the multiplier.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "$3 200 x 1.25"
+        },
+        {
+          "type": "text",
+          "value": "Result: $4 000"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Check by finding the mark-up separately.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "25% of $3 200 = $800, then $3 200 + $800"
+        },
+        {
+          "type": "text",
+          "value": "Result: $4 000"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Add the mark-up percentage to 100% and multiply the cost price by the resulting multiplier."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "The selling price is $4 000."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Mark-up is always calculated on the cost price, the amount the shopkeeper paid. Adding the percentage to 100% before multiplying keeps everything in one step and avoids losing the original amount. The $800 mark-up is the gross profit on the item."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "taking_25_of_3_200_and_giving_800_as_the",
+      "wrongValue": "incorrect_1",
+      "misconception": "Taking 25% of $3 200 and giving $800 as the selling price.",
+      "correctiveNote": "Avoid this: Taking 25% of $3 200 and giving $800 as the selling price."
+    },
+    {
+      "key": "using_0_25_as_the_multiplier",
+      "wrongValue": "incorrect_2",
+      "misconception": "Using 0.25 as the multiplier.",
+      "correctiveNote": "Avoid this: Using 0.25 as the multiplier."
+    },
+    {
+      "key": "confusing_mark_up_on_cost_with_margin_on",
+      "wrongValue": "incorrect_3",
+      "misconception": "Confusing mark-up on cost with margin on selling price.",
+      "correctiveNote": "Avoid this: Confusing mark-up on cost with margin on selling price."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Mark-up and discount are the same calculation with the sign flipped: 1 + rate for a rise, 1 - rate for a fall."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Thesellingpriceis$4000.",
+    "displayValue": "The selling price is $4 000.",
+    "acceptedForms": [
+      "The selling price is $4 000.",
+      "Thesellingpriceis$4000."
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "An item costing $600 is marked up by 40%. Find the selling price."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "currency",
+      "canonicalValue": "840.00",
+      "displayValue": "$840",
+      "acceptedForms": [
+        "$840",
+        "$840",
+        "840"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.005
+      },
+      "precision": {
+        "kind": "decimal_places",
+        "value": 2,
+        "required": true
+      },
+      "normalisation": "currency_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-3.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "376337b9-aa47-4dd4-adde-f27d4147c784",
+      "code": "M1-3.1",
+      "label": "Mark-up"
+    },
+    {
+      "objectiveId": "21fcb017-ef8d-4092-a550-5e97aa9e5c7f",
+      "code": "M1-3.1",
+      "label": "Percentage increase"
+    },
+    {
+      "objectiveId": "77133f2b-7c8d-4016-aef4-3b6cb2921332",
+      "code": "M1-3.1",
+      "label": "Cost price and selling price"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 20,
+    "pageRef": "p20",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

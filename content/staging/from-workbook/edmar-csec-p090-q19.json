@@ -1,0 +1,211 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p090-q19",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Dot plots show the test scores of 15 students from School X (52, 54, 57, 59, 61, 63, 65, 67, 69, 71, 73, 75, 77, 80, 82) and 15 students from School Y (43, 47, 50, 54, 58, 61, 64, 67, 70, 73, 76, 80, 84, 87, 91); the accompanying table gives standard deviations of 9.1 for School X and 14.3 for School Y. (a) Calculate the mean score for each school. (b) Determine the median score for each school. (c) Determine the lower quartile and upper quartile for School X. (d) Calculate the interquartile range for School X."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Read the 15 scores off each plot in order — with an odd number of values, position does all the work."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p090_q19.jpg",
+      "altText": "Source visual for edmar-csec-p090-q19 from workbook page 90."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Add School X's 15 scores and divide by 15.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "52 + 54 + 57 + 59 + 61 + 63 + 65 + 67 + 69 + 71 + 73 + 75 + 77 + 80 + 82 = 1005; 1005 ÷ 15"
+        },
+        {
+          "type": "text",
+          "value": "Result: Mean for School X = 67"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Add School Y's 15 scores and divide by 15.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "43 + 47 + 50 + 54 + 58 + 61 + 64 + 67 + 70 + 73 + 76 + 80 + 84 + 87 + 91 = 1005; 1005 ÷ 15"
+        },
+        {
+          "type": "text",
+          "value": "Result: Mean for School Y = 67"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Take the middle score of each ordered list.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "With 15 values the median is the 8th, and that score is 67 in both plots"
+        },
+        {
+          "type": "text",
+          "value": "Result: Median = 67 for each school"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Take the 4th and 12th scores for School X.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Q1 is the (15 + 1) ÷ 4 = 4th value and Q3 is the 3(15 + 1) ÷ 4 = 12th value"
+        },
+        {
+          "type": "text",
+          "value": "Result: Q1 = 59 and Q3 = 75"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Subtract the quartiles.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "75 − 59"
+        },
+        {
+          "type": "text",
+          "value": "Result: IQR for School X = 16"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Total each school's 15 scores and divide by 15 for the mean; take the 8th score as the median, and for School X take the 4th and 12th scores as the quartiles."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) Mean = 67 for School X and 67 for School Y  (b) Median = 67 for each school  (c) For School X, Q1 = 59 and Q3 = 75  (d) IQR for School X = 16"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The two schools share both a mean and a median, so central tendency alone cannot tell them apart — the whole difference lies in spread, which is why the standard deviations (9.1 against 14.3) matter. Quartiles cut ordered data into four equal-sized groups, so the interquartile range describes the middle half of the students and ignores the extremes at each end."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "miscounting_closely_spaced_dots_so_that_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Miscounting closely spaced dots, so that fewer or more than 15 scores are recorded.",
+      "correctiveNote": "Avoid this: Miscounting closely spaced dots, so that fewer or more than 15 scores are recorded."
+    },
+    {
+      "key": "taking_the_quartiles_from_the_middle_of_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Taking the quartiles from the middle of the whole set instead of from positions 4 and 12.",
+      "correctiveNote": "Avoid this: Taking the quartiles from the middle of the whole set instead of from positions 4 and 12."
+    },
+    {
+      "key": "concluding_that_the_two_schools_performe",
+      "wrongValue": "incorrect_3",
+      "misconception": "Concluding that the two schools performed identically because their means and medians agree.",
+      "correctiveNote": "Avoid this: Concluding that the two schools performed identically because their means and medians agree."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Write the 15 values in a line and number the positions 1 to 15 — quartile questions then reduce to picking out positions 4, 8 and 12."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Mean=67forSchoolXand67forSchoolY",
+    "displayValue": "Mean = 67 for School X and 67 for School Y",
+    "acceptedForms": [
+      "Mean = 67 for School X and 67 for School Y",
+      "Mean=67forSchoolXand67forSchoolY"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "For 11 ordered values, which position gives the lower quartile?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "The3rdvalue,since(11+1)÷4=3",
+      "displayValue": "The 3rd value, since (11 + 1) ÷ 4 = 3",
+      "acceptedForms": [
+        "The 3rd value, since (11 + 1) ÷ 4 = 3",
+        "The3rdvalue,since(11+1)÷4=3"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M3-2.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "057a6c0b-0ca2-494b-aa7d-2554387ccbf4",
+      "code": "M3-2.1",
+      "label": "Reading dot plots"
+    },
+    {
+      "objectiveId": "d5ec4597-db69-4192-ac66-87edd03e4661",
+      "code": "M3-2.1",
+      "label": "Mean"
+    },
+    {
+      "objectiveId": "f1b32eeb-1c96-45ec-ad93-a34de2c9dcca",
+      "code": "M3-2.1",
+      "label": "Median of an odd-sized data set"
+    },
+    {
+      "objectiveId": "5e0d79ba-d001-4e64-a0aa-aad6c188dcf8",
+      "code": "M3-2.1",
+      "label": "Quartiles and interquartile range"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 19,
+    "pageRef": "p90",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

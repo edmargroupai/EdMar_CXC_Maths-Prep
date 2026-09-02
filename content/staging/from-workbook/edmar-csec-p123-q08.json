@@ -1,0 +1,206 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p123-q08",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Determine the equation of the straight line passing through (−3, 5) and (5, −7). Give the equation in the form y = mx + c."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Two points give the gradient first; only then can you find where the line crosses the y-axis."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p123_q08.jpg",
+      "altText": "Source visual for edmar-csec-p123-q08 from workbook page 123."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Find the gradient from the two points.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "m = (−7 − 5)/(5 − (−3)) = −12/8"
+        },
+        {
+          "type": "text",
+          "value": "Result: m = −1.5"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Write the equation with the gradient in place.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "m = −1.5"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = −1.5x + c"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Substitute (−3, 5) to find c.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5 = −1.5(−3) + c = 4.5 + c"
+        },
+        {
+          "type": "text",
+          "value": "Result: c = 0.5"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Write the completed equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Replace c by 0.5"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = −1.5x + 0.5"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Check with the other point (5, −7).",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "−1.5(5) + 0.5 = −7.5 + 0.5 = −7"
+        },
+        {
+          "type": "text",
+          "value": "Result: Verified"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Use the gradient formula on the two points, then substitute one of them into y = mx + c to find c."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "y = −1.5x + 0.5  (equivalently y = −3x/2 + 1/2, or 2y + 3x = 1)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The gradient is fixed by the two points, and either point can then be used to find c — both give the same answer because both lie on the same line. Substituting the second point at the end is therefore a genuine check rather than extra work, and it confirms the fractional values are correct."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "subtracting_the_coordinates_in_mixed_ord",
+      "wrongValue": "incorrect_1",
+      "misconception": "Subtracting the coordinates in mixed orders and getting m = 1.5.",
+      "correctiveNote": "Avoid this: Subtracting the coordinates in mixed orders and getting m = 1.5."
+    },
+    {
+      "key": "substituting_the_point_into_the_gradient",
+      "wrongValue": "incorrect_2",
+      "misconception": "Substituting the point into the gradient formula instead of into y = mx + c.",
+      "correctiveNote": "Avoid this: Substituting the point into the gradient formula instead of into y = mx + c."
+    },
+    {
+      "key": "rounding_1_5_to_2_and_losing_the_exact_e",
+      "wrongValue": "incorrect_3",
+      "misconception": "Rounding −1.5 to −2 and losing the exact equation.",
+      "correctiveNote": "Avoid this: Rounding −1.5 to −2 and losing the exact equation."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When the gradient is a fraction, keep it as a fraction or an exact decimal — never round it before finding c."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "y=−1.5x+0.5(equivalentlyy=−3x/2+1/2,",
+    "displayValue": "y = −1.5x + 0.5  (equivalently y = −3x/2 + 1/2,",
+    "acceptedForms": [
+      "y = −1.5x + 0.5  (equivalently y = −3x/2 + 1/2,",
+      "y=−1.5x+0.5(equivalentlyy=−3x/2+1/2,"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Find the equation of the line through (1, 4) and (3, 10)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "y=3x+1",
+      "displayValue": "y = 3x + 1",
+      "acceptedForms": [
+        "y = 3x + 1",
+        "y=3x+1"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-3.2"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "92b643cc-87a8-4a77-a57d-de2cec41094e",
+      "code": "M1-3.2",
+      "label": "Gradient from two points"
+    },
+    {
+      "objectiveId": "fffcf017-3134-499c-a8a1-0b9513b641bc",
+      "code": "M1-3.2",
+      "label": "Equation of a straight line"
+    },
+    {
+      "objectiveId": "938b1bf0-7d71-4256-a259-4b5dc777393f",
+      "code": "M1-3.2",
+      "label": "Substitution"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 8,
+    "pageRef": "p123",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

@@ -1,0 +1,220 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p099-q12",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the simultaneous equations 2x + 5y = 29 and 3x + 4y = 27."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Both equations have plus signs throughout, so after matching one pair of coefficients you will subtract rather than add."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p099_q12.jpg",
+      "altText": "Source visual for edmar-csec-p099-q12 from workbook page 99."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply the first equation by 3.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3 × (2x + 5y = 29)"
+        },
+        {
+          "type": "text",
+          "value": "Result: 6x + 15y = 87"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Multiply the second equation by 2.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2 × (3x + 4y = 27)"
+        },
+        {
+          "type": "text",
+          "value": "Result: 6x + 8y = 54"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Subtract the second new equation from the first to remove x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(15y − 8y) = 87 − 54"
+        },
+        {
+          "type": "text",
+          "value": "Result: 7y = 33"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Divide to find y, keeping it exact.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "33 ÷ 7"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 33/7"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Substitute into 2x + 5y = 29.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2x + 165/7 = 29 = 203/7, so 2x = 38/7"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 19/7"
+        }
+      ]
+    },
+    {
+      "stepNo": 6,
+      "instruction": "Check in the second equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3(19/7) + 4(33/7) = (57 + 132)/7 = 189/7"
+        },
+        {
+          "type": "text",
+          "value": "Result: 27 ✓"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Multiply the first equation by 3 and the second by 2 to match the x terms, subtract to eliminate x, then substitute back."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = 19/7, y = 33/7 (that is, x = 2 5/7 and y = 4 5/7)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Scaling both equations so the x coefficients agree lets a single subtraction remove x entirely. The solution is the intersection point of the two lines, and there is no requirement for that point to have integer coordinates — the exact fractions are the exact answer."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "adding_instead_of_subtracting_which_leav",
+      "wrongValue": "incorrect_1",
+      "misconception": "Adding instead of subtracting, which leaves 12x + 23y and eliminates nothing.",
+      "correctiveNote": "Avoid this: Adding instead of subtracting, which leaves 12x + 23y and eliminates nothing."
+    },
+    {
+      "key": "subtracting_the_y_terms_but_forgetting_t",
+      "wrongValue": "incorrect_2",
+      "misconception": "Subtracting the y terms but forgetting to subtract the constants.",
+      "correctiveNote": "Avoid this: Subtracting the y terms but forgetting to subtract the constants."
+    },
+    {
+      "key": "rounding_33_7_to_4_7_and_then_failing_th",
+      "wrongValue": "incorrect_3",
+      "misconception": "Rounding 33/7 to 4.7 and then failing the check.",
+      "correctiveNote": "Avoid this: Rounding 33/7 to 4.7 and then failing the check."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Matched coefficients with the same sign means subtract; with opposite signs, add. Write the operation beside the line so you cannot forget which you chose."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=19/7,y=33/7(thatis,x=25/7andy=45/7)",
+    "displayValue": "= 19/7, y = 33/7 (that is, x = 2 5/7 and y = 4 5/7)",
+    "acceptedForms": [
+      "= 19/7, y = 33/7 (that is, x = 2 5/7 and y = 4 5/7)",
+      "=19/7,y=33/7(thatis,x=25/7andy=45/7)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve 2x + 5y = 24 and 3x + 4y = 22."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=2,y=4",
+      "displayValue": "= 2, y = 4",
+      "acceptedForms": [
+        "= 2, y = 4",
+        "=2,y=4"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "c07820b7-3673-4805-a54e-021713fd72a2",
+      "code": "M1-5.1",
+      "label": "Simultaneous linear equations"
+    },
+    {
+      "objectiveId": "78bac4fd-de4f-4795-a0f4-5cd44993a761",
+      "code": "M1-5.1",
+      "label": "Elimination with multipliers"
+    },
+    {
+      "objectiveId": "30bcbf9b-78cd-4e04-af2b-20579752fc75",
+      "code": "M1-5.1",
+      "label": "Working with fractional solutions"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 12,
+    "pageRef": "p99",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

@@ -1,0 +1,221 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p299-q10",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Determine the values of the unknowns in each matrix equation. (i) (4  0 / -2  5) combined with (x  2 / 8  -1) equals (-3  2 / y  4). (ii) (5  -3 / 2  3)(a  2 / c  -1) = (-10  13 / 17  1)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Check the operation against the entries that contain no unknowns before you start; those known entries tell you whether the matrices are being added or multiplied."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p299_q10.jpg",
+      "altText": "Source visual for edmar-csec-p299-q10 from workbook page 299."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Test equation (i) with the entries that contain no unknowns.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Under multiplication the top-right entry would be (4)(2) + (0)(-1) = 8 and the bottom-right would be (-2)(2) + (5)(-1) = -9, but the given matrix has 2 and 4 there. Under addition they are 0 + 2 = 2 and 5 + (-1) = 4, which match exactly, so the two matrices are being added."
+        },
+        {
+          "type": "text",
+          "value": "Result: Equation (i) is a matrix sum"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Add (i) entry by entry and equate with the right-hand side.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Top-left: 4 + x = -3.  Bottom-left: -2 + 8 = 6 = y."
+        },
+        {
+          "type": "text",
+          "value": "Result: x = -7 and y = 6"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "For (ii), multiply row into column and compare with the entries that carry no unknown.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Top-right: (5)(2) + (-3)(-1) = 13, and bottom-right: (2)(2) + (3)(-1) = 1. Both match, confirming multiplication."
+        },
+        {
+          "type": "text",
+          "value": "Result: Multiplication confirmed"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Form the two equations from the first column of the product.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Top-left: 5a - 3c = -10.  Bottom-left: 2a + 3c = 17."
+        },
+        {
+          "type": "text",
+          "value": "Result: A pair of simultaneous equations in a and c"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Add the equations to eliminate c and solve.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "7a = 7, so a = 1; then 2(1) + 3c = 17 gives 3c = 15."
+        },
+        {
+          "type": "text",
+          "value": "Result: a = 1 and c = 5"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "In (i) test the fully numerical entries: they only agree if the matrices are added, so add entry by entry. In (ii) the numerical entries confirm multiplication, so multiply out and solve the pair of equations that the first column produces."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) x = -7 and y = 6 (the equation is consistent only as a matrix sum; the printed version omits the plus sign, since multiplying would force the fixed entries to be 8 and -9 rather than 2 and 4).  (ii) a = 1 and c = 5."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Two matrices are equal only when every corresponding pair of elements is equal, so a matrix equation is a set of ordinary equations solved together. The entries that contain no unknown are not spare information: they act as a test of which operation is intended and as a check on your arithmetic. When both unknowns appear in the same column of a product, that column supplies two equations in two unknowns, which are then solved by elimination."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "ploughing_straight_into_multiplication_i",
+      "wrongValue": "incorrect_1",
+      "misconception": "Ploughing straight into multiplication in (i) without noticing that the fixed entries cannot then agree.",
+      "correctiveNote": "Avoid this: Ploughing straight into multiplication in (i) without noticing that the fixed entries cannot then agree."
+    },
+    {
+      "key": "using_the_second_column_of_ii_which_cont",
+      "wrongValue": "incorrect_2",
+      "misconception": "Using the second column of (ii), which contains no unknowns and therefore gives no information.",
+      "correctiveNote": "Avoid this: Using the second column of (ii), which contains no unknowns and therefore gives no information."
+    },
+    {
+      "key": "subtracting_the_equations_in_ii_instead_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Subtracting the equations in (ii) instead of adding, leaving both unknowns in place.",
+      "correctiveNote": "Avoid this: Subtracting the equations in (ii) instead of adding, leaving both unknowns in place."
+    },
+    {
+      "key": "forgetting_that_matrix_multiplication_is",
+      "wrongValue": "incorrect_4",
+      "misconception": "Forgetting that matrix multiplication is row into column, not entry by entry.",
+      "correctiveNote": "Avoid this: Forgetting that matrix multiplication is row into column, not entry by entry."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Before solving any matrix equation, use one fully numerical entry as a dry run; it confirms the operation and the order of multiplication in a single line."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "x=-7andy=6(theequationisconsistentonlyasamatrixsum;theprintedversionomitstheplussign,sincemultip",
+    "displayValue": "x = -7 and y = 6 (the equation is consistent only as a matrix sum; the printed version omits the plus sign, since multip",
+    "acceptedForms": [
+      "x = -7 and y = 6 (the equation is consistent only as a matrix sum; the printed version omits the plus sign, since multip",
+      "x=-7andy=6(theequationisconsistentonlyasamatrixsum;theprintedversionomitstheplussign,sincemultip"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve for p: (2  1 / 0  3)(p / 4) = (10 / 12)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "2",
+      "displayValue": "2",
+      "acceptedForms": [
+        "2",
+        "2"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "14b76e60-46ba-4f59-acec-71fb44215a53",
+      "code": "M2-4.1",
+      "label": "Addition of matrices"
+    },
+    {
+      "objectiveId": "ce5b61d8-8842-47c3-a384-2f2686ca179d",
+      "code": "M2-4.1",
+      "label": "Matrix multiplication"
+    },
+    {
+      "objectiveId": "7af627e0-e8cd-45bb-a52f-2fabeeff488c",
+      "code": "M2-4.1",
+      "label": "Equating corresponding elements"
+    },
+    {
+      "objectiveId": "fb841d64-c0b4-4aa9-a2e4-fe2826151aee",
+      "code": "M2-4.1",
+      "label": "Solving simultaneous equations"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 10,
+    "pageRef": "p299",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

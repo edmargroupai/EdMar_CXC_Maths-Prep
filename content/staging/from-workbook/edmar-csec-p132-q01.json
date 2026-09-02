@@ -1,0 +1,220 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p132-q01",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "On the grid provided, draw the graphs of y = x + 1 and y = 5 − x for -1 ≤ x ≤ 5. (a) Draw both graphs and label them. (b) Write down the coordinates of their point of intersection. (c) Hence state the solution of x + y = 5 and y − x = 1."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Two points fix a straight line, so build a short table for each equation before touching the grid."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p132_q01.jpg",
+      "altText": "Source visual for edmar-csec-p132-q01 from workbook page 132."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Build a table for y = x + 1 over -1 ≤ x ≤ 5.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x = -1 → y = 0;  x = 2 → y = 3;  x = 5 → y = 6"
+        },
+        {
+          "type": "text",
+          "value": "Result: Points (-1, 0), (2, 3), (5, 6)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Build a table for y = 5 − x over the same domain.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x = -1 → y = 6;  x = 2 → y = 3;  x = 5 → y = 0"
+        },
+        {
+          "type": "text",
+          "value": "Result: Points (-1, 6), (2, 3), (5, 0)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Plot each set of points and join with a ruled straight line, labelling each line with its equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Both lines are straight, so a ruler through the plotted points is enough"
+        },
+        {
+          "type": "text",
+          "value": "Result: Two straight lines drawn and labelled"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Read off where the two lines cross.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Both tables give y = 3 when x = 2, so the lines meet there"
+        },
+        {
+          "type": "text",
+          "value": "Result: Intersection (2, 3)"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Rearrange the equations in part (c) to compare them.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x + y = 5 gives y = 5 − x;  y − x = 1 gives y = x + 1 — the same two lines"
+        },
+        {
+          "type": "text",
+          "value": "Result: Same pair of lines"
+        }
+      ]
+    },
+    {
+      "stepNo": 6,
+      "instruction": "State the solution of the simultaneous equations.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The intersection point gives the values satisfying both equations"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 2, y = 3"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Make a table of values for each line over the given domain, plot and join the points, read the crossing point, and recognise that the two equations in part (c) are the same two lines rearranged."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) Two straight lines drawn and labelled  (b) The point of intersection is (2, 3)  (c) x = 2, y = 3."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A straight-line graph is a picture of every (x, y) pair that satisfies its equation. A point lying on both lines therefore satisfies both equations at once, which is exactly what solving a simultaneous pair means. Rearranging x + y = 5 into y = 5 − x changes the way the equation looks but not the set of points it describes, so the same graph answers both parts."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "plotting_only_two_points_and_mis_plottin",
+      "wrongValue": "incorrect_1",
+      "misconception": "Plotting only two points and mis-plotting one, so the line is drawn at the wrong slope with no third point to catch the error.",
+      "correctiveNote": "Avoid this: Plotting only two points and mis-plotting one, so the line is drawn at the wrong slope with no third point to catch the error."
+    },
+    {
+      "key": "reading_the_intersection_as_3_2_the_x_co",
+      "wrongValue": "incorrect_2",
+      "misconception": "Reading the intersection as (3, 2) — the x-coordinate always comes first.",
+      "correctiveNote": "Avoid this: Reading the intersection as (3, 2) — the x-coordinate always comes first."
+    },
+    {
+      "key": "redrawing_new_graphs_for_part_c_instead_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Redrawing new graphs for part (c) instead of recognising the same two lines.",
+      "correctiveNote": "Avoid this: Redrawing new graphs for part (c) instead of recognising the same two lines."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Always plot three points for a straight line, not two: the third point is a free check that the first two were right."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Twostraightlinesdrawnandlabelled",
+    "displayValue": "Two straight lines drawn and labelled",
+    "acceptedForms": [
+      "Two straight lines drawn and labelled",
+      "Twostraightlinesdrawnandlabelled"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Where do y = x and y = 4 − x cross?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "At(2,2).",
+      "displayValue": "At (2, 2).",
+      "acceptedForms": [
+        "At (2, 2).",
+        "At(2,2)."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "b3a55ba4-c38e-4e56-aa56-6d825b9fd99a",
+      "code": "M1-5.1",
+      "label": "Drawing straight-line graphs"
+    },
+    {
+      "objectiveId": "94600716-ae5a-490b-ac17-d39fff1f1a56",
+      "code": "M1-5.1",
+      "label": "Table of values"
+    },
+    {
+      "objectiveId": "3e02b9b7-249d-419e-a365-fe35b0dfa0ed",
+      "code": "M1-5.1",
+      "label": "Solving simultaneous equations graphically"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 1,
+    "pageRef": "p132",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

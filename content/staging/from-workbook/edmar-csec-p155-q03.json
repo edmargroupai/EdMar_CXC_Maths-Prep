@@ -1,0 +1,296 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p155-q03",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 8,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The function p is defined by p(x) = 2x² + 12x + 13. (a) Express p(x) in the form a(x + h)² + k, where a, h and k are constants. (b) Hence determine the minimum value of p(x). (c) State the coordinates of the minimum point of p. (d) Write down the equation of the axis of symmetry of the graph of p."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Factor the 2 out of the x terms before completing the square, then multiply it back through at the end."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p155_q03.jpg",
+      "altText": "Source visual for edmar-csec-p155-q03 from workbook page 155."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Factor 2 from the x terms.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2x² + 12x + 13 = 2(x² + 6x) + 13"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2(x² + 6x) + 13"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Complete the square inside the bracket.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Half of 6 is 3, and (x + 3)² = x² + 6x + 9, so x² + 6x = (x + 3)² − 9"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2[(x + 3)² − 9] + 13"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Multiply the 2 back through and simplify.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2(x + 3)² − 18 + 13"
+        },
+        {
+          "type": "text",
+          "value": "Result: p(x) = 2(x + 3)² − 5"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Determine the minimum value.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2(x + 3)² is never negative and equals 0 when x = -3"
+        },
+        {
+          "type": "text",
+          "value": "Result: Minimum value -5"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "State the minimum point and the axis of symmetry.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The least value occurs at x = -3"
+        },
+        {
+          "type": "text",
+          "value": "Result: Minimum point (-3, -5); axis of symmetry x = -3"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Take 2 out of the x² and x terms, complete the square inside the bracket, multiply the 2 back through, then read the minimum value, minimum point and axis from the result."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) p(x) = 2(x + 3)² − 5, so a = 2, h = 3 and k = -5  (b) Minimum value -5  (c) Minimum point (-3, -5)  (d) Axis of symmetry x = -3."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Completing the square isolates the variable inside a single squared bracket, and because a square cannot be negative the whole expression is smallest when that bracket is zero. The factor 2 stretches the parabola vertically but does not move the turning point sideways, which is why the minimum still occurs at x = -3; it does, however, multiply the -9 into -18, so it must be carried through carefully."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "forgetting_to_multiply_the_9_by_2_giving",
+      "wrongValue": "incorrect_1",
+      "misconception": "Forgetting to multiply the -9 by 2, giving p(x) = 2(x + 3)² + 4.",
+      "correctiveNote": "Avoid this: Forgetting to multiply the -9 by 2, giving p(x) = 2(x + 3)² + 4."
+    },
+    {
+      "key": "reading_the_minimum_point_as_3_5_instead",
+      "wrongValue": "incorrect_2",
+      "misconception": "Reading the minimum point as (3, -5) instead of (-3, -5).",
+      "correctiveNote": "Avoid this: Reading the minimum point as (3, -5) instead of (-3, -5)."
+    },
+    {
+      "key": "halving_12_rather_than_the_6_that_remain",
+      "wrongValue": "incorrect_3",
+      "misconception": "Halving 12 rather than the 6 that remains after factoring out the 2.",
+      "correctiveNote": "Avoid this: Halving 12 rather than the 6 that remains after factoring out the 2."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When the coefficient of x² is not 1, factor it out of the first two terms only — never out of the constant — and check by expanding at the end."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "p",
+    "displayValue": "p",
+    "acceptedForms": [
+      "p",
+      "p"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Write 3x² + 12x + 5 in the form a(x + h)² + k."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "3",
+      "displayValue": "3",
+      "acceptedForms": [
+        "3",
+        "3"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "e1542ca8-f807-4baf-a592-6fb0ff89b0eb",
+      "code": "M1-5.1",
+      "label": "Completing the square with a leading coefficient"
+    },
+    {
+      "objectiveId": "e73601eb-f301-46aa-ad9d-30cd08af273f",
+      "code": "M1-5.1",
+      "label": "Minimum value of a quadratic"
+    },
+    {
+      "objectiveId": "006f0c37-9a30-4da9-af34-b8c8dfe14ac9",
+      "code": "M1-5.1",
+      "label": "Minimum point and axis of symmetry"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 3,
+    "pageRef": "p155",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "p",
+        "displayValue": "p",
+        "acceptedForms": [
+          "p",
+          "p"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Minimumvalue-5",
+        "displayValue": "Minimum value -5",
+        "acceptedForms": [
+          "Minimum value -5",
+          "Minimumvalue-5"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "c",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (c): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Minimumpoint(-3,-5)",
+        "displayValue": "Minimum point (-3, -5)",
+        "acceptedForms": [
+          "Minimum point (-3, -5)",
+          "Minimumpoint(-3,-5)"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "d",
+      "sequence": 4,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (d): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "k=-5",
+        "displayValue": "k = -5",
+        "acceptedForms": [
+          "k = -5",
+          "k=-5"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

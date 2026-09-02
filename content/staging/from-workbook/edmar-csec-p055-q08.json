@@ -1,0 +1,149 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p055-q08",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Make l the subject of the formula A = lw."
+    },
+    {
+      "type": "text",
+      "value": "Think first: l is simply multiplied by w, so one inverse operation will free it."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p055_q08.jpg",
+      "altText": "Source visual for edmar-csec-p055-q08 from workbook page 55."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Divide both sides by w.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "A/w = lw/w"
+        },
+        {
+          "type": "text",
+          "value": "Result: A/w = l"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Write the new subject on the left.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: l = A/w"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Divide both sides by w so that l stands alone."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "l = A/w"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Division undoes multiplication. Because l and w are multiplied, dividing the whole equation by w cancels w on the right and leaves l by itself. The area relationship is unchanged; you have simply chosen to read the formula as 'length in terms of area and width'."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_l_a_w_treating_multiplication_as",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing l = A - w, treating multiplication as if it were addition.",
+      "correctiveNote": "Avoid this: Writing l = A - w, treating multiplication as if it were addition."
+    },
+    {
+      "key": "dividing_only_one_side_of_the_equation_b",
+      "wrongValue": "incorrect_2",
+      "misconception": "Dividing only one side of the equation by w.",
+      "correctiveNote": "Avoid this: Dividing only one side of the equation by w."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Ask yourself what is being done to the letter you want, then do the opposite to both sides."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "l=A/w",
+    "displayValue": "l = A/w",
+    "acceptedForms": [
+      "l = A/w",
+      "l=A/w"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Make w the subject of A = lw."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "w=A/l",
+      "displayValue": "w = A/l",
+      "acceptedForms": [
+        "w = A/l",
+        "w=A/l"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "1194461b-4c9b-4b33-af84-a966fe0446ec",
+      "code": "M1-4.1",
+      "label": "Transposition of formulae"
+    },
+    {
+      "objectiveId": "501fb69c-2c12-443f-a2d8-79575c10981a",
+      "code": "M1-4.1",
+      "label": "Inverse operations"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 8,
+    "pageRef": "p55",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

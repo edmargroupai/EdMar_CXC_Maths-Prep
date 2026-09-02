@@ -1,0 +1,212 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p017-q07",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "$18 000 is invested at 5% per annum compound interest, compounded annually for 3 years. a. Calculate the amount at the end of 3 years.  b. Calculate the compound interest earned."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Find the amount first; the interest is whatever the amount exceeds the original investment by."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p017_q07.jpg",
+      "altText": "Source visual for edmar-csec-p017-q07 from workbook page 17."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Turn the rate into a multiplier.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5% increase means × (1 + 5/100)"
+        },
+        {
+          "type": "text",
+          "value": "Result: × 1.05"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Apply it for three years.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "A = 18000 × 1.05³ and 1.05³ = 1.157625"
+        },
+        {
+          "type": "text",
+          "value": "Result: A = 18000 × 1.157625"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Calculate the amount.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "18000 × 1.157625"
+        },
+        {
+          "type": "text",
+          "value": "Result: $20 837.25"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Subtract the principal to get the interest.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "20837.25 − 18000"
+        },
+        {
+          "type": "text",
+          "value": "Result: $2837.25"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Multiply $18 000 by 1.05 three times, then subtract the principal from the result."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "a. $20 837.25  b. $2 837.25"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Each year's balance is 105% of the year before, so three years multiply the principal by 1.05 three times over. Compound interest is never a single percentage of the principal; it is the amount at the end minus the amount at the start, because later years earn partly on earlier interest. Simple interest here would give only $2 700, and the $137.25 difference is interest on interest."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "answering_20_837_25_for_part_b_by_giving",
+      "wrongValue": "incorrect_1",
+      "misconception": "Answering $20 837.25 for part b by giving the amount instead of the interest.",
+      "correctiveNote": "Avoid this: Answering $20 837.25 for part b by giving the amount instead of the interest."
+    },
+    {
+      "key": "working_out_5_of_18_000_three_times_and_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Working out 5% of $18 000 three times and adding, which is simple interest.",
+      "correctiveNote": "Avoid this: Working out 5% of $18 000 three times and adding, which is simple interest."
+    },
+    {
+      "key": "rounding_the_balance_to_the_nearest_doll",
+      "wrongValue": "incorrect_3",
+      "misconception": "Rounding the balance to the nearest dollar partway through and losing the cents.",
+      "correctiveNote": "Avoid this: Rounding the balance to the nearest dollar partway through and losing the cents."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Keep full accuracy through compound interest working and round only the final money answer to two decimal places."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "tolerance",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "currency",
+    "canonicalValue": "20.00",
+    "displayValue": "$20",
+    "acceptedForms": [
+      "$20",
+      "$20",
+      "20"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0.005
+    },
+    "precision": {
+      "kind": "decimal_places",
+      "value": 2,
+      "required": true
+    },
+    "normalisation": "currency_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "$4 000 is invested at 10% compound interest for 2 years. How much interest is earned?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "currency",
+      "canonicalValue": "840.00",
+      "displayValue": "$840",
+      "acceptedForms": [
+        "$840",
+        "$840",
+        "840"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.005
+      },
+      "precision": {
+        "kind": "decimal_places",
+        "value": 2,
+        "required": true
+      },
+      "normalisation": "currency_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "7b1d2238-616a-4cd1-aa1d-f85b838efbcc",
+      "code": "M1-1.1",
+      "label": "Compound interest"
+    },
+    {
+      "objectiveId": "1f790a0a-46bb-4aab-a6dc-21aab40234af",
+      "code": "M1-1.1",
+      "label": "Multiplying factors"
+    },
+    {
+      "objectiveId": "26d3ee9d-b429-421f-a88f-e035e3aa67c5",
+      "code": "M1-1.1",
+      "label": "Interest as amount minus principal"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 7,
+    "pageRef": "p17",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

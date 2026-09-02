@@ -1,0 +1,167 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p056-q13",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Make y the subject of the equation 3x + 2y = 12."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Move everything that is not y to the other side, then divide by y's coefficient."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p056_q13.jpg",
+      "altText": "Source visual for edmar-csec-p056-q13 from workbook page 56."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Subtract 3x from both sides.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3x + 2y - 3x = 12 - 3x"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2y = 12 - 3x"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Divide every term by 2.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2y/2 = (12 - 3x)/2"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = (12 - 3x)/2"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Split the fraction to show gradient form.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(12 - 3x)/2 = 6 - 1.5x"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 6 - 1.5x"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Subtract 3x from both sides, then divide by 2."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "y = (12 - 3x)/2, that is y = 6 - 1.5x"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Making y the subject turns the equation into the form y = mx + c, so you can read the gradient (-1.5) and the y-intercept (6) straight off. Dividing by 2 must be applied to every term on the right, not just the first, because the whole expression was on one side of the equation."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "dividing_only_the_12_by_2_giving_y_6_3x",
+      "wrongValue": "incorrect_1",
+      "misconception": "Dividing only the 12 by 2, giving y = 6 - 3x.",
+      "correctiveNote": "Avoid this: Dividing only the 12 by 2, giving y = 6 - 3x."
+    },
+    {
+      "key": "losing_the_minus_sign_and_writing_y_12_3",
+      "wrongValue": "incorrect_2",
+      "misconception": "Losing the minus sign and writing y = (12 + 3x)/2.",
+      "correctiveNote": "Avoid this: Losing the minus sign and writing y = (12 + 3x)/2."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "After rearranging into y = mx + c, check by substituting a simple value of x back into the original equation."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "y=(12-3x)/2,thatisy=6-1.5x",
+    "displayValue": "y = (12 - 3x)/2, that is y = 6 - 1.5x",
+    "acceptedForms": [
+      "y = (12 - 3x)/2, that is y = 6 - 1.5x",
+      "y=(12-3x)/2,thatisy=6-1.5x"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Make y the subject of 4x + 2y = 10."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "y=5-2x",
+      "displayValue": "y = 5 - 2x",
+      "acceptedForms": [
+        "y = 5 - 2x",
+        "y=5-2x"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "a7742a0a-7694-443b-a95e-2c4377722185",
+      "code": "M1-4.1",
+      "label": "Transposition of formulae"
+    },
+    {
+      "objectiveId": "c8353ecc-5467-4b51-ad70-da8b0f5a0342",
+      "code": "M1-4.1",
+      "label": "Linear equations in two variables"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 13,
+    "pageRef": "p56",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

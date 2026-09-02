@@ -1,0 +1,264 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p201-q15",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 6,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The data matrix S = (12 9 5 / 15 7 8) shows the numbers of small, medium and large school shirts sold, with row 1 for Monday and row 2 for Tuesday. (a) How many medium shirts were sold on Tuesday? (b) Write a row matrix representing the total sales of each size over the two days. (c) Calculate the total number of shirts sold on Monday."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Rows are days and columns are sizes, so every question here is about picking the right row, the right column, or the right total."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p201_q15.jpg",
+      "altText": "Source visual for edmar-csec-p201-q15 from workbook page 201."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Go to the Tuesday row and the medium column.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Tuesday is row 2, medium is the middle column."
+        },
+        {
+          "type": "text",
+          "value": "Result: 7 medium shirts"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Add the two rows column by column to combine the days.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Small: 12 + 15; medium: 9 + 7; large: 5 + 8"
+        },
+        {
+          "type": "text",
+          "value": "Result: (27  16  13)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Add all three entries of the Monday row.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "12 + 9 + 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: 26 shirts"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Locate the Tuesday row and medium column for (a), add the two rows column by column for (b), and add across the Monday row for (c)."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) 7 medium shirts were sold on Tuesday  (b) The row matrix of two-day totals by size is (27 16 13)  (c) 26 shirts were sold on Monday in total."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A data matrix is a table with the labels stripped away, so meaning comes entirely from knowing what rows and columns stand for. Adding down a column combines the same size across days, while adding along a row combines all sizes within one day. Choosing the right direction is the whole skill."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "reading_row_2_column_2_as_9_by_taking_th",
+      "wrongValue": "incorrect_1",
+      "misconception": "Reading row 2, column 2 as 9 by taking the Monday row.",
+      "correctiveNote": "Avoid this: Reading row 2, column 2 as 9 by taking the Monday row."
+    },
+    {
+      "key": "giving_the_two_day_totals_as_a_column_ma",
+      "wrongValue": "incorrect_2",
+      "misconception": "Giving the two-day totals as a column matrix when a row matrix is asked for.",
+      "correctiveNote": "Avoid this: Giving the two-day totals as a column matrix when a row matrix is asked for."
+    },
+    {
+      "key": "adding_down_a_column_when_the_monday_tot",
+      "wrongValue": "incorrect_3",
+      "misconception": "Adding down a column when the Monday total across sizes was wanted.",
+      "correctiveNote": "Avoid this: Adding down a column when the Monday total across sizes was wanted."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Before touching the numbers, write 'rows = days, columns = sizes' beside the matrix; it prevents almost every misread."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "7",
+    "displayValue": "7",
+    "acceptedForms": [
+      "7",
+      "7"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Using S, how many shirts were sold on Tuesday altogether?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "15",
+      "displayValue": "15",
+      "acceptedForms": [
+        "15",
+        "15"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "f579ff7a-facf-4a06-aba0-ad917cacc8f0",
+      "code": "M2-4.1",
+      "label": "Reading a data matrix"
+    },
+    {
+      "objectiveId": "bb6803e0-ac51-4a9e-a46c-9943028ad379",
+      "code": "M2-4.1",
+      "label": "Elements of a matrix"
+    },
+    {
+      "objectiveId": "14204e75-0cec-41bc-af41-3e6bc422422a",
+      "code": "M2-4.1",
+      "label": "Row matrices"
+    },
+    {
+      "objectiveId": "2efcc47b-3ca0-483b-a90d-c894fec3093f",
+      "code": "M2-4.1",
+      "label": "Addition of corresponding elements"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 15,
+    "pageRef": "p201",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "numeric_exact",
+        "canonicalValue": "7",
+        "displayValue": "7",
+        "acceptedForms": [
+          "7",
+          "7"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0
+        },
+        "normalisation": "numeric_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Therowmatr",
+        "displayValue": "The row matr",
+        "acceptedForms": [
+          "The row matr",
+          "Therowmatr"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "c",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (c): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "numeric_exact",
+        "canonicalValue": "26",
+        "displayValue": "26",
+        "acceptedForms": [
+          "26",
+          "26"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0
+        },
+        "normalisation": "numeric_default"
+      }
+    }
+  ]
+}

@@ -1,0 +1,240 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p203-q17",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 4,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "W1 = (28 31 26 / 30 29 32) and W2 = (29 30 27 / 31 28 33) show attendance in Grades 7, 8 and 9 over two consecutive weeks, with row 1 for boys and row 2 for girls. (a) Calculate W1 + W2. (b) What does the element in row 2, column 3 of W1 + W2 represent? (c) Determine the total attendance for Grade 8 over the two weeks."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Adding the two week matrices combines the same grade and the same group of students, so the labels of the rows and columns carry straight through to the answer."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p203_q17.jpg",
+      "altText": "Source visual for edmar-csec-p203-q17 from workbook page 203."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Add the boys' row of W1 to the boys' row of W2.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "28 + 29 = 57; 31 + 30 = 61; 26 + 27 = 53"
+        },
+        {
+          "type": "text",
+          "value": "Result: Row 1 = (57  61  53)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Add the girls' row of W1 to the girls' row of W2.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "30 + 31 = 61; 29 + 28 = 57; 32 + 33 = 65"
+        },
+        {
+          "type": "text",
+          "value": "Result: Row 2 = (61  57  65)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Locate the entry in row 2, column 3 of the sum.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Row 2 is girls, column 3 is Grade 9."
+        },
+        {
+          "type": "text",
+          "value": "Result: 65, the two-week girls' attendance in Grade 9"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Add the two entries in the Grade 8 column of the sum.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Column 2 holds 61 (boys) and 57 (girls)."
+        },
+        {
+          "type": "text",
+          "value": "Result: 118"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Add corresponding entries to get the two-week matrix, then read off the required element and add down the Grade 8 column."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) W1 + W2 = (57 61 53 / 61 57 65)  (b) The element 65 in row 2, column 3 is the total attendance of girls in Grade 9 over the two weeks  (c) Total Grade 8 attendance over the two weeks is 61 + 57 = 118."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Adding two matrices adds the numbers that share a position, and because both matrices use the same row and column labels, each sum keeps its meaning. Row 2 stays 'girls' and column 3 stays 'Grade 9' after the addition. Totalling a grade across both groups then just means adding down that column."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "reading_row_3_column_2_instead_of_row_2_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Reading row 3, column 2 instead of row 2, column 3.",
+      "correctiveNote": "Avoid this: Reading row 3, column 2 instead of row 2, column 3."
+    },
+    {
+      "key": "describing_the_element_as_an_attendance_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Describing the element as an attendance for one week only.",
+      "correctiveNote": "Avoid this: Describing the element as an attendance for one week only."
+    },
+    {
+      "key": "adding_along_the_grade_8_row_rather_than",
+      "wrongValue": "incorrect_3",
+      "misconception": "Adding along the Grade 8 row rather than down the Grade 8 column.",
+      "correctiveNote": "Avoid this: Adding along the Grade 8 row rather than down the Grade 8 column."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Write the row and column labels lightly above and beside a data matrix; interpretation questions then answer themselves."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "W1+W2=(576153/615765)",
+    "displayValue": "W1 + W2 = (57 61 53 / 61 57 65)",
+    "acceptedForms": [
+      "W1 + W2 = (57 61 53 / 61 57 65)",
+      "W1+W2=(576153/615765)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Using W1 + W2, what was the total boys' attendance across all three grades over the two weeks?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "57",
+      "displayValue": "57",
+      "acceptedForms": [
+        "57",
+        "57"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "e8399d26-7fc7-4701-a75e-d427cf514712",
+      "code": "M2-4.1",
+      "label": "Addition of matrices"
+    },
+    {
+      "objectiveId": "223abf4d-4e0b-4022-a467-6c2436d9eed3",
+      "code": "M2-4.1",
+      "label": "Reading a data matrix"
+    },
+    {
+      "objectiveId": "237a4d12-9d2f-41ad-a8e1-6ad8893fe76f",
+      "code": "M2-4.1",
+      "label": "Interpreting matrix elements in context"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 17,
+    "pageRef": "p203",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "W1+W2=(576153/615765)",
+        "displayValue": "W1 + W2 = (57 61 53 / 61 57 65)",
+        "acceptedForms": [
+          "W1 + W2 = (57 61 53 / 61 57 65)",
+          "W1+W2=(576153/615765)"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Theelement65inrow2,column3isthetotalattendanceofgirlsinGrade9overthetwoweeks",
+        "displayValue": "The element 65 in row 2, column 3 is the total attendance of girls in Grade 9 over the two weeks",
+        "acceptedForms": [
+          "The element 65 in row 2, column 3 is the total attendance of girls in Grade 9 over the two weeks",
+          "Theelement65inrow2,column3isthetotalattendanceofgirlsinGrade9overthetwoweeks"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

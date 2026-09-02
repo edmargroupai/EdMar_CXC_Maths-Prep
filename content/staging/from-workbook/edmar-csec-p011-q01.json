@@ -1,0 +1,206 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p011-q01",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A sum of $1,260 is divided among A, B and C in the ratio 3 : 4 : 7. Calculate: i. the total number of parts  ii. the value of one part  iii. B's share  iv. the percentage of the total that C receives."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The ratio tells you how many equal parts the money is cut into, so find the size of one part before anything else."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p011_q01.jpg",
+      "altText": "Source visual for edmar-csec-p011-q01 from workbook page 11."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Add the ratio parts.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3 + 4 + 7"
+        },
+        {
+          "type": "text",
+          "value": "Result: 14 parts"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Divide the total sum by the number of parts.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "$1260 ÷ 14"
+        },
+        {
+          "type": "text",
+          "value": "Result: $90 per part"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Multiply by B's number of parts.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "4 × $90"
+        },
+        {
+          "type": "text",
+          "value": "Result: $360"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Write C's share as a fraction of the total and convert to a percentage.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "7/14 × 100%"
+        },
+        {
+          "type": "text",
+          "value": "Result: 50%"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Add the ratio numbers to get the total parts, divide the money by that to value one part, then multiply for B and convert C's share to a percentage."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "i. 14 parts  ii. $90  iii. $360  iv. 50%"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A ratio fixes only the relative sizes of the shares, so the actual amounts follow once the total is split into equal parts. Every share is a whole number of those parts, which is why one part acts as the common unit for all three people. The percentage in the last part needs no money at all: 7 parts out of 14 is half the total whatever the total happens to be."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "dividing_1260_by_3_instead_of_by_the_tot",
+      "wrongValue": "incorrect_1",
+      "misconception": "Dividing $1260 by 3 instead of by the total 14 parts.",
+      "correctiveNote": "Avoid this: Dividing $1260 by 3 instead of by the total 14 parts."
+    },
+    {
+      "key": "giving_a_s_share_when_b_s_is_asked_for",
+      "wrongValue": "incorrect_2",
+      "misconception": "Giving A's share when B's is asked for.",
+      "correctiveNote": "Avoid this: Giving A's share when B's is asked for."
+    },
+    {
+      "key": "working_out_c_s_percentage_from_b_s_shar",
+      "wrongValue": "incorrect_3",
+      "misconception": "Working out C's percentage from B's share rather than from the total.",
+      "correctiveNote": "Avoid this: Working out C's percentage from B's share rather than from the total."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Always write the total number of parts down as your first line in a ratio question — every later part of the question depends on it."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "14",
+    "displayValue": "14",
+    "acceptedForms": [
+      "14",
+      "14"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "$960 is shared in the ratio 2 : 3 : 5. What is one part worth, and what percentage of the total does the largest share take?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "currency",
+      "canonicalValue": "96.00",
+      "displayValue": "$96",
+      "acceptedForms": [
+        "$96",
+        "$96",
+        "96"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.005
+      },
+      "precision": {
+        "kind": "decimal_places",
+        "value": 2,
+        "required": true
+      },
+      "normalisation": "currency_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "f8662353-670d-4d37-a0bb-2e6e83c6946d",
+      "code": "M1-1.1",
+      "label": "Ratio"
+    },
+    {
+      "objectiveId": "478b11d1-e418-4e78-a13d-95cb01606900",
+      "code": "M1-1.1",
+      "label": "Sharing a quantity in a given ratio"
+    },
+    {
+      "objectiveId": "8a56ce22-f32c-4195-ad0f-77a03c20dbf7",
+      "code": "M1-1.1",
+      "label": "Percentage of a total"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 1,
+    "pageRef": "p11",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

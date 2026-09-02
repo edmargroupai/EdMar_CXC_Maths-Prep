@@ -1,0 +1,188 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p095-q08",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Make t the subject of the formula I = Prt/100 (the simple interest formula)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Clear the denominator first, then divide by everything else that multiplies t."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p095_q08.jpg",
+      "altText": "Source visual for edmar-csec-p095-q08 from workbook page 95."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply both sides by 100.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "100I = 100 × Prt/100"
+        },
+        {
+          "type": "text",
+          "value": "Result: 100I = Prt"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Identify everything multiplying t.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Prt = (Pr) × t"
+        },
+        {
+          "type": "text",
+          "value": "Result: the coefficient is Pr"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Divide both sides by Pr.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "100I ÷ Pr"
+        },
+        {
+          "type": "text",
+          "value": "Result: 100I/(Pr) = t"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Write the new subject on the left.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: t = 100I/(Pr)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Multiply both sides by 100, then divide both sides by the product Pr."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "t = 100I/(Pr)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Every letter other than t is just a number multiplying or dividing it, so the same inverse operations used with numbers apply. Multiplying by 100 removes the denominator and dividing by the combined coefficient Pr removes both remaining factors in a single step."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "dividing_by_p_and_forgetting_r_giving_t_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Dividing by P and forgetting r, giving t = 100I/P.",
+      "correctiveNote": "Avoid this: Dividing by P and forgetting r, giving t = 100I/P."
+    },
+    {
+      "key": "writing_t_100i_pr_without_brackets_and_t",
+      "wrongValue": "incorrect_2",
+      "misconception": "Writing t = 100I/Pr without brackets and then dividing by P and multiplying by r when substituting.",
+      "correctiveNote": "Avoid this: Writing t = 100I/Pr without brackets and then dividing by P and multiplying by r when substituting."
+    },
+    {
+      "key": "multiplying_the_answer_by_100_instead_of",
+      "wrongValue": "incorrect_3",
+      "misconception": "Multiplying the answer by 100 instead of the equation.",
+      "correctiveNote": "Avoid this: Multiplying the answer by 100 instead of the equation."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Once you have rearranged, test the formula with easy numbers — P = 100, r = 5, t = 2 gives I = 10, and 100(10)/(100 × 5) = 2 confirms it."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "t=100I/(Pr)",
+    "displayValue": "t = 100I/(Pr)",
+    "acceptedForms": [
+      "t = 100I/(Pr)",
+      "t=100I/(Pr)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Make r the subject of I = Prt/100."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "r=100I/(Pt)",
+      "displayValue": "r = 100I/(Pt)",
+      "acceptedForms": [
+        "r = 100I/(Pt)",
+        "r=100I/(Pt)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "48b199ff-18fb-435a-a28f-347f394eb2da",
+      "code": "M1-1.1",
+      "label": "Changing the subject of a formula"
+    },
+    {
+      "objectiveId": "79e9bdc3-101e-4ad1-a830-086738a1aba2",
+      "code": "M1-1.1",
+      "label": "Clearing fractions"
+    },
+    {
+      "objectiveId": "534a3547-ef1c-42ae-ab55-7669f066edd5",
+      "code": "M1-1.1",
+      "label": "Simple interest"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 8,
+    "pageRef": "p95",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

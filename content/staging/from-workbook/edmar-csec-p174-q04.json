@@ -1,0 +1,206 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p174-q04",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 5,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The cross-section of a symmetrical roof is an isosceles triangle. Half the base is b, the vertical height is h, each sloping rafter has length s, and the base angle is θ. a) Express s in terms of b and h. b) Write sin θ + cos θ as a single fraction in terms of b, h and s. c) Given that tan θ = 3/4, show that s = 5b/4. d) Hence find the total length of the two sloping rafters in terms of b."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The vertical height splits the isosceles triangle into two identical right-angled triangles with legs b and h and hypotenuse s."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p174_q04.jpg",
+      "altText": "Source visual for edmar-csec-p174-q04 from workbook page 174."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Identify the right-angled half-triangle.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The height h is perpendicular to the base, giving legs b and h with hypotenuse s"
+        },
+        {
+          "type": "text",
+          "value": "Result: right angle at the foot of h"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Apply Pythagoras.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "s² = b² + h²"
+        },
+        {
+          "type": "text",
+          "value": "Result: s = √(b² + h²)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Write the two ratios at θ and add them.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "sin θ = h/s (opposite over hypotenuse), cos θ = b/s (adjacent over hypotenuse)"
+        },
+        {
+          "type": "text",
+          "value": "Result: sin θ + cos θ = (h + b)/s"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Use tan θ = 3/4 to express h in terms of b.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "tan θ = h/b = 3/4"
+        },
+        {
+          "type": "text",
+          "value": "Result: h = 3b/4"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Substitute into s = √(b² + h²) and double it.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "s² = b² + 9b²/16 = 25b²/16, so s = 5b/4 (positive root)"
+        },
+        {
+          "type": "text",
+          "value": "Result: s = 5b/4 and 2s = 5b/2"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Work inside one half-triangle: use Pythagoras for s, write the two ratios with respect to θ, then substitute h = 3b/4 from the given tangent."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) s = √(b² + h²)  (b) sin θ + cos θ = (h + b)/s  (c) tan θ = h/b = 3/4 gives h = 3b/4, so s² = b² + 9b²/16 = 25b²/16 and s = 5b/4  (d) total length of the two rafters = 2s = 5b/2"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Symmetry is what makes this work: the perpendicular height of an isosceles triangle bisects the base, creating two congruent right-angled triangles, so one of them carries all the information. Because tan θ fixes the ratio h : b rather than either value, every roof with tan θ = 3/4 is a scaled 3-4-5 triangle, and s always comes out as exactly 5/4 of the half-base."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "using_the_full_base_instead_of_the_half_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Using the full base instead of the half-base b in Pythagoras.",
+      "correctiveNote": "Avoid this: Using the full base instead of the half-base b in Pythagoras."
+    },
+    {
+      "key": "writing_tan_b_h_instead_of_h_b_the_oppos",
+      "wrongValue": "incorrect_2",
+      "misconception": "Writing tan θ = b/h instead of h/b — the opposite side is the height.",
+      "correctiveNote": "Avoid this: Writing tan θ = b/h instead of h/b — the opposite side is the height."
+    },
+    {
+      "key": "giving_the_answer_to_part_d_as_s_rather_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Giving the answer to part d as s rather than 2s, forgetting there are two rafters.",
+      "correctiveNote": "Avoid this: Giving the answer to part d as s rather than 2s, forgetting there are two rafters."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "In any isosceles triangle problem, draw the perpendicular height first — it converts the shape into two right-angled triangles you already know how to handle."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "s=√(b²+h²)",
+    "displayValue": "s = √(b² + h²)",
+    "acceptedForms": [
+      "s = √(b² + h²)",
+      "s=√(b²+h²)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "An isosceles triangle has half-base 8 cm and height 6 cm. How long is each sloping side?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "√(64+36)=10cm.",
+      "displayValue": "√(64 + 36) = 10 cm.",
+      "acceptedForms": [
+        "√(64 + 36) = 10 cm.",
+        "√(64+36)=10cm."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "b8f39d7b-3c54-4d0b-abd5-f73b30d2324b",
+      "code": "M1-1.1",
+      "label": "Pythagoras' theorem"
+    },
+    {
+      "objectiveId": "fab3a786-6eb2-4cb6-ab5e-232b1be14b69",
+      "code": "M1-1.1",
+      "label": "Trigonometric ratios in a right-angled triangle"
+    },
+    {
+      "objectiveId": "33703e2f-4fee-43d5-aab7-7165b2ac9b9e",
+      "code": "M1-1.1",
+      "label": "Algebraic manipulation"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 4,
+    "pageRef": "p174",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

@@ -1,0 +1,206 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p110-q01",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the simultaneous equations x + y = 5 and xy = 6."
+    },
+    {
+      "type": "text",
+      "value": "Think first: One equation is linear and one is not, so substitute from the linear one into the other."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p110_q01.jpg",
+      "altText": "Source visual for edmar-csec-p110-q01 from workbook page 110."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Make y the subject of the linear equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "from x + y = 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 5 − x"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Substitute into the second equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x(5 − x) = 6"
+        },
+        {
+          "type": "text",
+          "value": "Result: 5x − x² = 6"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Rearrange into standard quadratic form.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "collect all terms on one side"
+        },
+        {
+          "type": "text",
+          "value": "Result: x² − 5x + 6 = 0"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Factorise and solve.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(x − 2)(x − 3) = 0"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 2 or x = 3"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Find the y-value that goes with each x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "y = 5 − 2 = 3; y = 5 − 3 = 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: (2, 3) and (3, 2)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Make y the subject of the linear equation, substitute into xy = 6 to get a quadratic in x, solve it, then find each matching y."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = 2, y = 3 or x = 3, y = 2"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Substituting the linear equation into the non-linear one reduces two unknowns to one, producing a quadratic whose roots are the possible x-values. Each root must be paired with its own y from the linear equation, since the solutions come in matched pairs rather than as any x with any y. Geometrically you are finding where the straight line x + y = 5 meets the curve xy = 6."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "listing_x_2_3_and_y_2_3_without_pairing_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Listing x = 2, 3 and y = 2, 3 without pairing them up.",
+      "correctiveNote": "Avoid this: Listing x = 2, 3 and y = 2, 3 without pairing them up."
+    },
+    {
+      "key": "substituting_into_the_linear_equation_wh",
+      "wrongValue": "incorrect_2",
+      "misconception": "Substituting into the linear equation, which gives nothing new.",
+      "correctiveNote": "Avoid this: Substituting into the linear equation, which gives nothing new."
+    },
+    {
+      "key": "trying_to_factorise_5x_x_6_without_rearr",
+      "wrongValue": "incorrect_3",
+      "misconception": "Trying to factorise 5x − x² = 6 without rearranging first.",
+      "correctiveNote": "Avoid this: Trying to factorise 5x − x² = 6 without rearranging first."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Present non-linear simultaneous answers as ordered pairs so the pairing is unmistakable."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=2,y=3",
+    "displayValue": "= 2, y = 3",
+    "acceptedForms": [
+      "= 2, y = 3",
+      "=2,y=3"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve x + y = 7 and xy = 12."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(3,4)and(4,3)",
+      "displayValue": "(3, 4) and (4, 3)",
+      "acceptedForms": [
+        "(3, 4) and (4, 3)",
+        "(3,4)and(4,3)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-6.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "5ba5f43e-32c0-43bb-ac87-aee10fcd44ea",
+      "code": "M1-6.1",
+      "label": "Simultaneous equations, one linear and one non-linear"
+    },
+    {
+      "objectiveId": "9c5d1106-d6c0-432f-a6e8-2833d12cb3d4",
+      "code": "M1-6.1",
+      "label": "Substitution method"
+    },
+    {
+      "objectiveId": "611f7b09-a85c-4a65-a140-a576f9e5c195",
+      "code": "M1-6.1",
+      "label": "Factorising a quadratic"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 1,
+    "pageRef": "p110",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

@@ -1,0 +1,153 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p055-q09",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Make x the subject of the formula P = c/(2x)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: x is stuck in the denominator, so your first move is to lift it out by multiplying."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p055_q09.jpg",
+      "altText": "Source visual for edmar-csec-p055-q09 from workbook page 55."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply both sides by 2x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "P × 2x = c/(2x) × 2x"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2Px = c"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Divide both sides by 2P.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2Px/(2P) = c/(2P)"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = c/(2P)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Multiply both sides by 2x to bring x out of the denominator, then divide by 2P."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = c/(2P)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A letter in a denominator cannot be isolated by adding or subtracting; it must first be multiplied up. Once 2Px = c the equation is an ordinary product, and dividing by everything that multiplies x leaves x alone. Notice the pleasing symmetry: P and x swap places, which is exactly what happens with inverse proportion."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_x_2pc_instead_of_dividing_by_2p",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing x = 2Pc instead of dividing by 2P.",
+      "correctiveNote": "Avoid this: Writing x = 2Pc instead of dividing by 2P."
+    },
+    {
+      "key": "multiplying_by_x_but_forgetting_the_2_gi",
+      "wrongValue": "incorrect_2",
+      "misconception": "Multiplying by x but forgetting the 2, giving Px = c.",
+      "correctiveNote": "Avoid this: Multiplying by x but forgetting the 2, giving Px = c."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When the unknown is on the bottom of a fraction, multiply it up first - never try to cancel it where it stands."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=c/(2P)",
+    "displayValue": "= c/(2P)",
+    "acceptedForms": [
+      "= c/(2P)",
+      "=c/(2P)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Make x the subject of P = k/x."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=k/P",
+      "displayValue": "= k/P",
+      "acceptedForms": [
+        "= k/P",
+        "=k/P"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "812b63d2-3293-456f-a20a-6b8cbca0a5ff",
+      "code": "M1-4.1",
+      "label": "Transposition of formulae"
+    },
+    {
+      "objectiveId": "02986066-3cf0-414c-a597-881e57c48c65",
+      "code": "M1-4.1",
+      "label": "Rearranging fractional formulae"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 9,
+    "pageRef": "p55",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

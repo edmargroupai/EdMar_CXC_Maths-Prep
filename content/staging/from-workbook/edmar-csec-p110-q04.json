@@ -1,0 +1,206 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p110-q04",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the simultaneous equations x + y = 7 and x² + y² = 25."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Substitute from the linear equation and expect to expand a squared bracket carefully."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p110_q04.jpg",
+      "altText": "Source visual for edmar-csec-p110-q04 from workbook page 110."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Make y the subject of the linear equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "from x + y = 7"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 7 − x"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Substitute and expand the square.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(7 − x)² = 49 − 14x + x²"
+        },
+        {
+          "type": "text",
+          "value": "Result: x² + 49 − 14x + x² = 25"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Collect terms and rearrange.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2x² − 14x + 49 − 25 = 0"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2x² − 14x + 24 = 0"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Divide through by 2 and factorise.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x² − 7x + 12 = 0, so (x − 3)(x − 4) = 0"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 3 or x = 4"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Find the matching y-values.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "y = 7 − 3 = 4; y = 7 − 4 = 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: (3, 4) and (4, 3)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Write y = 7 − x, substitute into x² + y² = 25, expand and simplify to a quadratic, then solve and pair the answers."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = 3, y = 4 or x = 4, y = 3"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Squaring the substituted expression is where care is needed: (7 − x)² is not 49 − x², it carries the middle term −14x. Once expanded, the two x² terms combine and the system collapses to a single quadratic. Geometrically the line x + y = 7 is a chord of the circle x² + y² = 25, meeting it at two points."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_7_x_as_49_x",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing (7 − x)² as 49 − x².",
+      "correctiveNote": "Avoid this: Writing (7 − x)² as 49 − x²."
+    },
+    {
+      "key": "dividing_only_some_terms_by_2_when_simpl",
+      "wrongValue": "incorrect_2",
+      "misconception": "Dividing only some terms by 2 when simplifying.",
+      "correctiveNote": "Avoid this: Dividing only some terms by 2 when simplifying."
+    },
+    {
+      "key": "pairing_x_3_with_y_3",
+      "wrongValue": "incorrect_3",
+      "misconception": "Pairing x = 3 with y = 3.",
+      "correctiveNote": "Avoid this: Pairing x = 3 with y = 3."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Expand squared brackets in full on their own line — the middle term is the most commonly dropped piece of working."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=3,y=4",
+    "displayValue": "= 3, y = 4",
+    "acceptedForms": [
+      "= 3, y = 4",
+      "=3,y=4"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve x + y = 5 and x² + y² = 13."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(2,3)and(3,2)",
+      "displayValue": "(2, 3) and (3, 2)",
+      "acceptedForms": [
+        "(2, 3) and (3, 2)",
+        "(2,3)and(3,2)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-6.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "4ab4d7e8-605e-4f00-ade2-3e50fc620f3d",
+      "code": "M1-6.1",
+      "label": "Simultaneous equations, one linear and one non-linear"
+    },
+    {
+      "objectiveId": "03f2c19f-a81e-4e8a-ad25-c5754a1b371f",
+      "code": "M1-6.1",
+      "label": "Expanding a squared bracket"
+    },
+    {
+      "objectiveId": "b23a95f0-761e-4cd2-ae47-3b9c37676edf",
+      "code": "M1-6.1",
+      "label": "Factorising a quadratic"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 4,
+    "pageRef": "p110",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

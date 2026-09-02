@@ -1,0 +1,286 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p204-q18",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 6,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A minibus company records adult and child passengers on three routes in R = (18 7 / 22 5 / 16 9), where column 1 is adults and column 2 is children, and the fare matrix f = (250 / 150) gives the adult and child fares in dollars. (a) Calculate Rf. (b) State what each element of Rf represents. (c) Determine which route earned the greatest fare revenue."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Each row is one route, so multiplying that row into the fare column gives that route's takings in a single line of arithmetic."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p204_q18.jpg",
+      "altText": "Source visual for edmar-csec-p204-q18 from workbook page 204."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Check the product is defined and find its shape.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "R is 3 × 2 and f is 2 × 1; the inner 2s match."
+        },
+        {
+          "type": "text",
+          "value": "Result: Rf is defined, order 3 × 1"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Multiply route 1's row into the fare column.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "18(250) + 7(150) = 4500 + 1050"
+        },
+        {
+          "type": "text",
+          "value": "Result: 5550"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Multiply route 2's row into the fare column.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "22(250) + 5(150) = 5500 + 750"
+        },
+        {
+          "type": "text",
+          "value": "Result: 6250"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Multiply route 3's row into the fare column.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "16(250) + 9(150) = 4000 + 1350"
+        },
+        {
+          "type": "text",
+          "value": "Result: 5350"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Compare the three revenues.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "6250 > 5550 > 5350"
+        },
+        {
+          "type": "text",
+          "value": "Result: Route 2 earns most"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Multiply each route row into the fare column, interpret the three results as revenue, then pick the largest."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) Rf = (5550 / 6250 / 5350)  (b) Each element is the total fare revenue, in dollars, collected on that route: $5550 on route 1, $6250 on route 2 and $5350 on route 3  (c) Route 2 earned the greatest fare revenue, $6250."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Multiplying a row of passenger numbers by a column of fares pairs each passenger type with its own fare and adds the money, which is exactly the revenue calculation. Because there are three rows and one fare column, the answer is a 3 × 1 column with one revenue per route. The structure of the matrices does the bookkeeping for you."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "multiplying_adults_by_the_child_fare_thr",
+      "wrongValue": "incorrect_1",
+      "misconception": "Multiplying adults by the child fare through careless pairing.",
+      "correctiveNote": "Avoid this: Multiplying adults by the child fare through careless pairing."
+    },
+    {
+      "key": "attempting_fr_which_is_not_defined",
+      "wrongValue": "incorrect_2",
+      "misconception": "Attempting fR, which is not defined.",
+      "correctiveNote": "Avoid this: Attempting fR, which is not defined."
+    },
+    {
+      "key": "choosing_route_1_because_it_has_the_most",
+      "wrongValue": "incorrect_3",
+      "misconception": "Choosing route 1 because it has the most adults, without comparing the totals.",
+      "correctiveNote": "Avoid this: Choosing route 1 because it has the most adults, without comparing the totals."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Check a revenue answer for plausibility: with fares of $250 and $150 and about 25 passengers, a few thousand dollars per route is the right size."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Rf=(5550/6250/5350)",
+    "displayValue": "Rf = (5550 / 6250 / 5350)",
+    "acceptedForms": [
+      "Rf = (5550 / 6250 / 5350)",
+      "Rf=(5550/6250/5350)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A fourth route carries 20 adults and 10 children at the same fares. What is its revenue?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "currency",
+      "canonicalValue": "20.00",
+      "displayValue": "$20",
+      "acceptedForms": [
+        "$20",
+        "$20",
+        "20"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.005
+      },
+      "precision": {
+        "kind": "decimal_places",
+        "value": 2,
+        "required": true
+      },
+      "normalisation": "currency_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "3473bb2a-9c39-4d25-af38-961c41354327",
+      "code": "M2-4.1",
+      "label": "Matrix multiplication"
+    },
+    {
+      "objectiveId": "9927679c-f1fb-4aab-a2a5-7a59a83b4f0c",
+      "code": "M2-4.1",
+      "label": "Conformability"
+    },
+    {
+      "objectiveId": "8fefaa29-e556-4f73-afc7-7996791bb03b",
+      "code": "M2-4.1",
+      "label": "Interpreting a product matrix in context"
+    },
+    {
+      "objectiveId": "eca3e7bf-56b6-4b5e-aeca-630c9c5e383e",
+      "code": "M2-4.1",
+      "label": "Comparing values"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 18,
+    "pageRef": "p204",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Rf=(5550/6250/5350)",
+        "displayValue": "Rf = (5550 / 6250 / 5350)",
+        "acceptedForms": [
+          "Rf = (5550 / 6250 / 5350)",
+          "Rf=(5550/6250/5350)"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Eachelementisthetotalfarerevenue,indollars,collecte",
+        "displayValue": "Each element is the total fare revenue, in dollars, collecte",
+        "acceptedForms": [
+          "Each element is the total fare revenue, in dollars, collecte",
+          "Eachelementisthetotalfarerevenue,indollars,collecte"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "c",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (c): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Route2earne",
+        "displayValue": "Route 2 earne",
+        "acceptedForms": [
+          "Route 2 earne",
+          "Route2earne"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

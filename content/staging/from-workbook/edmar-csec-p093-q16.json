@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p093-q16",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Factorise completely: 2x² + 13x + 20"
+    },
+    {
+      "type": "text",
+      "value": "Think first: When the coefficient of x² is not 1, the two numbers must multiply to a × c, not just to c."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p093_q16.jpg",
+      "altText": "Source visual for edmar-csec-p093-q16 from workbook page 93."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply the first and last coefficients.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2 × 20"
+        },
+        {
+          "type": "text",
+          "value": "Result: 40"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Find two numbers with product 40 and sum 13.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5 and 8"
+        },
+        {
+          "type": "text",
+          "value": "Result: 5 and 8"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Split the middle term and group.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2x² + 5x + 8x + 20 = x(2x + 5) + 4(2x + 5)"
+        },
+        {
+          "type": "text",
+          "value": "Result: (2x + 5)(x + 4)"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Check by expanding.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2x² + 8x + 5x + 20"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2x² + 13x + 20"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Multiply the first and last coefficients, find two numbers with that product and with sum equal to the middle coefficient, split the middle term and factorise by grouping."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(2x + 5)(x + 4)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "When the coefficient of x² is not 1 the two numbers must multiply to a × c, because that coefficient is shared between the brackets. Splitting the middle term turns the trinomial into four terms, which grouping then handles in the usual way."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "searching_for_numbers_with_product_20_in",
+      "wrongValue": "incorrect_1",
+      "misconception": "Searching for numbers with product 20 instead of 40.",
+      "correctiveNote": "Avoid this: Searching for numbers with product 20 instead of 40."
+    },
+    {
+      "key": "splitting_the_middle_term_correctly_but_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Splitting the middle term correctly but then grouping the wrong pairs.",
+      "correctiveNote": "Avoid this: Splitting the middle term correctly but then grouping the wrong pairs."
+    },
+    {
+      "key": "writing_2x_4_x_5_which_expands_to_2x_14x",
+      "wrongValue": "incorrect_3",
+      "misconception": "Writing (2x + 4)(x + 5), which expands to 2x² + 14x + 20.",
+      "correctiveNote": "Avoid this: Writing (2x + 4)(x + 5), which expands to 2x² + 14x + 20."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "For ax² + bx + c, always work with a × c — that one habit makes every harder trinomial routine."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "(2x+5)(x+4)",
+    "displayValue": "(2x + 5)(x + 4)",
+    "acceptedForms": [
+      "(2x + 5)(x + 4)",
+      "(2x+5)(x+4)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Factorise 3x² + 10x + 8."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(3x+4)(x+2)",
+      "displayValue": "(3x + 4)(x + 2)",
+      "acceptedForms": [
+        "(3x + 4)(x + 2)",
+        "(3x+4)(x+2)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M3-2.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "5c2122ec-8754-4044-a56f-696ecfbca577",
+      "code": "M3-2.1",
+      "label": "Factorising quadratic trinomials with a leading coefficient"
+    },
+    {
+      "objectiveId": "83fc09b9-2a62-4680-a827-5e2b9247892b",
+      "code": "M3-2.1",
+      "label": "Splitting the middle term"
+    },
+    {
+      "objectiveId": "b3268068-afad-4d37-a380-725f61561486",
+      "code": "M3-2.1",
+      "label": "Factorisation by grouping"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 16,
+    "pageRef": "p93",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

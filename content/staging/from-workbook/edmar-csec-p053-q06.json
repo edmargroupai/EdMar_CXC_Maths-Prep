@@ -1,0 +1,214 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p053-q06",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Expand and simplify (2x + 3)(5x − 5)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Both brackets now have a coefficient in front of x, so the first product gives 10x², not x²."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p053_q06.jpg",
+      "altText": "Source visual for edmar-csec-p053-q06 from workbook page 53."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply 2x by both terms of the second bracket.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2x × 5x = 10x² and 2x × (−5) = −10x"
+        },
+        {
+          "type": "text",
+          "value": "Result: 10x² − 10x"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Multiply 3 by both terms of the second bracket.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3 × 5x = 15x and 3 × (−5) = −15"
+        },
+        {
+          "type": "text",
+          "value": "Result: 15x − 15"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Add the two partial expansions.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "10x² − 10x + 15x − 15"
+        },
+        {
+          "type": "text",
+          "value": "Result: 10x² − 10x + 15x − 15"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Collect like terms.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "−10x + 15x = 5x"
+        },
+        {
+          "type": "text",
+          "value": "Result: 10x² + 5x − 15"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Note the common factor of 5.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "10x² + 5x − 15 = 5(2x² + x − 3)"
+        },
+        {
+          "type": "text",
+          "value": "Result: 5(2x² + x − 3)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Multiply each term of the first bracket by each term of the second, collect like terms, and check the result for a common factor."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "10x² + 5x − 15, which factorises as 5(2x² + x − 3)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "When both brackets carry coefficients, the leading term is the product of those coefficients times x², so 2x × 5x gives 10x². The two cross-products are still like terms and combine into a single x-term. The common factor of 5 appears because the second bracket, 5x − 5, is itself 5(x − 1), so the whole product had a factor of 5 built into it from the start."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_the_first_term_as_10x_instead_of",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing the first term as 10x instead of 10x².",
+      "correctiveNote": "Avoid this: Writing the first term as 10x instead of 10x²."
+    },
+    {
+      "key": "multiplying_only_2x_5x_and_3_5_and_missi",
+      "wrongValue": "incorrect_2",
+      "misconception": "Multiplying only 2x × 5x and 3 × (−5) and missing the cross-terms.",
+      "correctiveNote": "Avoid this: Multiplying only 2x × 5x and 3 × (−5) and missing the cross-terms."
+    },
+    {
+      "key": "sign_errors_on_10x_giving_10x_and_hence_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Sign errors on −10x, giving +10x and hence a middle term of 25x.",
+      "correctiveNote": "Avoid this: Sign errors on −10x, giving +10x and hence a middle term of 25x."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Scan each bracket for a common factor before expanding. Taking the 5 out of (5x − 5) first turns this into 5(2x + 3)(x − 1), which is much quicker to expand."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "10",
+    "displayValue": "10",
+    "acceptedForms": [
+      "10",
+      "10"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Expand and simplify (3x + 2)(4x − 4)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "12",
+      "displayValue": "12",
+      "acceptedForms": [
+        "12",
+        "12"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "63ff06c4-99f4-4287-a905-5dd62912359d",
+      "code": "M1-4.1",
+      "label": "Expanding a product of two binomials with coefficients"
+    },
+    {
+      "objectiveId": "bad14dd7-ce00-4d1c-a2c8-1f3339e141de",
+      "code": "M1-4.1",
+      "label": "Collecting like terms"
+    },
+    {
+      "objectiveId": "12b37802-b27d-4dc8-a366-f1d5fce66305",
+      "code": "M1-4.1",
+      "label": "Factorising out a common factor"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 6,
+    "pageRef": "p53",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

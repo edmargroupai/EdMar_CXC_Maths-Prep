@@ -1,0 +1,196 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p216-q05",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A pie chart shows the favourite sport of a group of students. The sector for cricket is 94°, the sector for tennis is 45° and the sector for football is x°. (i) Calculate the value of x. (ii) What percentage of the students chose cricket? (iii) Given that 40 students chose tennis, calculate the total number of students in the group."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Every pie chart rests on one fact: the sector angles add up to 360°, and each angle is the same fraction of 360° as its group is of the total."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p216_q05.jpg",
+      "altText": "Source visual for edmar-csec-p216-q05 from workbook page 216."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Set the three sector angles equal to 360°.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "94 + 45 + x = 360"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 360 − 139 = 221"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Write cricket's angle as a fraction of the whole circle and convert to a percentage.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "94/360 × 100"
+        },
+        {
+          "type": "text",
+          "value": "Result: 26.1% (1 d.p.)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Use the tennis sector to find how many students one degree represents.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "45° represents 40 students, so 1° represents 40 ÷ 45 students"
+        },
+        {
+          "type": "text",
+          "value": "Result: 8/9 of a student per degree"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Scale up to the full 360°.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "40 × 360 ÷ 45"
+        },
+        {
+          "type": "text",
+          "value": "Result: 320 students"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Subtract the two known sector angles from 360° to find x, then use the fraction angle/360 to convert cricket to a percentage and to scale the 40 tennis students up to the whole group."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) x = 221  (ii) 94/360 × 100 = 26.1% (to 1 decimal place)  (iii) 320 students in the group."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A pie chart shares out a whole turn of 360° in the same ratio as the data, so an angle and its group are two ways of writing the same fraction. Once you know that 45° corresponds to 40 students, the constant 'students per degree' unlocks every other sector, and the full 360° gives the whole group."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "forgetting_that_the_three_sectors_must_f",
+      "wrongValue": "incorrect_1",
+      "misconception": "Forgetting that the three sectors must fill the whole 360°, and solving 94 + 45 + x = 180.",
+      "correctiveNote": "Avoid this: Forgetting that the three sectors must fill the whole 360°, and solving 94 + 45 + x = 180."
+    },
+    {
+      "key": "dividing_40_by_360_instead_of_by_45_when",
+      "wrongValue": "incorrect_2",
+      "misconception": "Dividing 40 by 360 instead of by 45 when scaling up to the total.",
+      "correctiveNote": "Avoid this: Dividing 40 by 360 instead of by 45 when scaling up to the total."
+    },
+    {
+      "key": "rounding_26_1_to_26_without_being_asked_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Rounding 26.1% to 26% without being asked, or writing it as 26.1 students.",
+      "correctiveNote": "Avoid this: Rounding 26.1% to 26% without being asked, or writing it as 26.1 students."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "On any pie chart question, first write 'total = 360°' and the value of one degree in real units — most parts then take one line."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "x=221",
+    "displayValue": "x = 221",
+    "acceptedForms": [
+      "x = 221",
+      "x=221"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "On a pie chart a 72° sector represents 18 people. How many people are in the whole survey?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "18",
+      "displayValue": "18",
+      "acceptedForms": [
+        "18",
+        "18"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M3-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "050778ca-8681-4e9a-a3cb-9e522d22b2df",
+      "code": "M3-1.1",
+      "label": "Angles at a point (360°)"
+    },
+    {
+      "objectiveId": "fb8d5624-e347-4c4b-a363-6480321e1049",
+      "code": "M3-1.1",
+      "label": "Pie charts as proportions"
+    },
+    {
+      "objectiveId": "1efead9c-d493-4bb6-a3a7-c75d1d66ea02",
+      "code": "M3-1.1",
+      "label": "Percentages and scaling up from a part to a whole"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 5,
+    "pageRef": "p216",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

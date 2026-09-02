@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p053-q03",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Expand and simplify (x + 1)(x − 8)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: One bracket adds and one subtracts, so the constant term will be negative."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p053_q03.jpg",
+      "altText": "Source visual for edmar-csec-p053-q03 from workbook page 53."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply the first terms.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x × x"
+        },
+        {
+          "type": "text",
+          "value": "Result: x²"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Multiply the outer and inner pairs.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x × (−8) = −8x and 1 × x = x"
+        },
+        {
+          "type": "text",
+          "value": "Result: −8x + x"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Multiply the last terms.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "1 × (−8), positive times negative is negative"
+        },
+        {
+          "type": "text",
+          "value": "Result: −8"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Collect the middle terms.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "−8x + x = −7x"
+        },
+        {
+          "type": "text",
+          "value": "Result: x² − 7x − 8"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Expand all four products with attention to the mixed signs, then collect the x-terms."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x² − 7x − 8"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "With one positive and one negative number, their product is negative, so the constant term is −8. Their sum, 1 + (−8) = −7, gives the coefficient of x. Whenever a quadratic ends in a negative constant you know the two brackets must carry opposite signs, which is a useful check in both directions."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_the_constant_as_8",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing the constant as +8.",
+      "correctiveNote": "Avoid this: Writing the constant as +8."
+    },
+    {
+      "key": "losing_the_1_x_term_because_the_1_looks_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Losing the 1 × x term because the 1 looks unimportant.",
+      "correctiveNote": "Avoid this: Losing the 1 × x term because the 1 looks unimportant."
+    },
+    {
+      "key": "getting_9x_by_adding_the_numbers_as_8_1",
+      "wrongValue": "incorrect_3",
+      "misconception": "Getting −9x by adding the numbers as −8 − 1.",
+      "correctiveNote": "Avoid this: Getting −9x by adding the numbers as −8 − 1."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Never skip the term where a bracket contains 1. It still contributes a full x-term, and dropping it changes the whole middle coefficient."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "x²−7x−8",
+    "displayValue": "x² − 7x − 8",
+    "acceptedForms": [
+      "x² − 7x − 8",
+      "x²−7x−8"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Expand and simplify (x + 2)(x − 7)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "x²−5x−14.",
+      "displayValue": "x² − 5x − 14.",
+      "acceptedForms": [
+        "x² − 5x − 14.",
+        "x²−5x−14."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "a495d55c-29b0-482c-a27d-5a8ec3225197",
+      "code": "M1-4.1",
+      "label": "Expanding a product of two binomials"
+    },
+    {
+      "objectiveId": "a1993379-bb32-48ec-a30d-63283fc4dc6f",
+      "code": "M1-4.1",
+      "label": "Multiplication of directed numbers"
+    },
+    {
+      "objectiveId": "48ea7917-3522-4ca5-a2bf-91136b04ada7",
+      "code": "M1-4.1",
+      "label": "Collecting like terms"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 3,
+    "pageRef": "p53",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

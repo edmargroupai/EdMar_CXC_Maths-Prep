@@ -1,0 +1,306 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p083-q11",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 8,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The table shows the number of points, x, scored by 20 players: 4 → 3, 5 → 5, 6 → k, 7 → 4, 8 → 2, where the frequency for 6 points is missing. (a) Determine the value of k. (b) Calculate the mean number of points scored. (c) Determine the median number of points scored. (d) State the modal number of points scored. (e) Find the probability that a player chosen at random scored at least 7 points."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The frequencies must add to 20 — that one equation unlocks the whole table."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p083_q11.jpg",
+      "altText": "Source visual for edmar-csec-p083-q11 from workbook page 83."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Set the sum of the frequencies equal to 20.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3 + 5 + k + 4 + 2 = 20, so k = 20 − 14"
+        },
+        {
+          "type": "text",
+          "value": "Result: k = 6"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Multiply each score by its frequency and add.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "4(3) + 5(5) + 6(6) + 7(4) + 8(2) = 12 + 25 + 36 + 28 + 16"
+        },
+        {
+          "type": "text",
+          "value": "Result: Σfx = 117"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Divide by the number of players.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "117 ÷ 20"
+        },
+        {
+          "type": "text",
+          "value": "Result: Mean = 5.85 points"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Use cumulative frequency to find the 10th and 11th values.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Up to 4: 3 players; up to 5: 8; up to 6: 14 — so both the 10th and the 11th player scored 6"
+        },
+        {
+          "type": "text",
+          "value": "Result: Median = 6 points"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Read off the largest frequency, then count scores of at least 7.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "6 points occurs 6 times; players on 7 or 8 number 4 + 2 = 6 out of 20"
+        },
+        {
+          "type": "text",
+          "value": "Result: Mode = 6 points; P = 6/20 = 3/10"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Find k from the total frequency, compute Σfx ÷ Σf for the mean, use cumulative frequency to locate the 10th and 11th values for the median, then count the players scoring 7 or more."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) k = 6  (b) Mean = 5.85 points  (c) Median = 6 points  (d) Mode = 6 points  (e) 3/10 (0.3)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "In a frequency table each score stands for several players, so the mean must weight every score by how often it occurs — that is exactly what Σfx ÷ Σf does. Cumulative frequency then converts a position in the ordered list into a score, which is all the median needs."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "adding_the_five_different_scores_and_div",
+      "wrongValue": "incorrect_1",
+      "misconception": "Adding the five different scores and dividing by 5, which ignores the frequencies entirely.",
+      "correctiveNote": "Avoid this: Adding the five different scores and dividing by 5, which ignores the frequencies entirely."
+    },
+    {
+      "key": "guessing_the_median_as_the_middle_entry_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Guessing the median as the middle entry of the table rather than finding it from cumulative frequency.",
+      "correctiveNote": "Avoid this: Guessing the median as the middle entry of the table rather than finding it from cumulative frequency."
+    },
+    {
+      "key": "reading_at_least_7_as_more_than_7_and_le",
+      "wrongValue": "incorrect_3",
+      "misconception": "Reading 'at least 7' as 'more than 7' and leaving out the four players who scored exactly 7.",
+      "correctiveNote": "Avoid this: Reading 'at least 7' as 'more than 7' and leaving out the four players who scored exactly 7."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Add an fx column and a cumulative frequency column to every frequency table before answering — most parts then become a single reading."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "k=6",
+    "displayValue": "k = 6",
+    "acceptedForms": [
+      "k = 6",
+      "k=6"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Scores 1, 2 and 3 have frequencies 2, 3 and 5. Calculate the mean."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_dp",
+      "canonicalValue": "2.3",
+      "displayValue": "2.3",
+      "acceptedForms": [
+        "2.3",
+        "2.3"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "precision": {
+        "kind": "decimal_places",
+        "value": 1,
+        "required": true
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M3-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "93a18f0a-3c3b-4934-ad33-1d8e79101e67",
+      "code": "M3-1.1",
+      "label": "Frequency tables"
+    },
+    {
+      "objectiveId": "838cf925-218a-47c7-a21b-5caaa527866d",
+      "code": "M3-1.1",
+      "label": "Mean from a frequency table"
+    },
+    {
+      "objectiveId": "3cb1b559-c5a9-43e1-ac19-72abaec1aa83",
+      "code": "M3-1.1",
+      "label": "Median using cumulative frequency"
+    },
+    {
+      "objectiveId": "3d892f74-0fca-4d46-a542-63bfcd9c5143",
+      "code": "M3-1.1",
+      "label": "Mode"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 11,
+    "pageRef": "p83",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "k=6",
+        "displayValue": "k = 6",
+        "acceptedForms": [
+          "k = 6",
+          "k=6"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Mean=5.85points",
+        "displayValue": "Mean = 5.85 points",
+        "acceptedForms": [
+          "Mean = 5.85 points",
+          "Mean=5.85points"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "c",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (c): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Median=6points",
+        "displayValue": "Median = 6 points",
+        "acceptedForms": [
+          "Median = 6 points",
+          "Median=6points"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "d",
+      "sequence": 4,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (d): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Mode=6points(e)3/10(0.3)",
+        "displayValue": "Mode = 6 points (e) 3/10 (0.3)",
+        "acceptedForms": [
+          "Mode = 6 points (e) 3/10 (0.3)",
+          "Mode=6points(e)3/10(0.3)"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

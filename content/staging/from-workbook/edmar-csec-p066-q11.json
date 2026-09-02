@@ -1,0 +1,210 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p066-q11",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Factorise completely: 14m²n + 21mn²."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Both letters appear in both terms, so both belong in the common factor."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p066_q11.jpg",
+      "altText": "Source visual for edmar-csec-p066-q11 from workbook page 66."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Find the HCF of the coefficients.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "14 = 2 × 7 and 21 = 3 × 7"
+        },
+        {
+          "type": "text",
+          "value": "Result: 7"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Find the lowest power of each letter.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "m² and m give m; n and n² give n"
+        },
+        {
+          "type": "text",
+          "value": "Result: mn"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Combine into the full HCF.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "7 × m × n"
+        },
+        {
+          "type": "text",
+          "value": "Result: 7mn"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Divide each term by 7mn.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "14m²n ÷ 7mn = 2m and 21mn² ÷ 7mn = 3n"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2m and 3n"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Write the factorised form.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: 7mn(2m + 3n)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Take the numerical HCF and the lowest power of each letter, then divide each term by the result."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "14m²n + 21mn² = 7mn(2m + 3n)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "With more than one letter, the highest common factor is assembled letter by letter, each taken to the lowest index it reaches across all the terms. Here m appears as m² and m¹, so m¹ comes out; n appears as n¹ and n², so n¹ comes out. What remains in the bracket, 2m + 3n, shares no further factor, so the expression is completely factorised."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "taking_out_7m_n_by_using_the_highest_pow",
+      "wrongValue": "incorrect_1",
+      "misconception": "Taking out 7m²n² by using the highest power of each letter.",
+      "correctiveNote": "Avoid this: Taking out 7m²n² by using the highest power of each letter."
+    },
+    {
+      "key": "missing_that_7_divides_both_14_and_21",
+      "wrongValue": "incorrect_2",
+      "misconception": "Missing that 7 divides both 14 and 21.",
+      "correctiveNote": "Avoid this: Missing that 7 divides both 14 and 21."
+    },
+    {
+      "key": "leaving_7mn_2m_3n_by_dividing_the_indice",
+      "wrongValue": "incorrect_3",
+      "misconception": "Leaving 7mn(2m + 3n²) by dividing the indices incorrectly.",
+      "correctiveNote": "Avoid this: Leaving 7mn(2m + 3n²) by dividing the indices incorrectly."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Write each term as a full product, 14 × m × m × n and 21 × m × n × n, and circle what appears in both lists; the HCF becomes obvious."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "14",
+    "displayValue": "14",
+    "acceptedForms": [
+      "14",
+      "14"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Factorise completely: 6a²b + 9ab²."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "3",
+      "displayValue": "3",
+      "acceptedForms": [
+        "3",
+        "3"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "590f1370-4155-4d13-a6f5-e4173f84ca24",
+      "code": "M1-4.1",
+      "label": "Factorising"
+    },
+    {
+      "objectiveId": "c1599c3f-f2ac-4d23-a09d-8a471adffbd5",
+      "code": "M1-4.1",
+      "label": "Highest common factor with two variables"
+    },
+    {
+      "objectiveId": "d24844e2-6b59-484b-ae6f-6769dd067e5b",
+      "code": "M1-4.1",
+      "label": "Laws of indices"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 11,
+    "pageRef": "p66",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

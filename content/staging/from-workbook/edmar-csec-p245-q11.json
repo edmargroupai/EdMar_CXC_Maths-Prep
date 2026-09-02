@@ -1,0 +1,207 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p245-q11",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "P, Q, R and S lie on a circle with centre O; RP is a diameter and AB is a tangent at P. Angle APQ = 3x°, angle QPR = 2x°, angle RPS = x°, and angle QSP = 54°. Determine, with reasons: (i) the value of x, (ii) angle y = angle PRS, (iii) angle z = angle PQS."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The tangent and the diameter meet at P at a right angle, and that single fact turns the labelled angles into an equation in x."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p245_q11.jpg",
+      "altText": "Source visual for edmar-csec-p245-q11 from workbook page 245."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Use the right angle between the tangent AB and the diameter RP at P.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "∠APR = ∠APQ + ∠QPR = 3x + 2x = 90"
+        },
+        {
+          "type": "text",
+          "value": "Result: 5x = 90, so x = 18"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Write down the angles at P that this gives.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "∠RPS = x = 18°, ∠QPR = 2x = 36°, ∠APQ = 3x = 54°, so ∠QPS = 2x + x = 54°"
+        },
+        {
+          "type": "text",
+          "value": "Result: ∠RPS = 18°, ∠QPS = 54°"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Use the angle in a semicircle at S in triangle PRS.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "RP is a diameter, so ∠RSP = 90°; then y = 180 − 90 − ∠RPS = 180 − 90 − 18"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = ∠PRS = 72°"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Find z from the angle sum of triangle PQS.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "∠QSP = 54° and ∠QPS = 54°, so z = 180 − 54 − 54 (equivalently z = ∠PRS = 72°, angles in the same segment on chord PS)"
+        },
+        {
+          "type": "text",
+          "value": "Result: z = 72°"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Add the angles between the tangent and the diameter to make 90° and solve for x, use the semicircle right angle at S to get y, then use the triangle PQS (or angles in the same segment) to get z."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) x = 18 (tangent perpendicular to the diameter at P gives 3x + 2x = 90)  (ii) y = 72° (angle in a semicircle ∠RSP = 90°, then angle sum of triangle PRS)  (iii) z = 72° (angle sum of triangle PQS, or equally ∠PQS = ∠PRS as angles in the same segment on chord PS)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Because the radius OP is perpendicular to the tangent, everything on the tangent side of P is measured from a right angle, which is what makes 3x + 2x = 90 legitimate. The diameter RP then forces a right angle at S, since any angle subtended by a diameter from the circumference is 90°. Finally, PS is a chord seen from Q and from R on the same side of it, so those two angles must be equal — a check that the 72° is right."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "using_3x_2x_x_90_by_including_rps_which_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Using 3x + 2x + x = 90 by including ∠RPS, which lies on the other side of the diameter.",
+      "correctiveNote": "Avoid this: Using 3x + 2x + x = 90 by including ∠RPS, which lies on the other side of the diameter."
+    },
+    {
+      "key": "setting_the_angles_at_p_equal_to_180_wit",
+      "wrongValue": "incorrect_2",
+      "misconception": "Setting the angles at P equal to 180° without noticing which of them make the right angle.",
+      "correctiveNote": "Avoid this: Setting the angles at P equal to 180° without noticing which of them make the right angle."
+    },
+    {
+      "key": "assuming_qsp_54_is_the_angle_in_the_alte",
+      "wrongValue": "incorrect_3",
+      "misconception": "Assuming ∠QSP = 54° is the angle in the alternate segment for 3x without checking which chord it stands on.",
+      "correctiveNote": "Avoid this: Assuming ∠QSP = 54° is the angle in the alternate segment for 3x without checking which chord it stands on."
+    },
+    {
+      "key": "confusing_the_angle_at_the_centre_with_t",
+      "wrongValue": "incorrect_4",
+      "misconception": "Confusing the angle at the centre with the angle at the circumference.",
+      "correctiveNote": "Avoid this: Confusing the angle at the centre with the angle at the circumference."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Mark the 90° at the point of contact and at the end of any diameter before you start — most of these questions unlock from those two right angles."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "x=18(tangentperpendiculartothediameteratPgives3x+2x=90)",
+    "displayValue": "x = 18 (tangent perpendicular to the diameter at P gives 3x + 2x = 90)",
+    "acceptedForms": [
+      "x = 18 (tangent perpendicular to the diameter at P gives 3x + 2x = 90)",
+      "x=18(tangentperpendiculartothediameteratPgives3x+2x=90)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A tangent at P meets a diameter PR. If the tangent–chord angle on one side is 4x and the rest of the right angle is x, find x."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "5",
+      "displayValue": "5",
+      "acceptedForms": [
+        "5",
+        "5"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "3355823d-16d4-4e07-ad82-03919f601ecc",
+      "code": "M1-1.1",
+      "label": "Tangent perpendicular to a diameter at the point of contact"
+    },
+    {
+      "objectiveId": "c152ac69-1bf5-48f7-a6c6-5bee8e7968f2",
+      "code": "M1-1.1",
+      "label": "Angle in a semicircle"
+    },
+    {
+      "objectiveId": "e7f639af-d881-4a95-a572-96b0c748d5b9",
+      "code": "M1-1.1",
+      "label": "Angle sum of a triangle"
+    },
+    {
+      "objectiveId": "41c476ea-4b43-4fe9-adfc-2d5290a5e16d",
+      "code": "M1-1.1",
+      "label": "Angles in the same segment"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 11,
+    "pageRef": "p245",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

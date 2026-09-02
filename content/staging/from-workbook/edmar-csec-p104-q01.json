@@ -1,0 +1,178 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p104-q01",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the quadratic equation x² − 5x + 6 = 0."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Look for two numbers that multiply to 6 and add to −5 — this one factorises neatly."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p104_q01.jpg",
+      "altText": "Source visual for edmar-csec-p104-q01 from workbook page 104."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Find two numbers whose product is +6 and whose sum is −5.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "−2 × −3 = 6 and −2 + (−3) = −5"
+        },
+        {
+          "type": "text",
+          "value": "Result: −2 and −3"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Write the expression as a product of two brackets.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x² − 5x + 6 = (x − 2)(x − 3)"
+        },
+        {
+          "type": "text",
+          "value": "Result: (x − 2)(x − 3) = 0"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Set each bracket equal to zero and solve.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x − 2 = 0 or x − 3 = 0"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 2 or x = 3"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Factorise the left-hand side into two brackets, then set each bracket equal to zero."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = 2 or x = 3"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "If a product of two quantities is zero then at least one of them must be zero — that is the zero product property, and it is what turns a factorised quadratic into two simple linear equations. Factorising is just the reverse of expanding, so checking is easy: (x − 2)(x − 3) expands back to x² − 5x + 6. Substituting either root into the original equation gives 0."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "choosing_2_and_3_because_the_constant_is",
+      "wrongValue": "incorrect_1",
+      "misconception": "Choosing +2 and +3 because the constant is positive, ignoring that the sum must be negative.",
+      "correctiveNote": "Avoid this: Choosing +2 and +3 because the constant is positive, ignoring that the sum must be negative."
+    },
+    {
+      "key": "solving_x_2_0_as_x_2",
+      "wrongValue": "incorrect_2",
+      "misconception": "Solving x − 2 = 0 as x = −2.",
+      "correctiveNote": "Avoid this: Solving x − 2 = 0 as x = −2."
+    },
+    {
+      "key": "giving_only_one_root",
+      "wrongValue": "incorrect_3",
+      "misconception": "Giving only one root.",
+      "correctiveNote": "Avoid this: Giving only one root."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Always substitute at least one root back into the original equation — it is a five-second check that confirms your factorisation."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=2",
+    "displayValue": "= 2",
+    "acceptedForms": [
+      "= 2",
+      "=2"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve x² − 7x + 12 = 0."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=3",
+      "displayValue": "= 3",
+      "acceptedForms": [
+        "= 3",
+        "=3"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-6.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "b1965f2b-9dbf-44d2-aa6f-be000a1befa1",
+      "code": "M1-6.1",
+      "label": "Factorising a quadratic"
+    },
+    {
+      "objectiveId": "8e1844f3-3c36-4fda-a4b5-dcd0d54da758",
+      "code": "M1-6.1",
+      "label": "Zero product property"
+    },
+    {
+      "objectiveId": "874f1f1e-1d61-434d-ae16-83ba3c404245",
+      "code": "M1-6.1",
+      "label": "Solving quadratic equations"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 1,
+    "pageRef": "p104",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

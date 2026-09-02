@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p071-q09",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The cost, C dollars, of laying floor tiles in a room is given by C = 45A + 300, where A is the floor area in m². (a) State the practical meaning of the value 300 in this formula. (b) Draw the graph of C against A for 0 ≤ A ≤ 40. (c) Use your graph to estimate the floor area, in m², that can be tiled for $1 650."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The number that does not multiply A is the part of the cost that never changes."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p071_q09.jpg",
+      "altText": "Source visual for edmar-csec-p071-q09 from workbook page 71."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Substitute A = 0 into the formula.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "C = 45(0) + 300"
+        },
+        {
+          "type": "text",
+          "value": "Result: C = 300 when the area is zero"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Interpret that value.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "It is charged even when no tiles are laid"
+        },
+        {
+          "type": "text",
+          "value": "Result: A fixed charge of $300, independent of the floor area"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Find the endpoints for the graph.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "A = 0: C = 300. A = 40: C = 45(40) + 300 = 1800 + 300"
+        },
+        {
+          "type": "text",
+          "value": "Result: (0, 300) and (40, 2100)"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Plot the two points on the given grid and rule the straight line.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Cost axis runs to 2 200, area axis to 40"
+        },
+        {
+          "type": "text",
+          "value": "Result: Straight line graph of C = 45A + 300"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Read across from C = 1 650 to the line and down to the A-axis.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Confirm: 1650 = 45A + 300, so 45A = 1350"
+        },
+        {
+          "type": "text",
+          "value": "Result: A = 30 m²"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Interpret 300 as the value of C when A = 0, plot the line using its two endpoints, then read across from C = 1 650 to find A and check algebraically."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) $300 is a fixed charge made regardless of the floor area, for example a standing or call-out charge, since it is the cost when A = 0.  (b) a straight line from (0, 300) to (40, 2100)  (c) approximately 30 m²"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "In C = 45A + 300 the term 45A grows with the area while 300 does not, so 300 is the cost of doing the job with no tiles laid at all. On the graph this is the intercept on the cost axis, and 45 is the gradient, the extra cost per square metre. Reading backwards from a cost to an area is the graphical equivalent of solving the equation for A, which is why the algebraic check agrees exactly."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "describing_300_as_the_cost_per_square_me",
+      "wrongValue": "incorrect_1",
+      "misconception": "Describing 300 as the cost per square metre, which is the role of 45.",
+      "correctiveNote": "Avoid this: Describing 300 as the cost per square metre, which is the role of 45."
+    },
+    {
+      "key": "reading_from_the_wrong_axis_and_giving_t",
+      "wrongValue": "incorrect_2",
+      "misconception": "Reading from the wrong axis and giving the answer in dollars.",
+      "correctiveNote": "Avoid this: Reading from the wrong axis and giving the answer in dollars."
+    },
+    {
+      "key": "solving_1650_45a_300_by_dividing_1650_by",
+      "wrongValue": "incorrect_3",
+      "misconception": "Solving 1650 = 45A + 300 by dividing 1650 by 45 without first subtracting 300.",
+      "correctiveNote": "Avoid this: Solving 1650 = 45A + 300 by dividing 1650 by 45 without first subtracting 300."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When a question asks for the practical meaning of a number, name it in the units of the problem and say what it does not depend on."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "tolerance",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "currency",
+    "canonicalValue": "300.00",
+    "displayValue": "$300",
+    "acceptedForms": [
+      "$300",
+      "$300",
+      "300"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0.005
+    },
+    "precision": {
+      "kind": "decimal_places",
+      "value": 2,
+      "required": true
+    },
+    "normalisation": "currency_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "For C = 20A + 150, what is the cost when A = 0, and what area can be covered for $550?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "currency",
+      "canonicalValue": "150.00",
+      "displayValue": "$150",
+      "acceptedForms": [
+        "$150",
+        "$150",
+        "150"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.005
+      },
+      "precision": {
+        "kind": "decimal_places",
+        "value": 2,
+        "required": true
+      },
+      "normalisation": "currency_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "be3243e9-9d1f-4ea1-aec7-a33a01f18c0b",
+      "code": "M1-1.1",
+      "label": "Interpreting a linear model"
+    },
+    {
+      "objectiveId": "fd8bf41e-aa3b-4fd7-a690-89873001663d",
+      "code": "M1-1.1",
+      "label": "y = mx + c in context"
+    },
+    {
+      "objectiveId": "b7380f57-8eb7-4cd9-acda-3a20cb56d24a",
+      "code": "M1-1.1",
+      "label": "Drawing a graph from a formula"
+    },
+    {
+      "objectiveId": "364adced-d762-4f9e-a984-63d3ecd5c8c3",
+      "code": "M1-1.1",
+      "label": "Reading values from a graph"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 9,
+    "pageRef": "p71",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

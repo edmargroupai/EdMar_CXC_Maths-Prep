@@ -1,0 +1,197 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p020-q17",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A laptop was sold for $72 000 at a 10% loss. Calculate the original cost price."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The $72 000 is not the base here; it is what is left after 10% of the unknown cost price has been lost."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p020_q17.jpg",
+      "altText": "Source visual for edmar-csec-p020-q17 from workbook page 20."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "State the selling price as a percentage of the cost price.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "100% - 10%"
+        },
+        {
+          "type": "text",
+          "value": "Result: 90% of cost price"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Write the equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "0.90 x cost price = $72 000"
+        },
+        {
+          "type": "text",
+          "value": "Result: cost price = 72 000 / 0.90"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Divide.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "72 000 / 0.9"
+        },
+        {
+          "type": "text",
+          "value": "Result: $80 000"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Check the loss.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "10% of $80 000 = $8 000, and $80 000 - $8 000"
+        },
+        {
+          "type": "text",
+          "value": "Result: $72 000"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Treat the cost price as 100%. A 10% loss means the selling price is 90% of the cost price, so divide $72 000 by 0.90."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "The original cost price was $80 000."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "In a reverse percentage the known amount is a part, not the whole, so you divide rather than multiply. Adding 10% of $72 000 gives $79 200, which is wrong because the 10% was lost from the larger cost price, not from the smaller selling price. Setting the unknown as 100% keeps the base straight."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "adding_10_of_72_000_to_get_79_200",
+      "wrongValue": "incorrect_1",
+      "misconception": "Adding 10% of $72 000 to get $79 200.",
+      "correctiveNote": "Avoid this: Adding 10% of $72 000 to get $79 200."
+    },
+    {
+      "key": "multiplying_72_000_by_0_9_instead_of_div",
+      "wrongValue": "incorrect_2",
+      "misconception": "Multiplying $72 000 by 0.9 instead of dividing.",
+      "correctiveNote": "Avoid this: Multiplying $72 000 by 0.9 instead of dividing."
+    },
+    {
+      "key": "assuming_the_loss_is_calculated_on_the_s",
+      "wrongValue": "incorrect_3",
+      "misconception": "Assuming the loss is calculated on the selling price.",
+      "correctiveNote": "Avoid this: Assuming the loss is calculated on the selling price."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "If a percentage has already been applied to the number you are given, divide by the multiplier; if it has not yet been applied, multiply. Ask whether your number is the before or the after value."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Theoriginalcostpricewas$80000.",
+    "displayValue": "The original cost price was $80 000.",
+    "acceptedForms": [
+      "The original cost price was $80 000.",
+      "Theoriginalcostpricewas$80000."
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "An item is sold for $90 at a 25% loss. Find the cost price."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "currency",
+      "canonicalValue": "120.00",
+      "displayValue": "$120",
+      "acceptedForms": [
+        "$120",
+        "$120",
+        "120"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.005
+      },
+      "precision": {
+        "kind": "decimal_places",
+        "value": 2,
+        "required": true
+      },
+      "normalisation": "currency_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-3.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "55db47c7-974a-4a10-a340-5ec1cdae9b05",
+      "code": "M1-3.1",
+      "label": "Profit and loss"
+    },
+    {
+      "objectiveId": "7528a78b-8511-4517-adbc-28c0b72dda83",
+      "code": "M1-3.1",
+      "label": "Reverse percentage"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 17,
+    "pageRef": "p20",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

@@ -1,0 +1,273 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p010-q10",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 6,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Write the number 58.736 correct to: (i) the nearest whole number  (ii) three significant figures  (iii) two decimal places."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Each part asks you to cut the number at a different place, so identify the cut position before you look at any digit."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p010_q10.jpg",
+      "altText": "Source visual for edmar-csec-p010-q10 from workbook page 10."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Round to the nearest whole number.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Keep 58; the next digit is 7, which is 5 or more, so round up"
+        },
+        {
+          "type": "text",
+          "value": "Result: 59"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Round to three significant figures.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The first three significant figures are 5, 8 and 7; the next digit is 3, which is less than 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: 58.7"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Round to two decimal places.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Keep 58.73; the next digit is 6, which is 5 or more, so round the 3 up"
+        },
+        {
+          "type": "text",
+          "value": "Result: 58.74"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "For each part, find the last digit you are keeping, look at the digit immediately after it, and round up if that digit is 5 or more."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) 59  (ii) 58.7  (iii) 58.74"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Rounding replaces a number by the nearest one available at the chosen level of precision, and the digit immediately after the cut decides which side is nearer. Significant figures count from the first non-zero digit, so they measure precision relative to the size of the number, while decimal places count from the point and measure absolute precision. That is why the same number gives three different answers here."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "rounding_58_736_in_stages_58_74_to_58_7_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Rounding 58.736 in stages — 58.74 to 58.7 to 59 — instead of judging each part from the original number.",
+      "correctiveNote": "Avoid this: Rounding 58.736 in stages — 58.74 to 58.7 to 59 — instead of judging each part from the original number."
+    },
+    {
+      "key": "counting_decimal_places_when_significant",
+      "wrongValue": "incorrect_2",
+      "misconception": "Counting decimal places when significant figures are asked for.",
+      "correctiveNote": "Avoid this: Counting decimal places when significant figures are asked for."
+    },
+    {
+      "key": "rounding_down_in_iii_because_the_6_sits_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Rounding down in (iii) because the 6 sits two places past the cut rather than one.",
+      "correctiveNote": "Avoid this: Rounding down in (iii) because the 6 sits two places past the cut rather than one."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Always round from the original number, never from an answer you have already rounded — chained rounding is the most common way a correct method loses its mark."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "59",
+    "displayValue": "59",
+    "acceptedForms": [
+      "59",
+      "59"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Write 41.286 correct to the nearest whole number, to 3 significant figures and to 2 decimal places."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "41",
+      "displayValue": "41",
+      "acceptedForms": [
+        "41",
+        "41"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.2"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "1c3e2ff3-fdce-4f86-a6c8-a7cdf6f87a60",
+      "code": "M1-1.2",
+      "label": "Rounding"
+    },
+    {
+      "objectiveId": "5523b965-4b6d-42c6-a3e8-7b2f7909bcf0",
+      "code": "M1-1.2",
+      "label": "Significant figures"
+    },
+    {
+      "objectiveId": "29f0c28f-bdb4-4762-ac02-722864c36a6b",
+      "code": "M1-1.2",
+      "label": "Decimal places"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 10,
+    "pageRef": "p10",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a.i",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.i): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "numeric_exact",
+        "canonicalValue": "59",
+        "displayValue": "59",
+        "acceptedForms": [
+          "59",
+          "59"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0
+        },
+        "normalisation": "numeric_default"
+      }
+    },
+    {
+      "partKey": "a.ii",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.ii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "numeric_dp",
+        "canonicalValue": "58.7",
+        "displayValue": "58.7",
+        "acceptedForms": [
+          "58.7",
+          "58.7"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0
+        },
+        "precision": {
+          "kind": "decimal_places",
+          "value": 1,
+          "required": true
+        },
+        "normalisation": "numeric_default"
+      }
+    },
+    {
+      "partKey": "a.iii",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.iii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "numeric_dp",
+        "canonicalValue": "58.74",
+        "displayValue": "58.74",
+        "acceptedForms": [
+          "58.74",
+          "58.74"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0
+        },
+        "precision": {
+          "kind": "decimal_places",
+          "value": 2,
+          "required": true
+        },
+        "normalisation": "numeric_default"
+      }
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p008-q10",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Evaluate 7/8 + 1/6 ÷ 2/9."
+    },
+    {
+      "type": "text",
+      "value": "Think first: There is a division sitting inside an addition, so settle the division before anything else."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p008_q10.jpg",
+      "altText": "Source visual for edmar-csec-p008-q10 from workbook page 8."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Do the division first, since ÷ outranks +.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "1/6 ÷ 2/9 = 1/6 × 9/2"
+        },
+        {
+          "type": "text",
+          "value": "Result: 9/12"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Simplify that fraction.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Divide top and bottom by 3."
+        },
+        {
+          "type": "text",
+          "value": "Result: 3/4"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Rewrite the whole expression.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: 7/8 + 3/4"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Write both fractions over the common denominator 8.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3/4 = 6/8"
+        },
+        {
+          "type": "text",
+          "value": "Result: 7/8 + 6/8"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Add the numerators and convert to a mixed number.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "7 + 6 = 13, and 13 ÷ 8 = 1 remainder 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: 13/8 = 1 5/8"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Replace the division by multiplication by the reciprocal, simplify that result, then add it to 7/8 over a common denominator."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "13/8, or 1 5/8"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Division and multiplication bind more tightly than addition, so 1/6 ÷ 2/9 is a single number that must be found before it can join the sum. Dividing by 2/9 asks how many nine-halves-of-a-ninth fit into 1/6, and multiplying by the reciprocal 9/2 answers exactly that. Once the division has collapsed to 3/4, the addition is ordinary fraction addition, which needs one shared denominator so the parts being counted are the same size."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "working_left_to_right_and_adding_7_8_1_6",
+      "wrongValue": "incorrect_1",
+      "misconception": "Working left to right and adding 7/8 + 1/6 before dividing.",
+      "correctiveNote": "Avoid this: Working left to right and adding 7/8 + 1/6 before dividing."
+    },
+    {
+      "key": "inverting_the_first_fraction_instead_of_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Inverting the first fraction instead of the divisor when dividing.",
+      "correctiveNote": "Avoid this: Inverting the first fraction instead of the divisor when dividing."
+    },
+    {
+      "key": "adding_the_denominators_as_well_as_the_n",
+      "wrongValue": "incorrect_3",
+      "misconception": "Adding the denominators as well as the numerators when combining 7/8 and 6/8.",
+      "correctiveNote": "Avoid this: Adding the denominators as well as the numerators when combining 7/8 and 6/8."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Scan a fraction string for × and ÷ before you write anything down, and bracket those parts mentally so the order of operations is decided before the arithmetic starts."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "fraction",
+    "canonicalValue": "13/8",
+    "displayValue": "13/8",
+    "acceptedForms": [
+      "13/8"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Evaluate 1/2 + 1/3 ÷ 2/3."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "1",
+      "displayValue": "1",
+      "acceptedForms": [
+        "1",
+        "1"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "55ccc095-a0d0-4187-a155-4236e0dbb2c8",
+      "code": "M1-1.1",
+      "label": "Order of operations"
+    },
+    {
+      "objectiveId": "cab3f361-79d9-4972-ac22-6d5e667e5439",
+      "code": "M1-1.1",
+      "label": "Division of fractions"
+    },
+    {
+      "objectiveId": "4dfb031d-1722-463c-a639-e1533ba3a5cd",
+      "code": "M1-1.1",
+      "label": "Addition of fractions"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 10,
+    "pageRef": "p8",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

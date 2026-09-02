@@ -1,0 +1,211 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p264-q11",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Quadrilateral R has vertices (1, 1), (4, 1), (4, 4) and (1, 2); its image S has vertices (-1, -5), (5, -5), (5, 1) and (-1, -3). Describe fully the single transformation that maps R onto S."
+    },
+    {
+      "type": "text",
+      "value": "Think first: S is clearly bigger than R but the same shape, so this is an enlargement and the work is to find the scale factor and the centre."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p264_q11.jpg",
+      "altText": "Source visual for edmar-csec-p264-q11 from workbook page 264."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Read the vertices of R and S and pair them up.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(1, 1) -> (-1, -5);  (4, 1) -> (5, -5);  (4, 4) -> (5, 1);  (1, 2) -> (-1, -3)"
+        },
+        {
+          "type": "text",
+          "value": "Result: Four object-image pairs"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Compare the length of one side of R with the matching side of S.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The base of R runs from (1, 1) to (4, 1), a length of 3; the base of S runs from (-1, -5) to (5, -5), a length of 6."
+        },
+        {
+          "type": "text",
+          "value": "Result: Scale factor k = 6/3 = 2"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Find the centre C using image = 2 x object - C, so C = 2 x object - image.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Using (1, 1) -> (-1, -5):  C = (2(1) - (-1), 2(1) - (-5)) = (3, 7)"
+        },
+        {
+          "type": "text",
+          "value": "Result: C = (3, 7)"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Confirm the centre with a second pair of vertices.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Using (4, 4) -> (5, 1):  C = (2(4) - 5, 2(4) - 1) = (3, 7). The other two pairs give the same point."
+        },
+        {
+          "type": "text",
+          "value": "Result: Centre confirmed as (3, 7)"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "State the transformation fully.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Positive scale factor, so the image is on the same side of the centre as the object and the same way up."
+        },
+        {
+          "type": "text",
+          "value": "Result: Enlargement, centre (3, 7), scale factor 2"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Compare a pair of corresponding side lengths to get the scale factor, then use the rule image = k x object - (k - 1) x centre, or join corresponding vertices with straight lines and find where they meet."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "An enlargement with centre (3, 7) and scale factor 2."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "An enlargement multiplies the displacement of every point from a fixed centre by the same scale factor, so all lengths are multiplied by k while all angles are unchanged. That is why the image is similar to the object, and why the vector equation image - centre = k(object - centre) rearranges to centre = (k x object - image)/(k - 1); with k = 2 this simplifies to centre = 2 x object - image. Any two corresponding pairs must give the same centre, which is a built-in check."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "giving_the_scale_factor_as_the_ratio_of_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Giving the scale factor as the ratio of areas (4) instead of the ratio of lengths (2).",
+      "correctiveNote": "Avoid this: Giving the scale factor as the ratio of areas (4) instead of the ratio of lengths (2)."
+    },
+    {
+      "key": "describing_it_as_enlargement_scale_facto",
+      "wrongValue": "incorrect_2",
+      "misconception": "Describing it as 'enlargement scale factor 2' with no centre, which is not a full description.",
+      "correctiveNote": "Avoid this: Describing it as 'enlargement scale factor 2' with no centre, which is not a full description."
+    },
+    {
+      "key": "pairing_the_wrong_vertices_for_example_m",
+      "wrongValue": "incorrect_3",
+      "misconception": "Pairing the wrong vertices, for example matching a top-left vertex to a bottom-right one.",
+      "correctiveNote": "Avoid this: Pairing the wrong vertices, for example matching a top-left vertex to a bottom-right one."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "To locate a centre of enlargement quickly, draw straight lines through two pairs of corresponding vertices and extend them until they cross; the crossing point is the centre."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Anenlargementwithcentre(3,7)andscalefactor2.",
+    "displayValue": "An enlargement with centre (3, 7) and scale factor 2.",
+    "acceptedForms": [
+      "An enlargement with centre (3, 7) and scale factor 2.",
+      "Anenlargementwithcentre(3,7)andscalefactor2."
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Under an enlargement with centre (3, 7) and scale factor 2, what is the image of (2, 5)?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(1,3)",
+      "displayValue": "(1, 3)",
+      "acceptedForms": [
+        "(1, 3)",
+        "(1,3)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "8d7d1d6e-84c8-472f-a4cd-e93e02096052",
+      "code": "M1-1.1",
+      "label": "Enlargement"
+    },
+    {
+      "objectiveId": "933c0352-8f6d-4ec8-afc2-198ec9cb02ed",
+      "code": "M1-1.1",
+      "label": "Scale factor from corresponding lengths"
+    },
+    {
+      "objectiveId": "d5489324-0fcc-43bd-a5f1-fb7ff3bff938",
+      "code": "M1-1.1",
+      "label": "Finding the centre of enlargement"
+    },
+    {
+      "objectiveId": "5db499a0-9282-4121-a878-2907a7374ea3",
+      "code": "M1-1.1",
+      "label": "Describing transformations fully"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 11,
+    "pageRef": "p264",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

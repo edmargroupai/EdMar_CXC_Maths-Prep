@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p053-q04",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Expand and simplify (x − 3)(x + 6)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The signs are mixed, so the constant will be negative and the middle term takes the sign of the larger number."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p053_q04.jpg",
+      "altText": "Source visual for edmar-csec-p053-q04 from workbook page 53."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply the first terms.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x × x"
+        },
+        {
+          "type": "text",
+          "value": "Result: x²"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Multiply the outer and inner pairs.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x × 6 = 6x and (−3) × x = −3x"
+        },
+        {
+          "type": "text",
+          "value": "Result: 6x − 3x"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Multiply the last terms.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(−3) × 6"
+        },
+        {
+          "type": "text",
+          "value": "Result: −18"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Collect the middle terms.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "6x − 3x = 3x"
+        },
+        {
+          "type": "text",
+          "value": "Result: x² + 3x − 18"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Expand each pair of terms, then combine the two x-terms."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x² + 3x − 18"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The coefficient of x is −3 + 6 = 3 and the constant is (−3) × 6 = −18, both consequences of multiplying out every pair. Because 6 is larger in size than 3, the middle term ends up positive even though one bracket subtracts. Knowing that the sign of the middle term follows the numerically larger value is a quick way to sense-check mixed-sign expansions."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "giving_the_middle_term_as_3x_by_taking_t",
+      "wrongValue": "incorrect_1",
+      "misconception": "Giving the middle term as −3x by taking the sign from the first bracket.",
+      "correctiveNote": "Avoid this: Giving the middle term as −3x by taking the sign from the first bracket."
+    },
+    {
+      "key": "writing_18_for_the_constant",
+      "wrongValue": "incorrect_2",
+      "misconception": "Writing +18 for the constant.",
+      "correctiveNote": "Avoid this: Writing +18 for the constant."
+    },
+    {
+      "key": "expanding_as_x_18_with_no_middle_term",
+      "wrongValue": "incorrect_3",
+      "misconception": "Expanding as x² − 18 with no middle term.",
+      "correctiveNote": "Avoid this: Expanding as x² − 18 with no middle term."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "State the two numbers and their sum and product before you write anything: −3 and +6 give sum 3 and product −18. The expansion then writes itself."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "x²+3x−18",
+    "displayValue": "x² + 3x − 18",
+    "acceptedForms": [
+      "x² + 3x − 18",
+      "x²+3x−18"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Expand and simplify (x − 2)(x + 9)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "x²+7x−18.",
+      "displayValue": "x² + 7x − 18.",
+      "acceptedForms": [
+        "x² + 7x − 18.",
+        "x²+7x−18."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "3a0bab35-0ca2-4574-a416-1e7bc8f01082",
+      "code": "M1-4.1",
+      "label": "Expanding a product of two binomials"
+    },
+    {
+      "objectiveId": "a7aa1d67-8da2-4b02-aabc-9d317f65cab3",
+      "code": "M1-4.1",
+      "label": "Multiplication of directed numbers"
+    },
+    {
+      "objectiveId": "920ce7f2-6197-4839-a774-ea252e9c5da9",
+      "code": "M1-4.1",
+      "label": "Collecting like terms"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 4,
+    "pageRef": "p53",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

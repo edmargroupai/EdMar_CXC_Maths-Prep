@@ -1,0 +1,153 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p056-q12",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Make h the subject of the formula A = (1/2)bh."
+    },
+    {
+      "type": "text",
+      "value": "Think first: h is multiplied by both b and one half, so undo the fraction and the b."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p056_q12.jpg",
+      "altText": "Source visual for edmar-csec-p056-q12 from workbook page 56."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply both sides by 2.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2A = 2 × (1/2)bh"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2A = bh"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Divide both sides by b.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2A/b = bh/b"
+        },
+        {
+          "type": "text",
+          "value": "Result: h = 2A/b"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Multiply both sides by 2 to remove the half, then divide by b."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "h = 2A/b"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Multiplying by 2 is the inverse of taking a half, and dividing by b is the inverse of multiplying by b. The rearranged formula is genuinely useful: given the area of a △ and its base, it hands you the perpendicular height in one step."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_h_a_2b_halving_instead_of_doubli",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing h = A/(2b), halving instead of doubling A.",
+      "correctiveNote": "Avoid this: Writing h = A/(2b), halving instead of doubling A."
+    },
+    {
+      "key": "forgetting_to_divide_by_b_leaving_h_2a",
+      "wrongValue": "incorrect_2",
+      "misconception": "Forgetting to divide by b, leaving h = 2A.",
+      "correctiveNote": "Avoid this: Forgetting to divide by b, leaving h = 2A."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "A fraction multiplying the subject is cleared by multiplying by its reciprocal - here, by 2."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "h=2A/b",
+    "displayValue": "h = 2A/b",
+    "acceptedForms": [
+      "h = 2A/b",
+      "h=2A/b"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Make b the subject of A = (1/2)bh."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=2A/h",
+      "displayValue": "= 2A/h",
+      "acceptedForms": [
+        "= 2A/h",
+        "=2A/h"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "405f3f2e-b47a-47a5-ad9f-ac6fd051e0f7",
+      "code": "M1-4.1",
+      "label": "Transposition of formulae"
+    },
+    {
+      "objectiveId": "c3154ae7-33eb-44d5-a085-e52df0fb7e72",
+      "code": "M1-4.1",
+      "label": "Area of a triangle"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 12,
+    "pageRef": "p56",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p055-q06",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Make x the subject of the formula y = mx + c."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Two operations act on x — multiplication by m and addition of c — so undo them in reverse order."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p055_q06.jpg",
+      "altText": "Source visual for edmar-csec-p055-q06 from workbook page 55."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Identify the operations acting on x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x is multiplied by m, then c is added"
+        },
+        {
+          "type": "text",
+          "value": "Result: mx + c"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Subtract c from both sides.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "undo the addition first"
+        },
+        {
+          "type": "text",
+          "value": "Result: y − c = mx"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Divide both sides by m.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "undo the multiplication, valid for m ≠ 0"
+        },
+        {
+          "type": "text",
+          "value": "Result: (y − c)/m = x"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Write x as the subject.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "reverse the sides"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = (y − c)/m"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Subtract c from both sides, then divide both sides by m."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = (y − c)/m, for m ≠ 0"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "When more than one operation acts on the wanted letter, they must be undone in the opposite order to which they were applied — the addition of c is removed before the multiplication by m. Dividing the whole of y − c by m, rather than just the y, is essential because m multiplies x alone and so must divide the entire remaining side. This rearrangement is the standard way of reading an x-value off the straight-line equation y = mx + c."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_x_y_c_m_which_divides_only_the_c",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing x = y − c/m, which divides only the c by m.",
+      "correctiveNote": "Avoid this: Writing x = y − c/m, which divides only the c by m."
+    },
+    {
+      "key": "dividing_by_m_before_subtracting_c",
+      "wrongValue": "incorrect_2",
+      "misconception": "Dividing by m before subtracting c.",
+      "correctiveNote": "Avoid this: Dividing by m before subtracting c."
+    },
+    {
+      "key": "writing_x_y_c_m_by_moving_c_across_witho",
+      "wrongValue": "incorrect_3",
+      "misconception": "Writing x = (y + c)/m by moving c across without changing its sign.",
+      "correctiveNote": "Avoid this: Writing x = (y + c)/m by moving c across without changing its sign."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Once you divide, put the whole numerator in brackets: (y − c)/m. That bracket is what stops the answer from being misread and is worth a mark on its own."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=(y−",
+    "displayValue": "= (y −",
+    "acceptedForms": [
+      "= (y −",
+      "=(y−"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Make x the subject of y = 4x − 7."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "y+7=4x,sox=(y+7)/4.",
+      "displayValue": "y + 7 = 4x, so x = (y + 7)/4.",
+      "acceptedForms": [
+        "y + 7 = 4x, so x = (y + 7)/4.",
+        "y+7=4x,sox=(y+7)/4."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "f9320a5c-3569-48e2-afce-9643636df0d3",
+      "code": "M1-4.1",
+      "label": "Changing the subject of a formula"
+    },
+    {
+      "objectiveId": "14ca2d5c-bf44-4440-a40d-16a95490a332",
+      "code": "M1-4.1",
+      "label": "Inverse operations"
+    },
+    {
+      "objectiveId": "9b70d47d-9be9-4f01-a1cb-965c860bd528",
+      "code": "M1-4.1",
+      "label": "Equation of a straight line"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 6,
+    "pageRef": "p55",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p105-q11",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve x + 6/x = 5, where x ≠ 0."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Clear the fraction by multiplying every term by x — that turns this into an ordinary quadratic."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p105_q11.jpg",
+      "altText": "Source visual for edmar-csec-p105-q11 from workbook page 105."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply every term by x to clear the fraction.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x·x + x·(6/x) = 5·x"
+        },
+        {
+          "type": "text",
+          "value": "Result: x² + 6 = 5x"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Rearrange into standard form.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "subtract 5x from both sides"
+        },
+        {
+          "type": "text",
+          "value": "Result: x² − 5x + 6 = 0"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Factorise the quadratic.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "−2 × −3 = 6 and −2 + (−3) = −5"
+        },
+        {
+          "type": "text",
+          "value": "Result: (x − 2)(x − 3) = 0"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Solve each bracket and check against the restriction x ≠ 0.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "both roots are non-zero, so both are valid"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 2 or x = 3"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Multiply through by x, collect everything on one side, then factorise and solve."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = 2 or x = 3"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Multiplying by x is legitimate precisely because the question guarantees x ≠ 0; multiplying an equation by zero would destroy it. Doing so converts a fractional equation into a polynomial one, which the standard techniques handle. Both answers satisfy the original: 2 + 6/2 = 5 and 3 + 6/3 = 5."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "multiplying_only_the_fraction_by_x_and_l",
+      "wrongValue": "incorrect_1",
+      "misconception": "Multiplying only the fraction by x and leaving the other terms alone.",
+      "correctiveNote": "Avoid this: Multiplying only the fraction by x and leaving the other terms alone."
+    },
+    {
+      "key": "ignoring_the_stated_restriction_and_keep",
+      "wrongValue": "incorrect_2",
+      "misconception": "Ignoring the stated restriction and keeping a root of 0 if one appeared.",
+      "correctiveNote": "Avoid this: Ignoring the stated restriction and keeping a root of 0 if one appeared."
+    },
+    {
+      "key": "rearranging_to_x_5x_6_0_by_adding_5x_ins",
+      "wrongValue": "incorrect_3",
+      "misconception": "Rearranging to x² + 5x + 6 = 0 by adding 5x instead of subtracting.",
+      "correctiveNote": "Avoid this: Rearranging to x² + 5x + 6 = 0 by adding 5x instead of subtracting."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "After clearing a denominator, substitute your answers back into the original fractional equation — it catches both algebra slips and invalid roots."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=2",
+    "displayValue": "= 2",
+    "acceptedForms": [
+      "= 2",
+      "=2"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve x + 12/x = 7, where x ≠ 0."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=3",
+      "displayValue": "= 3",
+      "acceptedForms": [
+        "= 3",
+        "=3"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-6.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "f4404ba7-ac02-427e-a311-f1bc7736ee08",
+      "code": "M1-6.1",
+      "label": "Equations with an algebraic fraction"
+    },
+    {
+      "objectiveId": "907b6577-055d-437e-a61c-8847741a9476",
+      "code": "M1-6.1",
+      "label": "Rearranging to standard quadratic form"
+    },
+    {
+      "objectiveId": "d48644b4-42cc-4788-ad09-75d03a0caee2",
+      "code": "M1-6.1",
+      "label": "Factorising a quadratic"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 11,
+    "pageRef": "p105",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

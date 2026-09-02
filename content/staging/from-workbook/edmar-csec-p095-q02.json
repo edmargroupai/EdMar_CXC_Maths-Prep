@@ -1,0 +1,155 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p095-q02",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Make n the subject of the formula m = n − 4."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The 4 is being subtracted from n, so add it back to both sides."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p095_q02.jpg",
+      "altText": "Source visual for edmar-csec-p095-q02 from workbook page 95."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Add 4 to both sides.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "m + 4 = n − 4 + 4"
+        },
+        {
+          "type": "text",
+          "value": "Result: m + 4 = n"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Write the new subject on the left.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: n = m + 4"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Add 4 to both sides to isolate n, then write the formula with n as the subject."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "n = m + 4"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Addition and subtraction undo each other. Adding 4 to both sides removes the −4 attached to n while keeping the two sides equal, so the rearranged formula describes exactly the same relationship as the original."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_n_m_4_copying_the_original_sign",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing n = m − 4, copying the original sign.",
+      "correctiveNote": "Avoid this: Writing n = m − 4, copying the original sign."
+    },
+    {
+      "key": "adding_4_to_the_n_side_only",
+      "wrongValue": "incorrect_2",
+      "misconception": "Adding 4 to the n side only.",
+      "correctiveNote": "Avoid this: Adding 4 to the n side only."
+    },
+    {
+      "key": "changing_the_letters_round_as_well_as_th",
+      "wrongValue": "incorrect_3",
+      "misconception": "Changing the letters round as well as the sign, giving m = n + 4.",
+      "correctiveNote": "Avoid this: Changing the letters round as well as the sign, giving m = n + 4."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Say the operation out loud as you undo it — 'n has 4 taken off, so I add 4' — which stops sign slips before they happen."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "n=m+4",
+    "displayValue": "n = m + 4",
+    "acceptedForms": [
+      "n = m + 4",
+      "n=m+4"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Make p the subject of q = p − 11."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "p=q+11",
+      "displayValue": "p = q + 11",
+      "acceptedForms": [
+        "p = q + 11",
+        "p=q+11"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "c9c623cb-2a03-42b0-a289-169c269f9d0c",
+      "code": "M1-1.1",
+      "label": "Changing the subject of a formula"
+    },
+    {
+      "objectiveId": "b64158d2-4857-436a-a866-f088794c7b95",
+      "code": "M1-1.1",
+      "label": "Inverse operations"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 2,
+    "pageRef": "p95",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

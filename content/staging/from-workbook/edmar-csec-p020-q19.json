@@ -1,0 +1,202 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p020-q19",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A car costing $1 500 000 depreciates by 15% per year. Calculate its value after 2 years."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Depreciation is compound: the second year of 15% is taken off the already reduced value, not off the original price."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p020_q19.jpg",
+      "altText": "Source visual for edmar-csec-p020-q19 from workbook page 20."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write the yearly multiplier.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "100% - 15% = 85%"
+        },
+        {
+          "type": "text",
+          "value": "Result: 0.85"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Apply it for the first year.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "$1 500 000 x 0.85"
+        },
+        {
+          "type": "text",
+          "value": "Result: $1 275 000"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Apply it again for the second year.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "$1 275 000 x 0.85"
+        },
+        {
+          "type": "text",
+          "value": "Result: $1 083 750"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Confirm with the compound form.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "$1 500 000 x (0.85)² = $1 500 000 x 0.7225"
+        },
+        {
+          "type": "text",
+          "value": "Result: $1 083 750"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Use the multiplier 0.85 once for each year, so multiply $1 500 000 by 0.85 squared."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "After 2 years the car is worth $1 083 750."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Each year the car loses 15% of whatever it is worth at the start of that year, so the base shrinks annually. The total loss over two years is 27.75%, not 30%, because the second year of loss comes from a smaller amount. Repeated multiplication by the same multiplier is exactly what raising it to a power means."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "taking_30_off_in_one_go_and_getting_1_05",
+      "wrongValue": "incorrect_1",
+      "misconception": "Taking 30% off in one go and getting $1 050 000.",
+      "correctiveNote": "Avoid this: Taking 30% off in one go and getting $1 050 000."
+    },
+    {
+      "key": "using_1_15_instead_of_0_85",
+      "wrongValue": "incorrect_2",
+      "misconception": "Using 1.15 instead of 0.85.",
+      "correctiveNote": "Avoid this: Using 1.15 instead of 0.85."
+    },
+    {
+      "key": "subtracting_225_000_twice_treating_the_d",
+      "wrongValue": "incorrect_3",
+      "misconception": "Subtracting $225 000 twice, treating the depreciation as simple rather than compound.",
+      "correctiveNote": "Avoid this: Subtracting $225 000 twice, treating the depreciation as simple rather than compound."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "For any repeated percentage change, find the one-step multiplier first and raise it to the power of the number of steps. It works for growth and decay alike."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "After2yearsthecarisworth$1083750.",
+    "displayValue": "After 2 years the car is worth $1 083 750.",
+    "acceptedForms": [
+      "After 2 years the car is worth $1 083 750.",
+      "After2yearsthecarisworth$1083750."
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A machine worth $80 000 depreciates by 10% per year. Find its value after 2 years."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "currency",
+      "canonicalValue": "64.00",
+      "displayValue": "$64",
+      "acceptedForms": [
+        "$64",
+        "$64",
+        "64"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.005
+      },
+      "precision": {
+        "kind": "decimal_places",
+        "value": 2,
+        "required": true
+      },
+      "normalisation": "currency_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-3.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "a566422d-2959-49b8-aa39-4e2f66f903a9",
+      "code": "M1-3.1",
+      "label": "Depreciation"
+    },
+    {
+      "objectiveId": "41656b80-b821-46ac-adbe-328080c84aa6",
+      "code": "M1-3.1",
+      "label": "Compound decrease"
+    },
+    {
+      "objectiveId": "025d4673-e52c-45eb-a7cb-3458c60955f4",
+      "code": "M1-3.1",
+      "label": "Multipliers and powers"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 19,
+    "pageRef": "p20",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

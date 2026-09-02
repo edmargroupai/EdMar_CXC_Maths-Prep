@@ -1,0 +1,214 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p012-q03",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A sum of money was shared among Peter, Queen and Raymond. Peter's share to Queen's share was 5 : 3, and Queen's share to Raymond's share was 2 : 7. Peter received $450. Calculate: i. the ratio Peter : Queen : Raymond  ii. Raymond's share  iii. the total sum shared."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Two separate ratios only join up once Queen's number is the same in both."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p012_q03.jpg",
+      "altText": "Source visual for edmar-csec-p012-q03 from workbook page 12."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Make Queen's number the same in both ratios.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Queen appears as 3 and as 2; the LCM is 6"
+        },
+        {
+          "type": "text",
+          "value": "Result: Target: Queen = 6"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Scale each ratio.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "P : Q = 5 : 3 becomes 10 : 6; Q : R = 2 : 7 becomes 6 : 21"
+        },
+        {
+          "type": "text",
+          "value": "Result: P : Q : R = 10 : 6 : 21"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Value one part from Peter's share.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Peter has 10 parts worth $450, so $450 ÷ 10"
+        },
+        {
+          "type": "text",
+          "value": "Result: $45 per part"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Find Raymond's share.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "21 × $45"
+        },
+        {
+          "type": "text",
+          "value": "Result: $945"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Find the total.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "10 + 6 + 21 = 37 parts, so 37 × $45"
+        },
+        {
+          "type": "text",
+          "value": "Result: $1665"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Scale each ratio so Queen's part matches, combine into a three-term ratio, then use Peter's $450 to value one part."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "i. 10 : 6 : 21  ii. $945  iii. $1665"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A ratio is unchanged when every term is multiplied by the same number, so each pair can be rescaled freely until the shared person carries the same value in both. Once Queen is 6 in both statements, the two ratios describe the same set of parts and can be written as one chain. From there a single known share fixes the size of one part, and every other quantity follows by multiplication."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_p_q_r_as_5_3_7_by_joining_the_ra",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing P : Q : R as 5 : 3 : 7 by joining the ratios without matching Queen.",
+      "correctiveNote": "Avoid this: Writing P : Q : R as 5 : 3 : 7 by joining the ratios without matching Queen."
+    },
+    {
+      "key": "dividing_450_by_5_instead_of_by_peter_s_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Dividing $450 by 5 instead of by Peter's 10 parts in the combined ratio.",
+      "correctiveNote": "Avoid this: Dividing $450 by 5 instead of by Peter's 10 parts in the combined ratio."
+    },
+    {
+      "key": "forgetting_to_include_peter_s_and_queen_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Forgetting to include Peter's and Queen's parts when totalling.",
+      "correctiveNote": "Avoid this: Forgetting to include Peter's and Queen's parts when totalling."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When two ratios share a person, rewrite both so that person's number is the LCM of the two values — that single step is what the first mark is for."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "10",
+    "displayValue": "10",
+    "acceptedForms": [
+      "10",
+      "10"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A : B = 3 : 2 and B : C = 4 : 5. Write A : B : C."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "6",
+      "displayValue": "6",
+      "acceptedForms": [
+        "6",
+        "6"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "97004158-9f89-476c-aea7-105611f1abc6",
+      "code": "M1-1.1",
+      "label": "Combining ratios"
+    },
+    {
+      "objectiveId": "b85155df-8cb5-4cbb-a597-f9f69bf43a90",
+      "code": "M1-1.1",
+      "label": "Equivalent ratios"
+    },
+    {
+      "objectiveId": "99af71ff-b274-42fd-a381-61d9cb5caf20",
+      "code": "M1-1.1",
+      "label": "Sharing in a given ratio"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 3,
+    "pageRef": "p12",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

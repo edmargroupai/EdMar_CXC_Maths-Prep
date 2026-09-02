@@ -1,0 +1,174 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p096-q14",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Make P the subject of the formula M = √(P + 2M)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: M appears on both sides, but only P has to be isolated, so treat M as an ordinary letter throughout."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p096_q14.jpg",
+      "altText": "Source visual for edmar-csec-p096-q14 from workbook page 96."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Square both sides.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "M² = (√(P + 2M))²"
+        },
+        {
+          "type": "text",
+          "value": "Result: M² = P + 2M"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Subtract 2M from both sides.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "M² − 2M = P"
+        },
+        {
+          "type": "text",
+          "value": "Result: M² − 2M = P"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Write the new subject on the left.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: P = M² − 2M"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Square both sides to remove the root, then subtract 2M."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "P = M² − 2M, which may also be written P = M(M − 2)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The square root already stands alone, so squaring immediately removes it and turns the formula into a simple linear equation in P. The fact that M appears twice does not matter here, because M is not the subject — every M can be left exactly where it lands."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_m_p_2m_squaring_the_terms_inside",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing M² = P + 2M², squaring the terms inside the root separately.",
+      "correctiveNote": "Avoid this: Writing M² = P + 2M², squaring the terms inside the root separately."
+    },
+    {
+      "key": "trying_to_cancel_m_across_the_equation",
+      "wrongValue": "incorrect_2",
+      "misconception": "Trying to cancel M across the equation.",
+      "correctiveNote": "Avoid this: Trying to cancel M across the equation."
+    },
+    {
+      "key": "writing_p_m_2m_with_the_wrong_sign",
+      "wrongValue": "incorrect_3",
+      "misconception": "Writing P = M² + 2M with the wrong sign.",
+      "correctiveNote": "Avoid this: Writing P = M² + 2M with the wrong sign."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Squaring a root removes the whole bracket underneath it at once — never square the terms inside individually."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "P=M²−2M,whichmayalsobewrittenP=M(M−2)",
+    "displayValue": "P = M² − 2M, which may also be written P = M(M − 2)",
+    "acceptedForms": [
+      "P = M² − 2M, which may also be written P = M(M − 2)",
+      "P=M²−2M,whichmayalsobewrittenP=M(M−2)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Make Q the subject of N = √(Q − 3N)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "Q=N²+3N",
+      "displayValue": "Q = N² + 3N",
+      "acceptedForms": [
+        "Q = N² + 3N",
+        "Q=N²+3N"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "277babaf-e0ce-4436-aa1c-31243ba74aaf",
+      "code": "M1-1.1",
+      "label": "Changing the subject of a formula"
+    },
+    {
+      "objectiveId": "d22bb7f0-5db9-4c64-a81d-c9cead8da359",
+      "code": "M1-1.1",
+      "label": "Squaring both sides"
+    },
+    {
+      "objectiveId": "d8b8ee41-c43f-4145-ab25-d15d4f79884a",
+      "code": "M1-1.1",
+      "label": "Rearranging with a repeated variable"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 14,
+    "pageRef": "p96",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

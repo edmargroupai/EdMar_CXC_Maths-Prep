@@ -1,0 +1,219 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p014-q08",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "John, Mary and Sarah shared $2,400 in the ratio 5 : 3 : 4. Calculate: i. John's share  ii. Mary's share as a fraction of the total amount  iii. the difference between John's and Sarah's shares."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Part ii asks for a fraction, not an amount — it can be read straight from the ratio."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p014_q08.jpg",
+      "altText": "Source visual for edmar-csec-p014-q08 from workbook page 14."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Add the ratio parts.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5 + 3 + 4"
+        },
+        {
+          "type": "text",
+          "value": "Result: 12 parts"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Find the value of one part.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "$2400 ÷ 12"
+        },
+        {
+          "type": "text",
+          "value": "Result: $200 per part"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Find John's share.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5 × $200"
+        },
+        {
+          "type": "text",
+          "value": "Result: $1000"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Write Mary's share as a fraction of the total.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3 parts out of 12, simplified"
+        },
+        {
+          "type": "text",
+          "value": "Result: 1/4"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Find the difference between John and Sarah.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(5 − 4) × $200"
+        },
+        {
+          "type": "text",
+          "value": "Result: $200"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Add the parts and value one part, multiply for John, write Mary's parts over the total parts, and subtract Sarah's share from John's."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "i. $1000  ii. 1/4  iii. $200"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The ratio numbers are counts of equal parts, so a share as a fraction of the whole is simply that person's parts over the total parts — the actual money never enters part ii. Because differences are also whole numbers of parts, subtracting the ratio numbers and multiplying by one part gives the gap in a single step. Sarah's $800 and Mary's $600 complete the split and add back to $2400."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "giving_mary_s_share_as_600_when_the_ques",
+      "wrongValue": "incorrect_1",
+      "misconception": "Giving Mary's share as $600 when the question asks for a fraction.",
+      "correctiveNote": "Avoid this: Giving Mary's share as $600 when the question asks for a fraction."
+    },
+    {
+      "key": "leaving_3_12_unsimplified",
+      "wrongValue": "incorrect_2",
+      "misconception": "Leaving 3/12 unsimplified.",
+      "correctiveNote": "Avoid this: Leaving 3/12 unsimplified."
+    },
+    {
+      "key": "dividing_2400_by_3_because_three_people_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Dividing $2400 by 3 because three people are sharing.",
+      "correctiveNote": "Avoid this: Dividing $2400 by 3 because three people are sharing."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Read the last three words of each part before calculating — share, fraction and difference all need different final objects."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "tolerance",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "currency",
+    "canonicalValue": "1000.00",
+    "displayValue": "$1000",
+    "acceptedForms": [
+      "$1000",
+      "$1000",
+      "1000"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0.005
+    },
+    "precision": {
+      "kind": "decimal_places",
+      "value": 2,
+      "required": true
+    },
+    "normalisation": "currency_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "$1800 is shared in the ratio 4 : 5 : 9. What fraction of the total does the middle share take, and how much is the largest share?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "fraction",
+      "canonicalValue": "5/18",
+      "displayValue": "5/18",
+      "acceptedForms": [
+        "5/18"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "bbef0117-bfe1-4bf5-adcb-15f3704db370",
+      "code": "M1-1.1",
+      "label": "Ratio"
+    },
+    {
+      "objectiveId": "87142d50-debb-420d-a3b7-4c4f9191fca6",
+      "code": "M1-1.1",
+      "label": "Sharing a quantity in a given ratio"
+    },
+    {
+      "objectiveId": "e6112635-a0ba-42ce-ae3c-02262fe2272d",
+      "code": "M1-1.1",
+      "label": "Fractions in lowest terms"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 8,
+    "pageRef": "p14",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

@@ -1,0 +1,220 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p099-q10",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the simultaneous equations 2(x + y) = 18 and 3x − 2y = 7."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Simplify the bracketed equation before you do anything else — it hides a very simple relationship."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p099_q10.jpg",
+      "altText": "Source visual for edmar-csec-p099-q10 from workbook page 99."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Divide the first equation by 2.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2(x + y) = 18"
+        },
+        {
+          "type": "text",
+          "value": "Result: x + y = 9"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Make x the subject.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x = 9 − y"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 9 − y"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Substitute into the second equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3(9 − y) − 2y = 7, so 27 − 3y − 2y = 7"
+        },
+        {
+          "type": "text",
+          "value": "Result: 27 − 5y = 7"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Solve for y.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "−5y = −20"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 4"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Substitute back to find x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x = 9 − 4"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 5"
+        }
+      ]
+    },
+    {
+      "stepNo": 6,
+      "instruction": "Check in the original first equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2(5 + 4) = 2(9)"
+        },
+        {
+          "type": "text",
+          "value": "Result: 18 ✓"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Divide the first equation by 2 to get x + y = 9, make x the subject and substitute into the second equation."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = 5, y = 4"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Dividing an equation by a common factor changes nothing about its solutions but makes the numbers far easier to handle. Once the first equation is reduced to x + y = 9, substitution converts the pair into a single equation in y that solves in two lines."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "expanding_to_2x_2y_18_and_then_working_w",
+      "wrongValue": "incorrect_1",
+      "misconception": "Expanding to 2x + 2y = 18 and then working with the larger numbers unnecessarily.",
+      "correctiveNote": "Avoid this: Expanding to 2x + 2y = 18 and then working with the larger numbers unnecessarily."
+    },
+    {
+      "key": "substituting_9_y_without_brackets_giving",
+      "wrongValue": "incorrect_2",
+      "misconception": "Substituting 9 − y without brackets, giving 27 − y − 2y.",
+      "correctiveNote": "Avoid this: Substituting 9 − y without brackets, giving 27 − y − 2y."
+    },
+    {
+      "key": "solving_5y_20_as_y_4",
+      "wrongValue": "incorrect_3",
+      "misconception": "Solving −5y = −20 as y = −4.",
+      "correctiveNote": "Avoid this: Solving −5y = −20 as y = −4."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Look for a common factor in each equation before starting — dividing through first reduces the size of every number you have to handle."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=5,y=4",
+    "displayValue": "= 5, y = 4",
+    "acceptedForms": [
+      "= 5, y = 4",
+      "=5,y=4"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve 3(x + y) = 21 and 2x − y = 8."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=5,y=2",
+      "displayValue": "= 5, y = 2",
+      "acceptedForms": [
+        "= 5, y = 2",
+        "=5,y=2"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "1c13634d-d62d-4b96-a52d-ecdfa809e296",
+      "code": "M1-5.1",
+      "label": "Simultaneous linear equations"
+    },
+    {
+      "objectiveId": "36c97051-b61e-47d0-aa3a-aa675d901f80",
+      "code": "M1-5.1",
+      "label": "Simplifying before solving"
+    },
+    {
+      "objectiveId": "b8f1a254-a63e-4ae7-a919-2e95bd259105",
+      "code": "M1-5.1",
+      "label": "Substitution method"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 10,
+    "pageRef": "p99",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

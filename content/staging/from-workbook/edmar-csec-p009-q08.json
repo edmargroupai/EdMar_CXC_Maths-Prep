@@ -1,0 +1,262 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p009-q08",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 4,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Evaluate (i) 5.6 × 10² − 3.4 × 10¹ and (ii) express your answer in standard form."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The two terms carry different powers of ten, so write both as ordinary numbers before subtracting."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p009_q08.jpg",
+      "altText": "Source visual for edmar-csec-p009-q08 from workbook page 9."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Expand the first term.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5.6 × 100"
+        },
+        {
+          "type": "text",
+          "value": "Result: 560"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Expand the second term.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3.4 × 10"
+        },
+        {
+          "type": "text",
+          "value": "Result: 34"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Subtract.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "560 − 34"
+        },
+        {
+          "type": "text",
+          "value": "Result: 526"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Convert back to standard form.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Place the point after the 5, which needs 10²"
+        },
+        {
+          "type": "text",
+          "value": "Result: 5.26 × 10²"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Expand each term to an ordinary number, subtract, then convert the result back to standard form."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) 526  (ii) 5.26 × 10²"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Numbers in standard form can only be added or subtracted directly when their indices match, because the index fixes the place value each digit occupies. Expanding both terms puts every digit in its true column, so the subtraction is ordinary. Converting back is just choosing where the decimal point belongs so the front number lies between 1 and 10."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "subtracting_5_6_3_4_and_keeping_a_power_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Subtracting 5.6 − 3.4 and keeping a power of ten, giving 2.2 × 10².",
+      "correctiveNote": "Avoid this: Subtracting 5.6 − 3.4 and keeping a power of ten, giving 2.2 × 10²."
+    },
+    {
+      "key": "subtracting_the_indices_as_if_the_terms_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Subtracting the indices as if the terms were being divided.",
+      "correctiveNote": "Avoid this: Subtracting the indices as if the terms were being divided."
+    },
+    {
+      "key": "writing_52_6_10_which_is_not_standard_fo",
+      "wrongValue": "incorrect_3",
+      "misconception": "Writing 52.6 × 10¹, which is not standard form.",
+      "correctiveNote": "Avoid this: Writing 52.6 × 10¹, which is not standard form."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "You may only combine standard-form terms term-by-term when the indices are equal — otherwise expand first, subtract, and convert once at the end."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "526",
+    "displayValue": "526",
+    "acceptedForms": [
+      "526",
+      "526"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Evaluate 4.2 × 10³ − 6 × 10² and give the answer in standard form."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_dp",
+      "canonicalValue": "3.6",
+      "displayValue": "3.6",
+      "acceptedForms": [
+        "3.6",
+        "3.6"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "precision": {
+        "kind": "decimal_places",
+        "value": 1,
+        "required": true
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.2"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "909afb30-194a-434c-a174-bbc77008eeb0",
+      "code": "M1-1.2",
+      "label": "Standard form"
+    },
+    {
+      "objectiveId": "0896813e-1d1c-4e62-a040-acf6643e5a30",
+      "code": "M1-1.2",
+      "label": "Place value"
+    },
+    {
+      "objectiveId": "28a66a37-c025-403a-aec0-89531b5527dc",
+      "code": "M1-1.2",
+      "label": "Subtraction of decimals"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 8,
+    "pageRef": "p9",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a.i",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.i): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "numeric_exact",
+        "canonicalValue": "526",
+        "displayValue": "526",
+        "acceptedForms": [
+          "526",
+          "526"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0
+        },
+        "normalisation": "numeric_default"
+      }
+    },
+    {
+      "partKey": "a.ii",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.ii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "numeric_dp",
+        "canonicalValue": "5.26",
+        "displayValue": "5.26",
+        "acceptedForms": [
+          "5.26",
+          "5.26"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0
+        },
+        "precision": {
+          "kind": "decimal_places",
+          "value": 2,
+          "required": true
+        },
+        "normalisation": "numeric_default"
+      }
+    }
+  ]
+}

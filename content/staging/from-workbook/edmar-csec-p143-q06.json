@@ -1,0 +1,225 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p143-q06",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Given that f: x ↦ (x² − 14)/(5x), x ≠ 0: (i) Calculate f(-4). (ii) Obtain an expression for fg(x) if g: x ↦ x − 1."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Substituting a negative number needs care with the square; substituting an expression follows exactly the same rule."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p143_q06.jpg",
+      "altText": "Source visual for edmar-csec-p143-q06 from workbook page 143."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Substitute x = -4 into the numerator.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(-4)² − 14 = 16 − 14"
+        },
+        {
+          "type": "text",
+          "value": "Result: Numerator = 2"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Substitute x = -4 into the denominator.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5(-4)"
+        },
+        {
+          "type": "text",
+          "value": "Result: Denominator = -20"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Divide to get f(-4).",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2 ÷ (-20)"
+        },
+        {
+          "type": "text",
+          "value": "Result: f(-4) = -1/10 = -0.1"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Form fg(x) by replacing every x in f with (x − 1).",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "fg(x) = ((x − 1)² − 14)/(5(x − 1))"
+        },
+        {
+          "type": "text",
+          "value": "Result: ((x − 1)² − 14)/(5(x − 1))"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Expand and simplify the numerator.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(x − 1)² − 14 = x² − 2x + 1 − 14"
+        },
+        {
+          "type": "text",
+          "value": "Result: x² − 2x − 13"
+        }
+      ]
+    },
+    {
+      "stepNo": 6,
+      "instruction": "Write the final expression with its restriction.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The denominator 5(x − 1) must not be zero"
+        },
+        {
+          "type": "text",
+          "value": "Result: fg(x) = (x² − 2x − 13)/(5(x − 1)), x ≠ 1"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Replace x by -4 in the numerator and denominator separately, then replace x by (x − 1) throughout and expand."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) f(-4) = -1/10 = -0.1  (ii) fg(x) = (x² − 2x − 13)/(5(x − 1)), x ≠ 1."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A function rule tells you what to do to whatever sits in the input slot, whether that is a number or a whole expression. Composing means putting the inner function into that slot and tidying up, so the algebra is identical to substituting a number — just longer. The restriction moves with the substitution: f excluded x = 0, so fg must exclude the x making x − 1 zero."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_4_as_16_and_getting_a_numerator_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing (-4)² as -16 and getting a numerator of -30.",
+      "correctiveNote": "Avoid this: Writing (-4)² as -16 and getting a numerator of -30."
+    },
+    {
+      "key": "expanding_x_1_as_x_1",
+      "wrongValue": "incorrect_2",
+      "misconception": "Expanding (x − 1)² as x² − 1.",
+      "correctiveNote": "Avoid this: Expanding (x − 1)² as x² − 1."
+    },
+    {
+      "key": "losing_the_bracket_in_the_denominator_an",
+      "wrongValue": "incorrect_3",
+      "misconception": "Losing the bracket in the denominator and writing 5x − 1 instead of 5(x − 1).",
+      "correctiveNote": "Avoid this: Losing the bracket in the denominator and writing 5x − 1 instead of 5(x − 1)."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When substituting an expression, put it in brackets everywhere before simplifying — most composite errors are dropped brackets, not bad algebra."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "f(-4)=-1/10=-0.1",
+    "displayValue": "f(-4) = -1/10 = -0.1",
+    "acceptedForms": [
+      "f(-4) = -1/10 = -0.1",
+      "f(-4)=-1/10=-0.1"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "If f(x) = x² + 3 and g(x) = x + 2, write fg(x) in expanded form."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "fg(x)=(x+2)²+3=x²+4x+7.",
+      "displayValue": "fg(x) = (x + 2)² + 3 = x² + 4x + 7.",
+      "acceptedForms": [
+        "fg(x) = (x + 2)² + 3 = x² + 4x + 7.",
+        "fg(x)=(x+2)²+3=x²+4x+7."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "4b6d117d-b8c2-402d-a675-47132ab66c71",
+      "code": "M1-5.1",
+      "label": "Evaluating a function"
+    },
+    {
+      "objectiveId": "51ec8f9e-a254-4e16-a19c-c2d46b2a62db",
+      "code": "M1-5.1",
+      "label": "Substituting a negative value"
+    },
+    {
+      "objectiveId": "68260612-1dfc-486c-a0f9-b19ba52e9cc7",
+      "code": "M1-5.1",
+      "label": "Composite functions"
+    },
+    {
+      "objectiveId": "4dc1cf35-ef58-44de-af3c-2ca8819135db",
+      "code": "M1-5.1",
+      "label": "Expanding a squared bracket"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 6,
+    "pageRef": "p143",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

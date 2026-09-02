@@ -1,0 +1,211 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p193-q20",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 5,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "OACB is a parallelogram with OA = a and OB = b. P divides AC so that AP : PC = 1 : 2, Q divides BC so that BQ : QC = 1 : 2, and M is the midpoint of PQ. (a) Express OP in terms of a and b. (b) Express OQ in terms of a and b. (c) Show that OM = (2/3)(a + b). (d) Hence prove that O, M and C are collinear and state OM : MC."
+    },
+    {
+      "type": "text",
+      "value": "Think first: AC runs in the same direction as OB and BC in the same direction as OA, so each ratio point is a whole side plus a fraction of the other."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p193_q20.jpg",
+      "altText": "Source visual for edmar-csec-p193-q20 from workbook page 193."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Identify the side vectors of the parallelogram.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "AC is equal and parallel to OB, so AC = b; BC is equal and parallel to OA, so BC = a; and OC = a + b."
+        },
+        {
+          "type": "text",
+          "value": "Result: AC = b, BC = a, OC = a + b"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Reach P by going O to A then one third of the way along AC.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "AP : PC = 1 : 2 means AP = (1/3)AC = (1/3)b"
+        },
+        {
+          "type": "text",
+          "value": "Result: OP = a + (1/3)b"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Reach Q by going O to B then one third of the way along BC.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "BQ : QC = 1 : 2 means BQ = (1/3)BC = (1/3)a"
+        },
+        {
+          "type": "text",
+          "value": "Result: OQ = b + (1/3)a"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Average OP and OQ to reach the midpoint M of PQ.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "OM = ½(OP + OQ) = ½(a + (1/3)b + b + (1/3)a) = ½((4/3)a + (4/3)b)"
+        },
+        {
+          "type": "text",
+          "value": "Result: OM = (2/3)(a + b)"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Compare OM with OC and read off the ratio.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "OC = a + b, so OM = (2/3)OC and MC = OC − OM = (1/3)OC"
+        },
+        {
+          "type": "text",
+          "value": "Result: O, M, C are collinear with OM : MC = 2 : 1"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Reach P and Q by going along one side then a third of the way along the other, average them to get M, then show OM is a scalar multiple of OC."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) OP = a + (1/3)b  (b) OQ = b + (1/3)a  (c) OM = ½(OP + OQ) = ½((4/3)a + (4/3)b) = (2/3)(a + b)  (d) Since OC = a + b, OM = (2/3)OC; the two vectors are scalar multiples sharing the point O, so O, M and C lie on one straight line, and OM : MC = 2 : 1."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A ratio like 1 : 2 means the first piece is one of three equal parts, which is why a third of a side appears rather than a half. The midpoint of a segment is the average of the position vectors of its ends, so averaging OP and OQ lands exactly on M. Finally, two vectors from the same point that are scalar multiples of each other must lie along the same line, and the scalar 2/3 fixes the division ratio."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "reading_ap_pc_1_2_as_ap_ac_instead_of_1_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Reading AP : PC = 1 : 2 as AP = ½AC instead of (1/3)AC.",
+      "correctiveNote": "Avoid this: Reading AP : PC = 1 : 2 as AP = ½AC instead of (1/3)AC."
+    },
+    {
+      "key": "using_ac_a_instead_of_ac_b_by_confusing_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Using AC = a instead of AC = b by confusing which sides are parallel.",
+      "correctiveNote": "Avoid this: Using AC = a instead of AC = b by confusing which sides are parallel."
+    },
+    {
+      "key": "stating_om_mc_2_3_comparing_part_to_whol",
+      "wrongValue": "incorrect_3",
+      "misconception": "Stating OM : MC = 2 : 3 (comparing part to whole) instead of 2 : 1.",
+      "correctiveNote": "Avoid this: Stating OM : MC = 2 : 3 (comparing part to whole) instead of 2 : 1."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "For a ratio m : n along a segment, the first point sits m/(m+n) of the way along — add the parts before you take the fraction."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "OP=a+(1/3)b",
+    "displayValue": "OP = a + (1/3)b",
+    "acceptedForms": [
+      "OP = a + (1/3)b",
+      "OP=a+(1/3)b"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "R divides OA so that OR : RA = 1 : 3. Express OR in terms of a."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "OR=(1/4)a",
+      "displayValue": "OR = (1/4)a",
+      "acceptedForms": [
+        "OR = (1/4)a",
+        "OR=(1/4)a"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "3cf99f12-a635-4912-ae08-8f4950ee3eaa",
+      "code": "M2-5.1",
+      "label": "Vector addition"
+    },
+    {
+      "objectiveId": "be9229de-a175-4562-a04a-a1cfea799b2e",
+      "code": "M2-5.1",
+      "label": "Dividing a line in a given ratio"
+    },
+    {
+      "objectiveId": "4bba45a2-3f53-40ee-ac7f-631be84c0997",
+      "code": "M2-5.1",
+      "label": "Midpoint in vector form"
+    },
+    {
+      "objectiveId": "de3ba07f-2e3c-43cf-a195-306fa06f1472",
+      "code": "M2-5.1",
+      "label": "Collinearity through scalar multiples"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 20,
+    "pageRef": "p193",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

@@ -1,0 +1,211 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p054-q07",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the equation 6x − 8(3x − 8) = 24."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The bracket carries a large multiplier, so the x-coefficient will end up negative — that is fine."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p054_q07.jpg",
+      "altText": "Source visual for edmar-csec-p054-q07 from workbook page 54."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Expand the bracket.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "−8 × 3x = −24x and −8 × (−8) = +64"
+        },
+        {
+          "type": "text",
+          "value": "Result: 6x − 24x + 64 = 24"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Collect the like terms.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "6x − 24x = −18x"
+        },
+        {
+          "type": "text",
+          "value": "Result: −18x + 64 = 24"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Subtract 64 from both sides.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "24 − 64 = −40"
+        },
+        {
+          "type": "text",
+          "value": "Result: −18x = −40"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Divide both sides by −18.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "−40 ÷ −18, a negative divided by a negative is positive"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 40/18"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Simplify the fraction.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "divide numerator and denominator by 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 20/9"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Expand −8(3x − 8), collect the x-terms, then divide through by the resulting coefficient."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = 20/9 (approximately 2.22)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Expanding a bracket by −8 changes the sign of both of its terms, turning −8 × (−8) into +64. Collecting then gives a negative coefficient of x, but dividing both sides by that negative number restores a positive solution because both sides are negative. The final fraction is reduced by cancelling the common factor 2, which does not change its value."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_8_3x_8_as_24x_64",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing −8(3x − 8) as −24x − 64.",
+      "correctiveNote": "Avoid this: Writing −8(3x − 8) as −24x − 64."
+    },
+    {
+      "key": "getting_18x_as_18x_when_collecting_6x_24",
+      "wrongValue": "incorrect_2",
+      "misconception": "Getting −18x as +18x when collecting 6x − 24x.",
+      "correctiveNote": "Avoid this: Getting −18x as +18x when collecting 6x − 24x."
+    },
+    {
+      "key": "leaving_the_answer_as_40_18_without_simp",
+      "wrongValue": "incorrect_3",
+      "misconception": "Leaving the answer as 40/18 without simplifying it to 20/9.",
+      "correctiveNote": "Avoid this: Leaving the answer as 40/18 without simplifying it to 20/9."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Always reduce a fractional answer to lowest terms before writing your final line. An unsimplified fraction can cost a mark even when the method is perfect."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=20/9(approximately2.22)",
+    "displayValue": "= 20/9 (approximately 2.22)",
+    "acceptedForms": [
+      "= 20/9 (approximately 2.22)",
+      "=20/9(approximately2.22)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve 4x − 6(2x − 5) = 14."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "−8x+30=14,so−8x=−16andx=2.",
+      "displayValue": "−8x + 30 = 14, so −8x = −16 and x = 2.",
+      "acceptedForms": [
+        "−8x + 30 = 14, so −8x = −16 and x = 2.",
+        "−8x+30=14,so−8x=−16andx=2."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "b67a754c-9162-4ab2-a381-11e519744ddf",
+      "code": "M1-4.1",
+      "label": "Solving linear equations"
+    },
+    {
+      "objectiveId": "79cf222d-1669-4f63-a341-21c1a22749fd",
+      "code": "M1-4.1",
+      "label": "Expanding brackets"
+    },
+    {
+      "objectiveId": "ea8e83f0-0c72-4445-a254-ca309056e905",
+      "code": "M1-4.1",
+      "label": "Collecting like terms"
+    },
+    {
+      "objectiveId": "6975a764-cbbb-461b-a7c2-59210482933f",
+      "code": "M1-4.1",
+      "label": "Directed numbers"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 7,
+    "pageRef": "p54",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

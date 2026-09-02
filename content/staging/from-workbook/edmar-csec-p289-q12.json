@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p289-q12",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 5,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "PQRS is a parallelogram with PQ = u and PS = v. M lies on QS with QM : MS = 1 : 2. (i) Write, in terms of u and v, an expression for a) QS and b) QM. (ii) Show that MR = (1/3)(u + 2v). (iii) T is the midpoint of PQ. Prove that R, M and T are collinear."
+    },
+    {
+      "type": "text",
+      "value": "Think first: In a parallelogram QR equals PS, so the diagonal PR is simply u + v — that is the key to reaching R."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p289_q12.jpg",
+      "altText": "Source visual for edmar-csec-p289-q12 from workbook page 289."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Travel from Q to S through P.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "QS = QP + PS = −u + v"
+        },
+        {
+          "type": "text",
+          "value": "Result: QS = v − u"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Take one third of QS, since QM : MS = 1 : 2 splits QS into three equal parts.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "QM = (1/3)(v − u)"
+        },
+        {
+          "type": "text",
+          "value": "Result: QM = (1/3)(v − u)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Find the position vectors of M and R relative to P. In the parallelogram QR = PS = v, so PR = PQ + QR.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "PM = u + (1/3)(v − u) = (2/3)u + (1/3)v; PR = u + v"
+        },
+        {
+          "type": "text",
+          "value": "Result: PM = (2/3)u + (1/3)v, PR = u + v"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Subtract PM from PR to obtain MR.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "MR = (u + v) − ((2/3)u + (1/3)v) = (1/3)u + (2/3)v"
+        },
+        {
+          "type": "text",
+          "value": "Result: MR = (1/3)(u + 2v), as required"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Find MT, using PT = (1/2)u since T is the midpoint of PQ.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "MT = PT − PM = (1/2)u − (2/3)u − (1/3)v = −(1/6)u − (1/3)v"
+        },
+        {
+          "type": "text",
+          "value": "Result: MT = −(1/6)(u + 2v)"
+        }
+      ]
+    },
+    {
+      "stepNo": 6,
+      "instruction": "Compare MR and MT.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "MR = (1/3)(u + 2v) = −2 × (−(1/6)(u + 2v)) = −2 MT"
+        },
+        {
+          "type": "text",
+          "value": "Result: MR = −2 MT, so R, M and T are collinear (with RM : MT = 2 : 1)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Build QS by the route Q → P → S, take one third of it for QM, use PR = u + v to reach R, then subtract position vectors to get MR and MT and compare them."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) a) QS = v − u  b) QM = (1/3)(v − u)  (ii) PM = (2/3)u + (1/3)v and PR = u + v, so MR = PR − PM = (1/3)u + (2/3)v = (1/3)(u + 2v)  (iii) MT = −(1/6)(u + 2v) = −(1/2)MR, so MR = −2 MT. The vectors MR and MT are parallel and share the point M, therefore R, M and T are collinear, with RM : MT = 2 : 1."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "In a parallelogram opposite sides are equal vectors, so QR = PS = v and the diagonal PR is just the sum of the two side vectors. Once every point is expressed from the single origin P, each required vector is a difference of position vectors. The negative scalar linking MR and MT simply means M lies between R and T on the line — the vectors point in opposite directions from M, which is exactly what collinearity through an interior point looks like."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_qs_u_v_by_going_s_to_q_instead_o",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing QS = u − v by going S to Q instead of Q to S.",
+      "correctiveNote": "Avoid this: Writing QS = u − v by going S to Q instead of Q to S."
+    },
+    {
+      "key": "taking_qm_1_2_qs_because_the_ratio_1_2_w",
+      "wrongValue": "incorrect_2",
+      "misconception": "Taking QM = (1/2)QS because the ratio 1 : 2 was misread as a half.",
+      "correctiveNote": "Avoid this: Taking QM = (1/2)QS because the ratio 1 : 2 was misread as a half."
+    },
+    {
+      "key": "using_qr_u_instead_of_v_in_pqrs_the_side",
+      "wrongValue": "incorrect_3",
+      "misconception": "Using QR = u instead of v — in PQRS the side QR matches PS.",
+      "correctiveNote": "Avoid this: Using QR = u instead of v — in PQRS the side QR matches PS."
+    },
+    {
+      "key": "being_thrown_by_the_minus_sign_in_mr_2mt",
+      "wrongValue": "incorrect_4",
+      "misconception": "Being thrown by the minus sign in MR = −2MT and concluding the points are not collinear.",
+      "correctiveNote": "Avoid this: Being thrown by the minus sign in MR = −2MT and concluding the points are not collinear."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Pick one point as your origin (here P) and write every other point's position vector from it; almost all parallelogram vector questions then reduce to subtraction."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "a)QS=v−u",
+    "displayValue": "a) QS = v − u",
+    "acceptedForms": [
+      "a) QS = v − u",
+      "a)QS=v−u"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "In parallelogram ABCD with AB = p and AD = q, write the diagonal AC in terms of p and q."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=p+q",
+      "displayValue": "= p + q",
+      "acceptedForms": [
+        "= p + q",
+        "=p+q"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "9ee0b9a3-71f3-4f78-a553-cd5f9d0137ed",
+      "code": "M2-5.1",
+      "label": "Parallelogram properties in vectors"
+    },
+    {
+      "objectiveId": "47dc6ec1-d7a7-43c1-a5c9-f15649710a3e",
+      "code": "M2-5.1",
+      "label": "Dividing a line in a given ratio"
+    },
+    {
+      "objectiveId": "5d28d112-1090-4ed6-a3e6-32d5e1535d24",
+      "code": "M2-5.1",
+      "label": "Position vectors"
+    },
+    {
+      "objectiveId": "e892e55a-089f-43d0-a5fe-2c6824e93b4a",
+      "code": "M2-5.1",
+      "label": "Collinearity via scalar multiples"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 12,
+    "pageRef": "p289",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

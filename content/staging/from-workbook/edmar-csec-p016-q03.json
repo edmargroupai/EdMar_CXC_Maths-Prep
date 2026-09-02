@@ -1,0 +1,212 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p016-q03",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A loan of $12 000 was taken at 10% per annum simple interest for 18 months. a. Calculate the interest payable.  b. Calculate the total amount to be repaid."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The rate is per annum but the time is in months, so convert the time to years before substituting."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p016_q03.jpg",
+      "altText": "Source visual for edmar-csec-p016-q03 from workbook page 16."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Convert the time to years.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "18 ÷ 12"
+        },
+        {
+          "type": "text",
+          "value": "Result: 1.5 years"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Substitute into the formula.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "I = (12000 × 10 × 1.5)/100"
+        },
+        {
+          "type": "text",
+          "value": "Result: I = 1200 × 1.5"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Calculate the interest.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "1200 × 1.5"
+        },
+        {
+          "type": "text",
+          "value": "Result: $1800"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Add the interest to the principal.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "12000 + 1800"
+        },
+        {
+          "type": "text",
+          "value": "Result: $13 800"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Change 18 months into 1.5 years, apply I = PRT/100, then add the interest to the loan."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "a. $1 800  b. $13 800"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A rate quoted per annum measures interest per year, so T in the formula must also be counted in years or the two quantities do not match. Converting 18 months to 1.5 years keeps the units consistent, and because simple interest is proportional to time, half a year simply earns half a year's interest. The repayment is the borrowed sum plus that charge."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "substituting_t_18_and_getting_twelve_tim",
+      "wrongValue": "incorrect_1",
+      "misconception": "Substituting T = 18 and getting twelve times too much interest.",
+      "correctiveNote": "Avoid this: Substituting T = 18 and getting twelve times too much interest."
+    },
+    {
+      "key": "rounding_1_5_years_down_to_1_year",
+      "wrongValue": "incorrect_2",
+      "misconception": "Rounding 1.5 years down to 1 year.",
+      "correctiveNote": "Avoid this: Rounding 1.5 years down to 1 year."
+    },
+    {
+      "key": "reporting_1_800_as_the_amount_to_be_repa",
+      "wrongValue": "incorrect_3",
+      "misconception": "Reporting $1 800 as the amount to be repaid.",
+      "correctiveNote": "Avoid this: Reporting $1 800 as the amount to be repaid."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Whenever the rate says per annum, check that your time is in years before you write anything else down."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "tolerance",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "currency",
+    "canonicalValue": "1.00",
+    "displayValue": "$1",
+    "acceptedForms": [
+      "$1",
+      "$1",
+      "1"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0.005
+    },
+    "precision": {
+      "kind": "decimal_places",
+      "value": 2,
+      "required": true
+    },
+    "normalisation": "currency_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Find the simple interest on $8 000 at 5% per annum for 9 months."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "currency",
+      "canonicalValue": "300.00",
+      "displayValue": "$300",
+      "acceptedForms": [
+        "$300",
+        "$300",
+        "300"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.005
+      },
+      "precision": {
+        "kind": "decimal_places",
+        "value": 2,
+        "required": true
+      },
+      "normalisation": "currency_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "234096c7-6bf2-427d-a9a4-4579161e6e2a",
+      "code": "M1-1.1",
+      "label": "Simple interest"
+    },
+    {
+      "objectiveId": "f22bb890-33a0-4646-a737-156843b7a406",
+      "code": "M1-1.1",
+      "label": "Converting months to years"
+    },
+    {
+      "objectiveId": "9516059f-2d21-4d41-a2ba-77b1c8e9e6db",
+      "code": "M1-1.1",
+      "label": "Principal, interest and amount"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 3,
+    "pageRef": "p16",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

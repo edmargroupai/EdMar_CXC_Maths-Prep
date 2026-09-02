@@ -1,0 +1,202 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p019-q13",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A dress costing $6 500 is reduced by 18%. Calculate the sale price."
+    },
+    {
+      "type": "text",
+      "value": "Think first: A reduction of 18% means you still pay 82% of the original price, so one multiplication gets you there."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p019_q13.jpg",
+      "altText": "Source visual for edmar-csec-p019-q13 from workbook page 19."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Work out the percentage of the price still paid.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "100% - 18%"
+        },
+        {
+          "type": "text",
+          "value": "Result: 82%"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Change 82% to a decimal multiplier.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "82 / 100"
+        },
+        {
+          "type": "text",
+          "value": "Result: 0.82"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Multiply the original price by the multiplier.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "$6 500 x 0.82"
+        },
+        {
+          "type": "text",
+          "value": "Result: $5 330"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Check by finding the discount separately.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "18% of $6 500 = $1 170, then $6 500 - $1 170"
+        },
+        {
+          "type": "text",
+          "value": "Result: $5 330"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Find the percentage of the price that remains after the discount (100% - 18% = 82%) and take that percentage of $6 500."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "The sale price is $5 330."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A percentage decrease keeps the original price as the 100% base. Subtracting the discount percentage from 100% gives the fraction of the original that survives, so a single multiplication replaces two steps. Both routes agree because $6 500 x 0.82 and $6 500 - $6 500 x 0.18 are the same expression written differently."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "multiplying_by_0_18_and_giving_1_170_as_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Multiplying by 0.18 and giving $1 170 as the sale price instead of the discount.",
+      "correctiveNote": "Avoid this: Multiplying by 0.18 and giving $1 170 as the sale price instead of the discount."
+    },
+    {
+      "key": "subtracting_18_dollars_instead_of_18_per",
+      "wrongValue": "incorrect_2",
+      "misconception": "Subtracting 18 dollars instead of 18 percent.",
+      "correctiveNote": "Avoid this: Subtracting 18 dollars instead of 18 percent."
+    },
+    {
+      "key": "rounding_0_82_to_0_8_and_losing_accuracy",
+      "wrongValue": "incorrect_3",
+      "misconception": "Rounding 0.82 to 0.8 and losing accuracy.",
+      "correctiveNote": "Avoid this: Rounding 0.82 to 0.8 and losing accuracy."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When a question says reduced by or increased by, write the multiplier (0.82 or 1.18) before touching the calculator. It removes a subtraction step and a chance to slip."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Thesalepriceis$5330.",
+    "displayValue": "The sale price is $5 330.",
+    "acceptedForms": [
+      "The sale price is $5 330.",
+      "Thesalepriceis$5330."
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A jacket costing $4 000 is reduced by 25%. Find the sale price."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "currency",
+      "canonicalValue": "3.00",
+      "displayValue": "$3",
+      "acceptedForms": [
+        "$3",
+        "$3",
+        "3"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.005
+      },
+      "precision": {
+        "kind": "decimal_places",
+        "value": 2,
+        "required": true
+      },
+      "normalisation": "currency_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-3.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "8f829cbd-99c7-476c-a149-27cdf25c9ec2",
+      "code": "M1-3.1",
+      "label": "Percentage of a quantity"
+    },
+    {
+      "objectiveId": "29b348bf-ae1b-4b24-a329-3d89402fec90",
+      "code": "M1-3.1",
+      "label": "Percentage decrease"
+    },
+    {
+      "objectiveId": "5cb12308-d234-4a2e-a5ff-d5f6c6e85b60",
+      "code": "M1-3.1",
+      "label": "Discount and sale price"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 13,
+    "pageRef": "p19",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

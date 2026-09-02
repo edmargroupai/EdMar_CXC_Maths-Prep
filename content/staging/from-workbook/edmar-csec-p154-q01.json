@@ -1,0 +1,257 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p154-q01",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 6,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The quadratic function f is defined by f(x) = x² − 8x + 11. (a) Express f(x) in the form (x + h)² + k, where h and k are constants. (b) Hence state the coordinates of the minimum point of f. (c) Determine the equation of the axis of symmetry of the graph of f."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Halve the coefficient of x to find the number inside the bracket, then correct for what squaring the bracket adds."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p154_q01.jpg",
+      "altText": "Source visual for edmar-csec-p154-q01 from workbook page 154."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Halve the coefficient of x to form the bracket.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Half of -8 is -4, so start with (x − 4)²"
+        },
+        {
+          "type": "text",
+          "value": "Result: (x − 4)² = x² − 8x + 16"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Correct for the extra constant.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(x − 4)² gives 16, but the function has 11, so subtract 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: f(x) = (x − 4)² − 5"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Read the minimum point.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(x − 4)² is never negative and equals 0 when x = 4, so the least value of f is -5"
+        },
+        {
+          "type": "text",
+          "value": "Result: Minimum point (4, -5)"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "State the axis of symmetry.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The vertical line through the vertex"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 4"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Take half of -8 to build the bracket (x − 4)², subtract the extra 16 it introduces, then read the vertex and axis directly from the completed-square form."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) f(x) = (x − 4)² − 5, so h = -4 and k = -5  (b) Minimum point (4, -5)  (c) Axis of symmetry x = 4."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Completing the square rewrites a quadratic so the variable appears only once, inside a squared bracket. Since a square is never negative, the smallest possible value of (x − 4)² is 0, reached when x = 4, and the function's least value is then just the constant outside — here -5. The vertex and the axis of symmetry therefore fall straight out of the form with no further work."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "forgetting_to_subtract_the_square_of_the",
+      "wrongValue": "incorrect_1",
+      "misconception": "Forgetting to subtract the square of the halved coefficient, giving (x − 4)² + 11.",
+      "correctiveNote": "Avoid this: Forgetting to subtract the square of the halved coefficient, giving (x − 4)² + 11."
+    },
+    {
+      "key": "reading_the_minimum_point_as_4_5_the_bra",
+      "wrongValue": "incorrect_2",
+      "misconception": "Reading the minimum point as (-4, -5) — the bracket (x − 4)² is zero at x = +4.",
+      "correctiveNote": "Avoid this: Reading the minimum point as (-4, -5) — the bracket (x − 4)² is zero at x = +4."
+    },
+    {
+      "key": "writing_the_axis_of_symmetry_as_y_4_inst",
+      "wrongValue": "incorrect_3",
+      "misconception": "Writing the axis of symmetry as y = 4 instead of x = 4.",
+      "correctiveNote": "Avoid this: Writing the axis of symmetry as y = 4 instead of x = 4."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Expand your completed-square answer mentally as a check — it must return the original quadratic exactly."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "f",
+    "displayValue": "f",
+    "acceptedForms": [
+      "f",
+      "f"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Write x² + 6x + 2 in completed-square form."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "+3)²−7.",
+      "displayValue": "+ 3)² − 7.",
+      "acceptedForms": [
+        "+ 3)² − 7.",
+        "+3)²−7."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "89314c77-2f16-4bea-a6b0-287ba7d147dc",
+      "code": "M1-5.1",
+      "label": "Completing the square"
+    },
+    {
+      "objectiveId": "503a37a6-884e-4e17-a72a-f41eff81655a",
+      "code": "M1-5.1",
+      "label": "Minimum point of a quadratic"
+    },
+    {
+      "objectiveId": "d8acc95e-9414-4de6-ad9e-0181e3741ac6",
+      "code": "M1-5.1",
+      "label": "Axis of symmetry"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 1,
+    "pageRef": "p154",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "f",
+        "displayValue": "f",
+        "acceptedForms": [
+          "f",
+          "f"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Minimumpoint(4,-5)",
+        "displayValue": "Minimum point (4, -5)",
+        "acceptedForms": [
+          "Minimum point (4, -5)",
+          "Minimumpoint(4,-5)"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "c",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (c): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Axisofsymmetry",
+        "displayValue": "Axis of symmetry",
+        "acceptedForms": [
+          "Axis of symmetry",
+          "Axisofsymmetry"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

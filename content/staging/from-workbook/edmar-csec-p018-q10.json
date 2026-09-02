@@ -1,0 +1,212 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p018-q10",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "$15 000 is invested at 4% per annum compound interest for 3 years. Calculate the total interest earned."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Interest is the finishing amount minus the starting amount, so find the amount first."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p018_q10.jpg",
+      "altText": "Source visual for edmar-csec-p018-q10 from workbook page 18."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write the rate as a multiplier.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "4% increase means × 1.04"
+        },
+        {
+          "type": "text",
+          "value": "Result: × 1.04"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Raise it to the number of years.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "1.04³ = 1.04 × 1.04 × 1.04"
+        },
+        {
+          "type": "text",
+          "value": "Result: 1.124864"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Find the amount after 3 years.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "15000 × 1.124864"
+        },
+        {
+          "type": "text",
+          "value": "Result: $16 872.96"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Subtract the principal.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "16872.96 − 15000"
+        },
+        {
+          "type": "text",
+          "value": "Result: $1872.96"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Multiply $15 000 by 1.04³ to get the amount, then subtract the original $15 000."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "$1 872.96"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Each year multiplies the balance by 1.04, so three years multiply it by 1.04³. The interest cannot be found by taking 4% of the principal three times, because from year two onwards the 4% is applied to a larger balance; simple interest would give only $1 800, and the extra $72.96 is the interest earned on earlier interest."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "giving_16_872_96_as_the_interest_instead",
+      "wrongValue": "incorrect_1",
+      "misconception": "Giving $16 872.96 as the interest instead of the amount.",
+      "correctiveNote": "Avoid this: Giving $16 872.96 as the interest instead of the amount."
+    },
+    {
+      "key": "calculating_12_of_15_000_and_answering_1",
+      "wrongValue": "incorrect_2",
+      "misconception": "Calculating 12% of $15 000 and answering $1 800.",
+      "correctiveNote": "Avoid this: Calculating 12% of $15 000 and answering $1 800."
+    },
+    {
+      "key": "rounding_1_04_to_1_12_and_losing_accurac",
+      "wrongValue": "incorrect_3",
+      "misconception": "Rounding 1.04³ to 1.12 and losing accuracy in the cents.",
+      "correctiveNote": "Avoid this: Rounding 1.04³ to 1.12 and losing accuracy in the cents."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Read the last line of the question again before writing your answer — amount and interest differ by the whole principal, and mixing them up costs every mark."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "tolerance",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "currency",
+    "canonicalValue": "1.00",
+    "displayValue": "$1",
+    "acceptedForms": [
+      "$1",
+      "$1",
+      "1"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0.005
+    },
+    "precision": {
+      "kind": "decimal_places",
+      "value": 2,
+      "required": true
+    },
+    "normalisation": "currency_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "$2 000 is invested at 10% compound interest for 2 years. Find the total interest earned."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "currency",
+      "canonicalValue": "420.00",
+      "displayValue": "$420",
+      "acceptedForms": [
+        "$420",
+        "$420",
+        "420"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.005
+      },
+      "precision": {
+        "kind": "decimal_places",
+        "value": 2,
+        "required": true
+      },
+      "normalisation": "currency_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-3.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "b2b9473f-9092-4036-ad16-eb2ee79e2aca",
+      "code": "M1-3.1",
+      "label": "Compound interest"
+    },
+    {
+      "objectiveId": "47e1ee15-7bad-458b-ae06-1ad8ba85a2ee",
+      "code": "M1-3.1",
+      "label": "Multiplying factors"
+    },
+    {
+      "objectiveId": "04b43462-0a34-4758-a2d7-88a955d7fb9f",
+      "code": "M1-3.1",
+      "label": "Interest as amount minus principal"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 10,
+    "pageRef": "p18",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

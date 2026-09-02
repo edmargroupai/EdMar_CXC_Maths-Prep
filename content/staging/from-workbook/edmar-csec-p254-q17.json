@@ -1,0 +1,307 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p254-q17",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 5,
+  "status": "draft",
+  "marks": 8,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A circle has centre O with A, B, C and D on its circumference. EAF and EDG are tangents to the circle at A and D respectively, angle AOD = 114° and angle CDG = 18°. Calculate, giving reasons for each step, (i) angle ACD, (ii) angle AED, (iii) angle OAC, (iv) angle ABC."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Start from the 114° at the centre — it gives the angle at the circumference and, through the tangent quadrilateral OAED, the angle at E."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p254_q17.jpg",
+      "altText": "Source visual for edmar-csec-p254-q17 from workbook page 254."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Halve the angle at the centre standing on chord AD.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "∠AOD = 114° and C lies on the major arc, so ∠ACD = 114 ÷ 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: ∠ACD = 57°"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Work in the quadrilateral OAED, using the tangent–radius right angles.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "∠OAE = ∠ODE = 90°, and the angles of a quadrilateral total 360°: ∠AED = 360 − 90 − 90 − 114"
+        },
+        {
+          "type": "text",
+          "value": "Result: ∠AED = 66°"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Use the isosceles triangle OAD to find angle OAD.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "OA = OD (radii), so ∠OAD = ∠ODA = (180 − 114) ÷ 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: ∠OAD = 33°"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Use the alternate segment theorem on the tangent DG and chord DC, then subtract.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "∠CDG = 18° equals ∠CAD in the alternate segment; AC lies between AO and AD, so ∠OAC = ∠OAD − ∠CAD = 33 − 18"
+        },
+        {
+          "type": "text",
+          "value": "Result: ∠OAC = 15°"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Build angle ADC and use the cyclic quadrilateral ABCD.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "∠ODG = 90°, so ∠ODC = 90 − 18 = 72°, and ∠ADC = ∠ADO + ∠ODC = 33 + 72 = 105°; opposite angles give ∠ABC = 180 − 105"
+        },
+        {
+          "type": "text",
+          "value": "Result: ∠ABC = 75°"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Halve the central angle for angle ACD, use the quadrilateral OAED with its two right angles for angle AED, combine the isosceles triangle OAD with the alternate segment angle for angle OAC, then use the cyclic quadrilateral ABCD for angle ABC."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) ∠ACD = 57° (angle at the centre is twice the angle at the circumference on chord AD)  (ii) ∠AED = 66° (in quadrilateral OAED, ∠OAE = ∠ODE = 90° as tangent–radius angles, so 360 − 90 − 90 − 114)  (iii) ∠OAC = 15° (OA = OD gives ∠OAD = (180 − 114) ÷ 2 = 33°, and the tangent–chord angle ∠CDG = 18° = ∠CAD, so 33 − 18)  (iv) ∠ABC = 75° (∠ODC = 90 − 18 = 72°, so ∠ADC = 33 + 72 = 105°, and ABCD is cyclic, so ∠ABC = 180 − 105)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The central angle of 114° fixes the arc AD, so every point on the major arc sees AD at 57°, and the two right angles where the tangents meet their radii turn OAED into a quadrilateral whose fourth angle is forced. The alternate segment theorem moves the 18° from outside the circle at D to inside at A, which is what allows angle OAC to be found as a difference. Finally, the opposite angles of a cyclic quadrilateral are supplementary, so the angle at D determines the angle at B."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "using_114_directly_as_an_angle_at_the_ci",
+      "wrongValue": "incorrect_1",
+      "misconception": "Using 114° directly as an angle at the circumference instead of halving it.",
+      "correctiveNote": "Avoid this: Using 114° directly as an angle at the circumference instead of halving it."
+    },
+    {
+      "key": "forgetting_that_oaed_has_two_right_angle",
+      "wrongValue": "incorrect_2",
+      "misconception": "Forgetting that OAED has two right angles and trying to use a triangle instead.",
+      "correctiveNote": "Avoid this: Forgetting that OAED has two right angles and trying to use a triangle instead."
+    },
+    {
+      "key": "adding_cad_to_oad_instead_of_subtracting",
+      "wrongValue": "incorrect_3",
+      "misconception": "Adding ∠CAD to ∠OAD instead of subtracting, which puts C on the wrong side of AO.",
+      "correctiveNote": "Avoid this: Adding ∠CAD to ∠OAD instead of subtracting, which puts C on the wrong side of AO."
+    },
+    {
+      "key": "pairing_b_with_c_rather_than_with_d_when",
+      "wrongValue": "incorrect_4",
+      "misconception": "Pairing B with C rather than with D when applying the cyclic quadrilateral rule.",
+      "correctiveNote": "Avoid this: Pairing B with C rather than with D when applying the cyclic quadrilateral rule."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "With two tangents and the centre in one diagram, look for the quadrilateral containing the two right angles — its angle sum of 360° gives the angle at the external point in one line."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "∠AC",
+    "displayValue": "∠AC",
+    "acceptedForms": [
+      "∠AC",
+      "∠AC"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Tangents from E touch a circle at A and D, and ∠AOD = 130°. Find ∠AED."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "360",
+      "displayValue": "360",
+      "acceptedForms": [
+        "360",
+        "360"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "f9d25d7c-f339-4f6a-ae7d-19630fd5b765",
+      "code": "M1-1.1",
+      "label": "Angle at the centre is twice the angle at the circumference"
+    },
+    {
+      "objectiveId": "31dbfaf9-985f-4643-af4b-391586845f25",
+      "code": "M1-1.1",
+      "label": "Tangent perpendicular to radius; angle sum of a quadrilateral"
+    },
+    {
+      "objectiveId": "e58dd171-49a2-41c2-adf8-e54bc9e5196d",
+      "code": "M1-1.1",
+      "label": "Alternate segment (tangent–chord) theorem"
+    },
+    {
+      "objectiveId": "2fb385b7-5b1c-4282-aac6-e561e1424528",
+      "code": "M1-1.1",
+      "label": "Isosceles triangle from two radii"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 17,
+    "pageRef": "p254",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a.i",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.i): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "∠AC",
+        "displayValue": "∠AC",
+        "acceptedForms": [
+          "∠AC",
+          "∠AC"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.ii",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.ii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "∠AE",
+        "displayValue": "∠AE",
+        "acceptedForms": [
+          "∠AE",
+          "∠AE"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.iii",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.iii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "∠OA",
+        "displayValue": "∠OA",
+        "acceptedForms": [
+          "∠OA",
+          "∠OA"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.iv",
+      "sequence": 4,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.iv): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "∠AB",
+        "displayValue": "∠AB",
+        "acceptedForms": [
+          "∠AB",
+          "∠AB"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

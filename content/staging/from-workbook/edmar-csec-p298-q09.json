@@ -1,0 +1,217 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p298-q09",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "(a) The determinant of the matrix (6  2v / -5  -v) is 24. Calculate the value of v. (b)(c) L = (9  5 / 3  2) and M = (2 / -4). Evaluate (i) the matrix product LM and (ii) L inverse."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Write the determinant out with its signs before simplifying; the two negatives combine to give a positive term."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p298_q09.jpg",
+      "altText": "Source visual for edmar-csec-p298-q09 from workbook page 298."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write the determinant as leading diagonal product minus the other diagonal product.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "det = (6)(-v) - (2v)(-5) = -6v + 10v"
+        },
+        {
+          "type": "text",
+          "value": "Result: det = 4v"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Set the determinant equal to 24 and solve.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "4v = 24"
+        },
+        {
+          "type": "text",
+          "value": "Result: v = 6"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Multiply L by the column matrix M.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Top: (9)(2) + (5)(-4) = 18 - 20;  Bottom: (3)(2) + (2)(-4) = 6 - 8"
+        },
+        {
+          "type": "text",
+          "value": "Result: LM = (-2 / -2)"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Find the determinant of L.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "det L = (9)(2) - (5)(3) = 18 - 15"
+        },
+        {
+          "type": "text",
+          "value": "Result: det L = 3"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Swap the leading diagonal entries, change the signs of the other two, and divide by 3.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "L inverse = (1/3)(2  -5 / -3  9)"
+        },
+        {
+          "type": "text",
+          "value": "Result: L inverse = (2/3  -5/3 / -1  3)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Expand the determinant in terms of v and solve, then multiply L by the column M and finish by finding det L and applying the inverse formula."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) v = 6  (c)(i) LM = (-2 / -2)  (c)(ii) L inverse = (1/3)(2  -5 / -3  9) = (2/3  -5/3 / -1  3)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The determinant of a 2x2 matrix is always the product of the leading diagonal minus the product of the other diagonal, so an unknown entry turns it into a simple linear equation. The inverse of a 2x2 matrix is the adjugate, formed by swapping the leading diagonal and negating the other two entries, divided by the determinant; multiplying it back by the original returns the identity matrix, which is why the determinant must not be zero."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_the_determinant_as_6v_10v_becaus",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing the determinant as -6v - 10v because the double negative is missed.",
+      "correctiveNote": "Avoid this: Writing the determinant as -6v - 10v because the double negative is missed."
+    },
+    {
+      "key": "multiplying_l_and_m_the_wrong_way_round_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Multiplying L and M the wrong way round; M is 2x1, so ML is not defined.",
+      "correctiveNote": "Avoid this: Multiplying L and M the wrong way round; M is 2x1, so ML is not defined."
+    },
+    {
+      "key": "negating_the_leading_diagonal_instead_of",
+      "wrongValue": "incorrect_3",
+      "misconception": "Negating the leading diagonal instead of the other diagonal in the adjugate.",
+      "correctiveNote": "Avoid this: Negating the leading diagonal instead of the other diagonal in the adjugate."
+    },
+    {
+      "key": "leaving_the_inverse_without_dividing_by_",
+      "wrongValue": "incorrect_4",
+      "misconception": "Leaving the inverse without dividing by det L.",
+      "correctiveNote": "Avoid this: Leaving the inverse without dividing by det L."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Check any inverse by multiplying it by the original matrix; here L times L inverse should give (1  0 / 0  1)."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "v=6",
+    "displayValue": "v = 6",
+    "acceptedForms": [
+      "v = 6",
+      "v=6"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Find the inverse of (4  1 / 3  1)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "det=1,sotheinverseis(1-1/-34).",
+      "displayValue": "det = 1, so the inverse is (1  -1 / -3  4).",
+      "acceptedForms": [
+        "det = 1, so the inverse is (1  -1 / -3  4).",
+        "det=1,sotheinverseis(1-1/-34)."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "76f9b1bd-eb74-4c69-a572-6c56a62f0e21",
+      "code": "M2-4.1",
+      "label": "Determinant of a 2x2 matrix"
+    },
+    {
+      "objectiveId": "b4ecf416-f9aa-4b92-aea8-86c56f52a6b0",
+      "code": "M2-4.1",
+      "label": "Solving a linear equation"
+    },
+    {
+      "objectiveId": "62b0dcb5-736c-4e83-af4e-4144309474f7",
+      "code": "M2-4.1",
+      "label": "Matrix multiplication (2x2 by 2x1)"
+    },
+    {
+      "objectiveId": "5a0310de-a834-40b8-aa40-bef40016afea",
+      "code": "M2-4.1",
+      "label": "Inverse of a 2x2 matrix"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 9,
+    "pageRef": "p298",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

@@ -1,0 +1,182 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p062-q11",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "If x = −2, evaluate (x + 3)²."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The bracket must be settled before the square, so deal with the addition first."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p062_q11.jpg",
+      "altText": "Source visual for edmar-csec-p062-q11 from workbook page 62."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Substitute x = −2 into the bracket.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(x + 3) becomes (−2 + 3)"
+        },
+        {
+          "type": "text",
+          "value": "Result: (−2 + 3)²"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Simplify inside the bracket.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "−2 + 3 = 1"
+        },
+        {
+          "type": "text",
+          "value": "Result: (1)²"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Square the result.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "1 × 1"
+        },
+        {
+          "type": "text",
+          "value": "Result: 1"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Put −2 in place of x, simplify inside the bracket, then square the single number you are left with."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(x + 3)² = 1"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Brackets act as a wrapper: everything inside is reduced to a single number before the power outside applies to it. Squaring first would square only x, not the whole bracket, which is a different expression. Working inside-out keeps the meaning of the original expression intact."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "expanding_as_x_9_and_getting_13",
+      "wrongValue": "incorrect_1",
+      "misconception": "Expanding as x² + 9 and getting 13.",
+      "correctiveNote": "Avoid this: Expanding as x² + 9 and getting 13."
+    },
+    {
+      "key": "losing_the_minus_sign_and_using_x_2",
+      "wrongValue": "incorrect_2",
+      "misconception": "Losing the minus sign and using x = 2.",
+      "correctiveNote": "Avoid this: Losing the minus sign and using x = 2."
+    },
+    {
+      "key": "squaring_the_3_as_well_as_the_x",
+      "wrongValue": "incorrect_3",
+      "misconception": "Squaring the 3 as well as the x.",
+      "correctiveNote": "Avoid this: Squaring the 3 as well as the x."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Substitute negative values inside brackets, (−2), so the sign travels with the number and cannot be dropped."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "+3)²=1",
+    "displayValue": "+ 3)² = 1",
+    "acceptedForms": [
+      "+ 3)² = 1",
+      "+3)²=1"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "If x = −5, evaluate (x + 3)²."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "4",
+      "displayValue": "4",
+      "acceptedForms": [
+        "4",
+        "4"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "f4b0a9ad-5aed-4548-a525-61a5e96227d0",
+      "code": "M1-4.1",
+      "label": "Substitution into an algebraic expression"
+    },
+    {
+      "objectiveId": "b4fc02b2-6710-47c2-a6c6-896365002e47",
+      "code": "M1-4.1",
+      "label": "Order of operations with brackets"
+    },
+    {
+      "objectiveId": "c431f38b-52cc-457c-ace5-d3a728734b24",
+      "code": "M1-4.1",
+      "label": "Squaring"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 11,
+    "pageRef": "p62",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

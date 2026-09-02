@@ -1,0 +1,191 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p013-q07",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A map is drawn to a scale of 1 : 50,000. Town A and Town B are 8 cm apart on the map. Calculate: i. the actual distance between the towns in kilometres  ii. the actual distance in metres."
+    },
+    {
+      "type": "text",
+      "value": "Think first: A scale of 1 : 50,000 means every centimetre on the map stands for 50,000 centimetres on the ground, so work in centimetres first and convert at the end."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p013_q07.jpg",
+      "altText": "Source visual for edmar-csec-p013-q07 from workbook page 13."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply the map distance by the scale factor.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "8 cm × 50 000"
+        },
+        {
+          "type": "text",
+          "value": "Result: 400 000 cm"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Convert centimetres to metres.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "100 cm = 1 m, so 400 000 ÷ 100"
+        },
+        {
+          "type": "text",
+          "value": "Result: 4000 m"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Convert metres to kilometres.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "1000 m = 1 km, so 4000 ÷ 1000"
+        },
+        {
+          "type": "text",
+          "value": "Result: 4 km"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Multiply the map distance by 50,000 to get the real distance in centimetres, then convert to metres and kilometres."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "i. 4 km  ii. 4000 m"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A scale is a ratio between two lengths measured in the same unit, so 1 : 50,000 says the ground distance is 50,000 times the map distance whatever unit you choose to measure in. Multiplying first and converting afterwards keeps the scale factor free of unit confusion, and the two required answers are then just two steps along the same conversion chain: cm to m to km."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "dividing_by_50_000_instead_of_multiplyin",
+      "wrongValue": "incorrect_1",
+      "misconception": "Dividing by 50,000 instead of multiplying, which shrinks the real distance.",
+      "correctiveNote": "Avoid this: Dividing by 50,000 instead of multiplying, which shrinks the real distance."
+    },
+    {
+      "key": "converting_400_000_cm_to_400_m_by_dividi",
+      "wrongValue": "incorrect_2",
+      "misconception": "Converting 400 000 cm to 400 m by dividing by 1000.",
+      "correctiveNote": "Avoid this: Converting 400 000 cm to 400 m by dividing by 1000."
+    },
+    {
+      "key": "treating_the_scale_as_1_cm_to_50_000_km",
+      "wrongValue": "incorrect_3",
+      "misconception": "Treating the scale as 1 cm to 50,000 km.",
+      "correctiveNote": "Avoid this: Treating the scale as 1 cm to 50,000 km."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Do scale calculations entirely in the map's unit, then convert once at the very end — mixing the conversion into the scale step is where the errors come from."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "4",
+    "displayValue": "4",
+    "acceptedForms": [
+      "4",
+      "4"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "On a 1 : 25,000 map two points are 6 cm apart. How far apart are they in kilometres?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_dp",
+      "canonicalValue": "1.5",
+      "displayValue": "1.5",
+      "acceptedForms": [
+        "1.5",
+        "1.5"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "precision": {
+        "kind": "decimal_places",
+        "value": 1,
+        "required": true
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "d05bb37c-daa3-428a-a847-82e84cf4f237",
+      "code": "M1-1.1",
+      "label": "Scale drawing"
+    },
+    {
+      "objectiveId": "9d29b08f-f3fb-44da-acf7-8c4326ee0cdc",
+      "code": "M1-1.1",
+      "label": "Ratio"
+    },
+    {
+      "objectiveId": "c906a9cb-209a-4fc4-a121-1fcd716a1bd7",
+      "code": "M1-1.1",
+      "label": "Conversion of units of length"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 7,
+    "pageRef": "p13",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

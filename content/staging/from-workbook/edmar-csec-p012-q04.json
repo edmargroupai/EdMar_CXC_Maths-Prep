@@ -1,0 +1,214 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p012-q04",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "An alloy is made by mixing copper, zinc and tin in the ratio 6 : 4 : 5. The total mass of the alloy is 300 kg. Calculate: i. the mass of copper used  ii. the mass of zinc used  iii. the mass of tin used."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Find the mass of one part first, then every metal is a single multiplication away."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p012_q04.jpg",
+      "altText": "Source visual for edmar-csec-p012-q04 from workbook page 12."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Add the ratio parts.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "6 + 4 + 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: 15 parts"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Find the mass of one part.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "300 kg ÷ 15"
+        },
+        {
+          "type": "text",
+          "value": "Result: 20 kg per part"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Find the copper.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "6 × 20 kg"
+        },
+        {
+          "type": "text",
+          "value": "Result: 120 kg"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Find the zinc.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "4 × 20 kg"
+        },
+        {
+          "type": "text",
+          "value": "Result: 80 kg"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Find the tin.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5 × 20 kg"
+        },
+        {
+          "type": "text",
+          "value": "Result: 100 kg"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Add the parts, divide 300 kg by the total to find one part, then multiply by 6, 4 and 5."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "i. 120 kg of copper  ii. 80 kg of zinc  iii. 100 kg of tin"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "In a mixture the ratio states how many equal units of each ingredient go into the whole, so one unit is the natural measuring stick and it is found by dividing the total by the sum of the ratio numbers. Because every ingredient is a whole number of those units, the three masses must add back to the original 300 kg — a built-in check on the arithmetic."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "dividing_300_kg_by_3_because_there_are_t",
+      "wrongValue": "incorrect_1",
+      "misconception": "Dividing 300 kg by 3 because there are three metals.",
+      "correctiveNote": "Avoid this: Dividing 300 kg by 3 because there are three metals."
+    },
+    {
+      "key": "using_the_ratio_numbers_as_percentages_f",
+      "wrongValue": "incorrect_2",
+      "misconception": "Using the ratio numbers as percentages, for example calling copper 6% of the alloy.",
+      "correctiveNote": "Avoid this: Using the ratio numbers as percentages, for example calling copper 6% of the alloy."
+    },
+    {
+      "key": "not_checking_that_the_three_masses_add_u",
+      "wrongValue": "incorrect_3",
+      "misconception": "Not checking that the three masses add up to 300 kg.",
+      "correctiveNote": "Avoid this: Not checking that the three masses add up to 300 kg."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Finish every share-in-a-ratio question by adding your answers together; if they do not return the total, one multiplication is wrong."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "120",
+    "displayValue": "120",
+    "acceptedForms": [
+      "120",
+      "120"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A mixture of sand, gravel and cement in the ratio 5 : 3 : 2 has total mass 400 kg. How much gravel is used?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "120",
+      "displayValue": "120",
+      "acceptedForms": [
+        "120",
+        "120"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "795f6060-8d4f-4037-a299-6ae9b4bc0e0c",
+      "code": "M1-1.1",
+      "label": "Ratio"
+    },
+    {
+      "objectiveId": "8f734e0c-7e05-46a9-a2cb-493fc7def7bb",
+      "code": "M1-1.1",
+      "label": "Sharing a quantity in a given ratio"
+    },
+    {
+      "objectiveId": "24c6f465-631c-4f6e-a28b-782470088fdf",
+      "code": "M1-1.1",
+      "label": "Proportion in mixtures"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 4,
+    "pageRef": "p12",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

@@ -1,0 +1,263 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p224-q10",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 6,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The marks out of 10 gained by 40 students on an essay writing test are: mark 4 (3 students), 6 (9), 7 (8), 8 (7), 9 (8), 10 (5). (i) Calculate the students' mean score. (ii) Determine (a) the modal mark and (b) the median mark."
+    },
+    {
+      "type": "text",
+      "value": "Think first: With a frequency table the mean needs Σfx, not the sum of the six different marks."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p224_q10.jpg",
+      "altText": "Source visual for edmar-csec-p224-q10 from workbook page 224."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply each mark by its frequency and add.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "4(3) + 6(9) + 7(8) + 8(7) + 9(8) + 10(5) = 12 + 54 + 56 + 56 + 72 + 50"
+        },
+        {
+          "type": "text",
+          "value": "Result: Σfx = 300"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Divide by the total number of students.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "300 ÷ 40 (check Σf = 3 + 9 + 8 + 7 + 8 + 5 = 40)"
+        },
+        {
+          "type": "text",
+          "value": "Result: Mean = 7.5"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Pick out the mark with the highest frequency.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Frequencies 3, 9, 8, 7, 8, 5 — the largest is 9"
+        },
+        {
+          "type": "text",
+          "value": "Result: Modal mark = 6"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Build a running total to find the 20th and 21st marks.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Cumulative: 3, 12, 20, 27, 35, 40 — so the 20th student scored 7 and the 21st scored 8"
+        },
+        {
+          "type": "text",
+          "value": "Result: Median = (7 + 8) ÷ 2 = 7.5"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Multiply each mark by its frequency and divide the total by 40 for the mean, take the mark with the largest frequency for the mode, and use a running total to locate the 20th and 21st marks for the median."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) Mean = 300 ÷ 40 = 7.5 marks  (ii)(a) Modal mark = 6  (b) Median mark = 7.5"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A frequency table is a compressed list: the mark 6 appearing nine times contributes 6 × 9 to the total, which is why the mean is Σfx ÷ Σf. The mode is about how often a mark occurs, so it is the mark beside the largest frequency — not the largest frequency itself. The median is a position, and cumulative totals tell you which mark the 20th and 21st students in order actually scored."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "dividing_fx_by_6_the_number_of_different",
+      "wrongValue": "incorrect_1",
+      "misconception": "Dividing Σfx by 6 (the number of different marks) instead of by 40.",
+      "correctiveNote": "Avoid this: Dividing Σfx by 6 (the number of different marks) instead of by 40."
+    },
+    {
+      "key": "giving_the_mode_as_9_the_frequency_rathe",
+      "wrongValue": "incorrect_2",
+      "misconception": "Giving the mode as 9, the frequency, rather than 6, the mark.",
+      "correctiveNote": "Avoid this: Giving the mode as 9, the frequency, rather than 6, the mark."
+    },
+    {
+      "key": "taking_the_median_as_the_middle_row_of_t",
+      "wrongValue": "incorrect_3",
+      "misconception": "Taking the median as the middle row of the table instead of the middle student.",
+      "correctiveNote": "Avoid this: Taking the median as the middle row of the table instead of the middle student."
+    },
+    {
+      "key": "forgetting_that_with_40_students_the_med",
+      "wrongValue": "incorrect_4",
+      "misconception": "Forgetting that with 40 students the median averages the 20th and 21st values.",
+      "correctiveNote": "Avoid this: Forgetting that with 40 students the median averages the 20th and 21st values."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Add a third column for f × x and a fourth for the running total — one table then answers mean, mode and median together."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Modalmark=6",
+    "displayValue": "Modal mark = 6",
+    "acceptedForms": [
+      "Modal mark = 6",
+      "Modalmark=6"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Marks 2, 3, 5 have frequencies 4, 1, 5. Find the mean."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(8+3+25)÷10=3.6",
+      "displayValue": "(8 + 3 + 25) ÷ 10 = 3.6",
+      "acceptedForms": [
+        "(8 + 3 + 25) ÷ 10 = 3.6",
+        "(8+3+25)÷10=3.6"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M3-2.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "c67485b1-ac3d-42a5-a0c3-8ae32b4930f4",
+      "code": "M3-2.1",
+      "label": "Mean from a frequency table"
+    },
+    {
+      "objectiveId": "3cf7f8f9-0d49-4a02-aef6-e1475af13180",
+      "code": "M3-2.1",
+      "label": "Mode"
+    },
+    {
+      "objectiveId": "48eacbae-d5e4-45cc-a07b-709f6433c2cc",
+      "code": "M3-2.1",
+      "label": "Median position in a frequency table"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 10,
+    "pageRef": "p224",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Modalmark=6",
+        "displayValue": "Modal mark = 6",
+        "acceptedForms": [
+          "Modal mark = 6",
+          "Modalmark=6"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.i",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.i): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Mean=300÷40=7.5marks(ii)",
+        "displayValue": "Mean = 300 ÷ 40 = 7.5 marks (ii)",
+        "acceptedForms": [
+          "Mean = 300 ÷ 40 = 7.5 marks (ii)",
+          "Mean=300÷40=7.5marks(ii)"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.ii",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.ii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Medianmark=7.5",
+        "displayValue": "Median mark = 7.5",
+        "acceptedForms": [
+          "Median mark = 7.5",
+          "Medianmark=7.5"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

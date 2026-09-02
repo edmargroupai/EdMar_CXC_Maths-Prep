@@ -1,0 +1,225 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p140-q02",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 5,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The function g is defined by g(x) = (x + 1)/(x − 1). (i) Calculate g(1/2). (ii) Given that g²(x) = g[g(x)], g³(x) = g[g²(x)] and so on, show that g²(x) = x and hence deduce the value of g²¹(1/2)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Once you show that applying g twice returns x, applying g twenty-one times is the same as applying it once."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p140_q02.jpg",
+      "altText": "Source visual for edmar-csec-p140-q02 from workbook page 140."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Substitute x = 1/2 into g.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "g(1/2) = (1/2 + 1)/(1/2 − 1) = (3/2)/(-1/2)"
+        },
+        {
+          "type": "text",
+          "value": "Result: g(1/2) = -3"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Write g[g(x)] with (x + 1)/(x − 1) in place of x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "g²(x) = [((x + 1)/(x − 1)) + 1] ÷ [((x + 1)/(x − 1)) − 1]"
+        },
+        {
+          "type": "text",
+          "value": "Result: A fraction inside a fraction"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Combine top and bottom over the denominator x − 1.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Top: (x + 1 + x − 1)/(x − 1) = 2x/(x − 1).  Bottom: (x + 1 − x + 1)/(x − 1) = 2/(x − 1)"
+        },
+        {
+          "type": "text",
+          "value": "Result: g²(x) = (2x/(x − 1)) ÷ (2/(x − 1))"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Divide the two fractions.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The factors (x − 1) cancel and 2x ÷ 2 = x"
+        },
+        {
+          "type": "text",
+          "value": "Result: g²(x) = x, as required"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Reduce g²¹ using this result.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Every pair of applications returns to x, and 21 = 2 × 10 + 1"
+        },
+        {
+          "type": "text",
+          "value": "Result: g²¹(x) = g(x)"
+        }
+      ]
+    },
+    {
+      "stepNo": 6,
+      "instruction": "Deduce the required value.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "g²¹(1/2) = g(1/2)"
+        },
+        {
+          "type": "text",
+          "value": "Result: g²¹(1/2) = -3"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Substitute x = 1/2 to get g(1/2), then form g[g(x)] and simplify it to x; use that to reduce g²¹ to a single application of g."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) g(1/2) = -3  (ii) g²(x) = x, so g is self-inverse; since 21 is odd, g²¹(x) = g(x) and therefore g²¹(1/2) = -3."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A function satisfying g[g(x)] = x is its own inverse: it maps every value to a partner and that partner straight back again. Repeated application therefore alternates between just two states, so only whether the exponent is odd or even matters — even numbers of applications give x, odd numbers give g(x). Recognising this replaces twenty-one calculations with one."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "trying_to_evaluate_g_twenty_one_times_in",
+      "wrongValue": "incorrect_1",
+      "misconception": "Trying to evaluate g twenty-one times instead of finding the pattern.",
+      "correctiveNote": "Avoid this: Trying to evaluate g twenty-one times instead of finding the pattern."
+    },
+    {
+      "key": "treating_g_x_as_g_x_which_is_squaring_th",
+      "wrongValue": "incorrect_2",
+      "misconception": "Treating g²(x) as [g(x)]², which is squaring the output, not composing.",
+      "correctiveNote": "Avoid this: Treating g²(x) as [g(x)]², which is squaring the output, not composing."
+    },
+    {
+      "key": "slipping_a_sign_when_simplifying_1_2_1_t",
+      "wrongValue": "incorrect_3",
+      "misconception": "Slipping a sign when simplifying (1/2 − 1) to -1/2.",
+      "correctiveNote": "Avoid this: Slipping a sign when simplifying (1/2 − 1) to -1/2."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When a large exponent appears on a function, look for a repeating cycle first — the examiner is testing the pattern, not your stamina."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "g(1/2)=-3",
+    "displayValue": "g(1/2) = -3",
+    "acceptedForms": [
+      "g(1/2) = -3",
+      "g(1/2)=-3"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "If h(x) = 1/x, what is h⁴(2)?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "h²(x)=x,soh⁴(2)=2.",
+      "displayValue": "h²(x) = x, so h⁴(2) = 2.",
+      "acceptedForms": [
+        "h²(x) = x, so h⁴(2) = 2.",
+        "h²(x)=x,soh⁴(2)=2."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "7de3ddc1-8582-42d0-ad08-245222052a67",
+      "code": "M1-5.1",
+      "label": "Evaluating a function"
+    },
+    {
+      "objectiveId": "c9fa8e54-be5a-4325-a0f0-66308bc2b8a5",
+      "code": "M1-5.1",
+      "label": "Composite functions"
+    },
+    {
+      "objectiveId": "93d12ac6-8df2-4384-aa05-dbd398b771c5",
+      "code": "M1-5.1",
+      "label": "Self-inverse functions"
+    },
+    {
+      "objectiveId": "10e8f267-5434-4158-a721-177752b0d502",
+      "code": "M1-5.1",
+      "label": "Algebraic fractions"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 2,
+    "pageRef": "p140",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

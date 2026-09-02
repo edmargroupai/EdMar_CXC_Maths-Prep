@@ -1,0 +1,206 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p137-q08",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The graph represents the equations 4x + y = 11 and 2x − y = 1. (a) Write down the graphical solution. (b) Verify the solution by substituting it into both equations. (c) State the x-intercept of each line."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The lines are already drawn, so the work is careful reading followed by an algebraic check."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p137_q08.jpg",
+      "altText": "Source visual for edmar-csec-p137-q08 from workbook page 137."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Read the point where the two lines cross.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The lines meet 2 across and 3 up"
+        },
+        {
+          "type": "text",
+          "value": "Result: Solution x = 2, y = 3"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Substitute into 4x + y = 11.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "4(2) + 3 = 8 + 3 = 11 ✓"
+        },
+        {
+          "type": "text",
+          "value": "Result: First equation satisfied"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Substitute into 2x − y = 1.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2(2) − 3 = 4 − 3 = 1 ✓"
+        },
+        {
+          "type": "text",
+          "value": "Result: Second equation satisfied"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Find the x-intercept of 4x + y = 11.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Put y = 0: 4x = 11"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 11/4 = 2.75"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Find the x-intercept of 2x − y = 1.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Put y = 0: 2x = 1"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 1/2 = 0.5"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Read the crossing point from the graph, substitute those values into both equations to verify, then find where each line meets the x-axis by setting y = 0."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) x = 2, y = 3  (b) 4(2) + 3 = 11 ✓ and 2(2) − 3 = 1 ✓, so the solution is verified  (c) x-intercepts: x = 2.75 for 4x + y = 11 and x = 0.5 for 2x − y = 1."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A graph can only be read to the accuracy of the grid, so substitution is what proves a read-off is exact rather than close. An intercept is found by setting the other variable to zero, because every point on the x-axis has y = 0 — this works for any equation, whether or not it has been rearranged."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "verifying_in_only_one_equation_which_can",
+      "wrongValue": "incorrect_1",
+      "misconception": "Verifying in only one equation, which cannot distinguish the true solution from a near miss.",
+      "correctiveNote": "Avoid this: Verifying in only one equation, which cannot distinguish the true solution from a near miss."
+    },
+    {
+      "key": "setting_x_0_when_the_x_intercept_is_want",
+      "wrongValue": "incorrect_2",
+      "misconception": "Setting x = 0 when the x-intercept is wanted.",
+      "correctiveNote": "Avoid this: Setting x = 0 when the x-intercept is wanted."
+    },
+    {
+      "key": "reading_the_intercept_of_4x_y_11_as_11_t",
+      "wrongValue": "incorrect_3",
+      "misconception": "Reading the intercept of 4x + y = 11 as 11 — that is the y-intercept.",
+      "correctiveNote": "Avoid this: Reading the intercept of 4x + y = 11 as 11 — that is the y-intercept."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "“Verify” means substitute and show both sides balance; a bare restatement of the answer earns nothing."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "x=2,y=3",
+    "displayValue": "x = 2, y = 3",
+    "acceptedForms": [
+      "x = 2, y = 3",
+      "x=2,y=3"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Find the x-intercept of 3x + 2y = 12."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "Puty=0:3x=12,sox=4.",
+      "displayValue": "Put y = 0: 3x = 12, so x = 4.",
+      "acceptedForms": [
+        "Put y = 0: 3x = 12, so x = 4.",
+        "Puty=0:3x=12,sox=4."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "5ad6290e-df3e-44c2-ae64-ac4f2586ac4c",
+      "code": "M1-5.1",
+      "label": "Graphical solution of simultaneous equations"
+    },
+    {
+      "objectiveId": "7416903d-3abe-409b-a849-6b4d123c583d",
+      "code": "M1-5.1",
+      "label": "Substitution as verification"
+    },
+    {
+      "objectiveId": "a892fad1-f056-4c8e-a311-0035c8eaf65d",
+      "code": "M1-5.1",
+      "label": "x-intercepts of a line"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 8,
+    "pageRef": "p137",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

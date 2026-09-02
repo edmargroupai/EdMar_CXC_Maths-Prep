@@ -1,0 +1,173 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p182-q09",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The diagram illustrates the triangle law of vector addition, in which AB = a and BC = b. (a) Express the vector AC in terms of a and b."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Travelling A to B and then B to C lands you at C, so the two journeys combine into one."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p182_q09.jpg",
+      "altText": "Source visual for edmar-csec-p182-q09 from workbook page 182."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write the journey through B.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Any route from A to C may be used"
+        },
+        {
+          "type": "text",
+          "value": "Result: AC = AB + BC"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Substitute the given vectors.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "AB = a and BC = b"
+        },
+        {
+          "type": "text",
+          "value": "Result: AC = a + b"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Check against the diagram.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The arrow from A to C is labelled a + b"
+        },
+        {
+          "type": "text",
+          "value": "Result: AC = a + b confirmed"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Follow the route from A to C through B and add the two vectors nose to tail."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) AC = AB + BC = a + b"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Vectors add nose to tail: the end of the first arrow is the start of the second, and the single arrow closing the triangle from the first tail to the last head is their sum. Because only the start and finish matter, any route from A to C gives the same resultant — this path-independence is what makes vector addition useful for combining displacements, forces or velocities."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_ac_a_b_which_would_reverse_one_o",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing AC = a − b, which would reverse one of the journeys.",
+      "correctiveNote": "Avoid this: Writing AC = a − b, which would reverse one of the journeys."
+    },
+    {
+      "key": "assuming_ac_a_b_the_magnitudes_only_add_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Assuming |AC| = |a| + |b|; the magnitudes only add when a and b point the same way.",
+      "correctiveNote": "Avoid this: Assuming |AC| = |a| + |b|; the magnitudes only add when a and b point the same way."
+    },
+    {
+      "key": "reversing_the_order_of_the_letters_givin",
+      "wrongValue": "incorrect_3",
+      "misconception": "Reversing the order of the letters, giving CA instead of AC.",
+      "correctiveNote": "Avoid this: Reversing the order of the letters, giving CA instead of AC."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Read a vector route like a journey: the middle letters cancel, so AB + BC = AC and AB + BC + CD = AD."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "AC=AB+BC=a+b",
+    "displayValue": "AC = AB + BC = a + b",
+    "acceptedForms": [
+      "AC = AB + BC = a + b",
+      "AC=AB+BC=a+b"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "If PQ = p and QR = q, express PR in terms of p and q."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "PR=p+q.",
+      "displayValue": "PR = p + q.",
+      "acceptedForms": [
+        "PR = p + q.",
+        "PR=p+q."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "3c87e7cc-bfb5-424e-a961-129274de6905",
+      "code": "M2-5.1",
+      "label": "Triangle law of vector addition"
+    },
+    {
+      "objectiveId": "29aff8e1-1531-47dd-a08c-71bd22d91f33",
+      "code": "M2-5.1",
+      "label": "Route notation for vectors"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 9,
+    "pageRef": "p182",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

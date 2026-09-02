@@ -1,0 +1,196 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p066-q04",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Factorise completely: 9m − 12n."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The letters are different, so only a number can come out."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p066_q04.jpg",
+      "altText": "Source visual for edmar-csec-p066-q04 from workbook page 66."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Find the HCF of the coefficients.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Factors of 9: 1, 3, 9. Factors of 12: 1, 2, 3, 4, 6, 12"
+        },
+        {
+          "type": "text",
+          "value": "Result: HCF = 3"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Note that m and n are different letters.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "No letter appears in both terms"
+        },
+        {
+          "type": "text",
+          "value": "Result: No letter in the HCF"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Divide each term by 3.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "9m ÷ 3 = 3m and 12n ÷ 3 = 4n"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3m and 4n"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Write the factorised form.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: 3(3m − 4n)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Find the HCF of 9 and 12, take it outside a bracket, and divide each term by it."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "9m − 12n = 3(3m − 4n)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A factor can only be taken out if it appears in every term. Since m is absent from 12n and n is absent from 9m, neither letter is common and only the numerical HCF can be removed. The bracket that is left, 3m − 4n, has no further common factor, so the factorisation is complete."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "taking_out_3mn_as_if_both_letters_were_c",
+      "wrongValue": "incorrect_1",
+      "misconception": "Taking out 3mn as if both letters were common.",
+      "correctiveNote": "Avoid this: Taking out 3mn as if both letters were common."
+    },
+    {
+      "key": "using_9_as_the_common_factor_because_it_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Using 9 as the common factor because it divides 9m.",
+      "correctiveNote": "Avoid this: Using 9 as the common factor because it divides 9m."
+    },
+    {
+      "key": "writing_3_3m_12n",
+      "wrongValue": "incorrect_3",
+      "misconception": "Writing 3(3m − 12n).",
+      "correctiveNote": "Avoid this: Writing 3(3m − 12n)."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Underline the factors that appear in every single term before you write anything; anything not underlined cannot come out."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "9",
+    "displayValue": "9",
+    "acceptedForms": [
+      "9",
+      "9"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Factorise completely: 10p − 15q."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "5",
+      "displayValue": "5",
+      "acceptedForms": [
+        "5",
+        "5"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "8fc6492a-5400-4d8c-a6e4-5ab2fda2c7ef",
+      "code": "M1-4.1",
+      "label": "Factorising"
+    },
+    {
+      "objectiveId": "549c31d1-d7c9-4788-afd2-52e8a18cf08c",
+      "code": "M1-4.1",
+      "label": "Highest common factor"
+    },
+    {
+      "objectiveId": "9c49c2af-dccd-48df-ade5-030475ae985f",
+      "code": "M1-4.1",
+      "label": "The distributive law"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 4,
+    "pageRef": "p66",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

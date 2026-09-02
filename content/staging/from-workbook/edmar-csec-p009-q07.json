@@ -1,0 +1,224 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p009-q07",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Evaluate the following: a. (4.2 × 0.07)/2.1   b. 3.6 × 10⁴ ÷ (1.2 × 10²)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Part a is decimal arithmetic under a fraction bar; part b is a standard-form division where the powers of ten are handled by subtracting indices."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p009_q07.jpg",
+      "altText": "Source visual for edmar-csec-p009-q07 from workbook page 9."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply out the numerator of a.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "42 × 7 = 294, with three decimal places in total"
+        },
+        {
+          "type": "text",
+          "value": "Result: 0.294"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Divide by 2.1.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Scale both parts by 10: 2.94 ÷ 21"
+        },
+        {
+          "type": "text",
+          "value": "Result: 0.14"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Split part b into front numbers and powers of ten.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(3.6 ÷ 1.2) × (10⁴ ÷ 10²)"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3 × (10⁴ ÷ 10²)"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Subtract the indices.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "10⁴ ÷ 10² = 10⁴⁻² = 10²"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3 × 10²"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "State the ordinary value for b.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3 × 100"
+        },
+        {
+          "type": "text",
+          "value": "Result: 300"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "In a, complete the numerator then divide by 2.1; in b, divide the front numbers and subtract the indices."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "a. 0.14   b. 3 × 10², which is 300"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Dividing powers of the same base subtracts the indices, because the division cancels matching factors of ten from top and bottom. That lets a standard-form division break cleanly into two independent pieces: a small ordinary division and an index subtraction. In part a the fraction bar again groups the numerator, so the product is finished before any dividing."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "dividing_the_indices_in_part_b_instead_o",
+      "wrongValue": "incorrect_1",
+      "misconception": "Dividing the indices in part b instead of subtracting them, giving 10².",
+      "correctiveNote": "Avoid this: Dividing the indices in part b instead of subtracting them, giving 10²."
+    },
+    {
+      "key": "dividing_4_2_by_2_1_first_and_then_multi",
+      "wrongValue": "incorrect_2",
+      "misconception": "Dividing 4.2 by 2.1 first and then multiplying by 0.07 — this happens to give the same value here, but it is not what the bar instructs and fails when the numerator is a sum.",
+      "correctiveNote": "Avoid this: Dividing 4.2 by 2.1 first and then multiplying by 0.07 — this happens to give the same value here, but it is not what the bar instructs and fails when the numerator is a sum."
+    },
+    {
+      "key": "losing_a_decimal_place_and_writing_4_2_0",
+      "wrongValue": "incorrect_3",
+      "misconception": "Losing a decimal place and writing 4.2 × 0.07 as 2.94.",
+      "correctiveNote": "Avoid this: Losing a decimal place and writing 4.2 × 0.07 as 2.94."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "For any standard-form product or quotient, deal with the front numbers and the indices in two separate columns — mixing them in one line is where marks disappear."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_dp",
+    "canonicalValue": "0.14",
+    "displayValue": "0.14",
+    "acceptedForms": [
+      "0.14",
+      "0.14"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "precision": {
+      "kind": "decimal_places",
+      "value": 2,
+      "required": true
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Evaluate (6.4 × 0.05)/1.6 and 8.4 × 10⁶ ÷ (2.1 × 10³)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_dp",
+      "canonicalValue": "0.2",
+      "displayValue": "0.2",
+      "acceptedForms": [
+        "0.2",
+        "0.2"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "precision": {
+        "kind": "decimal_places",
+        "value": 1,
+        "required": true
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.2"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "dc32fb04-60a8-43ee-a1f1-eea15a827e8d",
+      "code": "M1-1.2",
+      "label": "Decimal multiplication and division"
+    },
+    {
+      "objectiveId": "ccf09628-7ebb-47e8-ad14-d1c528b7d532",
+      "code": "M1-1.2",
+      "label": "Laws of indices"
+    },
+    {
+      "objectiveId": "feb9a141-85d2-4f5c-a796-65b8e36552aa",
+      "code": "M1-1.2",
+      "label": "Standard form"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 7,
+    "pageRef": "p9",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

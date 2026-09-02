@@ -1,0 +1,211 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p136-q07",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Use the grid to solve x + 2y = 10 and 3x − y = 5 graphically, giving the solution correct to 1 decimal place. (a) Draw both lines. (b) State the solution correct to 1 decimal place."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Both equations need rearranging into y = mx + c before anything can be plotted."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p136_q07.jpg",
+      "altText": "Source visual for edmar-csec-p136-q07 from workbook page 136."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Rearrange x + 2y = 10.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2y = 10 − x, then divide every term by 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 5 − 0.5x"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Rearrange 3x − y = 5.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3x − 5 = y"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 3x − 5"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Build points for each line.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "y = 5 − 0.5x: (0, 5), (2, 4), (6, 2).  y = 3x − 5: (1, -2), (2, 1), (3, 4)"
+        },
+        {
+          "type": "text",
+          "value": "Result: Three points for each line"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Plot both lines and read where they cross.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The crossing point is a little under x = 3, a little over y = 3.5"
+        },
+        {
+          "type": "text",
+          "value": "Result: About (2.9, 3.6)"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Confirm the reading algebraically.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5 − 0.5x = 3x − 5 → 10 = 3.5x → x = 20/7 ≈ 2.857, then y = 3(20/7) − 5 = 25/7 ≈ 3.571"
+        },
+        {
+          "type": "text",
+          "value": "Result: x ≈ 2.9, y ≈ 3.6"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Make y the subject of each equation, plot three points for each line, read the crossing point off the grid and confirm it by solving algebraically."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) Both lines drawn on the grid  (b) x = 2.9, y = 3.6 (to 1 decimal place)."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Two straight lines with different gradients meet at exactly one point, and that point is the only pair of values satisfying both equations. Because the true solution here is x = 20/7, it does not sit on a gridline, so the graph gives an estimate that rounding to 1 decimal place makes honest. Checking algebraically shows how close a careful reading should be."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "forgetting_to_halve_the_10_as_well_as_th",
+      "wrongValue": "incorrect_1",
+      "misconception": "Forgetting to halve the 10 as well as the x when rearranging 2y = 10 − x.",
+      "correctiveNote": "Avoid this: Forgetting to halve the 10 as well as the x when rearranging 2y = 10 − x."
+    },
+    {
+      "key": "rounding_2_857_to_2_8_instead_of_2_9",
+      "wrongValue": "incorrect_2",
+      "misconception": "Rounding 2.857 to 2.8 instead of 2.9.",
+      "correctiveNote": "Avoid this: Rounding 2.857 to 2.8 instead of 2.9."
+    },
+    {
+      "key": "plotting_only_two_points_for_the_steeper",
+      "wrongValue": "incorrect_3",
+      "misconception": "Plotting only two points for the steeper line, so a slip goes undetected.",
+      "correctiveNote": "Avoid this: Plotting only two points for the steeper line, so a slip goes undetected."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Extend both lines to the edges of the grid — the crossing point is much easier to read where the lines are long and clearly ruled."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Bothlinesdrawnonthegrid",
+    "displayValue": "Both lines drawn on the grid",
+    "acceptedForms": [
+      "Both lines drawn on the grid",
+      "Bothlinesdrawnonthegrid"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Rearrange 4y − x = 8 into the form y = mx + c."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "y=0.25x+2.",
+      "displayValue": "y = 0.25x + 2.",
+      "acceptedForms": [
+        "y = 0.25x + 2.",
+        "y=0.25x+2."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "d8e3a138-40be-4603-adc6-e6ec96fbf6f7",
+      "code": "M1-5.1",
+      "label": "Rearranging linear equations"
+    },
+    {
+      "objectiveId": "d2627ebe-5c08-47e5-a3ee-e79ef483c58d",
+      "code": "M1-5.1",
+      "label": "Drawing straight-line graphs"
+    },
+    {
+      "objectiveId": "68bb4c3b-218f-430e-ac8b-5fccd4eaee87",
+      "code": "M1-5.1",
+      "label": "Graphical solution of simultaneous equations"
+    },
+    {
+      "objectiveId": "ff106041-614e-4e19-a9bb-d5bc1781347b",
+      "code": "M1-5.1",
+      "label": "Rounding to 1 decimal place"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 7,
+    "pageRef": "p136",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

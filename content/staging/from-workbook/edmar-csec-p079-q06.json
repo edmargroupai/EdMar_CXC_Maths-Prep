@@ -1,0 +1,215 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p079-q06",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A group of 120 students recorded how they travelled to school; the pie chart shows Walk 90°, Bus 144°, Bicycle 54° and Car x°. (a) Calculate the value of x. (b) Calculate the percentage of students who travelled by bus. (c) Determine the number of students who travelled by car. (d) Find the probability that a student chosen at random travelled by neither walking nor bus. (e) State the modal method of travel."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Every part rests on one fact: the four sector angles must add to 360°."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p079_q06.jpg",
+      "altText": "Source visual for edmar-csec-p079-q06 from workbook page 79."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Subtract the three known angles from 360°.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "360 − (90 + 144 + 54) = 360 − 288"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 72"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Turn the bus angle into a percentage.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "144/360 × 100"
+        },
+        {
+          "type": "text",
+          "value": "Result: 40%"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Turn the car angle into a number of students.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "72/360 × 120"
+        },
+        {
+          "type": "text",
+          "value": "Result: 24 students"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Add the angles of the categories that are neither walking nor bus.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Bicycle 54° + car 72°"
+        },
+        {
+          "type": "text",
+          "value": "Result: 126°"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Write that angle as a probability.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "126/360"
+        },
+        {
+          "type": "text",
+          "value": "Result: 7/20 (0.35)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Find x from the 360° total, then convert each angle to a fraction of 360 to obtain percentages, numbers of students and probabilities."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) x = 72  (b) 40%  (c) 24 students  (d) 7/20 or 0.35  (e) Bus, which has the largest sector at 144°."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A pie chart shares 360° in the same ratio as the data, so an angle out of 360 is the same fraction as a category out of the total. That single equivalence lets you move freely between angles, percentages, numbers of students and probabilities."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "subtracting_from_180_instead_of_360_when",
+      "wrongValue": "incorrect_1",
+      "misconception": "Subtracting from 180° instead of 360° when finding x.",
+      "correctiveNote": "Avoid this: Subtracting from 180° instead of 360° when finding x."
+    },
+    {
+      "key": "dividing_the_angle_by_120_instead_of_by_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Dividing the angle by 120 instead of by 360 when finding the number of students.",
+      "correctiveNote": "Avoid this: Dividing the angle by 120 instead of by 360 when finding the number of students."
+    },
+    {
+      "key": "reading_neither_walking_nor_bus_as_one_r",
+      "wrongValue": "incorrect_3",
+      "misconception": "Reading 'neither walking nor bus' as one remaining category instead of both.",
+      "correctiveNote": "Avoid this: Reading 'neither walking nor bus' as one remaining category instead of both."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "On any pie chart, first work out what one degree is worth (here 120 ÷ 360 of a student per degree) — then every sector converts in a single multiplication."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "x=72",
+    "displayValue": "x = 72",
+    "acceptedForms": [
+      "x = 72",
+      "x=72"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "In the same pie chart, how many students walked to school?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "30",
+      "displayValue": "30",
+      "acceptedForms": [
+        "30",
+        "30"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M3-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "9876d390-d09c-4f68-ae73-bc11a45b2c5c",
+      "code": "M3-1.1",
+      "label": "Pie charts"
+    },
+    {
+      "objectiveId": "374a3fda-8859-46a6-a24a-3d178365ca31",
+      "code": "M3-1.1",
+      "label": "Angles at a point"
+    },
+    {
+      "objectiveId": "05517396-2e41-4161-ae74-eebfe8153bc4",
+      "code": "M3-1.1",
+      "label": "Fraction and percentage of a total"
+    },
+    {
+      "objectiveId": "d2067327-f098-4e14-a21e-83d92a86820a",
+      "code": "M3-1.1",
+      "label": "Probability"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 6,
+    "pageRef": "p79",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p052-q05",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Expand and simplify (x − 4)(x − 7)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Both brackets subtract, so expect a negative x-term and a positive constant."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p052_q05.jpg",
+      "altText": "Source visual for edmar-csec-p052-q05 from workbook page 52."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply the first terms.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x × x"
+        },
+        {
+          "type": "text",
+          "value": "Result: x²"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Multiply the outer and inner pairs.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x × (−7) = −7x and (−4) × x = −4x"
+        },
+        {
+          "type": "text",
+          "value": "Result: −7x − 4x"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Multiply the last terms.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(−4) × (−7)"
+        },
+        {
+          "type": "text",
+          "value": "Result: +28"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Collect the middle terms.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "−7x − 4x = −11x"
+        },
+        {
+          "type": "text",
+          "value": "Result: x² − 11x + 28"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Expand all four products with their signs, then combine the like terms."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x² − 11x + 28"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The middle coefficient is the sum of −4 and −7, and the constant is their product, so both follow directly from the distributive law applied twice. Because both numbers are negative, their sum is more negative while their product is positive. Recognising this pairing in reverse is exactly what lets you factorise x² − 11x + 28 back into (x − 4)(x − 7)."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "recording_the_constant_as_28",
+      "wrongValue": "incorrect_1",
+      "misconception": "Recording the constant as −28.",
+      "correctiveNote": "Avoid this: Recording the constant as −28."
+    },
+    {
+      "key": "adding_4_and_7_as_3_instead_of_11",
+      "wrongValue": "incorrect_2",
+      "misconception": "Adding −4 and −7 as −3 instead of −11.",
+      "correctiveNote": "Avoid this: Adding −4 and −7 as −3 instead of −11."
+    },
+    {
+      "key": "expanding_only_two_of_the_four_products",
+      "wrongValue": "incorrect_3",
+      "misconception": "Expanding only two of the four products.",
+      "correctiveNote": "Avoid this: Expanding only two of the four products."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Check the constant term first — it is the fastest single test of whether your signs are right, since it depends only on the two numbers."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "x²−11x+28",
+    "displayValue": "x² − 11x + 28",
+    "acceptedForms": [
+      "x² − 11x + 28",
+      "x²−11x+28"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Expand and simplify (x − 3)(x − 8)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "x²−11x+24.",
+      "displayValue": "x² − 11x + 24.",
+      "acceptedForms": [
+        "x² − 11x + 24.",
+        "x²−11x+24."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "34963139-acd3-4d00-a683-73844dc78ff4",
+      "code": "M1-4.1",
+      "label": "Expanding a product of two binomials"
+    },
+    {
+      "objectiveId": "f189f745-d359-41de-a290-2ce89b912406",
+      "code": "M1-4.1",
+      "label": "Multiplication of directed numbers"
+    },
+    {
+      "objectiveId": "0ffe641c-2c6b-4e76-adce-1bfa67634491",
+      "code": "M1-4.1",
+      "label": "Collecting like terms"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 5,
+    "pageRef": "p52",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

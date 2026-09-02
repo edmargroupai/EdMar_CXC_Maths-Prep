@@ -1,0 +1,225 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p134-q03",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the simultaneous equations 2x + y = 8 and x − y = 1 graphically. (a) Express each equation in the form y = mx + c. (b) Draw both graphs on the grid provided. (c) State the solution."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Rearranging into y = mx + c first tells you the gradient and intercept, which makes plotting quick and safe."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p134_q03.jpg",
+      "altText": "Source visual for edmar-csec-p134-q03 from workbook page 134."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Rearrange 2x + y = 8.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Subtract 2x from both sides"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = -2x + 8"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Rearrange x − y = 1.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x − 1 = y"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = x − 1"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Build a table for each line.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "y = -2x + 8: (0, 8), (2, 4), (4, 0).  y = x − 1: (0, -1), (2, 1), (4, 3)"
+        },
+        {
+          "type": "text",
+          "value": "Result: Three points for each line"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Plot and join both lines on the grid.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Use a ruler and label each line with its equation"
+        },
+        {
+          "type": "text",
+          "value": "Result: Two straight lines drawn"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Read the point of intersection.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The lines meet where -2x + 8 = x − 1, i.e. at x = 3, y = 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: Intersection (3, 2)"
+        }
+      ]
+    },
+    {
+      "stepNo": 6,
+      "instruction": "Check the solution in both original equations.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2(3) + 2 = 8 ✓ and 3 − 2 = 1 ✓"
+        },
+        {
+          "type": "text",
+          "value": "Result: Solution verified"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Make y the subject of each equation, build a small table of values for each, draw both lines on the grid and read the point where they cross."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) y = -2x + 8 and y = x − 1  (b) Both straight lines drawn on the grid  (c) x = 3, y = 2."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Each equation describes a whole line of (x, y) pairs; the pair that works for both equations must lie on both lines, so it is the crossing point. Putting the equations in the form y = mx + c does not change which points satisfy them, it just makes the gradient and y-intercept visible so the lines can be plotted accurately."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "sign_slips_when_rearranging_writing_y_2x",
+      "wrongValue": "incorrect_1",
+      "misconception": "Sign slips when rearranging: writing y = 2x + 8 instead of y = -2x + 8.",
+      "correctiveNote": "Avoid this: Sign slips when rearranging: writing y = 2x + 8 instead of y = -2x + 8."
+    },
+    {
+      "key": "reading_x_y_1_as_y_1_x_rather_than_y_x_1",
+      "wrongValue": "incorrect_2",
+      "misconception": "Reading x − y = 1 as y = 1 − x rather than y = x − 1.",
+      "correctiveNote": "Avoid this: Reading x − y = 1 as y = 1 − x rather than y = x − 1."
+    },
+    {
+      "key": "reading_the_intersection_to_the_nearest_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Reading the intersection to the nearest whole square without checking it in the equations.",
+      "correctiveNote": "Avoid this: Reading the intersection to the nearest whole square without checking it in the equations."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Always substitute your graphical solution back into both original equations — it takes ten seconds and turns a read-off into a checked answer."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "y=-2x+8andy=x−1",
+    "displayValue": "y = -2x + 8 and y = x − 1",
+    "acceptedForms": [
+      "y = -2x + 8 and y = x − 1",
+      "y=-2x+8andy=x−1"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Rearrange 3x + y = 7 into the form y = mx + c and state its gradient."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "y=-3x+7,gradient-3.",
+      "displayValue": "y = -3x + 7, gradient -3.",
+      "acceptedForms": [
+        "y = -3x + 7, gradient -3.",
+        "y=-3x+7,gradient-3."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "48b1b5a7-304d-465f-a1da-03743b731eca",
+      "code": "M1-5.1",
+      "label": "Rearranging a linear equation"
+    },
+    {
+      "objectiveId": "896e6a8c-8233-4325-a1b5-4bf19ef74b73",
+      "code": "M1-5.1",
+      "label": "y = mx + c"
+    },
+    {
+      "objectiveId": "43621f69-d80e-4b4e-a33f-f66fe09173fb",
+      "code": "M1-5.1",
+      "label": "Drawing straight-line graphs"
+    },
+    {
+      "objectiveId": "26a22be0-bc23-4063-aab2-922a7b9c467a",
+      "code": "M1-5.1",
+      "label": "Graphical solution of simultaneous equations"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 3,
+    "pageRef": "p134",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

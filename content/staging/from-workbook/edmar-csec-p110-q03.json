@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p110-q03",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the simultaneous equations y = x + 2 and x² + y = 14."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The first equation already gives y explicitly, so the substitution is immediate."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p110_q03.jpg",
+      "altText": "Source visual for edmar-csec-p110-q03 from workbook page 110."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Substitute y = x + 2 into the second equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x² + (x + 2) = 14"
+        },
+        {
+          "type": "text",
+          "value": "Result: x² + x + 2 = 14"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Rearrange into standard form.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "subtract 14 from both sides"
+        },
+        {
+          "type": "text",
+          "value": "Result: x² + x − 12 = 0"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Factorise using two numbers multiplying to −12 and adding to 1.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "+4 and −3"
+        },
+        {
+          "type": "text",
+          "value": "Result: (x + 4)(x − 3) = 0"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Solve for x and find the matching y-values.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x = −4 gives y = −2; x = 3 gives y = 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: (−4, −2) and (3, 5)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Replace y in the second equation with x + 2, solve the resulting quadratic, then compute each y."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = −4, y = −2 or x = 3, y = 5"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "When one equation is already solved for a variable, substitution costs nothing — you simply replace that variable wherever it appears. The result is a single quadratic whose two roots are the x-coordinates of the two points where the line meets the curve. Finding y from the linear equation rather than the quadratic is quicker and cannot introduce spurious pairs."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "squaring_y_x_2_unnecessarily_since_the_s",
+      "wrongValue": "incorrect_1",
+      "misconception": "Squaring y = x + 2 unnecessarily, since the second equation contains y, not y squared.",
+      "correctiveNote": "Avoid this: Squaring y = x + 2 unnecessarily, since the second equation contains y, not y squared."
+    },
+    {
+      "key": "solving_for_x_and_then_guessing_y_instea",
+      "wrongValue": "incorrect_2",
+      "misconception": "Solving for x and then guessing y instead of substituting.",
+      "correctiveNote": "Avoid this: Solving for x and then guessing y instead of substituting."
+    },
+    {
+      "key": "sign_errors_when_evaluating_y_at_x_4",
+      "wrongValue": "incorrect_3",
+      "misconception": "Sign errors when evaluating y at x = −4.",
+      "correctiveNote": "Avoid this: Sign errors when evaluating y at x = −4."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Find the second variable from the simplest equation available — usually the linear one."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=−4,y=−2",
+    "displayValue": "= −4, y = −2",
+    "acceptedForms": [
+      "= −4, y = −2",
+      "=−4,y=−2"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve y = x + 1 and x² + y = 7."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(−3,−2)and(2,3)",
+      "displayValue": "(−3, −2) and (2, 3)",
+      "acceptedForms": [
+        "(−3, −2) and (2, 3)",
+        "(−3,−2)and(2,3)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-6.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "bf85bd5b-be2a-4b98-ad7a-49f88f468f04",
+      "code": "M1-6.1",
+      "label": "Simultaneous equations, one linear and one non-linear"
+    },
+    {
+      "objectiveId": "8f978192-f608-49ba-aa73-e7df9ed7890f",
+      "code": "M1-6.1",
+      "label": "Substitution method"
+    },
+    {
+      "objectiveId": "44bf1f70-2426-4341-a4b7-5e4c0a046cec",
+      "code": "M1-6.1",
+      "label": "Factorising a quadratic"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 3,
+    "pageRef": "p110",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

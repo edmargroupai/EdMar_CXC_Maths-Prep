@@ -1,0 +1,200 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p010-q09",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Evaluate √(0.0009 × 10⁻⁴) and (i) give your answer in standard form."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Put the number under the root into standard form first — a square root is far easier when the index is even."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p010_q09.jpg",
+      "altText": "Source visual for edmar-csec-p010-q09 from workbook page 10."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Rewrite 0.0009 in standard form.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The 9 is four places after the point"
+        },
+        {
+          "type": "text",
+          "value": "Result: 9 × 10⁻⁴"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Combine the powers of ten inside the root.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "10⁻⁴ × 10⁻⁴ = 10⁻⁴⁻⁴"
+        },
+        {
+          "type": "text",
+          "value": "Result: √(9 × 10⁻⁸)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Split the root over the product.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "√9 × √(10⁻⁸)"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3 × √(10⁻⁸)"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Halve the index to take the root of the power.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "√(10⁻⁸) = 10⁻⁴"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3 × 10⁻⁴"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Write 0.0009 as 9 × 10⁻⁴, combine the powers of ten, then take the square root of the front number and halve the index."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "3 × 10⁻⁴ (that is, 0.0003)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A square root distributes over a product, so the front number and the power of ten can be rooted separately. Taking the square root of a power of ten halves its index, which is why an even index is worth arranging before you start. Multiplying powers of ten adds the indices, so the two −4s combine to −8 and halve neatly to −4."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "halving_0_0009_instead_of_square_rooting",
+      "wrongValue": "incorrect_1",
+      "misconception": "Halving 0.0009 instead of square-rooting it.",
+      "correctiveNote": "Avoid this: Halving 0.0009 instead of square-rooting it."
+    },
+    {
+      "key": "giving_10_as_10_but_then_also_halving_th",
+      "wrongValue": "incorrect_2",
+      "misconception": "Giving √(10⁻⁸) as 10⁻⁴ but then also halving the 3.",
+      "correctiveNote": "Avoid this: Giving √(10⁻⁸) as 10⁻⁴ but then also halving the 3."
+    },
+    {
+      "key": "writing_0_0009_as_9_10_by_miscounting_th",
+      "wrongValue": "incorrect_3",
+      "misconception": "Writing 0.0009 as 9 × 10⁻³ by miscounting the decimal places.",
+      "correctiveNote": "Avoid this: Writing 0.0009 as 9 × 10⁻³ by miscounting the decimal places."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Before rooting anything in standard form, force the index to be even by shifting the front number — √(9 × 10⁻⁸) is instant, √(90 × 10⁻⁹) is not."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "3",
+    "displayValue": "3",
+    "acceptedForms": [
+      "3",
+      "3"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Evaluate √(0.0004 × 10⁻⁶) and give the answer in standard form."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "2",
+      "displayValue": "2",
+      "acceptedForms": [
+        "2",
+        "2"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.2"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "d6f178e4-9d9c-4652-ab8b-6d218954e322",
+      "code": "M1-1.2",
+      "label": "Square roots"
+    },
+    {
+      "objectiveId": "38bc5a38-0c91-4643-a258-9108e50ff6f5",
+      "code": "M1-1.2",
+      "label": "Standard form"
+    },
+    {
+      "objectiveId": "482a31b8-3481-4565-ae67-0276873db902",
+      "code": "M1-1.2",
+      "label": "Laws of indices"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 9,
+    "pageRef": "p10",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

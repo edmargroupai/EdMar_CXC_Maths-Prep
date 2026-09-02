@@ -1,0 +1,174 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p095-q04",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Make r the subject of the formula C = 2πr (the circumference of a circle)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: π is just a number here, so 2π is a single coefficient multiplying r."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p095_q04.jpg",
+      "altText": "Source visual for edmar-csec-p095-q04 from workbook page 95."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Identify what is multiplying r.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "C = 2π × r"
+        },
+        {
+          "type": "text",
+          "value": "Result: the coefficient is 2π"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Divide both sides by 2π.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "C ÷ 2π = 2πr ÷ 2π"
+        },
+        {
+          "type": "text",
+          "value": "Result: C/(2π) = r"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Write the new subject on the left.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: r = C/(2π)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Treat 2π as one number and divide both sides by it."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "r = C/(2π)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "π is a constant, so 2π behaves like any ordinary number multiplying r. Dividing both sides by that whole coefficient undoes the multiplication in one move and gives a formula that lets you find a radius directly from a measured circumference."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "dividing_by_2_only_and_leaving_r_c_2_wri",
+      "wrongValue": "incorrect_1",
+      "misconception": "Dividing by 2 only and leaving r = C/2 ÷ π written ambiguously.",
+      "correctiveNote": "Avoid this: Dividing by 2 only and leaving r = C/2 ÷ π written ambiguously."
+    },
+    {
+      "key": "writing_r_c_2",
+      "wrongValue": "incorrect_2",
+      "misconception": "Writing r = C − 2π.",
+      "correctiveNote": "Avoid this: Writing r = C − 2π."
+    },
+    {
+      "key": "writing_r_2_c_inverting_the_fraction",
+      "wrongValue": "incorrect_3",
+      "misconception": "Writing r = 2π/C, inverting the fraction.",
+      "correctiveNote": "Avoid this: Writing r = 2π/C, inverting the fraction."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Divide by the whole coefficient in one step rather than in two — it keeps the fraction bar in the right place and avoids ambiguous answers."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "r=C/(2π)",
+    "displayValue": "r = C/(2π)",
+    "acceptedForms": [
+      "r = C/(2π)",
+      "r=C/(2π)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Make h the subject of A = 4πh."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "h=A/(4π)",
+      "displayValue": "h = A/(4π)",
+      "acceptedForms": [
+        "h = A/(4π)",
+        "h=A/(4π)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "41bc8ad7-d1ea-4be6-a42b-315cd902bca7",
+      "code": "M1-1.1",
+      "label": "Changing the subject of a formula"
+    },
+    {
+      "objectiveId": "530d749b-784b-4ed4-a93c-a4a9c3f0f029",
+      "code": "M1-1.1",
+      "label": "Inverse operations"
+    },
+    {
+      "objectiveId": "d116cb17-32ae-4d02-acd7-94b6558bb942",
+      "code": "M1-1.1",
+      "label": "Circumference of a circle"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 4,
+    "pageRef": "p95",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

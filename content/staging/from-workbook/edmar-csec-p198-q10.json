@@ -1,0 +1,240 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p198-q10",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 4,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "M = (1 2 −1 / 3 0 4), a 2 × 3 matrix, and N = (2 1 / −1 3 / 5 0), a 3 × 2 matrix. (a) State why M and N are conformable for the product MN. (b) Calculate MN. (c) State the order of MN."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Each row of M has three entries and each column of N has three entries, so the pairs match up perfectly."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p198_q10.jpg",
+      "altText": "Source visual for edmar-csec-p198-q10 from workbook page 198."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Compare the number of columns of M with the number of rows of N.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "M is 2 × 3 and N is 3 × 2; both inner numbers are 3."
+        },
+        {
+          "type": "text",
+          "value": "Result: Conformable; MN will be 2 × 2"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Pair row 1 of M with each column of N.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "1(2) + 2(−1) + (−1)(5) = 2 − 2 − 5; then 1(1) + 2(3) + (−1)(0) = 1 + 6 + 0"
+        },
+        {
+          "type": "text",
+          "value": "Result: Row 1 of MN = (−5  7)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Pair row 2 of M with each column of N.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3(2) + 0(−1) + 4(5) = 6 + 0 + 20; then 3(1) + 0(3) + 4(0) = 3 + 0 + 0"
+        },
+        {
+          "type": "text",
+          "value": "Result: Row 2 of MN = (26  3)"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Write the completed product and state its order.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Two rows and two columns."
+        },
+        {
+          "type": "text",
+          "value": "Result: MN = (−5 7 / 26 3), order 2 × 2"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Check the inner numbers agree, then form each of the four entries of MN by pairing one row of M with one column of N."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) M has 3 columns and N has 3 rows; since these numbers are equal, the product MN is defined  (b) MN = (−5 7 / 26 3)  (c) The order of MN is 2 × 2"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Every entry of a product is a sum of products of matched pairs, so the row length of the first matrix must equal the column height of the second for the pairing to work. The entry in row i, column j of MN comes from row i of M and column j of N, which is a useful check if you lose your place. The 3s cancel out of the shape, leaving 2 × 2."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "trying_to_multiply_entry_by_entry_as_in_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Trying to multiply entry by entry as in addition.",
+      "correctiveNote": "Avoid this: Trying to multiply entry by entry as in addition."
+    },
+    {
+      "key": "placing_an_answer_in_the_wrong_position_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Placing an answer in the wrong position, e.g. putting the row-2, column-1 value in row 1.",
+      "correctiveNote": "Avoid this: Placing an answer in the wrong position, e.g. putting the row-2, column-1 value in row 1."
+    },
+    {
+      "key": "forgetting_the_middle_term_when_a_row_en",
+      "wrongValue": "incorrect_3",
+      "misconception": "Forgetting the middle term when a row entry is 0 and mis-adding the rest.",
+      "correctiveNote": "Avoid this: Forgetting the middle term when a row entry is 0 and mis-adding the rest."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Label each entry you are computing as (row, column) before you start it — that keeps a 2 × 2 answer from getting scrambled."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Mhas3columnsan",
+    "displayValue": "M has 3 columns an",
+    "acceptedForms": [
+      "M has 3 columns an",
+      "Mhas3columnsan"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "State the order of the product of a 3 × 4 matrix and a 4 × 1 matrix."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "3",
+      "displayValue": "3",
+      "acceptedForms": [
+        "3",
+        "3"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "6e310092-6ee8-4ad4-a650-366ad28ba17d",
+      "code": "M2-4.1",
+      "label": "Conformability for multiplication"
+    },
+    {
+      "objectiveId": "b9b0f5b9-3246-47e3-a2ea-fe180d42e7f3",
+      "code": "M2-4.1",
+      "label": "Row-by-column multiplication"
+    },
+    {
+      "objectiveId": "5d245d2b-68b8-473c-ad81-6edf35e981e9",
+      "code": "M2-4.1",
+      "label": "Order of a product matrix"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 10,
+    "pageRef": "p198",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Mhas3columnsan",
+        "displayValue": "M has 3 columns an",
+        "acceptedForms": [
+          "M has 3 columns an",
+          "Mhas3columnsan"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "MN=(−57/263)",
+        "displayValue": "MN = (−5 7 / 26 3)",
+        "acceptedForms": [
+          "MN = (−5 7 / 26 3)",
+          "MN=(−57/263)"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

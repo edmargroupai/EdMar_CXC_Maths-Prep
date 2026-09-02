@@ -1,0 +1,214 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p031-q06",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "In a class of 30 students, 18 study Biology, 16 study Chemistry, x study both subjects and 4 study neither. (i) Write an expression for the total number of students in terms of x. (ii) Find the value of x. (iii) How many study Biology only?"
+    },
+    {
+      "type": "text",
+      "value": "Think first: The 18 and the 16 are whole-subject totals, so each contains the x students who take both."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p031_q06.jpg",
+      "altText": "Source visual for edmar-csec-p031-q06 from workbook page 31."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write each only region in terms of x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Biology only = 18 - x, Chemistry only = 16 - x"
+        },
+        {
+          "type": "text",
+          "value": "Result: 18 - x and 16 - x"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Add all four regions to form the total expression.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(18 - x) + x + (16 - x) + 4"
+        },
+        {
+          "type": "text",
+          "value": "Result: 38 - x"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Set the expression equal to the class size and solve.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "38 - x = 30"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 8"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Substitute to find Biology only.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "18 - 8"
+        },
+        {
+          "type": "text",
+          "value": "Result: 10 students"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Check the four regions add to 30.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "10 + 8 + 8 + 4"
+        },
+        {
+          "type": "text",
+          "value": "Result: 30 students"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Label Biology only as 18 - x and Chemistry only as 16 - x, add the four regions for the total expression, set it equal to 30 and solve, then substitute back."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) 38 - x  (ii) x = 8  (iii) 10 students study Biology only"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Each region of a Venn diagram holds a group of students counted exactly once, so the regions must add to the class size. Because 18 counts everyone taking Biology, including those also taking Chemistry, the Biology only region is 18 - x. The equation then has a single unknown and solves in one step."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "adding_18_16_4_and_getting_38_as_the_cla",
+      "wrongValue": "incorrect_1",
+      "misconception": "Adding 18 + 16 + 4 and getting 38 as the class size.",
+      "correctiveNote": "Avoid this: Adding 18 + 16 + 4 and getting 38 as the class size."
+    },
+    {
+      "key": "forgetting_the_4_who_study_neither",
+      "wrongValue": "incorrect_2",
+      "misconception": "Forgetting the 4 who study neither.",
+      "correctiveNote": "Avoid this: Forgetting the 4 who study neither."
+    },
+    {
+      "key": "giving_8_as_the_answer_to_part_iii_inste",
+      "wrongValue": "incorrect_3",
+      "misconception": "Giving 8 as the answer to part (iii) instead of 10.",
+      "correctiveNote": "Avoid this: Giving 8 as the answer to part (iii) instead of 10."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Always subtract the overlap from each subject total before adding regions. Writing 18 - x and 16 - x on the diagram takes seconds and prevents double counting."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "38",
+    "displayValue": "38",
+    "acceptedForms": [
+      "38",
+      "38"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "In a class of 32, 20 study Maths, 18 study Physics and 3 study neither. How many study both?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "9",
+      "displayValue": "9",
+      "acceptedForms": [
+        "9",
+        "9"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "bfad296e-eb76-4c80-ad66-54e42c672e58",
+      "code": "M1-1.1",
+      "label": "Venn diagrams"
+    },
+    {
+      "objectiveId": "4519d22a-e92a-4896-a62c-9501b40975ed",
+      "code": "M1-1.1",
+      "label": "Overlapping sets"
+    },
+    {
+      "objectiveId": "0e2b0aa6-b3f9-4eb7-ad0a-9c4e02ef467c",
+      "code": "M1-1.1",
+      "label": "Forming and solving a linear equation"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 6,
+    "pageRef": "p31",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

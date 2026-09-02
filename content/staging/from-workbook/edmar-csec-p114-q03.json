@@ -1,0 +1,173 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p114-q03",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The mass m of a body varies directly as its volume V. Given that m = 12 when V = 3, find the mass when V = 5."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Direct variation means mass divided by volume is the same number every time."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p114_q03.jpg",
+      "altText": "Source visual for edmar-csec-p114-q03 from workbook page 114."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write the variation statement as an equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "m varies directly as V"
+        },
+        {
+          "type": "text",
+          "value": "Result: m = kV"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Substitute m = 12 and V = 3 to find k.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "12 = 3k"
+        },
+        {
+          "type": "text",
+          "value": "Result: k = 4"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Substitute V = 5 into m = 4V.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "m = 4 × 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: m = 20"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Write m = kV, find k from the given pair, then substitute V = 5."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "m = 20"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The constant k here is the density of the body — the mass carried by each unit of volume. Because the material does not change, that ratio stays fixed, so once you know it for one pair of values you can find the mass for any volume."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "adding_2_to_the_volume_and_adding_the_sa",
+      "wrongValue": "incorrect_1",
+      "misconception": "Adding 2 to the volume and adding the same to the mass, treating the relationship as linear-with-an-intercept.",
+      "correctiveNote": "Avoid this: Adding 2 to the volume and adding the same to the mass, treating the relationship as linear-with-an-intercept."
+    },
+    {
+      "key": "dividing_3_by_12_instead_of_12_by_3_when",
+      "wrongValue": "incorrect_2",
+      "misconception": "Dividing 3 by 12 instead of 12 by 3 when finding k.",
+      "correctiveNote": "Avoid this: Dividing 3 by 12 instead of 12 by 3 when finding k."
+    },
+    {
+      "key": "forgetting_to_substitute_the_new_volume_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Forgetting to substitute the new volume back into the equation.",
+      "correctiveNote": "Avoid this: Forgetting to substitute the new volume back into the equation."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "In direct variation always state k explicitly on its own line — most marks in these questions are awarded for finding it."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "m=20",
+    "displayValue": "m = 20",
+    "acceptedForms": [
+      "m = 20",
+      "m=20"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "y varies directly as x and y = 21 when x = 7. Find y when x = 4."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "y=12",
+      "displayValue": "y = 12",
+      "acceptedForms": [
+        "y = 12",
+        "y=12"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "3ee3b6a8-57ad-4773-a738-c72d106ebb26",
+      "code": "M1-1.1",
+      "label": "Direct variation"
+    },
+    {
+      "objectiveId": "305865e7-49e7-4fca-afcf-73b20f1720bd",
+      "code": "M1-1.1",
+      "label": "Constant of variation"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 3,
+    "pageRef": "p114",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

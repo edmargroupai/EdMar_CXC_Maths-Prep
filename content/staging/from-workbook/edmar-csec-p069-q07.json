@@ -1,0 +1,197 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p069-q07",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Consider the line with equation 3x − 4y = 24. (a) Determine the coordinates of BOTH intercepts algebraically. (b) Hence draw the graph of the line, using a scale of 1 cm to represent 1 unit on each axis."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Two intercepts are all you need to draw a straight line."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p069_q07.jpg",
+      "altText": "Source visual for edmar-csec-p069-q07 from workbook page 69."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Set x = 0 for the y-intercept.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3(0) − 4y = 24, so −4y = 24"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = −6, giving (0, −6)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Set y = 0 for the x-intercept.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3x − 4(0) = 24, so 3x = 24"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 8, giving (8, 0)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Draw axes to the given scale.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "1 cm per unit, x from 0 to at least 8 and y from −6 to 0"
+        },
+        {
+          "type": "text",
+          "value": "Result: Axes ready"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Plot the two intercepts and rule a line through them, extending it in both directions.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Label the line 3x − 4y = 24"
+        },
+        {
+          "type": "text",
+          "value": "Result: Straight line through (0, −6) and (8, 0)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Substitute x = 0 and then y = 0 to obtain the two intercepts, plot them to the given scale and rule a line through them."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) x-intercept (8, 0) and y-intercept (0, −6)  (b) a straight line ruled through those two points, rising from left to right with gradient 3/4."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Two distinct points determine exactly one straight line, so the two intercepts are enough to draw the graph without a table of values. Dividing 24 by −4 gives a negative y-intercept, which tells you before plotting that the line meets the y-axis below the origin. Checking a third point, such as x = 4 giving y = −3, confirms the line has been drawn correctly."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "getting_y_6_instead_of_6_by_ignoring_the",
+      "wrongValue": "incorrect_1",
+      "misconception": "Getting y = 6 instead of −6 by ignoring the negative coefficient.",
+      "correctiveNote": "Avoid this: Getting y = 6 instead of −6 by ignoring the negative coefficient."
+    },
+    {
+      "key": "plotting_the_intercepts_as_8_0_and_6_0_b",
+      "wrongValue": "incorrect_2",
+      "misconception": "Plotting the intercepts as (8, 0) and (−6, 0), both on the x-axis.",
+      "correctiveNote": "Avoid this: Plotting the intercepts as (8, 0) and (−6, 0), both on the x-axis."
+    },
+    {
+      "key": "choosing_a_scale_that_cannot_reach_x_8_o",
+      "wrongValue": "incorrect_3",
+      "misconception": "Choosing a scale that cannot reach x = 8 or y = −6.",
+      "correctiveNote": "Avoid this: Choosing a scale that cannot reach x = 8 or y = −6."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Once the two intercepts are plotted, test one extra point from the equation before ruling the line; it costs one substitution and guarantees the line is right."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "x-intercept(8,0)andy-intercept(0,−6)",
+    "displayValue": "x-intercept (8, 0) and y-intercept (0, −6)",
+    "acceptedForms": [
+      "x-intercept (8, 0) and y-intercept (0, −6)",
+      "x-intercept(8,0)andy-intercept(0,−6)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Find both intercepts of 2x − 3y = 12."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(6,0)and(0,−4)",
+      "displayValue": "(6, 0) and (0, −4)",
+      "acceptedForms": [
+        "(6, 0) and (0, −4)",
+        "(6,0)and(0,−4)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "b0633e01-81b0-4494-a38c-a7ee32afd723",
+      "code": "M1-1.1",
+      "label": "Intercepts of a straight line"
+    },
+    {
+      "objectiveId": "128b4fb0-6f29-4085-a121-79542249c4eb",
+      "code": "M1-1.1",
+      "label": "Solving linear equations"
+    },
+    {
+      "objectiveId": "4b71306f-05b5-4c10-aca9-cfb9914fe1cb",
+      "code": "M1-1.1",
+      "label": "Drawing a line from two points"
+    },
+    {
+      "objectiveId": "d2bca25d-bcb5-42f6-a583-6a236fc7e15c",
+      "code": "M1-1.1",
+      "label": "Scale"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 7,
+    "pageRef": "p69",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

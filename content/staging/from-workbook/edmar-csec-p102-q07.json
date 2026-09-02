@@ -1,0 +1,200 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p102-q07",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Rewrite the quadratic expression 4x² + 24x + 11 by completing the square, in the form a(x + h)² + k."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Pull the 4 out of the x-terms first so that the bracket starts with a plain x²."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p102_q07.jpg",
+      "altText": "Source visual for edmar-csec-p102-q07 from workbook page 102."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Factor 4 out of the terms containing x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "4x² + 24x + 11 = 4(x² + 6x) + 11"
+        },
+        {
+          "type": "text",
+          "value": "Result: 4(x² + 6x) + 11"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Complete the square inside the bracket.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "half of 6 is 3, and 3² = 9, so x² + 6x = (x + 3)² − 9"
+        },
+        {
+          "type": "text",
+          "value": "Result: 4[(x + 3)² − 9] + 11"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Multiply the 4 through the bracket.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "4(x + 3)² − 36 + 11"
+        },
+        {
+          "type": "text",
+          "value": "Result: 4(x + 3)² − 36 + 11"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Combine the constants.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "−36 + 11 = −25"
+        },
+        {
+          "type": "text",
+          "value": "Result: 4(x + 3)² − 25"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Factor 4 from 4x² + 24x, complete the square inside, then expand the 4 back through and simplify the constant."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "4x² + 24x + 11 = 4(x + 3)² − 25"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The square (x + 3)² reproduces x² + 6x plus an unwanted 9, so that 9 must be subtracted to keep the expression unchanged. Because the whole bracket is multiplied by 4, the correction becomes −36, not −9. The completed form shows at once that the smallest value of the expression is −25, reached when x = −3."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_4_x_3_9_11_forgetting_that_the_9",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing 4(x + 3)² − 9 + 11, forgetting that the −9 is inside the bracket being multiplied by 4.",
+      "correctiveNote": "Avoid this: Writing 4(x + 3)² − 9 + 11, forgetting that the −9 is inside the bracket being multiplied by 4."
+    },
+    {
+      "key": "halving_24_rather_than_6",
+      "wrongValue": "incorrect_2",
+      "misconception": "Halving 24 rather than 6.",
+      "correctiveNote": "Avoid this: Halving 24 rather than 6."
+    },
+    {
+      "key": "losing_the_sign_on_the_11_when_combining",
+      "wrongValue": "incorrect_3",
+      "misconception": "Losing the sign on the 11 when combining constants.",
+      "correctiveNote": "Avoid this: Losing the sign on the 11 when combining constants."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Write the factored bracket on its own line before completing the square — crowding both moves onto one line is where most sign errors start."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "4",
+    "displayValue": "4",
+    "acceptedForms": [
+      "4",
+      "4"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Write 4x² + 8x + 1 in the form a(x + h)² + k."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "4",
+      "displayValue": "4",
+      "acceptedForms": [
+        "4",
+        "4"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "03c2f138-34ff-484d-add8-a23dce192a20",
+      "code": "M1-5.1",
+      "label": "Completing the square"
+    },
+    {
+      "objectiveId": "d5137a67-5c2f-47a6-a2bc-0dc14b5927e1",
+      "code": "M1-5.1",
+      "label": "Factorising out a common coefficient"
+    },
+    {
+      "objectiveId": "a13252e5-b808-4885-a41d-38f42ea6ffb1",
+      "code": "M1-5.1",
+      "label": "Perfect square trinomials"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 7,
+    "pageRef": "p102",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

@@ -1,0 +1,210 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p066-q07",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Factorise completely: 6ab + 9a."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Both a number and a letter are shared by the two terms."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p066_q07.jpg",
+      "altText": "Source visual for edmar-csec-p066-q07 from workbook page 66."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Find the HCF of the coefficients.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "6 and 9 share the factor 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Find the common letter.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "a appears in both terms; b appears only in the first"
+        },
+        {
+          "type": "text",
+          "value": "Result: a"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Combine into the full HCF.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3 × a"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3a"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Divide each term by 3a.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "6ab ÷ 3a = 2b and 9a ÷ 3a = 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2b and 3"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Write the factorised form.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: 3a(2b + 3)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Find the numerical HCF and the common letter separately, then combine them into one factor."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "6ab + 9a = 3a(2b + 3)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The highest common factor is built from every part shared by all the terms: the largest common number and the letters that appear in each term to the lowest power they occur. Handling the number and the letter separately and then multiplying them together is what guarantees nothing common is left behind."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "taking_out_only_3_or_only_a_instead_of_3",
+      "wrongValue": "incorrect_1",
+      "misconception": "Taking out only 3 or only a instead of 3a.",
+      "correctiveNote": "Avoid this: Taking out only 3 or only a instead of 3a."
+    },
+    {
+      "key": "including_b_in_the_factor_even_though_9a",
+      "wrongValue": "incorrect_2",
+      "misconception": "Including b in the factor even though 9a has no b.",
+      "correctiveNote": "Avoid this: Including b in the factor even though 9a has no b."
+    },
+    {
+      "key": "writing_3a_2b_9a",
+      "wrongValue": "incorrect_3",
+      "misconception": "Writing 3a(2b + 9a).",
+      "correctiveNote": "Avoid this: Writing 3a(2b + 9a)."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Build the HCF in two pieces, number then letters, and only then divide the terms; it is far more reliable than trying to spot it whole."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "6",
+    "displayValue": "6",
+    "acceptedForms": [
+      "6",
+      "6"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Factorise completely: 8xy + 12x."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "4",
+      "displayValue": "4",
+      "acceptedForms": [
+        "4",
+        "4"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "75b93e3a-ec80-44f6-afd6-febdde601e47",
+      "code": "M1-4.1",
+      "label": "Factorising"
+    },
+    {
+      "objectiveId": "d8193d32-6f4e-41af-acf8-0b4fbfc0022f",
+      "code": "M1-4.1",
+      "label": "Highest common factor with letters and numbers"
+    },
+    {
+      "objectiveId": "6b69bbf2-a9cc-47d5-ae60-f1d9e094a84b",
+      "code": "M1-4.1",
+      "label": "The distributive law"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 7,
+    "pageRef": "p66",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

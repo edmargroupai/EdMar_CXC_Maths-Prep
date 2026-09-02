@@ -1,0 +1,248 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p246-q12",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 6,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "H, J, K, L and M lie on a circle with centre O. MK is a diameter and MK is parallel to HJ; MJ = JL and angle JMK = 38°. Explain, giving a reason, why (a) angle HJM = 38° and (b) angle MJK = 90°."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Each answer needs one named theorem, not a calculation — say which lines or which theorem create the angle."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p246_q12.jpg",
+      "altText": "Source visual for edmar-csec-p246-q12 from workbook page 246."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Identify the transversal joining the two parallel lines.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "MK is parallel to HJ and the chord MJ crosses both of them"
+        },
+        {
+          "type": "text",
+          "value": "Result: MJ is a transversal of two parallel lines"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Name the relationship between angle JMK and angle HJM.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "They lie on opposite sides of the transversal MJ and between the parallels MK and HJ, so they are alternate angles"
+        },
+        {
+          "type": "text",
+          "value": "Result: ∠HJM = ∠JMK = 38°"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Look at the angle that the diameter MK subtends at J.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "J lies on the circumference and MK is a diameter, so MJK is an angle in a semicircle"
+        },
+        {
+          "type": "text",
+          "value": "Result: ∠MJK = 90°"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Treat MJ as a transversal cutting the parallel lines MK and HJ for part (a), and use the diameter MK subtending an angle at J for part (b)."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) ∠HJM = 38° because MK is parallel to HJ and MJ is a transversal, so ∠HJM and ∠JMK are alternate angles (often called Z-angles), which are equal.  (b) ∠MJK = 90° because MK is a diameter and J lies on the circumference, so ∠MJK is the angle in a semicircle, which is a right angle."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Parallel lines transfer an angle from one place in a figure to another without changing its size, which is why the 38° at M reappears at J. The semicircle result is really the angle-at-the-centre theorem in a special case: the diameter makes a straight angle of 180° at the centre, so the angle it makes at the circumference is half of that, 90°."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "calling_hjm_and_jmk_corresponding_angles",
+      "wrongValue": "incorrect_1",
+      "misconception": "Calling ∠HJM and ∠JMK corresponding angles or co-interior angles instead of alternate angles.",
+      "correctiveNote": "Avoid this: Calling ∠HJM and ∠JMK corresponding angles or co-interior angles instead of alternate angles."
+    },
+    {
+      "key": "giving_angles_in_the_same_segment_as_the",
+      "wrongValue": "incorrect_2",
+      "misconception": "Giving 'angles in the same segment' as the reason for the right angle at J.",
+      "correctiveNote": "Avoid this: Giving 'angles in the same segment' as the reason for the right angle at J."
+    },
+    {
+      "key": "using_the_given_mj_jl_which_is_not_neede",
+      "wrongValue": "incorrect_3",
+      "misconception": "Using the given MJ = JL, which is not needed for these two parts.",
+      "correctiveNote": "Avoid this: Using the given MJ = JL, which is not needed for these two parts."
+    },
+    {
+      "key": "stating_the_answer_without_naming_a_theo",
+      "wrongValue": "incorrect_4",
+      "misconception": "Stating the answer without naming a theorem — the reason is what is being marked here.",
+      "correctiveNote": "Avoid this: Stating the answer without naming a theorem — the reason is what is being marked here."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When a question says 'explain, giving a reason', a full-sentence theorem name earns the mark; a number on its own does not."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "∠HJM=38°becauseMKisparalleltoHJan",
+    "displayValue": "∠HJM = 38° because MK is parallel to HJ an",
+    "acceptedForms": [
+      "∠HJM = 38° because MK is parallel to HJ an",
+      "∠HJM=38°becauseMKisparalleltoHJan"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "AB is a diameter and C is on the circle. What is angle ACB?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "90",
+      "displayValue": "90",
+      "acceptedForms": [
+        "90",
+        "90"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "1235c7b1-0f2d-4560-a39a-d96f39ab0bbf",
+      "code": "M1-1.1",
+      "label": "Alternate angles between parallel lines"
+    },
+    {
+      "objectiveId": "cc64112a-b55d-4fea-a810-1472dd369f71",
+      "code": "M1-1.1",
+      "label": "Angle in a semicircle"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 12,
+    "pageRef": "p246",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a.i",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.i): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "∠HJM=38°becauseMKisparalleltoHJan",
+        "displayValue": "∠HJM = 38° because MK is parallel to HJ an",
+        "acceptedForms": [
+          "∠HJM = 38° because MK is parallel to HJ an",
+          "∠HJM=38°becauseMKisparalleltoHJan"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "∠HJM=38°becauseMKisparalleltoHJan",
+        "displayValue": "∠HJM = 38° because MK is parallel to HJ an",
+        "acceptedForms": [
+          "∠HJM = 38° because MK is parallel to HJ an",
+          "∠HJM=38°becauseMKisparalleltoHJan"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "∠MJK=90°becauseMKis",
+        "displayValue": "∠MJK = 90° because MK is",
+        "acceptedForms": [
+          "∠MJK = 90° because MK is",
+          "∠MJK=90°becauseMKis"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

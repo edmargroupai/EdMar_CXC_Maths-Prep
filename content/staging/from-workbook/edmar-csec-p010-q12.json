@@ -1,0 +1,200 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p010-q12",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Calculate (6.4 × 10⁵)/(8 × 10²), giving your answer (i) exactly and (ii) in standard form."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Treat the front numbers and the powers of ten as two separate divisions, then tidy the format at the end."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p010_q12.jpg",
+      "altText": "Source visual for edmar-csec-p010-q12 from workbook page 10."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Separate the two divisions.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(6.4 ÷ 8) × (10⁵ ÷ 10²)"
+        },
+        {
+          "type": "text",
+          "value": "Result: (6.4 ÷ 8) × 10³"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Divide the front numbers.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "6.4 ÷ 8"
+        },
+        {
+          "type": "text",
+          "value": "Result: 0.8"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Write the exact value.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "0.8 × 10³"
+        },
+        {
+          "type": "text",
+          "value": "Result: 800"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Express it in standard form.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Move the point one place right and reduce the index by 1"
+        },
+        {
+          "type": "text",
+          "value": "Result: 8 × 10²"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Divide 6.4 by 8, subtract the indices of the powers of ten, then shift the decimal point so the front number lies between 1 and 10."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) 800  (ii) 8 × 10²"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Powers of the same base divide by subtracting indices, because every shared factor of ten cancels. Standard form then demands a front number a with 1 ≤ a < 10, so 0.8 × 10³ must be rewritten; each place the point moves right is compensated by one less in the index, keeping the value identical."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "reporting_0_8_10_as_the_standard_form_an",
+      "wrongValue": "incorrect_1",
+      "misconception": "Reporting 0.8 × 10³ as the standard-form answer.",
+      "correctiveNote": "Avoid this: Reporting 0.8 × 10³ as the standard-form answer."
+    },
+    {
+      "key": "adding_the_indices_instead_of_subtractin",
+      "wrongValue": "incorrect_2",
+      "misconception": "Adding the indices instead of subtracting them.",
+      "correctiveNote": "Avoid this: Adding the indices instead of subtracting them."
+    },
+    {
+      "key": "giving_80_for_6_4_8_by_ignoring_the_deci",
+      "wrongValue": "incorrect_3",
+      "misconception": "Giving 80 for 6.4 ÷ 8 by ignoring the decimal point.",
+      "correctiveNote": "Avoid this: Giving 80 for 6.4 ÷ 8 by ignoring the decimal point."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Do the index arithmetic in a separate line from the decimal arithmetic — keeping them apart is what makes standard-form questions quick and safe."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "800",
+    "displayValue": "800",
+    "acceptedForms": [
+      "800",
+      "800"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Calculate (4.5 × 10⁴)/(9 × 10¹), exactly and in standard form."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "500",
+      "displayValue": "500",
+      "acceptedForms": [
+        "500",
+        "500"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.2"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "d2a859ef-7d90-4c24-a4a8-4666862023d8",
+      "code": "M1-1.2",
+      "label": "Standard form"
+    },
+    {
+      "objectiveId": "14b208a8-0b8b-480c-a916-4ed444bbfc00",
+      "code": "M1-1.2",
+      "label": "Laws of indices"
+    },
+    {
+      "objectiveId": "63b19d33-27d4-4378-abb2-a71e92f333ab",
+      "code": "M1-1.2",
+      "label": "Division"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 12,
+    "pageRef": "p10",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

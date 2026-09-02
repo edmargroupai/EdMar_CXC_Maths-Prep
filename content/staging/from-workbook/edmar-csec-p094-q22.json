@@ -1,0 +1,206 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p094-q22",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The area of a quadrilateral is 4x² − 20x + 25 cm². (a) Factorise the expression completely. (b) Hence determine the length of each side. (c) State the type of quadrilateral. (d) Calculate its perimeter."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Check first whether the expression is a perfect square — 4x² and 25 are both squares."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p094_q22.jpg",
+      "altText": "Source visual for edmar-csec-p094-q22 from workbook page 94."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Test for a perfect square by taking the square roots of the first and last terms.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "√(4x²) = 2x and √25 = 5; the middle term should be 2 × 2x × 5 = 20x, and it is (with a minus sign)"
+        },
+        {
+          "type": "text",
+          "value": "Result: It is a perfect square"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Write the factorised form.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "4x² − 20x + 25 = (2x − 5)(2x − 5)"
+        },
+        {
+          "type": "text",
+          "value": "Result: (2x − 5)²"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Read off the side length, since both factors are equal.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "area = side × side"
+        },
+        {
+          "type": "text",
+          "value": "Result: each side = (2x − 5) cm"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Name the quadrilateral with four equal sides formed by two equal factors.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "length = width"
+        },
+        {
+          "type": "text",
+          "value": "Result: a square"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Multiply one side by 4 for the perimeter.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "4(2x − 5)"
+        },
+        {
+          "type": "text",
+          "value": "Result: (8x − 20) cm"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Recognise the perfect square, take the repeated factor as the side, identify the shape as a square and multiply the side by 4."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) (2x − 5)²  (b) each side = (2x − 5) cm  (c) a square  (d) perimeter = (8x − 20) cm"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A trinomial of the form a² − 2ab + b² is exactly the expansion of (a − b)², so spotting the pattern factorises it in one step. Because both factors of the area are identical, the two sides of the quadrilateral are equal, which forces the shape to be a square and makes the perimeter four times one side."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_2x_5_2x_5_which_expands_to_4x_25",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing (2x − 5)(2x + 5), which expands to 4x² − 25 and has no middle term.",
+      "correctiveNote": "Avoid this: Writing (2x − 5)(2x + 5), which expands to 4x² − 25 and has no middle term."
+    },
+    {
+      "key": "calling_the_shape_a_rectangle_when_the_e",
+      "wrongValue": "incorrect_2",
+      "misconception": "Calling the shape a rectangle when the equal factors show it is a square.",
+      "correctiveNote": "Avoid this: Calling the shape a rectangle when the equal factors show it is a square."
+    },
+    {
+      "key": "expanding_4_2x_5_as_8x_5_and_losing_the_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Expanding 4(2x − 5) as 8x − 5 and losing the factor on the second term.",
+      "correctiveNote": "Avoid this: Expanding 4(2x − 5) as 8x − 5 and losing the factor on the second term."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Before splitting the middle term, glance at the first and last terms: if both are perfect squares and the middle term is twice the product of their roots, the answer is a squared bracket and you save a whole method."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "(2x−5)²",
+    "displayValue": "(2x − 5)²",
+    "acceptedForms": [
+      "(2x − 5)²",
+      "(2x−5)²"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "The area of a square is 9x² + 12x + 4 cm². Find its perimeter."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(12x+8)cm,since9x²+12x+4=(3x+2)²",
+      "displayValue": "(12x + 8) cm, since 9x² + 12x + 4 = (3x + 2)²",
+      "acceptedForms": [
+        "(12x + 8) cm, since 9x² + 12x + 4 = (3x + 2)²",
+        "(12x+8)cm,since9x²+12x+4=(3x+2)²"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M3-2.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "f2ba1f39-aba0-422a-ae52-f642471cef07",
+      "code": "M3-2.1",
+      "label": "Perfect square trinomials"
+    },
+    {
+      "objectiveId": "16a9025d-2808-4f01-a915-0d984a289673",
+      "code": "M3-2.1",
+      "label": "Factorising quadratics"
+    },
+    {
+      "objectiveId": "5137fefd-7515-4929-af2a-af7aab571bbe",
+      "code": "M3-2.1",
+      "label": "Area and perimeter of a square"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 22,
+    "pageRef": "p94",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

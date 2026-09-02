@@ -1,0 +1,206 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p111-q07",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the simultaneous equations 2x + y = 7 and xy = 6."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The linear equation is not symmetric this time, so isolate y from it and substitute."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p111_q07.jpg",
+      "altText": "Source visual for edmar-csec-p111-q07 from workbook page 111."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Make y the subject of the linear equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "from 2x + y = 7"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 7 − 2x"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Substitute into xy = 6.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x(7 − 2x) = 6"
+        },
+        {
+          "type": "text",
+          "value": "Result: 7x − 2x² = 6"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Rearrange into standard form.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "bring all terms to the right-hand side"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2x² − 7x + 6 = 0"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Factorise using the ac method.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2 × 6 = 12; −3 and −4 multiply to 12 and add to −7, giving 2x² − 3x − 4x + 6"
+        },
+        {
+          "type": "text",
+          "value": "Result: (2x − 3)(x − 2) = 0"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Solve for x and find each matching y.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x = 3/2 gives y = 7 − 3 = 4; x = 2 gives y = 7 − 4 = 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: (3/2, 4) and (2, 3)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Write y = 7 − 2x, substitute into xy = 6, rearrange to a quadratic with leading coefficient 2, factorise and pair the roots."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = 3/2 (1.5), y = 4 or x = 2, y = 3"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Substituting the linear expression for y produces a quadratic whose leading coefficient is 2, inherited from the 2x in the linear equation. That asymmetry is why the two solution pairs are not simply swaps of each other, unlike the x + y case. Both pairs satisfy xy = 6, since 1.5 × 4 = 6 and 2 × 3 = 6."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_y_7_x_and_ignoring_the_coefficie",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing y = 7 − x and ignoring the coefficient 2.",
+      "correctiveNote": "Avoid this: Writing y = 7 − x and ignoring the coefficient 2."
+    },
+    {
+      "key": "trying_to_factorise_7x_2x_6_before_rearr",
+      "wrongValue": "incorrect_2",
+      "misconception": "Trying to factorise 7x − 2x² = 6 before rearranging.",
+      "correctiveNote": "Avoid this: Trying to factorise 7x − 2x² = 6 before rearranging."
+    },
+    {
+      "key": "giving_x_3_instead_of_3_2_from_the_brack",
+      "wrongValue": "incorrect_3",
+      "misconception": "Giving x = 3 instead of 3/2 from the bracket 2x − 3.",
+      "correctiveNote": "Avoid this: Giving x = 3 instead of 3/2 from the bracket 2x − 3."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Isolate the variable whose coefficient is 1 whenever one exists — it keeps the substitution free of fractions."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=3/2(1.5),y=4",
+    "displayValue": "= 3/2 (1.5), y = 4",
+    "acceptedForms": [
+      "= 3/2 (1.5), y = 4",
+      "=3/2(1.5),y=4"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve 2x + y = 9 and xy = 10."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(2,5)and(5/2,4)",
+      "displayValue": "(2, 5) and (5/2, 4)",
+      "acceptedForms": [
+        "(2, 5) and (5/2, 4)",
+        "(2,5)and(5/2,4)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-6.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "38fb3d97-231c-4927-a00f-3475810ec450",
+      "code": "M1-6.1",
+      "label": "Simultaneous equations, one linear and one non-linear"
+    },
+    {
+      "objectiveId": "8ccbe7f8-61c7-49de-a5d2-3846c269c769",
+      "code": "M1-6.1",
+      "label": "Substitution method"
+    },
+    {
+      "objectiveId": "66b74279-e6ce-4012-abed-8486e423deb9",
+      "code": "M1-6.1",
+      "label": "Factorising when the leading coefficient is not 1"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 7,
+    "pageRef": "p111",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

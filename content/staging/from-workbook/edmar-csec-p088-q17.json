@@ -1,0 +1,218 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p088-q17",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "One card is selected at random from a standard pack of 52 playing cards, containing 13 cards in each of hearts, diamonds, clubs and spades. (a) State the number of outcomes in the sample space. (b) Find the probability that the card is red. (c) Find the probability that the card is a king. (d) Find the probability that the card is a red queen. (e) Find the probability that the card is not a spade."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Recall how a pack is built: four suits of 13, two red and two black, with four cards of each rank."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p088_q17.jpg",
+      "altText": "Source visual for edmar-csec-p088-q17 from workbook page 88."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Count the cards in the pack.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "4 suits × 13 cards"
+        },
+        {
+          "type": "text",
+          "value": "Result: 52 outcomes"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Count the red cards.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "13 hearts + 13 diamonds = 26, so 26/52"
+        },
+        {
+          "type": "text",
+          "value": "Result: 1/2"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Count the kings.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "One king in each suit, so 4/52"
+        },
+        {
+          "type": "text",
+          "value": "Result: 1/13"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Count the red queens.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Queen of hearts and queen of diamonds only, so 2/52"
+        },
+        {
+          "type": "text",
+          "value": "Result: 1/26"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Use the complement for 'not a spade'.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "1 − 13/52 = 1 − 1/4"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3/4"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Count the favourable cards in each case out of 52 and simplify; for 'not a spade' the complement is quicker than counting the other three suits."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) 52  (b) 1/2  (c) 1/13  (d) 1/26  (e) 3/4"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Every card is equally likely, so each probability is the number of cards fitting the description divided by 52. When an event is defined by what it is not, the complement rule P(not A) = 1 − P(A) replaces a long count with a single subtraction."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "counting_4_red_queens_instead_of_2_only_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Counting 4 red queens instead of 2 — only hearts and diamonds are red.",
+      "correctiveNote": "Avoid this: Counting 4 red queens instead of 2 — only hearts and diamonds are red."
+    },
+    {
+      "key": "giving_p_king_as_1_4_by_confusing_ranks_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Giving P(king) as 1/4 by confusing ranks with suits.",
+      "correctiveNote": "Avoid this: Giving P(king) as 1/4 by confusing ranks with suits."
+    },
+    {
+      "key": "leaving_an_answer_unsimplified_such_as_2",
+      "wrongValue": "incorrect_3",
+      "misconception": "Leaving an answer unsimplified, such as 26/52.",
+      "correctiveNote": "Avoid this: Leaving an answer unsimplified, such as 26/52."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Sketch the 4 by 13 layout of the pack in the margin; almost every card probability can then be read straight off it."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "52",
+    "displayValue": "52",
+    "acceptedForms": [
+      "52",
+      "52"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Find the probability that a card drawn at random from a pack of 52 is a club."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "fraction",
+      "canonicalValue": "1/4",
+      "displayValue": "1/4",
+      "acceptedForms": [
+        "1/4"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M3-2.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "80b1f393-e5cc-4d8c-adac-76ce1e20415a",
+      "code": "M3-2.1",
+      "label": "Sample space"
+    },
+    {
+      "objectiveId": "286492d4-560d-4214-a85f-e7496f2c7426",
+      "code": "M3-2.1",
+      "label": "Probability of a single event"
+    },
+    {
+      "objectiveId": "602039f2-541d-448f-aa72-6d035d458973",
+      "code": "M3-2.1",
+      "label": "Complementary events"
+    },
+    {
+      "objectiveId": "803deb11-8e6e-4794-ae07-efe819d6189d",
+      "code": "M3-2.1",
+      "label": "Structure of a pack of playing cards"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 17,
+    "pageRef": "p88",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

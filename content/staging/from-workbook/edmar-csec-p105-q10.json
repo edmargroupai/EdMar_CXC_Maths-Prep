@@ -1,0 +1,178 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p105-q10",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the equation (x − 4)² = 13."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The equation is already in completed-square form, so a single square root finishes it."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p105_q10.jpg",
+      "altText": "Source visual for edmar-csec-p105-q10 from workbook page 105."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Take the square root of both sides, keeping both signs.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "the square root of (x − 4)² is x − 4"
+        },
+        {
+          "type": "text",
+          "value": "Result: x − 4 = ±√13"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Add 4 to both sides.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x = 4 ± √13"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 4 + √13 or x = 4 − √13"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Evaluate to two decimal places.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "√13 ≈ 3.6056"
+        },
+        {
+          "type": "text",
+          "value": "Result: x ≈ 7.61 or x ≈ 0.39"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Take the square root of both sides, remembering the ±, then add 4."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = 4 + √13 ≈ 7.61 or x = 4 − √13 ≈ 0.39 (2 d.p.)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A squared bracket equal to a positive number gives two solutions because both √13 and −√13 square to 13. The two roots sit an equal distance either side of x = 4, which is the axis of symmetry of the parabola y = (x − 4)². Expanding first would only undo the convenient form you have been handed."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "expanding_to_x_8x_16_13_and_doing_unnece",
+      "wrongValue": "incorrect_1",
+      "misconception": "Expanding to x² − 8x + 16 = 13 and doing unnecessary work.",
+      "correctiveNote": "Avoid this: Expanding to x² − 8x + 16 = 13 and doing unnecessary work."
+    },
+    {
+      "key": "giving_only_the_positive_root",
+      "wrongValue": "incorrect_2",
+      "misconception": "Giving only the positive root.",
+      "correctiveNote": "Avoid this: Giving only the positive root."
+    },
+    {
+      "key": "writing_x_4_13_2_or_otherwise_halving_in",
+      "wrongValue": "incorrect_3",
+      "misconception": "Writing x − 4 = 13/2 or otherwise halving instead of square-rooting.",
+      "correctiveNote": "Avoid this: Writing x − 4 = 13/2 or otherwise halving instead of square-rooting."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "If an equation is already written as (something)² = number, square-root immediately — do not expand."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=4+√13≈7.61",
+    "displayValue": "= 4 + √13 ≈ 7.61",
+    "acceptedForms": [
+      "= 4 + √13 ≈ 7.61",
+      "=4+√13≈7.61"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve (x + 1)² = 7, giving answers to 2 decimal places."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=−1±√7,sox≈1.65",
+      "displayValue": "= −1 ± √7, so x ≈ 1.65",
+      "acceptedForms": [
+        "= −1 ± √7, so x ≈ 1.65",
+        "=−1±√7,sox≈1.65"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-6.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "b07ae7bd-fd47-4ff7-a46e-659c604c5c38",
+      "code": "M1-6.1",
+      "label": "Square roots of both sides"
+    },
+    {
+      "objectiveId": "f824d735-5a41-4720-a7cd-8f90d7a3c1bc",
+      "code": "M1-6.1",
+      "label": "Surds"
+    },
+    {
+      "objectiveId": "aff11a62-eeaf-4762-a7d4-79bb2bec5b70",
+      "code": "M1-6.1",
+      "label": "Solving quadratic equations"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 10,
+    "pageRef": "p105",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

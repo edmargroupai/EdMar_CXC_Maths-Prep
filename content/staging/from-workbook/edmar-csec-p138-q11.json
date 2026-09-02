@@ -1,0 +1,221 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p138-q11",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The demand and supply functions for a product are D = 90 − 5p and S = 20 + 2p, and the graph shows D and S against price p. (a) State the equilibrium price. (b) State the equilibrium quantity. (c) Explain what the point of intersection represents. (d) Use the graph to estimate D and S when p = 6."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Equilibrium is simply where the two lines cross — the price at which the quantity demanded equals the quantity supplied."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p138_q11.jpg",
+      "altText": "Source visual for edmar-csec-p138-q11 from workbook page 138."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Read where the demand and supply lines cross.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The lines meet above p = 10, level with a quantity of 40"
+        },
+        {
+          "type": "text",
+          "value": "Result: Crossing point (10, 40)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Confirm by setting D = S.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "90 − 5p = 20 + 2p → 70 = 7p → p = 10"
+        },
+        {
+          "type": "text",
+          "value": "Result: Equilibrium price p = $10"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Find the equilibrium quantity.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "D = 90 − 5(10) = 40, and S = 20 + 2(10) = 40"
+        },
+        {
+          "type": "text",
+          "value": "Result: Equilibrium quantity 40"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Explain what the intersection means.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "At that price the quantity buyers demand exactly equals the quantity producers supply, so there is neither shortage nor surplus"
+        },
+        {
+          "type": "text",
+          "value": "Result: Market equilibrium"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Substitute p = 6 into each function.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "D = 90 − 5(6) = 60;  S = 20 + 2(6) = 32"
+        },
+        {
+          "type": "text",
+          "value": "Result: D = 60, S = 32"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Read the crossing point for the equilibrium price and quantity (confirming by setting D = S), explain the meaning of that point, then substitute p = 6 into both functions."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) Equilibrium price $10  (b) Equilibrium quantity 40 units  (c) It is the price at which the quantity demanded equals the quantity supplied — the market is in balance, with no shortage or surplus  (d) When p = 6, D = 60 and S = 32."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Demand falls as price rises and supply rises as price rises, so the two lines slope in opposite directions and must cross exactly once. That single crossing is the only price at which the two quantities agree, which is what equilibrium means. Away from it the graph shows the imbalance directly: at p = 6 demand of 60 exceeds supply of 32, so there is a shortage of 28 units."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "giving_the_equilibrium_as_the_pair_10_40",
+      "wrongValue": "incorrect_1",
+      "misconception": "Giving the equilibrium as the pair (10, 40) without saying which number is the price and which the quantity.",
+      "correctiveNote": "Avoid this: Giving the equilibrium as the pair (10, 40) without saying which number is the price and which the quantity."
+    },
+    {
+      "key": "reading_the_vertical_axis_as_price_here_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Reading the vertical axis as price — here price is on the horizontal axis.",
+      "correctiveNote": "Avoid this: Reading the vertical axis as price — here price is on the horizontal axis."
+    },
+    {
+      "key": "answering_c_with_the_lines_cross_instead",
+      "wrongValue": "incorrect_3",
+      "misconception": "Answering (c) with 'the lines cross' instead of what that means for the market.",
+      "correctiveNote": "Avoid this: Answering (c) with 'the lines cross' instead of what that means for the market."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "In an applied graph question, always name the units in your answer — dollars for price, units for quantity — since the interpretation carries the mark."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Equilibriumprice$10",
+    "displayValue": "Equilibrium price $10",
+    "acceptedForms": [
+      "Equilibrium price $10",
+      "Equilibriumprice$10"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "For D = 60 − 3p and S = 10 + 2p, find the equilibrium price."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "currency",
+      "canonicalValue": "60.00",
+      "displayValue": "$60",
+      "acceptedForms": [
+        "$60",
+        "$60",
+        "60"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.005
+      },
+      "precision": {
+        "kind": "decimal_places",
+        "value": 2,
+        "required": true
+      },
+      "normalisation": "currency_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "6d15e71f-9244-4763-acf8-3ebc288331f8",
+      "code": "M1-5.1",
+      "label": "Linear functions in context"
+    },
+    {
+      "objectiveId": "3a391f8b-81ae-44ab-a4bf-8761d31465ac",
+      "code": "M1-5.1",
+      "label": "Graphical solution of simultaneous equations"
+    },
+    {
+      "objectiveId": "aa142f87-df3c-4862-a447-1a83084f5be2",
+      "code": "M1-5.1",
+      "label": "Interpreting an intersection"
+    },
+    {
+      "objectiveId": "db9eb704-009f-4a97-ac95-0b1985ca1734",
+      "code": "M1-5.1",
+      "label": "Substitution into a formula"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 11,
+    "pageRef": "p138",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

@@ -1,0 +1,261 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p035-q03",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 6,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A silver box with no lid has external measurements 30 cm long, 20 cm wide and 15 cm deep, and the sides and bottom are 1.5 cm thick. Calculate the volume of the box using the external measurements, then complete: (i) the internal length is 30 cm - 2 x 1.5 cm = ..., (ii) the internal width is ..., (iii) the internal depth is ..."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The box has two walls across its length and two across its width, but only one thickness at the bottom because there is no lid."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p035_q03.jpg",
+      "altText": "Source visual for edmar-csec-p035-q03 from workbook page 35."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply the external dimensions.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "30 x 20 x 15"
+        },
+        {
+          "type": "text",
+          "value": "Result: 9 000 cm³"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Subtract a wall thickness from each end of the length.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "30 - 2 x 1.5 = 30 - 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: internal length = 27 cm"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Do the same for the width.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "20 - 2 x 1.5 = 20 - 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: internal width = 17 cm"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Subtract only the base thickness from the depth, since there is no lid.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "15 - 1.5"
+        },
+        {
+          "type": "text",
+          "value": "Result: internal depth = 13.5 cm"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Multiply the three external dimensions for the external volume, then subtract two thicknesses from the length and the width but only one from the depth."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "External volume = 9 000 cm³.  (i) internal length = 27 cm  (ii) internal width = 17 cm  (iii) internal depth = 13.5 cm"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Each dimension loses one thickness for every wall it passes through. Length and width each run between two opposite walls, so they lose 2 x 1.5 cm, while the depth passes through the base only, because the top is open. Getting this count right is what separates the internal volume from the external one."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "subtracting_2_x_1_5_cm_from_the_depth_as",
+      "wrongValue": "incorrect_1",
+      "misconception": "Subtracting 2 x 1.5 cm from the depth as well and getting 12 cm.",
+      "correctiveNote": "Avoid this: Subtracting 2 x 1.5 cm from the depth as well and getting 12 cm."
+    },
+    {
+      "key": "subtracting_only_one_thickness_from_the_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Subtracting only one thickness from the length and width.",
+      "correctiveNote": "Avoid this: Subtracting only one thickness from the length and width."
+    },
+    {
+      "key": "subtracting_the_thickness_from_the_volum",
+      "wrongValue": "incorrect_3",
+      "misconception": "Subtracting the thickness from the volume instead of from each dimension.",
+      "correctiveNote": "Avoid this: Subtracting the thickness from the volume instead of from each dimension."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Sketch a cross section and count the walls each dimension crosses. Open-topped containers almost always lose one thickness in the depth and two in the other directions."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "internallength=27cm",
+    "displayValue": "internal length = 27 cm",
+    "acceptedForms": [
+      "internal length = 27 cm",
+      "internallength=27cm"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "An open box has external dimensions 20 cm by 10 cm by 8 cm with walls 1 cm thick. Find its internal depth."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "7",
+      "displayValue": "7",
+      "acceptedForms": [
+        "7",
+        "7"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "a268d3e4-9de0-4fda-a50e-4ccc46585410",
+      "code": "M1-1.1",
+      "label": "Volume of a cuboid"
+    },
+    {
+      "objectiveId": "c6a55167-5234-4a86-aa6f-9538715ac355",
+      "code": "M1-1.1",
+      "label": "Internal and external dimensions"
+    },
+    {
+      "objectiveId": "5f00fd09-9e22-4b3e-ab86-59cc1d8d5de3",
+      "code": "M1-1.1",
+      "label": "Effect of wall thickness"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 3,
+    "pageRef": "p35",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a.i",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.i): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "internallength=27cm",
+        "displayValue": "internal length = 27 cm",
+        "acceptedForms": [
+          "internal length = 27 cm",
+          "internallength=27cm"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.ii",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.ii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "internalwidth=17cm",
+        "displayValue": "internal width = 17 cm",
+        "acceptedForms": [
+          "internal width = 17 cm",
+          "internalwidth=17cm"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.iii",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.iii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "internaldepth=13.5cm",
+        "displayValue": "internal depth = 13.5 cm",
+        "acceptedForms": [
+          "internal depth = 13.5 cm",
+          "internaldepth=13.5cm"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p066-q09",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Factorise completely: −8p − 12."
+    },
+    {
+      "type": "text",
+      "value": "Think first: When both terms are negative, taking out a negative factor keeps the bracket tidy."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p066_q09.jpg",
+      "altText": "Source visual for edmar-csec-p066-q09 from workbook page 66."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Find the HCF of the coefficients.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Factors of 8: 1, 2, 4, 8. Factors of 12: 1, 2, 3, 4, 6, 12"
+        },
+        {
+          "type": "text",
+          "value": "Result: HCF = 4"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Note both terms are negative.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Taking out −4 makes both bracket terms positive"
+        },
+        {
+          "type": "text",
+          "value": "Result: Use −4"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Divide each term by −4.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "−8p ÷ −4 = 2p and −12 ÷ −4 = 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2p and 3"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Write the factorised form.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: −4(2p + 3)"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Check by expanding.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "−4 × 2p = −8p and −4 × 3 = −12"
+        },
+        {
+          "type": "text",
+          "value": "Result: −8p − 12"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Find the HCF of 8 and 12, then take it out as a negative because both terms are negative."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "−8p − 12 = −4(2p + 3)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A negative can be treated as part of the common factor. Dividing a negative term by a negative factor gives a positive result, so both signs inside the bracket flip. The factorisation −4(2p + 3) is preferred because the bracket is left in its simplest positive form, and expanding it returns the original expression exactly."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_4_2p_3_and_losing_the_minus_sign",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing 4(2p + 3) and losing the minus sign.",
+      "correctiveNote": "Avoid this: Writing 4(2p + 3) and losing the minus sign."
+    },
+    {
+      "key": "writing_4_2p_3_flipping_only_one_sign",
+      "wrongValue": "incorrect_2",
+      "misconception": "Writing −4(2p − 3), flipping only one sign.",
+      "correctiveNote": "Avoid this: Writing −4(2p − 3), flipping only one sign."
+    },
+    {
+      "key": "taking_out_only_2_and_stopping",
+      "wrongValue": "incorrect_3",
+      "misconception": "Taking out only 2 and stopping.",
+      "correctiveNote": "Avoid this: Taking out only 2 and stopping."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "If the leading term is negative, take the minus out with the HCF; examiners expect the bracket to start with a positive term."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "−8p−12=−4(2p+3)",
+    "displayValue": "−8p − 12 = −4(2p + 3)",
+    "acceptedForms": [
+      "−8p − 12 = −4(2p + 3)",
+      "−8p−12=−4(2p+3)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Factorise completely: −6y − 15."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "−3(2y+5)",
+      "displayValue": "−3(2y + 5)",
+      "acceptedForms": [
+        "−3(2y + 5)",
+        "−3(2y+5)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "ac544fd7-ac58-4ec9-a0cc-528a9a2d0e57",
+      "code": "M1-4.1",
+      "label": "Factorising"
+    },
+    {
+      "objectiveId": "ec757af6-3b7b-4178-ac7e-6ac412de8906",
+      "code": "M1-4.1",
+      "label": "Highest common factor"
+    },
+    {
+      "objectiveId": "134e3f98-1842-44e2-a6d0-51349a3ad6ec",
+      "code": "M1-4.1",
+      "label": "Factorising out a negative"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 9,
+    "pageRef": "p66",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

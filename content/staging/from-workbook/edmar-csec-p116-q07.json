@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p116-q07",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The distance d varies directly as the time t. The table gives t = 3, 5, 9 with corresponding d = 18, an unknown value, and 54. (a) Find the constant of variation. (b) Find the value of d when t = 5."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Two complete columns are given, so the constant can be found and then double-checked before you use it."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p116_q07.jpg",
+      "altText": "Source visual for edmar-csec-p116-q07 from workbook page 116."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write the variation statement as an equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "d varies directly as t"
+        },
+        {
+          "type": "text",
+          "value": "Result: d = kt"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Use t = 3, d = 18 to find k.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "18 = 3k"
+        },
+        {
+          "type": "text",
+          "value": "Result: k = 6"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Verify with the other complete column.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "t = 9 → d = 6 × 9 = 54, which matches"
+        },
+        {
+          "type": "text",
+          "value": "Result: k = 6 confirmed"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Substitute t = 5 into d = 6t.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "d = 6 × 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: d = 30"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Write d = kt, use the pair t = 3, d = 18 to find k, verify with t = 9, d = 54, then substitute t = 5."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) k = 6  (b) d = 30"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The constant of variation here is a speed — the distance covered in each unit of time. Because it is constant, distance and time keep the same ratio throughout the table, so the missing entry is forced rather than estimated."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "averaging_the_two_given_d_values_instead",
+      "wrongValue": "incorrect_1",
+      "misconception": "Averaging the two given d values instead of using the constant ratio.",
+      "correctiveNote": "Avoid this: Averaging the two given d values instead of using the constant ratio."
+    },
+    {
+      "key": "interpolating_halfway_between_18_and_54_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Interpolating halfway between 18 and 54 because 5 is between 3 and 9 — that only works by accident here.",
+      "correctiveNote": "Avoid this: Interpolating halfway between 18 and 54 because 5 is between 3 and 9 — that only works by accident here."
+    },
+    {
+      "key": "giving_the_constant_as_1_6_by_dividing_t",
+      "wrongValue": "incorrect_3",
+      "misconception": "Giving the constant as 1/6 by dividing t by d.",
+      "correctiveNote": "Avoid this: Giving the constant as 1/6 by dividing t by d."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "State the units of the constant of variation when the context has them — it shows you understand what k represents."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "k=6",
+    "displayValue": "k = 6",
+    "acceptedForms": [
+      "k = 6",
+      "k=6"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "d varies directly as t and d = 24 when t = 4. Find d when t = 7."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=42",
+      "displayValue": "= 42",
+      "acceptedForms": [
+        "= 42",
+        "=42"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "04481722-183b-4b45-aba9-3786d78a325e",
+      "code": "M1-1.1",
+      "label": "Direct variation"
+    },
+    {
+      "objectiveId": "c69a8b88-5f07-4d73-af51-e7f989d12573",
+      "code": "M1-1.1",
+      "label": "Constant of variation"
+    },
+    {
+      "objectiveId": "0d177399-d439-447e-a56e-d4ed48dad62c",
+      "code": "M1-1.1",
+      "label": "Reading values from a table"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 7,
+    "pageRef": "p116",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

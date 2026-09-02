@@ -1,0 +1,311 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p122-q06",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 8,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A graph shows a straight line L passing through A(−2, −1), B(0, 3) and C(3, 9). (a) Calculate the gradient of L using TWO labelled points. (b) State the y-intercept. (c) Determine the equation of L. (d) State the x-intercept."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Read the coordinates of the labelled points from the grid first — everything else follows from them."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p122_q06.jpg",
+      "altText": "Source visual for edmar-csec-p122-q06 from workbook page 122."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Read the coordinates of the labelled points from the graph.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "A on the x-axis side at (−2, −1), B on the y-axis at (0, 3), C at (3, 9)"
+        },
+        {
+          "type": "text",
+          "value": "Result: A(−2, −1), B(0, 3), C(3, 9)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Use B and C in the gradient formula.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "m = (9 − 3)/(3 − 0) = 6/3"
+        },
+        {
+          "type": "text",
+          "value": "Result: m = 2"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Confirm with A and B.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "m = (3 − (−1))/(0 − (−2)) = 4/2 = 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: Gradient confirmed as 2"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "State the y-intercept — where the line crosses the y-axis.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The line passes through B(0, 3)"
+        },
+        {
+          "type": "text",
+          "value": "Result: y-intercept = 3, i.e. (0, 3)"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Write the equation using y = mx + c.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "m = 2 and c = 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 2x + 3"
+        }
+      ]
+    },
+    {
+      "stepNo": 6,
+      "instruction": "Find the x-intercept by setting y = 0.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "0 = 2x + 3, so 2x = −3"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = −1.5, i.e. (−1.5, 0)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Read A, B and C from the graph, use two of them in the gradient formula, take c from where the line crosses the y-axis, then set y = 0 to find the x-intercept."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) Gradient = 2  (b) y-intercept = 3, at (0, 3)  (c) y = 2x + 3  (d) x-intercept = −1.5, at (−1.5, 0)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A straight line has the same gradient between any two of its points, so choosing A and B or B and C must give the same value — that is a built-in check. In y = mx + c, m is that gradient and c is the y-value where the line meets the x = 0 axis, so once both are read off the equation is complete. The x-intercept is simply the value of x that makes y zero."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "reading_coordinates_off_the_axes_careles",
+      "wrongValue": "incorrect_1",
+      "misconception": "Reading coordinates off the axes carelessly, especially negative values.",
+      "correctiveNote": "Avoid this: Reading coordinates off the axes carelessly, especially negative values."
+    },
+    {
+      "key": "swapping_the_intercepts_and_giving_3_as_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Swapping the intercepts and giving 3 as the x-intercept.",
+      "correctiveNote": "Avoid this: Swapping the intercepts and giving 3 as the x-intercept."
+    },
+    {
+      "key": "choosing_two_points_that_are_not_both_on",
+      "wrongValue": "incorrect_3",
+      "misconception": "Choosing two points that are not both on the line, such as a grid crossing near the line.",
+      "correctiveNote": "Avoid this: Choosing two points that are not both on the line, such as a grid crossing near the line."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Pick the two labelled points furthest apart when finding a gradient from a graph — reading errors matter less over a long run."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Gradient=2",
+    "displayValue": "Gradient = 2",
+    "acceptedForms": [
+      "Gradient = 2",
+      "Gradient=2"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A line has gradient 4 and y-intercept −8. State its x-intercept."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=2",
+      "displayValue": "= 2",
+      "acceptedForms": [
+        "= 2",
+        "=2"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-3.2"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "8e09e195-b4e7-4ac6-a47b-091f462c0fce",
+      "code": "M1-3.2",
+      "label": "Gradient from a graph"
+    },
+    {
+      "objectiveId": "323ef35b-fd78-4c7e-a00e-99d179cfb8e0",
+      "code": "M1-3.2",
+      "label": "y-intercept"
+    },
+    {
+      "objectiveId": "95203547-6ed8-430f-a3e0-2668c07ac3cd",
+      "code": "M1-3.2",
+      "label": "Equation of a straight line y = mx + c"
+    },
+    {
+      "objectiveId": "7a9b99dd-1452-475b-a87e-59b8b56a4208",
+      "code": "M1-3.2",
+      "label": "x-intercept"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 6,
+    "pageRef": "p122",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Gradient=2",
+        "displayValue": "Gradient = 2",
+        "acceptedForms": [
+          "Gradient = 2",
+          "Gradient=2"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "y-intercept=3,at(0,3)",
+        "displayValue": "y-intercept = 3, at (0, 3)",
+        "acceptedForms": [
+          "y-intercept = 3, at (0, 3)",
+          "y-intercept=3,at(0,3)"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "c",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (c): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "y=2",
+        "displayValue": "y = 2",
+        "acceptedForms": [
+          "y = 2",
+          "y=2"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "d",
+      "sequence": 4,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (d): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "x-intercept=−1.5,at(−1.5,0)",
+        "displayValue": "x-intercept = −1.5, at (−1.5, 0)",
+        "acceptedForms": [
+          "x-intercept = −1.5, at (−1.5, 0)",
+          "x-intercept=−1.5,at(−1.5,0)"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

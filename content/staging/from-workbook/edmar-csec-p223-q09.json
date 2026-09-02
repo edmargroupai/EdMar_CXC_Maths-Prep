@@ -1,0 +1,279 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p223-q09",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 6,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Each of 75 girls named her favourite sport. The bar chart shows only two bars so far: track = 12 girls and cricket = 17 girls. (b) How many more girls chose cricket than track? (c) Eleven girls chose tennis; for the remaining girls the number choosing swimming to the number choosing football is in the ratio 2 : 3 — use this to complete the bar chart. (d) Determine the modal sport."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Read the two given bars off the chart, then treat the rest as a sharing-in-a-ratio problem on whatever girls are left."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p223_q09.jpg",
+      "altText": "Source visual for edmar-csec-p223-q09 from workbook page 223."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Read the two bars and subtract.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Cricket 17, track 12; 17 − 12"
+        },
+        {
+          "type": "text",
+          "value": "Result: 5 more girls chose cricket"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Find how many girls are left for swimming and football.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "75 − 12 (track) − 17 (cricket) − 11 (tennis)"
+        },
+        {
+          "type": "text",
+          "value": "Result: 35 girls"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Share the 35 girls in the ratio 2 : 3.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2 + 3 = 5 parts, so one part is 35 ÷ 5 = 7"
+        },
+        {
+          "type": "text",
+          "value": "Result: Swimming = 2 × 7 = 14, Football = 3 × 7 = 21"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Draw the three missing bars and compare all five frequencies.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Swimming 14, tennis 11, track 12, cricket 17, football 21 — total 75"
+        },
+        {
+          "type": "text",
+          "value": "Result: Football has the highest bar"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Take track = 12 and cricket = 17 from the chart, subtract track, cricket and tennis from 75 to find the girls left, share that remainder in the ratio 2 : 3, then compare all five totals for the mode."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(b) 5 more girls chose cricket than track.  (c) Remaining girls = 35, shared 2 : 3 gives swimming = 14 and football = 21, so bars of height 14 (swimming), 11 (tennis) and 21 (football) complete the chart.  (d) The modal sport is football (21 girls)."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The five bars must account for all 75 girls, so once three of the groups are known the rest is a fixed remainder. Sharing that remainder in the ratio 2 : 3 means splitting it into 5 equal parts and giving two parts to swimming and three to football. The mode is simply the category that occurs most often — on a bar chart, the tallest bar."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "sharing_all_75_girls_in_the_ratio_2_3_in",
+      "wrongValue": "incorrect_1",
+      "misconception": "Sharing all 75 girls in the ratio 2 : 3 instead of only the 35 who are left.",
+      "correctiveNote": "Avoid this: Sharing all 75 girls in the ratio 2 : 3 instead of only the 35 who are left."
+    },
+    {
+      "key": "forgetting_to_subtract_the_11_tennis_gir",
+      "wrongValue": "incorrect_2",
+      "misconception": "Forgetting to subtract the 11 tennis girls before sharing.",
+      "correctiveNote": "Avoid this: Forgetting to subtract the 11 tennis girls before sharing."
+    },
+    {
+      "key": "naming_the_modal_value_as_21_rather_than",
+      "wrongValue": "incorrect_3",
+      "misconception": "Naming the modal value as 21 rather than the sport, football.",
+      "correctiveNote": "Avoid this: Naming the modal value as 21 rather than the sport, football."
+    },
+    {
+      "key": "assuming_the_mode_must_be_one_of_the_bar",
+      "wrongValue": "incorrect_4",
+      "misconception": "Assuming the mode must be one of the bars already drawn.",
+      "correctiveNote": "Avoid this: Assuming the mode must be one of the bars already drawn."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "After filling in missing frequencies, add them all up and check against the total given in the stem — it catches ratio errors instantly."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "5",
+    "displayValue": "5",
+    "acceptedForms": [
+      "5",
+      "5"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Of 40 pupils, 10 chose art. The rest chose music or drama in the ratio 1 : 2. How many chose drama?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "30",
+      "displayValue": "30",
+      "acceptedForms": [
+        "30",
+        "30"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M3-2.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "4b4b533c-9776-438f-a348-9de9f5a36803",
+      "code": "M3-2.1",
+      "label": "Reading a bar chart"
+    },
+    {
+      "objectiveId": "e2728715-0ec3-408c-a3e1-0ce7f5026863",
+      "code": "M3-2.1",
+      "label": "Sharing a quantity in a given ratio"
+    },
+    {
+      "objectiveId": "6540b5f8-2fdd-4a6d-a0f4-d6efc134277d",
+      "code": "M3-2.1",
+      "label": "Mode of a data set"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 9,
+    "pageRef": "p223",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "b",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "numeric_exact",
+        "canonicalValue": "5",
+        "displayValue": "5",
+        "acceptedForms": [
+          "5",
+          "5"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0
+        },
+        "normalisation": "numeric_default"
+      }
+    },
+    {
+      "partKey": "c",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (c): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Remaininggirls=35,share",
+        "displayValue": "Remaining girls = 35, share",
+        "acceptedForms": [
+          "Remaining girls = 35, share",
+          "Remaininggirls=35,share"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "d",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (d): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "numeric_exact",
+        "canonicalValue": "2",
+        "displayValue": "2",
+        "acceptedForms": [
+          "2",
+          "2"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0
+        },
+        "normalisation": "numeric_default"
+      }
+    }
+  ]
+}

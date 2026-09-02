@@ -1,0 +1,224 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p147-q10",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Two functions are defined by g(x) = 4x + 3 and f(x) = (2x + 7)/(x + 1). (i) State the value of x for which f(x) is undefined. (ii) Calculate the value of gf(5). (iii) Find f⁻¹(x)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: A fraction is undefined only where its denominator is zero — that single idea answers part (i) at once."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p147_q10.jpg",
+      "altText": "Source visual for edmar-csec-p147-q10 from workbook page 147."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Find where f is undefined.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The denominator x + 1 = 0"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = -1"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Evaluate f(5).",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "f(5) = (2(5) + 7)/(5 + 1) = 17/6"
+        },
+        {
+          "type": "text",
+          "value": "Result: f(5) = 17/6"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Apply g to that value.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "g(17/6) = 4(17/6) + 3 = 34/3 + 9/3"
+        },
+        {
+          "type": "text",
+          "value": "Result: gf(5) = 43/3"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Set y = f(x) and clear the fraction.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "y(x + 1) = 2x + 7 → yx + y = 2x + 7"
+        },
+        {
+          "type": "text",
+          "value": "Result: yx − 2x = 7 − y"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Factor out x and divide.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x(y − 2) = 7 − y"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = (7 − y)/(y − 2)"
+        }
+      ]
+    },
+    {
+      "stepNo": 6,
+      "instruction": "Write the inverse in terms of x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Replace y by x"
+        },
+        {
+          "type": "text",
+          "value": "Result: f⁻¹(x) = (7 − x)/(x − 2), x ≠ 2"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Set the denominator of f to zero for part (i), evaluate f(5) and apply g for part (ii), then rearrange y = f(x) to make x the subject for part (iii)."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) f(x) is undefined at x = -1  (ii) gf(5) = 43/3 (≈ 14.3)  (iii) f⁻¹(x) = (7 − x)/(x − 2), x ≠ 2."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Division by zero has no meaning, so a rational function has a gap in its domain wherever the denominator vanishes. That excluded input reappears as an excluded output of the inverse, and the inverse gains its own exclusion where its denominator is zero. Finding the inverse is always the same routine: clear the fraction, gather the x terms, factor and divide."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "setting_the_numerator_to_zero_for_part_i",
+      "wrongValue": "incorrect_1",
+      "misconception": "Setting the numerator to zero for part (i) — that gives a root, not an undefined point.",
+      "correctiveNote": "Avoid this: Setting the numerator to zero for part (i) — that gives a root, not an undefined point."
+    },
+    {
+      "key": "rounding_17_6_to_2_8_before_applying_g_w",
+      "wrongValue": "incorrect_2",
+      "misconception": "Rounding 17/6 to 2.8 before applying g, which loses exactness.",
+      "correctiveNote": "Avoid this: Rounding 17/6 to 2.8 before applying g, which loses exactness."
+    },
+    {
+      "key": "forgetting_to_change_the_sign_of_the_who",
+      "wrongValue": "incorrect_3",
+      "misconception": "Forgetting to change the sign of the whole numerator when moving y across.",
+      "correctiveNote": "Avoid this: Forgetting to change the sign of the whole numerator when moving y across."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Leave awkward values as fractions to the final line; converting to decimals early is how exact answers become 'nearly right'."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "f(x)isundefinedatx=-1",
+    "displayValue": "f(x) is undefined at x = -1",
+    "acceptedForms": [
+      "f(x) is undefined at x = -1",
+      "f(x)isundefinedatx=-1"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "For what value of x is (3x − 1)/(2x − 6) undefined?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "2",
+      "displayValue": "2",
+      "acceptedForms": [
+        "2",
+        "2"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "4f5194e2-9bf1-4d0f-a77d-4b767d025d7e",
+      "code": "M1-5.1",
+      "label": "Domain of a rational function"
+    },
+    {
+      "objectiveId": "dd024404-bbfd-4fa8-ad55-1c0bc108d9a3",
+      "code": "M1-5.1",
+      "label": "Composite functions"
+    },
+    {
+      "objectiveId": "7a098cfc-4d63-4e46-abd1-7f98b24f4856",
+      "code": "M1-5.1",
+      "label": "Inverse of a rational function"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 10,
+    "pageRef": "p147",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

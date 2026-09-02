@@ -1,0 +1,317 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p284-q07",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 5,
+  "status": "draft",
+  "marks": 8,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "O is the origin, OX = u and OY = v. OX and OY are extended so that X and Y are the midpoints of OA and OB respectively. (i) Express BX in terms of u and v. (ii) YA and BX intersect at M with BM = 2MX. (a) Express BM in terms of u and v. (b) Use a vector method to establish the ratio in which M divides YA."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Because X and Y are midpoints, OA = 2u and OB = 2v — write those down first, and every other vector follows."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p284_q07.jpg",
+      "altText": "Source visual for edmar-csec-p284-q07 from workbook page 284."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Use the midpoint information to write OA and OB.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "X is the midpoint of OA, so OA = 2 OX; Y is the midpoint of OB, so OB = 2 OY"
+        },
+        {
+          "type": "text",
+          "value": "Result: OA = 2u, OB = 2v"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Find BX by subtracting the position vectors of B and X.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "BX = OX − OB = u − 2v"
+        },
+        {
+          "type": "text",
+          "value": "Result: BX = u − 2v"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Convert BM = 2MX into a fraction of BX. It means BM : MX = 2 : 1, so BM is two-thirds of BX.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "BM = (2/3)(u − 2v)"
+        },
+        {
+          "type": "text",
+          "value": "Result: BM = (2/3)u − (4/3)v"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Add BM to OB to reach M.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "OM = 2v + (2/3)u − (4/3)v"
+        },
+        {
+          "type": "text",
+          "value": "Result: OM = (2/3)u + (2/3)v"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Find YM and YA and compare them.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "YM = OM − OY = (2/3)u − (1/3)v; YA = OA − OY = 2u − v; so YM = (1/3)(2u − v)"
+        },
+        {
+          "type": "text",
+          "value": "Result: YM = (1/3)YA"
+        }
+      ]
+    },
+    {
+      "stepNo": 6,
+      "instruction": "Read off the division of YA. Since YM is one third of the whole of YA, the remaining part MA is two thirds.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "YM : YA = 1 : 3, so YM : MA = 1 : 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: M divides YA with YM : YA = 1 : 3, i.e. YM : MA = 1 : 2"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Use OA = 2u and OB = 2v, build BX by subtraction, take two-thirds of it for BM, add to OB to get the position vector of M, then compare YM with YA."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) BX = u − 2v  (ii)(a) BM = (2/3)(u − 2v) = (2/3)u − (4/3)v  (b) OM = (2/3)u + (2/3)v, so YM = (2/3)u − (1/3)v = (1/3)(2u − v) = (1/3)YA. M therefore lies on YA with YM equal to one third of the whole line YA, that is YM : YA = 1 : 3 and YM : MA = 1 : 2."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The midpoint conditions double u and v to reach A and B, so every point in the figure can be written with just those two vectors. Splitting BX in the ratio 2 : 1 fixes M as a single point, and its position vector then lets you test whether M lies on YA: because YM comes out as a pure scalar multiple of YA, M is on that line and the scalar is exactly the fraction of YA covered. Note carefully whether a ratio compares a part to the whole (YM : YA) or a part to the remaining part (YM : MA) — they are different statements of the same fact."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "taking_bm_1_2_bx_instead_of_2_3_bx_from_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Taking BM = (1/2)BX instead of (2/3)BX from BM = 2MX.",
+      "correctiveNote": "Avoid this: Taking BM = (1/2)BX instead of (2/3)BX from BM = 2MX."
+    },
+    {
+      "key": "writing_bx_2v_u_by_reversing_the_directi",
+      "wrongValue": "incorrect_2",
+      "misconception": "Writing BX = 2v − u by reversing the direction.",
+      "correctiveNote": "Avoid this: Writing BX = 2v − u by reversing the direction."
+    },
+    {
+      "key": "confusing_the_part_to_whole_ratio_ym_ya_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Confusing the part-to-whole ratio YM : YA = 1 : 3 with the part-to-part ratio YM : MA = 1 : 2.",
+      "correctiveNote": "Avoid this: Confusing the part-to-whole ratio YM : YA = 1 : 3 with the part-to-part ratio YM : MA = 1 : 2."
+    },
+    {
+      "key": "forgetting_that_x_and_y_are_midpoints_an",
+      "wrongValue": "incorrect_4",
+      "misconception": "Forgetting that X and Y are midpoints and using OA = u, OB = v.",
+      "correctiveNote": "Avoid this: Forgetting that X and Y are midpoints and using OA = u, OB = v."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "After finding a point's position vector, always test collinearity by writing one vector as a multiple of another — the multiple itself tells you the ratio."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "B",
+    "displayValue": "B",
+    "acceptedForms": [
+      "B",
+      "B"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "If BM = 3MX, what fraction of BX is BM?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "BM:MX=3:1,soBM=(3/4)BX",
+      "displayValue": "BM : MX = 3 : 1, so BM = (3/4)BX",
+      "acceptedForms": [
+        "BM : MX = 3 : 1, so BM = (3/4)BX",
+        "BM:MX=3:1,soBM=(3/4)BX"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "34c64374-b2e0-44b3-a6de-c9108971129a",
+      "code": "M2-5.1",
+      "label": "Position vectors"
+    },
+    {
+      "objectiveId": "df69e90a-ebb1-4b23-a393-69494b50c43e",
+      "code": "M2-5.1",
+      "label": "Midpoints and scalar multiples"
+    },
+    {
+      "objectiveId": "ecc91e7d-a689-482d-ad6b-14a38abb5d88",
+      "code": "M2-5.1",
+      "label": "Dividing a line in a given ratio"
+    },
+    {
+      "objectiveId": "82e85ee5-cdb6-49ea-a3df-d69791276a30",
+      "code": "M2-5.1",
+      "label": "Proving points lie on a line using parallel vectors"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 7,
+    "pageRef": "p284",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a.i",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.i): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "B",
+        "displayValue": "B",
+        "acceptedForms": [
+          "B",
+          "B"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.ii",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.ii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "=u−2",
+        "displayValue": "= u − 2",
+        "acceptedForms": [
+          "= u − 2",
+          "=u−2"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "BM=(2/3)(u−2",
+        "displayValue": "BM = (2/3)(u − 2",
+        "acceptedForms": [
+          "BM = (2/3)(u − 2",
+          "BM=(2/3)(u−2"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 4,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "OM=(2/3)u+(2/3)v,soYM=(2/3)u−(1/3)",
+        "displayValue": "OM = (2/3)u + (2/3)v, so YM = (2/3)u − (1/3)",
+        "acceptedForms": [
+          "OM = (2/3)u + (2/3)v, so YM = (2/3)u − (1/3)",
+          "OM=(2/3)u+(2/3)v,soYM=(2/3)u−(1/3)"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

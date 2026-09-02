@@ -1,0 +1,242 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p258-q17",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 4,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "On a square grid, triangle X'Y'Z' has vertices X'(−3, 7), Y'(−1, 7) and Z'(−3, 3), and triangle X\"Y\"Z\" has vertices X\"(7, 7), Y\"(5, 7) and Z\"(7, 3). (i) Triangle X'Y'Z' is the image of triangle XYZ after an enlargement of scale factor 2 with centre (5, 1) — draw the object triangle XYZ on the grid. (ii) Triangle X'Y'Z' is mapped onto X\"Y\"Z\" by a reflection in the line P; state the equation of the mirror line P."
+    },
+    {
+      "type": "text",
+      "value": "Think first: To undo an enlargement of scale factor 2, halve each point's distance from the centre instead of doubling it."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p258_q17.jpg",
+      "altText": "Source visual for edmar-csec-p258-q17 from workbook page 258."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write the inverse of the enlargement about (5, 1) with scale factor 2.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "If image = C + 2(object − C), then object = C + (image − C)/2"
+        },
+        {
+          "type": "text",
+          "value": "Result: object = (5 + (x − 5)/2, 1 + (y − 1)/2)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Apply it to each vertex of X'Y'Z'.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "X'(−3, 7) → (5 − 4, 1 + 3) = (1, 4); Y'(−1, 7) → (5 − 3, 1 + 3) = (2, 4); Z'(−3, 3) → (5 − 4, 1 + 1) = (1, 2)"
+        },
+        {
+          "type": "text",
+          "value": "Result: X(1, 4), Y(2, 4), Z(1, 2)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Check the enlargement forwards on one vertex.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "From (5, 1) to X(1, 4) is (−4, 3); doubling gives (−8, 6), landing on (−3, 7) = X' ✓"
+        },
+        {
+          "type": "text",
+          "value": "Result: Object triangle confirmed"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Find the mirror line by taking the midpoint of a point and its image.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "X'(−3, 7) and X\"(7, 7): midpoint x = (−3 + 7)/2 = 2; Y'(−1, 7) and Y\"(5, 7): midpoint x = 2; y-coordinates are unchanged, so the mirror is vertical"
+        },
+        {
+          "type": "text",
+          "value": "Result: The line x = 2"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Apply the inverse rule object = centre + (image − centre) ÷ 2 to each vertex of X'Y'Z', then find the mirror line as the vertical line midway between corresponding points of the two triangles."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) Triangle XYZ has vertices X(1, 4), Y(2, 4) and Z(1, 2) — half the size of X'Y'Z' and drawn between it and the centre (5, 1).  (ii) The mirror line P is x = 2."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "An enlargement of scale factor 2 puts every image point twice as far from the centre as its object, so reversing it means halving that displacement — which is exactly an enlargement of scale factor 1/2 about the same centre. A reflection leaves every point at the same perpendicular distance from the mirror on the opposite side, so the mirror passes through the midpoint of each point and its image; because only the x-coordinates change here, that mirror is a vertical line."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "halving_the_coordinates_themselves_rathe",
+      "wrongValue": "incorrect_1",
+      "misconception": "Halving the coordinates themselves rather than the distances from the centre (5, 1).",
+      "correctiveNote": "Avoid this: Halving the coordinates themselves rather than the distances from the centre (5, 1)."
+    },
+    {
+      "key": "writing_the_mirror_line_as_y_2_instead_o",
+      "wrongValue": "incorrect_2",
+      "misconception": "Writing the mirror line as y = 2 instead of x = 2.",
+      "correctiveNote": "Avoid this: Writing the mirror line as y = 2 instead of x = 2."
+    },
+    {
+      "key": "giving_the_mirror_as_halfway_between_the",
+      "wrongValue": "incorrect_3",
+      "misconception": "Giving the mirror as 'halfway between the triangles' with no equation.",
+      "correctiveNote": "Avoid this: Giving the mirror as 'halfway between the triangles' with no equation."
+    },
+    {
+      "key": "enlarging_forwards_by_2_again_producing_",
+      "wrongValue": "incorrect_4",
+      "misconception": "Enlarging forwards by 2 again, producing a triangle even larger than X'Y'Z'.",
+      "correctiveNote": "Avoid this: Enlarging forwards by 2 again, producing a triangle even larger than X'Y'Z'."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Always express a mirror line as an equation (x = a, y = b, y = x or y = −x) — a description in words rarely scores full marks."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "TriangleXYZhasverticesX(1,4),Y(2,4)an",
+    "displayValue": "Triangle XYZ has vertices X(1, 4), Y(2, 4) an",
+    "acceptedForms": [
+      "Triangle XYZ has vertices X(1, 4), Y(2, 4) an",
+      "TriangleXYZhasverticesX(1,4),Y(2,4)an"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A point and its image under a reflection are (−1, 5) and (9, 5). What is the mirror line?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=4.",
+      "displayValue": "= 4.",
+      "acceptedForms": [
+        "= 4.",
+        "=4."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "0fb37613-de0b-4bb4-afc3-066868d23724",
+      "code": "M1-1.1",
+      "label": "Enlargement and its inverse"
+    },
+    {
+      "objectiveId": "1cc25e81-2dc4-422f-af2c-465288367acc",
+      "code": "M1-1.1",
+      "label": "Centre of enlargement"
+    },
+    {
+      "objectiveId": "3e03dcd4-97a6-4a6a-ae46-7d2f46bdd7d7",
+      "code": "M1-1.1",
+      "label": "Reflection in a vertical line"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 17,
+    "pageRef": "p258",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a.i",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.i): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "TriangleXYZhasverticesX(1,4),Y(2,4)an",
+        "displayValue": "Triangle XYZ has vertices X(1, 4), Y(2, 4) an",
+        "acceptedForms": [
+          "Triangle XYZ has vertices X(1, 4), Y(2, 4) an",
+          "TriangleXYZhasverticesX(1,4),Y(2,4)an"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.ii",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.ii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "ThemirrorlinePis",
+        "displayValue": "The mirror line P is",
+        "acceptedForms": [
+          "The mirror line P is",
+          "ThemirrorlinePis"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p099-q11",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 5,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the simultaneous equations (x − 1)/3 + (y + 2)/2 = 5 and x − y = 3."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Clear the fractions in the first equation before combining it with the second."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p099_q11.jpg",
+      "altText": "Source visual for edmar-csec-p099-q11 from workbook page 99."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply every term of the first equation by 6.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "6 × (x − 1)/3 + 6 × (y + 2)/2 = 6 × 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2(x − 1) + 3(y + 2) = 30"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Expand and simplify.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2x − 2 + 3y + 6 = 30"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2x + 3y = 26"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Make x the subject of the second equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x − y = 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = y + 3"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Substitute into 2x + 3y = 26.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2(y + 3) + 3y = 26, so 5y + 6 = 26"
+        },
+        {
+          "type": "text",
+          "value": "Result: 5y = 20, y = 4"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Find x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x = 4 + 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 7"
+        }
+      ]
+    },
+    {
+      "stepNo": 6,
+      "instruction": "Check in the original fractional equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(7 − 1)/3 + (4 + 2)/2 = 2 + 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: 5 ✓"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Multiply the first equation by 6, the LCM of 3 and 2, simplify it to a standard linear equation, then substitute using x = y + 3."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = 7, y = 4"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Multiplying by the lowest common multiple of the denominators removes every fraction in one move while keeping the equation equivalent, because both sides are scaled by the same factor. What is left is an ordinary pair of linear equations that standard substitution solves."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "multiplying_only_the_fractions_by_6_and_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Multiplying only the fractions by 6 and leaving the 5 unchanged.",
+      "correctiveNote": "Avoid this: Multiplying only the fractions by 6 and leaving the 5 unchanged."
+    },
+    {
+      "key": "forgetting_the_brackets_and_writing_2x_1",
+      "wrongValue": "incorrect_2",
+      "misconception": "Forgetting the brackets and writing 2x − 1 + 3y + 2 = 30.",
+      "correctiveNote": "Avoid this: Forgetting the brackets and writing 2x − 1 + 3y + 2 = 30."
+    },
+    {
+      "key": "using_5_as_the_multiplier_instead_of_the",
+      "wrongValue": "incorrect_3",
+      "misconception": "Using 5 as the multiplier instead of the LCM of the denominators.",
+      "correctiveNote": "Avoid this: Using 5 as the multiplier instead of the LCM of the denominators."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Multiply through by the LCM of all denominators, including the constant term on the right — a fraction-free equation is far less error-prone."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=7,y=4",
+    "displayValue": "= 7, y = 4",
+    "acceptedForms": [
+      "= 7, y = 4",
+      "=7,y=4"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve (x + 1)/2 + (y − 1)/3 = 4 and x + y = 9."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=5,y=4",
+      "displayValue": "= 5, y = 4",
+      "acceptedForms": [
+        "= 5, y = 4",
+        "=5,y=4"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "569ba40c-0001-4c1a-a3d0-a94709c7c69a",
+      "code": "M1-5.1",
+      "label": "Simultaneous linear equations"
+    },
+    {
+      "objectiveId": "54a8ceec-3442-4021-abe1-d00fe918d202",
+      "code": "M1-5.1",
+      "label": "Clearing fractions with the LCM"
+    },
+    {
+      "objectiveId": "9e034f95-fb27-4253-a3ed-54ae7f1dc290",
+      "code": "M1-5.1",
+      "label": "Substitution method"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 11,
+    "pageRef": "p99",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

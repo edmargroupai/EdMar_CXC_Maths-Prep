@@ -1,0 +1,187 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p052-q02",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Expand and simplify (x + 3)(x + 5)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Both signs are positive, so every term in the expansion will be positive."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p052_q02.jpg",
+      "altText": "Source visual for edmar-csec-p052-q02 from workbook page 52."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply x by both terms of the second bracket.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x × x and x × 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: x² + 5x"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Multiply 3 by both terms of the second bracket.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3 × x and 3 × 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3x + 15"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Add the two partial expansions.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x² + 5x + 3x + 15"
+        },
+        {
+          "type": "text",
+          "value": "Result: x² + 5x + 3x + 15"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Collect like terms.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5x + 3x = 8x"
+        },
+        {
+          "type": "text",
+          "value": "Result: x² + 8x + 15"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Multiply each term of the first bracket by each term of the second, then combine the x-terms."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x² + 8x + 15"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The distributive law lets a bracket be multiplied term by term, so (x + 3)(x + 5) splits into x(x + 5) plus 3(x + 5). Adding those two partial products and combining like terms gives the quadratic. The middle coefficient 8 is 3 + 5 and the constant 15 is 3 × 5, which is exactly why factorising a quadratic asks for two numbers that add and multiply to those values."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "multiplying_only_the_matching_positions_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Multiplying only the matching positions to get x² + 15.",
+      "correctiveNote": "Avoid this: Multiplying only the matching positions to get x² + 15."
+    },
+    {
+      "key": "getting_8x_instead_of_8x_by_mishandling_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Getting 8x² instead of 8x by mishandling the letters.",
+      "correctiveNote": "Avoid this: Getting 8x² instead of 8x by mishandling the letters."
+    },
+    {
+      "key": "leaving_the_answer_unsimplified_as_x_5x_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Leaving the answer unsimplified as x² + 5x + 3x + 15.",
+      "correctiveNote": "Avoid this: Leaving the answer unsimplified as x² + 5x + 3x + 15."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Set the work out in two lines — x(x + 5) then 3(x + 5) — instead of trying to do all four products at once. It is slower to write but far harder to get wrong."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "x²+8x+15",
+    "displayValue": "x² + 8x + 15",
+    "acceptedForms": [
+      "x² + 8x + 15",
+      "x²+8x+15"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Expand and simplify (x + 4)(x + 6)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "x²+10x+24.",
+      "displayValue": "x² + 10x + 24.",
+      "acceptedForms": [
+        "x² + 10x + 24.",
+        "x²+10x+24."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "7c045a6a-bb77-4e39-ab25-3c02fc8c73ee",
+      "code": "M1-4.1",
+      "label": "Expanding a product of two binomials"
+    },
+    {
+      "objectiveId": "f2d49ea3-b484-4d76-a230-b995795d410d",
+      "code": "M1-4.1",
+      "label": "Collecting like terms"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 2,
+    "pageRef": "p52",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

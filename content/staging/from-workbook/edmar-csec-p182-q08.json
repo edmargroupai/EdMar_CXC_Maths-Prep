@@ -1,0 +1,271 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p182-q08",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 6,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The point P is (−2, 4) and the vector PQ has components 5 and −3. (a) Determine the coordinates of Q. (b) Write the vector QP as a column vector. (c) Calculate |QP|, giving the answer in exact form."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Adding a vector to a point moves you along it, so Q is P shifted by the components of PQ."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p182_q08.jpg",
+      "altText": "Source visual for edmar-csec-p182-q08 from workbook page 182."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Add the vector to the starting point.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Q = (−2 + 5, 4 + (−3))"
+        },
+        {
+          "type": "text",
+          "value": "Result: Q = (3, 1)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Reverse the vector.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "QP is the same journey travelled backwards, so every component changes sign"
+        },
+        {
+          "type": "text",
+          "value": "Result: QP = (−5, 3)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Check by subtraction.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "QP = P − Q = (−2 − 3, 4 − 1) = (−5, 3)"
+        },
+        {
+          "type": "text",
+          "value": "Result: QP confirmed"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Apply Pythagoras.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "|QP|² = (−5)² + 3² = 25 + 9"
+        },
+        {
+          "type": "text",
+          "value": "Result: |QP|² = 34"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Leave the root in exact form.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "34 has no square factors, so the surd does not simplify"
+        },
+        {
+          "type": "text",
+          "value": "Result: |QP| = √34"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Add PQ to P's coordinates for Q, reverse the signs for QP, then apply Pythagoras and leave the answer as a surd."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) Q = (3, 1)  (b) QP = (−5, 3)  (c) |QP| = √34 (≈ 5.83)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A vector is a displacement, so applying it to a point relocates that point — the components are simply added to the coordinates. Reversing the direction of travel negates both components, but distance has no direction, so |QP| = |PQ|; both are √34. Squaring removes the negative signs, which is why the reversed vector has exactly the same magnitude."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "subtracting_pq_from_p_instead_of_adding_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Subtracting PQ from P instead of adding it, giving Q = (−7, 7).",
+      "correctiveNote": "Avoid this: Subtracting PQ from P instead of adding it, giving Q = (−7, 7)."
+    },
+    {
+      "key": "writing_qp_5_3_forgetting_to_reverse_the",
+      "wrongValue": "incorrect_2",
+      "misconception": "Writing QP = (5, −3), forgetting to reverse the signs.",
+      "correctiveNote": "Avoid this: Writing QP = (5, −3), forgetting to reverse the signs."
+    },
+    {
+      "key": "giving_5_83_when_the_question_asks_for_a",
+      "wrongValue": "incorrect_3",
+      "misconception": "Giving 5.83 when the question asks for an exact form.",
+      "correctiveNote": "Avoid this: Giving 5.83 when the question asks for an exact form."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When a question says 'exact form', leave the surd — a decimal answer will not score even if it is correctly rounded."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Q=(3,1)",
+    "displayValue": "Q = (3, 1)",
+    "acceptedForms": [
+      "Q = (3, 1)",
+      "Q=(3,1)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "P is (1, 2) and PQ has components −4 and 1. Find the coordinates of Q."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "Q=(−3,3).",
+      "displayValue": "Q = (−3, 3).",
+      "acceptedForms": [
+        "Q = (−3, 3).",
+        "Q=(−3,3)."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "38756160-c9aa-4875-a432-6133f07b7a4f",
+      "code": "M2-5.1",
+      "label": "Vector between two points"
+    },
+    {
+      "objectiveId": "a021bce6-eeea-4020-a19f-58a228d7b199",
+      "code": "M2-5.1",
+      "label": "Reversing a vector"
+    },
+    {
+      "objectiveId": "67e181ce-d160-4ccc-ae32-043dacda535a",
+      "code": "M2-5.1",
+      "label": "Magnitude of a vector in surd form"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 8,
+    "pageRef": "p182",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Q=(3,1)",
+        "displayValue": "Q = (3, 1)",
+        "acceptedForms": [
+          "Q = (3, 1)",
+          "Q=(3,1)"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "QP=(−5,3)",
+        "displayValue": "QP = (−5, 3)",
+        "acceptedForms": [
+          "QP = (−5, 3)",
+          "QP=(−5,3)"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "c",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (c): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "|QP|=√34(≈5.83)",
+        "displayValue": "|QP| = √34 (≈ 5.83)",
+        "acceptedForms": [
+          "|QP| = √34 (≈ 5.83)",
+          "|QP|=√34(≈5.83)"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

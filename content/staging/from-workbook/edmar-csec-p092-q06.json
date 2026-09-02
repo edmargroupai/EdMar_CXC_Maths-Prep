@@ -1,0 +1,178 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p092-q06",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Factorise completely: 12a³ − 18a² + 14ab − 21b"
+    },
+    {
+      "type": "text",
+      "value": "Think first: The highest common factor of the first pair involves a², not just a."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p092_q06.jpg",
+      "altText": "Source visual for edmar-csec-p092-q06 from workbook page 92."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Group the terms in pairs.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(12a³ − 18a²) + (14ab − 21b)"
+        },
+        {
+          "type": "text",
+          "value": "Result: Two pairs"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Take the highest common factor out of each pair.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "6a² from 12a³ − 18a², and 7b from 14ab − 21b"
+        },
+        {
+          "type": "text",
+          "value": "Result: 6a²(2a − 3) + 7b(2a − 3)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Take out the common bracket.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(2a − 3) appears in both terms"
+        },
+        {
+          "type": "text",
+          "value": "Result: (2a − 3)(6a² + 7b)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Take 6a² out of the first pair and 7b out of the second, then take out the bracket they share."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(2a − 3)(6a² + 7b)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Taking the highest common factor out of each pair is what forces the same bracket to appear twice; taking out less than the highest, such as 6a instead of 6a², leaves brackets that do not match. The shared bracket then lifts out as a single factor."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "taking_out_6a_instead_of_6a_and_getting_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Taking out 6a instead of 6a² and getting (2a² − 3a) in the first bracket.",
+      "correctiveNote": "Avoid this: Taking out 6a instead of 6a² and getting (2a² − 3a) in the first bracket."
+    },
+    {
+      "key": "taking_out_7_instead_of_7b_from_14ab_21b",
+      "wrongValue": "incorrect_2",
+      "misconception": "Taking out 7 instead of 7b from 14ab − 21b.",
+      "correctiveNote": "Avoid this: Taking out 7 instead of 7b from 14ab − 21b."
+    },
+    {
+      "key": "trying_to_factorise_6a_7b_further_it_has",
+      "wrongValue": "incorrect_3",
+      "misconception": "Trying to factorise 6a² + 7b further — it has no common factor and is not a difference of two squares.",
+      "correctiveNote": "Avoid this: Trying to factorise 6a² + 7b further — it has no common factor and is not a difference of two squares."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Always remove the highest common factor from each pair; the matching brackets are the sign you did it correctly."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "(2a−3)(6a²+7b)",
+    "displayValue": "(2a − 3)(6a² + 7b)",
+    "acceptedForms": [
+      "(2a − 3)(6a² + 7b)",
+      "(2a−3)(6a²+7b)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Factorise 4a³ − 6a² + 10ab − 15b."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(2a−3)(2a²+5b)",
+      "displayValue": "(2a − 3)(2a² + 5b)",
+      "acceptedForms": [
+        "(2a − 3)(2a² + 5b)",
+        "(2a−3)(2a²+5b)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M3-2.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "28a304c8-6227-4925-a2ac-69041c7613a1",
+      "code": "M3-2.1",
+      "label": "Factorisation by grouping"
+    },
+    {
+      "objectiveId": "f94213c3-8ab1-41ce-a0f1-68b33460019f",
+      "code": "M3-2.1",
+      "label": "Highest common factor"
+    },
+    {
+      "objectiveId": "899702e3-c42c-4632-a5bf-370735b758b2",
+      "code": "M3-2.1",
+      "label": "Indices"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 6,
+    "pageRef": "p92",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

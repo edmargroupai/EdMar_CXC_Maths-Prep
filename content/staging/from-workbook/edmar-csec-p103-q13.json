@@ -1,0 +1,206 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p103-q13",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve x² + 6x + 1 = 0 by completing the square."
+    },
+    {
+      "type": "text",
+      "value": "Think first: This will not factorise with whole numbers, so the completed square is the route to an exact surd answer."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p103_q13.jpg",
+      "altText": "Source visual for edmar-csec-p103-q13 from workbook page 103."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Complete the square on x² + 6x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "half of 6 is 3, and 3² = 9, so x² + 6x = (x + 3)² − 9"
+        },
+        {
+          "type": "text",
+          "value": "Result: (x + 3)² − 9 + 1 = 0"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Combine the constants.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "−9 + 1 = −8"
+        },
+        {
+          "type": "text",
+          "value": "Result: (x + 3)² − 8 = 0"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Isolate the square.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "add 8 to both sides"
+        },
+        {
+          "type": "text",
+          "value": "Result: (x + 3)² = 8"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Take the square root of both sides, keeping both signs.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "√8 = 2√2"
+        },
+        {
+          "type": "text",
+          "value": "Result: x + 3 = ±2√2"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Subtract 3 from both sides and evaluate.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2√2 ≈ 2.828"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = −3 + 2√2 ≈ −0.17 or x = −3 − 2√2 ≈ −5.83"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Rewrite the left side as a perfect square plus a constant, isolate the square, then take the square root of both sides remembering the ±."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = −3 + 2√2 ≈ −0.17 or x = −3 − 2√2 ≈ −5.83"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Completing the square converts the equation into the form (something)² = number, and that form can be undone directly by a square root. The ± is essential because both a positive and a negative quantity square to the same value, which is why a quadratic has two roots. Leaving the answer as a surd keeps it exact; the decimals are only an approximation."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_only_x_3_2_2_and_losing_the_seco",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing only x + 3 = 2√2 and losing the second root.",
+      "correctiveNote": "Avoid this: Writing only x + 3 = 2√2 and losing the second root."
+    },
+    {
+      "key": "simplifying_8_to_4_instead_of_2_2",
+      "wrongValue": "incorrect_2",
+      "misconception": "Simplifying √8 to 4 instead of 2√2.",
+      "correctiveNote": "Avoid this: Simplifying √8 to 4 instead of 2√2."
+    },
+    {
+      "key": "adding_9_to_only_one_side_of_the_equatio",
+      "wrongValue": "incorrect_3",
+      "misconception": "Adding 9 to only one side of the equation when isolating the square.",
+      "correctiveNote": "Avoid this: Adding 9 to only one side of the equation when isolating the square."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Whenever you square-root both sides of an equation, write the ± immediately — it is the single most commonly dropped mark in this topic."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=−3+2√2≈−0.17",
+    "displayValue": "= −3 + 2√2 ≈ −0.17",
+    "acceptedForms": [
+      "= −3 + 2√2 ≈ −0.17",
+      "=−3+2√2≈−0.17"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve x² + 4x − 1 = 0 by completing the square, leaving your answer in surd form."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "+2)²=5,sox=−2+√5",
+      "displayValue": "+ 2)² = 5, so x = −2 + √5",
+      "acceptedForms": [
+        "+ 2)² = 5, so x = −2 + √5",
+        "+2)²=5,sox=−2+√5"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "aeab1386-f3fe-4332-af2f-9080e2e93153",
+      "code": "M1-5.1",
+      "label": "Completing the square"
+    },
+    {
+      "objectiveId": "73e80607-fde6-42fe-afba-c06da41df3b1",
+      "code": "M1-5.1",
+      "label": "Solving quadratic equations"
+    },
+    {
+      "objectiveId": "57e987b8-af21-4e3a-a1e9-59353cc2678f",
+      "code": "M1-5.1",
+      "label": "Square roots and surds"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 13,
+    "pageRef": "p103",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

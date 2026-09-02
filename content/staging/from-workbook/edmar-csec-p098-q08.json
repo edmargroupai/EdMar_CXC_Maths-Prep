@@ -1,0 +1,206 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p098-q08",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the simultaneous equations x + 2y = 8 and 2x − y = 1."
+    },
+    {
+      "type": "text",
+      "value": "Think first: No coefficients match yet, so either rearrange one equation for substitution or scale one for elimination."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p098_q08.jpg",
+      "altText": "Source visual for edmar-csec-p098-q08 from workbook page 98."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Rearrange the second equation to make y the subject.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2x − y = 1 gives 2x − 1 = y"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 2x − 1"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Substitute into the first equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x + 2(2x − 1) = 8"
+        },
+        {
+          "type": "text",
+          "value": "Result: x + 4x − 2 = 8"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Simplify and solve for x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5x = 10"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 2"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Substitute back to find y.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "y = 2(2) − 1"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 3"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Check in the first equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2 + 2(3) = 2 + 6"
+        },
+        {
+          "type": "text",
+          "value": "Result: 8 ✓"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Make y the subject of the second equation and substitute into the first."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = 2, y = 3"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Because y = 2x − 1 holds for every point on the second line, replacing y in the first equation keeps that equation true only at the crossing point. Solving the resulting single-variable equation therefore pins down the shared solution exactly."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "substituting_2x_1_without_brackets_givin",
+      "wrongValue": "incorrect_1",
+      "misconception": "Substituting 2x − 1 without brackets, giving x + 4x − 1.",
+      "correctiveNote": "Avoid this: Substituting 2x − 1 without brackets, giving x + 4x − 1."
+    },
+    {
+      "key": "rearranging_2x_y_1_to_y_1_2x",
+      "wrongValue": "incorrect_2",
+      "misconception": "Rearranging 2x − y = 1 to y = 1 − 2x.",
+      "correctiveNote": "Avoid this: Rearranging 2x − y = 1 to y = 1 − 2x."
+    },
+    {
+      "key": "solving_5x_10_as_x_5",
+      "wrongValue": "incorrect_3",
+      "misconception": "Solving 5x = 10 as x = 5.",
+      "correctiveNote": "Avoid this: Solving 5x = 10 as x = 5."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "After rearranging for substitution, check your rearrangement with a quick test value before you substitute — it costs seconds and catches sign errors early."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=2,y=3",
+    "displayValue": "= 2, y = 3",
+    "acceptedForms": [
+      "= 2, y = 3",
+      "=2,y=3"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve x + 2y = 11 and 2x − y = 2."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=3,y=4",
+      "displayValue": "= 3, y = 4",
+      "acceptedForms": [
+        "= 3, y = 4",
+        "=3,y=4"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "171bf80d-9d5f-4a14-ad02-fd1446f4b7e2",
+      "code": "M1-5.1",
+      "label": "Simultaneous linear equations"
+    },
+    {
+      "objectiveId": "b2958be1-2313-455f-aaf4-5e0b0a5b59e8",
+      "code": "M1-5.1",
+      "label": "Substitution method"
+    },
+    {
+      "objectiveId": "015f7189-f3b6-4882-ad4b-f2eab0660434",
+      "code": "M1-5.1",
+      "label": "Elimination method"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 8,
+    "pageRef": "p98",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

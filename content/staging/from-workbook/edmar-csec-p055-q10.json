@@ -1,0 +1,172 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p055-q10",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Make w the subject of the formula P = 2(l + w)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: w is trapped inside a bracket that is multiplied by 2, so undo the multiplication before touching the bracket."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p055_q10.jpg",
+      "altText": "Source visual for edmar-csec-p055-q10 from workbook page 55."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Divide both sides by 2.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "P/2 = 2(l + w)/2"
+        },
+        {
+          "type": "text",
+          "value": "Result: P/2 = l + w"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Subtract l from both sides.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "P/2 - l = l + w - l"
+        },
+        {
+          "type": "text",
+          "value": "Result: w = P/2 - l"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Write as a single fraction if preferred.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "P/2 - l = (P - 2l)/2"
+        },
+        {
+          "type": "text",
+          "value": "Result: w = (P - 2l)/2"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Divide both sides by 2 to remove the bracket's multiplier, then subtract l."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "w = P/2 - l, which can also be written w = (P - 2l)/2"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Dividing by 2 first is quicker than expanding, because the bracket is a single factor. Either route is valid: expanding gives P = 2l + 2w, and subtracting 2l then dividing by 2 leads to the same answer. Both forms of the answer are equivalent, so choose whichever the next step needs."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "subtracting_l_before_dividing_by_2_which",
+      "wrongValue": "incorrect_1",
+      "misconception": "Subtracting l before dividing by 2, which ignores that the 2 multiplies l as well.",
+      "correctiveNote": "Avoid this: Subtracting l before dividing by 2, which ignores that the 2 multiplies l as well."
+    },
+    {
+      "key": "writing_w_p_2l_without_the_division_by_2",
+      "wrongValue": "incorrect_2",
+      "misconception": "Writing w = P - 2l without the division by 2.",
+      "correctiveNote": "Avoid this: Writing w = P - 2l without the division by 2."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "If the letter you want is inside a bracket, deal with what is outside the bracket first."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "w=P/2-l,whichcanalsobewrittenw=(P-2l)/2",
+    "displayValue": "w = P/2 - l, which can also be written w = (P - 2l)/2",
+    "acceptedForms": [
+      "w = P/2 - l, which can also be written w = (P - 2l)/2",
+      "w=P/2-l,whichcanalsobewrittenw=(P-2l)/2"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Make l the subject of P = 2(l + w)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "l=P/2-w,",
+      "displayValue": "l = P/2 - w,",
+      "acceptedForms": [
+        "l = P/2 - w,",
+        "l=P/2-w,"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "8e5022b2-f7af-4a2d-a197-053150858316",
+      "code": "M1-4.1",
+      "label": "Transposition of formulae"
+    },
+    {
+      "objectiveId": "b708ed47-0484-4e6e-a12a-05babe3cfc40",
+      "code": "M1-4.1",
+      "label": "Inverse operations"
+    },
+    {
+      "objectiveId": "00d27331-706e-418e-a3ad-681c93cd2b39",
+      "code": "M1-4.1",
+      "label": "Brackets"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 10,
+    "pageRef": "p55",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

@@ -1,0 +1,260 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p078-q05",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 6,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The table shows the number of late bus arrivals recorded at a terminal: Monday 4, Tuesday 7, Wednesday 5, Thursday 9, Friday 3. (a) On the grid, draw a bar chart to represent the information. (b) Between which two consecutive days was there the greatest change in the number of late arrivals? (c) Calculate this change as a percentage of the earlier day's value."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Work out every day-to-day change first — the largest one answers both (b) and (c)."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p078_q05.jpg",
+      "altText": "Source visual for edmar-csec-p078-q05 from workbook page 78."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Draw five bars of equal width with equal gaps, to heights 4, 7, 5, 9 and 3.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The grid runs from 0 to 10, one square per unit; label the axes 'Number of late arrivals' and 'Day'"
+        },
+        {
+          "type": "text",
+          "value": "Result: Bar chart complete"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Find the change from each day to the next.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Mon → Tue +3, Tue → Wed −2, Wed → Thu +4, Thu → Fri −6"
+        },
+        {
+          "type": "text",
+          "value": "Result: Changes of size 3, 2, 4 and 6"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Choose the largest change in size.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "6 is the biggest, from 9 on Thursday down to 3 on Friday"
+        },
+        {
+          "type": "text",
+          "value": "Result: Thursday to Friday"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Express that change as a percentage of the earlier day's value.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "6/9 × 100"
+        },
+        {
+          "type": "text",
+          "value": "Result: 66.7% (a decrease)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Draw five bars of equal width to the heights given, then list the four consecutive changes, choose the largest in size and express it as a percentage of the earlier day's figure."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) Bars of height 4, 7, 5, 9 and 3 for Monday to Friday.  (b) Between Thursday and Friday.  (c) 6/9 × 100 = 66.7% (66 2/3%), a decrease."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A percentage change always compares the size of the change with the value it started from, never with the finishing value or with a total. Using the earlier day as the base is what makes changes on different days comparable with one another."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "dividing_by_the_later_value_3_instead_of",
+      "wrongValue": "incorrect_1",
+      "misconception": "Dividing by the later value (3) instead of the earlier value (9).",
+      "correctiveNote": "Avoid this: Dividing by the later value (3) instead of the earlier value (9)."
+    },
+    {
+      "key": "choosing_wednesday_to_thursday_because_t",
+      "wrongValue": "incorrect_2",
+      "misconception": "Choosing Wednesday to Thursday because the numbers rise there, when the question asks for the greatest change in size.",
+      "correctiveNote": "Avoid this: Choosing Wednesday to Thursday because the numbers rise there, when the question asks for the greatest change in size."
+    },
+    {
+      "key": "drawing_bars_of_unequal_width_or_with_no",
+      "wrongValue": "incorrect_3",
+      "misconception": "Drawing bars of unequal width, or with no gaps between them.",
+      "correctiveNote": "Avoid this: Drawing bars of unequal width, or with no gaps between them."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Write 'percentage change = change ÷ original × 100' beside your working — the word 'original' stops you using the wrong base."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Barsofheight4,7,5,9an",
+    "displayValue": "Bars of height 4, 7, 5, 9 an",
+    "acceptedForms": [
+      "Bars of height 4, 7, 5, 9 an",
+      "Barsofheight4,7,5,9an"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A value falls from 20 to 15. What is the percentage decrease?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "25%",
+      "displayValue": "25%",
+      "acceptedForms": [
+        "25%",
+        "25%"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M3-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "dd5f47c8-4cc3-4e12-a744-cc7db1e6444c",
+      "code": "M3-1.1",
+      "label": "Drawing bar charts"
+    },
+    {
+      "objectiveId": "37199bcd-145e-4cbb-ac00-0236632d841f",
+      "code": "M3-1.1",
+      "label": "Change between consecutive values"
+    },
+    {
+      "objectiveId": "c29988de-e4b6-4aa3-adae-a22ab7e2c249",
+      "code": "M3-1.1",
+      "label": "Percentage change"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 5,
+    "pageRef": "p78",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Barsofheight4,7,5,9an",
+        "displayValue": "Bars of height 4, 7, 5, 9 an",
+        "acceptedForms": [
+          "Bars of height 4, 7, 5, 9 an",
+          "Barsofheight4,7,5,9an"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "BetweenThursdayan",
+        "displayValue": "Between Thursday an",
+        "acceptedForms": [
+          "Between Thursday an",
+          "BetweenThursdayan"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "c",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (c): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "fraction",
+        "canonicalValue": "6/9",
+        "displayValue": "6/9",
+        "acceptedForms": [
+          "6/9"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0
+        },
+        "normalisation": "numeric_default"
+      }
+    }
+  ]
+}

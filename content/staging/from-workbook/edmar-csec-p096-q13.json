@@ -1,0 +1,188 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p096-q13",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 5,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Make l the subject of the formula T = 2π√(l/g) (the period of a simple pendulum)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: l is buried under a square root inside a fraction, so free the root first and square only when it is alone."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p096_q13.jpg",
+      "altText": "Source visual for edmar-csec-p096-q13 from workbook page 96."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Divide both sides by 2π.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "T/(2π) = √(l/g)"
+        },
+        {
+          "type": "text",
+          "value": "Result: T/(2π) = √(l/g)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Square both sides to remove the square root.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(T/(2π))² = l/g"
+        },
+        {
+          "type": "text",
+          "value": "Result: T²/(4π²) = l/g"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Multiply both sides by g.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "g × T²/(4π²)"
+        },
+        {
+          "type": "text",
+          "value": "Result: gT²/(4π²) = l"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Write the new subject on the left.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: l = gT²/(4π²)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Divide by 2π to isolate the square root, square both sides, then multiply by g."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "l = gT²/(4π²)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Squaring is the inverse of taking a square root, but it only cancels the root cleanly when the root stands alone on one side. Dividing by 2π first ensures that when you square, the 2π becomes 4π² correctly instead of being left half-processed inside the root."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "squaring_straight_away_and_writing_t_2_l",
+      "wrongValue": "incorrect_1",
+      "misconception": "Squaring straight away and writing T² = 2π²l/g, forgetting that (2π)² = 4π².",
+      "correctiveNote": "Avoid this: Squaring straight away and writing T² = 2π²l/g, forgetting that (2π)² = 4π²."
+    },
+    {
+      "key": "dividing_by_2_and_separately_and_mishand",
+      "wrongValue": "incorrect_2",
+      "misconception": "Dividing by 2 and π separately and mishandling the squaring.",
+      "correctiveNote": "Avoid this: Dividing by 2 and π separately and mishandling the squaring."
+    },
+    {
+      "key": "multiplying_by_g_before_the_root_is_remo",
+      "wrongValue": "incorrect_3",
+      "misconception": "Multiplying by g before the root is removed.",
+      "correctiveNote": "Avoid this: Multiplying by g before the root is removed."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Isolate the radical before squaring — squaring both sides of an equation where the root is still attached to other factors is the single most common error in this topic."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "l=gT²/(4π²)",
+    "displayValue": "l = gT²/(4π²)",
+    "acceptedForms": [
+      "l = gT²/(4π²)",
+      "l=gT²/(4π²)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Make g the subject of T = 2π√(l/g)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "g=4π²l/T²",
+      "displayValue": "g = 4π²l/T²",
+      "acceptedForms": [
+        "g = 4π²l/T²",
+        "g=4π²l/T²"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "35679aa1-1d1a-4edf-a4da-5214b756eabf",
+      "code": "M1-1.1",
+      "label": "Changing the subject of a formula"
+    },
+    {
+      "objectiveId": "5352863a-f333-4570-a923-5584d6ab006f",
+      "code": "M1-1.1",
+      "label": "Squaring both sides"
+    },
+    {
+      "objectiveId": "c47f3a16-a90d-4c43-a49a-ddf8cba80e5a",
+      "code": "M1-1.1",
+      "label": "Working with surds in formulae"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 13,
+    "pageRef": "p96",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

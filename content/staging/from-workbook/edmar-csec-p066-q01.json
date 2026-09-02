@@ -1,0 +1,196 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p066-q01",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Factorise completely: 2x + 6."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Look for the largest number that divides into both terms."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p066_q01.jpg",
+      "altText": "Source visual for edmar-csec-p066-q01 from workbook page 66."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Find the HCF of the two terms.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2x = 2 × x and 6 = 2 × 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: HCF = 2"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Divide each term by the HCF.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2x ÷ 2 = x and 6 ÷ 2 = 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: x and 3"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Write the HCF outside a bracket.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: 2(x + 3)"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Check by expanding.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2 × x + 2 × 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2x + 6"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Find the HCF of 2x and 6, take it outside a bracket, and write what is left inside."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "2x + 6 = 2(x + 3)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Factorising is the reverse of expanding. Every term shares a highest common factor, and pulling it outside a bracket leaves behind exactly what each term must be multiplied by to get back to the original. Because multiplication distributes over addition, expanding the bracket returns the expression you started with, which is the check that the factorisation is correct."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "taking_out_only_part_of_the_common_facto",
+      "wrongValue": "incorrect_1",
+      "misconception": "Taking out only part of the common factor.",
+      "correctiveNote": "Avoid this: Taking out only part of the common factor."
+    },
+    {
+      "key": "forgetting_to_divide_the_second_term_giv",
+      "wrongValue": "incorrect_2",
+      "misconception": "Forgetting to divide the second term, giving 2(x + 6).",
+      "correctiveNote": "Avoid this: Forgetting to divide the second term, giving 2(x + 6)."
+    },
+    {
+      "key": "losing_the_sign_inside_the_bracket",
+      "wrongValue": "incorrect_3",
+      "misconception": "Losing the + sign inside the bracket.",
+      "correctiveNote": "Avoid this: Losing the + sign inside the bracket."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Always expand your bracket in the margin to check; it costs seconds and catches almost every factorising slip."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "2",
+    "displayValue": "2",
+    "acceptedForms": [
+      "2",
+      "2"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Factorise completely: 3x + 12."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "3",
+      "displayValue": "3",
+      "acceptedForms": [
+        "3",
+        "3"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "294c16b1-e427-46cc-ab37-266f8842506b",
+      "code": "M1-4.1",
+      "label": "Factorising"
+    },
+    {
+      "objectiveId": "0813a741-6191-4fa9-a27d-b9a6b23b2642",
+      "code": "M1-4.1",
+      "label": "Highest common factor"
+    },
+    {
+      "objectiveId": "9acadce0-c685-4667-afa6-59944c69dab8",
+      "code": "M1-4.1",
+      "label": "The distributive law"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 1,
+    "pageRef": "p66",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

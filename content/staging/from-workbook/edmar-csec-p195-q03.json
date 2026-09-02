@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p195-q03",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The two matrices (2x + 1  4 / −3  y − 2) and (9  4 / −3  5) are equal. (a) Determine the value of x. (b) Determine the value of y."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Equal matrices match entry by entry, so each unknown sits in its own small equation."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p195_q03.jpg",
+      "altText": "Source visual for edmar-csec-p195-q03 from workbook page 195."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Equate the entries in row 1, column 1.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2x + 1 = 9"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2x = 8"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Solve for x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Divide both sides by 2."
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 4"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Equate the entries in row 2, column 2.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "y − 2 = 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 7"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Check the remaining entries agree.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "4 = 4 and −3 = −3, so the matrices match completely."
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 4, y = 7 confirmed"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Match the entry in row 1, column 1 and the entry in row 2, column 2, then solve the two resulting equations."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) x = 4  (b) y = 7"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Two matrices are equal only if they have the same order and every corresponding element is the same number. That turns one matrix equation into as many ordinary equations as there are positions. Each unknown can then be handled separately."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "matching_2x_1_with_the_wrong_entry_such_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Matching 2x + 1 with the wrong entry, such as the 4.",
+      "correctiveNote": "Avoid this: Matching 2x + 1 with the wrong entry, such as the 4."
+    },
+    {
+      "key": "solving_2x_1_9_as_x_9_1_2_and_getting_x_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Solving 2x + 1 = 9 as x = 9 − 1 ÷ 2 and getting x = 8.",
+      "correctiveNote": "Avoid this: Solving 2x + 1 = 9 as x = 9 − 1 ÷ 2 and getting x = 8."
+    },
+    {
+      "key": "writing_y_2_5_as_y_3_by_subtracting_inst",
+      "wrongValue": "incorrect_3",
+      "misconception": "Writing y − 2 = 5 as y = 3 by subtracting instead of adding.",
+      "correctiveNote": "Avoid this: Writing y − 2 = 5 as y = 3 by subtracting instead of adding."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "With equal matrices, mark the positions of the unknowns first — the rest of the entries are just there to confirm the match."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "x=4",
+    "displayValue": "x = 4",
+    "acceptedForms": [
+      "x = 4",
+      "x=4"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "If (3a  −2) = (12  −2) as 1 × 2 matrices, find a."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=4",
+      "displayValue": "= 4",
+      "acceptedForms": [
+        "= 4",
+        "=4"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "05977dcd-797e-4d36-a64d-1a4b08efc413",
+      "code": "M2-4.1",
+      "label": "Equality of matrices"
+    },
+    {
+      "objectiveId": "2d1dc7ba-ddad-4f50-a4f6-7c75a1c485f7",
+      "code": "M2-4.1",
+      "label": "Corresponding elements"
+    },
+    {
+      "objectiveId": "5debe00e-849e-4243-af13-acbb7191a4c3",
+      "code": "M2-4.1",
+      "label": "Solving linear equations"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 3,
+    "pageRef": "p195",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

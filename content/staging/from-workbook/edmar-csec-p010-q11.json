@@ -1,0 +1,286 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p010-q11",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 4,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Determine to three significant figures: (i) √18  (ii) the reciprocal of 7."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Work each value out to at least four figures first, then round once at the end."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p010_q11.jpg",
+      "altText": "Source visual for edmar-csec-p010-q11 from workbook page 10."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Evaluate the square root in (i).",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "18 lies between 16 and 25, so the root is between 4 and 5; √18 = 4.2426…"
+        },
+        {
+          "type": "text",
+          "value": "Result: 4.2426…"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Round it to three significant figures.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The first three figures are 4, 2 and 4; the next digit is 2, which is less than 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: 4.24"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Write the reciprocal in (ii).",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The reciprocal of 7 is 1 ÷ 7"
+        },
+        {
+          "type": "text",
+          "value": "Result: 1/7"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Convert to a decimal.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "1 ÷ 7 = 0.142857…"
+        },
+        {
+          "type": "text",
+          "value": "Result: 0.142857…"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Round it to three significant figures.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The first three figures are 1, 4 and 2; the next digit is 8, so round up"
+        },
+        {
+          "type": "text",
+          "value": "Result: 0.143"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Evaluate √18 and 1/7 to more figures than you need, then round each to three significant figures."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) 4.24  (ii) 0.143"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Significant figures start at the first non-zero digit, so the zero in 0.142857 is a place-holder and is not counted — that is why the answer to (ii) keeps three digits after it. Rounding at the end rather than partway through matters because each early round throws away information the next step needs; carrying one extra digit is enough to protect the third."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "counting_the_leading_zero_of_0_142857_as",
+      "wrongValue": "incorrect_1",
+      "misconception": "Counting the leading zero of 0.142857 as a significant figure and answering 0.14.",
+      "correctiveNote": "Avoid this: Counting the leading zero of 0.142857 as a significant figure and answering 0.14."
+    },
+    {
+      "key": "rounding_1_7_to_0_14_first_and_then_quot",
+      "wrongValue": "incorrect_2",
+      "misconception": "Rounding 1/7 to 0.14 first and then quoting it as three significant figures.",
+      "correctiveNote": "Avoid this: Rounding 1/7 to 0.14 first and then quoting it as three significant figures."
+    },
+    {
+      "key": "giving_18_as_9_by_halving_instead_of_roo",
+      "wrongValue": "incorrect_3",
+      "misconception": "Giving √18 as 9, by halving instead of rooting.",
+      "correctiveNote": "Avoid this: Giving √18 as 9, by halving instead of rooting."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Carry one more figure than the question asks for through your working, and round only on the final line."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_dp",
+    "canonicalValue": "4.24",
+    "displayValue": "4.24",
+    "acceptedForms": [
+      "4.24",
+      "4.24"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "precision": {
+      "kind": "decimal_places",
+      "value": 2,
+      "required": true
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Determine √32 and the reciprocal of 3, each to three significant figures."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_dp",
+      "canonicalValue": "5.66",
+      "displayValue": "5.66",
+      "acceptedForms": [
+        "5.66",
+        "5.66"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "precision": {
+        "kind": "decimal_places",
+        "value": 2,
+        "required": true
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.2"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "38316de1-401a-4d9c-ab3f-ba0bbc73809d",
+      "code": "M1-1.2",
+      "label": "Square roots"
+    },
+    {
+      "objectiveId": "3e6dff32-6120-4db6-a82b-9e6120ef74f3",
+      "code": "M1-1.2",
+      "label": "Reciprocals"
+    },
+    {
+      "objectiveId": "e8544e17-79c7-441c-a681-0aeced6ea2fe",
+      "code": "M1-1.2",
+      "label": "Significant figures"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 11,
+    "pageRef": "p10",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a.i",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.i): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "numeric_dp",
+        "canonicalValue": "4.24",
+        "displayValue": "4.24",
+        "acceptedForms": [
+          "4.24",
+          "4.24"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0
+        },
+        "precision": {
+          "kind": "decimal_places",
+          "value": 2,
+          "required": true
+        },
+        "normalisation": "numeric_default"
+      }
+    },
+    {
+      "partKey": "a.ii",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.ii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "numeric_dp",
+        "canonicalValue": "0.143",
+        "displayValue": "0.143",
+        "acceptedForms": [
+          "0.143",
+          "0.143"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0
+        },
+        "precision": {
+          "kind": "decimal_places",
+          "value": 3,
+          "required": true
+        },
+        "normalisation": "numeric_default"
+      }
+    }
+  ]
+}

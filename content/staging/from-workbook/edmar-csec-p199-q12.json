@@ -1,0 +1,178 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p199-q12",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The matrices X, A and B satisfy X + A = B, where A = (−2 5 / 3 1) and B = (4 −1 / 7 6). (a) Determine the matrix X. (b) Check your answer by calculating X + A."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Treat the matrix equation exactly like x + a = b: subtract A from both sides."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p199_q12.jpg",
+      "altText": "Source visual for edmar-csec-p199-q12 from workbook page 199."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Make X the subject of the equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "X + A = B, so X = B − A."
+        },
+        {
+          "type": "text",
+          "value": "Result: X = B − A"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Subtract each entry of A from the matching entry of B.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "4 − (−2) = 6; −1 − 5 = −6; 7 − 3 = 4; 6 − 1 = 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: X = (6 −6 / 4 5)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Add A back to X and compare with B.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "6 + (−2) = 4; −6 + 5 = −1; 4 + 3 = 7; 5 + 1 = 6"
+        },
+        {
+          "type": "text",
+          "value": "Result: X + A = (4 −1 / 7 6) = B"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Write X = B − A, subtract corresponding entries carefully with signs, then add A back to verify."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) X = B − A = (6 −6 / 4 5)  (b) X + A = (6 + (−2), −6 + 5 / 4 + 3, 5 + 1) = (4 −1 / 7 6), which is B, so the answer is correct."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Because matrix addition works entry by entry, the same rearrangement you use for numbers works for whole matrices, provided the orders match. The entry 4 − (−2) is the one that catches people: subtracting a negative adds. Substituting back is a complete check, since it reconstructs B exactly."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "computing_a_b_rather_than_b_a",
+      "wrongValue": "incorrect_1",
+      "misconception": "Computing A − B rather than B − A.",
+      "correctiveNote": "Avoid this: Computing A − B rather than B − A."
+    },
+    {
+      "key": "writing_4_2_2",
+      "wrongValue": "incorrect_2",
+      "misconception": "Writing 4 − (−2) = 2.",
+      "correctiveNote": "Avoid this: Writing 4 − (−2) = 2."
+    },
+    {
+      "key": "omitting_the_check_in_part_b",
+      "wrongValue": "incorrect_3",
+      "misconception": "Omitting the check in part (b).",
+      "correctiveNote": "Avoid this: Omitting the check in part (b)."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Whenever a matrix subtraction involves a negative entry, rewrite it as an addition on your working line before evaluating."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "X=B−A=(6−6/45)",
+    "displayValue": "X = B − A = (6 −6 / 4 5)",
+    "acceptedForms": [
+      "X = B − A = (6 −6 / 4 5)",
+      "X=B−A=(6−6/45)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "If Y + (3 −2) = (10 1) as 1 × 2 matrices, find Y."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "Y=(73)",
+      "displayValue": "Y = (7 3)",
+      "acceptedForms": [
+        "Y = (7 3)",
+        "Y=(73)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "6abce73d-2cfb-4ece-a04d-792ecdc79266",
+      "code": "M2-4.1",
+      "label": "Matrix addition and subtraction"
+    },
+    {
+      "objectiveId": "5fb5674a-02ac-42d8-ae92-41ebf0ee80b0",
+      "code": "M2-4.1",
+      "label": "Rearranging a matrix equation"
+    },
+    {
+      "objectiveId": "dd090edd-a09f-4013-a170-4fb6494c0686",
+      "code": "M2-4.1",
+      "label": "Directed numbers"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 12,
+    "pageRef": "p199",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

@@ -1,0 +1,124 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "REPLACE_author-id",
+  "questionType": "multiple_choice",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The diagram shows REPLACE_description. Which statement is correct?"
+    },
+    {
+      "type": "asset",
+      "storagePath": "draft-assets/staging/REPLACE_author-id/figure-1.svg",
+      "altText": "REPLACE_Accessible description of the diagram for students using screen readers."
+    }
+  ],
+  "assets": [
+    {
+      "role": "question_figure",
+      "storagePath": "draft-assets/staging/REPLACE_author-id/figure-1.svg",
+      "mimeType": "image/svg+xml",
+      "altText": "REPLACE_Same accessible description as in the stem asset block.",
+      "widthPx": 320,
+      "heightPx": 240,
+      "requiresColour": false
+    }
+  ],
+  "options": [
+    {
+      "optionKey": "A",
+      "contentBlocks": [{ "type": "text", "value": "REPLACE_option_A" }],
+      "isCorrect": false
+    },
+    {
+      "optionKey": "B",
+      "contentBlocks": [{ "type": "text", "value": "REPLACE_option_B" }],
+      "isCorrect": true
+    },
+    {
+      "optionKey": "C",
+      "contentBlocks": [{ "type": "text", "value": "REPLACE_option_C" }],
+      "isCorrect": false
+    },
+    {
+      "optionKey": "D",
+      "contentBlocks": [{ "type": "text", "value": "REPLACE_option_D" }],
+      "isCorrect": false
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Read the diagram.",
+      "contentBlocks": [
+        { "type": "text", "value": "REPLACE_Refer to labelled parts of the figure." }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Choose the matching statement.",
+      "contentBlocks": [{ "type": "text", "value": "REPLACE_Why B is correct." }]
+    }
+  ],
+  "strategyBlocks": [
+    { "type": "text", "value": "REPLACE_Strategy for interpreting diagrams on Paper 02." }
+  ],
+  "finalAnswerBlocks": [
+    { "type": "text", "value": "REPLACE_Final answer references the diagram." }
+  ],
+  "whyThisWorks": [
+    { "type": "text", "value": "REPLACE_Connect diagram reading to the objective." }
+  ],
+  "commonErrors": [
+    {
+      "key": "misread_angle",
+      "wrongOptionKey": "A",
+      "misconception": "REPLACE_Common diagram misread.",
+      "correctiveNote": "REPLACE_Check the label or scale on the diagram."
+    }
+  ],
+  "examTip": [
+    { "type": "text", "value": "REPLACE_Write angles and lengths on the diagram in the exam." }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "machine_verified"
+  },
+  "answerSpec": {
+    "answerType": "option_id",
+    "canonicalValue": "B",
+    "displayValue": "B",
+    "acceptedForms": ["B"],
+    "normalisation": "default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      { "type": "text", "value": "REPLACE_Quick check without the full diagram if possible." }
+    ],
+    "answerSpec": {
+      "answerType": "option_id",
+      "canonicalValue": "B",
+      "displayValue": "B",
+      "acceptedForms": ["B"],
+      "normalisation": "default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": ["REPLACE_M2-3.1"]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "REPLACE_uuid-from-specific_objectives",
+      "code": "REPLACE_M2-3.1",
+      "label": "REPLACE_Short objective label"
+    }
+  ]
+}

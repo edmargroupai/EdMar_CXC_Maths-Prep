@@ -1,0 +1,162 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p057-q07",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A binary operation * is defined by a * b = a² + b². Find x * x."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Both inputs are the same letter, so substitute x for a and for b and then simplify."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p057_q07.jpg",
+      "altText": "Source visual for edmar-csec-p057-q07 from workbook page 57."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Substitute a = x and b = x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x² + x²"
+        },
+        {
+          "type": "text",
+          "value": "Result: x² + x²"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Collect like terms.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "one lot of x² plus one lot of x²"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2x²"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Replace a with x and b with x in a² + b², then collect the like terms."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x * x = 2x²"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A binary operation works on any inputs, not just numbers, so substituting a letter is no different from substituting a number. Because x² + x² is two identical terms, they add to 2x² - the coefficient doubles while the index stays the same."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_x_by_multiplying_the_terms_inste",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing x⁴, by multiplying the terms instead of adding them.",
+      "correctiveNote": "Avoid this: Writing x⁴, by multiplying the terms instead of adding them."
+    },
+    {
+      "key": "writing_2x_which_is_4x",
+      "wrongValue": "incorrect_2",
+      "misconception": "Writing (2x)², which is 4x².",
+      "correctiveNote": "Avoid this: Writing (2x)², which is 4x²."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When you add identical algebraic terms, add the coefficients and leave the index alone."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "*x=2x²",
+    "displayValue": "* x = 2x²",
+    "acceptedForms": [
+      "* x = 2x²",
+      "*x=2x²"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "With a * b = a² + b², find y * y."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "2",
+      "displayValue": "2",
+      "acceptedForms": [
+        "2",
+        "2"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "7607ee23-c8a1-41cf-af73-2ca988d5b5db",
+      "code": "M1-4.1",
+      "label": "Binary operations"
+    },
+    {
+      "objectiveId": "d71196c0-6314-463b-ae06-141c8794310f",
+      "code": "M1-4.1",
+      "label": "Substitution with variables"
+    },
+    {
+      "objectiveId": "45026b7f-b530-49ce-a2f8-fc1c653faf99",
+      "code": "M1-4.1",
+      "label": "Collecting like terms"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 7,
+    "pageRef": "p57",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

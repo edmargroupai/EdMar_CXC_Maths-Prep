@@ -1,0 +1,210 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p176-q02",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A cliff AB is 36 m high, with B at sea level. From the top A, the angle of depression of a boat at C is 28°. a) Explain why the angle of elevation of A from C is also 28°. b) Calculate the horizontal distance BC. c) The boat moves 25 m directly towards B. Calculate the new angle of elevation of A, to the nearest degree."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The horizontal at the cliff top and the sea surface are parallel, so the depression and elevation angles are alternate angles."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p176_q02.jpg",
+      "altText": "Source visual for edmar-csec-p176-q02 from workbook page 176."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Compare the two horizontals.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The horizontal line at A and the sea-level line through B and C are parallel, and AC is a transversal"
+        },
+        {
+          "type": "text",
+          "value": "Result: depression at A and elevation at C are alternate angles"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "State the conclusion for part a.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Alternate angles between parallel lines are equal"
+        },
+        {
+          "type": "text",
+          "value": "Result: angle of elevation of A from C = 28°"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Use the tangent ratio in triangle ABC.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "tan 28° = AB ÷ BC = 36 ÷ BC, so BC = 36 ÷ 0.53171"
+        },
+        {
+          "type": "text",
+          "value": "Result: BC ≈ 67.7 m"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Find the new horizontal distance.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "67.7062 − 25"
+        },
+        {
+          "type": "text",
+          "value": "Result: new distance ≈ 42.7 m"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Compute the new angle with inverse tangent.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "tan α = 36 ÷ 42.7062 = 0.84300, α = 40.13°"
+        },
+        {
+          "type": "text",
+          "value": "Result: α ≈ 40°"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Justify the equal angles from parallel horizontals, use tan 28° to get BC, subtract 25 m and use the inverse tangent for the new angle."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) The horizontal at A is parallel to sea level, so the angle of depression at A and the angle of elevation at C are alternate angles between parallel lines and are therefore equal, both 28°  (b) BC ≈ 67.7 m  (c) the new angle of elevation is approximately 40°"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Angles of depression and elevation are always measured from a horizontal, and all horizontals in a vertical plane are parallel — so the alternate-angle rule makes the two angles equal every time. As the boat comes closer the same 36 m height is seen across a shorter base, so the tangent ratio grows and the angle of elevation increases, which is exactly what the calculation confirms."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "measuring_the_angle_of_depression_from_t",
+      "wrongValue": "incorrect_1",
+      "misconception": "Measuring the angle of depression from the vertical cliff instead of the horizontal, giving 62°.",
+      "correctiveNote": "Avoid this: Measuring the angle of depression from the vertical cliff instead of the horizontal, giving 62°."
+    },
+    {
+      "key": "adding_25_m_rather_than_subtracting_it_w",
+      "wrongValue": "incorrect_2",
+      "misconception": "Adding 25 m rather than subtracting it, when the boat moves towards the cliff.",
+      "correctiveNote": "Avoid this: Adding 25 m rather than subtracting it, when the boat moves towards the cliff."
+    },
+    {
+      "key": "rounding_bc_to_68_m_before_part_c_which_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Rounding BC to 68 m before part c, which pushes the final angle to the wrong degree.",
+      "correctiveNote": "Avoid this: Rounding BC to 68 m before part c, which pushes the final angle to the wrong degree."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Draw the dashed horizontal at the observer's eye every time a depression angle appears — the alternate-angle transfer to the ground point becomes obvious and saves a whole mark."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "ThehorizontalatAisparalleltosealevel,sotheangleofdepressionatAandtheangleofelevationatCarealtern",
+    "displayValue": "The horizontal at A is parallel to sea level, so the angle of depression at A and the angle of elevation at C are altern",
+    "acceptedForms": [
+      "The horizontal at A is parallel to sea level, so the angle of depression at A and the angle of elevation at C are altern",
+      "ThehorizontalatAisparalleltosealevel,sotheangleofdepressionatAandtheangleofelevationatCarealtern"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "From the top of a 20 m lighthouse the angle of depression of a boat is 40°. How far is the boat from the base?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "20",
+      "displayValue": "20",
+      "acceptedForms": [
+        "20",
+        "20"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "9920f02c-3acf-4095-a0a0-6fa1aee1c0d3",
+      "code": "M1-1.1",
+      "label": "Angles of elevation and depression"
+    },
+    {
+      "objectiveId": "2fc56c95-9e16-4923-acda-73b7b7d0e3f8",
+      "code": "M1-1.1",
+      "label": "Alternate angles between parallel lines"
+    },
+    {
+      "objectiveId": "2993500b-e464-4893-adfd-a4483fd348f2",
+      "code": "M1-1.1",
+      "label": "Tangent ratio and its inverse"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 2,
+    "pageRef": "p176",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

@@ -1,0 +1,262 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p192-q19",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 6,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The quadrilateral ABCD is drawn on a coordinate grid with A(1, 1), B(5, 3), C(9, 9) and D(5, 7). (a) Determine the vectors AB and DC. (b) Determine the vectors AD and BC. (c) Use your answers to show that ABCD is a parallelogram."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Read the four coordinates off the grid first; after that every vector is just 'finish minus start'."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p192_q19.jpg",
+      "altText": "Source visual for edmar-csec-p192-q19 from workbook page 192."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Read the four vertices from the grid.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "A is at (1, 1), B at (5, 3), C at (9, 9), D at (5, 7)."
+        },
+        {
+          "type": "text",
+          "value": "Result: A(1,1), B(5,3), C(9,9), D(5,7)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Subtract the starting point from the finishing point for AB and for DC.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "AB = (5−1, 3−1); DC = (9−5, 9−7)"
+        },
+        {
+          "type": "text",
+          "value": "Result: AB = (4, 2) and DC = (4, 2)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Do the same for AD and BC.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "AD = (5−1, 7−1); BC = (9−5, 9−3)"
+        },
+        {
+          "type": "text",
+          "value": "Result: AD = (4, 6) and BC = (4, 6)"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Compare the two pairs.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "AB = DC and AD = BC, so both pairs of opposite sides are parallel and equal in length."
+        },
+        {
+          "type": "text",
+          "value": "Result: ABCD is a parallelogram"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Read A, B, C and D from the grid, subtract coordinates to get each vector, then show that the two pairs of opposite sides are equal vectors."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) AB = (4, 2) and DC = (4, 2)  (b) AD = (4, 6) and BC = (4, 6)  (c) AB = DC and AD = BC, so each pair of opposite sides is equal in magnitude and parallel in direction, which is exactly the condition for ABCD to be a parallelogram."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Two vectors are equal only when they have both the same length and the same direction, so an equality like AB = DC packs both parallelogram conditions into one line. Coordinates make this checkable by pure arithmetic rather than by measuring the drawing. Showing one pair equal is already enough, but showing both makes the argument complete."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "subtracting_in_the_wrong_order_e_g_compu",
+      "wrongValue": "incorrect_1",
+      "misconception": "Subtracting in the wrong order, e.g. computing CD instead of DC.",
+      "correctiveNote": "Avoid this: Subtracting in the wrong order, e.g. computing CD instead of DC."
+    },
+    {
+      "key": "misreading_grid_coordinates_when_the_axi",
+      "wrongValue": "incorrect_2",
+      "misconception": "Misreading grid coordinates when the axis labels are spaced in twos.",
+      "correctiveNote": "Avoid this: Misreading grid coordinates when the axis labels are spaced in twos."
+    },
+    {
+      "key": "saying_the_shape_looks_like_a_parallelog",
+      "wrongValue": "incorrect_3",
+      "misconception": "Saying the shape 'looks like' a parallelogram instead of quoting AB = DC.",
+      "correctiveNote": "Avoid this: Saying the shape 'looks like' a parallelogram instead of quoting AB = DC."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Write vectors as finish minus start every time; the letters in the vector name tell you which point is which."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "A",
+    "displayValue": "A",
+    "acceptedForms": [
+      "A",
+      "A"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "P(2, 3) and Q(7, 1). Find the vector PQ."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "PQ=(5,−2)",
+      "displayValue": "PQ = (5, −2)",
+      "acceptedForms": [
+        "PQ = (5, −2)",
+        "PQ=(5,−2)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "83748829-daa2-4bb1-a6fc-d086636a16b8",
+      "code": "M2-5.1",
+      "label": "Coordinates and position vectors"
+    },
+    {
+      "objectiveId": "df42c578-d1b7-43e4-a27c-a75e4c572ce6",
+      "code": "M2-5.1",
+      "label": "Vector between two points"
+    },
+    {
+      "objectiveId": "138ed94a-b205-408a-abe3-1f7fe9bdb2a8",
+      "code": "M2-5.1",
+      "label": "Equal vectors"
+    },
+    {
+      "objectiveId": "70f9a95f-4e09-4579-abbd-05572c4d0171",
+      "code": "M2-5.1",
+      "label": "Properties of a parallelogram"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 19,
+    "pageRef": "p192",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "A",
+        "displayValue": "A",
+        "acceptedForms": [
+          "A",
+          "A"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "=(4,2)an",
+        "displayValue": "= (4, 2) an",
+        "acceptedForms": [
+          "= (4, 2) an",
+          "=(4,2)an"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "c",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (c): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "=(4,2)",
+        "displayValue": "= (4, 2)",
+        "acceptedForms": [
+          "= (4, 2)",
+          "=(4,2)"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

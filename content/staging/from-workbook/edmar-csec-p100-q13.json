@@ -1,0 +1,187 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p100-q13",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the simultaneous equations 5x − 4y = 18 and 2x − 4y = 6."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Both equations contain −4y, so subtracting one from the other removes y immediately."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p100_q13.jpg",
+      "altText": "Source visual for edmar-csec-p100-q13 from workbook page 100."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Subtract the second equation from the first.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(5x − 2x) + (−4y + 4y) = 18 − 6"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3x = 12"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Divide to find x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "12 ÷ 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 4"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Substitute x = 4 into 2x − 4y = 6.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "8 − 4y = 6, so −4y = −2"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 1/2"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Check in the first equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5(4) − 4(1/2) = 20 − 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: 18 ✓"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Subtract the second equation from the first to eliminate y, solve for x, then substitute back."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = 4, y = 1/2"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Identical y terms in both equations mean the difference between the equations contains no y at all, so subtraction isolates x in one step. The half in the answer is genuine: the two lines simply meet at a point whose y coordinate is not a whole number."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "subtracting_4y_4y_incorrectly_and_leavin",
+      "wrongValue": "incorrect_1",
+      "misconception": "Subtracting −4y − (−4y) incorrectly and leaving −8y.",
+      "correctiveNote": "Avoid this: Subtracting −4y − (−4y) incorrectly and leaving −8y."
+    },
+    {
+      "key": "subtracting_the_left_sides_but_adding_th",
+      "wrongValue": "incorrect_2",
+      "misconception": "Subtracting the left sides but adding the right sides.",
+      "correctiveNote": "Avoid this: Subtracting the left sides but adding the right sides."
+    },
+    {
+      "key": "rejecting_y_1_2_as_impossible_and_re_sol",
+      "wrongValue": "incorrect_3",
+      "misconception": "Rejecting y = 1/2 as impossible and re-solving.",
+      "correctiveNote": "Avoid this: Rejecting y = 1/2 as impossible and re-solving."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When subtracting equations, write the subtraction vertically and take each column separately — that is where sign errors with double negatives are avoided."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=4,y=1/2",
+    "displayValue": "= 4, y = 1/2",
+    "acceptedForms": [
+      "= 4, y = 1/2",
+      "=4,y=1/2"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve 5x − 3y = 19 and 2x − 3y = 7."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=4,y=1/3",
+      "displayValue": "= 4, y = 1/3",
+      "acceptedForms": [
+        "= 4, y = 1/3",
+        "=4,y=1/3"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "8d3510df-b6e9-4cf7-acfe-2b72b7b56c8e",
+      "code": "M1-5.1",
+      "label": "Simultaneous linear equations"
+    },
+    {
+      "objectiveId": "da9c309d-ace5-40f6-ae56-d6dd467cfc0b",
+      "code": "M1-5.1",
+      "label": "Elimination by subtraction"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 13,
+    "pageRef": "p100",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

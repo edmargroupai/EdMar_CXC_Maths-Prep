@@ -1,0 +1,273 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p145-q08",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 5,
+  "status": "draft",
+  "marks": 4,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The functions f, g and h are defined by f: x ↦ x − 3, g: x ↦ x² and h: x ↦ x² − 6x + 9. (a) Given that f²(x) = f[f(x)], f³(x) = f[f²(x)] and so on, (i) deduce an algebraic expression in terms of x for f⁴(x) and hence calculate f⁴(3); (ii) show that gf(x) = h(x). (b)(i) Determine the values of x for which h(x) > 1. (b)(ii) Show that if h(x) < 25, then -2 < x < 8. (c) Hence or otherwise, for x ∈ ℝ, determine the range of values of x for which 1 < h(x) < 25 and represent your answer on a number line."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Notice first that h(x) = (x − 3)² — writing it that way turns every inequality into a simple square-root step."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p145_q08.jpg",
+      "altText": "Source visual for edmar-csec-p145-q08 from workbook page 145."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Apply f repeatedly.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "f(x) = x − 3, f²(x) = x − 6, f³(x) = x − 9, so each application subtracts a further 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: f⁴(x) = x − 12"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Evaluate f⁴(3).",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3 − 12"
+        },
+        {
+          "type": "text",
+          "value": "Result: f⁴(3) = -9"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Form gf(x) and compare with h.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "gf(x) = g(x − 3) = (x − 3)² = x² − 6x + 9 = h(x)"
+        },
+        {
+          "type": "text",
+          "value": "Result: gf(x) = h(x), as required"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Solve h(x) > 1 using the square form.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(x − 3)² > 1 → x − 3 > 1 or x − 3 < -1"
+        },
+        {
+          "type": "text",
+          "value": "Result: x > 4 or x < 2"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Solve h(x) < 25.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(x − 3)² < 25 → -5 < x − 3 < 5, so add 3 throughout"
+        },
+        {
+          "type": "text",
+          "value": "Result: -2 < x < 8, as required"
+        }
+      ]
+    },
+    {
+      "stepNo": 6,
+      "instruction": "Combine both conditions for 1 < h(x) < 25.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Take the overlap of (x < 2 or x > 4) with -2 < x < 8"
+        },
+        {
+          "type": "text",
+          "value": "Result: -2 < x < 2 or 4 < x < 8"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Track the repeated subtraction to get f⁴, compose g with f to recognise h as a perfect square, then solve each inequality using (x − 3)² and combine the two solution sets."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a)(i) f⁴(x) = x − 12 and f⁴(3) = -9  (a)(ii) gf(x) = (x − 3)² = x² − 6x + 9 = h(x)  (b)(i) x < 2 or x > 4  (b)(ii) (x − 3)² < 25 gives -5 < x − 3 < 5, hence -2 < x < 8  (c) -2 < x < 2 or 4 < x < 8, drawn on a number line as two open intervals with open circles at -2, 2, 4 and 8."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Because h(x) is the perfect square (x − 3)², its value depends only on how far x is from 3. So h(x) < 25 means x is within 5 of 3, and h(x) > 1 means x is more than 1 away from 3 — the first gives a single interval, the second gives two. Combining them leaves the points more than 1 but less than 5 away from 3, which is exactly the pair of intervals in the answer."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "taking_only_the_positive_root_of_x_3_1_a",
+      "wrongValue": "incorrect_1",
+      "misconception": "Taking only the positive root of (x − 3)² > 1 and losing the branch x < 2.",
+      "correctiveNote": "Avoid this: Taking only the positive root of (x − 3)² > 1 and losing the branch x < 2."
+    },
+    {
+      "key": "treating_a_two_sided_condition_as_one_si",
+      "wrongValue": "incorrect_2",
+      "misconception": "Treating a two-sided condition as one-sided.",
+      "correctiveNote": "Avoid this: Treating a two-sided condition as one-sided."
+    },
+    {
+      "key": "using_filled_circles_on_the_number_line_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Using filled circles on the number line when the inequalities are strict.",
+      "correctiveNote": "Avoid this: Using filled circles on the number line when the inequalities are strict."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Rewrite a quadratic inequality in completed-square form before solving — the distance-from-a-point reading makes both branches obvious."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "f⁴",
+    "displayValue": "f⁴",
+    "acceptedForms": [
+      "f⁴",
+      "f⁴"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve (x − 2)² < 9."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "-3",
+      "displayValue": "-3",
+      "acceptedForms": [
+        "-3",
+        "-3"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "c6372627-ea2b-4f23-ab70-5c4698a9daea",
+      "code": "M1-5.1",
+      "label": "Repeated composition"
+    },
+    {
+      "objectiveId": "01a23907-cbd5-4e41-a364-8a898a149fbd",
+      "code": "M1-5.1",
+      "label": "Composite functions"
+    },
+    {
+      "objectiveId": "023b65d3-1e38-4d87-a4d3-1394d5cae3e5",
+      "code": "M1-5.1",
+      "label": "Completing the square"
+    },
+    {
+      "objectiveId": "8e1aa4dd-5c75-4248-ad7d-afbdf47e9c67",
+      "code": "M1-5.1",
+      "label": "Quadratic inequalities"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 8,
+    "pageRef": "p145",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a.i",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.i): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "f⁴",
+        "displayValue": "f⁴",
+        "acceptedForms": [
+          "f⁴",
+          "f⁴"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.ii",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.ii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "gf",
+        "displayValue": "gf",
+        "acceptedForms": [
+          "gf",
+          "gf"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

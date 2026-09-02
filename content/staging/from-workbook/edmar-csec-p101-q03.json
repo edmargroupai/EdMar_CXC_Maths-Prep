@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p101-q03",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Express x² + 10x − 7 in the form (x + h)² + k by completing the square."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Half of 10 is 5, and the constant here is already negative, so expect a large negative k."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p101_q03.jpg",
+      "altText": "Source visual for edmar-csec-p101-q03 from workbook page 101."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Halve the coefficient of x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "10 ÷ 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: 5, so the bracket is (x + 5)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Expand to see the surplus.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(x + 5)² = x² + 10x + 25"
+        },
+        {
+          "type": "text",
+          "value": "Result: 25 too many"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Subtract 25 and add the original constant −7.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x² + 10x − 7 = (x + 5)² − 25 − 7"
+        },
+        {
+          "type": "text",
+          "value": "Result: (x + 5)² − 32"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Check by expanding.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x² + 10x + 25 − 32"
+        },
+        {
+          "type": "text",
+          "value": "Result: x² + 10x − 7 ✓"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Form (x + 5)², subtract the 25 it introduces and add the original constant −7."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x² + 10x − 7 = (x + 5)² − 32"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Completing the square rewrites a quadratic as a single squared term plus a constant, which is possible for every quadratic even when it will not factorise into whole-number brackets. The correction −25 and the original −7 simply combine into one constant."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "combining_25_and_7_as_18",
+      "wrongValue": "incorrect_1",
+      "misconception": "Combining −25 and −7 as −18.",
+      "correctiveNote": "Avoid this: Combining −25 and −7 as −18."
+    },
+    {
+      "key": "writing_x_5_25_7_by_changing_the_sign_of",
+      "wrongValue": "incorrect_2",
+      "misconception": "Writing (x + 5)² − 25 + 7 by changing the sign of the original constant.",
+      "correctiveNote": "Avoid this: Writing (x + 5)² − 25 + 7 by changing the sign of the original constant."
+    },
+    {
+      "key": "trying_to_factorise_first_and_giving_up_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Trying to factorise first and giving up when no whole-number pair works.",
+      "correctiveNote": "Avoid this: Trying to factorise first and giving up when no whole-number pair works."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Completing the square never fails, so reach for it whenever a quadratic refuses to factorise neatly."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "x²+10x−7=(x+5)²−32",
+    "displayValue": "x² + 10x − 7 = (x + 5)² − 32",
+    "acceptedForms": [
+      "x² + 10x − 7 = (x + 5)² − 32",
+      "x²+10x−7=(x+5)²−32"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Express x² + 4x − 9 in the form (x + h)² + k."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "+2)²−13",
+      "displayValue": "+ 2)² − 13",
+      "acceptedForms": [
+        "+ 2)² − 13",
+        "+2)²−13"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "546f40eb-764e-4b07-ae6d-5453b9a8ee60",
+      "code": "M1-5.1",
+      "label": "Completing the square"
+    },
+    {
+      "objectiveId": "c7daf331-85a9-49dd-a07e-9220779b98f4",
+      "code": "M1-5.1",
+      "label": "Perfect square trinomials"
+    },
+    {
+      "objectiveId": "155d3f21-aa2e-4a0a-a7a7-495a60f6f8e4",
+      "code": "M1-5.1",
+      "label": "Combining negative constants"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 3,
+    "pageRef": "p101",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

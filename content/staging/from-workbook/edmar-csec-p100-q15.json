@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p100-q15",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the simultaneous equations 8x − 5y = 19 and 3x − 5y = −6."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The −5y term is common to both equations, so subtraction clears y in one step."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p100_q15.jpg",
+      "altText": "Source visual for edmar-csec-p100-q15 from workbook page 100."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Subtract the second equation from the first.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(8x − 3x) + (−5y + 5y) = 19 − (−6)"
+        },
+        {
+          "type": "text",
+          "value": "Result: 5x = 25"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Divide to find x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "25 ÷ 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 5"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Substitute x = 5 into 3x − 5y = −6.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "15 − 5y = −6, so −5y = −21"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 21/5"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Check in the first equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "8(5) − 5(21/5) = 40 − 21"
+        },
+        {
+          "type": "text",
+          "value": "Result: 19 ✓"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Subtract the second equation from the first to eliminate y, solve for x, then substitute back."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = 5, y = 21/5 (that is, y = 4 1/5 or 4.2)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Subtracting equations with identical y terms leaves an equation in x alone, and the awkward-looking constant on the right is handled by the ordinary rule that subtracting a negative adds. The fractional y is the exact coordinate of the intersection point."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_19_6_13_instead_of_19_6_25",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing 19 − 6 = 13 instead of 19 − (−6) = 25.",
+      "correctiveNote": "Avoid this: Writing 19 − 6 = 13 instead of 19 − (−6) = 25."
+    },
+    {
+      "key": "solving_5y_21_as_y_21_5",
+      "wrongValue": "incorrect_2",
+      "misconception": "Solving −5y = −21 as y = −21/5.",
+      "correctiveNote": "Avoid this: Solving −5y = −21 as y = −21/5."
+    },
+    {
+      "key": "rounding_to_y_4_and_then_failing_the_che",
+      "wrongValue": "incorrect_3",
+      "misconception": "Rounding to y = 4 and then failing the check.",
+      "correctiveNote": "Avoid this: Rounding to y = 4 and then failing the check."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Put brackets round a negative constant before subtracting, so 19 − (−6) is visibly an addition and the double negative cannot be missed."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=5,y=21/5(thatis,y=41/5",
+    "displayValue": "= 5, y = 21/5 (that is, y = 4 1/5",
+    "acceptedForms": [
+      "= 5, y = 21/5 (that is, y = 4 1/5",
+      "=5,y=21/5(thatis,y=41/5"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve 7x − 2y = 20 and 3x − 2y = 4."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=4,y=4",
+      "displayValue": "= 4, y = 4",
+      "acceptedForms": [
+        "= 4, y = 4",
+        "=4,y=4"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "62588292-e9fe-42be-ad1b-391d0ba705a8",
+      "code": "M1-5.1",
+      "label": "Simultaneous linear equations"
+    },
+    {
+      "objectiveId": "628a1fbf-6d40-43c0-af54-1113e5e360e1",
+      "code": "M1-5.1",
+      "label": "Elimination by subtraction"
+    },
+    {
+      "objectiveId": "1fc373a5-24ff-423e-aa91-63e0ad465223",
+      "code": "M1-5.1",
+      "label": "Working with negative constants"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 15,
+    "pageRef": "p100",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

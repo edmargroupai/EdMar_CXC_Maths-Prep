@@ -1,0 +1,186 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p118-q13",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The number of days d needed to complete a task varies inversely as the number of machines m. If 4 machines take 18 days, how many days will 12 machines take?"
+    },
+    {
+      "type": "text",
+      "value": "Think first: Tripling the number of machines should cut the time to a third — inverse variation makes that precise."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p118_q13.jpg",
+      "altText": "Source visual for edmar-csec-p118-q13 from workbook page 118."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write the variation statement as an equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "d varies inversely as m"
+        },
+        {
+          "type": "text",
+          "value": "Result: d = k/m"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Substitute d = 18 and m = 4 to find k.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "18 = k/4"
+        },
+        {
+          "type": "text",
+          "value": "Result: k = 72 (machine-days)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Substitute m = 12 into d = 72/m.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "d = 72 ÷ 12"
+        },
+        {
+          "type": "text",
+          "value": "Result: d = 6 days"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Write d = k/m, find k from 4 machines taking 18 days, then substitute m = 12."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "12 machines will take 6 days"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The constant 72 machine-days measures the whole task, and it stays the same however many machines are used. Because 12 machines is three times 4 machines, the time falls to one third of 18 days — the reciprocal relationship at the heart of inverse variation."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "multiplying_18_by_3_instead_of_dividing",
+      "wrongValue": "incorrect_1",
+      "misconception": "Multiplying 18 by 3 instead of dividing.",
+      "correctiveNote": "Avoid this: Multiplying 18 by 3 instead of dividing."
+    },
+    {
+      "key": "finding_k_by_dividing_18_by_4_rather_tha",
+      "wrongValue": "incorrect_2",
+      "misconception": "Finding k by dividing 18 by 4 rather than multiplying.",
+      "correctiveNote": "Avoid this: Finding k by dividing 18 by 4 rather than multiplying."
+    },
+    {
+      "key": "rounding_6_to_a_whole_number_of_weeks_an",
+      "wrongValue": "incorrect_3",
+      "misconception": "Rounding 6 to a whole number of weeks and losing the exact answer.",
+      "correctiveNote": "Avoid this: Rounding 6 to a whole number of weeks and losing the exact answer."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Look for the scale factor first: if machines are multiplied by 3, days are divided by 3 — you can often write the answer in one line."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "12",
+    "displayValue": "12",
+    "acceptedForms": [
+      "12",
+      "12"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "6 machines take 15 days. How many days will 10 machines take?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "9",
+      "displayValue": "9",
+      "acceptedForms": [
+        "9",
+        "9"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-3.2"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "77388935-f9b6-4d4d-aa64-d8254c2a54b4",
+      "code": "M1-3.2",
+      "label": "Inverse variation"
+    },
+    {
+      "objectiveId": "58b3f691-2e2c-471d-a0c4-5a6679f9361a",
+      "code": "M1-3.2",
+      "label": "Constant of variation"
+    },
+    {
+      "objectiveId": "47cd8e83-7a5b-4b09-a034-bb461275d1ea",
+      "code": "M1-3.2",
+      "label": "Machine-days"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 13,
+    "pageRef": "p118",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

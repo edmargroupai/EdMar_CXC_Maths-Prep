@@ -1,0 +1,286 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p267-q01",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 6,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "In quadrilateral PQRS, PQ is parallel to SR. The diagonal SQ = 8 cm, angle SPQ = 90 degrees, angle SQR = 82 degrees and angle QSR = 30 degrees. Determine (i) the length PS, (ii) the length PQ, and (iii) the area of PQRS."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The diagonal SQ splits the quadrilateral into a right-angled triangle and a non-right-angled triangle, and the parallel sides hand you the missing angle in the right-angled one."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p267_q01.jpg",
+      "altText": "Source visual for edmar-csec-p267-q01 from workbook page 267."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Use the parallel lines to find angle PQS.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "PQ is parallel to SR and SQ is a transversal, so angle PQS = angle QSR (alternate angles) = 30 degrees."
+        },
+        {
+          "type": "text",
+          "value": "Result: angle PQS = 30 degrees"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "In right-angled triangle PQS, use SQ as the hypotenuse to find PS.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "PS is opposite the 30 degree angle: PS = SQ x sin 30 = 8 x 0.5"
+        },
+        {
+          "type": "text",
+          "value": "Result: PS = 4 cm"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Find PQ in the same triangle.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "PQ is adjacent to the 30 degree angle: PQ = SQ x cos 30 = 8 x 0.8660"
+        },
+        {
+          "type": "text",
+          "value": "Result: PQ = 6.93 cm (3 s.f.)"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Work out the third angle of triangle QSR and use the sine rule to find SR.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "angle SRQ = 180 - 82 - 30 = 68 degrees, so SR / sin 82 = 8 / sin 68, giving SR = 8 x sin 82 / sin 68"
+        },
+        {
+          "type": "text",
+          "value": "Result: SR = 8.54 cm"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Find the area of each triangle and add them.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Area PQS = (1/2)(4)(6.928) = 13.86 cm squared;  Area QSR = (1/2)(8)(8.544) sin 30 = 17.09 cm squared"
+        },
+        {
+          "type": "text",
+          "value": "Result: Total area = 13.86 + 17.09 = 30.9 cm squared"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Use the parallel sides to transfer the 30 degrees into triangle PQS, solve that right-angled triangle for PS and PQ, then find SR by the sine rule in triangle QSR and add the two triangle areas."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) PS = 4 cm  (ii) PQ = 6.93 cm (3 s.f.)  (iii) Area of PQRS = 30.9 cm squared (3 s.f.)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A diagonal turns any quadrilateral into two triangles, so its area is always the sum of the two triangle areas. The parallel sides let you move a known angle from one triangle into the other by the alternate-angle property, which is what makes the right-angled triangle solvable from a single length. Once two angles and a side of the second triangle are known, the sine rule fixes the remaining sides, and the formula (1/2)ab sin C gives the area without needing a perpendicular height."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "using_the_82_degree_angle_as_the_angle_i",
+      "wrongValue": "incorrect_1",
+      "misconception": "Using the 82 degree angle as the angle in triangle PQS instead of the alternate 30 degrees.",
+      "correctiveNote": "Avoid this: Using the 82 degree angle as the angle in triangle PQS instead of the alternate 30 degrees."
+    },
+    {
+      "key": "taking_sq_as_a_shorter_side_rather_than_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Taking SQ as a shorter side rather than the hypotenuse of the right-angled triangle.",
+      "correctiveNote": "Avoid this: Taking SQ as a shorter side rather than the hypotenuse of the right-angled triangle."
+    },
+    {
+      "key": "forgetting_to_add_the_second_triangle_s_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Forgetting to add the second triangle's area, or double counting the diagonal.",
+      "correctiveNote": "Avoid this: Forgetting to add the second triangle's area, or double counting the diagonal."
+    },
+    {
+      "key": "rounding_pq_to_6_9_too_early_and_then_lo",
+      "wrongValue": "incorrect_4",
+      "misconception": "Rounding PQ to 6.9 too early and then losing accuracy in the area.",
+      "correctiveNote": "Avoid this: Rounding PQ to 6.9 too early and then losing accuracy in the area."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When a quadrilateral question gives you a diagonal, split it at once and label every angle you can deduce before choosing a rule."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "PS=4cm",
+    "displayValue": "PS = 4 cm",
+    "acceptedForms": [
+      "PS = 4 cm",
+      "PS=4cm"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "In a right-angled triangle the hypotenuse is 10 cm and one acute angle is 30 degrees. What is the side opposite that angle?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "5",
+      "displayValue": "5",
+      "acceptedForms": [
+        "5",
+        "5"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "130b16e2-3b79-40c6-af7f-5263a0a49bc5",
+      "code": "M1-1.1",
+      "label": "Alternate angles between parallel lines"
+    },
+    {
+      "objectiveId": "199d6ad7-971b-414c-adbd-88c956c8eea5",
+      "code": "M1-1.1",
+      "label": "Trigonometric ratios in a right-angled triangle"
+    },
+    {
+      "objectiveId": "da6fde55-5c5d-4287-a2a8-fede188e39f3",
+      "code": "M1-1.1",
+      "label": "Angle sum of a triangle"
+    },
+    {
+      "objectiveId": "f654ba4e-e77c-44fc-aae0-8bd625ebcdf1",
+      "code": "M1-1.1",
+      "label": "Sine rule"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 1,
+    "pageRef": "p267",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a.i",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.i): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "PS=4cm",
+        "displayValue": "PS = 4 cm",
+        "acceptedForms": [
+          "PS = 4 cm",
+          "PS=4cm"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.ii",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.ii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "PQ=6.93cm(3s.f.)",
+        "displayValue": "PQ = 6.93 cm (3 s.f.)",
+        "acceptedForms": [
+          "PQ = 6.93 cm (3 s.f.)",
+          "PQ=6.93cm(3s.f.)"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.iii",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.iii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Are",
+        "displayValue": "Are",
+        "acceptedForms": [
+          "Are",
+          "Are"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

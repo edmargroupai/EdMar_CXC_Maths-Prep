@@ -1,0 +1,201 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p130-q09",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Villages A(-6, 2) and B(4, 8) are joined by a straight road, and a communication tower stands at the midpoint of the road. (a) Determine the coordinates of the tower. (b) Calculate the distance from the tower to either village, giving the answer in exact form. (c) The distance between A(2, k) and B(-4, 1) is 10 units. Determine the TWO possible values of k."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Parts (a) and (b) use the midpoint and distance formulas forward; part (c) uses the distance formula backwards to solve for an unknown coordinate."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p130_q09.jpg",
+      "altText": "Source visual for edmar-csec-p130-q09 from workbook page 130."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Find the midpoint of A(-6, 2) and B(4, 8).",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "((-6 + 4)/2, (2 + 8)/2) = (-2/2, 10/2)"
+        },
+        {
+          "type": "text",
+          "value": "Result: Tower at (-1, 5)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Find the distance from the tower (-1, 5) to A(-6, 2).",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "√((-1 − (-6))² + (5 − 2)²) = √(25 + 9)"
+        },
+        {
+          "type": "text",
+          "value": "Result: √34 units (≈ 5.83)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Set up part (c) with the distance formula.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "√((2 − (-4))² + (k − 1)²) = 10, so 36 + (k − 1)² = 100"
+        },
+        {
+          "type": "text",
+          "value": "Result: (k − 1)² = 64"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Take both square roots and solve.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "k − 1 = 8 or k − 1 = -8"
+        },
+        {
+          "type": "text",
+          "value": "Result: k = 9 or k = -7"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Average the coordinates for the midpoint, apply the distance formula from that midpoint to A leaving the surd unsimplified as a decimal, then set the distance formula equal to 10 and solve the resulting square equation for k."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) The tower is at (-1, 5)  (b) √34 units (exact form)  (c) k = 9 or k = -7."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The distance formula is an equation, so it can be run in either direction: given both points it gives the length, and given the length with one coordinate missing it becomes an equation to solve. Because a square root has two values, squaring produces two symmetric answers — the second point can sit either above or below the first, and both are genuine. Leaving √34 unsimplified is the exact answer; 34 has no square factor to take out."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "giving_the_distance_as_a_rounded_decimal",
+      "wrongValue": "incorrect_1",
+      "misconception": "Giving the distance as a rounded decimal when exact form is asked for.",
+      "correctiveNote": "Avoid this: Giving the distance as a rounded decimal when exact form is asked for."
+    },
+    {
+      "key": "taking_only_the_positive_square_root_in_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Taking only the positive square root in part (c) and losing k = -7.",
+      "correctiveNote": "Avoid this: Taking only the positive square root in part (c) and losing k = -7."
+    },
+    {
+      "key": "averaging_with_a_subtraction_in_the_midp",
+      "wrongValue": "incorrect_3",
+      "misconception": "Averaging with a subtraction in the midpoint formula.",
+      "correctiveNote": "Avoid this: Averaging with a subtraction in the midpoint formula."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Whenever squaring appears in an equation, expect two answers and check the wording — “TWO possible values” is telling you not to stop at one."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Thetowerisat(-1,5)",
+    "displayValue": "The tower is at (-1, 5)",
+    "acceptedForms": [
+      "The tower is at (-1, 5)",
+      "Thetowerisat(-1,5)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "The distance between (0, m) and (3, 1) is 5. Find the two values of m."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "9",
+      "displayValue": "9",
+      "acceptedForms": [
+        "9",
+        "9"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-3.2"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "0bb3d11a-f640-4e50-a7ed-417fdc937fb9",
+      "code": "M1-3.2",
+      "label": "Midpoint formula"
+    },
+    {
+      "objectiveId": "3d649c51-c960-4025-a7eb-d689d5dae4fe",
+      "code": "M1-3.2",
+      "label": "Distance between two points"
+    },
+    {
+      "objectiveId": "b4dc1293-9516-4562-af80-7d13c9a426bb",
+      "code": "M1-3.2",
+      "label": "Surds in exact form"
+    },
+    {
+      "objectiveId": "1177f70d-ebc8-4a17-a966-771632b65fef",
+      "code": "M1-3.2",
+      "label": "Solving a quadratic by square roots"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 9,
+    "pageRef": "p130",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

@@ -1,0 +1,195 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p050-q05",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Simplify the algebraic fraction 8m²n/(4mn)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Deal with the numbers and each letter separately — the fraction is a single product on the top and a single product on the bottom."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p050_q05.jpg",
+      "altText": "Source visual for edmar-csec-p050-q05 from workbook page 50."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Divide the number parts.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "8 ÷ 4"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Divide the m parts using the index law.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "m² ÷ m¹ = m^(2−1)"
+        },
+        {
+          "type": "text",
+          "value": "Result: m"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Divide the n parts.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "n ÷ n = 1"
+        },
+        {
+          "type": "text",
+          "value": "Result: 1"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Multiply the surviving parts together.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2 × m × 1"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2m"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Divide the numerical coefficients, then subtract the indices of m and of n."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "2m"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Dividing powers of the same base subtracts the indices, because m² ÷ m is just (m × m) ÷ m with one factor of m cancelling. Splitting the fraction into a number part, an m part and an n part works since multiplication can be reordered freely. When an index difference reaches zero, that letter disappears entirely, which is why no n survives here."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_the_answer_as_2mn_forgetting_tha",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing the answer as 2mn, forgetting that n ÷ n = 1 removes n completely.",
+      "correctiveNote": "Avoid this: Writing the answer as 2mn, forgetting that n ÷ n = 1 removes n completely."
+    },
+    {
+      "key": "subtracting_the_coefficients_8_4_4_inste",
+      "wrongValue": "incorrect_2",
+      "misconception": "Subtracting the coefficients (8 − 4 = 4) instead of dividing them.",
+      "correctiveNote": "Avoid this: Subtracting the coefficients (8 − 4 = 4) instead of dividing them."
+    },
+    {
+      "key": "giving_2m_by_leaving_the_index_on_m_unch",
+      "wrongValue": "incorrect_3",
+      "misconception": "Giving 2m² by leaving the index on m unchanged.",
+      "correctiveNote": "Avoid this: Giving 2m² by leaving the index on m unchanged."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Handle coefficients and each letter as three separate mini-divisions. That routine never breaks down, however many letters appear."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "2",
+    "displayValue": "2",
+    "acceptedForms": [
+      "2",
+      "2"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Simplify 12p³q/(3pq)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "4",
+      "displayValue": "4",
+      "acceptedForms": [
+        "4",
+        "4"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "7fdfc408-dc44-44b1-a298-c0a2837a5911",
+      "code": "M1-4.1",
+      "label": "Simplifying algebraic fractions"
+    },
+    {
+      "objectiveId": "bb3b25e5-3c76-403d-aa3d-b70029731dcf",
+      "code": "M1-4.1",
+      "label": "Laws of indices (division)"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 5,
+    "pageRef": "p50",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

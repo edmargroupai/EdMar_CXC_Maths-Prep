@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p050-q04",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Simplify 6/(x − 3) + 1/(x + 6) as a single fraction."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The denominators have no factor in common, so their product is the lowest common denominator."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p050_q04.jpg",
+      "altText": "Source visual for edmar-csec-p050-q04 from workbook page 50."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Choose the common denominator.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "the two brackets are unrelated, so multiply them"
+        },
+        {
+          "type": "text",
+          "value": "Result: (x − 3)(x + 6)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Rewrite each fraction over that denominator.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "6 is multiplied by (x + 6); 1 is multiplied by (x − 3)"
+        },
+        {
+          "type": "text",
+          "value": "Result: [6(x + 6) + (x − 3)]/[(x − 3)(x + 6)]"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Expand the numerator.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "6(x + 6) = 6x + 36"
+        },
+        {
+          "type": "text",
+          "value": "Result: 6x + 36 + x − 3"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Collect like terms.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "6x + x = 7x and 36 − 3 = 33"
+        },
+        {
+          "type": "text",
+          "value": "Result: 7x + 33"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Rewrite both fractions over (x − 3)(x + 6), then expand and collect the numerator."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(7x + 33)/[(x − 3)(x + 6)]"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Each fraction is scaled by the factor the other denominator contributes, which leaves its value untouched but gives both fractions matching denominators. Addition of fractions is only defined on equal-sized parts, so this rewriting is what makes the sum meaningful. The denominator stays factorised because that is where the restrictions x ≠ 3 and x ≠ −6 are visible."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "adding_the_numerators_and_the_denominato",
+      "wrongValue": "incorrect_1",
+      "misconception": "Adding the numerators and the denominators separately to get 7/(2x + 3).",
+      "correctiveNote": "Avoid this: Adding the numerators and the denominators separately to get 7/(2x + 3)."
+    },
+    {
+      "key": "forgetting_to_multiply_the_6_by_the_whol",
+      "wrongValue": "incorrect_2",
+      "misconception": "Forgetting to multiply the 6 by the whole bracket (x + 6).",
+      "correctiveNote": "Avoid this: Forgetting to multiply the 6 by the whole bracket (x + 6)."
+    },
+    {
+      "key": "cancelling_an_x_from_the_final_numerator",
+      "wrongValue": "incorrect_3",
+      "misconception": "Cancelling an x from the final numerator and denominator, which is not allowed once they are sums.",
+      "correctiveNote": "Avoid this: Cancelling an x from the final numerator and denominator, which is not allowed once they are sums."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Never cancel across a plus or minus sign. Cancelling is only legal between factors, so if the numerator is a sum, it must be factorised first or left alone."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "(7x+33)/[(x−3)(x+6)]",
+    "displayValue": "(7x + 33)/[(x − 3)(x + 6)]",
+    "acceptedForms": [
+      "(7x + 33)/[(x − 3)(x + 6)]",
+      "(7x+33)/[(x−3)(x+6)]"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Simplify 3/(x − 2) + 2/(x + 4) as a single fraction."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "[3(x+4)+2(x−2)]/[(x−2)(x+4)]=(5x+8)/[(x−2)(x+4)].",
+      "displayValue": "[3(x + 4) + 2(x − 2)]/[(x − 2)(x + 4)] = (5x + 8)/[(x − 2)(x + 4)].",
+      "acceptedForms": [
+        "[3(x + 4) + 2(x − 2)]/[(x − 2)(x + 4)] = (5x + 8)/[(x − 2)(x + 4)].",
+        "[3(x+4)+2(x−2)]/[(x−2)(x+4)]=(5x+8)/[(x−2)(x+4)]."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "8fffc12f-d1a0-41c0-aeab-df7a988d22b0",
+      "code": "M1-4.1",
+      "label": "Addition of algebraic fractions"
+    },
+    {
+      "objectiveId": "fdca2f65-ad26-4886-a129-febb245125f9",
+      "code": "M1-4.1",
+      "label": "Lowest common denominator"
+    },
+    {
+      "objectiveId": "8638e479-e22c-4826-afb2-90fca9c35970",
+      "code": "M1-4.1",
+      "label": "Expanding brackets"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 4,
+    "pageRef": "p50",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

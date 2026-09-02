@@ -1,0 +1,207 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p157-q13",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Using a ruler, a pencil and a pair of compasses, construct triangle PQR with PQ = 5 cm, ∠PQR = 60° and ∠QPR = 90°. (ii) Measure and state the length of PR and the measure of ∠PRQ."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Two angles and the side between them fix the triangle completely, and both angles here — 60° and 90° — are standard compass constructions."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p157_q13.jpg",
+      "altText": "Source visual for edmar-csec-p157-q13 from workbook page 157."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Draw PQ = 5 cm.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: PQ = 5 cm"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Construct a 60° angle at Q.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Centre Q, radius r, arc cutting QP at X; same radius centre X cuts the arc at Y; QY makes 60° with QP"
+        },
+        {
+          "type": "text",
+          "value": "Result: arm of ∠PQR = 60°"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Construct a perpendicular to PQ at P.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Equal arcs each side of P on line PQ, then equal larger arcs from those points crossing above P"
+        },
+        {
+          "type": "text",
+          "value": "Result: arm of ∠QPR = 90°"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Mark R where the two arms meet and join PR and QR.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: triangle PQR complete"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Measure PR and find the third angle.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "PR = 5 tan 60° = 5√3 = 8.66; ∠PRQ = 180° − 90° − 60°"
+        },
+        {
+          "type": "text",
+          "value": "Result: PR ≈ 8.7 cm, ∠PRQ = 30°"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Draw PQ = 5 cm, construct 60° at Q and 90° at P, and let the two arms meet at R; then measure PR and use the angle sum to check ∠PRQ."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(ii) PR ≈ 8.7 cm (exactly 5√3 = 8.66 cm) and ∠PRQ = 30°"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Angle–side–angle fixes a triangle uniquely, so once the 5 cm side and the two angles at its ends are drawn, the third vertex has only one possible position. The angle sum of 180° then forces ∠PRQ = 30°, and because the triangle is right-angled at P, the tangent ratio predicts PR = PQ tan 60° — an independent check on the drawing."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "placing_the_60_at_p_and_the_90_at_q_whic",
+      "wrongValue": "incorrect_1",
+      "misconception": "Placing the 60° at P and the 90° at Q, which swaps the triangle.",
+      "correctiveNote": "Avoid this: Placing the 60° at P and the 90° at Q, which swaps the triangle."
+    },
+    {
+      "key": "measuring_prq_with_a_protractor_and_acce",
+      "wrongValue": "incorrect_2",
+      "misconception": "Measuring ∠PRQ with a protractor and accepting a badly drawn 29° or 32° instead of checking with the angle sum.",
+      "correctiveNote": "Avoid this: Measuring ∠PRQ with a protractor and accepting a badly drawn 29° or 32° instead of checking with the angle sum."
+    },
+    {
+      "key": "setting_different_compass_radii_partway_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Setting different compass radii partway through the 60° construction.",
+      "correctiveNote": "Avoid this: Setting different compass radii partway through the 60° construction."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "In construction questions, always compute one length or angle by trigonometry first — it tells you immediately whether your drawing is accurate enough for the mark."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "PR≈8.7cm(exactly5√3=8.66cm)and∠PRQ=30°",
+    "displayValue": "PR ≈ 8.7 cm (exactly 5√3 = 8.66 cm) and ∠PRQ = 30°",
+    "acceptedForms": [
+      "PR ≈ 8.7 cm (exactly 5√3 = 8.66 cm) and ∠PRQ = 30°",
+      "PR≈8.7cm(exactly5√3=8.66cm)and∠PRQ=30°"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "In a right-angled triangle, the side adjacent to a 60° angle is 4 cm and the right angle is at the far end of that side. How long is the opposite side?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "4",
+      "displayValue": "4",
+      "acceptedForms": [
+        "4",
+        "4"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "c5930ed6-c858-4d3f-a5ba-1ba942fa6914",
+      "code": "M1-1.1",
+      "label": "Constructing 60° with compasses"
+    },
+    {
+      "objectiveId": "20a22e3a-064d-4098-a095-22681ecc3483",
+      "code": "M1-1.1",
+      "label": "Constructing a perpendicular at a point on a line"
+    },
+    {
+      "objectiveId": "6db93b35-b5e4-43b5-ab9e-d31f2abdd4f4",
+      "code": "M1-1.1",
+      "label": "Angle sum of a triangle"
+    },
+    {
+      "objectiveId": "033a2cc2-0b12-45cd-a11e-8a8413342e15",
+      "code": "M1-1.1",
+      "label": "Tangent ratio as a check"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 13,
+    "pageRef": "p157",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

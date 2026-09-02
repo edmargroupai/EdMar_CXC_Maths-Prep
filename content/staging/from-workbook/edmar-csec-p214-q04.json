@@ -1,0 +1,340 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p214-q04",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 12,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "(a) Ten students scored the following marks out of 60: 29, 38, 26, 42, 38, 45, 35, 37, 38, 31. Determine (i) the range, (ii) the median, (iii) the interquartile range, (iv) the probability that a student chosen at random scored less than half the total marks. (b) A frequency distribution is then given for the masses, in kg, of 50 adults: 60–64 (midpoint 62, f = 8), 65–69 (67, 11), 70–74 (72, 15), 75–79 (77, 9), 80–84 (82, 5), 85–89 (87, 2); the instruction for part (b) continues past the bottom of this crop."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Put the ten marks in order first — range, median and quartiles all read straight off an ordered list."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p214_q04.jpg",
+      "altText": "Source visual for edmar-csec-p214-q04 from workbook page 214."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write the ten marks in ascending order.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "26, 29, 31, 35, 37, 38, 38, 38, 42, 45"
+        },
+        {
+          "type": "text",
+          "value": "Result: Ordered list of 10 marks"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Subtract the smallest mark from the largest for the range.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "45 − 26"
+        },
+        {
+          "type": "text",
+          "value": "Result: 19"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Average the two middle marks for the median.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "With 10 values the median is the mean of the 5th and 6th: (37 + 38) ÷ 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: 37.5"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Find the quartiles as the medians of the lower and upper halves, then subtract.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Lower half 26, 29, 31, 35, 37 gives Q1 = 31; upper half 38, 38, 38, 42, 45 gives Q3 = 38; IQR = 38 − 31"
+        },
+        {
+          "type": "text",
+          "value": "Result: 7"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Count the marks below half of 60 and divide by the number of students.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Half the total marks is 30; only 26 and 29 are below 30, so 2 out of 10"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2/10 = 1/5"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Order the ten marks, then take the extremes for the range, the average of the 5th and 6th values for the median, the medians of the two halves for the quartiles, and count the qualifying marks for the probability."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a)(i) Range = 19  (ii) Median = 37.5  (iii) Interquartile range = 38 − 31 = 7  (iv) P(scores less than 30) = 2/10 = 1/5 = 0.2.  (b) The table of masses is given, but the wording of part (b) is not visible in this crop, so no answer is offered for it."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The range uses only the two extreme marks, so it is easily distorted by one unusual score; the interquartile range instead measures the spread of the middle half of the data, which is why both are asked for. The median and quartiles are positions in an ordered list, so ordering the data is not optional — it is what makes those positions meaningful. The probability is just the proportion of the data that satisfies the condition."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "finding_the_median_without_ordering_the_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Finding the median without ordering the marks first.",
+      "correctiveNote": "Avoid this: Finding the median without ordering the marks first."
+    },
+    {
+      "key": "including_the_median_value_in_both_halve",
+      "wrongValue": "incorrect_2",
+      "misconception": "Including the median value in both halves when finding the quartiles of an even-sized data set.",
+      "correctiveNote": "Avoid this: Including the median value in both halves when finding the quartiles of an even-sized data set."
+    },
+    {
+      "key": "reading_less_than_half_the_total_marks_a",
+      "wrongValue": "incorrect_3",
+      "misconception": "Reading 'less than half the total marks' as less than half the highest mark, or as 30 or less rather than below 30.",
+      "correctiveNote": "Avoid this: Reading 'less than half the total marks' as less than half the highest mark, or as 30 or less rather than below 30."
+    },
+    {
+      "key": "giving_the_interquartile_range_as_the_pa",
+      "wrongValue": "incorrect_4",
+      "misconception": "Giving the interquartile range as the pair 31 and 38 instead of their difference.",
+      "correctiveNote": "Avoid this: Giving the interquartile range as the pair 31 and 38 instead of their difference."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Write the ordered list once, neatly, and mark Q1, the median and Q3 on it — nearly every part of a statistics question about spread is then just a subtraction."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Range=19",
+    "displayValue": "Range = 19",
+    "acceptedForms": [
+      "Range = 19",
+      "Range=19"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "For 12, 15, 15, 18, 22, 27 find the median and the interquartile range."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "Median=16.5;Q1=15,Q3=22,soIQR=7.",
+      "displayValue": "Median = 16.5; Q1 = 15, Q3 = 22, so IQR = 7.",
+      "acceptedForms": [
+        "Median = 16.5; Q1 = 15, Q3 = 22, so IQR = 7.",
+        "Median=16.5;Q1=15,Q3=22,soIQR=7."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M3-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "26b446d3-afd5-443a-aea9-075fa03e1127",
+      "code": "M3-1.1",
+      "label": "Range, median and quartiles"
+    },
+    {
+      "objectiveId": "8abff782-e20b-4abe-a33a-3343fb9a56eb",
+      "code": "M3-1.1",
+      "label": "Interquartile range"
+    },
+    {
+      "objectiveId": "895ab7c9-d5b3-4c66-adda-8f1502ed8bda",
+      "code": "M3-1.1",
+      "label": "Probability from a data set"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 4,
+    "pageRef": "p214",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Range=19",
+        "displayValue": "Range = 19",
+        "acceptedForms": [
+          "Range = 19",
+          "Range=19"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.i",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.i): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Range=19",
+        "displayValue": "Range = 19",
+        "acceptedForms": [
+          "Range = 19",
+          "Range=19"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.ii",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.ii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Median=37.5",
+        "displayValue": "Median = 37.5",
+        "acceptedForms": [
+          "Median = 37.5",
+          "Median=37.5"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.iii",
+      "sequence": 4,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.iii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Interquartilerange=38−31=7",
+        "displayValue": "Interquartile range = 38 − 31 = 7",
+        "acceptedForms": [
+          "Interquartile range = 38 − 31 = 7",
+          "Interquartilerange=38−31=7"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.iv",
+      "sequence": 5,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.iv): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "P(scoreslessthan30)=2/10=1/5=0.2.",
+        "displayValue": "P(scores less than 30) = 2/10 = 1/5 = 0.2.",
+        "acceptedForms": [
+          "P(scores less than 30) = 2/10 = 1/5 = 0.2.",
+          "P(scoreslessthan30)=2/10=1/5=0.2."
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 6,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Thetableofmassesisgiven,butthewordingofpart",
+        "displayValue": "The table of masses is given, but the wording of part",
+        "acceptedForms": [
+          "The table of masses is given, but the wording of part",
+          "Thetableofmassesisgiven,butthewordingofpart"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

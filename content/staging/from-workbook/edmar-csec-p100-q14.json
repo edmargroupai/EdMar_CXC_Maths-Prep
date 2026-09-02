@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p100-q14",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the simultaneous equations 7x + 3y = 31 and 4x + 3y = 10."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Both equations contain +3y, so subtract one from the other to eliminate y."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p100_q14.jpg",
+      "altText": "Source visual for edmar-csec-p100-q14 from workbook page 100."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Subtract the second equation from the first.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(7x − 4x) + (3y − 3y) = 31 − 10"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3x = 21"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Divide to find x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "21 ÷ 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 7"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Substitute x = 7 into 4x + 3y = 10.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "28 + 3y = 10, so 3y = −18"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = −6"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Check in the first equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "7(7) + 3(−6) = 49 − 18"
+        },
+        {
+          "type": "text",
+          "value": "Result: 31 ✓"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Subtract the second equation from the first, solve for x, then substitute back to find y."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = 7, y = −6"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "When one unknown has the same coefficient and the same sign in both equations, the difference of the equations contains only the other unknown. Nothing prevents a solution from being negative — the crossing point of the two lines simply lies below the x-axis."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "adding_the_equations_and_getting_11x_6y_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Adding the equations and getting 11x + 6y = 41, which eliminates nothing.",
+      "correctiveNote": "Avoid this: Adding the equations and getting 11x + 6y = 41, which eliminates nothing."
+    },
+    {
+      "key": "writing_3y_10_28_instead_of_10_28",
+      "wrongValue": "incorrect_2",
+      "misconception": "Writing 3y = 10 + 28 instead of 10 − 28.",
+      "correctiveNote": "Avoid this: Writing 3y = 10 + 28 instead of 10 − 28."
+    },
+    {
+      "key": "giving_y_6_and_losing_the_negative_sign",
+      "wrongValue": "incorrect_3",
+      "misconception": "Giving y = 6 and losing the negative sign.",
+      "correctiveNote": "Avoid this: Giving y = 6 and losing the negative sign."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Subtract in the order that keeps the leading coefficient positive — here first minus second — so you avoid an unnecessary negative to carry through."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=7,y=−6",
+    "displayValue": "= 7, y = −6",
+    "acceptedForms": [
+      "= 7, y = −6",
+      "=7,y=−6"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve 5x + 2y = 16 and 3x + 2y = 4."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=6,y=−7",
+      "displayValue": "= 6, y = −7",
+      "acceptedForms": [
+        "= 6, y = −7",
+        "=6,y=−7"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "774b479c-9a60-4d0d-ac5c-3abbe1f61fea",
+      "code": "M1-5.1",
+      "label": "Simultaneous linear equations"
+    },
+    {
+      "objectiveId": "20380e6a-a37d-47cc-a4ea-d2ef17f6b1b2",
+      "code": "M1-5.1",
+      "label": "Elimination by subtraction"
+    },
+    {
+      "objectiveId": "336f65e9-cb4a-4cfe-ac87-943b3412e8ad",
+      "code": "M1-5.1",
+      "label": "Negative solutions"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 14,
+    "pageRef": "p100",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

@@ -1,0 +1,262 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p185-q12",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 6,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The vectors u and v are parallel and point in the same direction, where u has components k and 6, and v has components 4 and 3. (a) Determine the value of k. (b) Calculate |u|. (c) Write u as a scalar multiple of v."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Parallel vectors are scalar multiples of each other, so the same multiplier must apply to both rows."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p185_q12.jpg",
+      "altText": "Source visual for edmar-csec-p185-q12 from workbook page 185."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Use the known pair of components to find the scalar.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The bottom components give 6 = m × 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: m = 2"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Apply the same scalar to the top components.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "k = 2 × 4"
+        },
+        {
+          "type": "text",
+          "value": "Result: k = 8"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Write out u.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: u = (8, 6)"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Find the magnitude with Pythagoras.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "|u|² = 8² + 6² = 64 + 36 = 100"
+        },
+        {
+          "type": "text",
+          "value": "Result: |u| = 10"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Express u in terms of v.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "m is positive, so the directions agree as stated"
+        },
+        {
+          "type": "text",
+          "value": "Result: u = 2v"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Compare the components you know to find the scalar, use it to find k, then apply Pythagoras for the magnitude."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) k = 8  (b) |u| = 10  (c) u = 2v"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Two vectors are parallel exactly when one is a scalar multiple of the other, so a single number rescales both components together. The scalar is positive here, which is what keeps the directions the same — a negative scalar would have made them point opposite ways. The magnitudes scale by the same factor: |v| = 5 and |u| = 10."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "finding_the_scalar_from_only_one_row_wit",
+      "wrongValue": "incorrect_1",
+      "misconception": "Finding the scalar from only one row without checking it works for the other.",
+      "correctiveNote": "Avoid this: Finding the scalar from only one row without checking it works for the other."
+    },
+    {
+      "key": "taking_k_8_which_would_make_the_vectors_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Taking k = −8, which would make the vectors parallel but oppositely directed, contradicting the given condition.",
+      "correctiveNote": "Avoid this: Taking k = −8, which would make the vectors parallel but oppositely directed, contradicting the given condition."
+    },
+    {
+      "key": "writing_u_100_by_omitting_the_square_roo",
+      "wrongValue": "incorrect_3",
+      "misconception": "Writing |u| = 100 by omitting the square root.",
+      "correctiveNote": "Avoid this: Writing |u| = 100 by omitting the square root."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When a question says the vectors point in the same direction, that is a hint that the scalar must be positive — use it to discard a negative solution."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "k=8",
+    "displayValue": "k = 8",
+    "acceptedForms": [
+      "k = 8",
+      "k=8"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "The vectors with components (6, k) and (2, 5) are parallel and in the same direction. Find k."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "Thescalaris3,sok=15.",
+      "displayValue": "The scalar is 3, so k = 15.",
+      "acceptedForms": [
+        "The scalar is 3, so k = 15.",
+        "Thescalaris3,sok=15."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "5bc0cbc6-1e01-4b40-aa23-f005821b3854",
+      "code": "M2-5.1",
+      "label": "Parallel vectors and scalar multiples"
+    },
+    {
+      "objectiveId": "92896876-04e8-4a36-a42b-af4fd5ccb04f",
+      "code": "M2-5.1",
+      "label": "Magnitude of a vector"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 12,
+    "pageRef": "p185",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "k=8",
+        "displayValue": "k = 8",
+        "acceptedForms": [
+          "k = 8",
+          "k=8"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "|u|=10",
+        "displayValue": "|u| = 10",
+        "acceptedForms": [
+          "|u| = 10",
+          "|u|=10"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "c",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (c): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "u=2v",
+        "displayValue": "u = 2v",
+        "acceptedForms": [
+          "u = 2v",
+          "u=2v"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

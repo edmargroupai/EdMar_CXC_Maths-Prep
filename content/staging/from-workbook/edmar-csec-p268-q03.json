@@ -1,0 +1,240 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p268-q03",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 4,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "In triangle PQR, angle QPR = 62 degrees, angle PQR = 90 degrees and PR = 11 cm. Calculate (i) the size of angle PRQ and (ii) the length of side RQ."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The right angle sits at Q, so PR is the hypotenuse and the whole triangle can be solved with the basic ratios."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p268_q03.jpg",
+      "altText": "Source visual for edmar-csec-p268-q03 from workbook page 268."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Use the angle sum of the triangle.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "angle PRQ = 180 - 90 - 62"
+        },
+        {
+          "type": "text",
+          "value": "Result: angle PRQ = 28 degrees"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Identify the hypotenuse.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The right angle is at Q, so the hypotenuse is the side facing it, which is PR = 11 cm."
+        },
+        {
+          "type": "text",
+          "value": "Result: Hypotenuse PR = 11 cm"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Decide which ratio links RQ to PR.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "RQ is opposite the 62 degree angle at P, so sin 62 = RQ / PR."
+        },
+        {
+          "type": "text",
+          "value": "Result: RQ = 11 sin 62"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Evaluate.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "11 x 0.8829 = 9.712"
+        },
+        {
+          "type": "text",
+          "value": "Result: RQ = 9.71 cm (3 s.f.)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Subtract the two known angles from 180 degrees for part (i), then use the sine ratio with the hypotenuse PR to find the side opposite the 62 degree angle."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) angle PRQ = 28 degrees  (ii) RQ = 9.71 cm (3 s.f.)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "In a right-angled triangle the hypotenuse is always opposite the right angle, and sine relates the hypotenuse to the side opposite a chosen acute angle. Because the two acute angles of a right-angled triangle add to 90 degrees, finding one immediately gives the other, and you can then choose whichever ratio uses the length you already have."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "treating_rq_as_the_hypotenuse_and_dividi",
+      "wrongValue": "incorrect_1",
+      "misconception": "Treating RQ as the hypotenuse and dividing by sin 62 instead of multiplying.",
+      "correctiveNote": "Avoid this: Treating RQ as the hypotenuse and dividing by sin 62 instead of multiplying."
+    },
+    {
+      "key": "using_the_28_degree_angle_with_the_sine_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Using the 28 degree angle with the sine ratio for RQ, which gives PQ instead.",
+      "correctiveNote": "Avoid this: Using the 28 degree angle with the sine ratio for RQ, which gives PQ instead."
+    },
+    {
+      "key": "leaving_the_calculator_in_radian_mode",
+      "wrongValue": "incorrect_3",
+      "misconception": "Leaving the calculator in radian mode.",
+      "correctiveNote": "Avoid this: Leaving the calculator in radian mode."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Mark the hypotenuse first, then label the other two sides opposite and adjacent relative to the angle you are using. The correct ratio then chooses itself."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "anglePRQ=28degrees",
+    "displayValue": "angle PRQ = 28 degrees",
+    "acceptedForms": [
+      "angle PRQ = 28 degrees",
+      "anglePRQ=28degrees"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "In a right-angled triangle the hypotenuse is 20 cm and one acute angle is 35 degrees. How long is the side opposite that angle?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "20",
+      "displayValue": "20",
+      "acceptedForms": [
+        "20",
+        "20"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "79d1b4fe-7d62-4891-a92a-febf2032a8f4",
+      "code": "M1-1.1",
+      "label": "Angle sum of a triangle"
+    },
+    {
+      "objectiveId": "4bb5b01d-f5fc-4100-adb0-d264858332c4",
+      "code": "M1-1.1",
+      "label": "Sine ratio in a right-angled triangle"
+    },
+    {
+      "objectiveId": "44fd4bd9-bfd1-47c4-af39-43a8b8b18ba6",
+      "code": "M1-1.1",
+      "label": "Identifying the hypotenuse"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 3,
+    "pageRef": "p268",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a.i",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.i): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "anglePRQ=28degrees",
+        "displayValue": "angle PRQ = 28 degrees",
+        "acceptedForms": [
+          "angle PRQ = 28 degrees",
+          "anglePRQ=28degrees"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.ii",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.ii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "RQ=9.71cm(3s.f.)",
+        "displayValue": "RQ = 9.71 cm (3 s.f.)",
+        "acceptedForms": [
+          "RQ = 9.71 cm (3 s.f.)",
+          "RQ=9.71cm(3s.f.)"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

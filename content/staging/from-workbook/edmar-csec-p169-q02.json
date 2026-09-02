@@ -1,0 +1,206 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p169-q02",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A rescue boat travels 15 km due east from harbour H to Q, then 8 km due north to R. a) Calculate the direct distance HR. b) The harbour radio has a range of 16 km. Determine whether the boat at R is within range, showing the comparison used. c) Calculate how much shorter the direct journey HR is than the two-stage journey HQR."
+    },
+    {
+      "type": "text",
+      "value": "Think first: East and north are perpendicular, so the two legs of the journey are the legs of a right-angled triangle."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p169_q02.jpg",
+      "altText": "Source visual for edmar-csec-p169-q02 from workbook page 169."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Note the right angle at Q.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Due east and due north are perpendicular directions"
+        },
+        {
+          "type": "text",
+          "value": "Result: ∠HQR = 90°"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Apply Pythagoras' theorem.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "HR² = 15² + 8² = 225 + 64"
+        },
+        {
+          "type": "text",
+          "value": "Result: HR² = 289"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Take the square root.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "√289"
+        },
+        {
+          "type": "text",
+          "value": "Result: HR = 17 km"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Compare with the radio range.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "17 km > 16 km"
+        },
+        {
+          "type": "text",
+          "value": "Result: the boat is out of range"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Compare the two routes.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "HQ + QR = 15 + 8 = 23 km; 23 − 17"
+        },
+        {
+          "type": "text",
+          "value": "Result: the direct route is 6 km shorter"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Use Pythagoras on the 15 km and 8 km legs to get HR, compare it with the 16 km range, then subtract HR from the total travelled."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) HR = 17 km  (b) No — HR = 17 km which is greater than the 16 km range, so the boat at R is outside radio range  (c) the direct journey is 6 km shorter (23 km − 17 km)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Compass directions that differ by 90° always produce a right-angled triangle, so Pythagoras converts two perpendicular legs into a single straight-line distance. Part c makes the triangle inequality concrete: any two sides of a triangle together exceed the third, which is exactly why going direct always beats going round two sides."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "adding_15_and_8_to_get_a_distance_of_23_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Adding 15 and 8 to get a distance of 23 km for HR.",
+      "correctiveNote": "Avoid this: Adding 15 and 8 to get a distance of 23 km for HR."
+    },
+    {
+      "key": "deciding_the_boat_is_in_range_because_17",
+      "wrongValue": "incorrect_2",
+      "misconception": "Deciding the boat is in range because 17 is 'close to' 16 — the comparison is strict.",
+      "correctiveNote": "Avoid this: Deciding the boat is in range because 17 is 'close to' 16 — the comparison is strict."
+    },
+    {
+      "key": "subtracting_16_from_17_in_part_c_instead",
+      "wrongValue": "incorrect_3",
+      "misconception": "Subtracting 16 from 17 in part c instead of comparing 23 with 17.",
+      "correctiveNote": "Avoid this: Subtracting 16 from 17 in part c instead of comparing 23 with 17."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Sketch the journey with the right angle marked before calculating; the picture makes it obvious which distance is the hypotenuse."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "HR=17km",
+    "displayValue": "HR = 17 km",
+    "acceptedForms": [
+      "HR = 17 km",
+      "HR=17km"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A ship sails 9 km east then 12 km north. How far is it from its start?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "√(81+144)=√225=15km.",
+      "displayValue": "√(81 + 144) = √225 = 15 km.",
+      "acceptedForms": [
+        "√(81 + 144) = √225 = 15 km.",
+        "√(81+144)=√225=15km."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "d06f0568-ab4a-4f61-a6e6-8516af029800",
+      "code": "M1-1.1",
+      "label": "Pythagoras' theorem"
+    },
+    {
+      "objectiveId": "cb8ae963-0964-4291-abe2-a34babde6892",
+      "code": "M1-1.1",
+      "label": "Compass directions as perpendicular axes"
+    },
+    {
+      "objectiveId": "62a30984-5d7c-496a-a10c-39870566645f",
+      "code": "M1-1.1",
+      "label": "Comparing distances"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 2,
+    "pageRef": "p169",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

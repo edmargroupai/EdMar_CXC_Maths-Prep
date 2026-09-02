@@ -1,0 +1,211 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p131-q10",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The diagram shows triangle ABC with A(-2, 5), B(-4, -3) and C(6, -1). M is the midpoint of AB and N is the midpoint of AC. (a) Determine the coordinates of M and N. (b) Calculate the lengths MN and BC. (c) Show that MN is parallel to BC. (d) State the relationship between the lengths MN and BC."
+    },
+    {
+      "type": "text",
+      "value": "Think first: This is the midpoint theorem in coordinates — find M and N first and every later part follows from them."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p131_q10.jpg",
+      "altText": "Source visual for edmar-csec-p131-q10 from workbook page 131."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Find M, the midpoint of A(-2, 5) and B(-4, -3).",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "((-2 + (-4))/2, (5 + (-3))/2) = (-6/2, 2/2)"
+        },
+        {
+          "type": "text",
+          "value": "Result: M(-3, 1)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Find N, the midpoint of A(-2, 5) and C(6, -1).",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "((-2 + 6)/2, (5 + (-1))/2) = (4/2, 4/2)"
+        },
+        {
+          "type": "text",
+          "value": "Result: N(2, 2)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Find MN and BC.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "MN = √((2 − (-3))² + (2 − 1)²) = √26; BC = √((6 − (-4))² + (-1 − (-3))²) = √104"
+        },
+        {
+          "type": "text",
+          "value": "Result: MN = √26 ≈ 5.10, BC = √104 = 2√26 ≈ 10.20"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Compare the gradients of MN and BC.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "gradient MN = (2 − 1)/(2 − (-3)) = 1/5; gradient BC = (-1 − (-3))/(6 − (-4)) = 2/10 = 1/5"
+        },
+        {
+          "type": "text",
+          "value": "Result: Equal gradients, so MN is parallel to BC"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Compare the two lengths.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "√104 = √(4 × 26) = 2√26, so BC = 2 × MN"
+        },
+        {
+          "type": "text",
+          "value": "Result: MN = ½ BC"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Average coordinates to get M and N, use the distance formula for MN and BC, compare gradients to prove the lines are parallel, then compare the two lengths."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) M(-3, 1) and N(2, 2)  (b) MN = √26 ≈ 5.10 units, BC = √104 = 2√26 ≈ 10.20 units  (c) Both gradients equal 1/5, so MN is parallel to BC  (d) MN is half the length of BC."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The segment joining the midpoints of two sides of a triangle is always parallel to the third side and exactly half its length — the midpoint theorem. In coordinates, halving both the horizontal and the vertical step scales the whole segment by ½ without changing its direction, which is why the gradients come out identical and the lengths come out in the ratio 1 : 2. Equal gradients are the proof of parallelism; the diagram alone is not."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "proving_parallelism_by_saying_the_lines_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Proving parallelism by saying the lines “look parallel” instead of showing equal gradients.",
+      "correctiveNote": "Avoid this: Proving parallelism by saying the lines “look parallel” instead of showing equal gradients."
+    },
+    {
+      "key": "leaving_bc_as_104_and_failing_to_see_it_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Leaving BC as √104 and failing to see it is 2√26, so missing the exact half relationship.",
+      "correctiveNote": "Avoid this: Leaving BC as √104 and failing to see it is 2√26, so missing the exact half relationship."
+    },
+    {
+      "key": "mixing_up_which_pair_of_vertices_m_and_n",
+      "wrongValue": "incorrect_3",
+      "misconception": "Mixing up which pair of vertices M and N come from.",
+      "correctiveNote": "Avoid this: Mixing up which pair of vertices M and N come from."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When a question says “Show that”, the marks are for the reasoning line — write out both gradients and the words “equal gradients, therefore parallel”."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "M(-3,1)andN(2,2)",
+    "displayValue": "M(-3, 1) and N(2, 2)",
+    "acceptedForms": [
+      "M(-3, 1) and N(2, 2)",
+      "M(-3,1)andN(2,2)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "P(0, 0), Q(6, 2) and the midpoint of PQ. What is the gradient of PQ and of the segment from (0, 0) to that midpoint?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "Bothgradientsare1/3—halvingthestepsdoesnotchangedirection.",
+      "displayValue": "Both gradients are 1/3 — halving the steps does not change direction.",
+      "acceptedForms": [
+        "Both gradients are 1/3 — halving the steps does not change direction.",
+        "Bothgradientsare1/3—halvingthestepsdoesnotchangedirection."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-3.2"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "becaafad-599e-455b-a587-3fff470f202d",
+      "code": "M1-3.2",
+      "label": "Midpoint formula"
+    },
+    {
+      "objectiveId": "78d46093-c719-49b2-ac61-b7a353237a04",
+      "code": "M1-3.2",
+      "label": "Distance between two points"
+    },
+    {
+      "objectiveId": "ed0eb999-6bab-4da5-a3e3-9082c6dee8f1",
+      "code": "M1-3.2",
+      "label": "Gradient of a line"
+    },
+    {
+      "objectiveId": "e8212a8c-8ed8-481b-aed9-e12c723c60f4",
+      "code": "M1-3.2",
+      "label": "Parallel lines"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 10,
+    "pageRef": "p131",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

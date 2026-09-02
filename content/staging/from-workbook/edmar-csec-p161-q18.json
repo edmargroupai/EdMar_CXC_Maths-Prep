@@ -1,0 +1,203 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p161-q18",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Using a ruler, a pencil and a pair of compasses, construct the right-angled triangle ABC such that AB = 5 cm, ∠ABC = 90° and ∠BAC = 60°."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Both required angles, 90° and 60°, are standard compass constructions built on the ends of AB."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p161_q18.jpg",
+      "altText": "Source visual for edmar-csec-p161-q18 from workbook page 161."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Draw AB = 5 cm.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: AB = 5 cm"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Construct a perpendicular to AB at B.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Equal arcs each side of B along AB, then equal larger arcs from those points crossing above B"
+        },
+        {
+          "type": "text",
+          "value": "Result: ∠ABC = 90°"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Construct a 60° angle at A on the same side of AB.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Centre A, arc cutting AB; same radius from that point cuts the arc; join A to it"
+        },
+        {
+          "type": "text",
+          "value": "Result: ∠BAC = 60°"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Mark C where the two arms meet and join AC.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: triangle ABC complete"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Check the drawing by calculation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "BC = 5 tan 60° = 5√3 = 8.66; AC = 5 ÷ cos 60° = 10; ∠ACB = 30°"
+        },
+        {
+          "type": "text",
+          "value": "Result: BC ≈ 8.7 cm, AC = 10 cm"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Draw AB = 5 cm, construct 90° at B and 60° at A on the same side, and mark C where the two arms cross."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "A correctly constructed right-angled triangle ABC with AB = 5 cm, ∠ABC = 90° and ∠BAC = 60°. Accuracy checks: BC ≈ 8.7 cm, AC = 10 cm and ∠ACB = 30°."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Fixing a side and both angles at its ends (ASA) determines a triangle uniquely, so the two arms can only meet in one place. Because the triangle is right-angled, the tangent and cosine ratios give exact predicted lengths, turning an accuracy question into something you can verify numerically instead of trusting your eye."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "building_the_60_at_b_and_the_90_at_a_whi",
+      "wrongValue": "incorrect_1",
+      "misconception": "Building the 60° at B and the 90° at A, which reverses the triangle.",
+      "correctiveNote": "Avoid this: Building the 60° at B and the 90° at A, which reverses the triangle."
+    },
+    {
+      "key": "drawing_the_two_angles_on_opposite_sides",
+      "wrongValue": "incorrect_2",
+      "misconception": "Drawing the two angles on opposite sides of AB, so the arms never meet.",
+      "correctiveNote": "Avoid this: Drawing the two angles on opposite sides of AB, so the arms never meet."
+    },
+    {
+      "key": "rounding_5_3_to_8_cm_and_then_thinking_t",
+      "wrongValue": "incorrect_3",
+      "misconception": "Rounding 5√3 to 8 cm and then thinking the construction is wrong.",
+      "correctiveNote": "Avoid this: Rounding 5√3 to 8 cm and then thinking the construction is wrong."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Before drawing, sketch the triangle roughly and label the angles — it takes ten seconds and prevents the swapped-angle error that costs full marks."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "correctlyconstructedright-angledtriangleABCwithAB=5cm,∠ABC=90°and∠BAC=60°.Accuracychecks:BC≈8.7cm,",
+    "displayValue": "correctly constructed right-angled triangle ABC with AB = 5 cm, ∠ABC = 90° and ∠BAC = 60°. Accuracy checks: BC ≈ 8.7 cm,",
+    "acceptedForms": [
+      "correctly constructed right-angled triangle ABC with AB = 5 cm, ∠ABC = 90° and ∠BAC = 60°. Accuracy checks: BC ≈ 8.7 cm,",
+      "correctlyconstructedright-angledtriangleABCwithAB=5cm,∠ABC=90°and∠BAC=60°.Accuracychecks:BC≈8.7cm,"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "In a right-angled triangle with the right angle at B, AB = 4 cm and ∠BAC = 60°. Find AC."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=4÷cos60°=8cm.",
+      "displayValue": "= 4 ÷ cos 60° = 8 cm.",
+      "acceptedForms": [
+        "= 4 ÷ cos 60° = 8 cm.",
+        "=4÷cos60°=8cm."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "f7de77f8-fb02-4809-a67c-fba156dfb9e5",
+      "code": "M1-1.1",
+      "label": "Constructing a perpendicular at a point on a line"
+    },
+    {
+      "objectiveId": "4e7ead19-9c86-4bc8-a1c6-bf813bd1612a",
+      "code": "M1-1.1",
+      "label": "Constructing 60° with compasses"
+    },
+    {
+      "objectiveId": "cdd6c1e3-6eb6-43e7-a96f-54d7e0e4827f",
+      "code": "M1-1.1",
+      "label": "Angle sum of a triangle"
+    },
+    {
+      "objectiveId": "4beb2d9c-4235-42b1-ad92-ab4ae8e7c908",
+      "code": "M1-1.1",
+      "label": "Trigonometric ratios as a check"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 18,
+    "pageRef": "p161",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

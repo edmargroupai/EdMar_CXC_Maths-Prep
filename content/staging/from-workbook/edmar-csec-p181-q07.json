@@ -1,0 +1,257 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p181-q07",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 6,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The points P and Q have coordinates P(−4, 1) and Q(2, 9). (a) Write the vector PQ as a column vector. (b) Calculate |PQ|. (c) Write a unit vector in the direction from P to Q."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The vector from P to Q is always the destination minus the starting point."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p181_q07.jpg",
+      "altText": "Source visual for edmar-csec-p181-q07 from workbook page 181."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Subtract the coordinates in the right order.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "PQ = Q − P = (2 − (−4), 9 − 1)"
+        },
+        {
+          "type": "text",
+          "value": "Result: PQ = (6, 8)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Apply Pythagoras to the components.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "|PQ|² = 6² + 8² = 36 + 64 = 100"
+        },
+        {
+          "type": "text",
+          "value": "Result: |PQ| = 10"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Divide the vector by its magnitude.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(1/10) × (6, 8)"
+        },
+        {
+          "type": "text",
+          "value": "Result: unit vector = (0.6, 0.8)"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Check the unit vector.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "0.6² + 0.8² = 1"
+        },
+        {
+          "type": "text",
+          "value": "Result: direction preserved, length 1"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Subtract P's coordinates from Q's, use Pythagoras for the magnitude, then divide the vector by that magnitude."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) PQ = (6, 8)  (b) |PQ| = 10  (c) unit vector = (1/10)(6, 8) = (0.6, 0.8), that is (3/5, 4/5)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Going from P to Q means undoing P's position and then applying Q's, which is exactly Q − P. The magnitude is the straight-line distance between the points, so this is the distance formula in vector clothing. Dividing by that distance rescales the arrow to length 1 while leaving its direction untouched, which is what makes a unit vector the standard way to record 'this way' with no size attached."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "computing_p_q_and_getting_6_8_which_poin",
+      "wrongValue": "incorrect_1",
+      "misconception": "Computing P − Q and getting (−6, −8), which points the wrong way.",
+      "correctiveNote": "Avoid this: Computing P − Q and getting (−6, −8), which points the wrong way."
+    },
+    {
+      "key": "mishandling_the_double_negative_2_4_is_6",
+      "wrongValue": "incorrect_2",
+      "misconception": "Mishandling the double negative: 2 − (−4) is 6, not −2.",
+      "correctiveNote": "Avoid this: Mishandling the double negative: 2 − (−4) is 6, not −2."
+    },
+    {
+      "key": "dividing_only_one_component_by_10_when_f",
+      "wrongValue": "incorrect_3",
+      "misconception": "Dividing only one component by 10 when forming the unit vector.",
+      "correctiveNote": "Avoid this: Dividing only one component by 10 when forming the unit vector."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Memorise 'finish minus start' for the vector between two points — the order matters and reversing it reverses the vector."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "PQ=(6,8)",
+    "displayValue": "PQ = (6, 8)",
+    "acceptedForms": [
+      "PQ = (6, 8)",
+      "PQ=(6,8)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A(1, −2) and B(4, 2). Write AB as a column vector and find |AB|."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=(3,4)and|AB|=5.",
+      "displayValue": "= (3, 4) and |AB| = 5.",
+      "acceptedForms": [
+        "= (3, 4) and |AB| = 5.",
+        "=(3,4)and|AB|=5."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "19cfe76b-ae9d-4015-ad8a-1eac9642bf0c",
+      "code": "M2-5.1",
+      "label": "Vector between two points"
+    },
+    {
+      "objectiveId": "f14f1d99-1fe3-4b64-ad08-4edb5ad8123c",
+      "code": "M2-5.1",
+      "label": "Magnitude of a vector"
+    },
+    {
+      "objectiveId": "232f44b3-e155-4d7c-ac1d-9ab3e427d9c4",
+      "code": "M2-5.1",
+      "label": "Unit vectors"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 7,
+    "pageRef": "p181",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "PQ=(6,8)",
+        "displayValue": "PQ = (6, 8)",
+        "acceptedForms": [
+          "PQ = (6, 8)",
+          "PQ=(6,8)"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "|PQ|=10",
+        "displayValue": "|PQ| = 10",
+        "acceptedForms": [
+          "|PQ| = 10",
+          "|PQ|=10"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "c",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (c): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "unitvector=(1/10)(6,8)=(0.6,0.8),thatis(3/5,4/5)",
+        "displayValue": "unit vector = (1/10)(6, 8) = (0.6, 0.8), that is (3/5, 4/5)",
+        "acceptedForms": [
+          "unit vector = (1/10)(6, 8) = (0.6, 0.8), that is (3/5, 4/5)",
+          "unitvector=(1/10)(6,8)=(0.6,0.8),thatis(3/5,4/5)"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

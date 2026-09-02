@@ -1,0 +1,225 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p142-q05",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Given that f(x) = 5x and g(x) = x − 2: (i) Calculate f(2) and gf(2). (ii) Determine x when fg(x) = 0. (iii) Prove that (gf)⁻¹(23) = 5."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Watch the order carefully — gf and fg are different functions, and this question uses both."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p142_q05.jpg",
+      "altText": "Source visual for edmar-csec-p142-q05 from workbook page 142."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Evaluate f(2) and then gf(2).",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "f(2) = 5(2) = 10, then g(10) = 10 − 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: f(2) = 10 and gf(2) = 8"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Form fg(x): apply g first, then f.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "fg(x) = f(x − 2) = 5(x − 2)"
+        },
+        {
+          "type": "text",
+          "value": "Result: fg(x) = 5x − 10"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Set fg(x) = 0 and solve.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5(x − 2) = 0 → x − 2 = 0"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 2"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Form gf(x): apply f first, then g.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "gf(x) = g(5x) = 5x − 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: gf(x) = 5x − 2"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Find the input that gives an output of 23.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5x − 2 = 23 → 5x = 25"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 5"
+        }
+      ]
+    },
+    {
+      "stepNo": 6,
+      "instruction": "State the conclusion about the inverse.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "gf(5) = 23, so the inverse sends 23 back to 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: (gf)⁻¹(23) = 5"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Substitute for f(2) and apply g to it, form fg(x) and set it to zero, then form gf(x) and show that gf(5) = 23."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) f(2) = 10 and gf(2) = 8  (ii) x = 2  (iii) gf(x) = 5x − 2, and 5x − 2 = 23 gives x = 5, so (gf)⁻¹(23) = 5."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Composing functions builds a single new rule: gf multiplies by 5 then subtracts 2, while fg subtracts 2 then multiplies by 5 — different rules, different graphs. An inverse asks the reverse question, 'which input gave this output?', so proving (gf)⁻¹(23) = 5 needs nothing more than showing gf(5) = 23."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "treating_gf_and_fg_as_the_same_function",
+      "wrongValue": "incorrect_1",
+      "misconception": "Treating gf and fg as the same function.",
+      "correctiveNote": "Avoid this: Treating gf and fg as the same function."
+    },
+    {
+      "key": "expanding_5_x_2_as_5x_2",
+      "wrongValue": "incorrect_2",
+      "misconception": "Expanding 5(x − 2) as 5x − 2.",
+      "correctiveNote": "Avoid this: Expanding 5(x − 2) as 5x − 2."
+    },
+    {
+      "key": "deriving_the_full_inverse_formula_when_a",
+      "wrongValue": "incorrect_3",
+      "misconception": "Deriving the full inverse formula when a single substitution proves the statement.",
+      "correctiveNote": "Avoid this: Deriving the full inverse formula when a single substitution proves the statement."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "To prove an inverse value, run the forward function on the claimed answer — one line of substitution beats a full rearrangement."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "f(2)=10andgf(2)=8",
+    "displayValue": "f(2) = 10 and gf(2) = 8",
+    "acceptedForms": [
+      "f(2) = 10 and gf(2) = 8",
+      "f(2)=10andgf(2)=8"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "If p(x) = 2x and q(x) = x + 3, find qp(4)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "p(4)=8,thenq(8)=11.",
+      "displayValue": "p(4) = 8, then q(8) = 11.",
+      "acceptedForms": [
+        "p(4) = 8, then q(8) = 11.",
+        "p(4)=8,thenq(8)=11."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "4764b5db-4126-4573-a198-e31706e1f4dd",
+      "code": "M1-5.1",
+      "label": "Evaluating a function"
+    },
+    {
+      "objectiveId": "627c38ae-3686-4b75-aa34-bdd8366ba8a6",
+      "code": "M1-5.1",
+      "label": "Composite functions"
+    },
+    {
+      "objectiveId": "b62d0f92-5d80-49e8-a2f4-4f495acfc0db",
+      "code": "M1-5.1",
+      "label": "Solving a linear equation"
+    },
+    {
+      "objectiveId": "4f8e6dd2-bcc2-4b88-aeb5-e2ea87aa718b",
+      "code": "M1-5.1",
+      "label": "Inverse of a composite function"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 5,
+    "pageRef": "p142",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

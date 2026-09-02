@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p111-q08",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the simultaneous equations y = x − 2 and x² − xy = 8."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Substitute and watch what happens — the x squared terms may cancel, leaving something much simpler than expected."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p111_q08.jpg",
+      "altText": "Source visual for edmar-csec-p111-q08 from workbook page 111."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Substitute y = x − 2 into the second equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "replace y wherever it appears"
+        },
+        {
+          "type": "text",
+          "value": "Result: x² − x(x − 2) = 8"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Expand the product, distributing the minus sign across the bracket.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "−x(x − 2) = −x² + 2x"
+        },
+        {
+          "type": "text",
+          "value": "Result: x² − x² + 2x = 8"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Simplify — the x squared terms cancel.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x² − x² = 0"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2x = 8"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Solve for x, find y, and check.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x = 4, so y = 4 − 2 = 2; check 4² − 4(2) = 16 − 8 = 8"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 4, y = 2"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Replace y with x − 2 in x² − xy = 8, expand carefully, and solve whatever equation remains."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = 4, y = 2 (a single solution)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The substitution removes the x squared term entirely, because x² − x(x − 2) simplifies to 2x, so the system is really linear in disguise. That is why there is only one solution instead of the usual two: the line y = x − 2 meets the curve x² − xy = 8 exactly once. The cancellation is genuine, not a lost solution."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "expanding_x_x_2_as_x_2x_and_getting_4x_8",
+      "wrongValue": "incorrect_1",
+      "misconception": "Expanding −x(x − 2) as −x² − 2x and getting 4x = 8.",
+      "correctiveNote": "Avoid this: Expanding −x(x − 2) as −x² − 2x and getting 4x = 8."
+    },
+    {
+      "key": "assuming_there_must_be_two_answers_and_i",
+      "wrongValue": "incorrect_2",
+      "misconception": "Assuming there must be two answers and inventing a second.",
+      "correctiveNote": "Avoid this: Assuming there must be two answers and inventing a second."
+    },
+    {
+      "key": "substituting_into_the_linear_equation_in",
+      "wrongValue": "incorrect_3",
+      "misconception": "Substituting into the linear equation instead of the non-linear one.",
+      "correctiveNote": "Avoid this: Substituting into the linear equation instead of the non-linear one."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Distribute a negative sign across every term inside the bracket and write that line out in full — sign slips here change the whole answer."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=4,y=2(asinglesolution)",
+    "displayValue": "= 4, y = 2 (a single solution)",
+    "acceptedForms": [
+      "= 4, y = 2 (a single solution)",
+      "=4,y=2(asinglesolution)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve y = x − 3 and x² − xy = 12."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=4,y=1",
+      "displayValue": "= 4, y = 1",
+      "acceptedForms": [
+        "= 4, y = 1",
+        "=4,y=1"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-6.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "9c3bfc59-0bbb-4dc2-a4e3-689c47e3b3c4",
+      "code": "M1-6.1",
+      "label": "Simultaneous equations, one linear and one non-linear"
+    },
+    {
+      "objectiveId": "73417a91-1615-4368-a85a-21ac93b7a268",
+      "code": "M1-6.1",
+      "label": "Substitution method"
+    },
+    {
+      "objectiveId": "dcdefb6e-5c6c-4f82-a2a7-4d0298be6d6b",
+      "code": "M1-6.1",
+      "label": "Expanding with a negative sign"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 8,
+    "pageRef": "p111",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

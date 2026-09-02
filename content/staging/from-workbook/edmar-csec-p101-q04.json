@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p101-q04",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Express x² − 2x + 11 in the form (x + h)² + k by completing the square."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Half of −2 is −1, and the small correction here leaves k positive."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p101_q04.jpg",
+      "altText": "Source visual for edmar-csec-p101-q04 from workbook page 101."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Halve the coefficient of x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "−2 ÷ 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: −1, so the bracket is (x − 1)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Expand to see the surplus.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(x − 1)² = x² − 2x + 1"
+        },
+        {
+          "type": "text",
+          "value": "Result: 1 too many"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Subtract 1 and add the original constant 11.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x² − 2x + 11 = (x − 1)² − 1 + 11"
+        },
+        {
+          "type": "text",
+          "value": "Result: (x − 1)² + 10"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Check by expanding.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x² − 2x + 1 + 10"
+        },
+        {
+          "type": "text",
+          "value": "Result: x² − 2x + 11 ✓"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Form (x − 1)², subtract the 1 it introduces and add the original constant 11."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x² − 2x + 11 = (x − 1)² + 10"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Because a square is never negative, (x − 1)² + 10 can never fall below 10, so the completed square form shows at a glance that this expression has a minimum value of 10 at x = 1 and never reaches zero. That is information the original form hides."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_x_1_12_by_adding_the_correction_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing (x − 1)² + 12 by adding the correction instead of subtracting it.",
+      "correctiveNote": "Avoid this: Writing (x − 1)² + 12 by adding the correction instead of subtracting it."
+    },
+    {
+      "key": "using_2_inside_the_bracket_instead_of_1",
+      "wrongValue": "incorrect_2",
+      "misconception": "Using −2 inside the bracket instead of −1.",
+      "correctiveNote": "Avoid this: Using −2 inside the bracket instead of −1."
+    },
+    {
+      "key": "expanding_x_1_as_x_1",
+      "wrongValue": "incorrect_3",
+      "misconception": "Expanding (x − 1)² as x² − 1.",
+      "correctiveNote": "Avoid this: Expanding (x − 1)² as x² − 1."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "If k comes out positive with a positive x² term, the quadratic has no real roots — a quick sanity check on your answer."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "x²−2x+11=(x−1)²+10",
+    "displayValue": "x² − 2x + 11 = (x − 1)² + 10",
+    "acceptedForms": [
+      "x² − 2x + 11 = (x − 1)² + 10",
+      "x²−2x+11=(x−1)²+10"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Express x² − 4x + 9 in the form (x + h)² + k."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "−2)²+5",
+      "displayValue": "− 2)² + 5",
+      "acceptedForms": [
+        "− 2)² + 5",
+        "−2)²+5"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "f68a50e6-53d6-435d-a8c2-96d5a02b8cab",
+      "code": "M1-5.1",
+      "label": "Completing the square"
+    },
+    {
+      "objectiveId": "23bd4aa5-156b-4b9d-adaf-325e27fb8248",
+      "code": "M1-5.1",
+      "label": "Perfect square trinomials"
+    },
+    {
+      "objectiveId": "55e4f16c-69a5-467f-aee3-6c57270891ad",
+      "code": "M1-5.1",
+      "label": "Minimum value of a quadratic"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 4,
+    "pageRef": "p101",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

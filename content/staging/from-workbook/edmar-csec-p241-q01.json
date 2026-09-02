@@ -1,0 +1,281 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p241-q01",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 6,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "In a circle, AC is a diameter, B and D are two further points on the circle, and DCE is a straight line (E outside the circle). Angle CAB = 28° and angle DBC = 46°. Calculate, with a reason for each: (i) angle DBA, (ii) angle DAC, (iii) angle BCE."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The word 'diameter' is the signal to look for a right angle at the circumference, and the two angles standing on chord DC are the key to the rest."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p241_q01.jpg",
+      "altText": "Source visual for edmar-csec-p241-q01 from workbook page 241."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Use the diameter to find the angle at B.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "AC is a diameter, so angle ABC is the angle in a semicircle"
+        },
+        {
+          "type": "text",
+          "value": "Result: ∠ABC = 90°"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Split angle ABC at B, since BD lies inside it.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "∠DBA = ∠ABC − ∠DBC = 90° − 46°"
+        },
+        {
+          "type": "text",
+          "value": "Result: ∠DBA = 44°"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Compare the two angles standing on chord DC.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "∠DAC and ∠DBC are both subtended by arc DC and both lie in the same segment"
+        },
+        {
+          "type": "text",
+          "value": "Result: ∠DAC = ∠DBC = 46°"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Find the whole angle at A of the cyclic quadrilateral ABCD.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "∠BAD = ∠BAC + ∠CAD = 28° + 46°"
+        },
+        {
+          "type": "text",
+          "value": "Result: ∠BAD = 74°"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Use the exterior angle of the cyclic quadrilateral at C, formed by extending DC to E.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The exterior angle equals the interior opposite angle, so ∠BCE = ∠BAD"
+        },
+        {
+          "type": "text",
+          "value": "Result: ∠BCE = 74°"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Use the diameter AC to get angle ABC = 90°, subtract the given 46° for angle DBA, match angles standing on chord DC for angle DAC, then use the exterior-angle property of cyclic quadrilateral ABCD at C."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) ∠DBA = 44° — the angle in a semicircle, ∠ABC, is 90°, and 90° − 46° = 44°.  (ii) ∠DAC = 46° — angles in the same segment, standing on the same chord DC, are equal.  (iii) ∠BCE = 74° — the exterior angle of cyclic quadrilateral ABCD equals the interior opposite angle ∠BAD = 28° + 46° = 74°."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "An angle drawn at the circumference on a diameter always measures 90°, because the diameter subtends a semicircular arc of 180° and the angle at the circumference is half the angle at the centre. The same halving rule makes every angle standing on chord DC in the same segment equal, which is why ∠DAC copies ∠DBC. And because opposite angles of a cyclic quadrilateral add to 180°, the exterior angle at C — the supplement of the interior one — must equal the interior angle at A."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "adding_46_to_90_instead_of_subtracting_b",
+      "wrongValue": "incorrect_1",
+      "misconception": "Adding 46° to 90° instead of subtracting, because BD is inside angle ABC.",
+      "correctiveNote": "Avoid this: Adding 46° to 90° instead of subtracting, because BD is inside angle ABC."
+    },
+    {
+      "key": "pairing_dac_with_the_wrong_angle_check_w",
+      "wrongValue": "incorrect_2",
+      "misconception": "Pairing ∠DAC with the wrong angle — check which chord an angle stands on before calling them 'same segment'.",
+      "correctiveNote": "Avoid this: Pairing ∠DAC with the wrong angle — check which chord an angle stands on before calling them 'same segment'."
+    },
+    {
+      "key": "using_the_exterior_angle_rule_with_the_a",
+      "wrongValue": "incorrect_3",
+      "misconception": "Using the exterior angle rule with the adjacent interior angle instead of the opposite one.",
+      "correctiveNote": "Avoid this: Using the exterior angle rule with the adjacent interior angle instead of the opposite one."
+    },
+    {
+      "key": "giving_answers_with_no_reasons_the_reaso",
+      "wrongValue": "incorrect_4",
+      "misconception": "Giving answers with no reasons — the reasons carry marks in this question.",
+      "correctiveNote": "Avoid this: Giving answers with no reasons — the reasons carry marks in this question."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Mark the diameter's right angle on the diagram the moment you spot it, then write each new angle on the figure as you find it so the next part is a simple read-off."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "∠DB",
+    "displayValue": "∠DB",
+    "acceptedForms": [
+      "∠DB",
+      "∠DB"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "PR is a diameter of a circle and Q lies on the circumference. If ∠QPR = 35°, what is ∠PRQ?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "55",
+      "displayValue": "55",
+      "acceptedForms": [
+        "55",
+        "55"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "b9913afd-b11b-4bcb-ac51-f119053ebf47",
+      "code": "M1-1.1",
+      "label": "Angle in a semicircle"
+    },
+    {
+      "objectiveId": "e80f99b6-c922-449c-a892-8b090f9bb754",
+      "code": "M1-1.1",
+      "label": "Angles in the same segment"
+    },
+    {
+      "objectiveId": "3c8b200f-95d1-4f76-a461-f5bdc656a738",
+      "code": "M1-1.1",
+      "label": "Cyclic quadrilateral: exterior angle equals interior opposite angle"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 1,
+    "pageRef": "p241",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a.i",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.i): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "∠DB",
+        "displayValue": "∠DB",
+        "acceptedForms": [
+          "∠DB",
+          "∠DB"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.ii",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.ii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "∠DA",
+        "displayValue": "∠DA",
+        "acceptedForms": [
+          "∠DA",
+          "∠DA"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.iii",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.iii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "∠BCE=74°—theexteriorangleofcycli",
+        "displayValue": "∠BCE = 74° — the exterior angle of cycli",
+        "acceptedForms": [
+          "∠BCE = 74° — the exterior angle of cycli",
+          "∠BCE=74°—theexteriorangleofcycli"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

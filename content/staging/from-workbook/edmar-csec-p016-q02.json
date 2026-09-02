@@ -1,0 +1,212 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p016-q02",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Mrs. Green invested $35 000 at 7% per annum simple interest for 3 years. a. Calculate the interest earned.  b. Calculate the total amount received."
+    },
+    {
+      "type": "text",
+      "value": "Think first: All three of P, R and T are given, so this is the simple interest formula used forwards."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p016_q02.jpg",
+      "altText": "Source visual for edmar-csec-p016-q02 from workbook page 16."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write the formula and the known values.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "I = PRT/100 with P = 35000, R = 7, T = 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: I = (35000 × 7 × 3)/100"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Find one year's interest.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "35000 × 7/100"
+        },
+        {
+          "type": "text",
+          "value": "Result: $2450 per year"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Multiply by the number of years.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3 × $2450"
+        },
+        {
+          "type": "text",
+          "value": "Result: $7350"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Add the interest to the principal.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "35000 + 7350"
+        },
+        {
+          "type": "text",
+          "value": "Result: $42 350"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Substitute into I = PRT/100, then add the interest to the principal."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "a. $7 350  b. $42 350"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Under simple interest the same 7% of the original $35 000 is added every year, so three years earn exactly three times one year's interest. Nothing is ever charged on interest already earned, which is what separates simple from compound interest and keeps the yearly amount constant. The total received is the principal plus that accumulated interest."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "multiplying_by_7_instead_of_by_7_100",
+      "wrongValue": "incorrect_1",
+      "misconception": "Multiplying by 7 instead of by 7/100.",
+      "correctiveNote": "Avoid this: Multiplying by 7 instead of by 7/100."
+    },
+    {
+      "key": "adding_the_interest_to_itself_instead_of",
+      "wrongValue": "incorrect_2",
+      "misconception": "Adding the interest to itself instead of to the principal.",
+      "correctiveNote": "Avoid this: Adding the interest to itself instead of to the principal."
+    },
+    {
+      "key": "compounding_the_interest_which_would_giv",
+      "wrongValue": "incorrect_3",
+      "misconception": "Compounding the interest, which would give a larger and incorrect total.",
+      "correctiveNote": "Avoid this: Compounding the interest, which would give a larger and incorrect total."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Find one year's interest first — it is a single percentage calculation, and multiplying by the number of years is then trivial and easy to check."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "tolerance",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "currency",
+    "canonicalValue": "7.00",
+    "displayValue": "$7",
+    "acceptedForms": [
+      "$7",
+      "$7",
+      "7"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0.005
+    },
+    "precision": {
+      "kind": "decimal_places",
+      "value": 2,
+      "required": true
+    },
+    "normalisation": "currency_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Find the simple interest on $20 000 at 6% per annum for 4 years."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "currency",
+      "canonicalValue": "4.00",
+      "displayValue": "$4",
+      "acceptedForms": [
+        "$4",
+        "$4",
+        "4"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.005
+      },
+      "precision": {
+        "kind": "decimal_places",
+        "value": 2,
+        "required": true
+      },
+      "normalisation": "currency_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "ef6b2ee4-06e6-4a28-abe1-26043a28e972",
+      "code": "M1-1.1",
+      "label": "Simple interest"
+    },
+    {
+      "objectiveId": "a726756e-0701-4dec-ad5c-d65eaf313208",
+      "code": "M1-1.1",
+      "label": "Percentage of a quantity"
+    },
+    {
+      "objectiveId": "4c32a266-6621-400d-a663-04dc9af978d8",
+      "code": "M1-1.1",
+      "label": "Principal, interest and amount"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 2,
+    "pageRef": "p16",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

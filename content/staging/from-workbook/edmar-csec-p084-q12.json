@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p084-q12",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A diagram and a table summarise the test scores of two classes. Class A: mean 68, median 70, mode 72, range 34, standard deviation 8.2. Class B: mean 68, median 68, mode 67, range 18, standard deviation 4.1. (a) Compare the average performance of the two classes. (b) Which class had the more consistent scores? Use the standard deviations to justify your answer. (c) State ONE other value from the table that supports your answer to (b). (d) Write ONE inference about the performance of the two classes."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Averages and spread answer different questions — sort the table into those two groups before writing anything."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p084_q12.jpg",
+      "altText": "Source visual for edmar-csec-p084-q12 from workbook page 84."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Compare the means.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "68 for Class A and 68 for Class B"
+        },
+        {
+          "type": "text",
+          "value": "Result: Identical average score"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Compare the medians and the modes.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "A: median 70, mode 72; B: median 68, mode 67"
+        },
+        {
+          "type": "text",
+          "value": "Result: Class A's middle and most common scores are higher"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Compare the standard deviations.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "4.1 for B against 8.2 for A — exactly half"
+        },
+        {
+          "type": "text",
+          "value": "Result: Class B is the more consistent"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Find another value in the table that agrees.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Range: 18 for Class B against 34 for Class A"
+        },
+        {
+          "type": "text",
+          "value": "Result: The smaller range supports the same conclusion"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Compare the three averages first to describe typical performance, then compare the standard deviations and the range to describe consistency, and combine the two comparisons into an inference."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) Both classes have a mean of 68, so average performance is equal on the mean; Class A is slightly higher on the other two averages (median 70 against 68, mode 72 against 67), so its typical score is a little higher. (b) Class B, because its standard deviation of 4.1 is half of Class A's 8.2, showing its scores lie much closer to the mean. (c) The range — 18 for Class B against 34 for Class A. (d) Class A contains both stronger and weaker students and so needs work pitched at different levels, while Class B performs at a much more uniform level around 68."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Central tendency and spread are independent of each other: two data sets can share a mean and still look completely different. Standard deviation measures the typical distance of a score from the mean, so a smaller value means the scores are packed more tightly; the range points the same way here but rests on only the two extreme scores."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "saying_class_b_performed_better_because_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Saying Class B performed better because it is more consistent — consistency is not the same as a higher score.",
+      "correctiveNote": "Avoid this: Saying Class B performed better because it is more consistent — consistency is not the same as a higher score."
+    },
+    {
+      "key": "quoting_the_two_standard_deviations_with",
+      "wrongValue": "incorrect_2",
+      "misconception": "Quoting the two standard deviations without saying which is smaller or what that means.",
+      "correctiveNote": "Avoid this: Quoting the two standard deviations without saying which is smaller or what that means."
+    },
+    {
+      "key": "offering_the_mode_as_evidence_of_consist",
+      "wrongValue": "incorrect_3",
+      "misconception": "Offering the mode as evidence of consistency; it says nothing about spread.",
+      "correctiveNote": "Avoid this: Offering the mode as evidence of consistency; it says nothing about spread."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "In any 'compare' question, quote the actual figures and say what each one shows — a comparison with no numbers reads as an opinion, not an answer."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Bothclasseshaveameanof68,soaverageperformanceisequalonthemean;ClassAisslightlyhigherontheothertwo",
+    "displayValue": "Both classes have a mean of 68, so average performance is equal on the mean; Class A is slightly higher on the other two",
+    "acceptedForms": [
+      "Both classes have a mean of 68, so average performance is equal on the mean; Class A is slightly higher on the other two",
+      "Bothclasseshaveameanof68,soaverageperformanceisequalonthemean;ClassAisslightlyhigherontheothertwo"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Two sets have the same mean, but set P has standard deviation 3 and set Q has standard deviation 12. In which set do the values lie closer to the mean?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "SetP",
+      "displayValue": "Set P",
+      "acceptedForms": [
+        "Set P",
+        "SetP"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M3-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "4dc0e9b1-6226-4487-a00d-a5fe055f84e2",
+      "code": "M3-1.1",
+      "label": "Mean, median and mode as measures of central tendency"
+    },
+    {
+      "objectiveId": "c0ae6782-bb24-45f0-a68e-671352ff5ca7",
+      "code": "M3-1.1",
+      "label": "Standard deviation and range as measures of spread"
+    },
+    {
+      "objectiveId": "33a37512-0586-4474-aed8-debe13675ff8",
+      "code": "M3-1.1",
+      "label": "Comparing and interpreting data sets"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 12,
+    "pageRef": "p84",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

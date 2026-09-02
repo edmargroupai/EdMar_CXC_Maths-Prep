@@ -1,0 +1,173 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p093-q12",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Factorise completely: (5a − b)² − 81c²"
+    },
+    {
+      "type": "text",
+      "value": "Think first: Both terms are squares already — leave the bracket intact and use the rule."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p093_q12.jpg",
+      "altText": "Source visual for edmar-csec-p093-q12 from workbook page 93."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write both terms as squares.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(5a − b)² is already a square and 81c² = (9c)²"
+        },
+        {
+          "type": "text",
+          "value": "Result: (5a − b)² − (9c)²"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Apply the difference of two squares.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Here a = 5a − b and b = 9c"
+        },
+        {
+          "type": "text",
+          "value": "Result: (5a − b − 9c)(5a − b + 9c)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Check for any further common factor.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Neither bracket has a common factor"
+        },
+        {
+          "type": "text",
+          "value": "Result: Fully factorised"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Treat 5a − b as a single quantity and 9c as the other square root, then apply a² − b² = (a − b)(a + b)."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(5a − b − 9c)(5a − b + 9c)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Because the rule depends only on having two squares subtracted, the first square may be an entire bracket. Keeping 5a − b together avoids expanding, and the ± 9c is simply attached to each copy of it."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "expanding_5a_b_unnecessarily_and_then_lo",
+      "wrongValue": "incorrect_1",
+      "misconception": "Expanding (5a − b)² unnecessarily and then losing terms.",
+      "correctiveNote": "Avoid this: Expanding (5a − b)² unnecessarily and then losing terms."
+    },
+    {
+      "key": "giving_the_square_root_of_81c_as_9c_inst",
+      "wrongValue": "incorrect_2",
+      "misconception": "Giving the square root of 81c² as 9c² instead of 9c.",
+      "correctiveNote": "Avoid this: Giving the square root of 81c² as 9c² instead of 9c."
+    },
+    {
+      "key": "mishandling_the_signs_and_writing_5a_b_9",
+      "wrongValue": "incorrect_3",
+      "misconception": "Mishandling the signs and writing 5a − (b − 9c) in place of 5a − b − 9c.",
+      "correctiveNote": "Avoid this: Mishandling the signs and writing 5a − (b − 9c) in place of 5a − b − 9c."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When a squared bracket appears, keep it whole — expanding almost always makes the factorisation harder, not easier."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "(5a−b−9c)(5a−b+9c)",
+    "displayValue": "(5a − b − 9c)(5a − b + 9c)",
+    "acceptedForms": [
+      "(5a − b − 9c)(5a − b + 9c)",
+      "(5a−b−9c)(5a−b+9c)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Factorise (3p + q)² − 25r²."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(3p+q−5r)(3p+q+5r)",
+      "displayValue": "(3p + q − 5r)(3p + q + 5r)",
+      "acceptedForms": [
+        "(3p + q − 5r)(3p + q + 5r)",
+        "(3p+q−5r)(3p+q+5r)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M3-2.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "6d3c6987-f3ec-4ae4-a38c-4514b9dd732a",
+      "code": "M3-2.1",
+      "label": "Difference of two squares"
+    },
+    {
+      "objectiveId": "c94cef36-294b-495a-ae5c-46ec0a260ed8",
+      "code": "M3-2.1",
+      "label": "Factorising expressions containing brackets"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 12,
+    "pageRef": "p93",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

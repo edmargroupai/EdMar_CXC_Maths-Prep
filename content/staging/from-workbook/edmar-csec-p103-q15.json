@@ -1,0 +1,200 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p103-q15",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Rewrite 3x² + 18x + 20 in completed-square form, then determine the minimum value of the expression and the value of x at which the minimum occurs."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Once the expression is a(x + h)² + k, both answers are visible without any further calculation."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p103_q15.jpg",
+      "altText": "Source visual for edmar-csec-p103-q15 from workbook page 103."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Factor 3 out of the terms containing x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3x² + 18x + 20 = 3(x² + 6x) + 20"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3(x² + 6x) + 20"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Complete the square inside the bracket.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "half of 6 is 3, and 3² = 9, so x² + 6x = (x + 3)² − 9"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3[(x + 3)² − 9] + 20"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Multiply the 3 through and combine constants.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3(x + 3)² − 27 + 20"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3(x + 3)² − 7"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Set the square to zero to locate the minimum.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3(x + 3)² ≥ 0, and equals 0 when x + 3 = 0"
+        },
+        {
+          "type": "text",
+          "value": "Result: minimum −7 at x = −3"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Factor 3 from the x-terms, complete the square, then read the minimum as the constant k and its position from the bracket."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "3x² + 18x + 20 = 3(x + 3)² − 7; the minimum value is −7 and it occurs at x = −3."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The term 3(x + 3)² is non-negative for every x, so the expression can never fall below −7. It reaches −7 exactly once, at the x that makes the bracket vanish. Multiplying by 3 stretches the parabola vertically but does not move its lowest point sideways, so the position of the minimum comes only from the bracket."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "giving_the_minimum_as_7_but_the_position",
+      "wrongValue": "incorrect_1",
+      "misconception": "Giving the minimum as −7 but the position as x = 3 instead of x = −3.",
+      "correctiveNote": "Avoid this: Giving the minimum as −7 but the position as x = 3 instead of x = −3."
+    },
+    {
+      "key": "subtracting_9_instead_of_27_when_expandi",
+      "wrongValue": "incorrect_2",
+      "misconception": "Subtracting 9 instead of 27 when expanding the 3 back through.",
+      "correctiveNote": "Avoid this: Subtracting 9 instead of 27 when expanding the 3 back through."
+    },
+    {
+      "key": "confusing_the_minimum_value_with_the_min",
+      "wrongValue": "incorrect_3",
+      "misconception": "Confusing the minimum value with the minimum point (−3, −7).",
+      "correctiveNote": "Avoid this: Confusing the minimum value with the minimum point (−3, −7)."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Answer both halves explicitly: 'minimum value = ...' and 'occurs when x = ...'. Examiners award them separately."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "3",
+    "displayValue": "3",
+    "acceptedForms": [
+      "3",
+      "3"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Find the minimum value of 2x² + 12x + 5 and the x at which it occurs."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "2",
+      "displayValue": "2",
+      "acceptedForms": [
+        "2",
+        "2"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "4b7164a9-fc6c-4454-a428-df2d309bb9fb",
+      "code": "M1-5.1",
+      "label": "Completing the square"
+    },
+    {
+      "objectiveId": "95071ef7-d509-4a96-aaad-d1cc272fefd6",
+      "code": "M1-5.1",
+      "label": "Minimum value of a quadratic"
+    },
+    {
+      "objectiveId": "1af68998-ae98-4305-a78f-9210f148a38f",
+      "code": "M1-5.1",
+      "label": "Vertex form"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 15,
+    "pageRef": "p103",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

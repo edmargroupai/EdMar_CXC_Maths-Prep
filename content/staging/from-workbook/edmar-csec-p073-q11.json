@@ -1,0 +1,326 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p073-q11",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 10,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The diagram shows the straight line L. (a) State the y-intercept of L. (b) State the coordinates of the point at which L cuts the x-axis. (c) Determine the gradient of L. (d) Write the equation of L in the form y = mx + c. (e) Use the graph to determine the value of y when x = −1."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The line slopes downwards, so expect a negative gradient before you calculate."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p073_q11.jpg",
+      "altText": "Source visual for edmar-csec-p073-q11 from workbook page 73."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Read where the line crosses the y-axis.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The line meets the vertical axis 4 units above the origin"
+        },
+        {
+          "type": "text",
+          "value": "Result: y-intercept = 4, the point (0, 4)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Read where the line crosses the x-axis.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The line meets the horizontal axis 2 units to the right of the origin"
+        },
+        {
+          "type": "text",
+          "value": "Result: (2, 0)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Substitute the two points into the gradient formula.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "m = (0 − 4)/(2 − 0) = −4/2"
+        },
+        {
+          "type": "text",
+          "value": "Result: m = −2"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Write the equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "y = mx + c with m = −2 and c = 4"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = −2x + 4"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Find y when x = −1.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Read up from x = −1 to the line, and check: y = −2(−1) + 4 = 2 + 4"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 6"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Read both intercepts from the diagram, compute the gradient, write the equation, then use it or the graph to find y at x = −1."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) 4  (b) (2, 0)  (c) gradient = −2  (d) y = −2x + 4  (e) y = 6"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A negative gradient means y decreases as x increases, which is exactly what a line falling from left to right shows. The value −2 says that every step of 1 to the right drops the line 2 units, and that constant rate is what keeps the graph straight. Once the equation is known, reading a value off the graph and substituting into the equation must agree, so each acts as a check on the other."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "giving_the_gradient_as_2_and_losing_the_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Giving the gradient as 2 and losing the negative sign.",
+      "correctiveNote": "Avoid this: Giving the gradient as 2 and losing the negative sign."
+    },
+    {
+      "key": "reading_the_x_intercept_as_0_2_instead_o",
+      "wrongValue": "incorrect_2",
+      "misconception": "Reading the x-intercept as (0, 2) instead of (2, 0).",
+      "correctiveNote": "Avoid this: Reading the x-intercept as (0, 2) instead of (2, 0)."
+    },
+    {
+      "key": "substituting_x_1_as_2_1_4_and_getting_2",
+      "wrongValue": "incorrect_3",
+      "misconception": "Substituting x = −1 as −2(1) + 4 and getting 2.",
+      "correctiveNote": "Avoid this: Substituting x = −1 as −2(1) + 4 and getting 2."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "State the y-intercept as a number when asked for the intercept, and as coordinates when asked for the point; read the wording carefully."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "4",
+    "displayValue": "4",
+    "acceptedForms": [
+      "4",
+      "4"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A line has y-intercept 6 and cuts the x-axis at (3, 0). Find its gradient and equation."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "m=−2andy=−2x+6",
+      "displayValue": "m = −2 and y = −2x + 6",
+      "acceptedForms": [
+        "m = −2 and y = −2x + 6",
+        "m=−2andy=−2x+6"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "bbc81e4e-94bb-42ea-a650-799f95c6e4bb",
+      "code": "M1-1.1",
+      "label": "Reading a graph"
+    },
+    {
+      "objectiveId": "41051235-cf60-4b10-a8a0-3bf28482ebb3",
+      "code": "M1-1.1",
+      "label": "Intercepts"
+    },
+    {
+      "objectiveId": "b0b15779-4239-4464-aaa6-a87b436b682c",
+      "code": "M1-1.1",
+      "label": "Gradient from two points"
+    },
+    {
+      "objectiveId": "ec77214c-81e7-47c8-aafa-07657acca162",
+      "code": "M1-1.1",
+      "label": "y = mx + c"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 11,
+    "pageRef": "p73",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "numeric_exact",
+        "canonicalValue": "4",
+        "displayValue": "4",
+        "acceptedForms": [
+          "4",
+          "4"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0
+        },
+        "normalisation": "numeric_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "(2,0)",
+        "displayValue": "(2, 0)",
+        "acceptedForms": [
+          "(2, 0)",
+          "(2,0)"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "c",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (c): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "gradient=−2",
+        "displayValue": "gradient = −2",
+        "acceptedForms": [
+          "gradient = −2",
+          "gradient=−2"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "d",
+      "sequence": 4,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (d): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "y=−2",
+        "displayValue": "y = −2",
+        "acceptedForms": [
+          "y = −2",
+          "y=−2"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "e",
+      "sequence": 5,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (e): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "+4(e)y=6",
+        "displayValue": "+ 4 (e) y = 6",
+        "acceptedForms": [
+          "+ 4 (e) y = 6",
+          "+4(e)y=6"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

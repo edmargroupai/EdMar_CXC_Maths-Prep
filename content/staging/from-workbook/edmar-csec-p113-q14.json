@@ -1,0 +1,206 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p113-q14",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the simultaneous equations x² + y = 11 and x + y = 5."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Both equations contain y by itself, so you can eliminate y by subtraction without any messy substitution."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p113_q14.jpg",
+      "altText": "Source visual for edmar-csec-p113-q14 from workbook page 113."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Subtract x + y = 5 from x² + y = 11.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(x² + y) − (x + y) = 11 − 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: x² − x = 6"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Write the quadratic in standard form.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x² − x − 6 = 0"
+        },
+        {
+          "type": "text",
+          "value": "Result: x² − x − 6 = 0"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Factorise and solve for x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(x − 3)(x + 2) = 0"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 3 or x = −2"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Find the matching y from y = 5 − x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x = 3 → y = 2;  x = −2 → y = 7"
+        },
+        {
+          "type": "text",
+          "value": "Result: (3, 2) and (−2, 7)"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Check both pairs in x² + y = 11.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3² + 2 = 11;  (−2)² + 7 = 11"
+        },
+        {
+          "type": "text",
+          "value": "Result: Both pairs verified"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Subtract the linear equation from the quadratic one to eliminate y, solve the resulting quadratic in x, then use x + y = 5 to find each y."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = 3, y = 2  or  x = −2, y = 7"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Elimination works here because y appears with the same coefficient in both equations — subtracting cancels it and leaves a single quadratic in x. Choosing elimination over substitution avoids expanding a bracket, so there is less to go wrong, and the two roots correspond to the two points where the line meets the parabola."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "subtracting_in_the_wrong_order_and_getti",
+      "wrongValue": "incorrect_1",
+      "misconception": "Subtracting in the wrong order and getting 6 − x + x² = 0 with sign errors.",
+      "correctiveNote": "Avoid this: Subtracting in the wrong order and getting 6 − x + x² = 0 with sign errors."
+    },
+    {
+      "key": "solving_for_x_and_stopping_without_stati",
+      "wrongValue": "incorrect_2",
+      "misconception": "Solving for x and stopping, without stating the y values.",
+      "correctiveNote": "Avoid this: Solving for x and stopping, without stating the y values."
+    },
+    {
+      "key": "missing_the_negative_root_x_2",
+      "wrongValue": "incorrect_3",
+      "misconception": "Missing the negative root x = −2.",
+      "correctiveNote": "Avoid this: Missing the negative root x = −2."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Before substituting, glance at whether a variable already appears alone in both equations — if it does, subtraction is faster and safer."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=3,y=2",
+    "displayValue": "= 3, y = 2",
+    "acceptedForms": [
+      "= 3, y = 2",
+      "=3,y=2"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve x² + y = 7 and x + y = 5."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=2,y=3",
+      "displayValue": "= 2, y = 3",
+      "acceptedForms": [
+        "= 2, y = 3",
+        "=2,y=3"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-6.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "d5c49ffe-9f1a-423f-abeb-c0d586c39cff",
+      "code": "M1-6.1",
+      "label": "Simultaneous equations (one linear, one quadratic)"
+    },
+    {
+      "objectiveId": "e2940670-3ef1-4d11-afd6-fff76d4ebd92",
+      "code": "M1-6.1",
+      "label": "Elimination"
+    },
+    {
+      "objectiveId": "b1a9a75d-662e-4f8e-acb4-6b9686ba2e4f",
+      "code": "M1-6.1",
+      "label": "Factorising quadratics"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 14,
+    "pageRef": "p113",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

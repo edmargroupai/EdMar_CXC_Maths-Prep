@@ -1,0 +1,188 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p066-q05",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Factorise completely: x² + 7x."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The common factor here is a letter, not a number."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p066_q05.jpg",
+      "altText": "Source visual for edmar-csec-p066-q05 from workbook page 66."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write each term as a product.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x² = x × x and 7x = 7 × x"
+        },
+        {
+          "type": "text",
+          "value": "Result: x is in both"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Identify the HCF.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The coefficients 1 and 7 share only 1"
+        },
+        {
+          "type": "text",
+          "value": "Result: HCF = x"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Divide each term by x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x² ÷ x = x and 7x ÷ x = 7"
+        },
+        {
+          "type": "text",
+          "value": "Result: x and 7"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Write the factorised form.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: x(x + 7)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Recognise that x divides both terms, take it out, and write the remainder in a bracket."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x² + 7x = x(x + 7)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A common factor does not have to be a number. Since x² means x × x, one x can be lifted out of both terms, leaving x and 7 behind. Expanding x(x + 7) gives x² + 7x, confirming that nothing has been gained or lost."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "dividing_x_by_x_and_writing_0_or_1_inste",
+      "wrongValue": "incorrect_1",
+      "misconception": "Dividing x² by x and writing 0 or 1 instead of x.",
+      "correctiveNote": "Avoid this: Dividing x² by x and writing 0 or 1 instead of x."
+    },
+    {
+      "key": "taking_out_x_and_leaving_a_fraction_insi",
+      "wrongValue": "incorrect_2",
+      "misconception": "Taking out x² and leaving a fraction inside the bracket.",
+      "correctiveNote": "Avoid this: Taking out x² and leaving a fraction inside the bracket."
+    },
+    {
+      "key": "answering_x_x_7x",
+      "wrongValue": "incorrect_3",
+      "misconception": "Answering x(x + 7x).",
+      "correctiveNote": "Avoid this: Answering x(x + 7x)."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When you divide a power by the letter, subtract 1 from the index: x² ÷ x = x¹ = x."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "x²+7x=x(x+7)",
+    "displayValue": "x² + 7x = x(x + 7)",
+    "acceptedForms": [
+      "x² + 7x = x(x + 7)",
+      "x²+7x=x(x+7)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Factorise completely: y² + 5y."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "y(y+5)",
+      "displayValue": "y(y + 5)",
+      "acceptedForms": [
+        "y(y + 5)",
+        "y(y+5)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "37bed899-3661-40ed-a162-2a80c2dcfcb5",
+      "code": "M1-4.1",
+      "label": "Factorising"
+    },
+    {
+      "objectiveId": "3c1487e1-1799-4523-a154-b1ff71ea58d5",
+      "code": "M1-4.1",
+      "label": "Highest common factor"
+    },
+    {
+      "objectiveId": "452b13ae-171d-4264-a0f7-3e55e8f7db4f",
+      "code": "M1-4.1",
+      "label": "Index notation"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 5,
+    "pageRef": "p66",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

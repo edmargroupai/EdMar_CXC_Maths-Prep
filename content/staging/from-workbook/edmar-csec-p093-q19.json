@@ -1,0 +1,210 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p093-q19",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Factorise the quadratic expression 6x² − 19x − 20 completely."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The constant is negative, so the two numbers you are hunting for have opposite signs."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p093_q19.jpg",
+      "altText": "Source visual for edmar-csec-p093-q19 from workbook page 93."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply the coefficient of x² by the constant term.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "6 × (−20)"
+        },
+        {
+          "type": "text",
+          "value": "Result: −120"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Find two numbers with product −120 and sum −19.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(−24)(5) = −120 and −24 + 5 = −19"
+        },
+        {
+          "type": "text",
+          "value": "Result: −24 and 5"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Split the middle term.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "−19x becomes −24x + 5x"
+        },
+        {
+          "type": "text",
+          "value": "Result: 6x² − 24x + 5x − 20"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Factorise in pairs and take out the common bracket.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "6x(x − 4) + 5(x − 4)"
+        },
+        {
+          "type": "text",
+          "value": "Result: (x − 4)(6x + 5)"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Check by expanding.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "6x² + 5x − 24x − 20"
+        },
+        {
+          "type": "text",
+          "value": "Result: 6x² − 19x − 20 ✓"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Use the product 6 × (−20) = −120, find two numbers with that product and a sum of −19, split the middle term and group."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "6x² − 19x − 20 = (x − 4)(6x + 5)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Expanding (x − 4)(6x + 5) creates the middle term from two separate products, 5x and −24x. Searching for the number pair with product ac and sum b recovers those two products, so splitting and grouping unwinds the expansion step by step instead of relying on trial and error."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "ignoring_the_negative_constant_and_testi",
+      "wrongValue": "incorrect_1",
+      "misconception": "Ignoring the negative constant and testing only positive pairs.",
+      "correctiveNote": "Avoid this: Ignoring the negative constant and testing only positive pairs."
+    },
+    {
+      "key": "getting_the_pair_right_but_attaching_the",
+      "wrongValue": "incorrect_2",
+      "misconception": "Getting the pair right but attaching the signs to the wrong terms, giving (x + 4)(6x − 5).",
+      "correctiveNote": "Avoid this: Getting the pair right but attaching the signs to the wrong terms, giving (x + 4)(6x − 5)."
+    },
+    {
+      "key": "forgetting_that_the_two_grouped_brackets",
+      "wrongValue": "incorrect_3",
+      "misconception": "Forgetting that the two grouped brackets must match before factoring out.",
+      "correctiveNote": "Avoid this: Forgetting that the two grouped brackets must match before factoring out."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When the constant term is negative, the two numbers must have opposite signs and the larger one carries the sign of the middle term — here −19x means the bigger number is negative."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "6",
+    "displayValue": "6",
+    "acceptedForms": [
+      "6",
+      "6"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Factorise 6x² + 7x − 20."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(3x−4)(2x+5)",
+      "displayValue": "(3x − 4)(2x + 5)",
+      "acceptedForms": [
+        "(3x − 4)(2x + 5)",
+        "(3x−4)(2x+5)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M3-2.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "01a9afba-4298-4d71-aff6-82808645c085",
+      "code": "M3-2.1",
+      "label": "Factorising quadratic trinomials"
+    },
+    {
+      "objectiveId": "c3f158a4-1207-4655-a316-1c76c0368959",
+      "code": "M3-2.1",
+      "label": "Splitting the middle term"
+    },
+    {
+      "objectiveId": "d0eaf49b-5ba1-4e26-ae3a-f5984ad121ef",
+      "code": "M3-2.1",
+      "label": "Factorising by grouping"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 19,
+    "pageRef": "p93",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

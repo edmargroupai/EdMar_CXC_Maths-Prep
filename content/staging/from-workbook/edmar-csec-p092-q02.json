@@ -1,0 +1,178 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p092-q02",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Factorise completely: 6m − 9 + 4mn − 6n"
+    },
+    {
+      "type": "text",
+      "value": "Think first: Pair the terms in the order given and watch the signs — they decide whether the brackets will match."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p092_q02.jpg",
+      "altText": "Source visual for edmar-csec-p092-q02 from workbook page 92."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Group the terms in pairs.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(6m − 9) + (4mn − 6n)"
+        },
+        {
+          "type": "text",
+          "value": "Result: Two pairs"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Take the common factor out of each pair.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3 from 6m − 9, and 2n from 4mn − 6n"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3(2m − 3) + 2n(2m − 3)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Take out the common bracket.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Both terms contain (2m − 3)"
+        },
+        {
+          "type": "text",
+          "value": "Result: (2m − 3)(3 + 2n)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Group the first two and the last two terms, take the common factor out of each pair, then take out the bracket that both share."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(2m − 3)(3 + 2n)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Grouping works because factorising each pair reveals the same bracket in both terms, and that bracket can then be taken out exactly like a common number or letter. Expanding the answer returns the four original terms, which is the check."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "taking_out_2n_but_writing_4mn_6n_as_2n_2",
+      "wrongValue": "incorrect_1",
+      "misconception": "Taking out 2n but writing 4mn − 6n as 2n(2m − 6).",
+      "correctiveNote": "Avoid this: Taking out 2n but writing 4mn − 6n as 2n(2m − 6)."
+    },
+    {
+      "key": "pairing_6m_with_4mn_and_9_with_6n_which_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Pairing 6m with 4mn and −9 with −6n, which produces brackets that do not match.",
+      "correctiveNote": "Avoid this: Pairing 6m with 4mn and −9 with −6n, which produces brackets that do not match."
+    },
+    {
+      "key": "losing_the_minus_sign_and_writing_2m_3",
+      "wrongValue": "incorrect_3",
+      "misconception": "Losing the minus sign and writing (2m + 3).",
+      "correctiveNote": "Avoid this: Losing the minus sign and writing (2m + 3)."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Multiply your answer back out in rough — factorising is the one topic where checking costs ten seconds."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "(2m−3)(3+2n)",
+    "displayValue": "(2m − 3)(3 + 2n)",
+    "acceptedForms": [
+      "(2m − 3)(3 + 2n)",
+      "(2m−3)(3+2n)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Factorise 4a − 6 + 2ab − 3b."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(2a−3)(2+b)",
+      "displayValue": "(2a − 3)(2 + b)",
+      "acceptedForms": [
+        "(2a − 3)(2 + b)",
+        "(2a−3)(2+b)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M3-2.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "b4dcc222-3920-4a84-a0c4-6d97530110ca",
+      "code": "M3-2.1",
+      "label": "Factorisation by grouping"
+    },
+    {
+      "objectiveId": "c4678f82-ed47-423b-aff5-df0c990c20db",
+      "code": "M3-2.1",
+      "label": "Common factors"
+    },
+    {
+      "objectiveId": "dba1de29-f10d-4c39-a2fe-ca9bcb359b1e",
+      "code": "M3-2.1",
+      "label": "Signs in factorisation"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 2,
+    "pageRef": "p92",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

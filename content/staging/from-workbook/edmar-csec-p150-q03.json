@@ -1,0 +1,229 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p150-q03",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The graph represents y = 2x² − 8x + 6. (a) State the TWO elements of the domain whose image is 0. (b) State f(0). (c) State the minimum value. (d) Write the equation of the axis of symmetry. (e) State the range for the given domain. (f) State the interval of x for which y < 0. (g) State the intervals of x for which y > 6."
+    },
+    {
+      "type": "text",
+      "value": "Think first: 'Elements of the domain whose image is 0' is function language for the roots — where the curve meets the x-axis."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p150_q03.jpg",
+      "altText": "Source visual for edmar-csec-p150-q03 from workbook page 150."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Find the roots by factorising.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2x² − 8x + 6 = 2(x² − 4x + 3) = 2(x − 1)(x − 3) = 0"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 1 and x = 3"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Find f(0).",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2(0)² − 8(0) + 6"
+        },
+        {
+          "type": "text",
+          "value": "Result: f(0) = 6"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Locate the vertex using symmetry.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Midway between the roots, x = (1 + 3)/2 = 2, and y = 2(4) − 16 + 6 = -2"
+        },
+        {
+          "type": "text",
+          "value": "Result: Minimum point (2, -2), minimum value -2"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "State the axis of symmetry.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The vertical line through the vertex"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 2"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "State the range covered by the curve as drawn.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The curve falls to -2 at the vertex and rises to the top of the grid at y = 10"
+        },
+        {
+          "type": "text",
+          "value": "Result: -2 ≤ y ≤ 10 on the section shown (never below -2)"
+        }
+      ]
+    },
+    {
+      "stepNo": 6,
+      "instruction": "Read the intervals for y < 0 and y > 6.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Below the x-axis between the roots; above y = 6 where 2x(x − 4) > 0"
+        },
+        {
+          "type": "text",
+          "value": "Result: y < 0 for 1 < x < 3;  y > 6 for x < 0 or x > 4"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Factorise to confirm the roots, substitute x = 0 for the y-intercept, use symmetry for the vertex, then read each inequality from where the curve lies above or below the relevant horizontal line."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) x = 1 and x = 3  (b) f(0) = 6  (c) Minimum value -2  (d) Axis of symmetry x = 2  (e) The curve never goes below -2; over the section drawn the range is -2 ≤ y ≤ 10  (f) y < 0 for 1 < x < 3  (g) y > 6 for x < 0 or x > 4."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A quadratic is negative only between its roots, because that is the only stretch where the upward-opening curve dips below the x-axis. The same reasoning answers part (g): solving 2x² − 8x + 6 > 6 reduces to 2x(x − 4) > 0, whose roots 0 and 4 mark where the curve crosses the line y = 6, and the curve is above that line outside those two values. Symmetry places the vertex exactly halfway between any pair of such crossing points."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "giving_the_interval_for_y_0_as_x_1_or_x_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Giving the interval for y < 0 as x < 1 or x > 3 — that is where the curve is positive.",
+      "correctiveNote": "Avoid this: Giving the interval for y < 0 as x < 1 or x > 3 — that is where the curve is positive."
+    },
+    {
+      "key": "reading_the_roots_as_the_y_intercept_val",
+      "wrongValue": "incorrect_2",
+      "misconception": "Reading the roots as the y-intercept values.",
+      "correctiveNote": "Avoid this: Reading the roots as the y-intercept values."
+    },
+    {
+      "key": "forgetting_that_y_6_has_two_separate_int",
+      "wrongValue": "incorrect_3",
+      "misconception": "Forgetting that y > 6 has two separate intervals, not one.",
+      "correctiveNote": "Avoid this: Forgetting that y > 6 has two separate intervals, not one."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "For a 'greater than' inequality on an upward parabola the answer is always two outer intervals; for 'less than' it is the single interval between the crossings."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "x=1andx=3",
+    "displayValue": "x = 1 and x = 3",
+    "acceptedForms": [
+      "x = 1 and x = 3",
+      "x=1andx=3"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "For y = x² − 4, state the interval of x for which y < 0."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "-2",
+      "displayValue": "-2",
+      "acceptedForms": [
+        "-2",
+        "-2"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "40f61ede-ad31-4499-a6f6-54377983e149",
+      "code": "M1-5.1",
+      "label": "Reading a quadratic graph"
+    },
+    {
+      "objectiveId": "563785c2-773d-4bd3-af41-f17858be22b4",
+      "code": "M1-5.1",
+      "label": "Roots of a quadratic"
+    },
+    {
+      "objectiveId": "562b99fe-5238-485b-aca7-adec3e688b9e",
+      "code": "M1-5.1",
+      "label": "Minimum point and axis of symmetry"
+    },
+    {
+      "objectiveId": "ea9d7db9-c97f-4f72-a48d-56ad29e89049",
+      "code": "M1-5.1",
+      "label": "Range"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 3,
+    "pageRef": "p150",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

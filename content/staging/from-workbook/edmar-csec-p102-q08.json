@@ -1,0 +1,200 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p102-q08",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Rewrite the quadratic expression 5x² − 20x − 1 by completing the square, in the form a(x + h)² + k."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The constant is negative here, so keep careful track of signs when you combine it with the correction term."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p102_q08.jpg",
+      "altText": "Source visual for edmar-csec-p102-q08 from workbook page 102."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Factor 5 out of the terms containing x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5x² − 20x − 1 = 5(x² − 4x) − 1"
+        },
+        {
+          "type": "text",
+          "value": "Result: 5(x² − 4x) − 1"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Complete the square inside the bracket.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "half of −4 is −2, and (−2)² = 4, so x² − 4x = (x − 2)² − 4"
+        },
+        {
+          "type": "text",
+          "value": "Result: 5[(x − 2)² − 4] − 1"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Multiply the 5 through the bracket.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5(x − 2)² − 20 − 1"
+        },
+        {
+          "type": "text",
+          "value": "Result: 5(x − 2)² − 20 − 1"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Combine the constants.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "−20 − 1 = −21"
+        },
+        {
+          "type": "text",
+          "value": "Result: 5(x − 2)² − 21"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Factor 5 from the x-terms, complete the square inside the bracket, expand the 5 back and combine with the −1."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "5x² − 20x − 1 = 5(x − 2)² − 21"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Every quadratic can be written as a scaled square plus a constant, because a(x + h)² + k expands to ax² + 2ahx + ah² + k and the three coefficients can always be matched. Here a = 5 forces 2ah = −20, so h = −2, and then k absorbs whatever is left over. Nothing is added to the expression — the −21 exactly balances the extra 20 the square introduced."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "treating_20_1_as_19",
+      "wrongValue": "incorrect_1",
+      "misconception": "Treating −20 − 1 as −19.",
+      "correctiveNote": "Avoid this: Treating −20 − 1 as −19."
+    },
+    {
+      "key": "multiplying_only_the_x_2_by_5_and_leavin",
+      "wrongValue": "incorrect_2",
+      "misconception": "Multiplying only the (x − 2)² by 5 and leaving the −4 unscaled.",
+      "correctiveNote": "Avoid this: Multiplying only the (x − 2)² by 5 and leaving the −4 unscaled."
+    },
+    {
+      "key": "writing_x_2_because_the_4_in_the_correct",
+      "wrongValue": "incorrect_3",
+      "misconception": "Writing (x + 2)² because the 4 in the correction is positive.",
+      "correctiveNote": "Avoid this: Writing (x + 2)² because the 4 in the correction is positive."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Read off h as half the x-coefficient inside the bracket, with the same sign — the sign of h never comes from the constant term."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "5",
+    "displayValue": "5",
+    "acceptedForms": [
+      "5",
+      "5"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Write 5x² − 10x + 2 in the form a(x + h)² + k."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "5",
+      "displayValue": "5",
+      "acceptedForms": [
+        "5",
+        "5"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "dd112d19-2a78-4866-ae08-c63386c508db",
+      "code": "M1-5.1",
+      "label": "Completing the square"
+    },
+    {
+      "objectiveId": "074e181e-c0da-4ce8-a2de-86596a2cdd19",
+      "code": "M1-5.1",
+      "label": "Factorising out a common coefficient"
+    },
+    {
+      "objectiveId": "9fc98c7d-0810-4e1d-a9a8-e80d522749e6",
+      "code": "M1-5.1",
+      "label": "Perfect square trinomials"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 8,
+    "pageRef": "p102",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

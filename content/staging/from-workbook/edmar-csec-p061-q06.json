@@ -1,0 +1,194 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p061-q06",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "If a = 4, b = −2 and c = 3, find (a² − bc)/(b + c)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Evaluate the top and the bottom completely and separately before you divide."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p061_q06.jpg",
+      "altText": "Source visual for edmar-csec-p061-q06 from workbook page 61."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Evaluate a².",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "4²"
+        },
+        {
+          "type": "text",
+          "value": "Result: 16"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Evaluate bc and subtract it.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(−2)(3) = −6, so 16 − (−6) = 16 + 6"
+        },
+        {
+          "type": "text",
+          "value": "Result: numerator = 22"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Evaluate the denominator.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "−2 + 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: denominator = 1"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Divide.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "22 ÷ 1"
+        },
+        {
+          "type": "text",
+          "value": "Result: 22"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Work out the numerator a² − bc, then the denominator b + c, then divide one by the other."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "22"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A fraction bar acts as a bracket around both the top and the bottom, so each must be fully simplified before dividing. The key sign move is 16 − (−6): subtracting a negative product adds, which turns what looks like a subtraction into an increase."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_16_6_10_by_ignoring_that_bc_is_n",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing 16 − 6 = 10 by ignoring that bc is negative.",
+      "correctiveNote": "Avoid this: Writing 16 − 6 = 10 by ignoring that bc is negative."
+    },
+    {
+      "key": "dividing_term_by_term_instead_of_evaluat",
+      "wrongValue": "incorrect_2",
+      "misconception": "Dividing term by term instead of evaluating the whole numerator and denominator first.",
+      "correctiveNote": "Avoid this: Dividing term by term instead of evaluating the whole numerator and denominator first."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Draw the fraction bar long and work the numerator and denominator in separate columns - it stops the two from being mixed."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "22",
+    "displayValue": "22",
+    "acceptedForms": [
+      "22",
+      "22"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "If a = 3, b = −1 and c = 2, find (a² − bc)/(b + c)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "11",
+      "displayValue": "11",
+      "acceptedForms": [
+        "11",
+        "11"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "4e77b643-4a8f-433f-a6fb-5843b35df417",
+      "code": "M1-4.1",
+      "label": "Substitution"
+    },
+    {
+      "objectiveId": "2872fadd-8b49-4c36-a30a-e3d9ca276acb",
+      "code": "M1-4.1",
+      "label": "Directed numbers"
+    },
+    {
+      "objectiveId": "2f39d691-a6d8-4d04-a8bd-d9b4079ab330",
+      "code": "M1-4.1",
+      "label": "Algebraic fractions"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 6,
+    "pageRef": "p61",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

@@ -1,0 +1,224 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p028-q01",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A Venn diagram shows students in Form 5A who have visited Canada (C) or Dominica (D). The regions read: C only = 3, C ∩ D = x, D only = 10, and outside both circles = 2x. (i) How many students have visited Dominica ONLY? (ii) Write an expression in terms of x for the TOTAL number of students who have visited Canada. (iii) Given that there are 25 students in Form 5A, calculate the value of x. (iv) Hence write down the number of students in C ∪ D, C ∩ D and (C ∪ D)'."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Every student in the class sits in exactly one of the four regions, so the four entries must add to 25."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p028_q01.jpg",
+      "altText": "Source visual for edmar-csec-p028-q01 from workbook page 28."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Read the region for Dominica only.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "the part of D outside C"
+        },
+        {
+          "type": "text",
+          "value": "Result: 10 students"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Add the two regions inside circle C for the total who visited Canada.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "C only + both = 3 + x"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3 + x"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Add all four regions and set the sum equal to 25.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3 + x + 10 + 2x = 25, so 13 + 3x = 25"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3x = 12"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Solve for x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "12 / 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 4"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Substitute x = 4 into each required set.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "C ∪ D = 3 + 4 + 10; C ∩ D = x; (C ∪ D)' = 2x"
+        },
+        {
+          "type": "text",
+          "value": "Result: 17, 4 and 8"
+        }
+      ]
+    },
+    {
+      "stepNo": 6,
+      "instruction": "Check the totals.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "17 inside the circles + 8 outside"
+        },
+        {
+          "type": "text",
+          "value": "Result: 25 students"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Read the required regions straight off the diagram, form an equation by adding all four regions and setting the total to 25, solve for x, then substitute back into each region."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) 10 students  (ii) 3 + x  (iii) x = 4  (iv) n(C ∪ D) = 17, n(C ∩ D) = 4, n((C ∪ D)') = 8"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A Venn diagram splits the universal set into regions that do not overlap, so the region counts add to the total with nothing counted twice. That is why the equation is a simple sum. The whole circle C is made of two of those regions, C only and the intersection, which is what makes the total for Canada 3 + x rather than just 3."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_the_canada_total_as_3_only_leavi",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing the Canada total as 3 only, leaving out the overlap x.",
+      "correctiveNote": "Avoid this: Writing the Canada total as 3 only, leaving out the overlap x."
+    },
+    {
+      "key": "forgetting_the_2x_outside_the_circles_wh",
+      "wrongValue": "incorrect_2",
+      "misconception": "Forgetting the 2x outside the circles when forming the equation.",
+      "correctiveNote": "Avoid this: Forgetting the 2x outside the circles when forming the equation."
+    },
+    {
+      "key": "giving_17_for_c_d_instead_of_for_c_d",
+      "wrongValue": "incorrect_3",
+      "misconception": "Giving 17 for C ∩ D instead of for C ∪ D.",
+      "correctiveNote": "Avoid this: Giving 17 for C ∩ D instead of for C ∪ D."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Before solving, check that your four region labels add to the stated total. If they do not, you have missed a region, usually the one outside the circles."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "10",
+    "displayValue": "10",
+    "acceptedForms": [
+      "10",
+      "10"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "In a Venn diagram, A only = 5, both = x, B only = 7 and neither = x. If there are 20 in total, find x."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=4",
+      "displayValue": "= 4",
+      "acceptedForms": [
+        "= 4",
+        "=4"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "6f77adfa-6a2c-4c4f-a2c3-a87113ba3d97",
+      "code": "M1-1.1",
+      "label": "Venn diagrams"
+    },
+    {
+      "objectiveId": "5e841b30-6255-47b2-adaa-b922b8a9cacb",
+      "code": "M1-1.1",
+      "label": "Set notation: union, intersection, complement"
+    },
+    {
+      "objectiveId": "f5475b42-963a-48a4-ac22-096051648dc8",
+      "code": "M1-1.1",
+      "label": "Forming and solving a linear equation"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 1,
+    "pageRef": "p28",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

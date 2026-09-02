@@ -1,0 +1,178 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p019-q16",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A merchant bought a radio for $4 500 and sold it for $5 400. (a) Calculate the profit. (b) Calculate the percentage profit."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Profit is a difference; percentage profit is that difference measured against the cost price."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p019_q16.jpg",
+      "altText": "Source visual for edmar-csec-p019-q16 from workbook page 19."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Subtract the cost price from the selling price.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "$5 400 - $4 500"
+        },
+        {
+          "type": "text",
+          "value": "Result: $900 profit"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Divide the profit by the COST price.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "900 / 4 500"
+        },
+        {
+          "type": "text",
+          "value": "Result: 0.2"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Multiply by 100.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "0.2 x 100"
+        },
+        {
+          "type": "text",
+          "value": "Result: 20%"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Subtract cost price from selling price to get the profit, then express the profit as a percentage of the cost price."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) Profit = $900  (b) Percentage profit = 20%"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Percentage profit measures how well the money tied up in the item performed, so the cost price is the base. Using the selling price instead would give 16.7%, which answers a different question about margin. Cost price as the denominator is the standard convention in profit and loss."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "dividing_the_profit_by_the_selling_price",
+      "wrongValue": "incorrect_1",
+      "misconception": "Dividing the profit by the selling price instead of the cost price.",
+      "correctiveNote": "Avoid this: Dividing the profit by the selling price instead of the cost price."
+    },
+    {
+      "key": "giving_the_selling_price_as_the_profit",
+      "wrongValue": "incorrect_2",
+      "misconception": "Giving the selling price as the profit.",
+      "correctiveNote": "Avoid this: Giving the selling price as the profit."
+    },
+    {
+      "key": "writing_0_2_as_the_final_percentage",
+      "wrongValue": "incorrect_3",
+      "misconception": "Writing 0.2 as the final percentage.",
+      "correctiveNote": "Avoid this: Writing 0.2 as the final percentage."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Underline the cost price as soon as you read it. It is the denominator for both percentage profit and percentage loss."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Profit=$900",
+    "displayValue": "Profit = $900",
+    "acceptedForms": [
+      "Profit = $900",
+      "Profit=$900"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "An item is bought for $250 and sold for $300. Find the percentage profit."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "20%",
+      "displayValue": "20%",
+      "acceptedForms": [
+        "20%",
+        "20%"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-3.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "663bf5e7-e8c3-4696-ab32-4822b41ebf4b",
+      "code": "M1-3.1",
+      "label": "Profit and loss"
+    },
+    {
+      "objectiveId": "29c5ec4f-96f3-4ef2-ae80-b7d1e82ed25e",
+      "code": "M1-3.1",
+      "label": "Cost price and selling price"
+    },
+    {
+      "objectiveId": "3b1344c3-0ed0-4b8b-ace8-bda5c8c38916",
+      "code": "M1-3.1",
+      "label": "Percentage profit"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 16,
+    "pageRef": "p19",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

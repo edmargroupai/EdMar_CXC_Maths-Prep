@@ -1,0 +1,197 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p106-q15",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The area of a rectangle is x² + 11x + 24 cm². Determine possible expressions for the length and the width, and hence calculate its perimeter."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Area is length × width, so factorising the area expression hands you the two sides."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p106_q15.jpg",
+      "altText": "Source visual for edmar-csec-p106-q15 from workbook page 106."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Find two numbers whose product is 24 and whose sum is 11.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "8 × 3 = 24 and 8 + 3 = 11"
+        },
+        {
+          "type": "text",
+          "value": "Result: 8 and 3"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Write the area in factorised form.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x² + 11x + 24 = (x + 8)(x + 3)"
+        },
+        {
+          "type": "text",
+          "value": "Result: (x + 8)(x + 3)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Take the two factors as the side lengths.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "the longer side is the one with the larger constant"
+        },
+        {
+          "type": "text",
+          "value": "Result: length (x + 8) cm, width (x + 3) cm"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Apply the perimeter formula and simplify.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "P = 2[(x + 8) + (x + 3)] = 2(2x + 11)"
+        },
+        {
+          "type": "text",
+          "value": "Result: P = (4x + 22) cm"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Factorise x² + 11x + 24 into two brackets, take those as the length and width, then apply P = 2(l + w)."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "Length (x + 8) cm and width (x + 3) cm; perimeter = 2[(x + 8) + (x + 3)] = (4x + 22) cm."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Factorising reverses the multiplication that produced the area, so the two brackets are a valid pair of side lengths. The word 'possible' matters: any pair of expressions multiplying to the same quadratic would do, but the integer factorisation is the intended one. The perimeter then follows from adding the four sides, which is why the x-terms double to 4x."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "adding_the_brackets_instead_of_doubling_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Adding the brackets instead of doubling their sum, giving 2x + 11 instead of 4x + 22.",
+      "correctiveNote": "Avoid this: Adding the brackets instead of doubling their sum, giving 2x + 11 instead of 4x + 22."
+    },
+    {
+      "key": "choosing_12_and_2_or_6_and_4_which_multi",
+      "wrongValue": "incorrect_2",
+      "misconception": "Choosing 12 and 2 or 6 and 4, which multiply to 24 but do not add to 11.",
+      "correctiveNote": "Avoid this: Choosing 12 and 2 or 6 and 4, which multiply to 24 but do not add to 11."
+    },
+    {
+      "key": "leaving_the_perimeter_as_2_2x_11_when_a_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Leaving the perimeter as 2(2x + 11) when a simplified expression is asked for.",
+      "correctiveNote": "Avoid this: Leaving the perimeter as 2(2x + 11) when a simplified expression is asked for."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Perimeter answers should be fully simplified single expressions — expand the outer bracket before you write your final line."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Length(x+8)cmandwidth(x+3)cm;perimeter=2[(x+8)+(x+3)]=(4x+22)cm.",
+    "displayValue": "Length (x + 8) cm and width (x + 3) cm; perimeter = 2[(x + 8) + (x + 3)] = (4x + 22) cm.",
+    "acceptedForms": [
+      "Length (x + 8) cm and width (x + 3) cm; perimeter = 2[(x + 8) + (x + 3)] = (4x + 22) cm.",
+      "Length(x+8)cmandwidth(x+3)cm;perimeter=2[(x+8)+(x+3)]=(4x+22)cm."
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "The area of a rectangle is x² + 9x + 20 cm². Find expressions for its sides and its perimeter."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "+5)cmand(x+4)cm;perimeter=(4x+18)cm.",
+      "displayValue": "+ 5) cm and (x + 4) cm; perimeter = (4x + 18) cm.",
+      "acceptedForms": [
+        "+ 5) cm and (x + 4) cm; perimeter = (4x + 18) cm.",
+        "+5)cmand(x+4)cm;perimeter=(4x+18)cm."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-6.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "5d02e7f1-eac8-460e-a600-2f33d6de25ee",
+      "code": "M1-6.1",
+      "label": "Factorising a quadratic"
+    },
+    {
+      "objectiveId": "6e75c538-b3f5-481d-aad8-abef40e9404e",
+      "code": "M1-6.1",
+      "label": "Area of a rectangle"
+    },
+    {
+      "objectiveId": "28673f3a-8cf9-4320-a0d7-5158f029a3e1",
+      "code": "M1-6.1",
+      "label": "Perimeter of a rectangle"
+    },
+    {
+      "objectiveId": "a4632974-93e8-4a38-abe8-69c1184f6b04",
+      "code": "M1-6.1",
+      "label": "Collecting like terms"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 15,
+    "pageRef": "p106",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

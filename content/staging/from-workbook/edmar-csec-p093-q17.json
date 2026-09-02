@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p093-q17",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Factorise completely: 3x² − 17x + 10"
+    },
+    {
+      "type": "text",
+      "value": "Think first: Product a × c is positive and the sum is negative, so both numbers are negative."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p093_q17.jpg",
+      "altText": "Source visual for edmar-csec-p093-q17 from workbook page 93."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply the first and last coefficients.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3 × 10"
+        },
+        {
+          "type": "text",
+          "value": "Result: 30"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Find two numbers with product 30 and sum −17.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Both must be negative: −2 and −15"
+        },
+        {
+          "type": "text",
+          "value": "Result: −2 and −15"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Split the middle term and group.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3x² − 2x − 15x + 10 = x(3x − 2) − 5(3x − 2)"
+        },
+        {
+          "type": "text",
+          "value": "Result: (3x − 2)(x − 5)"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Check by expanding.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3x² − 15x − 2x + 10"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3x² − 17x + 10"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Multiply the first and last coefficients, find two negative numbers with that product and with sum −17, split the middle term and factorise by grouping."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(3x − 2)(x − 5)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Splitting −17x into −2x − 15x keeps the expression unchanged but makes each pair share a factor, so grouping can finish the job. Taking out −5 rather than +5 from the second pair is what makes the two brackets identical."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "using_2_and_15_and_losing_the_signs",
+      "wrongValue": "incorrect_1",
+      "misconception": "Using +2 and +15 and losing the signs.",
+      "correctiveNote": "Avoid this: Using +2 and +15 and losing the signs."
+    },
+    {
+      "key": "taking_out_5_instead_of_5_from_the_secon",
+      "wrongValue": "incorrect_2",
+      "misconception": "Taking out +5 instead of −5 from the second pair, so the brackets do not match.",
+      "correctiveNote": "Avoid this: Taking out +5 instead of −5 from the second pair, so the brackets do not match."
+    },
+    {
+      "key": "searching_for_numbers_with_product_10_ra",
+      "wrongValue": "incorrect_3",
+      "misconception": "Searching for numbers with product 10 rather than 30.",
+      "correctiveNote": "Avoid this: Searching for numbers with product 10 rather than 30."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "After splitting the middle term, take out a negative factor whenever the third term is negative — that is what makes the brackets agree."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "(3x−2)(x−5)",
+    "displayValue": "(3x − 2)(x − 5)",
+    "acceptedForms": [
+      "(3x − 2)(x − 5)",
+      "(3x−2)(x−5)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Factorise 2x² − 9x + 4."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(2x−1)(x−4)",
+      "displayValue": "(2x − 1)(x − 4)",
+      "acceptedForms": [
+        "(2x − 1)(x − 4)",
+        "(2x−1)(x−4)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M3-2.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "4733d7f7-579e-4e6c-a765-6921f1c4618d",
+      "code": "M3-2.1",
+      "label": "Factorising quadratic trinomials with a leading coefficient"
+    },
+    {
+      "objectiveId": "5e81ebe1-3eb7-460a-ac5f-1a4db38e207d",
+      "code": "M3-2.1",
+      "label": "Splitting the middle term"
+    },
+    {
+      "objectiveId": "485590a8-2f98-436b-a456-500978d758f4",
+      "code": "M3-2.1",
+      "label": "Factorisation by grouping"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 17,
+    "pageRef": "p93",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

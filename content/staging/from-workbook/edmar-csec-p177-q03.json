@@ -1,0 +1,206 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p177-q03",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 5,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A rectangular field ABCD measures 60 m by 40 m. A vertical mast MT of height 18 m stands at the centre M, and a cable runs from the top T to each corner. a) Calculate the horizontal distance AM. b) Calculate the angle of elevation of T from A, to 1 decimal place. c) Calculate the length of cable AT. d) Hence determine the minimum total length of cable required for all four corners, allowing an additional 2% for fastening, to the nearest metre."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The centre of a rectangle is the midpoint of each diagonal, so AM is exactly half the diagonal."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p177_q03.jpg",
+      "altText": "Source visual for edmar-csec-p177-q03 from workbook page 177."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Find the diagonal of the field.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "AC² = 60² + 40² = 3600 + 1600 = 5200, so AC = √5200 = 72.111"
+        },
+        {
+          "type": "text",
+          "value": "Result: AC ≈ 72.1 m"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Halve it to get AM.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "M is the centre, so AM = AC ÷ 2 = 72.111 ÷ 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: AM ≈ 36.1 m"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Find the angle of elevation of T from A.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "MT is vertical, so tan θ = 18 ÷ 36.0555 = 0.49923"
+        },
+        {
+          "type": "text",
+          "value": "Result: θ ≈ 26.5°"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Find AT with Pythagoras.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "AT² = 36.0555² + 18² = 1300 + 324 = 1624, so AT = √1624"
+        },
+        {
+          "type": "text",
+          "value": "Result: AT ≈ 40.3 m"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Total the four cables and add 2%.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "4 × 40.2989 = 161.196; 161.196 × 1.02 = 164.42"
+        },
+        {
+          "type": "text",
+          "value": "Result: ≈ 164 m"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Find the base diagonal and halve it for AM, use tangent for the elevation, use Pythagoras with the 18 m mast for AT, then multiply by four and add 2%."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) AM ≈ 36.1 m  (b) angle of elevation ≈ 26.5°  (c) AT ≈ 40.3 m  (d) total cable required ≈ 164 m"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Because the mast stands at the centre and is perpendicular to the whole base, every corner is the same horizontal distance from M — half a diagonal — so all four cables are equal and only one needs calculating. The mast being vertical is what guarantees the right angle at M, letting Pythagoras carry a two-dimensional distance up into three dimensions. The 2% allowance is a multiplication by 1.02 applied after totalling."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "using_60_m_or_40_m_as_am_instead_of_half",
+      "wrongValue": "incorrect_1",
+      "misconception": "Using 60 m or 40 m as AM instead of half the diagonal.",
+      "correctiveNote": "Avoid this: Using 60 m or 40 m as AM instead of half the diagonal."
+    },
+    {
+      "key": "calculating_at_for_one_corner_and_forget",
+      "wrongValue": "incorrect_2",
+      "misconception": "Calculating AT for one corner and forgetting to multiply by four.",
+      "correctiveNote": "Avoid this: Calculating AT for one corner and forgetting to multiply by four."
+    },
+    {
+      "key": "adding_2_m_instead_of_2_or_applying_the_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Adding 2 m instead of 2%, or applying the 2% to a single cable only.",
+      "correctiveNote": "Avoid this: Adding 2 m instead of 2%, or applying the 2% to a single cable only."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "In 3-D problems, identify the horizontal distance first and treat the vertical as a separate right-angled step — the two-stage approach keeps the working clear and the marks separate."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "AM≈36.1m",
+    "displayValue": "AM ≈ 36.1 m",
+    "acceptedForms": [
+      "AM ≈ 36.1 m",
+      "AM≈36.1m"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A rectangular base measures 8 m by 6 m. How far is a corner from the centre?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "Halfof√(64+36)=10,so5m.",
+      "displayValue": "Half of √(64 + 36) = 10, so 5 m.",
+      "acceptedForms": [
+        "Half of √(64 + 36) = 10, so 5 m.",
+        "Halfof√(64+36)=10,so5m."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "a463f6b4-3d1c-4d7c-a3bd-642af74556a3",
+      "code": "M1-1.1",
+      "label": "Pythagoras' theorem in three dimensions"
+    },
+    {
+      "objectiveId": "6ea18f26-2740-44f2-a0a2-6d46b72d7015",
+      "code": "M1-1.1",
+      "label": "Angle of elevation"
+    },
+    {
+      "objectiveId": "5ad872e2-1a41-4bdf-a992-0a9a801cf660",
+      "code": "M1-1.1",
+      "label": "Percentage increase"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 3,
+    "pageRef": "p177",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

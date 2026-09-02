@@ -1,0 +1,217 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p275-q10",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "PQRS is a quadrilateral made of triangles PQS and QRS. In triangle QRS, SQ = 18 m, SR = 16 m and angle QSR = 25°. (iii) Calculate the length of QR. (ii) The bearing of P from S is 205°; with angle PSQ = 72° and angle QSR = 25°, determine the bearing of (a) R from S and (b) S from P."
+    },
+    {
+      "type": "text",
+      "value": "Think first: QR sits opposite a known angle with both of its arms given, so this is a cosine-rule question; the bearings then come from rotating away from SP by the marked angles at S."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p275_q10.jpg",
+      "altText": "Source visual for edmar-csec-p275-q10 from workbook page 275."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write the cosine rule for QR in triangle QRS, with angle QSR between the two known sides.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "QR² = SQ² + SR² − 2(SQ)(SR)cos(QSR)"
+        },
+        {
+          "type": "text",
+          "value": "Result: QR² = 18² + 16² − 2(18)(16)cos 25°"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Evaluate each term and take the square root.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "324 + 256 − 576 × 0.9063 = 580 − 522.0 = 58.0"
+        },
+        {
+          "type": "text",
+          "value": "Result: QR = 7.6 m (1 d.p.)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Find the bearing of Q from S by turning 72° from SP towards SQ, which reduces the bearing.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "205° − 72°"
+        },
+        {
+          "type": "text",
+          "value": "Result: Bearing of Q from S = 133°"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Turn a further 25° from SQ to reach SR.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "133° − 25°"
+        },
+        {
+          "type": "text",
+          "value": "Result: Bearing of R from S = 108°"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Take the back bearing of SP to get the bearing of S from P.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "205° − 180°"
+        },
+        {
+          "type": "text",
+          "value": "Result: Bearing of S from P = 025°"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Apply the cosine rule in triangle QRS using SQ, SR and the included angle QSR. For bearings, start at the given bearing of SP and subtract the angles PSQ and QSR to swing round to SR, then use the back-bearing rule for S from P."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(iii) QR = 7.6 m  (ii) (a) bearing of R from S = 108°  (b) bearing of S from P = 025°"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The cosine rule is the only triangle rule that works from two sides and the angle between them, which is exactly the information triangle QRS supplies. Bearings at a single point behave like a protractor reading: each marked angle at S is the turn between two rays, so the bearings of SP, SQ and SR differ by those marked angles. Reversing a direction always changes the bearing by 180°."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "trying_the_sine_rule_when_the_angle_give",
+      "wrongValue": "incorrect_1",
+      "misconception": "Trying the sine rule when the angle given lies between the two known sides.",
+      "correctiveNote": "Avoid this: Trying the sine rule when the angle given lies between the two known sides."
+    },
+    {
+      "key": "adding_72_and_25_to_205_instead_of_subtr",
+      "wrongValue": "incorrect_2",
+      "misconception": "Adding 72° and 25° to 205° instead of subtracting, ignoring which side of SP the points lie.",
+      "correctiveNote": "Avoid this: Adding 72° and 25° to 205° instead of subtracting, ignoring which side of SP the points lie."
+    },
+    {
+      "key": "forgetting_that_a_bearing_must_be_writte",
+      "wrongValue": "incorrect_3",
+      "misconception": "Forgetting that a bearing must be written with three figures, e.g. 025° not 25°.",
+      "correctiveNote": "Avoid this: Forgetting that a bearing must be written with three figures, e.g. 025° not 25°."
+    },
+    {
+      "key": "rounding_cos_25_too_early_and_losing_the",
+      "wrongValue": "incorrect_4",
+      "misconception": "Rounding cos 25° too early and losing the first decimal place.",
+      "correctiveNote": "Avoid this: Rounding cos 25° too early and losing the first decimal place."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Sketch the north line at the point you are measuring from and mark the given bearing first; the direction of the turn then becomes obvious."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "QR=7.6m",
+    "displayValue": "QR = 7.6 m",
+    "acceptedForms": [
+      "QR = 7.6 m",
+      "QR=7.6m"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "In triangle ABC, AB = 9 cm, AC = 12 cm and angle BAC = 40°. Find BC to 1 decimal place."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "BC²=81+144−2(9)(12)cos40°=225−165.5=59.5,soBC=7.7cm",
+      "displayValue": "BC² = 81 + 144 − 2(9)(12)cos 40° = 225 − 165.5 = 59.5, so BC = 7.7 cm",
+      "acceptedForms": [
+        "BC² = 81 + 144 − 2(9)(12)cos 40° = 225 − 165.5 = 59.5, so BC = 7.7 cm",
+        "BC²=81+144−2(9)(12)cos40°=225−165.5=59.5,soBC=7.7cm"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "3e8f9257-a692-4710-ae18-dd20379053a4",
+      "code": "M1-1.1",
+      "label": "Cosine rule"
+    },
+    {
+      "objectiveId": "246c105f-06e0-4c91-aecc-22ad5c5ccc97",
+      "code": "M1-1.1",
+      "label": "Bearings"
+    },
+    {
+      "objectiveId": "13294900-f53d-4523-a0f5-f08547c34fd7",
+      "code": "M1-1.1",
+      "label": "Back bearings"
+    },
+    {
+      "objectiveId": "212b838e-a4e6-4cd8-a18b-d1f96d607fab",
+      "code": "M1-1.1",
+      "label": "Angles at a point in a diagram"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 10,
+    "pageRef": "p275",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

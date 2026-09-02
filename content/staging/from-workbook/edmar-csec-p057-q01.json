@@ -1,0 +1,253 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p057-q01",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 4,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A binary operation * is defined by a * b = √(a + 4b). (a) Find 1 * 2. (b) Determine whether * is commutative."
+    },
+    {
+      "type": "text",
+      "value": "Think first: A binary operation is just a recipe: put the left number where a is and the right number where b is."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p057_q01.jpg",
+      "altText": "Source visual for edmar-csec-p057-q01 from workbook page 57."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Substitute a = 1, b = 2 into √(a + 4b).",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "1 + 4(2) = 1 + 8 = 9"
+        },
+        {
+          "type": "text",
+          "value": "Result: 1 * 2 = √9 = 3"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Write down what commutative would require.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "a * b = b * a for every pair of values"
+        },
+        {
+          "type": "text",
+          "value": "Result: Need √(a + 4b) = √(b + 4a)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Test the reversed pair 2 * 1.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2 + 4(1) = 6"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2 * 1 = √6"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Compare the two results.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3 is not equal to √6, which is about 2.45"
+        },
+        {
+          "type": "text",
+          "value": "Result: * is not commutative"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Substitute a = 1 and b = 2 into the rule for part (a); for part (b) compare a * b with b * a using the same pair of numbers."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) 1 * 2 = 3  (b) * is not commutative, since 1 * 2 = 3 but 2 * 1 = √6, and 3 is not equal to √6"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "In a * b = √(a + 4b) the two inputs are treated differently: b is multiplied by 4 while a is not, so swapping them changes the value. To prove an operation is not commutative you only need one counter-example; to prove it is commutative you must show it algebraically for all a and b."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "substituting_the_numbers_the_wrong_way_r",
+      "wrongValue": "incorrect_1",
+      "misconception": "Substituting the numbers the wrong way round, giving √(2 + 4) instead of √(1 + 8).",
+      "correctiveNote": "Avoid this: Substituting the numbers the wrong way round, giving √(2 + 4) instead of √(1 + 8)."
+    },
+    {
+      "key": "claiming_an_operation_is_commutative_jus",
+      "wrongValue": "incorrect_2",
+      "misconception": "Claiming an operation is commutative just because one particular pair happens to agree.",
+      "correctiveNote": "Avoid this: Claiming an operation is commutative just because one particular pair happens to agree."
+    },
+    {
+      "key": "taking_each_term_separately_1_8",
+      "wrongValue": "incorrect_3",
+      "misconception": "Taking √each term separately: √1 + √8.",
+      "correctiveNote": "Avoid this: Taking √each term separately: √1 + √8."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "One well-chosen counter-example is a complete answer for 'is it commutative?' - show both values and state clearly that they differ."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "1",
+    "displayValue": "1",
+    "acceptedForms": [
+      "1",
+      "1"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "With a * b = √(a + 4b), find 5 * 1."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "5",
+      "displayValue": "5",
+      "acceptedForms": [
+        "5",
+        "5"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "901126ab-29bb-45bc-a320-9832d478a3d0",
+      "code": "M1-4.1",
+      "label": "Binary operations"
+    },
+    {
+      "objectiveId": "8cf4bd67-8b1b-4a75-a782-d078765a6301",
+      "code": "M1-4.1",
+      "label": "Substitution"
+    },
+    {
+      "objectiveId": "6600e24d-1dc8-47b0-a238-7959f70a451f",
+      "code": "M1-4.1",
+      "label": "Commutativity"
+    },
+    {
+      "objectiveId": "f3a4197a-f7b9-407a-a216-a44c0d6e899e",
+      "code": "M1-4.1",
+      "label": "Square roots"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 1,
+    "pageRef": "p57",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "numeric_exact",
+        "canonicalValue": "1",
+        "displayValue": "1",
+        "acceptedForms": [
+          "1",
+          "1"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0
+        },
+        "normalisation": "numeric_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "*isnotcommutative,since1*2=3but2*1=√6,an",
+        "displayValue": "* is not commutative, since 1 * 2 = 3 but 2 * 1 = √6, an",
+        "acceptedForms": [
+          "* is not commutative, since 1 * 2 = 3 but 2 * 1 = √6, an",
+          "*isnotcommutative,since1*2=3but2*1=√6,an"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

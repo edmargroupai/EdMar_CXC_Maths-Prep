@@ -1,0 +1,157 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p057-q05",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A binary operation is defined by a o b = ab + 1. Evaluate 4 o 1."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Multiply the two numbers, then add one."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p057_q05.jpg",
+      "altText": "Source visual for edmar-csec-p057-q05 from workbook page 57."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Substitute a = 4 and b = 1.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "4 × 1 + 1"
+        },
+        {
+          "type": "text",
+          "value": "Result: 4 + 1"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Add.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: 5"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Substitute a = 4 and b = 1 into ab + 1."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "4 o 1 = 5"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The notation ab means a multiplied by b, so the operation multiplies the inputs and then shifts the result up by one. Because multiplication is commutative here, 4 o 1 and 1 o 4 happen to agree - but that is a property of this particular rule, not of binary operations in general."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "reading_ab_as_the_two_digit_number_41",
+      "wrongValue": "incorrect_1",
+      "misconception": "Reading ab as the two-digit number 41.",
+      "correctiveNote": "Avoid this: Reading ab as the two-digit number 41."
+    },
+    {
+      "key": "adding_the_inputs_instead_of_multiplying",
+      "wrongValue": "incorrect_2",
+      "misconception": "Adding the inputs instead of multiplying them, giving 5 + 1 = 6.",
+      "correctiveNote": "Avoid this: Adding the inputs instead of multiplying them, giving 5 + 1 = 6."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Remember that two letters written together always means multiply."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "4",
+    "displayValue": "4",
+    "acceptedForms": [
+      "4",
+      "4"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "With a o b = ab + 1, find 6 o 2."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "13",
+      "displayValue": "13",
+      "acceptedForms": [
+        "13",
+        "13"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "cc94d88d-e919-485b-a2ba-98660affa652",
+      "code": "M1-4.1",
+      "label": "Binary operations"
+    },
+    {
+      "objectiveId": "3ec0fa34-bdae-4484-a122-64a46109621f",
+      "code": "M1-4.1",
+      "label": "Substitution"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 5,
+    "pageRef": "p57",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

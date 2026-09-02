@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p051-q10",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Simplify (5x + 2)/6 − (2x + 3)/3 as a single fraction."
+    },
+    {
+      "type": "text",
+      "value": "Think first: One denominator is a multiple of the other, so the lowest common denominator is the larger of the two."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p051_q10.jpg",
+      "altText": "Source visual for edmar-csec-p051-q10 from workbook page 51."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Find the lowest common denominator of 6 and 3.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3 divides into 6"
+        },
+        {
+          "type": "text",
+          "value": "Result: 6"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Rewrite each fraction over 6.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(5x + 2) stays as it is; (2x + 3) is multiplied by 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: [(5x + 2) − 2(2x + 3)]/6"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Expand the numerator, subtracting the whole bracket.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "−2(2x + 3) = −4x − 6"
+        },
+        {
+          "type": "text",
+          "value": "Result: 5x + 2 − 4x − 6"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Collect like terms.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5x − 4x = x and 2 − 6 = −4"
+        },
+        {
+          "type": "text",
+          "value": "Result: x − 4"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Rewrite both fractions over 6, subtract the numerators with care over the minus sign, then simplify."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(x − 4)/6"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Choosing the smallest common denominator keeps the numbers manageable: since 3 already divides 6, only the second fraction needs rescaling. The subtraction then applies to the whole rewritten numerator, which is why the −2 must multiply both terms inside its bracket. Collecting like terms afterwards is safe because every term now sits over the same denominator."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "using_18_as_the_denominator_which_works_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Using 18 as the denominator, which works but leaves an answer needing further cancelling.",
+      "correctiveNote": "Avoid this: Using 18 as the denominator, which works but leaves an answer needing further cancelling."
+    },
+    {
+      "key": "distributing_the_minus_sign_to_only_the_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Distributing the minus sign to only the 2x, giving 5x + 2 − 4x + 6.",
+      "correctiveNote": "Avoid this: Distributing the minus sign to only the 2x, giving 5x + 2 − 4x + 6."
+    },
+    {
+      "key": "cancelling_the_x_in_x_4_against_the_6",
+      "wrongValue": "incorrect_3",
+      "misconception": "Cancelling the x in x − 4 against the 6.",
+      "correctiveNote": "Avoid this: Cancelling the x in x − 4 against the 6."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Check whether one denominator divides the other before you multiply them together. Spotting that saves a whole simplification step at the end."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "−4)/6",
+    "displayValue": "− 4)/6",
+    "acceptedForms": [
+      "− 4)/6",
+      "−4)/6"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Simplify (4x + 1)/10 − (x + 2)/5 as a single fraction."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "[(4x+1)−2(x+2)]/10=(2x−3)/10.",
+      "displayValue": "[(4x + 1) − 2(x + 2)]/10 = (2x − 3)/10.",
+      "acceptedForms": [
+        "[(4x + 1) − 2(x + 2)]/10 = (2x − 3)/10.",
+        "[(4x+1)−2(x+2)]/10=(2x−3)/10."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "1336de66-09d0-4c2e-a9e5-40ff0479471f",
+      "code": "M1-4.1",
+      "label": "Subtraction of algebraic fractions"
+    },
+    {
+      "objectiveId": "52a51f6b-a701-4a7b-add6-0b0ae6ac8b39",
+      "code": "M1-4.1",
+      "label": "Lowest common multiple"
+    },
+    {
+      "objectiveId": "6f12cdcd-9bb3-4717-aa86-5146a1f0ea23",
+      "code": "M1-4.1",
+      "label": "Expanding brackets"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 10,
+    "pageRef": "p51",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

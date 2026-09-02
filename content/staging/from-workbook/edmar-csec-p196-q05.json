@@ -1,0 +1,230 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p196-q05",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 4,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The matrix C = (−2 5 1 / 4 0 −3). (a) Calculate 3C. (b) Calculate −2C."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Multiplying a matrix by a number simply multiplies every single entry by that number; the order of the matrix does not change."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p196_q05.jpg",
+      "altText": "Source visual for edmar-csec-p196-q05 from workbook page 196."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply every entry of C by 3.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3(−2) = −6; 3(5) = 15; 3(1) = 3; 3(4) = 12; 3(0) = 0; 3(−3) = −9"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3C = (−6 15 3 / 12 0 −9)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Multiply every entry of C by −2.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "−2(−2) = 4; −2(5) = −10; −2(1) = −2; −2(4) = −8; −2(0) = 0; −2(−3) = 6"
+        },
+        {
+          "type": "text",
+          "value": "Result: −2C = (4 −10 −2 / −8 0 6)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Check the order of each answer.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Scalar multiplication never changes the shape."
+        },
+        {
+          "type": "text",
+          "value": "Result: Both answers are 2 × 3"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Multiply each of the six entries by 3, then repeat with −2, keeping careful track of signs."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) 3C = (−6 15 3 / 12 0 −9)  (b) −2C = (4 −10 −2 / −8 0 6)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A scalar multiplies each element independently, so it stretches every entry by the same factor and leaves the shape untouched. A negative scalar also flips the sign of every entry, which is why the two negative entries in C become positive in −2C. Zero entries stay zero whatever the scalar."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "multiplying_only_the_first_row_or_only_t",
+      "wrongValue": "incorrect_1",
+      "misconception": "Multiplying only the first row or only the first entry by the scalar.",
+      "correctiveNote": "Avoid this: Multiplying only the first row or only the first entry by the scalar."
+    },
+    {
+      "key": "getting_2_2_4_instead_of_4",
+      "wrongValue": "incorrect_2",
+      "misconception": "Getting −2 × −2 = −4 instead of 4.",
+      "correctiveNote": "Avoid this: Getting −2 × −2 = −4 instead of 4."
+    },
+    {
+      "key": "changing_the_order_of_the_matrix_in_the_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Changing the order of the matrix in the answer.",
+      "correctiveNote": "Avoid this: Changing the order of the matrix in the answer."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Write the scalar answer in the same layout as the original matrix so no entry gets skipped."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "3",
+    "displayValue": "3",
+    "acceptedForms": [
+      "3",
+      "3"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Calculate 4 × (2 −1 / 0 5)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(8−4/020)",
+      "displayValue": "(8 −4 / 0 20)",
+      "acceptedForms": [
+        "(8 −4 / 0 20)",
+        "(8−4/020)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "9167096f-e58b-45a4-a237-ffd0c8cc242c",
+      "code": "M2-4.1",
+      "label": "Scalar multiplication of a matrix"
+    },
+    {
+      "objectiveId": "93fa7b1f-c5fc-436b-aa6c-752ab33c86bc",
+      "code": "M2-4.1",
+      "label": "Directed numbers"
+    },
+    {
+      "objectiveId": "4b20b5e9-e40a-4e07-a65d-9948f26e36fa",
+      "code": "M2-4.1",
+      "label": "Order of a matrix"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 5,
+    "pageRef": "p196",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "numeric_exact",
+        "canonicalValue": "3",
+        "displayValue": "3",
+        "acceptedForms": [
+          "3",
+          "3"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0
+        },
+        "normalisation": "numeric_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "−2",
+        "displayValue": "−2",
+        "acceptedForms": [
+          "−2",
+          "−2"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

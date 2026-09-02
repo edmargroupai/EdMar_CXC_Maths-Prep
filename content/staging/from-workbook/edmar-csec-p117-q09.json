@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p117-q09",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "y varies inversely as (x − 2). Given that y = 11 when x = 9, find the value of y when x = 29."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Inverse variation means y times (x − 2) is always the same number, so work out that product first."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p117_q09.jpg",
+      "altText": "Source visual for edmar-csec-p117-q09 from workbook page 117."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write the variation statement as an equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "y varies inversely as (x − 2)"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = k/(x − 2)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Substitute y = 11 and x = 9 to find k.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "9 − 2 = 7, so 11 = k/7"
+        },
+        {
+          "type": "text",
+          "value": "Result: k = 77"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Write the completed equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Replace k by 77"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 77/(x − 2)"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Substitute x = 29.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "29 − 2 = 27, so y = 77/27"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 77/27 ≈ 2.85"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Write y = k/(x − 2), find k from the given pair, then substitute x = 29."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "y = 77/27 ≈ 2.85 (to 3 significant figures)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "In inverse variation the product of the two quantities is constant, so y(x − 2) = 77 for every allowed pair. Here the varying quantity is (x − 2), not x itself, so the bracket must be evaluated before dividing. As (x − 2) grows from 7 to 27, y shrinks in the same proportion."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_y_k_x_2_and_treating_the_relatio",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing y = k(x − 2) and treating the relationship as direct.",
+      "correctiveNote": "Avoid this: Writing y = k(x − 2) and treating the relationship as direct."
+    },
+    {
+      "key": "using_x_29_instead_of_x_2_27_in_the_deno",
+      "wrongValue": "incorrect_2",
+      "misconception": "Using x = 29 instead of x − 2 = 27 in the denominator.",
+      "correctiveNote": "Avoid this: Using x = 29 instead of x − 2 = 27 in the denominator."
+    },
+    {
+      "key": "rounding_77_27_to_2_8_or_3_without_showi",
+      "wrongValue": "incorrect_3",
+      "misconception": "Rounding 77/27 to 2.8 or 3 without showing the exact fraction.",
+      "correctiveNote": "Avoid this: Rounding 77/27 to 2.8 or 3 without showing the exact fraction."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Leave inverse-variation answers as an exact fraction first, then round — the exact form earns the accuracy mark if your rounding slips."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "y=77/27≈2.85(to3significantfigures)",
+    "displayValue": "y = 77/27 ≈ 2.85 (to 3 significant figures)",
+    "acceptedForms": [
+      "y = 77/27 ≈ 2.85 (to 3 significant figures)",
+      "y=77/27≈2.85(to3significantfigures)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "y varies inversely as (x + 1) and y = 6 when x = 3. Find y when x = 11."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "y=2",
+      "displayValue": "y = 2",
+      "acceptedForms": [
+        "y = 2",
+        "y=2"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-3.2"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "6bc827c1-7ac1-4eb9-a120-7b4fa2485eca",
+      "code": "M1-3.2",
+      "label": "Inverse variation"
+    },
+    {
+      "objectiveId": "2459a5d1-e150-4c72-ad87-5f2b80999550",
+      "code": "M1-3.2",
+      "label": "Constant of variation"
+    },
+    {
+      "objectiveId": "3bbb683c-ed59-42cf-a938-241650a6e3ac",
+      "code": "M1-3.2",
+      "label": "Substitution"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 9,
+    "pageRef": "p117",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

@@ -1,0 +1,235 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p134-q04",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "At a stationery shop, p dollars is the price of one pen and r dollars is the price of one ruler. The prices satisfy 2p + r = 7 and p + 2r = 8. (a) Draw the graphs of both equations on the grid. (b) Use the graphs to estimate p and r. (c) State the price of one pen and one ruler."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The grid has p across and r up, so make r the subject of each equation before plotting."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p134_q04.jpg",
+      "altText": "Source visual for edmar-csec-p134-q04 from workbook page 134."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Rearrange 2p + r = 7.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Subtract 2p from both sides"
+        },
+        {
+          "type": "text",
+          "value": "Result: r = 7 − 2p"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Rearrange p + 2r = 8.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2r = 8 − p, then divide by 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: r = 4 − 0.5p"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Build points for each line inside the grid.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "r = 7 − 2p: (0, 7), (2, 3), (3, 1).  r = 4 − 0.5p: (0, 4), (4, 2), (8, 0)"
+        },
+        {
+          "type": "text",
+          "value": "Result: Three points for each line"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Plot both lines and read where they cross.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The lines meet at p = 2, r = 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: Intersection (2, 3)"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Check the reading in both equations.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2(2) + 3 = 7 ✓ and 2 + 2(3) = 8 ✓"
+        },
+        {
+          "type": "text",
+          "value": "Result: Values confirmed"
+        }
+      ]
+    },
+    {
+      "stepNo": 6,
+      "instruction": "Interpret the result in context.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "p is the pen price and r is the ruler price, both in dollars"
+        },
+        {
+          "type": "text",
+          "value": "Result: Pen $2, ruler $3"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Rearrange both equations to give r in terms of p, plot each straight line on the grid, read the crossing point, then attach the money units."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) Both lines drawn on the grid  (b) p = 2 and r = 3  (c) One pen costs $2 and one ruler costs $3."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Each equation records one purchase condition, and every point on its line is a price pair that satisfies that one condition. Only the crossing point satisfies both conditions at once, so it is the actual pair of prices. The final step of naming the units matters: the graph gives numbers, but the question asked about money."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "plotting_p_on_the_vertical_axis_when_the",
+      "wrongValue": "incorrect_1",
+      "misconception": "Plotting p on the vertical axis when the grid labels it horizontally.",
+      "correctiveNote": "Avoid this: Plotting p on the vertical axis when the grid labels it horizontally."
+    },
+    {
+      "key": "dividing_only_one_term_when_rearranging_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Dividing only one term when rearranging 2r = 8 − p, giving r = 4 − p.",
+      "correctiveNote": "Avoid this: Dividing only one term when rearranging 2r = 8 − p, giving r = 4 − p."
+    },
+    {
+      "key": "leaving_the_answer_as_2_3_without_saying",
+      "wrongValue": "incorrect_3",
+      "misconception": "Leaving the answer as (2, 3) without saying which value is the pen and which is the ruler.",
+      "correctiveNote": "Avoid this: Leaving the answer as (2, 3) without saying which value is the pen and which is the ruler."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "In a word problem, finish by writing a sentence with the units — examiners award the final mark for the interpretation, not the coordinates."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Bothlinesdrawnonthegrid",
+    "displayValue": "Both lines drawn on the grid",
+    "acceptedForms": [
+      "Both lines drawn on the grid",
+      "Bothlinesdrawnonthegrid"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Two pencils and a pen cost $5; a pencil and a pen cost $3.50. What is the price of one pencil?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "currency",
+      "canonicalValue": "1.50",
+      "displayValue": "$1.50",
+      "acceptedForms": [
+        "$1.50",
+        "$1.50",
+        "1.50"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.005
+      },
+      "precision": {
+        "kind": "decimal_places",
+        "value": 2,
+        "required": true
+      },
+      "normalisation": "currency_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "e9f13d3d-ff52-4a32-a805-751834a347e1",
+      "code": "M1-5.1",
+      "label": "Forming and solving simultaneous equations"
+    },
+    {
+      "objectiveId": "4d91c7fb-2cf1-45fb-a7a4-49f8b1aaed4b",
+      "code": "M1-5.1",
+      "label": "Rearranging into gradient-intercept form"
+    },
+    {
+      "objectiveId": "f62c2117-e037-4fe7-adef-4048211657b8",
+      "code": "M1-5.1",
+      "label": "Graphical solution"
+    },
+    {
+      "objectiveId": "90eca7f7-7098-464a-a03c-f09d95e0f0cb",
+      "code": "M1-5.1",
+      "label": "Interpreting a solution in context"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 4,
+    "pageRef": "p134",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

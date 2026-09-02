@@ -1,0 +1,220 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p239-q10",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A distance–time graph shows a journey from A to B and back towards A: the distance from A rises from 0 km at 0 h to 60 km at 1.0 h, stays at 60 km until 1.5 h, rises again to 90 km at 3.0 h, then falls to 0 km at 5.0 h. a) Calculate the speed during the first hour. b) State the length of the rest period. c) Calculate the speed from 1.5 hours to 3 hours. d) Calculate the speed during the final stage. e) Calculate the total distance travelled."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Take the graph one straight section at a time — for each one, read the change in distance and the change in time, then divide."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p239_q10.jpg",
+      "altText": "Source visual for edmar-csec-p239-q10 from workbook page 239."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Read the rise over the first hour and divide.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "0 km to 60 km in 1.0 h"
+        },
+        {
+          "type": "text",
+          "value": "Result: 60 km/h"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Read the length of the horizontal section.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Flat at 60 km from t = 1.0 h to t = 1.5 h"
+        },
+        {
+          "type": "text",
+          "value": "Result: rest period = 0.5 h (30 minutes)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Find the change in distance and time from 1.5 h to 3 h.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "60 km to 90 km is 30 km, over 3.0 − 1.5 = 1.5 h; 30 ÷ 1.5"
+        },
+        {
+          "type": "text",
+          "value": "Result: 20 km/h"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Do the same for the final falling section.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "90 km back to 0 km is 90 km, over 5.0 − 3.0 = 2 h; 90 ÷ 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: 45 km/h"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Add the outward and return distances.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "90 km out to the furthest point plus 90 km back to A"
+        },
+        {
+          "type": "text",
+          "value": "Result: 180 km"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Read the coordinates of each corner of the graph, then compute distance ÷ time for each sloping section and add the outward and return distances for the total."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "a) 60 km/h  b) 0.5 hours (30 minutes)  c) 20 km/h  d) 45 km/h  e) 180 km"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The vertical axis measures distance from A, so the gradient of each straight piece is the rate at which that distance changes — the speed. A flat piece has gradient zero, meaning no movement. On the way back the graph falls, but the traveller still covers ground, so the return 90 km is added, not subtracted, when finding total distance travelled."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "giving_the_final_speed_as_45_km_h_becaus",
+      "wrongValue": "incorrect_1",
+      "misconception": "Giving the final speed as −45 km/h because the graph slopes downwards.",
+      "correctiveNote": "Avoid this: Giving the final speed as −45 km/h because the graph slopes downwards."
+    },
+    {
+      "key": "reading_the_total_distance_as_90_km_the_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Reading the total distance as 90 km, the greatest height of the graph.",
+      "correctiveNote": "Avoid this: Reading the total distance as 90 km, the greatest height of the graph."
+    },
+    {
+      "key": "using_1_5_h_instead_of_the_1_5_h_interva",
+      "wrongValue": "incorrect_3",
+      "misconception": "Using 1.5 h instead of the 1.5 h interval length when the section runs from 1.5 h to 3.0 h.",
+      "correctiveNote": "Avoid this: Using 1.5 h instead of the 1.5 h interval length when the section runs from 1.5 h to 3.0 h."
+    },
+    {
+      "key": "calling_the_rest_period_1_hour_by_readin",
+      "wrongValue": "incorrect_4",
+      "misconception": "Calling the rest period 1 hour by reading only the gridlines instead of the actual endpoints.",
+      "correctiveNote": "Avoid this: Calling the rest period 1 hour by reading only the gridlines instead of the actual endpoints."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Write the coordinates of each corner in the margin first; every part of a travel-graph question then reduces to a subtraction and a division."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "60",
+    "displayValue": "60",
+    "acceptedForms": [
+      "60",
+      "60"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "On the same graph, what is the average speed for the whole 5-hour journey including the rest?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "36",
+      "displayValue": "36",
+      "acceptedForms": [
+        "36",
+        "36"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "b460b607-b87f-4115-ab8d-eda150eec26b",
+      "code": "M1-1.1",
+      "label": "Distance–time graphs"
+    },
+    {
+      "objectiveId": "36e8649c-a3d9-48c0-a44f-a8906e5c291d",
+      "code": "M1-1.1",
+      "label": "Gradient as speed"
+    },
+    {
+      "objectiveId": "9c7c0cc6-92e1-4218-a69e-96d34fba4c41",
+      "code": "M1-1.1",
+      "label": "Total distance on an out-and-back journey"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 10,
+    "pageRef": "p239",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

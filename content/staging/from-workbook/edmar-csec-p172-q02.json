@@ -1,0 +1,206 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p172-q02",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A right-angled triangle ABC has the right angle at B, with BC = x, AB = x + 7 and hypotenuse AC = x + 8, where x is positive. The acute angle θ is at C. a) Use Pythagoras' theorem to form an equation in x. b) Solve the equation and state the three side lengths. c) Determine the exact values of sin θ, cos θ and tan θ."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The longest expression, x + 8, must be the hypotenuse, so it is the one that stands alone on its side of the equation."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p172_q02.jpg",
+      "altText": "Source visual for edmar-csec-p172-q02 from workbook page 172."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write Pythagoras with the hypotenuse alone.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x² + (x + 7)² = (x + 8)²"
+        },
+        {
+          "type": "text",
+          "value": "Result: equation formed"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Expand both brackets.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x² + x² + 14x + 49 = x² + 16x + 64"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2x² + 14x + 49 = x² + 16x + 64"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Collect all terms on one side.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2x² − x² + 14x − 16x + 49 − 64 = 0"
+        },
+        {
+          "type": "text",
+          "value": "Result: x² − 2x − 15 = 0"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Factorise and solve, rejecting the negative root.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(x − 5)(x + 3) = 0, and x must be positive"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 5, giving sides 5, 12 and 13"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Write the ratios at C.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Opposite θ is AB = 12, adjacent is BC = 5, hypotenuse is AC = 13"
+        },
+        {
+          "type": "text",
+          "value": "Result: sin θ = 12/13, cos θ = 5/13, tan θ = 12/5"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Square the two legs, set their sum equal to the square of the hypotenuse, solve the resulting quadratic and reject the negative root, then read off the ratios at C."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) x² + (x + 7)² = (x + 8)²  (b) x = 5, so the sides are 5, 12 and 13  (c) sin θ = 12/13, cos θ = 5/13, tan θ = 12/5"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Pythagoras turns a geometric condition into an algebraic one, and because the unknown appears squared on both sides the x² terms partly cancel, leaving a quadratic that factorises cleanly. The negative root is rejected not by convention but because a side length cannot be negative. The result is the familiar 5-12-13 right triangle, whose ratios are exact fractions with no rounding at all."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "setting_x_x_8_x_7_i_e_choosing_the_wrong",
+      "wrongValue": "incorrect_1",
+      "misconception": "Setting x² + (x + 8)² = (x + 7)², i.e. choosing the wrong side as the hypotenuse.",
+      "correctiveNote": "Avoid this: Setting x² + (x + 8)² = (x + 7)², i.e. choosing the wrong side as the hypotenuse."
+    },
+    {
+      "key": "expanding_x_7_as_x_49",
+      "wrongValue": "incorrect_2",
+      "misconception": "Expanding (x + 7)² as x² + 49.",
+      "correctiveNote": "Avoid this: Expanding (x + 7)² as x² + 49."
+    },
+    {
+      "key": "keeping_x_3_as_a_second_answer_instead_o",
+      "wrongValue": "incorrect_3",
+      "misconception": "Keeping x = −3 as a second answer instead of rejecting it.",
+      "correctiveNote": "Avoid this: Keeping x = −3 as a second answer instead of rejecting it."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "In any Pythagoras equation, put the largest side by itself on one side — with algebraic sides the largest is the one with the biggest constant."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "x²+(x+7)²=(x+8)²",
+    "displayValue": "x² + (x + 7)² = (x + 8)²",
+    "acceptedForms": [
+      "x² + (x + 7)² = (x + 8)²",
+      "x²+(x+7)²=(x+8)²"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A right-angled triangle has legs x and x + 2 and hypotenuse x + 4, with x positive. Form and solve the equation."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "x²+(x+2)²=(x+4)²givesx²−4x−12=0,sox=6andthesidesare6,8,10.",
+      "displayValue": "x² + (x + 2)² = (x + 4)² gives x² − 4x − 12 = 0, so x = 6 and the sides are 6, 8, 10.",
+      "acceptedForms": [
+        "x² + (x + 2)² = (x + 4)² gives x² − 4x − 12 = 0, so x = 6 and the sides are 6, 8, 10.",
+        "x²+(x+2)²=(x+4)²givesx²−4x−12=0,sox=6andthesidesare6,8,10."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "70ff326e-21f1-484e-a8a4-7a6769c8547a",
+      "code": "M1-1.1",
+      "label": "Pythagoras' theorem"
+    },
+    {
+      "objectiveId": "d2d13a51-af1e-4f77-a7d5-60854997e03e",
+      "code": "M1-1.1",
+      "label": "Forming and solving a quadratic equation"
+    },
+    {
+      "objectiveId": "13bbbb21-a4b4-4d16-a9ee-0ef9113db028",
+      "code": "M1-1.1",
+      "label": "Trigonometric ratios in a right-angled triangle"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 2,
+    "pageRef": "p172",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

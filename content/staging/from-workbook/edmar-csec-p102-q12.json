@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p102-q12",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Rewrite y = x² + 4x − 5 in completed-square form and hence state the coordinates of its turning point."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Completed-square form hands you the turning point directly — no differentiation or table of values needed."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p102_q12.jpg",
+      "altText": "Source visual for edmar-csec-p102-q12 from workbook page 102."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Halve the coefficient of x and square it.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "half of 4 is 2, and 2² = 4, so x² + 4x = (x + 2)² − 4"
+        },
+        {
+          "type": "text",
+          "value": "Result: x² + 4x = (x + 2)² − 4"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Substitute back and combine the constants.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "y = (x + 2)² − 4 − 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = (x + 2)² − 9"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Find the x-value that makes the square zero.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x + 2 = 0"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = −2"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Read off the corresponding y-value, which is the constant term.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "when x = −2, y = 0 − 9"
+        },
+        {
+          "type": "text",
+          "value": "Result: turning point (−2, −9)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Write y as (x + h)² + k, then read the turning point off as (−h, k)."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "y = (x + 2)² − 9; the turning point is (−2, −9), and it is a minimum."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "In the form y = (x + h)² + k the graph is the basic parabola y = x² shifted h units horizontally and k units vertically. The vertex of y = x² sits at the origin, so after the shift it sits at (−h, k). Because the x² coefficient is positive, that vertex is the lowest point of the curve."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "giving_the_turning_point_as_2_9_the_x_co",
+      "wrongValue": "incorrect_1",
+      "misconception": "Giving the turning point as (2, −9) — the x-coordinate is the value that makes the bracket zero, so the sign flips.",
+      "correctiveNote": "Avoid this: Giving the turning point as (2, −9) — the x-coordinate is the value that makes the bracket zero, so the sign flips."
+    },
+    {
+      "key": "stopping_at_the_completed_square_form_wi",
+      "wrongValue": "incorrect_2",
+      "misconception": "Stopping at the completed-square form without answering the 'hence' part.",
+      "correctiveNote": "Avoid this: Stopping at the completed-square form without answering the 'hence' part."
+    },
+    {
+      "key": "forgetting_to_include_the_5_when_combini",
+      "wrongValue": "incorrect_3",
+      "misconception": "Forgetting to include the −5 when combining constants.",
+      "correctiveNote": "Avoid this: Forgetting to include the −5 when combining constants."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "For y = a(x + h)² + k the turning point is always (−h, k) — memorise the sign flip and state whether it is a maximum or a minimum."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "y=(x+2)²−9;theturningpointis(−2,−9),anditisaminimum.",
+    "displayValue": "y = (x + 2)² − 9; the turning point is (−2, −9), and it is a minimum.",
+    "acceptedForms": [
+      "y = (x + 2)² − 9; the turning point is (−2, −9), and it is a minimum.",
+      "y=(x+2)²−9;theturningpointis(−2,−9),anditisaminimum."
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "State the turning point of y = x² − 6x + 2."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "y=(x−3)²−7,sotheturningpointis(3,−7).",
+      "displayValue": "y = (x − 3)² − 7, so the turning point is (3, −7).",
+      "acceptedForms": [
+        "y = (x − 3)² − 7, so the turning point is (3, −7).",
+        "y=(x−3)²−7,sotheturningpointis(3,−7)."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "d8a82f8e-bcb5-46ed-a201-dc57326003cd",
+      "code": "M1-5.1",
+      "label": "Completing the square"
+    },
+    {
+      "objectiveId": "07c983bd-1b73-4523-a4d7-e102936680b0",
+      "code": "M1-5.1",
+      "label": "Turning point of a parabola"
+    },
+    {
+      "objectiveId": "8752a0a3-9b35-4a4d-aec3-b99ab3e9587b",
+      "code": "M1-5.1",
+      "label": "Vertex form of a quadratic"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 12,
+    "pageRef": "p102",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

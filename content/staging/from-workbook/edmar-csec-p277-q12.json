@@ -1,0 +1,247 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p277-q12",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 4,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "In the diagram (not drawn to scale) R, S and T lie on a straight line with S between R and T. ST = 6 m, WR = 11.2 m, WT = 14.8 m and angle WRS = 90°. Giving answers to 1 decimal place, calculate (ii) the length RS and (iii) the measure of angle RTW."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The right angle at R makes WRT a right-angled triangle with WT as its hypotenuse, so Pythagoras gives the whole base RT before you strip off the 6 m."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p277_q12.jpg",
+      "altText": "Source visual for edmar-csec-p277-q12 from workbook page 277."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Apply Pythagoras in right-angled triangle WRT, where WT is the hypotenuse.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "RT² = WT² − WR² = 14.8² − 11.2² = 219.04 − 125.44"
+        },
+        {
+          "type": "text",
+          "value": "Result: RT² = 93.6, so RT = 9.6747 m"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Subtract ST from RT, since S lies between R and T.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "RS = RT − ST = 9.6747 − 6"
+        },
+        {
+          "type": "text",
+          "value": "Result: RS = 3.7 m (1 d.p.)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "In triangle WRT, identify WR as opposite angle RTW and WT as the hypotenuse.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "sin(RTW) = WR / WT = 11.2 / 14.8"
+        },
+        {
+          "type": "text",
+          "value": "Result: sin(RTW) = 0.7568"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Take the inverse sine.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "sin⁻¹(0.7568)"
+        },
+        {
+          "type": "text",
+          "value": "Result: Angle RTW = 49.2° (1 d.p.)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Use Pythagoras in triangle WRT to find RT, subtract ST to get RS, then use the sine ratio (opposite WR over hypotenuse WT) to find angle RTW."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(ii) RS = 3.7 m  (iii) angle RTW = 49.2°"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Because angle WRS is 90° and R, S, T are collinear, angle WRT is also 90°, so the whole triangle WRT is right-angled with WT as hypotenuse. That lets Pythagoras give the full base RT in one step, and RS is simply what is left of that base after the 6 m section ST. The angle at T then follows from the sine ratio, which needs only the side opposite the angle and the hypotenuse — both already known."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "adding_the_squares_instead_of_subtractin",
+      "wrongValue": "incorrect_1",
+      "misconception": "Adding the squares instead of subtracting; WT is the hypotenuse, so its square is the largest.",
+      "correctiveNote": "Avoid this: Adding the squares instead of subtracting; WT is the hypotenuse, so its square is the largest."
+    },
+    {
+      "key": "finding_rt_and_quoting_it_as_rs_without_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Finding RT and quoting it as RS without removing the 6 m.",
+      "correctiveNote": "Avoid this: Finding RT and quoting it as RS without removing the 6 m."
+    },
+    {
+      "key": "using_tan_with_rt_instead_of_sin_with_wt",
+      "wrongValue": "incorrect_3",
+      "misconception": "Using tan with RT instead of sin with WT and picking up rounding error from RT.",
+      "correctiveNote": "Avoid this: Using tan with RT instead of sin with WT and picking up rounding error from RT."
+    },
+    {
+      "key": "rounding_rt_to_9_7_before_subtracting_wh",
+      "wrongValue": "incorrect_4",
+      "misconception": "Rounding RT to 9.7 before subtracting, which shifts RS to 3.7 only by luck.",
+      "correctiveNote": "Avoid this: Rounding RT to 9.7 before subtracting, which shifts RS to 3.7 only by luck."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Keep the unrounded value in your calculator memory and round only the final answer — the question asks for 1 decimal place at the end, not at every stage."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "RS=3.7m",
+    "displayValue": "RS = 3.7 m",
+    "acceptedForms": [
+      "RS = 3.7 m",
+      "RS=3.7m"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A right-angled triangle has hypotenuse 13 cm and one leg 5 cm. Find the other leg and the angle opposite the 5 cm side."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "Otherleg=√(169−25)=12cm;angle=sin⁻¹(5/13)=22.6°",
+      "displayValue": "Other leg = √(169 − 25) = 12 cm; angle = sin⁻¹(5/13) = 22.6°",
+      "acceptedForms": [
+        "Other leg = √(169 − 25) = 12 cm; angle = sin⁻¹(5/13) = 22.6°",
+        "Otherleg=√(169−25)=12cm;angle=sin⁻¹(5/13)=22.6°"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "39b5dfce-e110-4e92-af8f-dae2bd9ab08a",
+      "code": "M1-1.1",
+      "label": "Pythagoras' theorem"
+    },
+    {
+      "objectiveId": "37cf4e00-6ba5-4fd9-aae0-ffe1e8be026a",
+      "code": "M1-1.1",
+      "label": "Right-angled trigonometry"
+    },
+    {
+      "objectiveId": "9c215161-3db2-46e2-a9b5-e07139f92be0",
+      "code": "M1-1.1",
+      "label": "Sine ratio"
+    },
+    {
+      "objectiveId": "abbdcbce-3c62-4321-ade2-0d2cb6ca587f",
+      "code": "M1-1.1",
+      "label": "Lengths on a straight line"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 12,
+    "pageRef": "p277",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a.ii",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.ii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "RS=3.7m",
+        "displayValue": "RS = 3.7 m",
+        "acceptedForms": [
+          "RS = 3.7 m",
+          "RS=3.7m"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.iii",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.iii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "angleRTW=49.2°",
+        "displayValue": "angle RTW = 49.2°",
+        "acceptedForms": [
+          "angle RTW = 49.2°",
+          "angleRTW=49.2°"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

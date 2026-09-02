@@ -1,0 +1,178 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p118-q14",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The time t varies inversely as the speed v. If t = 5 hours when v = 60 km/h, find t when v = 75 km/h."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Time and speed multiply to give a fixed distance, so find that distance first."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p118_q14.jpg",
+      "altText": "Source visual for edmar-csec-p118-q14 from workbook page 118."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write the variation statement as an equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "t varies inversely as v"
+        },
+        {
+          "type": "text",
+          "value": "Result: t = k/v"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Substitute t = 5 and v = 60 to find k.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5 = k/60"
+        },
+        {
+          "type": "text",
+          "value": "Result: k = 300 (km)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Substitute v = 75 into t = 300/v.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "t = 300 ÷ 75"
+        },
+        {
+          "type": "text",
+          "value": "Result: t = 4 hours"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Write t = k/v, find k from t = 5 and v = 60, then substitute v = 75."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "t = 4 hours"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The constant 300 is the distance travelled, unchanged by how fast you go. Raising the speed from 60 to 75 km/h is multiplying by 5/4, so the time is multiplied by 4/5 — five hours becomes four."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "adding_time_because_the_speed_increased",
+      "wrongValue": "incorrect_1",
+      "misconception": "Adding time because the speed increased.",
+      "correctiveNote": "Avoid this: Adding time because the speed increased."
+    },
+    {
+      "key": "using_t_kv_and_obtaining_6_25_hours",
+      "wrongValue": "incorrect_2",
+      "misconception": "Using t = kv and obtaining 6.25 hours.",
+      "correctiveNote": "Avoid this: Using t = kv and obtaining 6.25 hours."
+    },
+    {
+      "key": "mixing_units_for_example_leaving_the_ans",
+      "wrongValue": "incorrect_3",
+      "misconception": "Mixing units, for example leaving the answer in minutes without saying so.",
+      "correctiveNote": "Avoid this: Mixing units, for example leaving the answer in minutes without saying so."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Check the direction of the change before you commit: faster speed must give a shorter time."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "t=4hours",
+    "displayValue": "t = 4 hours",
+    "acceptedForms": [
+      "t = 4 hours",
+      "t=4hours"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "t varies inversely as v. If t = 6 h when v = 40 km/h, find t when v = 48 km/h."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "t=5hours",
+      "displayValue": "t = 5 hours",
+      "acceptedForms": [
+        "t = 5 hours",
+        "t=5hours"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-3.2"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "ffc4d58d-8cb5-4920-a080-3b4b39a5741b",
+      "code": "M1-3.2",
+      "label": "Inverse variation"
+    },
+    {
+      "objectiveId": "170a0863-4b52-4bd4-add8-6a971564258c",
+      "code": "M1-3.2",
+      "label": "Constant of variation"
+    },
+    {
+      "objectiveId": "f4c4c22f-55a4-464b-a88a-2467ffeeb8e9",
+      "code": "M1-3.2",
+      "label": "Speed, distance and time"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 14,
+    "pageRef": "p118",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

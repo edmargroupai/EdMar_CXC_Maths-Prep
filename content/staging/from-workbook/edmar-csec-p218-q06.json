@@ -1,0 +1,323 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p218-q06",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 10,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A group of 100 students estimated the mass, m grams, of a seed; the results are shown on a cumulative frequency curve rising from 0 at m = 0 to 100 at about m = 8. Using the curve, estimate (i) the median, (ii) the upper quartile, (iii) the semi-interquartile range, (iv) the number of students whose estimate is 2.8 grams or less."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Read from the cumulative frequency axis across to the curve and down for a mass; read up from the mass axis for a number of students."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p218_q06.jpg",
+      "altText": "Source visual for edmar-csec-p218-q06 from workbook page 218."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Find the cumulative frequency that locates the median and read across.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Half of 100 is 50; draw a horizontal line from 50 to the curve and drop to the mass axis"
+        },
+        {
+          "type": "text",
+          "value": "Result: Median ≈ 3.2 g"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Repeat at three-quarters of the total for the upper quartile.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3/4 × 100 = 75"
+        },
+        {
+          "type": "text",
+          "value": "Result: Q3 ≈ 4.3 g"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Read the lower quartile the same way at one quarter of the total.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "1/4 × 100 = 25"
+        },
+        {
+          "type": "text",
+          "value": "Result: Q1 ≈ 2.3 g"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Halve the interquartile range for the semi-interquartile range.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(Q3 − Q1) ÷ 2 = (4.3 − 2.3) ÷ 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: ≈ 1.0 g"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "For 2.8 g or less, read upward from the mass axis to the curve.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Go up from m = 2.8 to the curve, then across to the cumulative frequency axis"
+        },
+        {
+          "type": "text",
+          "value": "Result: About 38 students"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Convert each required statistic into a cumulative frequency (50, 75, 25 out of 100), read the matching mass off the curve, then combine the quartiles; for part (iv) read in the opposite direction, from m = 2.8 up to the curve."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) Median ≈ 3.2 g  (ii) Upper quartile ≈ 4.3 g  (iii) Lower quartile ≈ 2.3 g, so semi-interquartile range ≈ (4.3 − 2.3)/2 ≈ 1.0 g  (iv) About 38 students. (These are graph readings, so answers within about ±0.2 g and ±2 students are acceptable.)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "On a cumulative frequency curve the vertical axis counts how many students gave an estimate at or below a mass, so a chosen count fixes a position in the ordered data and the curve converts it into a mass. That is exactly what the median and quartiles are: the values at the 50%, 25% and 75% positions. The semi-interquartile range halves the spread of the middle 50% of the data, giving a measure of spread that ignores extreme estimates."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "using_the_number_of_students_100_as_a_ma",
+      "wrongValue": "incorrect_1",
+      "misconception": "Using the number of students (100) as a mass, or reading the axes the wrong way round.",
+      "correctiveNote": "Avoid this: Using the number of students (100) as a mass, or reading the axes the wrong way round."
+    },
+    {
+      "key": "taking_the_quartiles_at_25_and_75_on_the",
+      "wrongValue": "incorrect_2",
+      "misconception": "Taking the quartiles at 25 and 75 on the mass axis instead of the cumulative frequency axis.",
+      "correctiveNote": "Avoid this: Taking the quartiles at 25 and 75 on the mass axis instead of the cumulative frequency axis."
+    },
+    {
+      "key": "forgetting_to_halve_the_interquartile_ra",
+      "wrongValue": "incorrect_3",
+      "misconception": "Forgetting to halve the interquartile range for the semi-interquartile range.",
+      "correctiveNote": "Avoid this: Forgetting to halve the interquartile range for the semi-interquartile range."
+    },
+    {
+      "key": "reading_the_median_at_the_highest_point_",
+      "wrongValue": "incorrect_4",
+      "misconception": "Reading the median at the highest point of the curve instead of at half the total frequency.",
+      "correctiveNote": "Avoid this: Reading the median at the highest point of the curve instead of at half the total frequency."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Always draw the dashed reference lines on the graph — examiners award marks for the correct construction lines even if your reading is slightly out."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Median≈3.2g",
+    "displayValue": "Median ≈ 3.2 g",
+    "acceptedForms": [
+      "Median ≈ 3.2 g",
+      "Median≈3.2g"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "On a cumulative frequency curve for 80 students, which cumulative frequency do you use to find the lower quartile?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "20",
+      "displayValue": "20",
+      "acceptedForms": [
+        "20",
+        "20"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M3-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "90497969-04d4-4bae-aa30-dc45d8498e29",
+      "code": "M3-1.1",
+      "label": "Cumulative frequency curves"
+    },
+    {
+      "objectiveId": "9ab1d537-03b8-4171-accc-f9456bc6175f",
+      "code": "M3-1.1",
+      "label": "Median and quartiles from a graph"
+    },
+    {
+      "objectiveId": "5d572cd2-4334-40e0-aae8-51c25ff99fa3",
+      "code": "M3-1.1",
+      "label": "Semi-interquartile range"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 6,
+    "pageRef": "p218",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "g",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (g): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Median≈3.2g",
+        "displayValue": "Median ≈ 3.2 g",
+        "acceptedForms": [
+          "Median ≈ 3.2 g",
+          "Median≈3.2g"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.i",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.i): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Median≈3.2g",
+        "displayValue": "Median ≈ 3.2 g",
+        "acceptedForms": [
+          "Median ≈ 3.2 g",
+          "Median≈3.2g"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.ii",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.ii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Upperquartile≈4.3g",
+        "displayValue": "Upper quartile ≈ 4.3 g",
+        "acceptedForms": [
+          "Upper quartile ≈ 4.3 g",
+          "Upperquartile≈4.3g"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.iii",
+      "sequence": 4,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.iii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Lowerquartile≈2.3g,sosemi-interquartilerange≈(4.3−2.3)/2≈1.0g",
+        "displayValue": "Lower quartile ≈ 2.3 g, so semi-interquartile range ≈ (4.3 − 2.3)/2 ≈ 1.0 g",
+        "acceptedForms": [
+          "Lower quartile ≈ 2.3 g, so semi-interquartile range ≈ (4.3 − 2.3)/2 ≈ 1.0 g",
+          "Lowerquartile≈2.3g,sosemi-interquartilerange≈(4.3−2.3)/2≈1.0g"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.iv",
+      "sequence": 5,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.iv): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "About38students.(Thesearegraphreadings,soanswerswithinabout±0.2gan",
+        "displayValue": "About 38 students. (These are graph readings, so answers within about ±0.2 g an",
+        "acceptedForms": [
+          "About 38 students. (These are graph readings, so answers within about ±0.2 g an",
+          "About38students.(Thesearegraphreadings,soanswerswithinabout±0.2gan"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p057-q08",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A binary operation is defined by a o b = a/b. Find 2 o 5."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The left input goes on top of the fraction and the right input goes underneath."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p057_q08.jpg",
+      "altText": "Source visual for edmar-csec-p057-q08 from workbook page 57."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Substitute a = 2 and b = 5.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: 2/5"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Give the decimal equivalent if required.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2 divided by 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: 0.4"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Substitute a = 2 and b = 5 into a/b."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "2 o 5 = 2/5, that is 0.4"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Division is not commutative, so the order of the inputs completely changes the answer: 2 o 5 is 0.4 while 5 o 2 is 2.5. Leaving the answer as the fraction 2/5 is exact, and the decimal 0.4 is simply another way of writing it."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "inverting_the_fraction_to_5_2",
+      "wrongValue": "incorrect_1",
+      "misconception": "Inverting the fraction to 5/2.",
+      "correctiveNote": "Avoid this: Inverting the fraction to 5/2."
+    },
+    {
+      "key": "rounding_2_5_to_0_by_treating_it_as_a_wh",
+      "wrongValue": "incorrect_2",
+      "misconception": "Rounding 2/5 to 0 by treating it as a whole-number division.",
+      "correctiveNote": "Avoid this: Rounding 2/5 to 0 by treating it as a whole-number division."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Leave answers as exact fractions unless the question asks for a decimal - it avoids rounding errors later."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "2",
+    "displayValue": "2",
+    "acceptedForms": [
+      "2",
+      "2"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "With a o b = a/b, find 3 o 4."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "fraction",
+      "canonicalValue": "3/4",
+      "displayValue": "3/4",
+      "acceptedForms": [
+        "3/4"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "c60d235c-8661-4c11-a1b2-5254c56faad2",
+      "code": "M1-4.1",
+      "label": "Binary operations"
+    },
+    {
+      "objectiveId": "3bca26fa-54ec-451a-a231-8bd435f48820",
+      "code": "M1-4.1",
+      "label": "Substitution"
+    },
+    {
+      "objectiveId": "ce73e75a-05ff-4fb5-a4d0-406a441dd738",
+      "code": "M1-4.1",
+      "label": "Fractions"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 8,
+    "pageRef": "p57",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

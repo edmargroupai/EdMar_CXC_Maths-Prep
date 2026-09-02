@@ -1,0 +1,206 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p121-q03",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The function p is defined by p(x) = 7 − 2x. (a) Find x when p(x) = 15. (b) Find x when p(x) = 0."
+    },
+    {
+      "type": "text",
+      "value": "Think first: You are given the output and asked for the input, so set the rule equal to the value and solve."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p121_q03.jpg",
+      "altText": "Source visual for edmar-csec-p121-q03 from workbook page 121."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Set the rule equal to 15.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "7 − 2x = 15"
+        },
+        {
+          "type": "text",
+          "value": "Result: 7 − 2x = 15"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Solve for x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "−2x = 15 − 7 = 8, so x = 8 ÷ (−2)"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = −4"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Set the rule equal to 0.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "7 − 2x = 0"
+        },
+        {
+          "type": "text",
+          "value": "Result: 7 − 2x = 0"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Solve for x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2x = 7, so x = 7 ÷ 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 3.5"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Check both answers in the rule.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "p(−4) = 7 + 8 = 15;  p(3.5) = 7 − 7 = 0"
+        },
+        {
+          "type": "text",
+          "value": "Result: Both verified"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Set 7 − 2x equal to each given value in turn and solve the resulting linear equation for x."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) x = −4  (b) x = 3.5"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Evaluating a function takes you from input to output; solving p(x) = c reverses that journey. Because the coefficient of x is negative, a larger output corresponds to a smaller input — which is why asking for an output of 15, above the value p(0) = 7, produces a negative x."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "substituting_15_for_x_instead_of_for_p_x",
+      "wrongValue": "incorrect_1",
+      "misconception": "Substituting 15 for x instead of for p(x).",
+      "correctiveNote": "Avoid this: Substituting 15 for x instead of for p(x)."
+    },
+    {
+      "key": "sign_errors_when_dividing_by_2",
+      "wrongValue": "incorrect_2",
+      "misconception": "Sign errors when dividing by −2.",
+      "correctiveNote": "Avoid this: Sign errors when dividing by −2."
+    },
+    {
+      "key": "writing_x_3_5_as_3_5_x_and_then_misreadi",
+      "wrongValue": "incorrect_3",
+      "misconception": "Writing x = 3.5 as 3.5 = x and then misreading it in a later part.",
+      "correctiveNote": "Avoid this: Writing x = 3.5 as 3.5 = x and then misreading it in a later part."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Whenever you solve p(x) = c, substitute your answer back into the rule — the check takes one line and confirms the sign."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "x=−4",
+    "displayValue": "x = −4",
+    "acceptedForms": [
+      "x = −4",
+      "x=−4"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "If p(x) = 7 − 2x, find x when p(x) = 1."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=3",
+      "displayValue": "= 3",
+      "acceptedForms": [
+        "= 3",
+        "=3"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-3.2"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "86f4d1ab-ac1e-4d22-a3a1-1b9438574b30",
+      "code": "M1-3.2",
+      "label": "Function notation"
+    },
+    {
+      "objectiveId": "32aa6e02-cc62-4085-a6b1-2b1c760bfa15",
+      "code": "M1-3.2",
+      "label": "Solving linear equations"
+    },
+    {
+      "objectiveId": "85a021b6-1176-4990-a529-ee291f5ee0da",
+      "code": "M1-3.2",
+      "label": "Finding the input from a given output"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 3,
+    "pageRef": "p121",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

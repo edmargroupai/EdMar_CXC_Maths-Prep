@@ -1,0 +1,328 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p077-q04",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 10,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A bar chart shows the favourite fruit of 40 students: apple 8, banana 12, orange 6, mango 10 and other 4. (a) State the modal fruit. (b) How many more students chose banana than orange? (c) Calculate the percentage of students who chose mango. (d) Find the probability that a student chosen at random chose neither apple nor banana. (e) Write ONE inference that may be made from the chart."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Read every bar height off the vertical scale first, and check the five frequencies add to 40."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p077_q04.jpg",
+      "altText": "Source visual for edmar-csec-p077-q04 from workbook page 77."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Read the height of each bar against the scale.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Apple 8, Banana 12, Orange 6, Mango 10, Other 4; 8 + 12 + 6 + 10 + 4 = 40"
+        },
+        {
+          "type": "text",
+          "value": "Result: Frequencies confirmed"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Identify the tallest bar.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Banana, at 12 students"
+        },
+        {
+          "type": "text",
+          "value": "Result: Modal fruit = banana"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Subtract the orange frequency from the banana frequency.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "12 − 6"
+        },
+        {
+          "type": "text",
+          "value": "Result: 6 more students"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Write the mango frequency as a percentage of 40.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "10/40 × 100"
+        },
+        {
+          "type": "text",
+          "value": "Result: 25%"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Count the students who chose neither apple nor banana.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "40 − 8 − 12 = 20, so the probability is 20/40"
+        },
+        {
+          "type": "text",
+          "value": "Result: 1/2"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "List the five frequencies from the bars, then answer each part by comparing them, converting to a percentage, or counting favourable students out of 40."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) Banana  (b) 6 students  (c) 25%  (d) 1/2  (e) Banana and mango together are chosen by more than half the students (22 of the 40), so a school tuck shop should stock mainly bananas and mangoes."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A bar chart stores frequencies as heights, so every question about the data reduces to reading heights and then doing ordinary arithmetic on counts. A percentage and a probability are both 'part out of whole' — the only difference is that one is multiplied by 100 and the other is left as a fraction."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "comparing_bar_heights_by_eye_instead_of_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Comparing bar heights by eye instead of reading them off the scale.",
+      "correctiveNote": "Avoid this: Comparing bar heights by eye instead of reading them off the scale."
+    },
+    {
+      "key": "answering_b_with_12_and_6_rather_than_th",
+      "wrongValue": "incorrect_2",
+      "misconception": "Answering (b) with '12 and 6' rather than the difference between them.",
+      "correctiveNote": "Avoid this: Answering (b) with '12 and 6' rather than the difference between them."
+    },
+    {
+      "key": "forgetting_that_neither_apple_nor_banana",
+      "wrongValue": "incorrect_3",
+      "misconception": "Forgetting that 'neither apple nor banana' includes the 'other' category as well as orange and mango.",
+      "correctiveNote": "Avoid this: Forgetting that 'neither apple nor banana' includes the 'other' category as well as orange and mango."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When a chart states a total, add your readings and check they match it — that catches a misread bar before it spoils later parts."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Banan",
+    "displayValue": "Banan",
+    "acceptedForms": [
+      "Banan",
+      "Banan"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Using the same chart, what percentage of the students chose orange?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "15%",
+      "displayValue": "15%",
+      "acceptedForms": [
+        "15%",
+        "15%"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M3-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "801fadfd-0517-4587-ab4d-9dcf556f257f",
+      "code": "M3-1.1",
+      "label": "Reading a bar chart"
+    },
+    {
+      "objectiveId": "6f2553d5-0595-49f2-aa71-a84a2d987c47",
+      "code": "M3-1.1",
+      "label": "Mode"
+    },
+    {
+      "objectiveId": "168dabe4-b71b-40df-a5f8-41a1b1209b9a",
+      "code": "M3-1.1",
+      "label": "Percentage of a total"
+    },
+    {
+      "objectiveId": "1562aa6c-18c0-479f-a2fe-40f1837a13e4",
+      "code": "M3-1.1",
+      "label": "Probability"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 4,
+    "pageRef": "p77",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Banan",
+        "displayValue": "Banan",
+        "acceptedForms": [
+          "Banan",
+          "Banan"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "numeric_exact",
+        "canonicalValue": "6",
+        "displayValue": "6",
+        "acceptedForms": [
+          "6",
+          "6"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0
+        },
+        "normalisation": "numeric_default"
+      }
+    },
+    {
+      "partKey": "c",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (c): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "25%",
+        "displayValue": "25%",
+        "acceptedForms": [
+          "25%",
+          "25%"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "d",
+      "sequence": 4,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (d): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "fraction",
+        "canonicalValue": "1/2",
+        "displayValue": "1/2",
+        "acceptedForms": [
+          "1/2"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0
+        },
+        "normalisation": "numeric_default"
+      }
+    },
+    {
+      "partKey": "e",
+      "sequence": 5,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (e): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "fraction",
+        "canonicalValue": "1/2",
+        "displayValue": "1/2",
+        "acceptedForms": [
+          "1/2"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0
+        },
+        "normalisation": "numeric_default"
+      }
+    }
+  ]
+}

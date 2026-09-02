@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p233-q04",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "On the graph the shaded region is bounded by the line y = 2x, the line y = (−4/5)x + 12 and the horizontal line y = 2. Here x is the number of boys and y the number of girls in a cricket club. (i) Using the graph, state whether the club can have (a) 10 boys and 5 girls, (b) 6 boys and 6 girls. (ii) Write down the THREE inequalities that define the shaded region. (iii) A company makes $3.00 profit on a boy's uniform and $5.00 on a girl's uniform. (a) Write an expression in x and y for the total profit. (b) Calculate the minimum profit the company can make."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Every boundary line on the graph becomes one inequality, and the shaded side of each line tells you which way the inequality sign points."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p233_q04.jpg",
+      "altText": "Source visual for edmar-csec-p233-q04 from workbook page 233."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Plot (10, 5) and compare it with the line y = (−4/5)x + 12.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "At x = 10 the line is at y = −8 + 12 = 4, and 5 > 4, so the point lies above the line, outside the shading"
+        },
+        {
+          "type": "text",
+          "value": "Result: 10 boys and 5 girls: NOT possible"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Plot (6, 6) and test it against all three boundaries.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "y = 6 is above y = 2; 6 ≤ 2(6) = 12; at x = 6 the sloping line is at y = −4.8 + 12 = 7.2 and 6 ≤ 7.2"
+        },
+        {
+          "type": "text",
+          "value": "Result: 6 boys and 6 girls: possible"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Write one inequality for each boundary line, using the shaded side.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Shading lies below y = (−4/5)x + 12, below/right of y = 2x, and above y = 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: y ≤ (−4/5)x + 12 (i.e. 4x + 5y ≤ 60), y ≤ 2x, y ≥ 2"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Write the profit expression.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "$3 per boy's uniform and $5 per girl's uniform"
+        },
+        {
+          "type": "text",
+          "value": "Result: P = 3x + 5y"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Find the three vertices of the shaded region.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "y = 2x meets y = 2 at (1, 2); y = 2x meets 4x + 5y = 60 at (30/7, 60/7); y = 2 meets 4x + 5y = 60 at (12.5, 2)"
+        },
+        {
+          "type": "text",
+          "value": "Result: (1, 2), (30/7, 60/7), (12.5, 2)"
+        }
+      ]
+    },
+    {
+      "stepNo": 6,
+      "instruction": "Evaluate P = 3x + 5y at each vertex and pick the smallest.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3(1) + 5(2) = 13; 3(30/7) + 5(60/7) ≈ 55.71; 3(12.5) + 5(2) = 47.50"
+        },
+        {
+          "type": "text",
+          "value": "Result: minimum P = $13.00 at (1, 2)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Test each candidate point against the position of the shaded region, read the three boundary lines off the graph and choose the inequality sign that keeps the shading, then evaluate the profit expression at each corner of the region."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) a) No — (10, 5) lies above the line 4x + 5y = 60, outside the shaded region.  b) Yes — (6, 6) lies inside the shaded region.  (ii) y ≥ 2, y ≤ 2x, 4x + 5y ≤ 60 (that is, y ≤ (−4/5)x + 12).  (iii) a) P = 3x + 5y  b) minimum profit = $13.00 (1 boy and 2 girls)."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A linear expression such as 3x + 5y changes steadily across a region, so its largest and smallest values always occur at a corner of that region. Checking the three vertices therefore settles the minimum with no searching. The inequality signs come from which side of each line is shaded, and a boundary drawn as a solid line means the points on it are included."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "reversing_an_inequality_sign_by_not_chec",
+      "wrongValue": "incorrect_1",
+      "misconception": "Reversing an inequality sign by not checking a test point on the shaded side.",
+      "correctiveNote": "Avoid this: Reversing an inequality sign by not checking a test point on the shaded side."
+    },
+    {
+      "key": "forgetting_the_third_boundary_y_2_and_tr",
+      "wrongValue": "incorrect_2",
+      "misconception": "Forgetting the third boundary y ≥ 2 and treating the x-axis as the lower edge.",
+      "correctiveNote": "Avoid this: Forgetting the third boundary y ≥ 2 and treating the x-axis as the lower edge."
+    },
+    {
+      "key": "testing_the_profit_only_at_the_point_tha",
+      "wrongValue": "incorrect_3",
+      "misconception": "Testing the profit only at the point that looks lowest on the graph instead of at every vertex.",
+      "correctiveNote": "Avoid this: Testing the profit only at the point that looks lowest on the graph instead of at every vertex."
+    },
+    {
+      "key": "reading_10_5_as_inside_because_it_is_clo",
+      "wrongValue": "incorrect_4",
+      "misconception": "Reading (10, 5) as inside because it is close to the line — substitute into 4x + 5y ≤ 60 to be certain (65 > 60).",
+      "correctiveNote": "Avoid this: Reading (10, 5) as inside because it is close to the line — substitute into 4x + 5y ≤ 60 to be certain (65 > 60)."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "For any linear programming question, list the vertices first and then evaluate the objective function at each one — the answer is always at a corner."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "a)No—(10,5)liesabovetheline4x+5y=60,outsidetheshadedregion.",
+    "displayValue": "a) No — (10, 5) lies above the line 4x + 5y = 60, outside the shaded region.",
+    "acceptedForms": [
+      "a) No — (10, 5) lies above the line 4x + 5y = 60, outside the shaded region.",
+      "a)No—(10,5)liesabovetheline4x+5y=60,outsidetheshadedregion."
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "For the same region, what is the maximum profit if P = 3x + 5y?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "About$55.71,atthevertex(30/7,60/7);withwholenumbersofpeoplethebestintegerpointgives$55at(5,8).",
+      "displayValue": "About $55.71, at the vertex (30/7, 60/7); with whole numbers of people the best integer point gives $55 at (5, 8).",
+      "acceptedForms": [
+        "About $55.71, at the vertex (30/7, 60/7); with whole numbers of people the best integer point gives $55 at (5, 8).",
+        "About$55.71,atthevertex(30/7,60/7);withwholenumbersofpeoplethebestintegerpointgives$55at(5,8)."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "f5d04642-ca20-4858-ac08-df0cc4726e94",
+      "code": "M1-1.1",
+      "label": "Linear inequalities in two variables"
+    },
+    {
+      "objectiveId": "f7438c4b-dee8-4760-a27f-b6c1b4898bbd",
+      "code": "M1-1.1",
+      "label": "Reading a shaded feasible region"
+    },
+    {
+      "objectiveId": "20acd52a-c5c6-4e5d-ab88-fbba81fa5cb0",
+      "code": "M1-1.1",
+      "label": "Vertices of a feasible region"
+    },
+    {
+      "objectiveId": "87511c55-9a60-4a1a-a7ce-c795bb55809c",
+      "code": "M1-1.1",
+      "label": "Objective (profit) function"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 4,
+    "pageRef": "p233",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

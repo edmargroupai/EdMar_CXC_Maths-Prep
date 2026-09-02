@@ -1,0 +1,267 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p205-q19",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 6,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A caterer prepares sandwiches, salads and fruit cups for two events. The order matrix O = (40 25 30 / 35 20 45) has one row per event, and the unit-cost matrix c = (12 / 18 / 8) gives the cost in dollars of one sandwich, one salad and one fruit cup. (a) Calculate Oc. (b) Interpret the entries in Oc. (c) The caterer adds a delivery charge of $120 to each event. Write a column matrix showing the final cost of each event."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Multiply first to get the food cost of each event, then add the fixed delivery charge to both entries at the end."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p205_q19.jpg",
+      "altText": "Source visual for edmar-csec-p205-q19 from workbook page 205."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Check the shapes match and find the order of the product.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "O is 2 × 3 and c is 3 × 1; the inner 3s agree."
+        },
+        {
+          "type": "text",
+          "value": "Result: Oc is defined, order 2 × 1"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Multiply the first event's row into the cost column.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "40(12) + 25(18) + 30(8) = 480 + 450 + 240"
+        },
+        {
+          "type": "text",
+          "value": "Result: 1170"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Multiply the second event's row into the cost column.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "35(12) + 20(18) + 45(8) = 420 + 360 + 360"
+        },
+        {
+          "type": "text",
+          "value": "Result: 1140"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Add $120 to each entry for delivery.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "1170 + 120 and 1140 + 120"
+        },
+        {
+          "type": "text",
+          "value": "Result: (1290 / 1260)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Multiply each event's row into the cost column, then add a column matrix of two 120s to include delivery."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) Oc = (1170 / 1140)  (b) The entries are the food costs in dollars: $1170 for the first event and $1140 for the second  (c) Adding the $120 delivery charge to each gives the final cost column matrix (1290 / 1260), that is $1290 for the first event and $1260 for the second."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The row-by-column rule multiplies each quantity by the cost of that same item and adds the results, which is precisely how an order is priced. Placing the unit costs in a column is what aligns each cost with its own item. A fixed charge is added afterwards because it does not depend on quantity, so it belongs in an addition, not in the multiplication."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "adding_the_120_before_multiplying_so_it_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Adding the $120 before multiplying, so it gets multiplied by quantities.",
+      "correctiveNote": "Avoid this: Adding the $120 before multiplying, so it gets multiplied by quantities."
+    },
+    {
+      "key": "pairing_the_salad_quantity_with_the_sand",
+      "wrongValue": "incorrect_2",
+      "misconception": "Pairing the salad quantity with the sandwich cost.",
+      "correctiveNote": "Avoid this: Pairing the salad quantity with the sandwich cost."
+    },
+    {
+      "key": "giving_the_final_costs_as_a_row_matrix_w",
+      "wrongValue": "incorrect_3",
+      "misconception": "Giving the final costs as a row matrix when a column matrix is asked for.",
+      "correctiveNote": "Avoid this: Giving the final costs as a row matrix when a column matrix is asked for."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Fixed charges are added after the multiplication; only per-item amounts belong inside the cost column."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "O",
+    "displayValue": "O",
+    "acceptedForms": [
+      "O",
+      "O"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A third event orders 20 sandwiches, 10 salads and 15 fruit cups. What is the food cost?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "currency",
+      "canonicalValue": "20.00",
+      "displayValue": "$20",
+      "acceptedForms": [
+        "$20",
+        "$20",
+        "20"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.005
+      },
+      "precision": {
+        "kind": "decimal_places",
+        "value": 2,
+        "required": true
+      },
+      "normalisation": "currency_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "5cae5641-f45b-4954-ac90-94be118f6bd7",
+      "code": "M2-4.1",
+      "label": "Matrix multiplication"
+    },
+    {
+      "objectiveId": "3b84c980-2fa9-416b-a493-fb843ed30e7d",
+      "code": "M2-4.1",
+      "label": "Interpreting a product matrix in context"
+    },
+    {
+      "objectiveId": "ce64d54d-0e38-46a1-a80f-972b8df9ff7a",
+      "code": "M2-4.1",
+      "label": "Addition of matrices"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 19,
+    "pageRef": "p205",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "O",
+        "displayValue": "O",
+        "acceptedForms": [
+          "O",
+          "O"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Theentriesarethefoo",
+        "displayValue": "The entries are the foo",
+        "acceptedForms": [
+          "The entries are the foo",
+          "Theentriesarethefoo"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "c",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (c): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "=(1170/1140)",
+        "displayValue": "= (1170 / 1140)",
+        "acceptedForms": [
+          "= (1170 / 1140)",
+          "=(1170/1140)"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

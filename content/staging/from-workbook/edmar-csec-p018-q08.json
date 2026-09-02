@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p018-q08",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 5,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A sum of $50 000 grows to $60 500 in 2 years at compound interest. Calculate the rate percent per annum."
+    },
+    {
+      "type": "text",
+      "value": "Think first: You know where the money started and ended, so find the multiplier that does it in two equal steps."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p018_q08.jpg",
+      "altText": "Source visual for edmar-csec-p018-q08 from workbook page 18."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write the formula with the unknown rate.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "A = P(1 + R/100)², so 60500 = 50000(1 + R/100)²"
+        },
+        {
+          "type": "text",
+          "value": "Result: 60500 = 50000(1 + R/100)²"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Divide by the principal.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "60500 ÷ 50000"
+        },
+        {
+          "type": "text",
+          "value": "Result: (1 + R/100)² = 1.21"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Take the square root of both sides.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "√1.21 = 1.1"
+        },
+        {
+          "type": "text",
+          "value": "Result: 1 + R/100 = 1.1"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Solve for R.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "R/100 = 0.1"
+        },
+        {
+          "type": "text",
+          "value": "Result: R = 10, so 10% per annum"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Divide the amount by the principal to find the two-year growth factor, take its square root for the annual factor, and read off the rate."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "10% per annum"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Compound growth over two years multiplies the principal by the same factor twice, so the total factor is the square of the annual one. Reversing that means dividing to isolate the squared factor and then square-rooting to undo the squaring. The negative root is discarded because a growth factor must be positive."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "finding_the_total_growth_21_and_halving_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Finding the total growth 21% and halving it to 10.5%.",
+      "correctiveNote": "Avoid this: Finding the total growth 21% and halving it to 10.5%."
+    },
+    {
+      "key": "using_simple_interest_and_answering_10_5",
+      "wrongValue": "incorrect_2",
+      "misconception": "Using simple interest and answering 10.5% per annum.",
+      "correctiveNote": "Avoid this: Using simple interest and answering 10.5% per annum."
+    },
+    {
+      "key": "forgetting_to_subtract_the_1_and_answeri",
+      "wrongValue": "incorrect_3",
+      "misconception": "Forgetting to subtract the 1 and answering 110%.",
+      "correctiveNote": "Avoid this: Forgetting to subtract the 1 and answering 110%."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "For compound rate questions, isolate (1 + R/100)ⁿ first and take the nth root — dividing the total percentage increase by the number of years is not the same thing."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "10%",
+    "displayValue": "10%",
+    "acceptedForms": [
+      "10%",
+      "10%"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "$20 000 grows to $24 200 in 2 years at compound interest. Find the rate per annum."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "10%",
+      "displayValue": "10%",
+      "acceptedForms": [
+        "10%",
+        "10%"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-3.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "c0d608c9-0c9e-45b3-aa0d-60fc8f9e3cb5",
+      "code": "M1-3.1",
+      "label": "Compound interest"
+    },
+    {
+      "objectiveId": "a9da5f23-bde9-4ab6-afe4-62f12f226155",
+      "code": "M1-3.1",
+      "label": "Rearranging a formula"
+    },
+    {
+      "objectiveId": "37dfc965-d870-4154-a9b1-1d490c2c80f6",
+      "code": "M1-3.1",
+      "label": "Square roots"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 8,
+    "pageRef": "p18",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

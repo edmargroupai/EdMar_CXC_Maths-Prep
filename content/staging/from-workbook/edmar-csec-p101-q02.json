@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p101-q02",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Express x² − 8x + 3 in the form (x + h)² + k by completing the square."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The x coefficient is negative, so the number inside the bracket is negative too."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p101_q02.jpg",
+      "altText": "Source visual for edmar-csec-p101-q02 from workbook page 101."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Halve the coefficient of x.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "−8 ÷ 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: −4, so the bracket is (x − 4)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Expand to see the surplus.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(x − 4)² = x² − 8x + 16"
+        },
+        {
+          "type": "text",
+          "value": "Result: 16 too many"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Subtract 16 and add the original constant 3.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x² − 8x + 3 = (x − 4)² − 16 + 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: (x − 4)² − 13"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Check by expanding.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x² − 8x + 16 − 13"
+        },
+        {
+          "type": "text",
+          "value": "Result: x² − 8x + 3 ✓"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Halve −8 to form (x − 4)², subtract the 16 this introduces, then add the original constant 3."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x² − 8x + 3 = (x − 4)² − 13"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The identity (x − h)² = x² − 2hx + h² means half the x coefficient always sits inside the bracket, sign included. Because squaring −4 still gives a positive 16, that surplus must be subtracted, which is why k ends up well below the original constant."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_x_4_and_losing_the_negative_sign",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing (x + 4)² and losing the negative sign inside the bracket.",
+      "correctiveNote": "Avoid this: Writing (x + 4)² and losing the negative sign inside the bracket."
+    },
+    {
+      "key": "subtracting_16_and_getting_x_4_19",
+      "wrongValue": "incorrect_2",
+      "misconception": "Subtracting −16 and getting (x − 4)² + 19.",
+      "correctiveNote": "Avoid this: Subtracting −16 and getting (x − 4)² + 19."
+    },
+    {
+      "key": "halving_the_constant_instead_of_the_x_co",
+      "wrongValue": "incorrect_3",
+      "misconception": "Halving the constant instead of the x coefficient.",
+      "correctiveNote": "Avoid this: Halving the constant instead of the x coefficient."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Whatever sign the x term carries, that sign goes inside the bracket; the correction term you subtract is always positive because it is a square."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "x²−8x+3=(x−4)²−13",
+    "displayValue": "x² − 8x + 3 = (x − 4)² − 13",
+    "acceptedForms": [
+      "x² − 8x + 3 = (x − 4)² − 13",
+      "x²−8x+3=(x−4)²−13"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Express x² − 6x + 1 in the form (x + h)² + k."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "−3)²−8",
+      "displayValue": "− 3)² − 8",
+      "acceptedForms": [
+        "− 3)² − 8",
+        "−3)²−8"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "ec350683-382d-440b-a41f-ca97ddef9da3",
+      "code": "M1-5.1",
+      "label": "Completing the square"
+    },
+    {
+      "objectiveId": "a246f3d2-7ee3-49a4-a9b3-1a15eaa6161a",
+      "code": "M1-5.1",
+      "label": "Perfect square trinomials"
+    },
+    {
+      "objectiveId": "b2acabb5-29ca-48bb-a2f3-01d1285e87be",
+      "code": "M1-5.1",
+      "label": "Working with negative coefficients"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 2,
+    "pageRef": "p101",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

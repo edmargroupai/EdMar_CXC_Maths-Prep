@@ -1,0 +1,281 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p292-q03",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 6,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "(i) Calculate the matrix product (5  4 / -3  -2)(2  1  -4 / 0  3  6). (ii) State why the two matrices in (i) are conformable for multiplication. (iii) Determine the inverse of (5  4 / -3  -2)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Check the orders first: a 2x2 times a 2x3 is allowed and the answer will be 2x3."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p292_q03.jpg",
+      "altText": "Source visual for edmar-csec-p292-q03 from workbook page 292."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write down the orders of the two matrices.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The first is 2x2, the second is 2x3."
+        },
+        {
+          "type": "text",
+          "value": "Result: Product will be 2x3"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Multiply the first row (5, 4) into each column of the second matrix.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(5)(2) + (4)(0) = 10;  (5)(1) + (4)(3) = 17;  (5)(-4) + (4)(6) = -20 + 24 = 4"
+        },
+        {
+          "type": "text",
+          "value": "Result: First row: 10, 17, 4"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Multiply the second row (-3, -2) into each column.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(-3)(2) + (-2)(0) = -6;  (-3)(1) + (-2)(3) = -9;  (-3)(-4) + (-2)(6) = 12 - 12 = 0"
+        },
+        {
+          "type": "text",
+          "value": "Result: Second row: -6, -9, 0"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Answer (ii) using the orders.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The first matrix has 2 columns and the second has 2 rows; multiplication is defined only when these match."
+        },
+        {
+          "type": "text",
+          "value": "Result: Conformable because columns of the first = rows of the second = 2"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "For (iii), find the determinant, then swap the leading diagonal, negate the other diagonal and divide.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "det = (5)(-2) - (4)(-3) = -10 + 12 = 2;  inverse = (1/2)(-2  -4 / 3  5)"
+        },
+        {
+          "type": "text",
+          "value": "Result: Inverse = (-1  -2 / 1.5  2.5)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Multiply each row of the first matrix into each column of the second to build a 2x3 answer, state the conformability condition on the orders, then use determinant and adjugate for the inverse."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) (10  17  4 / -6  -9  0)  (ii) The first matrix is 2x2 and the second is 2x3; the number of columns of the first equals the number of rows of the second, so the product is defined (and is 2x3).  (iii) (1/2)(-2  -4 / 3  5) = (-1  -2 / 1.5  2.5)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Every entry of a product is a row of the first matrix paired with a column of the second, term by term, so the row and the column must contain the same number of entries; that is exactly the conformability condition. The resulting matrix inherits its number of rows from the first matrix and its number of columns from the second. The inverse formula comes from solving the equation A times A inverse = I, which is why the determinant appears in the denominator and the matrix is singular when the determinant is zero."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "trying_to_multiply_the_matrices_the_othe",
+      "wrongValue": "incorrect_1",
+      "misconception": "Trying to multiply the matrices the other way round, which is not defined here.",
+      "correctiveNote": "Avoid this: Trying to multiply the matrices the other way round, which is not defined here."
+    },
+    {
+      "key": "giving_the_product_as_2x2_by_stopping_af",
+      "wrongValue": "incorrect_2",
+      "misconception": "Giving the product as 2x2 by stopping after two columns.",
+      "correctiveNote": "Avoid this: Giving the product as 2x2 by stopping after two columns."
+    },
+    {
+      "key": "saying_the_matrices_are_conformable_beca",
+      "wrongValue": "incorrect_3",
+      "misconception": "Saying the matrices are conformable because they are both 'the same size'.",
+      "correctiveNote": "Avoid this: Saying the matrices are conformable because they are both 'the same size'."
+    },
+    {
+      "key": "forgetting_the_sign_changes_in_the_adjug",
+      "wrongValue": "incorrect_4",
+      "misconception": "Forgetting the sign changes in the adjugate before dividing by the determinant.",
+      "correctiveNote": "Avoid this: Forgetting the sign changes in the adjugate before dividing by the determinant."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Write the orders side by side, for example 2x2 and 2x3. The two inner numbers must agree; the two outer numbers give the order of the answer."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "(10174/-6-90)",
+    "displayValue": "(10 17 4 / -6 -9 0)",
+    "acceptedForms": [
+      "(10 17 4 / -6 -9 0)",
+      "(10174/-6-90)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "What is the order of the product of a 3x2 matrix and a 2x4 matrix?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "3",
+      "displayValue": "3",
+      "acceptedForms": [
+        "3",
+        "3"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "cc7c9f65-3f82-4ea8-a1fe-d2c50f4c2811",
+      "code": "M2-4.1",
+      "label": "Matrix multiplication and order"
+    },
+    {
+      "objectiveId": "e6fab6da-79c5-4c85-a53e-05cf9c05d9bb",
+      "code": "M2-4.1",
+      "label": "Conformability for multiplication"
+    },
+    {
+      "objectiveId": "ec91ad4a-b4f2-4a49-af9d-9c58aa776bf3",
+      "code": "M2-4.1",
+      "label": "Determinant and inverse of a 2x2 matrix"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 3,
+    "pageRef": "p292",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a.i",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.i): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "(10174/-6-90)",
+        "displayValue": "(10 17 4 / -6 -9 0)",
+        "acceptedForms": [
+          "(10 17 4 / -6 -9 0)",
+          "(10174/-6-90)"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.ii",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.ii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "Thefirstmatr",
+        "displayValue": "The first matr",
+        "acceptedForms": [
+          "The first matr",
+          "Thefirstmatr"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.iii",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.iii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "(1/2)(-2-4/35)=(-1-2/1.52.5)",
+        "displayValue": "(1/2)(-2 -4 / 3 5) = (-1 -2 / 1.5 2.5)",
+        "acceptedForms": [
+          "(1/2)(-2 -4 / 3 5) = (-1 -2 / 1.5 2.5)",
+          "(1/2)(-2-4/35)=(-1-2/1.52.5)"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

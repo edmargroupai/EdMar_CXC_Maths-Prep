@@ -1,0 +1,212 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p018-q12",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A television costs $95 000 plus VAT at 15%. a. Calculate the VAT.  b. Calculate the total cost including VAT."
+    },
+    {
+      "type": "text",
+      "value": "Think first: VAT is added on top of the marked price, so the $95 000 is the pre-tax figure, not the total."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p018_q12.jpg",
+      "altText": "Source visual for edmar-csec-p018-q12 from workbook page 18."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Find 10% of the price as a stepping stone.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "95000 ÷ 10"
+        },
+        {
+          "type": "text",
+          "value": "Result: $9 500"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Find 5%, which is half of 10%.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "9500 ÷ 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: $4 750"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Add them to get 15%.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "9500 + 4750"
+        },
+        {
+          "type": "text",
+          "value": "Result: $14 250 VAT"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Add the VAT to the marked price.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "95000 + 14250"
+        },
+        {
+          "type": "text",
+          "value": "Result: $109 250"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Find 15% of $95 000 for the VAT, then add it to the marked price."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "a. $14 250  b. $109 250"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "VAT is a percentage increase applied to the pre-tax price, so the tax is 15% of $95 000 and the total is 115% of it. Building 15% from 10% and 5% works because percentages of the same quantity add, which makes the whole calculation possible without a calculator. The multiplier confirms it: 95 000 × 1.15 = 109 250."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "treating_95_000_as_the_vat_inclusive_pri",
+      "wrongValue": "incorrect_1",
+      "misconception": "Treating $95 000 as the VAT-inclusive price and finding 15% of the total instead.",
+      "correctiveNote": "Avoid this: Treating $95 000 as the VAT-inclusive price and finding 15% of the total instead."
+    },
+    {
+      "key": "answering_14_250_for_part_b",
+      "wrongValue": "incorrect_2",
+      "misconception": "Answering $14 250 for part b.",
+      "correctiveNote": "Avoid this: Answering $14 250 for part b."
+    },
+    {
+      "key": "adding_15_to_the_price_rather_than_15",
+      "wrongValue": "incorrect_3",
+      "misconception": "Adding 15 to the price rather than 15%.",
+      "correctiveNote": "Avoid this: Adding 15 to the price rather than 15%."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Check any add-on tax answer with the single multiplier — price × 1.15 must equal your total, or one of the two steps is wrong."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "tolerance",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "currency",
+    "canonicalValue": "14.00",
+    "displayValue": "$14",
+    "acceptedForms": [
+      "$14",
+      "$14",
+      "14"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0.005
+    },
+    "precision": {
+      "kind": "decimal_places",
+      "value": 2,
+      "required": true
+    },
+    "normalisation": "currency_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A fridge costs $60 000 plus VAT at 15%. What is the total cost?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "currency",
+      "canonicalValue": "69.00",
+      "displayValue": "$69",
+      "acceptedForms": [
+        "$69",
+        "$69",
+        "69"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0.005
+      },
+      "precision": {
+        "kind": "decimal_places",
+        "value": 2,
+        "required": true
+      },
+      "normalisation": "currency_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-3.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "b216a0b4-7574-476f-ace8-fe153ffee566",
+      "code": "M1-3.1",
+      "label": "Percentages"
+    },
+    {
+      "objectiveId": "0b49e223-6110-4d87-ae0a-88b6467c36a1",
+      "code": "M1-3.1",
+      "label": "Value added tax"
+    },
+    {
+      "objectiveId": "58d9ff1c-9a0d-4ea8-ad7d-1ca25eb7b429",
+      "code": "M1-3.1",
+      "label": "Percentage increase"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 12,
+    "pageRef": "p18",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

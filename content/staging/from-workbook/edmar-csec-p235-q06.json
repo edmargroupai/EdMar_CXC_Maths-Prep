@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p235-q06",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The temperature K of a liquid t minutes after heating is: t = 0, 10, 20, 30, 40, 50, 60 with K = 84, 61, 40, 29, 27, 26, 25 °C. (i) Using 2 cm to represent 10 minutes horizontally and 2 cm to represent 10 °C vertically, construct a temperature–time graph over the 60-minute interval. (ii) Draw a smooth curve through all the plotted points. (iii) Use the graph to estimate a) the temperature after 15 minutes, b) the rate of cooling at t = 30 minutes."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The temperature drops fast at first and then levels off, so the graph is a curve, not a straight line — and its steepness at a point is the rate of cooling there."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p235_q06.jpg",
+      "altText": "Source visual for edmar-csec-p235-q06 from workbook page 235."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Set up the axes on the stated scales.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Horizontal: 2 cm = 10 minutes, so mark 0 to 60. Vertical: 2 cm = 10 °C, so mark 0 to at least 90"
+        },
+        {
+          "type": "text",
+          "value": "Result: axes t from 0 to 60 min, K from 0 to 90 °C"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Plot the seven points from the table.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(0, 84), (10, 61), (20, 40), (30, 29), (40, 27), (50, 26), (60, 25)"
+        },
+        {
+          "type": "text",
+          "value": "Result: 7 plotted points"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Join the points with one smooth curve, not a series of straight segments.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The curve falls steeply at first and then flattens towards about 25 °C"
+        },
+        {
+          "type": "text",
+          "value": "Result: a smooth cooling curve"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Read the curve at t = 15 minutes.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "t = 15 lies midway between the points (10, 61) and (20, 40); the curve there sits just below the midpoint 50.5"
+        },
+        {
+          "type": "text",
+          "value": "Result: K ≈ 50 °C"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Draw a tangent to the curve at t = 30 and take its gradient.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Using a tangent through roughly (20, 40) and (40, 27): gradient = (27 − 40) ÷ (40 − 20) = −13 ÷ 20"
+        },
+        {
+          "type": "text",
+          "value": "Result: gradient ≈ −0.65 °C per minute"
+        }
+      ]
+    },
+    {
+      "stepNo": 6,
+      "instruction": "State the rate of cooling as a positive rate of decrease.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The negative gradient means temperature is falling"
+        },
+        {
+          "type": "text",
+          "value": "Result: cooling at about 0.65 °C per minute"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Plot the seven points on the given scales, join them with a smooth curve, read the temperature at t = 15 directly off the curve, then draw a tangent at t = 30 and find its gradient."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) and (ii) Plot (0, 84), (10, 61), (20, 40), (30, 29), (40, 27), (50, 26), (60, 25) on the given scales and join them with a smooth falling curve.  (iii) a) about 50 °C (accept 49–51 °C)  b) about 0.65 °C per minute (accept roughly 0.6–0.7 °C/min), i.e. the temperature is falling at that rate."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A cooling liquid loses heat fastest when it is hottest, so equal time steps produce ever-smaller temperature drops and the graph must curve. Because the curve is smooth, values between plotted points can be read off directly. The instantaneous rate of change at a single instant is not the gradient of a chord but the gradient of the tangent at that point, which is why part (b) needs a tangent drawn at t = 30."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "joining_the_points_with_straight_lines_i",
+      "wrongValue": "incorrect_1",
+      "misconception": "Joining the points with straight lines instead of one smooth curve.",
+      "correctiveNote": "Avoid this: Joining the points with straight lines instead of one smooth curve."
+    },
+    {
+      "key": "ignoring_the_stated_scale_and_inventing_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Ignoring the stated scale and inventing your own — the scale is worth marks.",
+      "correctiveNote": "Avoid this: Ignoring the stated scale and inventing your own — the scale is worth marks."
+    },
+    {
+      "key": "using_a_chord_instead_of_a_tangent_for_t",
+      "wrongValue": "incorrect_3",
+      "misconception": "Using a chord instead of a tangent for the rate at t = 30.",
+      "correctiveNote": "Avoid this: Using a chord instead of a tangent for the rate at t = 30."
+    },
+    {
+      "key": "giving_the_rate_of_cooling_without_units",
+      "wrongValue": "incorrect_4",
+      "misconception": "Giving the rate of cooling without units or without saying it is a decrease.",
+      "correctiveNote": "Avoid this: Giving the rate of cooling without units or without saying it is a decrease."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When a question says 'use your graph to estimate', read from the drawn curve and show the construction lines — an answer taken from the table alone earns no credit."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "and",
+    "displayValue": "and",
+    "acceptedForms": [
+      "and",
+      "and"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "From the same table, what is the average rate of cooling over the first 20 minutes?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(84−40)÷20=2.2°Cperminute",
+      "displayValue": "(84 − 40) ÷ 20 = 2.2 °C per minute",
+      "acceptedForms": [
+        "(84 − 40) ÷ 20 = 2.2 °C per minute",
+        "(84−40)÷20=2.2°Cperminute"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "2bac9955-0e85-41f2-a1d2-02373ee660b3",
+      "code": "M1-1.1",
+      "label": "Plotting a curve from a table of values"
+    },
+    {
+      "objectiveId": "d23d4511-bef5-4290-aaad-5d30eb6616a1",
+      "code": "M1-1.1",
+      "label": "Choosing and using a given scale"
+    },
+    {
+      "objectiveId": "29f5c22c-e903-469e-aa0d-04e4113b3a71",
+      "code": "M1-1.1",
+      "label": "Reading intermediate values from a curve"
+    },
+    {
+      "objectiveId": "7f520cdd-874b-4956-a24b-3a7af37d0574",
+      "code": "M1-1.1",
+      "label": "Gradient of a tangent as a rate of change"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 6,
+    "pageRef": "p235",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

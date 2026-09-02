@@ -1,0 +1,193 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p162-q21",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Using a ruler, a pencil and a pair of compasses, construct triangle XYZ such that XY = 7 cm, YZ = 6 cm and XZ = 8 cm. (i) Measure and state the size of angle XYZ."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Three given sides means a pure arc construction — no angles are drawn at all."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p162_q21.jpg",
+      "altText": "Source visual for edmar-csec-p162-q21 from workbook page 162."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Draw XY = 7 cm.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: XY = 7 cm"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "With centre X and radius 8 cm, draw an arc above XY.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "This arc is every point at the correct distance XZ"
+        },
+        {
+          "type": "text",
+          "value": "Result: arc for XZ"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "With centre Y and radius 6 cm, draw a second arc cutting the first.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The crossing point is the only point at both correct distances"
+        },
+        {
+          "type": "text",
+          "value": "Result: Z located"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Join XZ and YZ, then measure ∠XYZ with a protractor.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: ∠XYZ ≈ 75.5°"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Confirm with the cosine rule.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "cos Y = (7² + 6² − 8²) ÷ (2 × 7 × 6) = 21/84 = 0.25"
+        },
+        {
+          "type": "text",
+          "value": "Result: ∠XYZ = 75.5°"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Draw XY = 7 cm, swing an arc of radius 8 cm from X and one of radius 6 cm from Y; their intersection is Z. Then measure ∠XYZ."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) ∠XYZ ≈ 75.5° (accept about 75° to 76°)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Three sides fix a triangle completely — that is the SSS congruence condition — so the two arcs can only cross in one place on a given side of XY. The cosine rule is the algebraic form of the same fact: from three sides it returns one and only one value for each angle, which is why it can verify a measured construction."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "drawing_the_arcs_with_the_radii_swapped_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Drawing the arcs with the radii swapped (8 cm from Y, 6 cm from X), producing a mirror triangle.",
+      "correctiveNote": "Avoid this: Drawing the arcs with the radii swapped (8 cm from Y, 6 cm from X), producing a mirror triangle."
+    },
+    {
+      "key": "erasing_the_arcs_losing_the_construction",
+      "wrongValue": "incorrect_2",
+      "misconception": "Erasing the arcs, losing the construction marks.",
+      "correctiveNote": "Avoid this: Erasing the arcs, losing the construction marks."
+    },
+    {
+      "key": "reading_the_outer_scale_of_the_protracto",
+      "wrongValue": "incorrect_3",
+      "misconception": "Reading the outer scale of the protractor and writing 104.5° instead of 75.5°.",
+      "correctiveNote": "Avoid this: Reading the outer scale of the protractor and writing 104.5° instead of 75.5°."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "After measuring an angle, check it against the side lengths: the largest angle must face the longest side. Here XZ = 8 cm is longest, so ∠XYZ must be the biggest angle — and it is."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "∠XYZ≈75.5°(acceptabout75°to76°)",
+    "displayValue": "∠XYZ ≈ 75.5° (accept about 75° to 76°)",
+    "acceptedForms": [
+      "∠XYZ ≈ 75.5° (accept about 75° to 76°)",
+      "∠XYZ≈75.5°(acceptabout75°to76°)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A triangle has sides 5 cm, 6 cm and 7 cm. Find the angle opposite the 7 cm side."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "cosθ=(25+36−49)÷(2×5×6)=0.2,soθ≈78.5°.",
+      "displayValue": "cos θ = (25 + 36 − 49) ÷ (2 × 5 × 6) = 0.2, so θ ≈ 78.5°.",
+      "acceptedForms": [
+        "cos θ = (25 + 36 − 49) ÷ (2 × 5 × 6) = 0.2, so θ ≈ 78.5°.",
+        "cosθ=(25+36−49)÷(2×5×6)=0.2,soθ≈78.5°."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "6ebd0fd1-be41-460e-a38e-35fdd0ac2072",
+      "code": "M1-1.1",
+      "label": "Side–side–side construction with compasses"
+    },
+    {
+      "objectiveId": "425a4261-eb80-42e3-a71a-8eff83110dd5",
+      "code": "M1-1.1",
+      "label": "Cosine rule as an accuracy check"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 21,
+    "pageRef": "p162",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

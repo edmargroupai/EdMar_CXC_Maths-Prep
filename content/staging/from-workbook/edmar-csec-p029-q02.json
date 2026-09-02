@@ -1,0 +1,288 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p029-q02",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 6,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A Venn diagram shows students studying History (H) and French (F) in a class of 30. The regions read: H only = 18 - x, H ∩ F = x, F only = 14 - x, and outside both = 5. (i) Write an expression in x, in its simplest form, for the TOTAL number of students in the class. (ii) State whether H ∪ F = U and H ∩ F' = ∅ are true or false. (iii) Determine the number of students who study BOTH History and French."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Add the four regions and simplify; the x terms will largely cancel."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p029_q02.jpg",
+      "altText": "Source visual for edmar-csec-p029-q02 from workbook page 29."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Add all four regions.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(18 - x) + x + (14 - x) + 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: 37 - x"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Test H ∪ F = U.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5 students lie outside both circles, so the union is not the whole universal set"
+        },
+        {
+          "type": "text",
+          "value": "Result: False"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Test H ∩ F' = ∅.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "H ∩ F' is the History only region, 18 - x, which is not empty"
+        },
+        {
+          "type": "text",
+          "value": "Result: False"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Set the total expression equal to the class size.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "37 - x = 30"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 7"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Check the regions with x = 7.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "H only 11, both 7, F only 7, neither 5; 11 + 7 + 7 + 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: 30 students"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Sum the four regions to get an expression in x, use the two statements to test what the diagram says about the regions, then equate the expression to 30 and solve."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) 37 - x  (ii) H ∪ F = U is FALSE, and H ∩ F' = ∅ is FALSE  (iii) 7 students study both History and French"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Writing H only as 18 - x builds the subtraction into the diagram: 18 study History altogether, and x of them also study French. Adding the regions therefore counts each student exactly once, giving 37 - x. H ∩ F' means in History but not in French, which is precisely the History only region, so it is empty only if every History student also takes French, and here 11 do not."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "adding_18_x_14_5_and_double_counting_the",
+      "wrongValue": "incorrect_1",
+      "misconception": "Adding 18 + x + 14 + 5 and double counting the overlap.",
+      "correctiveNote": "Avoid this: Adding 18 + x + 14 + 5 and double counting the overlap."
+    },
+    {
+      "key": "reading_h_f_as_the_region_outside_both_c",
+      "wrongValue": "incorrect_2",
+      "misconception": "Reading H ∩ F' as the region outside both circles instead of History only.",
+      "correctiveNote": "Avoid this: Reading H ∩ F' as the region outside both circles instead of History only."
+    },
+    {
+      "key": "calling_h_f_u_true_because_the_circles_o",
+      "wrongValue": "incorrect_3",
+      "misconception": "Calling H ∪ F = U true because the circles overlap.",
+      "correctiveNote": "Avoid this: Calling H ∪ F = U true because the circles overlap."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Translate set notation into words before judging it: F' is not French, ∩ is and, ∪ is or. A sentence is much easier to test against a diagram than a symbol string."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "37",
+    "displayValue": "37",
+    "acceptedForms": [
+      "37",
+      "37"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "In a class of 25, the Venn regions are 12 - x, x, 15 - x and 3. Find x."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=5",
+      "displayValue": "= 5",
+      "acceptedForms": [
+        "= 5",
+        "=5"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "098daf7d-bb56-4f7a-a05e-7825e5acfb64",
+      "code": "M1-1.1",
+      "label": "Venn diagrams"
+    },
+    {
+      "objectiveId": "040fc9ed-7ba4-44db-a25c-17e1257a6671",
+      "code": "M1-1.1",
+      "label": "Set notation: union, intersection, complement, empty set"
+    },
+    {
+      "objectiveId": "9d6cc1cf-c252-40a1-a1af-572b34f1bf4a",
+      "code": "M1-1.1",
+      "label": "Simplifying expressions"
+    },
+    {
+      "objectiveId": "e26356d7-f6d3-4282-ace8-138d6ff5e697",
+      "code": "M1-1.1",
+      "label": "Solving a linear equation"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 2,
+    "pageRef": "p29",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a.i",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.i): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "numeric_exact",
+        "canonicalValue": "37",
+        "displayValue": "37",
+        "acceptedForms": [
+          "37",
+          "37"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0
+        },
+        "normalisation": "numeric_default"
+      }
+    },
+    {
+      "partKey": "a.ii",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.ii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "H∪F=UisFALSE,an",
+        "displayValue": "H ∪ F = U is FALSE, an",
+        "acceptedForms": [
+          "H ∪ F = U is FALSE, an",
+          "H∪F=UisFALSE,an"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.iii",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.iii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "numeric_exact",
+        "canonicalValue": "7",
+        "displayValue": "7",
+        "acceptedForms": [
+          "7",
+          "7"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0
+        },
+        "normalisation": "numeric_default"
+      }
+    }
+  ]
+}

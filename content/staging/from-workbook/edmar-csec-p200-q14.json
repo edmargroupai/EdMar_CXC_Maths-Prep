@@ -1,0 +1,215 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p200-q14",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A = (1 2 / 3 1), x is the column vector (x / y) and b = (7 / 11), with Ax = b. (a) Write down the TWO simultaneous equations represented by the matrix equation. (b) Determine the values of x and y. (c) Check the solution by matrix multiplication."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Each row of A multiplied into the column (x / y) produces one ordinary equation."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p200_q14.jpg",
+      "altText": "Source visual for edmar-csec-p200-q14 from workbook page 200."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply row 1 of A into the column (x / y) and set it equal to the top entry of b.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "1(x) + 2(y) = 7"
+        },
+        {
+          "type": "text",
+          "value": "Result: x + 2y = 7"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Do the same with row 2 of A and the bottom entry of b.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3(x) + 1(y) = 11"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3x + y = 11"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Rearrange the second equation and substitute into the first.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "y = 11 − 3x, so x + 2(11 − 3x) = 7, giving x + 22 − 6x = 7 and −5x = −15"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 3"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Substitute x = 3 back to find y.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "y = 11 − 3(3) = 11 − 9"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 2"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Multiply A by the solution column to check.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "1(3) + 2(2) = 7 and 3(3) + 1(2) = 11"
+        },
+        {
+          "type": "text",
+          "value": "Result: (7 / 11) = b, so the solution is correct"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Expand Ax row by row to get two equations, solve them by substitution, then multiply A by the solution vector to confirm it gives b."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) x + 2y = 7 and 3x + y = 11  (b) x = 3 and y = 2  (c) A(3 / 2) = (1(3) + 2(2) / 3(3) + 1(2)) = (7 / 11) = b, so the solution checks."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The row-by-column rule turns each row of the coefficient matrix into the left-hand side of one equation, so a whole system can be packed into a single matrix statement. Solving is then ordinary algebra. Multiplying back is the fastest possible check because it re-derives both equations at once."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_the_equations_from_the_columns_o",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing the equations from the columns of A instead of the rows.",
+      "correctiveNote": "Avoid this: Writing the equations from the columns of A instead of the rows."
+    },
+    {
+      "key": "sign_slips_when_expanding_2_11_3x",
+      "wrongValue": "incorrect_2",
+      "misconception": "Sign slips when expanding 2(11 − 3x).",
+      "correctiveNote": "Avoid this: Sign slips when expanding 2(11 − 3x)."
+    },
+    {
+      "key": "finding_x_and_forgetting_to_substitute_b",
+      "wrongValue": "incorrect_3",
+      "misconception": "Finding x and forgetting to substitute back for y.",
+      "correctiveNote": "Avoid this: Finding x and forgetting to substitute back for y."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "After solving a matrix system, always feed your answer back through Ax — it takes seconds and catches nearly every arithmetic slip."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "x+2y=7and3x+y=11",
+    "displayValue": "x + 2y = 7 and 3x + y = 11",
+    "acceptedForms": [
+      "x + 2y = 7 and 3x + y = 11",
+      "x+2y=7and3x+y=11"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Write the simultaneous equations represented by (2 1 / 1 −1)(x / y) = (8 / 1)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "2",
+      "displayValue": "2",
+      "acceptedForms": [
+        "2",
+        "2"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "a2320448-4817-4628-a074-ba2f96ab10cf",
+      "code": "M2-4.1",
+      "label": "Matrix multiplication"
+    },
+    {
+      "objectiveId": "0cabd71a-4a65-48f5-a8f9-72071a9e2c56",
+      "code": "M2-4.1",
+      "label": "Matrix form of simultaneous equations"
+    },
+    {
+      "objectiveId": "46a5a44b-6e54-4998-ac63-42c30765dfcd",
+      "code": "M2-4.1",
+      "label": "Solving simultaneous linear equations"
+    },
+    {
+      "objectiveId": "1ea36065-d4aa-4455-aeae-04168eb8309e",
+      "code": "M2-4.1",
+      "label": "Substitution"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 14,
+    "pageRef": "p200",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

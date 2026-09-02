@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p051-q12",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Simplify (7x − 2)/5 + (x − 5)/6 as a single fraction."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Both denominators are numbers with no common factor, so the LCD is simply their product."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p051_q12.jpg",
+      "altText": "Source visual for edmar-csec-p051-q12 from workbook page 51."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Find the lowest common denominator of 5 and 6.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5 and 6 share no factor, so LCM = 5 × 6"
+        },
+        {
+          "type": "text",
+          "value": "Result: 30"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Rewrite each fraction over 30.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(7x − 2) is multiplied by 6; (x − 5) is multiplied by 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: [6(7x − 2) + 5(x − 5)]/30"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Expand the numerator.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "42x − 12 and 5x − 25"
+        },
+        {
+          "type": "text",
+          "value": "Result: 42x − 12 + 5x − 25"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Collect like terms.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "42x + 5x = 47x and −12 − 25 = −37"
+        },
+        {
+          "type": "text",
+          "value": "Result: 47x − 37"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Use 30 as the common denominator, multiply each numerator by the matching factor, then collect like terms."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(47x − 37)/30"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The multiplier attached to each numerator is exactly the denominator the other fraction contributed, which is what makes both fractions land on 30 without changing value. Adding then works on numerators alone. The final fraction cannot be reduced because 47 is prime and 37 shares no factor with 30."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "multiplying_the_numerators_by_the_wrong_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Multiplying the numerators by the wrong factors — using 5 on (7x − 2) and 6 on (x − 5).",
+      "correctiveNote": "Avoid this: Multiplying the numerators by the wrong factors — using 5 on (7x − 2) and 6 on (x − 5)."
+    },
+    {
+      "key": "adding_12_and_25_as_13_instead_of_37",
+      "wrongValue": "incorrect_2",
+      "misconception": "Adding −12 and −25 as −13 instead of −37.",
+      "correctiveNote": "Avoid this: Adding −12 and −25 as −13 instead of −37."
+    },
+    {
+      "key": "trying_to_cancel_47x_37_with_30",
+      "wrongValue": "incorrect_3",
+      "misconception": "Trying to cancel 47x − 37 with 30.",
+      "correctiveNote": "Avoid this: Trying to cancel 47x − 37 with 30."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Check the size of the answer by substituting a simple value such as x = 1 into both the original and your final fraction. Both should give the same number — here 5/5 + (−4)/6 = 10/30, and (47 − 37)/30 = 10/30."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "(47x−37)/30",
+    "displayValue": "(47x − 37)/30",
+    "acceptedForms": [
+      "(47x − 37)/30",
+      "(47x−37)/30"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Simplify (3x − 1)/4 + (x − 2)/3 as a single fraction."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "[3(3x−1)+4(x−2)]/12=(13x−11)/12.",
+      "displayValue": "[3(3x − 1) + 4(x − 2)]/12 = (13x − 11)/12.",
+      "acceptedForms": [
+        "[3(3x − 1) + 4(x − 2)]/12 = (13x − 11)/12.",
+        "[3(3x−1)+4(x−2)]/12=(13x−11)/12."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "53da4d36-3d02-4c56-aac2-5e7de3ae7caf",
+      "code": "M1-4.1",
+      "label": "Addition of algebraic fractions"
+    },
+    {
+      "objectiveId": "c9db909c-74e3-4c59-ac2a-cf21d9c8f809",
+      "code": "M1-4.1",
+      "label": "Lowest common multiple"
+    },
+    {
+      "objectiveId": "04b74d30-d0b1-4fb8-ac01-93992c8e3ddc",
+      "code": "M1-4.1",
+      "label": "Expanding brackets"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 12,
+    "pageRef": "p51",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

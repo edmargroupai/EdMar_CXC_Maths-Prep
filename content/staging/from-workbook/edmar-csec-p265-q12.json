@@ -1,0 +1,211 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p265-q12",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 5,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Quadrilateral O has vertices (1, 1), (2, 3), (4, 1) and (3, 0). Quadrilateral M has vertices (1, 3), (3, 7), (7, 3) and (5, 1), and quadrilateral N has vertices (-1, -1), (-2, -3), (-4, -1) and (-3, 0). M and N are the images of O under two different transformations; describe each of those single transformations fully."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Check the sizes first: if the image is bigger it must be an enlargement, and if it is the same size but turned round, look for a rotation."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p265_q12.jpg",
+      "altText": "Source visual for edmar-csec-p265-q12 from workbook page 265."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Read the vertices of the three quadrilaterals from the grid and pair them up.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "O: (1, 1), (2, 3), (4, 1), (3, 0);  M: (1, 3), (3, 7), (7, 3), (5, 1);  N: (-1, -1), (-2, -3), (-4, -1), (-3, 0)"
+        },
+        {
+          "type": "text",
+          "value": "Result: Three sets of four vertices"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Compare a side of O with the matching side of M.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "In O the step from (1, 1) to (2, 3) is (1, 2); in M the step from (1, 3) to (3, 7) is (2, 4), which is twice as long. Every side of M is twice the matching side of O."
+        },
+        {
+          "type": "text",
+          "value": "Result: Scale factor 2"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Find the centre of the enlargement using centre = 2 x object - image.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(1, 1) -> (1, 3) gives (2 - 1, 2 - 3) = (1, -1); (4, 1) -> (7, 3) gives (8 - 7, 2 - 3) = (1, -1). All four pairs agree."
+        },
+        {
+          "type": "text",
+          "value": "Result: Centre (1, -1)"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Now compare O with N vertex by vertex.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(1, 1) -> (-1, -1);  (2, 3) -> (-2, -3);  (4, 1) -> (-4, -1);  (3, 0) -> (-3, 0). Both coordinates change sign."
+        },
+        {
+          "type": "text",
+          "value": "Result: (x, y) -> (-x, -y)"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Name the transformation with that rule.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Changing the sign of both coordinates turns every point through a half turn about the origin; for a half turn the direction of turning does not need to be stated."
+        },
+        {
+          "type": "text",
+          "value": "Result: Rotation of 180 degrees about the origin (0, 0)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Match corresponding vertices of O with those of M and N. For M compare side lengths to get a scale factor and then solve for the centre; for N spot the coordinate rule and name the rotation."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "O onto M: an enlargement with centre (1, -1) and scale factor 2.  O onto N: a rotation of 180 degrees about the origin (0, 0)."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "An enlargement multiplies every displacement from a fixed centre by the scale factor, so lengths double while angles stay the same and the image is similar to the object. A rotation of 180 degrees about the origin sends the position vector v to -v, which is exactly the rule (x, y) -> (-x, -y); it preserves both size and orientation, so N is congruent to O and not a mirror image of it."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "describing_o_onto_n_as_a_reflection_sinc",
+      "wrongValue": "incorrect_1",
+      "misconception": "Describing O onto N as a reflection, since a half turn also looks 'flipped' at a glance but preserves orientation.",
+      "correctiveNote": "Avoid this: Describing O onto N as a reflection, since a half turn also looks 'flipped' at a glance but preserves orientation."
+    },
+    {
+      "key": "giving_the_enlargement_without_its_centr",
+      "wrongValue": "incorrect_2",
+      "misconception": "Giving the enlargement without its centre.",
+      "correctiveNote": "Avoid this: Giving the enlargement without its centre."
+    },
+    {
+      "key": "assuming_the_centre_of_enlargement_is_th",
+      "wrongValue": "incorrect_3",
+      "misconception": "Assuming the centre of enlargement is the origin because the shapes are near it.",
+      "correctiveNote": "Avoid this: Assuming the centre of enlargement is the origin because the shapes are near it."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "For a half turn, test the rule (x, y) -> (-x, -y) on every vertex. If it works for all of them the centre is the origin; if not, the centre is elsewhere and you must find it."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "OontoM:anenlargementwithcentre(1,-1)andscalefactor2.OontoN:arotationof180degreesabouttheorigin(",
+    "displayValue": "O onto M: an enlargement with centre (1, -1) and scale factor 2.  O onto N: a rotation of 180 degrees about the origin (",
+    "acceptedForms": [
+      "O onto M: an enlargement with centre (1, -1) and scale factor 2.  O onto N: a rotation of 180 degrees about the origin (",
+      "OontoM:anenlargementwithcentre(1,-1)andscalefactor2.OontoN:arotationof180degreesabouttheorigin("
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Under an enlargement with centre (1, -1) and scale factor 2, what is the image of (3, 0)?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(5,1)",
+      "displayValue": "(5, 1)",
+      "acceptedForms": [
+        "(5, 1)",
+        "(5,1)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "00462f28-f69e-449b-a16a-791db2f1493e",
+      "code": "M1-1.1",
+      "label": "Enlargement, centre and scale factor"
+    },
+    {
+      "objectiveId": "8fdd09c6-df06-4a48-a1f2-308bf8a5fa9e",
+      "code": "M1-1.1",
+      "label": "Rotation of 180 degrees about the origin"
+    },
+    {
+      "objectiveId": "be72b625-fa7a-47ac-ab31-71fdfa1db840",
+      "code": "M1-1.1",
+      "label": "Describing transformations fully"
+    },
+    {
+      "objectiveId": "541c8da2-30eb-4b65-a1b1-2cfed3991ff1",
+      "code": "M1-1.1",
+      "label": "Corresponding vertices"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 12,
+    "pageRef": "p265",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

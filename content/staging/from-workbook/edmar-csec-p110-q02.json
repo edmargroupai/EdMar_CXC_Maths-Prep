@@ -1,0 +1,206 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p110-q02",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the simultaneous equations x − y = 1 and x² + y = 5."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Rearrange the linear equation for y, then substitute into the equation containing x squared."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p110_q02.jpg",
+      "altText": "Source visual for edmar-csec-p110-q02 from workbook page 110."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Make y the subject of the linear equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "from x − y = 1"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = x − 1"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Substitute into the second equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x² + (x − 1) = 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: x² + x − 1 = 5"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Rearrange into standard form.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "subtract 5 from both sides"
+        },
+        {
+          "type": "text",
+          "value": "Result: x² + x − 6 = 0"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Factorise and solve.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(x + 3)(x − 2) = 0"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = −3 or x = 2"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Find the matching y-values.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "y = −3 − 1 = −4; y = 2 − 1 = 1"
+        },
+        {
+          "type": "text",
+          "value": "Result: (−3, −4) and (2, 1)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Write y = x − 1, substitute into x² + y = 5, solve the resulting quadratic and pair each root with its y."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = −3, y = −4 or x = 2, y = 1"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Because y appears only to the first power in both equations, isolating it is straightforward and the substitution leaves a quadratic in x alone. Two roots means the line x − y = 1 cuts the parabola y = 5 − x² twice. Each pair satisfies both originals: for (−3, −4), −3 − (−4) = 1 and 9 + (−4) = 5."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "rearranging_x_y_1_into_y_x_1",
+      "wrongValue": "incorrect_1",
+      "misconception": "Rearranging x − y = 1 into y = x + 1.",
+      "correctiveNote": "Avoid this: Rearranging x − y = 1 into y = x + 1."
+    },
+    {
+      "key": "dropping_the_brackets_around_x_1_and_los",
+      "wrongValue": "incorrect_2",
+      "misconception": "Dropping the brackets around (x − 1) and losing a sign.",
+      "correctiveNote": "Avoid this: Dropping the brackets around (x − 1) and losing a sign."
+    },
+    {
+      "key": "pairing_x_3_with_y_1",
+      "wrongValue": "incorrect_3",
+      "misconception": "Pairing x = −3 with y = 1.",
+      "correctiveNote": "Avoid this: Pairing x = −3 with y = 1."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Substitute your final pairs back into both original equations — with non-linear systems it is the only reliable check."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=−3,y=−4",
+    "displayValue": "= −3, y = −4",
+    "acceptedForms": [
+      "= −3, y = −4",
+      "=−3,y=−4"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve x − y = 2 and x² + y = 10."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(−4,−6)and(3,1)",
+      "displayValue": "(−4, −6) and (3, 1)",
+      "acceptedForms": [
+        "(−4, −6) and (3, 1)",
+        "(−4,−6)and(3,1)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-6.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "7814fde6-0d5f-495d-a67e-229f11c7c4ea",
+      "code": "M1-6.1",
+      "label": "Simultaneous equations, one linear and one non-linear"
+    },
+    {
+      "objectiveId": "2784123e-0f25-4ff9-af46-b1132d850bb7",
+      "code": "M1-6.1",
+      "label": "Substitution method"
+    },
+    {
+      "objectiveId": "e02d4428-0322-451a-a8bc-54b58ae37aee",
+      "code": "M1-6.1",
+      "label": "Factorising a quadratic"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 2,
+    "pageRef": "p110",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

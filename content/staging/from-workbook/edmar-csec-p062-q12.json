@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p062-q12",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "If a = 3, find the value of a³ − 4a."
+    },
+    {
+      "type": "text",
+      "value": "Think first: A cube means three equal factors, not multiplying by three."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p062_q12.jpg",
+      "altText": "Source visual for edmar-csec-p062-q12 from workbook page 62."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write the expression with 3 in place of a.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "a³ − 4a becomes 3³ − 4(3)"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3³ − 4(3)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Evaluate the cube.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3³ = 3 × 3 × 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: 27 − 4(3)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Evaluate the multiplication.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "4 × 3 = 12"
+        },
+        {
+          "type": "text",
+          "value": "Result: 27 − 12"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Subtract.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: 15"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Replace a with 3, work out the cube, work out the product, then subtract."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "a³ − 4a = 15"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "An index tells you how many times the base is used as a factor, so a³ with a = 3 means 3 × 3 × 3. The coefficient 4 in 4a is a separate instruction to multiply. Keeping those two ideas apart is what makes the substitution come out right."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "treating_a_as_3_a_and_getting_9",
+      "wrongValue": "incorrect_1",
+      "misconception": "Treating a³ as 3 × a and getting 9.",
+      "correctiveNote": "Avoid this: Treating a³ as 3 × a and getting 9."
+    },
+    {
+      "key": "working_left_to_right_and_computing_27_4",
+      "wrongValue": "incorrect_2",
+      "misconception": "Working left to right and computing 27 − 4 before multiplying by 3.",
+      "correctiveNote": "Avoid this: Working left to right and computing 27 − 4 before multiplying by 3."
+    },
+    {
+      "key": "confusing_the_base_3_with_the_index_3",
+      "wrongValue": "incorrect_3",
+      "misconception": "Confusing the base 3 with the index 3.",
+      "correctiveNote": "Avoid this: Confusing the base 3 with the index 3."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Say the index out loud as \"three of them multiplied\" before you calculate; it stops a³ collapsing into 3a."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "a³−4a=15",
+    "displayValue": "a³ − 4a = 15",
+    "acceptedForms": [
+      "a³ − 4a = 15",
+      "a³−4a=15"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "If a = 2, find a³ − 4a."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "0",
+      "displayValue": "0",
+      "acceptedForms": [
+        "0",
+        "0"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "73f6691b-b35c-4262-a017-d857b94e192b",
+      "code": "M1-4.1",
+      "label": "Substitution into an algebraic expression"
+    },
+    {
+      "objectiveId": "09d0e7b4-c066-4960-a71d-c76b57e0725d",
+      "code": "M1-4.1",
+      "label": "Index notation (cubes)"
+    },
+    {
+      "objectiveId": "b90c7049-0113-4d95-aaed-198703f0ca14",
+      "code": "M1-4.1",
+      "label": "Order of operations"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 12,
+    "pageRef": "p62",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

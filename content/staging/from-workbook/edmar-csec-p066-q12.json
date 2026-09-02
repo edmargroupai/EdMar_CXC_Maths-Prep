@@ -1,0 +1,210 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p066-q12",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Factorise completely: 24a²b − 18ab²."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Look for the HCF of 24 and 18 as well as the shared letters."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p066_q12.jpg",
+      "altText": "Source visual for edmar-csec-p066-q12 from workbook page 66."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Find the HCF of the coefficients.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "24 = 6 × 4 and 18 = 6 × 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: 6"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Find the lowest power of each letter.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "a² and a give a; b and b² give b"
+        },
+        {
+          "type": "text",
+          "value": "Result: ab"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Combine into the full HCF.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "6 × a × b"
+        },
+        {
+          "type": "text",
+          "value": "Result: 6ab"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Divide each term by 6ab.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "24a²b ÷ 6ab = 4a and 18ab² ÷ 6ab = 3b"
+        },
+        {
+          "type": "text",
+          "value": "Result: 4a and 3b"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Write the factorised form.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: 6ab(4a − 3b)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Find the numerical HCF and the lowest power of a and of b, combine them, then divide each term."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "24a²b − 18ab² = 6ab(4a − 3b)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Removing the highest common factor in one move is what makes the factorisation complete. If a smaller factor such as 2ab were taken out, the bracket 12a − 9b would still share a factor of 3 and the work would be unfinished. Checking the bracket for leftover common factors is the test that the HCF was correct."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "taking_out_2ab_or_3ab_instead_of_6ab",
+      "wrongValue": "incorrect_1",
+      "misconception": "Taking out 2ab or 3ab instead of 6ab.",
+      "correctiveNote": "Avoid this: Taking out 2ab or 3ab instead of 6ab."
+    },
+    {
+      "key": "using_a_b_as_the_letter_part",
+      "wrongValue": "incorrect_2",
+      "misconception": "Using a²b² as the letter part.",
+      "correctiveNote": "Avoid this: Using a²b² as the letter part."
+    },
+    {
+      "key": "turning_the_subtraction_into_an_addition",
+      "wrongValue": "incorrect_3",
+      "misconception": "Turning the subtraction into an addition inside the bracket.",
+      "correctiveNote": "Avoid this: Turning the subtraction into an addition inside the bracket."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "List the factors of both coefficients if you cannot see the HCF instantly; guessing low costs a mark for incomplete factorisation."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "24",
+    "displayValue": "24",
+    "acceptedForms": [
+      "24",
+      "24"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Factorise completely: 20x²y − 15xy²."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "5",
+      "displayValue": "5",
+      "acceptedForms": [
+        "5",
+        "5"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "7a0b93d7-dece-4be0-a913-4ca5bc0433aa",
+      "code": "M1-4.1",
+      "label": "Factorising"
+    },
+    {
+      "objectiveId": "2b7464c1-3d91-48af-acdd-c1c47d8d707f",
+      "code": "M1-4.1",
+      "label": "Highest common factor with two variables"
+    },
+    {
+      "objectiveId": "c256b110-cb96-4461-a725-ea779d64674f",
+      "code": "M1-4.1",
+      "label": "Laws of indices"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 12,
+    "pageRef": "p66",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

@@ -1,0 +1,159 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p095-q01",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Make x the subject of the formula y = x + 9."
+    },
+    {
+      "type": "text",
+      "value": "Think first: x is nearly alone already — only the +9 has to be removed."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p095_q01.jpg",
+      "altText": "Source visual for edmar-csec-p095-q01 from workbook page 95."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Subtract 9 from both sides.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "y − 9 = x + 9 − 9"
+        },
+        {
+          "type": "text",
+          "value": "Result: y − 9 = x"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Turn the equation round so the new subject is on the left.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "An equation reads the same either way"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = y − 9"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Undo the addition by subtracting 9 from both sides, then write x on the left."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = y − 9"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A formula is a balanced equation, so whatever you do to one side you must do to the other. Subtracting 9 is the inverse of adding 9, which strips the +9 away and leaves x standing alone without changing the relationship between x and y."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_x_y_9_by_copying_the_sign_instea",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing x = y + 9 by copying the sign instead of inverting it.",
+      "correctiveNote": "Avoid this: Writing x = y + 9 by copying the sign instead of inverting it."
+    },
+    {
+      "key": "subtracting_9_from_only_one_side",
+      "wrongValue": "incorrect_2",
+      "misconception": "Subtracting 9 from only one side.",
+      "correctiveNote": "Avoid this: Subtracting 9 from only one side."
+    },
+    {
+      "key": "leaving_the_answer_as_y_9_x_without_stat",
+      "wrongValue": "incorrect_3",
+      "misconception": "Leaving the answer as y − 9 = x without stating it as x = …",
+      "correctiveNote": "Avoid this: Leaving the answer as y − 9 = x without stating it as x = …"
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Always finish by writing the new subject on the left with an equals sign — examiners want to see the formula in the requested form."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=y−9",
+    "displayValue": "= y − 9",
+    "acceptedForms": [
+      "= y − 9",
+      "=y−9"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Make x the subject of y = x − 6."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=y+6",
+      "displayValue": "= y + 6",
+      "acceptedForms": [
+        "= y + 6",
+        "=y+6"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "34e370ab-8f49-41b4-a8da-c3be42c5252a",
+      "code": "M1-1.1",
+      "label": "Changing the subject of a formula"
+    },
+    {
+      "objectiveId": "58bcd1b7-d27a-48db-a996-da196ec594aa",
+      "code": "M1-1.1",
+      "label": "Inverse operations"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 1,
+    "pageRef": "p95",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

@@ -1,0 +1,174 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p095-q07",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Make a the subject of the formula v = u + at."
+    },
+    {
+      "type": "text",
+      "value": "Think first: a is multiplied by t and the whole product is added to u, so undo the addition first."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p095_q07.jpg",
+      "altText": "Source visual for edmar-csec-p095-q07 from workbook page 95."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Subtract u from both sides.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "v − u = u + at − u"
+        },
+        {
+          "type": "text",
+          "value": "Result: v − u = at"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Divide both sides by t.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(v − u) ÷ t"
+        },
+        {
+          "type": "text",
+          "value": "Result: (v − u)/t = a"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Write the new subject on the left.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: a = (v − u)/t"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Subtract u from both sides to isolate at, then divide by t."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "a = (v − u)/t"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Reversing a formula means undoing its operations in the opposite order to how they were applied: at was formed by multiplication and then added to u, so subtraction comes first and division second. Keeping v − u inside a bracket before dividing ensures the whole difference is divided by t, not just the v."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_a_v_u_t_so_only_u_is_divided_by_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing a = v − u/t, so only u is divided by t.",
+      "correctiveNote": "Avoid this: Writing a = v − u/t, so only u is divided by t."
+    },
+    {
+      "key": "dividing_by_t_before_subtracting_u",
+      "wrongValue": "incorrect_2",
+      "misconception": "Dividing by t before subtracting u.",
+      "correctiveNote": "Avoid this: Dividing by t before subtracting u."
+    },
+    {
+      "key": "writing_a_u_v_t_with_the_subtraction_the",
+      "wrongValue": "incorrect_3",
+      "misconception": "Writing a = (u − v)/t with the subtraction the wrong way round.",
+      "correctiveNote": "Avoid this: Writing a = (u − v)/t with the subtraction the wrong way round."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When a whole expression is divided, write it over a fraction bar or in brackets — a = (v − u)/t is safe, a = v − u/t is a different formula."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=(v−u)/t",
+    "displayValue": "= (v − u)/t",
+    "acceptedForms": [
+      "= (v − u)/t",
+      "=(v−u)/t"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Make t the subject of v = u + at."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "t=(v−u)/a",
+      "displayValue": "t = (v − u)/a",
+      "acceptedForms": [
+        "t = (v − u)/a",
+        "t=(v−u)/a"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "933b75e6-d852-4bed-a4fa-758d3cae7160",
+      "code": "M1-1.1",
+      "label": "Changing the subject of a formula"
+    },
+    {
+      "objectiveId": "0f23b7dc-a6ac-403f-aefa-6ee2d9f691f1",
+      "code": "M1-1.1",
+      "label": "Inverse operations"
+    },
+    {
+      "objectiveId": "589b9579-19d4-45d1-adae-a7f5a9fadd74",
+      "code": "M1-1.1",
+      "label": "Equations of motion"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 7,
+    "pageRef": "p95",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

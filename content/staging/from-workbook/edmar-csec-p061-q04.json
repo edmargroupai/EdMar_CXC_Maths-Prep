@@ -1,0 +1,194 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p061-q04",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "If l = −2, m = 3 and n = 7, find lm(m − n)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Work out the bracket first, then multiply the three factors, tracking the signs as you go."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p061_q04.jpg",
+      "altText": "Source visual for edmar-csec-p061-q04 from workbook page 61."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Substitute the values.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "l = −2, m = 3, n = 7"
+        },
+        {
+          "type": "text",
+          "value": "Result: (−2)(3)(3 − 7)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Evaluate the bracket.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3 − 7"
+        },
+        {
+          "type": "text",
+          "value": "Result: −4"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Multiply lm.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(−2)(3)"
+        },
+        {
+          "type": "text",
+          "value": "Result: −6"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Multiply the two results.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(−6)(−4), and a negative times a negative is positive"
+        },
+        {
+          "type": "text",
+          "value": "Result: 24"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Substitute the values, evaluate the bracket, then multiply lm by the bracket's value."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "24"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Brackets come before multiplication, so m − n must be found before anything is multiplied by it. Two negative factors appear in the final product - the −6 and the −4 - and a pair of negatives multiplies to a positive, which is why the answer is +24."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "multiplying_out_as_lm_m_n_dropping_the_b",
+      "wrongValue": "incorrect_1",
+      "misconception": "Multiplying out as lm × m − n, dropping the bracket and giving −6 × 3 − 7 = −25.",
+      "correctiveNote": "Avoid this: Multiplying out as lm × m − n, dropping the bracket and giving −6 × 3 − 7 = −25."
+    },
+    {
+      "key": "losing_a_sign_and_giving_24",
+      "wrongValue": "incorrect_2",
+      "misconception": "Losing a sign and giving −24.",
+      "correctiveNote": "Avoid this: Losing a sign and giving −24."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Count the negative factors in a product: an even number of them gives a positive answer, an odd number gives a negative one."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "24",
+    "displayValue": "24",
+    "acceptedForms": [
+      "24",
+      "24"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "If l = −1, m = 4 and n = 6, find lm(m − n)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "8",
+      "displayValue": "8",
+      "acceptedForms": [
+        "8",
+        "8"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "03063cac-2af2-4e9a-adc1-9741f4300a9b",
+      "code": "M1-4.1",
+      "label": "Substitution"
+    },
+    {
+      "objectiveId": "07cd5c7e-b6b5-4969-a9a7-1f0ab925eb58",
+      "code": "M1-4.1",
+      "label": "Directed numbers"
+    },
+    {
+      "objectiveId": "20a0eb52-04f0-4cb0-ad04-af431365bb65",
+      "code": "M1-4.1",
+      "label": "Order of operations"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 4,
+    "pageRef": "p61",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

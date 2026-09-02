@@ -1,0 +1,167 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p059-q06",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the inequality 9 − x < 3x."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Move the −x across to the right so you never have to divide by a negative."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p059_q06.jpg",
+      "altText": "Source visual for edmar-csec-p059-q06 from workbook page 59."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Add x to both sides.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "9 < 3x + x"
+        },
+        {
+          "type": "text",
+          "value": "Result: 9 < 4x"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Divide both sides by 4.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "9/4 < x"
+        },
+        {
+          "type": "text",
+          "value": "Result: x > 9/4"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Write as a decimal.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "9 ÷ 4"
+        },
+        {
+          "type": "text",
+          "value": "Result: x > 2.25"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Add x to both sides to collect the x terms on the right, then divide by 4."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x > 9/4, that is x > 2.25"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Adding x to both sides keeps the inequality direction and leaves a positive coefficient, which removes any risk of a sign error. When the unknown ends up on the right, as in 9 < 4x, reading the statement backwards gives x > 9/4 - the sign turns to face the same quantity it faced before."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "subtracting_3x_from_both_sides_and_then_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Subtracting 3x from both sides and then dividing by −4 without reversing the sign.",
+      "correctiveNote": "Avoid this: Subtracting 3x from both sides and then dividing by −4 without reversing the sign."
+    },
+    {
+      "key": "reading_9_4x_as_x_9_4_when_reversing_the",
+      "wrongValue": "incorrect_2",
+      "misconception": "Reading 9 < 4x as x < 9/4 when reversing the statement.",
+      "correctiveNote": "Avoid this: Reading 9 < 4x as x < 9/4 when reversing the statement."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Move the variable to whichever side keeps its coefficient positive - it is the simplest way to avoid flipping errors."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": ">9/4,thatisx>2.25",
+    "displayValue": "> 9/4, that is x > 2.25",
+    "acceptedForms": [
+      "> 9/4, that is x > 2.25",
+      ">9/4,thatisx>2.25"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve 12 − x < 2x."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": ">4",
+      "displayValue": "> 4",
+      "acceptedForms": [
+        "> 4",
+        ">4"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "5a429a94-a40b-4020-a8d5-5cd17e31841d",
+      "code": "M1-4.1",
+      "label": "Linear inequalities"
+    },
+    {
+      "objectiveId": "5d8aef14-b1bd-4c24-a852-2d8e25a7cf0a",
+      "code": "M1-4.1",
+      "label": "Collecting like terms"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 6,
+    "pageRef": "p59",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

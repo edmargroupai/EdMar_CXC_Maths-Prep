@@ -1,0 +1,220 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p124-q11",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The line L has equation 2x + 5y = 10. Determine the equation of the line perpendicular to L and passing through (−2, 3)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Rearrange L to find its gradient, then flip and change the sign to get the perpendicular gradient."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p124_q11.jpg",
+      "altText": "Source visual for edmar-csec-p124-q11 from workbook page 124."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Make y the subject of 2x + 5y = 10.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5y = 10 − 2x, so y = 2 − 0.4x"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = −0.4x + 2"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Read the gradient of L.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The coefficient of x"
+        },
+        {
+          "type": "text",
+          "value": "Result: m_L = −2/5"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Find the perpendicular gradient — the negative reciprocal.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Flip −2/5 to −5/2 and change the sign"
+        },
+        {
+          "type": "text",
+          "value": "Result: m = 5/2 = 2.5"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Substitute (−2, 3) into y = 2.5x + c.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3 = 2.5(−2) + c = −5 + c"
+        },
+        {
+          "type": "text",
+          "value": "Result: c = 8"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Write the completed equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Replace c by 8"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 2.5x + 8"
+        }
+      ]
+    },
+    {
+      "stepNo": 6,
+      "instruction": "Check the perpendicularity condition.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(−2/5) × (5/2) = −1"
+        },
+        {
+          "type": "text",
+          "value": "Result: Confirmed perpendicular"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Write L in the form y = mx + c to read its gradient, take the negative reciprocal, then substitute (−2, 3) to find c."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "y = 2.5x + 8  (equivalently y = 5x/2 + 8, or 5x − 2y + 16 = 0)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Two lines are perpendicular exactly when the product of their gradients is −1, which means one gradient is the negative reciprocal of the other. Rearranging L first is essential — the gradient cannot be read from 2x + 5y = 10 in that form. The given point then selects the single perpendicular line that passes through it."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "reading_the_gradient_of_l_as_2_or_as_2_f",
+      "wrongValue": "incorrect_1",
+      "misconception": "Reading the gradient of L as 2 or as −2 from the unrearranged equation.",
+      "correctiveNote": "Avoid this: Reading the gradient of L as 2 or as −2 from the unrearranged equation."
+    },
+    {
+      "key": "using_the_reciprocal_5_2_without_changin",
+      "wrongValue": "incorrect_2",
+      "misconception": "Using the reciprocal 5/2 without changing the sign, or the negative −2/5 without flipping.",
+      "correctiveNote": "Avoid this: Using the reciprocal 5/2 without changing the sign, or the negative −2/5 without flipping."
+    },
+    {
+      "key": "sign_slips_when_substituting_the_negativ",
+      "wrongValue": "incorrect_3",
+      "misconception": "Sign slips when substituting the negative x-coordinate.",
+      "correctiveNote": "Avoid this: Sign slips when substituting the negative x-coordinate."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Verify a perpendicular gradient by multiplying the two gradients together — the product must be exactly −1."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "y=2.5x+8(equivalentlyy=5x/2+8,",
+    "displayValue": "y = 2.5x + 8  (equivalently y = 5x/2 + 8,",
+    "acceptedForms": [
+      "y = 2.5x + 8  (equivalently y = 5x/2 + 8,",
+      "y=2.5x+8(equivalentlyy=5x/2+8,"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A line has gradient 3/4. State the gradient of any line perpendicular to it."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "−4/3",
+      "displayValue": "−4/3",
+      "acceptedForms": [
+        "−4/3",
+        "−4/3"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-3.2"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "a2283f24-b045-48ab-a11e-43cba3b70eee",
+      "code": "M1-3.2",
+      "label": "Perpendicular lines"
+    },
+    {
+      "objectiveId": "559f0f63-f6af-436a-a213-99877e2d96da",
+      "code": "M1-3.2",
+      "label": "Rearranging linear equations"
+    },
+    {
+      "objectiveId": "31a88117-7d9c-4f81-aba6-7b830d63d921",
+      "code": "M1-3.2",
+      "label": "Negative reciprocal gradients"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 11,
+    "pageRef": "p124",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

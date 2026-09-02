@@ -1,0 +1,197 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p188-q15",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "OACB is a parallelogram whose diagonals OC and AB meet at M, with OA = a and OB = b. (a) Express OC in terms of a and b. (b) Given that M is the midpoint of OC, express OM in terms of a and b. (c) Express AM in terms of a and b. (d) Hence show that M is also the midpoint of AB."
+    },
+    {
+      "type": "text",
+      "value": "Think first: In the parallelogram OACB the two sides leaving O are a and b, so every other point can be reached by travelling along combinations of those two vectors."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p188_q15.jpg",
+      "altText": "Source visual for edmar-csec-p188-q15 from workbook page 188."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Travel from O to C along two sides of the parallelogram.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "O to A is a, and A to C equals O to B because AC is parallel and equal to OB."
+        },
+        {
+          "type": "text",
+          "value": "Result: OC = a + b"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Take half of OC to reach the midpoint M.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "OM = ½ OC"
+        },
+        {
+          "type": "text",
+          "value": "Result: OM = ½(a + b)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Go from A to M by way of O.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "AM = AO + OM = −a + ½(a + b)"
+        },
+        {
+          "type": "text",
+          "value": "Result: AM = ½(b − a)"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Write AB in terms of a and b and compare it with AM.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "AB = AO + OB = −a + b = b − a, so AM = ½ AB"
+        },
+        {
+          "type": "text",
+          "value": "Result: AM = ½ AB, so M lies on AB halfway along it"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Build OC as the sum of the two sides from O, halve it to reach M, then get AM as AO + OM and compare it with AB."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) OC = a + b  (b) OM = ½(a + b)  (c) AM = ½(b − a)  (d) Since AB = b − a and AM = ½(b − a) = ½AB, the point M lies on AB and divides it equally, so M is the midpoint of AB."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Any point in a plane can be written as a combination of two non-parallel vectors, and in a parallelogram the opposite sides are represented by identical vectors. Because OM came out as exactly half of OC, and AM came out as exactly half of AB, both diagonals are cut in the same place. That single point M is what the vector algebra proves the diagonals of a parallelogram bisect each other."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_oc_a_b_instead_of_a_b_by_mixing_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing OC = a − b instead of a + b by mixing up the direction of AC.",
+      "correctiveNote": "Avoid this: Writing OC = a − b instead of a + b by mixing up the direction of AC."
+    },
+    {
+      "key": "forgetting_that_ao_oa_when_routing_a_jou",
+      "wrongValue": "incorrect_2",
+      "misconception": "Forgetting that AO = −OA when routing a journey through O.",
+      "correctiveNote": "Avoid this: Forgetting that AO = −OA when routing a journey through O."
+    },
+    {
+      "key": "concluding_m_is_the_midpoint_of_ab_from_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Concluding M is the midpoint of AB from the picture rather than from AM = ½AB.",
+      "correctiveNote": "Avoid this: Concluding M is the midpoint of AB from the picture rather than from AM = ½AB."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Turn every vector you need into a journey between named points, then insert O as a stopping point: XY = XO + OY always works."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "OC=a+b",
+    "displayValue": "OC = a + b",
+    "acceptedForms": [
+      "OC = a + b",
+      "OC=a+b"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "In the same parallelogram, express BM in terms of a and b."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "BM=BO+OM=−b+½(a+b)=½(a−b)",
+      "displayValue": "BM = BO + OM = −b + ½(a + b) = ½(a − b)",
+      "acceptedForms": [
+        "BM = BO + OM = −b + ½(a + b) = ½(a − b)",
+        "BM=BO+OM=−b+½(a+b)=½(a−b)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "6933fae8-3dfb-4b30-aa12-0958a5f2c963",
+      "code": "M2-5.1",
+      "label": "Vector addition"
+    },
+    {
+      "objectiveId": "c3496090-e7bf-4c12-af20-916390602518",
+      "code": "M2-5.1",
+      "label": "Position vectors"
+    },
+    {
+      "objectiveId": "86b7772a-5bcd-4d6d-af2d-a7a547ecf8ba",
+      "code": "M2-5.1",
+      "label": "Properties of a parallelogram"
+    },
+    {
+      "objectiveId": "3f5cf17f-a083-4ee1-ae89-0fa95913a4d4",
+      "code": "M2-5.1",
+      "label": "Midpoint of a line segment in vector form"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 15,
+    "pageRef": "p188",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

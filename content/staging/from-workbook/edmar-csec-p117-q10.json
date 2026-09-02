@@ -1,0 +1,186 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p117-q10",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The time t taken to complete a job varies inversely as the number of workers n. If 6 workers take 10 hours to complete a job, how long will it take 15 workers?"
+    },
+    {
+      "type": "text",
+      "value": "Think first: More workers means less time, so the total work — workers multiplied by hours — stays fixed."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p117_q10.jpg",
+      "altText": "Source visual for edmar-csec-p117-q10 from workbook page 117."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write the variation statement as an equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "t varies inversely as n"
+        },
+        {
+          "type": "text",
+          "value": "Result: t = k/n"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Substitute t = 10 and n = 6 to find k.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "10 = k/6"
+        },
+        {
+          "type": "text",
+          "value": "Result: k = 60 (worker-hours)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Substitute n = 15 into t = 60/n.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "t = 60 ÷ 15"
+        },
+        {
+          "type": "text",
+          "value": "Result: t = 4 hours"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Write t = k/n, find k from 6 workers taking 10 hours, then substitute n = 15."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "15 workers will take 4 hours"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The constant k = 60 is the total amount of work measured in worker-hours; it belongs to the job, not to the team. Sharing that fixed workload among more people divides the time proportionally, which is exactly what inverse variation describes."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "scaling_directly_e_g_10_15_6_25_hours_wh",
+      "wrongValue": "incorrect_1",
+      "misconception": "Scaling directly, e.g. 10 × 15/6 = 25 hours, which makes more workers slower.",
+      "correctiveNote": "Avoid this: Scaling directly, e.g. 10 × 15/6 = 25 hours, which makes more workers slower."
+    },
+    {
+      "key": "finding_k_as_6_10_instead_of_6_10",
+      "wrongValue": "incorrect_2",
+      "misconception": "Finding k as 6 ÷ 10 instead of 6 × 10.",
+      "correctiveNote": "Avoid this: Finding k as 6 ÷ 10 instead of 6 × 10."
+    },
+    {
+      "key": "forgetting_to_state_the_units_hours",
+      "wrongValue": "incorrect_3",
+      "misconception": "Forgetting to state the units (hours).",
+      "correctiveNote": "Avoid this: Forgetting to state the units (hours)."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Sense-check inverse variation before you write the answer: if the input went up, the output must come down."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "15",
+    "displayValue": "15",
+    "acceptedForms": [
+      "15",
+      "15"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "8 workers take 6 hours. How long would 12 workers take at the same rate?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "4",
+      "displayValue": "4",
+      "acceptedForms": [
+        "4",
+        "4"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-3.2"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "3df0fa7c-03bd-4a33-aa4f-d0e45e4b4a3e",
+      "code": "M1-3.2",
+      "label": "Inverse variation"
+    },
+    {
+      "objectiveId": "82d4e8f3-94ac-452c-adb4-334571c4235b",
+      "code": "M1-3.2",
+      "label": "Constant of variation"
+    },
+    {
+      "objectiveId": "a3b19194-66bc-48e9-ab3f-07ec75e2d8a4",
+      "code": "M1-3.2",
+      "label": "Worker-hours"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 10,
+    "pageRef": "p117",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

@@ -1,0 +1,182 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p056-q15",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The formula converting degrees Celsius to degrees Fahrenheit is F = 9C/5 + 32. Make C the subject of the formula, then find the temperature in degrees Celsius when F = 95."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Rearrange first, substitute second - it is far safer than substituting into the un-rearranged formula."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p056_q15.jpg",
+      "altText": "Source visual for edmar-csec-p056-q15 from workbook page 56."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Subtract 32 from both sides.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "F - 32 = 9C/5"
+        },
+        {
+          "type": "text",
+          "value": "Result: F - 32 = 9C/5"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Multiply both sides by 5.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5(F - 32) = 9C"
+        },
+        {
+          "type": "text",
+          "value": "Result: 5(F - 32) = 9C"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Divide both sides by 9.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: C = 5(F - 32)/9"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Substitute F = 95.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5(95 - 32)/9 = 5 × 63/9 = 315/9"
+        },
+        {
+          "type": "text",
+          "value": "Result: C = 35"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Subtract 32, multiply by 5 and divide by 9 to make C the subject, then put F = 95 into the result."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "C = 5(F - 32)/9, and when F = 95, C = 35 degrees Celsius"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The 32 is added after the scaling, so it must be removed before the scaling is undone - that is why F - 32 appears as a whole bracket. Multiplying by 5/9 is the exact inverse of multiplying by 9/5, so the two formulae describe the same conversion read in opposite directions."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "dividing_by_9_before_subtracting_32_givi",
+      "wrongValue": "incorrect_1",
+      "misconception": "Dividing by 9 before subtracting 32, giving C = 5F/9 - 32.",
+      "correctiveNote": "Avoid this: Dividing by 9 before subtracting 32, giving C = 5F/9 - 32."
+    },
+    {
+      "key": "multiplying_by_9_and_dividing_by_5_inste",
+      "wrongValue": "incorrect_2",
+      "misconception": "Multiplying by 9 and dividing by 5 instead of the other way round.",
+      "correctiveNote": "Avoid this: Multiplying by 9 and dividing by 5 instead of the other way round."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Rearrange the formula fully before you substitute any numbers - it keeps the algebra clean and earns method marks even if the arithmetic slips."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=5(F-32)/9,andwhenF=95,C=35degreesCelsius",
+    "displayValue": "= 5(F - 32)/9, and when F = 95, C = 35 degrees Celsius",
+    "acceptedForms": [
+      "= 5(F - 32)/9, and when F = 95, C = 35 degrees Celsius",
+      "=5(F-32)/9,andwhenF=95,C=35degreesCelsius"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Use C = 5(F - 32)/9 to convert F = 41 to degrees Celsius."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=5",
+      "displayValue": "= 5",
+      "acceptedForms": [
+        "= 5",
+        "=5"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "86b116e5-079e-4776-a154-4c489871acbf",
+      "code": "M1-4.1",
+      "label": "Transposition of formulae"
+    },
+    {
+      "objectiveId": "01658ef1-4207-483b-adad-dc045c9ee36e",
+      "code": "M1-4.1",
+      "label": "Substitution"
+    },
+    {
+      "objectiveId": "914b0328-9231-4770-abed-d312b429be10",
+      "code": "M1-4.1",
+      "label": "Temperature conversion"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 15,
+    "pageRef": "p56",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

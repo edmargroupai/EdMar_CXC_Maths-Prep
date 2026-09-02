@@ -1,0 +1,211 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p107-q18",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 5,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A right-angled triangle has base (x − 1) cm and perpendicular height (x + 2) cm, with an area of 30 cm². Calculate the value(s) of x and hence the lengths of the base and the perpendicular height."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Use area = ½ × base × height, and clear the half straight away by doubling both sides."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p107_q18.jpg",
+      "altText": "Source visual for edmar-csec-p107-q18 from workbook page 107."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write the area formula using the two perpendicular sides from the diagram.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "area = ½ × base × perpendicular height"
+        },
+        {
+          "type": "text",
+          "value": "Result: ½(x − 1)(x + 2) = 30"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Multiply both sides by 2 to remove the fraction.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2 × 30 = 60"
+        },
+        {
+          "type": "text",
+          "value": "Result: (x − 1)(x + 2) = 60"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Expand and rearrange into standard form.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x² + 2x − x − 2 = 60, so x² + x − 62 = 0"
+        },
+        {
+          "type": "text",
+          "value": "Result: x² + x − 62 = 0"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Apply the quadratic formula with a = 1, b = 1, c = −62.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "b² − 4ac = 1 + 248 = 249, and √249 ≈ 15.78"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = (−1 ± √249) / 2"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Evaluate, reject the negative root, and find the two lengths.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x ≈ 7.39 or x ≈ −8.39; the latter makes both sides negative. Base = x − 1 ≈ 6.39, height = x + 2 ≈ 9.39"
+        },
+        {
+          "type": "text",
+          "value": "Result: x ≈ 7.39, base ≈ 6.39 cm, height ≈ 9.39 cm"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Write ½(x − 1)(x + 2) = 30, double both sides, expand and rearrange, solve with the formula, then reject the root giving negative lengths."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = (−1 + √249)/2 ≈ 7.39; base ≈ 6.39 cm and perpendicular height ≈ 9.39 cm (2 d.p.). The root x ≈ −8.39 is rejected as it gives negative lengths."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "In a right-angled triangle the two legs are perpendicular, so they serve directly as base and height in the area formula — no extra construction is needed. Doubling first avoids carrying a fraction through the expansion. As a check, ½ × 6.39 × 9.39 ≈ 30, which recovers the given area."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "forgetting_the_and_solving_x_1_x_2_30",
+      "wrongValue": "incorrect_1",
+      "misconception": "Forgetting the ½ and solving (x − 1)(x + 2) = 30.",
+      "correctiveNote": "Avoid this: Forgetting the ½ and solving (x − 1)(x + 2) = 30."
+    },
+    {
+      "key": "using_the_hypotenuse_as_the_height",
+      "wrongValue": "incorrect_2",
+      "misconception": "Using the hypotenuse as the height.",
+      "correctiveNote": "Avoid this: Using the hypotenuse as the height."
+    },
+    {
+      "key": "rounding_x_before_computing_the_side_len",
+      "wrongValue": "incorrect_3",
+      "misconception": "Rounding x before computing the side lengths, which compounds the error.",
+      "correctiveNote": "Avoid this: Rounding x before computing the side lengths, which compounds the error."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Clear fractions at the very first step — a quadratic with a ½ in front invites arithmetic slips later on."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=(−1+√249)/2≈7.39;base≈6.39cmandperpendicularheight≈9.39cm(2d.p.).Therootx≈−8.39isrejectedasit",
+    "displayValue": "= (−1 + √249)/2 ≈ 7.39; base ≈ 6.39 cm and perpendicular height ≈ 9.39 cm (2 d.p.). The root x ≈ −8.39 is rejected as it",
+    "acceptedForms": [
+      "= (−1 + √249)/2 ≈ 7.39; base ≈ 6.39 cm and perpendicular height ≈ 9.39 cm (2 d.p.). The root x ≈ −8.39 is rejected as it",
+      "=(−1+√249)/2≈7.39;base≈6.39cmandperpendicularheight≈9.39cm(2d.p.).Therootx≈−8.39isrejectedasit"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A right-angled triangle has legs x cm and (x + 3) cm and area 20 cm². Form the quadratic equation in standard form."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "x²+3x−40=0(givingx=5).",
+      "displayValue": "x² + 3x − 40 = 0 (giving x = 5).",
+      "acceptedForms": [
+        "x² + 3x − 40 = 0 (giving x = 5).",
+        "x²+3x−40=0(givingx=5)."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-6.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "17e7fbe1-0eb0-4215-a9ee-a3ce15eb4741",
+      "code": "M1-6.1",
+      "label": "Area of a triangle"
+    },
+    {
+      "objectiveId": "4f733600-3e92-46cc-a066-56eb8b495f2b",
+      "code": "M1-6.1",
+      "label": "Forming a quadratic equation"
+    },
+    {
+      "objectiveId": "6befaa44-af0e-47d5-a427-f529b6a29fb2",
+      "code": "M1-6.1",
+      "label": "Quadratic formula"
+    },
+    {
+      "objectiveId": "3ee2bf67-5b5a-4407-a92c-e3024efc9d8c",
+      "code": "M1-6.1",
+      "label": "Rejecting invalid solutions"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 18,
+    "pageRef": "p107",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

@@ -1,0 +1,292 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p009-q04",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 4,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Evaluate: (i) (4.9 × 10³)²  (ii) √(0.16/400)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Both parts are index work: square each factor separately in (i), and take the root of top and bottom separately in (ii)."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p009_q04.jpg",
+      "altText": "Source visual for edmar-csec-p009-q04 from workbook page 9."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Square each factor separately in (i).",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(4.9 × 10³)² = 4.9² × (10³)²"
+        },
+        {
+          "type": "text",
+          "value": "Result: 4.9² × 10⁶"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Evaluate the two squares.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "4.9² = 24.01 and (10³)² = 10⁶"
+        },
+        {
+          "type": "text",
+          "value": "Result: 24.01 × 10⁶"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Write the result in standard form.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "24.01 = 2.401 × 10, so 2.401 × 10 × 10⁶"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2.401 × 10⁷"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Split the square root in (ii).",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "√(0.16/400) = √0.16 / √400"
+        },
+        {
+          "type": "text",
+          "value": "Result: 0.4/20"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Carry out the division.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "0.4 ÷ 20"
+        },
+        {
+          "type": "text",
+          "value": "Result: 0.02"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Use (ab)² = a²b² in (i) and rewrite the answer in standard form; in (ii) use √(a/b) = √a/√b."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) 2.401 × 10⁷ (that is, 24 010 000)  (ii) 0.02"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Squaring a product squares every factor, so a number in standard form can be squared piece by piece: the decimal part and the power of ten never interfere with each other. Because 24.01 is bigger than 10, one more factor of ten is moved into the index to restore the standard-form condition 1 ≤ a < 10. In (ii) the square root distributes over a quotient, so a fraction that looks awkward becomes two easy roots."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "doubling_the_index_instead_of_squaring_t",
+      "wrongValue": "incorrect_1",
+      "misconception": "Doubling the index instead of squaring the whole term, giving 4.9 × 10⁶.",
+      "correctiveNote": "Avoid this: Doubling the index instead of squaring the whole term, giving 4.9 × 10⁶."
+    },
+    {
+      "key": "leaving_the_answer_as_24_01_10_which_is_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Leaving the answer as 24.01 × 10⁶, which is not standard form.",
+      "correctiveNote": "Avoid this: Leaving the answer as 24.01 × 10⁶, which is not standard form."
+    },
+    {
+      "key": "squaring_4_9_as_24_1_or_25",
+      "wrongValue": "incorrect_3",
+      "misconception": "Squaring 4.9 as 24.1 or 25.",
+      "correctiveNote": "Avoid this: Squaring 4.9 as 24.1 or 25."
+    },
+    {
+      "key": "taking_0_16_as_0_04_instead_of_0_4",
+      "wrongValue": "incorrect_4",
+      "misconception": "Taking √0.16 as 0.04 instead of 0.4.",
+      "correctiveNote": "Avoid this: Taking √0.16 as 0.04 instead of 0.4."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "After every standard-form answer, check the front number is at least 1 and less than 10 — that one check catches most lost marks in this topic."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_dp",
+    "canonicalValue": "2.401",
+    "displayValue": "2.401",
+    "acceptedForms": [
+      "2.401",
+      "2.401"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "precision": {
+      "kind": "decimal_places",
+      "value": 3,
+      "required": true
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Evaluate (2.5 × 10²)² and √(0.09/100)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_dp",
+      "canonicalValue": "6.25",
+      "displayValue": "6.25",
+      "acceptedForms": [
+        "6.25",
+        "6.25"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "precision": {
+        "kind": "decimal_places",
+        "value": 2,
+        "required": true
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.2"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "289774df-aeaa-4788-ac84-32a82fef4197",
+      "code": "M1-1.2",
+      "label": "Laws of indices"
+    },
+    {
+      "objectiveId": "55928f9a-3960-48d8-a4b5-dc9251e3cce9",
+      "code": "M1-1.2",
+      "label": "Standard form"
+    },
+    {
+      "objectiveId": "d231e9db-ec74-47db-ac5e-aa6c39fcb498",
+      "code": "M1-1.2",
+      "label": "Square roots of decimals and fractions"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 4,
+    "pageRef": "p9",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a.i",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.i): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "numeric_dp",
+        "canonicalValue": "2.401",
+        "displayValue": "2.401",
+        "acceptedForms": [
+          "2.401",
+          "2.401"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0
+        },
+        "precision": {
+          "kind": "decimal_places",
+          "value": 3,
+          "required": true
+        },
+        "normalisation": "numeric_default"
+      }
+    },
+    {
+      "partKey": "a.ii",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.ii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "numeric_dp",
+        "canonicalValue": "0.02",
+        "displayValue": "0.02",
+        "acceptedForms": [
+          "0.02",
+          "0.02"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0
+        },
+        "precision": {
+          "kind": "decimal_places",
+          "value": 2,
+          "required": true
+        },
+        "normalisation": "numeric_default"
+      }
+    }
+  ]
+}

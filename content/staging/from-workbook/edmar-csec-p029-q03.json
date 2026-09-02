@@ -1,0 +1,210 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p029-q03",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "An incomplete Venn diagram shows a class of 28 students, where U is all students, F is those who play football and T is those who play tennis. 12 students play tennis, 15 play football, 8 play neither, and x play BOTH. Complete the diagram in terms of x and find the value of x, and hence the number who play football only and tennis only. (The workbook prints the stem and diagram here; the lettered parts continue beyond this extract.)"
+    },
+    {
+      "type": "text",
+      "value": "Think first: The 15 footballers and 12 tennis players overlap, so you cannot simply add them; label the football-only and tennis-only regions first."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p029_q03.jpg",
+      "altText": "Source visual for edmar-csec-p029-q03 from workbook page 29."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Label the football only region.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "15 play football in total, x of them also play tennis"
+        },
+        {
+          "type": "text",
+          "value": "Result: 15 - x"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Label the tennis only region.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "12 play tennis in total, x of them also play football"
+        },
+        {
+          "type": "text",
+          "value": "Result: 12 - x"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Add all four regions and set the sum to 28.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(15 - x) + x + (12 - x) + 8 = 28, so 35 - x = 28"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 7"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Substitute to complete the diagram.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "football only 15 - 7, tennis only 12 - 7"
+        },
+        {
+          "type": "text",
+          "value": "Result: 8 and 5"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Check the completed diagram.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "8 + 7 + 5 + 8"
+        },
+        {
+          "type": "text",
+          "value": "Result: 28 students"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Write football only as 15 - x and tennis only as 12 - x, add all four regions including the 8 who play neither, set the sum to 28 and solve."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = 7 students play both sports; 8 play football only, 5 play tennis only, and 8 play neither, giving 28 in all."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The figures 15 and 12 are totals for the whole circles, so each already contains the x students in the overlap. Subtracting x gives the part of each circle that belongs to that sport alone, and only then do the regions add without double counting. The 8 who play neither sit outside both circles but still inside U, so they must be included in the total."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_15_and_12_directly_into_the_circ",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing 15 and 12 directly into the circle-only regions.",
+      "correctiveNote": "Avoid this: Writing 15 and 12 directly into the circle-only regions."
+    },
+    {
+      "key": "adding_15_12_8_35_and_concluding_there_a",
+      "wrongValue": "incorrect_2",
+      "misconception": "Adding 15 + 12 + 8 = 35 and concluding there are 35 students.",
+      "correctiveNote": "Avoid this: Adding 15 + 12 + 8 = 35 and concluding there are 35 students."
+    },
+    {
+      "key": "leaving_out_the_8_who_play_neither_when_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Leaving out the 8 who play neither when forming the equation.",
+      "correctiveNote": "Avoid this: Leaving out the 8 who play neither when forming the equation."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Fill a Venn diagram from the middle outwards. The intersection first, then the only regions, then the outside, and every count stays honest."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=7studentsplaybothsports;8playfootballonly,5playtennisonly,and8playneither,giving28inall.",
+    "displayValue": "= 7 students play both sports; 8 play football only, 5 play tennis only, and 8 play neither, giving 28 in all.",
+    "acceptedForms": [
+      "= 7 students play both sports; 8 play football only, 5 play tennis only, and 8 play neither, giving 28 in all.",
+      "=7studentsplaybothsports;8playfootballonly,5playtennisonly,and8playneither,giving28inall."
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "In a class of 30, 18 play cricket, 14 play netball and 4 play neither. How many play both?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "6",
+      "displayValue": "6",
+      "acceptedForms": [
+        "6",
+        "6"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "4fd20314-ecd6-42f1-aa7e-97531c1751eb",
+      "code": "M1-1.1",
+      "label": "Venn diagrams"
+    },
+    {
+      "objectiveId": "39bfc42e-f5ad-42d2-a370-476e29cf5429",
+      "code": "M1-1.1",
+      "label": "Overlapping sets"
+    },
+    {
+      "objectiveId": "f01987df-48cd-4125-a6e5-c941f3752e69",
+      "code": "M1-1.1",
+      "label": "Forming and solving a linear equation"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 3,
+    "pageRef": "p29",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

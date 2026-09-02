@@ -1,0 +1,236 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p114-q01",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 4,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The height h varies directly as the square root of the perimeter p. (a) Write an equation connecting h and p. (b) Given that h = 5.4 when p = 1.44, find h when p = 2.89."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Direct variation with a square root still follows the same pattern: one quantity equals a constant times the other."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p114_q01.jpg",
+      "altText": "Source visual for edmar-csec-p114-q01 from workbook page 114."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write the variation statement as an equation with a constant k.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "h varies directly as √p"
+        },
+        {
+          "type": "text",
+          "value": "Result: h = k√p"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Substitute h = 5.4 and p = 1.44 to find k.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "√1.44 = 1.2, so 5.4 = 1.2k"
+        },
+        {
+          "type": "text",
+          "value": "Result: k = 4.5"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Write the completed equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Replace k by 4.5"
+        },
+        {
+          "type": "text",
+          "value": "Result: h = 4.5√p"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Substitute p = 2.89.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "√2.89 = 1.7, so h = 4.5 × 1.7"
+        },
+        {
+          "type": "text",
+          "value": "Result: h = 7.65"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Write h = k√p, use the given pair to find k, then substitute p = 2.89 into the completed equation."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) h = k√p  (b) k = 4.5, so h = 4.5√p and h = 7.65 when p = 2.89"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Direct variation means the ratio of h to √p never changes, so a single known pair fixes the constant k for every other pair. Once k is known the relationship is a complete formula, and any value of p can be converted to its h. Taking the square root first is essential — h is proportional to √p, not to p itself."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_h_kp_and_ignoring_the_square_roo",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing h = kp and ignoring the square root.",
+      "correctiveNote": "Avoid this: Writing h = kp and ignoring the square root."
+    },
+    {
+      "key": "substituting_p_2_89_without_taking_its_s",
+      "wrongValue": "incorrect_2",
+      "misconception": "Substituting p = 2.89 without taking its square root.",
+      "correctiveNote": "Avoid this: Substituting p = 2.89 without taking its square root."
+    },
+    {
+      "key": "treating_k_as_if_it_changes_from_one_pai",
+      "wrongValue": "incorrect_3",
+      "misconception": "Treating k as if it changes from one pair of values to the next.",
+      "correctiveNote": "Avoid this: Treating k as if it changes from one pair of values to the next."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Write the equation with k in it before you touch any numbers — it keeps the square root in the right place."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "h=k√p",
+    "displayValue": "h = k√p",
+    "acceptedForms": [
+      "h = k√p",
+      "h=k√p"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "y varies directly as √x and y = 12 when x = 9. Find y when x = 25."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "y=20",
+      "displayValue": "y = 20",
+      "acceptedForms": [
+        "y = 20",
+        "y=20"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "ae3f69e7-5038-48df-ad5a-f9c0b45546fa",
+      "code": "M1-1.1",
+      "label": "Direct variation"
+    },
+    {
+      "objectiveId": "453e0ba5-58a4-4052-a055-9daea8fa1632",
+      "code": "M1-1.1",
+      "label": "Constant of variation"
+    },
+    {
+      "objectiveId": "61e2ed95-8b0d-4c88-ad64-6f9542b9f8ac",
+      "code": "M1-1.1",
+      "label": "Square roots"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 1,
+    "pageRef": "p114",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "h=k√p",
+        "displayValue": "h = k√p",
+        "acceptedForms": [
+          "h = k√p",
+          "h=k√p"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "k=4.5,soh=4.5√pan",
+        "displayValue": "k = 4.5, so h = 4.5√p an",
+        "acceptedForms": [
+          "k = 4.5, so h = 4.5√p an",
+          "k=4.5,soh=4.5√pan"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

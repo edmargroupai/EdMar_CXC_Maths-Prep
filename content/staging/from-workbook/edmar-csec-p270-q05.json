@@ -1,0 +1,282 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p270-q05",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 5,
+  "status": "draft",
+  "marks": 6,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Straight roads join the towns L, M, N and R. LR = 18 km, LN = 12 km, MN = 10 km, angle RLN = 25 degrees and angle LMN = 88 degrees. The diagram also shows that the bearing of M from L is 050 degrees. (i) Calculate angle MLN. (ii) Calculate the distance NR. (iii) Determine the bearing of R from L."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Triangle LMN has two sides and a non-included angle, which is a sine-rule situation; triangle LNR has two sides and the angle between them, which is a cosine-rule situation."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p270_q05.jpg",
+      "altText": "Source visual for edmar-csec-p270-q05 from workbook page 270."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "In triangle LMN write the sine rule with the side and angle pairs you know.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "MN / sin(MLN) = LN / sin(LMN), so sin(MLN) = MN x sin(LMN) / LN = 10 x sin 88 / 12"
+        },
+        {
+          "type": "text",
+          "value": "Result: sin(angle MLN) = 0.8328"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Take the inverse sine.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The obtuse alternative is impossible because angle LMN is already 88 degrees."
+        },
+        {
+          "type": "text",
+          "value": "Result: angle MLN = 56.4 degrees (1 d.p.)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "In triangle LNR apply the cosine rule with LN = 12, LR = 18 and the included angle 25 degrees.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "NR squared = 12 squared + 18 squared - 2(12)(18) cos 25 = 144 + 324 - 391.53"
+        },
+        {
+          "type": "text",
+          "value": "Result: NR squared = 76.47"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Take the square root.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "square root of 76.47 = 8.745"
+        },
+        {
+          "type": "text",
+          "value": "Result: NR = 8.75 km (3 s.f.)"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Build the bearing of R from L by adding angles clockwise from north at L.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Bearing of M from L = 050 degrees; then add angle MLN = 56.4 degrees to reach LN, and add angle NLR = 25 degrees to reach LR:  50 + 56.4 + 25 = 131.4"
+        },
+        {
+          "type": "text",
+          "value": "Result: Bearing of R from L = 131 degrees (to the nearest degree)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Use the sine rule in triangle LMN to find angle MLN, the cosine rule in triangle LNR to find NR, then add the 50 degree bearing of M, angle MLN and angle NLR to get the bearing of R from L."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) angle MLN = 56.4 degrees  (ii) NR = 8.75 km (3 s.f.)  (iii) The bearing of R from L is 131 degrees."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The sine rule pairs each side with the angle opposite it, so it is the right tool when you know a side, its opposite angle and one more side. The cosine rule is the right tool when the known angle lies between the two known sides, because no side-angle pair is complete. A bearing is just a total turn measured clockwise from north, so once the roads are in order around L you can accumulate the angles between them to reach any direction."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "using_the_cosine_rule_in_triangle_lmn_wh",
+      "wrongValue": "incorrect_1",
+      "misconception": "Using the cosine rule in triangle LMN, where the 88 degree angle is not between the two known sides.",
+      "correctiveNote": "Avoid this: Using the cosine rule in triangle LMN, where the 88 degree angle is not between the two known sides."
+    },
+    {
+      "key": "choosing_the_obtuse_solution_123_6_degre",
+      "wrongValue": "incorrect_2",
+      "misconception": "Choosing the obtuse solution 123.6 degrees for angle MLN, which would make the angle sum exceed 180 degrees.",
+      "correctiveNote": "Avoid this: Choosing the obtuse solution 123.6 degrees for angle MLN, which would make the angle sum exceed 180 degrees."
+    },
+    {
+      "key": "forgetting_the_initial_050_degrees_and_q",
+      "wrongValue": "incorrect_3",
+      "misconception": "Forgetting the initial 050 degrees and quoting the bearing of R as 81.4 degrees.",
+      "correctiveNote": "Avoid this: Forgetting the initial 050 degrees and quoting the bearing of R as 81.4 degrees."
+    },
+    {
+      "key": "rounding_angle_mln_to_56_degrees_before_",
+      "wrongValue": "incorrect_4",
+      "misconception": "Rounding angle MLN to 56 degrees before adding, which shifts the final bearing.",
+      "correctiveNote": "Avoid this: Rounding angle MLN to 56 degrees before adding, which shifts the final bearing."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Before choosing a rule, mark on the diagram which angle is opposite which side. Complete side-angle pair means sine rule; angle sandwiched between two sides means cosine rule."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "angleMLN=56.4degrees",
+    "displayValue": "angle MLN = 56.4 degrees",
+    "acceptedForms": [
+      "angle MLN = 56.4 degrees",
+      "angleMLN=56.4degrees"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "In triangle ABC, AB = 9, AC = 14 and angle BAC = 40 degrees. Find BC."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "squared=81+196-2(9)(14)cos40=83.9,soBC=9.16(3s.f.)",
+      "displayValue": "squared = 81 + 196 - 2(9)(14)cos 40 = 83.9, so BC = 9.16 (3 s.f.)",
+      "acceptedForms": [
+        "squared = 81 + 196 - 2(9)(14)cos 40 = 83.9, so BC = 9.16 (3 s.f.)",
+        "squared=81+196-2(9)(14)cos40=83.9,soBC=9.16(3s.f.)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "87941024-1d38-4160-a350-4dd3d579f45c",
+      "code": "M1-1.1",
+      "label": "Sine rule"
+    },
+    {
+      "objectiveId": "2151474d-6547-43a3-a954-21ce8099c86a",
+      "code": "M1-1.1",
+      "label": "Cosine rule"
+    },
+    {
+      "objectiveId": "82fd4a00-dc0b-4416-aa10-8c21ec965591",
+      "code": "M1-1.1",
+      "label": "Bearings measured clockwise from north"
+    },
+    {
+      "objectiveId": "0ddac1c2-f704-46b1-a160-04cd169ca310",
+      "code": "M1-1.1",
+      "label": "Adding angles at a point to build a bearing"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 5,
+    "pageRef": "p270",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a.i",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.i): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "angleMLN=56.4degrees",
+        "displayValue": "angle MLN = 56.4 degrees",
+        "acceptedForms": [
+          "angle MLN = 56.4 degrees",
+          "angleMLN=56.4degrees"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.ii",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.ii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "NR=8.75km(3s.f.)",
+        "displayValue": "NR = 8.75 km (3 s.f.)",
+        "acceptedForms": [
+          "NR = 8.75 km (3 s.f.)",
+          "NR=8.75km(3s.f.)"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.iii",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.iii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "ThebearingofRfromLis131degrees.",
+        "displayValue": "The bearing of R from L is 131 degrees.",
+        "acceptedForms": [
+          "The bearing of R from L is 131 degrees.",
+          "ThebearingofRfromLis131degrees."
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

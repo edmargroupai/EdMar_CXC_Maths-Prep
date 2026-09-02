@@ -1,0 +1,211 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p094-q21",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The area of a rectangle is x² + 9x + 20 cm². (a) Factorise the expression completely. (b) Hence write down a possible expression for (c) the length and (d) the width. (e) Calculate the perimeter of the rectangle."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Area of a rectangle is length × width, so the two factors of the area expression are the two sides."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p094_q21.jpg",
+      "altText": "Source visual for edmar-csec-p094-q21 from workbook page 94."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Find two numbers with product 20 and sum 9.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "4 × 5 = 20 and 4 + 5 = 9"
+        },
+        {
+          "type": "text",
+          "value": "Result: 4 and 5"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Write the factorised area.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x² + 9x + 20 = (x + 4)(x + 5)"
+        },
+        {
+          "type": "text",
+          "value": "Result: (x + 4)(x + 5)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Match the factors to the sides, taking the larger bracket as the length.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "length × width = area"
+        },
+        {
+          "type": "text",
+          "value": "Result: length = (x + 5) cm, width = (x + 4) cm"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Add the length and the width.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(x + 5) + (x + 4)"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2x + 9"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Double that sum to get the perimeter.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2(2x + 9)"
+        },
+        {
+          "type": "text",
+          "value": "Result: (4x + 18) cm"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Factorise the area into two brackets, read those brackets as the length and the width, then add them and double for the perimeter."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) (x + 4)(x + 5)  (c) length = (x + 5) cm  (d) width = (x + 4) cm  (e) perimeter = (4x + 18) cm"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Multiplying the two side lengths of a rectangle reproduces its area, so any pair of factors of the area expression is a valid pair of sides. Factorising therefore reverses the area calculation. The perimeter formula P = 2(l + w) then works with algebraic sides exactly as it does with numbers."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "giving_the_perimeter_as_x_5_x_4_and_forg",
+      "wrongValue": "incorrect_1",
+      "misconception": "Giving the perimeter as (x + 5) + (x + 4) and forgetting to double it.",
+      "correctiveNote": "Avoid this: Giving the perimeter as (x + 5) + (x + 4) and forgetting to double it."
+    },
+    {
+      "key": "doubling_only_one_bracket_2_x_5_x_4",
+      "wrongValue": "incorrect_2",
+      "misconception": "Doubling only one bracket: 2(x + 5) + (x + 4).",
+      "correctiveNote": "Avoid this: Doubling only one bracket: 2(x + 5) + (x + 4)."
+    },
+    {
+      "key": "writing_the_perimeter_with_cm_instead_of",
+      "wrongValue": "incorrect_3",
+      "misconception": "Writing the perimeter with cm² instead of cm — perimeter is a length.",
+      "correctiveNote": "Avoid this: Writing the perimeter with cm² instead of cm — perimeter is a length."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Keep track of units as you go: an area is in cm², its factors and the perimeter are in cm. A units slip loses easy marks even when the algebra is right."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "(x+4)(x+5)",
+    "displayValue": "(x + 4)(x + 5)",
+    "acceptedForms": [
+      "(x + 4)(x + 5)",
+      "(x+4)(x+5)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A rectangle has area x² + 7x + 12 cm². Write down its perimeter in terms of x."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "(4x+14)cm,sincex²+7x+12=(x+3)(x+4)",
+      "displayValue": "(4x + 14) cm, since x² + 7x + 12 = (x + 3)(x + 4)",
+      "acceptedForms": [
+        "(4x + 14) cm, since x² + 7x + 12 = (x + 3)(x + 4)",
+        "(4x+14)cm,sincex²+7x+12=(x+3)(x+4)"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M3-2.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "5fce3540-9abe-430a-a92e-8ab2c4b9f2f7",
+      "code": "M3-2.1",
+      "label": "Factorising quadratic trinomials"
+    },
+    {
+      "objectiveId": "a7f729b5-6464-4e38-a963-e97b8a519ccb",
+      "code": "M3-2.1",
+      "label": "Area of a rectangle"
+    },
+    {
+      "objectiveId": "216b30e8-d32c-4b2b-ae4f-ad742ae0fb1e",
+      "code": "M3-2.1",
+      "label": "Perimeter of a rectangle"
+    },
+    {
+      "objectiveId": "a92f1d8f-103e-46ab-adaa-8996e8690e10",
+      "code": "M3-2.1",
+      "label": "Collecting like terms"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 21,
+    "pageRef": "p94",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

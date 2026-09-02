@@ -1,0 +1,153 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p056-q11",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Make x the subject of the formula y = (x - 4)/3."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The right-hand side subtracts 4 then divides by 3, so reverse both moves in the opposite order."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p056_q11.jpg",
+      "altText": "Source visual for edmar-csec-p056-q11 from workbook page 56."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Multiply both sides by 3.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3y = 3 × (x - 4)/3"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3y = x - 4"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Add 4 to both sides.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3y + 4 = x - 4 + 4"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 3y + 4"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Multiply both sides by 3 to clear the fraction, then add 4."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = 3y + 4"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Clearing the denominator first keeps the working free of fractions. Because the whole of x - 4 was divided by 3, the whole of it reappears when you multiply by 3 - that is why the answer is 3y + 4 and not 3y - 4 or 3(y + 4)."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "multiplying_only_the_x_by_3_giving_3y_3x",
+      "wrongValue": "incorrect_1",
+      "misconception": "Multiplying only the x by 3, giving 3y = 3x - 4.",
+      "correctiveNote": "Avoid this: Multiplying only the x by 3, giving 3y = 3x - 4."
+    },
+    {
+      "key": "adding_4_before_multiplying_by_3_giving_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Adding 4 before multiplying by 3, giving x = 3(y + 4).",
+      "correctiveNote": "Avoid this: Adding 4 before multiplying by 3, giving x = 3(y + 4)."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Clear fractions first: multiplying both sides by the denominator removes the most common source of slips."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=3y+4",
+    "displayValue": "= 3y + 4",
+    "acceptedForms": [
+      "= 3y + 4",
+      "=3y+4"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Make x the subject of y = (x + 5)/2."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=2y-5",
+      "displayValue": "= 2y - 5",
+      "acceptedForms": [
+        "= 2y - 5",
+        "=2y-5"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "92e54596-c412-4ceb-ae4e-2e811bcfce99",
+      "code": "M1-4.1",
+      "label": "Transposition of formulae"
+    },
+    {
+      "objectiveId": "3602d4c9-75b4-4b81-a843-c69575fae4a0",
+      "code": "M1-4.1",
+      "label": "Inverse operations"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 11,
+    "pageRef": "p56",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

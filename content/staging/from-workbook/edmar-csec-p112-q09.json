@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p112-q09",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the simultaneous equations x − y = 3 and x² − y² = 21."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Notice that x² − y² is a difference of two squares — factorising it makes this almost immediate."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p112_q09.jpg",
+      "altText": "Source visual for edmar-csec-p112-q09 from workbook page 112."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Factorise the second equation as a difference of two squares.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x² − y² = (x − y)(x + y)"
+        },
+        {
+          "type": "text",
+          "value": "Result: (x − y)(x + y) = 21"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Substitute x − y = 3 from the first equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3(x + y) = 21"
+        },
+        {
+          "type": "text",
+          "value": "Result: x + y = 7"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Add this to x − y = 3 to eliminate y.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(x + y) + (x − y) = 7 + 3, so 2x = 10"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 5"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Substitute back to find y, then check.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "5 − y = 3 gives y = 2; check 25 − 4 = 21"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 5, y = 2"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Factorise x² − y² as (x − y)(x + y), substitute the known value of x − y to find x + y, then solve the two linear equations together."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x = 5, y = 2"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Recognising the difference of two squares turns the non-linear equation into a product in which one factor is already known, so it collapses into a second linear equation. From there the system is an ordinary pair of linear simultaneous equations solved by elimination. Substituting and expanding would also work but takes considerably longer."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_x_y_as_x_y_and_losing_the_second",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing x² − y² as (x − y)² and losing the second factor.",
+      "correctiveNote": "Avoid this: Writing x² − y² as (x − y)² and losing the second factor."
+    },
+    {
+      "key": "dividing_21_by_3_but_calling_the_result_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Dividing 21 by 3 but calling the result x rather than x + y.",
+      "correctiveNote": "Avoid this: Dividing 21 by 3 but calling the result x rather than x + y."
+    },
+    {
+      "key": "subtracting_the_two_linear_equations_whe",
+      "wrongValue": "incorrect_3",
+      "misconception": "Subtracting the two linear equations when adding is what eliminates y.",
+      "correctiveNote": "Avoid this: Subtracting the two linear equations when adding is what eliminates y."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Whenever x² − y² appears in a simultaneous-equation question, factorise it first — the other equation almost always supplies one of the brackets."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "=5,y=2",
+    "displayValue": "= 5, y = 2",
+    "acceptedForms": [
+      "= 5, y = 2",
+      "=5,y=2"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve x − y = 2 and x² − y² = 16."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=5,y=3",
+      "displayValue": "= 5, y = 3",
+      "acceptedForms": [
+        "= 5, y = 3",
+        "=5,y=3"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-6.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "964cf620-1792-4aba-a845-a52cdeeb971f",
+      "code": "M1-6.1",
+      "label": "Difference of two squares"
+    },
+    {
+      "objectiveId": "9102882e-c936-46e8-aa69-6b287a5b4818",
+      "code": "M1-6.1",
+      "label": "Simultaneous equations"
+    },
+    {
+      "objectiveId": "029a2f7e-a972-45c3-a50c-80856fa0b9b3",
+      "code": "M1-6.1",
+      "label": "Elimination method"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 9,
+    "pageRef": "p112",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

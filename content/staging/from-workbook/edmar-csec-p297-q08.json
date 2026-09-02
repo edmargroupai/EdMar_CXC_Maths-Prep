@@ -1,0 +1,221 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p297-q08",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "P = (3  -9 / a  7), Q = (-1  b / -4  1) and R = (c  -3 / -4  8). (a) Given that P + Q = R, find the values of a, b and c. (b) Solve the simultaneous equations 5x - 2y = 44 and 2x + 3y = 10 using a matrix method."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Matrix addition works position by position, so each corner of the matrices gives its own small equation."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p297_q08.jpg",
+      "altText": "Source visual for edmar-csec-p297-q08 from workbook page 297."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Add the top-left entries and equate with R.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3 + (-1) = 2, and this must equal c."
+        },
+        {
+          "type": "text",
+          "value": "Result: c = 2"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Add the top-right entries and equate.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "-9 + b = -3"
+        },
+        {
+          "type": "text",
+          "value": "Result: b = 6"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Add the bottom-left entries and equate; check the bottom-right as well.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "a + (-4) = -4 gives a = 0; the bottom-right gives 7 + 1 = 8, which matches R."
+        },
+        {
+          "type": "text",
+          "value": "Result: a = 0"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "For (b), write AX = B and find the determinant.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "A = (5  -2 / 2  3), X = (x / y), B = (44 / 10);  det A = (5)(3) - (-2)(2) = 15 + 4"
+        },
+        {
+          "type": "text",
+          "value": "Result: det A = 19"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Form the inverse and multiply it by B.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "A inverse = (1/19)(3  2 / -2  5);  X = (1/19)((3)(44) + (2)(10) / (-2)(44) + (5)(10)) = (1/19)(152 / -38)"
+        },
+        {
+          "type": "text",
+          "value": "Result: X = (8 / -2), so x = 8 and y = -2"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Add P and Q entry by entry, equate each entry with the matching entry of R to get a, b and c, then write the equations as AX = B and use X = A inverse times B."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) a = 0, b = 6, c = 2  (b) x = 8, y = -2"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Matrices are equal exactly when all corresponding elements are equal, so a single matrix equation such as P + Q = R unpacks into four independent number equations, one for each position. For the simultaneous equations, AX = B can be solved by multiplying on the left by A inverse, since A inverse times A is the identity matrix, which leaves X alone; this works whenever det A is not zero."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "trying_to_multiply_p_and_q_instead_of_ad",
+      "wrongValue": "incorrect_1",
+      "misconception": "Trying to multiply P and Q instead of adding them.",
+      "correctiveNote": "Avoid this: Trying to multiply P and Q instead of adding them."
+    },
+    {
+      "key": "sign_errors_when_the_determinant_involve",
+      "wrongValue": "incorrect_2",
+      "misconception": "Sign errors when the determinant involves -(-2)(2).",
+      "correctiveNote": "Avoid this: Sign errors when the determinant involves -(-2)(2)."
+    },
+    {
+      "key": "multiplying_b_by_a_inverse_on_the_right_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Multiplying B by A inverse on the right instead of the left.",
+      "correctiveNote": "Avoid this: Multiplying B by A inverse on the right instead of the left."
+    },
+    {
+      "key": "forgetting_to_divide_the_final_column_by",
+      "wrongValue": "incorrect_4",
+      "misconception": "Forgetting to divide the final column by the determinant.",
+      "correctiveNote": "Avoid this: Forgetting to divide the final column by the determinant."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Substitute your x and y back into both equations. Here 5(8) - 2(-2) = 44 and 2(8) + 3(-2) = 10, so the answer is confirmed."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "a=0,b=6,c=2",
+    "displayValue": "a = 0, b = 6, c = 2",
+    "acceptedForms": [
+      "a = 0, b = 6, c = 2",
+      "a=0,b=6,c=2"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Find the determinant of (5  -2 / 2  3)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "19",
+      "displayValue": "19",
+      "acceptedForms": [
+        "19",
+        "19"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "6e50324a-e73d-4ae0-a594-494e1b400739",
+      "code": "M2-4.1",
+      "label": "Addition of matrices"
+    },
+    {
+      "objectiveId": "b1423f28-57d3-4d5b-ad23-50b29ff5c10f",
+      "code": "M2-4.1",
+      "label": "Equating corresponding elements"
+    },
+    {
+      "objectiveId": "611c02fd-6bf1-484c-aa06-f0c0ce578e0e",
+      "code": "M2-4.1",
+      "label": "Determinant and inverse of a 2x2 matrix"
+    },
+    {
+      "objectiveId": "26c39ad1-ae57-4533-ab4b-15e9ff8c979a",
+      "code": "M2-4.1",
+      "label": "Solving simultaneous equations with a matrix method"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 8,
+    "pageRef": "p297",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

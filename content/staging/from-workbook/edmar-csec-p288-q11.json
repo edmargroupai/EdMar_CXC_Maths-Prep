@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p288-q11",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "In triangle OPQ, OP = 3u and OQ = v. Q is the midpoint of OR and M is the midpoint of PQ. L lies on OP with OL = (2/3)OP. (i) Write, in terms of u and v, an expression for a) LM and b) PR. (ii) Prove that L, M and R are collinear."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Q being the midpoint of OR means OR = 2v — that single line makes the collinearity fall out at the end."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p288_q11.jpg",
+      "altText": "Source visual for edmar-csec-p288-q11 from workbook page 288."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Write OL and OR from the given conditions.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "OL = (2/3)(3u) = 2u; Q is the midpoint of OR so OR = 2 OQ = 2v"
+        },
+        {
+          "type": "text",
+          "value": "Result: OL = 2u, OR = 2v"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Find OM using the midpoint rule on P and Q.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "OM = (1/2)(OP + OQ) = (1/2)(3u + v)"
+        },
+        {
+          "type": "text",
+          "value": "Result: OM = (3/2)u + (1/2)v"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Subtract OL from OM to get LM.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "LM = (3/2)u + (1/2)v − 2u = −(1/2)u + (1/2)v"
+        },
+        {
+          "type": "text",
+          "value": "Result: LM = (1/2)(v − u)"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Subtract OP from OR to get PR.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "PR = OR − OP = 2v − 3u"
+        },
+        {
+          "type": "text",
+          "value": "Result: PR = 2v − 3u"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Form LR and compare it with LM.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "LR = OR − OL = 2v − 2u = 2(v − u) = 4 × (1/2)(v − u)"
+        },
+        {
+          "type": "text",
+          "value": "Result: LR = 4 LM"
+        }
+      ]
+    },
+    {
+      "stepNo": 6,
+      "instruction": "State the conclusion.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "LR is a scalar multiple of LM and both start at L"
+        },
+        {
+          "type": "text",
+          "value": "Result: L, M and R are collinear"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Write OL = 2u and OR = 2v, find M as the midpoint of PQ, then form LM and LR and show one is a multiple of the other."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) a) LM = (1/2)(v − u) = (1/2)v − (1/2)u  b) PR = 2v − 3u  (ii) LR = 2v − 2u = 4 × (1/2)(v − u) = 4 LM. Since LR is a scalar multiple of LM and the two vectors share the point L, the points L, M and R lie on one straight line."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Two vectors that are scalar multiples of each other point along the same direction; if they also start at the same point, that direction is a single straight line through all three points. The rest is bookkeeping: the midpoint rule places M, the fraction 2/3 places L, and the midpoint condition on OR doubles v to reach R."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "using_or_v_instead_of_2v_q_is_the_midpoi",
+      "wrongValue": "incorrect_1",
+      "misconception": "Using OR = v instead of 2v — Q is the midpoint of OR, not of OQ.",
+      "correctiveNote": "Avoid this: Using OR = v instead of 2v — Q is the midpoint of OR, not of OQ."
+    },
+    {
+      "key": "writing_ol_2_3_u_instead_of_2_3_3u_2u",
+      "wrongValue": "incorrect_2",
+      "misconception": "Writing OL = (2/3)u instead of (2/3)(3u) = 2u.",
+      "correctiveNote": "Avoid this: Writing OL = (2/3)u instead of (2/3)(3u) = 2u."
+    },
+    {
+      "key": "comparing_lm_with_mr_but_not_tying_the_t",
+      "wrongValue": "incorrect_3",
+      "misconception": "Comparing LM with MR but not tying the two vectors to a common point.",
+      "correctiveNote": "Avoid this: Comparing LM with MR but not tying the two vectors to a common point."
+    },
+    {
+      "key": "stating_parallel_as_the_conclusion_inste",
+      "wrongValue": "incorrect_4",
+      "misconception": "Stating 'parallel' as the conclusion instead of 'collinear'.",
+      "correctiveNote": "Avoid this: Stating 'parallel' as the conclusion instead of 'collinear'."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "For collinearity, pick the two vectors that share a vertex (here LM and LR) — comparing LM with MR works too but the shared-point wording is cleaner."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "a)LM=(1/2)(v−u)=(1/2)v−(1/2)u",
+    "displayValue": "a) LM = (1/2)(v − u) = (1/2)v − (1/2)u",
+    "acceptedForms": [
+      "a) LM = (1/2)(v − u) = (1/2)v − (1/2)u",
+      "a)LM=(1/2)(v−u)=(1/2)v−(1/2)u"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "If AB = 3w and AC = 12w, what can you say about A, B and C?"
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=4AB,andbothstartatA,soA,BandCarecollinear.",
+      "displayValue": "= 4 AB, and both start at A, so A, B and C are collinear.",
+      "acceptedForms": [
+        "= 4 AB, and both start at A, so A, B and C are collinear.",
+        "=4AB,andbothstartatA,soA,BandCarecollinear."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M2-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "6685888f-c128-4e8d-a46f-5d0d4d98ecfb",
+      "code": "M2-5.1",
+      "label": "Position vectors"
+    },
+    {
+      "objectiveId": "3be3fb6a-ae13-4c0a-ae56-d25a85d8a0d2",
+      "code": "M2-5.1",
+      "label": "Midpoint of a line segment"
+    },
+    {
+      "objectiveId": "3b7c7128-24a3-4373-a410-7439e4ff0cfc",
+      "code": "M2-5.1",
+      "label": "Dividing a line in a given ratio"
+    },
+    {
+      "objectiveId": "464517e9-c186-4e0a-a8bf-524f336f6b1c",
+      "code": "M2-5.1",
+      "label": "Collinearity via scalar multiples"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 11,
+    "pageRef": "p288",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

@@ -1,0 +1,153 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p059-q04",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Solve the inequality 4x + 5 ≤ 21."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Undo the addition first, then the multiplication."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p059_q04.jpg",
+      "altText": "Source visual for edmar-csec-p059-q04 from workbook page 59."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Subtract 5 from both sides.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "4x ≤ 21 − 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: 4x ≤ 16"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Divide both sides by 4.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "4x/4 ≤ 16/4"
+        },
+        {
+          "type": "text",
+          "value": "Result: x ≤ 4"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Subtract 5 from both sides, then divide by 4."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "x ≤ 4"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The same inverse operations that solve 4x + 5 = 21 also solve the inequality, because both sides are changed by identical positive amounts. The result x ≤ 4 describes every number from 4 downwards, with 4 itself included."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "adding_5_instead_of_subtracting_it_givin",
+      "wrongValue": "incorrect_1",
+      "misconception": "Adding 5 instead of subtracting it, giving 4x ≤ 26.",
+      "correctiveNote": "Avoid this: Adding 5 instead of subtracting it, giving 4x ≤ 26."
+    },
+    {
+      "key": "writing_x_16_by_forgetting_to_divide_by_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Writing x ≤ 16 by forgetting to divide by 4.",
+      "correctiveNote": "Avoid this: Writing x ≤ 16 by forgetting to divide by 4."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Deal with the constant term before the coefficient - it is the reverse of how the expression was built."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "≤4",
+    "displayValue": "≤ 4",
+    "acceptedForms": [
+      "≤ 4",
+      "≤4"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve 3x + 7 ≤ 19."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "≤4",
+      "displayValue": "≤ 4",
+      "acceptedForms": [
+        "≤ 4",
+        "≤4"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "5a860eea-cc0c-4eea-ac19-02e19c1fd744",
+      "code": "M1-4.1",
+      "label": "Linear inequalities"
+    },
+    {
+      "objectiveId": "d399e5a6-dbd9-476c-a459-7b695783e07c",
+      "code": "M1-4.1",
+      "label": "Inverse operations"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 4,
+    "pageRef": "p59",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

@@ -1,0 +1,211 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p136-q06",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Use the grid to solve 3x − 2y = 6 and x + y = 6 graphically, giving the solution correct to 1 decimal place. (a) Draw both lines. (b) State the solution correct to 1 decimal place."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Rearrange both equations into y = mx + c so the lines are easy to plot accurately on the grid."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p136_q06.jpg",
+      "altText": "Source visual for edmar-csec-p136-q06 from workbook page 136."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Rearrange 3x − 2y = 6.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3x − 6 = 2y, so y = (3x − 6)/2"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 1.5x − 3"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Rearrange x + y = 6.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Subtract x from both sides"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = 6 − x"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Build points for each line.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "y = 1.5x − 3: (0, -3), (2, 0), (4, 3).  y = 6 − x: (0, 6), (3, 3), (6, 0)"
+        },
+        {
+          "type": "text",
+          "value": "Result: Three points for each line"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Plot and join both lines, then read where they cross.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The crossing point sits a little past x = 3.5, just under y = 2.5"
+        },
+        {
+          "type": "text",
+          "value": "Result: About (3.6, 2.4)"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Confirm the reading algebraically.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "1.5x − 3 = 6 − x → 2.5x = 9 → x = 3.6, then y = 6 − 3.6 = 2.4"
+        },
+        {
+          "type": "text",
+          "value": "Result: x = 3.6, y = 2.4"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Make y the subject of each equation, plot three points per line, read the intersection, and confirm the reading algebraically before rounding."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) Both lines drawn on the grid  (b) x = 3.6, y = 2.4 (to 1 decimal place)."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A graphical solution finds the single point that lies on both lines, and the accuracy you can claim is limited by how finely you can read the grid. Asking for 1 decimal place is a signal that the answer will not land on a whole gridline, so the lines must be drawn with a ruler and read carefully between the small squares. Substituting back into the equations turns an estimate into a confirmed value."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "dividing_only_one_term_when_rearranging_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Dividing only one term when rearranging 2y = 3x − 6, giving y = 3x − 3.",
+      "correctiveNote": "Avoid this: Dividing only one term when rearranging 2y = 3x − 6, giving y = 3x − 3."
+    },
+    {
+      "key": "reading_the_intersection_to_the_nearest_",
+      "wrongValue": "incorrect_2",
+      "misconception": "Reading the intersection to the nearest whole number when a decimal is asked for.",
+      "correctiveNote": "Avoid this: Reading the intersection to the nearest whole number when a decimal is asked for."
+    },
+    {
+      "key": "drawing_the_lines_freehand_so_they_cross",
+      "wrongValue": "incorrect_3",
+      "misconception": "Drawing the lines freehand so they cross in the wrong square.",
+      "correctiveNote": "Avoid this: Drawing the lines freehand so they cross in the wrong square."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "When a graph question asks for a decimal answer, draw long lines right across the grid — a short line segment makes the crossing point far harder to read."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Bothlinesdrawnonthegrid",
+    "displayValue": "Both lines drawn on the grid",
+    "acceptedForms": [
+      "Both lines drawn on the grid",
+      "Bothlinesdrawnonthegrid"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Solve y = 2x and y = 6 − x graphically."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "Theycrossat(2,4),sox=2,y=4.",
+      "displayValue": "They cross at (2, 4), so x = 2, y = 4.",
+      "acceptedForms": [
+        "They cross at (2, 4), so x = 2, y = 4.",
+        "Theycrossat(2,4),sox=2,y=4."
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-5.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "035b71ed-bc49-4196-abf6-9ca44cf82863",
+      "code": "M1-5.1",
+      "label": "Rearranging linear equations"
+    },
+    {
+      "objectiveId": "b11cf4e6-d8dd-44b9-a5cb-2a0af3c399a3",
+      "code": "M1-5.1",
+      "label": "Drawing straight-line graphs"
+    },
+    {
+      "objectiveId": "bcddb761-4a73-425b-a48a-9dabe42b37c7",
+      "code": "M1-5.1",
+      "label": "Graphical solution of simultaneous equations"
+    },
+    {
+      "objectiveId": "82066059-3fdd-4b6b-a8d8-6a4889f9b20e",
+      "code": "M1-5.1",
+      "label": "Rounding to 1 decimal place"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 6,
+    "pageRef": "p136",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

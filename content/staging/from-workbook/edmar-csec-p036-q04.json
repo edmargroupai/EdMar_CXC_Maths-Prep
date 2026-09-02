@@ -1,0 +1,201 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p036-q04",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A square ABCD is drawn inside a circle with all four vertices on the circumference, and each side of the square is 11 cm. (i) Show that the diameter of the circle is 11√2 cm. (Only part (i) appears in this extract.)"
+    },
+    {
+      "type": "text",
+      "value": "Think first: The diagonal AC of the square passes through the centre of the circle, so the diagonal and the diameter are the same segment."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p036_q04.jpg",
+      "altText": "Source visual for edmar-csec-p036-q04 from workbook page 36."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Identify the right angle in the square.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "angle ABC = 90° because ABCD is a square, with AB = BC = 11 cm"
+        },
+        {
+          "type": "text",
+          "value": "Result: right-angled triangle ABC"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Apply Pythagoras' theorem to find the diagonal AC.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "AC² = AB² + BC² = 11² + 11² = 121 + 121"
+        },
+        {
+          "type": "text",
+          "value": "Result: AC² = 242"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Take the square root and simplify the surd.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "AC = √242 = √(121 x 2) = √121 x √2"
+        },
+        {
+          "type": "text",
+          "value": "Result: AC = 11√2 cm"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Explain why AC is a diameter.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "angle ABC = 90° stands on AC, and an angle in a semicircle is 90°, so AC passes through the centre"
+        },
+        {
+          "type": "text",
+          "value": "Result: diameter = 11√2 cm as required"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Apply Pythagoras to the right-angled triangle ABC formed by two sides and the diagonal, simplify the surd, and explain why that diagonal is a diameter."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) AC² = 11² + 11² = 242, so AC = √242 = 11√2 cm, and since angle ABC = 90° is subtended by AC the segment AC is a diameter. The diameter is therefore 11√2 cm."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "In a square the diagonal makes a right-angled isosceles triangle with two sides, and Pythagoras gives its length as side x √2 every time. The diagonal is a diameter because the right angle at B stands on AC, and the converse of the angle-in-a-semicircle theorem says a chord subtending a right angle on the circle must pass through the centre. Both diagonals of the square are therefore diameters, which is also why the centre of the circle is the centre of the square."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "treating_a_side_of_the_square_as_the_dia",
+      "wrongValue": "incorrect_1",
+      "misconception": "Treating a side of the square as the diameter.",
+      "correctiveNote": "Avoid this: Treating a side of the square as the diameter."
+    },
+    {
+      "key": "leaving_the_answer_as_242_when_the_quest",
+      "wrongValue": "incorrect_2",
+      "misconception": "Leaving the answer as √242 when the question asks you to show the form 11√2.",
+      "correctiveNote": "Avoid this: Leaving the answer as √242 when the question asks you to show the form 11√2."
+    },
+    {
+      "key": "assuming_the_diagonal_is_a_diameter_with",
+      "wrongValue": "incorrect_3",
+      "misconception": "Assuming the diagonal is a diameter without giving a reason, when show that questions want the justification.",
+      "correctiveNote": "Avoid this: Assuming the diagonal is a diameter without giving a reason, when show that questions want the justification."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "In a show that question, finish at exactly the form printed in the question and state the geometric reason. The final line of your working should read identically to the target."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "AC²=11²+11²=242,soAC=√242=11√2cm,andsinceangleABC=90°issubtendedbyACthesegmentACisadiameter",
+    "displayValue": "AC² = 11² + 11² = 242, so AC = √242 = 11√2 cm, and since angle ABC = 90° is subtended by AC the segment AC is a diameter",
+    "acceptedForms": [
+      "AC² = 11² + 11² = 242, so AC = √242 = 11√2 cm, and since angle ABC = 90° is subtended by AC the segment AC is a diameter",
+      "AC²=11²+11²=242,soAC=√242=11√2cm,andsinceangleABC=90°issubtendedbyACthesegmentACisadiameter"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A square of side 7 cm is inscribed in a circle. Find the diameter in surd form."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "7",
+      "displayValue": "7",
+      "acceptedForms": [
+        "7",
+        "7"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "f0976b21-e0c3-48e2-a54f-e4191153d4c8",
+      "code": "M1-1.1",
+      "label": "Pythagoras' theorem"
+    },
+    {
+      "objectiveId": "1d80ea1e-f742-48e3-a347-eca142d28134",
+      "code": "M1-1.1",
+      "label": "Properties of a square"
+    },
+    {
+      "objectiveId": "6fc2a3ee-5c72-4283-a51d-e019f9d6240e",
+      "code": "M1-1.1",
+      "label": "Circle: diameter and a cyclic square"
+    },
+    {
+      "objectiveId": "106d2dbd-830b-42e5-a20a-3cb2d3fee6a5",
+      "code": "M1-1.1",
+      "label": "Surds"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 4,
+    "pageRef": "p36",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

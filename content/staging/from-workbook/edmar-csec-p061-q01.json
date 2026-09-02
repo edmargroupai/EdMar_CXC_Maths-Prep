@@ -1,0 +1,215 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p061-q01",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 5,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Calculate the value of V, where V = π((R − r²)/2 ÷ (R + r)), given R = 22.8, r = 7.50 and π = 3.14."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Build the answer from the inside out: square r first, then the numerator, then the division, and multiply by π last."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p061_q01.jpg",
+      "altText": "Source visual for edmar-csec-p061-q01 from workbook page 61."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Square r.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "7.50 × 7.50"
+        },
+        {
+          "type": "text",
+          "value": "Result: r² = 56.25"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Evaluate the numerator R − r² and halve it.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "22.8 − 56.25 = −33.45, then −33.45 ÷ 2"
+        },
+        {
+          "type": "text",
+          "value": "Result: −16.725"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Evaluate R + r.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "22.8 + 7.50"
+        },
+        {
+          "type": "text",
+          "value": "Result: 30.30"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Divide.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "−16.725 ÷ 30.30"
+        },
+        {
+          "type": "text",
+          "value": "Result: −0.5520 (4 d.p.)"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Multiply by π = 3.14.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3.14 × (−0.5520)"
+        },
+        {
+          "type": "text",
+          "value": "Result: V ≈ −1.73"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Substitute the given values, evaluate the top of the fraction, divide by (R + r), then multiply by π."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "V ≈ −1.73 (to 3 significant figures)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Indices are evaluated before subtraction, which is why r is squared before it is taken from R. The bracket containing the division must be completed before π multiplies it, so π is the very last operation. Because r² is much larger than R here, the numerator is negative and so is V - the arithmetic is sound, and a negative value is simply what this substitution produces."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "working_out_r_r_instead_of_r_r",
+      "wrongValue": "incorrect_1",
+      "misconception": "Working out (R − r)² instead of R − r².",
+      "correctiveNote": "Avoid this: Working out (R − r)² instead of R − r²."
+    },
+    {
+      "key": "multiplying_by_too_early_before_the_divi",
+      "wrongValue": "incorrect_2",
+      "misconception": "Multiplying by π too early, before the division by (R + r).",
+      "correctiveNote": "Avoid this: Multiplying by π too early, before the division by (R + r)."
+    },
+    {
+      "key": "dividing_only_33_45_by_30_30_and_forgett",
+      "wrongValue": "incorrect_3",
+      "misconception": "Dividing only −33.45 by 30.30 and forgetting the ÷ 2.",
+      "correctiveNote": "Avoid this: Dividing only −33.45 by 30.30 and forgetting the ÷ 2."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Do not round in the middle of a chain of operations - keep the full decimal on your calculator and round only the final answer."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "≈−1.73(to3significantfigures)",
+    "displayValue": "≈ −1.73 (to 3 significant figures)",
+    "acceptedForms": [
+      "≈ −1.73 (to 3 significant figures)",
+      "≈−1.73(to3significantfigures)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "If R = 10, r = 2 and π = 3.14, find π((R − r²)/2 ÷ (R + r))."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_dp",
+      "canonicalValue": "3.14",
+      "displayValue": "3.14",
+      "acceptedForms": [
+        "3.14",
+        "3.14"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "precision": {
+        "kind": "decimal_places",
+        "value": 2,
+        "required": true
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "cad4e6a5-6e5e-4cd3-a9e2-e1f41374fd3f",
+      "code": "M1-4.1",
+      "label": "Substitution"
+    },
+    {
+      "objectiveId": "606a7451-8f5f-44dd-acaf-a2ade7bc34ad",
+      "code": "M1-4.1",
+      "label": "Order of operations"
+    },
+    {
+      "objectiveId": "b4f64d5c-4a65-4cc4-a92e-badded6e4eff",
+      "code": "M1-4.1",
+      "label": "Working with decimals"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 1,
+    "pageRef": "p61",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

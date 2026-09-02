@@ -1,0 +1,180 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p062-q08",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "If x = 5, evaluate 2x² − 3x + 1."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The index applies only to x, so square 5 before multiplying by 2."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p062_q08.jpg",
+      "altText": "Source visual for edmar-csec-p062-q08 from workbook page 62."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Substitute x = 5.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2(5²) − 3(5) + 1"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2(25) − 15 + 1"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Multiply out the terms.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2 × 25 = 50"
+        },
+        {
+          "type": "text",
+          "value": "Result: 50 − 15 + 1"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Combine.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "50 − 15 = 35, then 35 + 1"
+        },
+        {
+          "type": "text",
+          "value": "Result: 36"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Substitute x = 5, square first, then multiply, then combine the terms."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "36"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "In 2x² the square belongs to x alone, so 5 is squared to 25 and only then doubled. Working left to right through 50 − 15 + 1 keeps the addition and subtraction in the right order, which matters whenever the signs alternate."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "reading_2x_as_2x_and_calculating_10_100",
+      "wrongValue": "incorrect_1",
+      "misconception": "Reading 2x² as (2x)² and calculating 10² = 100.",
+      "correctiveNote": "Avoid this: Reading 2x² as (2x)² and calculating 10² = 100."
+    },
+    {
+      "key": "doing_15_1_first_and_then_subtracting_gi",
+      "wrongValue": "incorrect_2",
+      "misconception": "Doing 15 + 1 first and then subtracting, giving 50 − 16 = 34.",
+      "correctiveNote": "Avoid this: Doing 15 + 1 first and then subtracting, giving 50 − 16 = 34."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Square before you multiply by the coefficient - an index binds more tightly than the number in front of it."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "36",
+    "displayValue": "36",
+    "acceptedForms": [
+      "36",
+      "36"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "If x = 3, evaluate 2x² − 3x + 1."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "10",
+      "displayValue": "10",
+      "acceptedForms": [
+        "10",
+        "10"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "338c14ad-02b9-4593-ad7a-4fa471ca3707",
+      "code": "M1-4.1",
+      "label": "Substitution"
+    },
+    {
+      "objectiveId": "2cc40cd5-b556-4dc6-a656-9c8767213307",
+      "code": "M1-4.1",
+      "label": "Order of operations"
+    },
+    {
+      "objectiveId": "3d4b1c52-f901-497e-a1a8-ecd02a2a569b",
+      "code": "M1-4.1",
+      "label": "Quadratic expressions"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 8,
+    "pageRef": "p62",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

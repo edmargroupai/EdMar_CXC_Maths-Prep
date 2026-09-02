@@ -1,0 +1,195 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p050-q06",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Simplify the algebraic fraction 9a²b/(3ab)."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Split the division into its number part and its letter parts and handle each one on its own."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p050_q06.jpg",
+      "altText": "Source visual for edmar-csec-p050-q06 from workbook page 50."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Divide the number parts.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "9 ÷ 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Divide the a parts using the index law.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "a² ÷ a¹ = a^(2−1)"
+        },
+        {
+          "type": "text",
+          "value": "Result: a"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Divide the b parts.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "b ÷ b = 1"
+        },
+        {
+          "type": "text",
+          "value": "Result: 1"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Combine the results.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "3 × a × 1"
+        },
+        {
+          "type": "text",
+          "value": "Result: 3a"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Divide the coefficients, then subtract the indices of a and of b."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "3a"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A fraction of monomials is a product of separate quotients: the numbers divide, and each base divides by subtracting indices. The letter b appears to the first power on both top and bottom, so its quotient is b⁰ = 1 and it vanishes. This is the same cancelling you do with ordinary numerical fractions, applied one base at a time."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "leaving_b_in_the_answer_as_3ab",
+      "wrongValue": "incorrect_1",
+      "misconception": "Leaving b in the answer as 3ab.",
+      "correctiveNote": "Avoid this: Leaving b in the answer as 3ab."
+    },
+    {
+      "key": "subtracting_instead_of_dividing_the_coef",
+      "wrongValue": "incorrect_2",
+      "misconception": "Subtracting instead of dividing the coefficients to get 6a.",
+      "correctiveNote": "Avoid this: Subtracting instead of dividing the coefficients to get 6a."
+    },
+    {
+      "key": "keeping_a_because_only_the_coefficients_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Keeping a² because only the coefficients were simplified.",
+      "correctiveNote": "Avoid this: Keeping a² because only the coefficients were simplified."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Check your simplified answer by multiplying it back by the denominator: 3a × 3ab should return 9a²b. That reverse check takes seconds and catches every slip."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "3",
+    "displayValue": "3",
+    "acceptedForms": [
+      "3",
+      "3"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Simplify 20x³y²/(5xy)."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "4",
+      "displayValue": "4",
+      "acceptedForms": [
+        "4",
+        "4"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "2c6aa40c-15d4-450e-ab5f-d7d26c2d52b9",
+      "code": "M1-4.1",
+      "label": "Simplifying algebraic fractions"
+    },
+    {
+      "objectiveId": "d61a4343-9913-44a0-ad95-af6f96da0ad0",
+      "code": "M1-4.1",
+      "label": "Laws of indices (division)"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 6,
+    "pageRef": "p50",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

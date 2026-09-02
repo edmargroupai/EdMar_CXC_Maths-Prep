@@ -1,0 +1,305 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p033-q01",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 8,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A map of an island is drawn on a grid of 1 cm squares, with L and M marked on the map 8 grid squares apart along a horizontal line. (i) State, in cm, the length of LM as shown in the diagram. (ii) Estimate, by counting squares, the area of the map shown. (iii) On the island the actual distance LM is 20 km, so on the map 1 cm represents how many km? (iv) Write the scale of the map in the form 1 : x."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Read lengths straight off the grid, then use the one real distance you are given to convert map centimetres into kilometres."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p033_q01.jpg",
+      "altText": "Source visual for edmar-csec-p033-q01 from workbook page 33."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Count the grid squares from L to M along the horizontal line.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "L and M sit on grid lines 8 squares apart, each square 1 cm"
+        },
+        {
+          "type": "text",
+          "value": "Result: LM = 8 cm"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Estimate the area by counting squares inside the outline.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "count whole squares, then count part squares as about a half each"
+        },
+        {
+          "type": "text",
+          "value": "Result: about 47 cm²"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Divide the actual distance by the map distance.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "20 km / 8 cm"
+        },
+        {
+          "type": "text",
+          "value": "Result: 1 cm represents 2.5 km"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Convert 2.5 km to centimetres.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2.5 x 1 000 m = 2 500 m, and 2 500 x 100 cm"
+        },
+        {
+          "type": "text",
+          "value": "Result: 250 000 cm"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Write the scale as a ratio in the same units.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "1 cm on the map : 250 000 cm on the ground"
+        },
+        {
+          "type": "text",
+          "value": "Result: 1 : 250 000"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Count grid squares between L and M for the length, count whole and part squares inside the outline for the area, divide 20 km by the map length for the scale, then convert both sides to centimetres for the 1 : x form."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(i) LM = 8 cm  (ii) approximately 47 cm², so about 47 squares (any sensible estimate near this is acceptable)  (iii) 1 cm represents 2.5 km  (iv) the scale is 1 : 250 000"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A scale is a fixed ratio between map distance and real distance, so one measured pair such as 8 cm to 20 km fixes it for the whole map. A ratio has no units, so both sides must be expressed in the same unit before writing 1 : x, which is why the kilometres are converted to centimetres. Counting squares works because area is additive: whole squares count fully and part squares are paired up or taken as roughly a half."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "measuring_lm_with_a_ruler_in_millimetres",
+      "wrongValue": "incorrect_1",
+      "misconception": "Measuring LM with a ruler in millimetres instead of counting the 1 cm grid squares.",
+      "correctiveNote": "Avoid this: Measuring LM with a ruler in millimetres instead of counting the 1 cm grid squares."
+    },
+    {
+      "key": "writing_the_scale_as_1_2_5_by_leaving_th",
+      "wrongValue": "incorrect_2",
+      "misconception": "Writing the scale as 1 : 2.5 by leaving the units mixed.",
+      "correctiveNote": "Avoid this: Writing the scale as 1 : 2.5 by leaving the units mixed."
+    },
+    {
+      "key": "ignoring_part_squares_entirely_or_counti",
+      "wrongValue": "incorrect_3",
+      "misconception": "Ignoring part squares entirely, or counting every part square as a whole one.",
+      "correctiveNote": "Avoid this: Ignoring part squares entirely, or counting every part square as a whole one."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "For a counting-squares estimate, mark each square you have counted and treat any square more than half inside as one, less than half as none. It is fast, and the mark scheme allows a range."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "LM=8cm",
+    "displayValue": "LM = 8 cm",
+    "acceptedForms": [
+      "LM = 8 cm",
+      "LM=8cm"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "On a map, 4 cm represents an actual distance of 10 km. Write the scale in the form 1 : x."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "1",
+      "displayValue": "1",
+      "acceptedForms": [
+        "1",
+        "1"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "d66f813f-f08f-4d4d-a3e9-8deaa2955615",
+      "code": "M1-1.1",
+      "label": "Scale drawing"
+    },
+    {
+      "objectiveId": "e651a474-c22d-4d5a-a87f-ce9a828df39d",
+      "code": "M1-1.1",
+      "label": "Estimating area by counting squares"
+    },
+    {
+      "objectiveId": "f29f68a9-d27d-4eb7-addf-ef86d348e42f",
+      "code": "M1-1.1",
+      "label": "Converting units of length"
+    },
+    {
+      "objectiveId": "4f578857-2e61-4993-a348-e19d7829dc6e",
+      "code": "M1-1.1",
+      "label": "Writing a ratio scale"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 1,
+    "pageRef": "p33",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a.i",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.i): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "LM=8cm",
+        "displayValue": "LM = 8 cm",
+        "acceptedForms": [
+          "LM = 8 cm",
+          "LM=8cm"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.ii",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.ii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "approximately47cm²,soabout47squares(anysensibleestimatenearthisisacceptable)",
+        "displayValue": "approximately 47 cm², so about 47 squares (any sensible estimate near this is acceptable)",
+        "acceptedForms": [
+          "approximately 47 cm², so about 47 squares (any sensible estimate near this is acceptable)",
+          "approximately47cm²,soabout47squares(anysensibleestimatenearthisisacceptable)"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "a.iii",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.iii): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "numeric_exact",
+        "canonicalValue": "1",
+        "displayValue": "1",
+        "acceptedForms": [
+          "1",
+          "1"
+        ],
+        "tolerance": {
+          "kind": "absolute",
+          "value": 0
+        },
+        "normalisation": "numeric_default"
+      }
+    },
+    {
+      "partKey": "a.iv",
+      "sequence": 4,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a.iv): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "thescaleis1:250000",
+        "displayValue": "the scale is 1 : 250 000",
+        "acceptedForms": [
+          "the scale is 1 : 250 000",
+          "thescaleis1:250000"
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

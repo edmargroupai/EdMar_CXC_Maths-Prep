@@ -1,0 +1,214 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p076-q01",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The principal of Sunrise Secondary School wishes to estimate the number of students who favour a change in the lunch period. A systematic sample of 84 students is selected from the school population of 840 students. Of those selected, 61 favour the change. (a) State the population in this investigation. (b) State the sample. (c) Write the sample statistic as a fraction. (d) Explain why 61/84 is a sample statistic and not a population parameter. (e) Estimate the number of students in the school who favour the change."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Keep clear which group each number describes: the whole school or the 84 chosen from it."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p076_q01.jpg",
+      "altText": "Source visual for edmar-csec-p076-q01 from workbook page 76."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Identify the whole group being studied.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The investigation is about the students of Sunrise Secondary School"
+        },
+        {
+          "type": "text",
+          "value": "Result: The 840 students of the school"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Identify the subgroup actually surveyed.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "84 students were selected systematically"
+        },
+        {
+          "type": "text",
+          "value": "Result: The 84 students selected"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Form the sample proportion in favour.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "61 of the 84 selected favour the change"
+        },
+        {
+          "type": "text",
+          "value": "Result: 61/84"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Explain its status.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "It is calculated only from the 84 students surveyed, not from all 840"
+        },
+        {
+          "type": "text",
+          "value": "Result: A sample statistic, not a population parameter"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Scale the proportion up to the whole population.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "61/84 × 840 = 61 × 10"
+        },
+        {
+          "type": "text",
+          "value": "Result: 610 students"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Name the two groups, form the proportion in favour from the sample, explain what makes it a statistic, then scale that proportion up to the whole school."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) The population is all 840 students of Sunrise Secondary School.  (b) The sample is the 84 students selected.  (c) 61/84.  (d) Because it was calculated from the 84 students in the sample rather than from all 840 students in the school. A population parameter would require every member of the population to be surveyed; 61/84 is a measurement of the sample and is used only to estimate the corresponding population value.  (e) About 610 students."
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A sample is used because measuring a whole population is often impractical, and a statistic computed from the sample stands in as an estimate of the unknown parameter. The estimate works by assuming the sample is representative, so the proportion in favour in the sample is taken to hold across the population. Since 84 is exactly one tenth of 840, multiplying 61 by 10 scales the count up in the same ratio."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "naming_the_sample_as_61_students_rather_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Naming the sample as 61 students rather than the 84 who were surveyed.",
+      "correctiveNote": "Avoid this: Naming the sample as 61 students rather than the 84 who were surveyed."
+    },
+    {
+      "key": "calling_61_84_a_parameter_because_it_com",
+      "wrongValue": "incorrect_2",
+      "misconception": "Calling 61/84 a parameter because it comes from real data.",
+      "correctiveNote": "Avoid this: Calling 61/84 a parameter because it comes from real data."
+    },
+    {
+      "key": "estimating_with_61_840_or_by_adding_rath",
+      "wrongValue": "incorrect_3",
+      "misconception": "Estimating with 61/840 or by adding rather than scaling by the ratio 840/84.",
+      "correctiveNote": "Avoid this: Estimating with 61/840 or by adding rather than scaling by the ratio 840/84."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "In sampling questions, write down the population size and the sample size side by side before doing any arithmetic; the ratio between them drives every estimate."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "Thepopulationisall840studentsofSunriseSecondarySchool.",
+    "displayValue": "The population is all 840 students of Sunrise Secondary School.",
+    "acceptedForms": [
+      "The population is all 840 students of Sunrise Secondary School.",
+      "Thepopulationisall840studentsofSunriseSecondarySchool."
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A sample of 50 from a population of 400 shows 18 in favour. Estimate the number in favour in the whole population."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "fraction",
+      "canonicalValue": "18/50",
+      "displayValue": "18/50",
+      "acceptedForms": [
+        "18/50"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M3-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "7e485845-68d8-4602-a4d3-7cee0701e73a",
+      "code": "M3-1.1",
+      "label": "Population and sample"
+    },
+    {
+      "objectiveId": "319fa739-649d-47b6-ac5c-d338e1f28621",
+      "code": "M3-1.1",
+      "label": "Sampling"
+    },
+    {
+      "objectiveId": "b0b126fe-66b6-41c6-a559-13be625ed5de",
+      "code": "M3-1.1",
+      "label": "Sample statistic and population parameter"
+    },
+    {
+      "objectiveId": "291c5b76-a912-400e-a20b-6b90e455814a",
+      "code": "M3-1.1",
+      "label": "Estimating a population total from a sample proportion"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 1,
+    "pageRef": "p76",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

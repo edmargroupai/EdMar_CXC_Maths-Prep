@@ -1,0 +1,153 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p055-q07",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Make t the subject of the formula v = u + at."
+    },
+    {
+      "type": "text",
+      "value": "Think first: You are unwrapping t: it is multiplied by a and then u is added, so undo those two operations in reverse order."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p055_q07.jpg",
+      "altText": "Source visual for edmar-csec-p055-q07 from workbook page 55."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Subtract u from both sides.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "v - u = u + at - u"
+        },
+        {
+          "type": "text",
+          "value": "Result: v - u = at"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Divide both sides by a.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "(v - u)/a = at/a"
+        },
+        {
+          "type": "text",
+          "value": "Result: t = (v - u)/a"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Isolate the term containing t by subtracting u from both sides, then divide by a."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "t = (v - u)/a"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "A formula is an equation, so whatever you do to one side you must do to the other. Rearranging just applies inverse operations in reverse of the order that built the expression: u was added last, so it is removed first; a multiplies t, so dividing by a is the last move. The relationship between the quantities never changes, only which letter stands alone."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "writing_t_v_u_a_which_divides_only_u_by_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Writing t = v - u/a, which divides only u by a instead of the whole of v - u.",
+      "correctiveNote": "Avoid this: Writing t = v - u/a, which divides only u by a instead of the whole of v - u."
+    },
+    {
+      "key": "dividing_by_a_before_subtracting_u_so_th",
+      "wrongValue": "incorrect_2",
+      "misconception": "Dividing by a before subtracting u, so the u term is left undivided.",
+      "correctiveNote": "Avoid this: Dividing by a before subtracting u, so the u term is left undivided."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Whenever the new subject sits inside a sum, clear the addition first and the multiplication last - the reverse of BODMAS."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "t=(v-u)/a",
+    "displayValue": "t = (v - u)/a",
+    "acceptedForms": [
+      "t = (v - u)/a",
+      "t=(v-u)/a"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Make a the subject of v = u + at."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "=(v-u)/t",
+      "displayValue": "= (v - u)/t",
+      "acceptedForms": [
+        "= (v - u)/t",
+        "=(v-u)/t"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "128e5e4c-a504-4711-a4c3-36f6d418bbf0",
+      "code": "M1-4.1",
+      "label": "Transposition of formulae"
+    },
+    {
+      "objectiveId": "ed9b4834-cb0a-4483-ad04-3208b927704a",
+      "code": "M1-4.1",
+      "label": "Inverse operations"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 7,
+    "pageRef": "p55",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "expression"
+}

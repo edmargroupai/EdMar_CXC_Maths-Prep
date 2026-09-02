@@ -1,0 +1,311 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p072-q10",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 3,
+  "status": "draft",
+  "marks": 8,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "The diagram shows the straight line L. (a) State the coordinates of the point at which L cuts the y-axis. (b) State the coordinates of the point at which L cuts the x-axis. (c) Determine the gradient of L. (d) Hence write the equation of L in the form y = mx + c."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Read the two crossing points off the grid first; everything else follows from them."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p072_q10.jpg",
+      "altText": "Source visual for edmar-csec-p072-q10 from workbook page 72."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Read where the line crosses the y-axis.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The line meets the vertical axis 3 units above the origin"
+        },
+        {
+          "type": "text",
+          "value": "Result: (0, 3)"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Read where the line crosses the x-axis.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The line meets the horizontal axis 3 units to the left of the origin"
+        },
+        {
+          "type": "text",
+          "value": "Result: (−3, 0)"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Substitute the two points into the gradient formula.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "m = (0 − 3)/(−3 − 0) = −3/−3"
+        },
+        {
+          "type": "text",
+          "value": "Result: m = 1"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Identify c.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "The y-intercept is 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: c = 3"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Write the equation.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "y = mx + c with m = 1 and c = 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: y = x + 3"
+        }
+      ]
+    },
+    {
+      "stepNo": 6,
+      "instruction": "Check with another point on the line.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "At x = 2 the line is at y = 5, and 2 + 3 = 5"
+        },
+        {
+          "type": "text",
+          "value": "Result: Equation confirmed"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Read the two intercepts from the diagram, use them in the gradient formula, then combine the gradient and the y-intercept into the equation."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "(a) (0, 3)  (b) (−3, 0)  (c) gradient = 1  (d) y = x + 3"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The gradient counts how far the line rises for each unit it moves to the right, and using the two intercepts gives a rise of 3 over a run of 3. A positive gradient matches a line sloping upwards from left to right, which is a useful sanity check before any calculation. Once m and c are known the equation is fully determined, because a straight line is fixed by its steepness and its starting height on the y-axis."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "reading_the_intercept_as_3_instead_of_3_",
+      "wrongValue": "incorrect_1",
+      "misconception": "Reading the intercept as 3 instead of −3 by ignoring the direction along the x-axis.",
+      "correctiveNote": "Avoid this: Reading the intercept as 3 instead of −3 by ignoring the direction along the x-axis."
+    },
+    {
+      "key": "writing_the_gradient_as_1_because_one_of",
+      "wrongValue": "incorrect_2",
+      "misconception": "Writing the gradient as −1 because one of the differences is negative.",
+      "correctiveNote": "Avoid this: Writing the gradient as −1 because one of the differences is negative."
+    },
+    {
+      "key": "writing_the_equation_as_y_3x_1_swapping_",
+      "wrongValue": "incorrect_3",
+      "misconception": "Writing the equation as y = 3x + 1, swapping the roles of m and c.",
+      "correctiveNote": "Avoid this: Writing the equation as y = 3x + 1, swapping the roles of m and c."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Check the sign of your gradient against the picture: uphill left to right is positive, downhill is negative."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "R",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "expression",
+    "canonicalValue": "(0,3)",
+    "displayValue": "(0, 3)",
+    "acceptedForms": [
+      "(0, 3)",
+      "(0,3)"
+    ],
+    "normalisation": "expression_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "A line cuts the y-axis at (0, 2) and the x-axis at (−2, 0). Find its equation."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "expression",
+      "canonicalValue": "y=x+2",
+      "displayValue": "y = x + 2",
+      "acceptedForms": [
+        "y = x + 2",
+        "y=x+2"
+      ],
+      "normalisation": "expression_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-1.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "3a96afed-8858-4886-a092-e5f028bb5bce",
+      "code": "M1-1.1",
+      "label": "Reading a graph"
+    },
+    {
+      "objectiveId": "2cfc1264-3295-4061-a7e5-01333be72cce",
+      "code": "M1-1.1",
+      "label": "Intercepts"
+    },
+    {
+      "objectiveId": "16b0a1d1-98de-45c0-a74f-b4c30363af0f",
+      "code": "M1-1.1",
+      "label": "Gradient from two points"
+    },
+    {
+      "objectiveId": "c864258f-1820-4512-a8c4-2af952d7b574",
+      "code": "M1-1.1",
+      "label": "y = mx + c"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 10,
+    "pageRef": "p72",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "structured",
+  "parts": [
+    {
+      "partKey": "a",
+      "sequence": 1,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (a): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "(0,3)",
+        "displayValue": "(0, 3)",
+        "acceptedForms": [
+          "(0, 3)",
+          "(0,3)"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "b",
+      "sequence": 2,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (b): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "(−3,0)",
+        "displayValue": "(−3, 0)",
+        "acceptedForms": [
+          "(−3, 0)",
+          "(−3,0)"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "c",
+      "sequence": 3,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (c): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "gradient=1",
+        "displayValue": "gradient = 1",
+        "acceptedForms": [
+          "gradient = 1",
+          "gradient=1"
+        ],
+        "normalisation": "expression_default"
+      }
+    },
+    {
+      "partKey": "d",
+      "sequence": 4,
+      "marks": 2,
+      "stemBlocks": [
+        {
+          "type": "text",
+          "value": "Part (d): see stem."
+        }
+      ],
+      "answerSpec": {
+        "answerType": "expression",
+        "canonicalValue": "y=",
+        "displayValue": "y =",
+        "acceptedForms": [
+          "y =",
+          "y="
+        ],
+        "normalisation": "expression_default"
+      }
+    }
+  ]
+}

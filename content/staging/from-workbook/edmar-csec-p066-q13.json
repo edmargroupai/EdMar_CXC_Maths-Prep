@@ -1,0 +1,210 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p066-q13",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 5,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "Factorise completely: 8x³y² − 12x²y³ + 4x²y²."
+    },
+    {
+      "type": "text",
+      "value": "Think first: Three terms, but the method is unchanged: find what all three share."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p066_q13.jpg",
+      "altText": "Source visual for edmar-csec-p066-q13 from workbook page 66."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Find the HCF of the coefficients.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "8, 12 and 4 are all divisible by 4"
+        },
+        {
+          "type": "text",
+          "value": "Result: 4"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Find the lowest power of each letter.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "x³, x², x² give x²; y², y³, y² give y²"
+        },
+        {
+          "type": "text",
+          "value": "Result: x²y²"
+        }
+      ]
+    },
+    {
+      "stepNo": 3,
+      "instruction": "Combine into the full HCF.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "4 × x² × y²"
+        },
+        {
+          "type": "text",
+          "value": "Result: 4x²y²"
+        }
+      ]
+    },
+    {
+      "stepNo": 4,
+      "instruction": "Divide each term by 4x²y².",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "8x³y² ÷ 4x²y² = 2x, 12x²y³ ÷ 4x²y² = 3y, 4x²y² ÷ 4x²y² = 1"
+        },
+        {
+          "type": "text",
+          "value": "Result: 2x, 3y and 1"
+        }
+      ]
+    },
+    {
+      "stepNo": 5,
+      "instruction": "Write the factorised form.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: 4x²y²(2x − 3y + 1)"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Take the HCF of 8, 12 and 4 together with the lowest power of x and of y across all three terms, then divide each term by it."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "8x³y² − 12x²y³ + 4x²y² = 4x²y²(2x − 3y + 1)"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "The highest common factor must divide every term, so with three terms each letter is taken to the smallest index that occurs anywhere in the expression. The last term is exactly equal to the factor being removed, so it leaves 1 rather than nothing. Expanding 4x²y²(2x − 3y + 1) reproduces all three original terms, which confirms the result."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "omitting_the_1_and_writing_4x_y_2x_3y",
+      "wrongValue": "incorrect_1",
+      "misconception": "Omitting the 1 and writing 4x²y²(2x − 3y).",
+      "correctiveNote": "Avoid this: Omitting the 1 and writing 4x²y²(2x − 3y)."
+    },
+    {
+      "key": "using_x_y_as_the_letter_part",
+      "wrongValue": "incorrect_2",
+      "misconception": "Using x³y³ as the letter part.",
+      "correctiveNote": "Avoid this: Using x³y³ as the letter part."
+    },
+    {
+      "key": "taking_out_2_instead_of_4_as_the_numeric",
+      "wrongValue": "incorrect_3",
+      "misconception": "Taking out 2 instead of 4 as the numerical factor.",
+      "correctiveNote": "Avoid this: Taking out 2 instead of 4 as the numerical factor."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Count the terms in your bracket before moving on; three terms in must give three terms out."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "AK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "8",
+    "displayValue": "8",
+    "acceptedForms": [
+      "8",
+      "8"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "Factorise completely: 6a³b − 9a²b² + 3a²b."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "3",
+      "displayValue": "3",
+      "acceptedForms": [
+        "3",
+        "3"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "5ce426c6-bab1-48f2-a4d9-981a9fa34fa0",
+      "code": "M1-4.1",
+      "label": "Factorising"
+    },
+    {
+      "objectiveId": "897523f5-167d-40c7-ad50-86d284a84d08",
+      "code": "M1-4.1",
+      "label": "Highest common factor with three terms"
+    },
+    {
+      "objectiveId": "eceebf66-b86b-4b3d-a7a2-165d3eb8c1bf",
+      "code": "M1-4.1",
+      "label": "Laws of indices"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 13,
+    "pageRef": "p66",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}

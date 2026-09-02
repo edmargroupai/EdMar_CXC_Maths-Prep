@@ -1,0 +1,157 @@
+{
+  "schemaVersion": "2.0.0",
+  "legacyId": "edmar-csec-p057-q04",
+  "provenance": "original_authored",
+  "rightsStatus": "edmar_owned",
+  "difficultyBand": 2,
+  "status": "draft",
+  "marks": 1,
+  "calculatorAllowed": true,
+  "stemBlocks": [
+    {
+      "type": "text",
+      "value": "A binary operation * is defined by a * b = 2a - b. Find 5 * 3."
+    },
+    {
+      "type": "text",
+      "value": "Think first: The number on the left of the star is doubled, and the number on the right is subtracted."
+    },
+    {
+      "type": "asset",
+      "storagePath": "assets/question_visuals/p057_q04.jpg",
+      "altText": "Source visual for edmar-csec-p057-q04 from workbook page 57."
+    }
+  ],
+  "solutionSteps": [
+    {
+      "stepNo": 1,
+      "instruction": "Substitute a = 5 and b = 3.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "2(5) - 3"
+        },
+        {
+          "type": "text",
+          "value": "Result: 10 - 3"
+        }
+      ]
+    },
+    {
+      "stepNo": 2,
+      "instruction": "Subtract.",
+      "contentBlocks": [
+        {
+          "type": "text",
+          "value": "Result: 7"
+        }
+      ]
+    }
+  ],
+  "strategyBlocks": [
+    {
+      "type": "text",
+      "value": "Substitute a = 5 and b = 3 into 2a - b."
+    }
+  ],
+  "finalAnswerBlocks": [
+    {
+      "type": "text",
+      "value": "5 * 3 = 7"
+    }
+  ],
+  "whyThisWorks": [
+    {
+      "type": "text",
+      "value": "Position matters in this operation: the left input is doubled and the right one is taken away, so 5 * 3 and 3 * 5 are different. Reading the definition carefully and matching each letter to its position is the whole of the work."
+    }
+  ],
+  "commonErrors": [
+    {
+      "key": "doubling_the_second_number_instead_of_th",
+      "wrongValue": "incorrect_1",
+      "misconception": "Doubling the second number instead of the first, giving 5 - 6 = -1.",
+      "correctiveNote": "Avoid this: Doubling the second number instead of the first, giving 5 - 6 = -1."
+    },
+    {
+      "key": "doubling_the_whole_expression_giving_2_5",
+      "wrongValue": "incorrect_2",
+      "misconception": "Doubling the whole expression, giving 2(5 - 3) = 4.",
+      "correctiveNote": "Avoid this: Doubling the whole expression, giving 2(5 - 3) = 4."
+    }
+  ],
+  "examTip": [
+    {
+      "type": "text",
+      "value": "Underline which letter is a and which is b before substituting - most marks lost here are position errors, not arithmetic."
+    }
+  ],
+  "answerValidation": {
+    "cognitiveLevel": "CK",
+    "accuracyRule": "exact",
+    "verification": "unverified",
+    "ambiguityNote": "Machine-authored solution pending human verification before student release."
+  },
+  "answerSpec": {
+    "answerType": "numeric_exact",
+    "canonicalValue": "5",
+    "displayValue": "5",
+    "acceptedForms": [
+      "5",
+      "5"
+    ],
+    "tolerance": {
+      "kind": "absolute",
+      "value": 0
+    },
+    "normalisation": "numeric_default"
+  },
+  "quickCheck": {
+    "promptBlocks": [
+      {
+        "type": "text",
+        "value": "With a * b = 2a - b, find 3 * 5."
+      }
+    ],
+    "answerSpec": {
+      "answerType": "numeric_exact",
+      "canonicalValue": "1",
+      "displayValue": "1",
+      "acceptedForms": [
+        "1",
+        "1"
+      ],
+      "tolerance": {
+        "kind": "absolute",
+        "value": 0
+      },
+      "normalisation": "numeric_default"
+    }
+  },
+  "curriculum": {
+    "syllabusCode": "V2027",
+    "objectiveCodes": [
+      "M1-4.1"
+    ]
+  },
+  "conceptsRequired": [
+    {
+      "objectiveId": "9363246a-c619-413f-ab66-139e10ca2269",
+      "code": "M1-4.1",
+      "label": "Binary operations"
+    },
+    {
+      "objectiveId": "8e08d036-6542-478f-a1a1-d8fc2a6049ef",
+      "code": "M1-4.1",
+      "label": "Substitution"
+    }
+  ],
+  "source": {
+    "sourceKind": "workbook",
+    "sourceTitle": "CSEC MODULAR WORKBOOK.pdf",
+    "questionNo": 4,
+    "pageRef": "p57",
+    "syllabusInForce": "V2027"
+  },
+  "questionType": "numeric"
+}
