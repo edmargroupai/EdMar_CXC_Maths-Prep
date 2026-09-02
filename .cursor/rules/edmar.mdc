@@ -17,11 +17,14 @@ If the spec is silent, ask one specific question. Never invent.
 
 ## The eight invariants
 - I-1 No AI on the student path. No client bundle may import an AI SDK. CI-enforced.
+  Next-question selection never synchronously calls an LLM (D-23 / ADR-023).
 - I-2 Nothing reaches a student unapproved — enforced in RLS, never in application logic.
 - I-3 Answer checking is deterministic and local, from `@edmar/answer-core`, in the client.
 - I-4 Published content is immutable. Corrections are new versions.
 - I-5 Every AI-touched artefact carries provenance.
 - I-6 All assessment output is deterministic and recomputable, computed in Postgres.
+  Topic mastery cycles are config-driven overlays; they do not replace §9.11 with a bare
+  correct-count gate (ADR-023).
 - I-7 No projection without evidence — withheld below the gate, always banded, always with confidence.
 - I-8 Web is the reference implementation. Mobile conforms to it, not the reverse.
 
@@ -50,6 +53,8 @@ If the spec is silent, ask one specific question. Never invent.
   of them for a loading-performance win.
 - Never invent CXC curriculum, and never invent a mathematical answer.
 - Never auto-publish AI-generated content. No confidence threshold, no exception.
+- Offline replenishment is template-first, AI-only-when-necessary (D-23). Never
+  `STUDENT → AI → NEW QUESTION`.
 
 ## Other standing rules
 - No secret in client code. No service-role key outside `apps/admin` server code.

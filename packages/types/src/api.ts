@@ -23,8 +23,10 @@ export interface CreatePracticeSessionResponse {
   requestedCount: number;
   allowanceRemaining: number;
   starved: boolean;
+  topicCycleId?: string | null;
   items: PracticeSessionItem[];
 }
+
 
 export type CreatePracticeSessionResult = CreatePracticeSessionResponse | ApiError;
 
@@ -71,7 +73,18 @@ export interface CompleteSessionResponse {
   durationSeconds: number;
   masteryBefore: Record<string, number>;
   masteryAfter: Record<string, number>;
+  masteryCycle?: {
+    verdict?: string;
+    overallAccuracy?: number;
+    skillCoverageMet?: boolean;
+    prerequisiteMet?: boolean;
+    remediationBand?: string;
+    remediationRemaining?: number;
+    questionsAnswered?: number;
+    questionsTarget?: number;
+  } | null;
 }
+
 
 export type CompleteSessionResult = CompleteSessionResponse | ApiError;
 

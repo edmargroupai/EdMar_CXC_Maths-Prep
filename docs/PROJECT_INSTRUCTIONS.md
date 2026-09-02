@@ -23,7 +23,17 @@ them. The first client is a **Next.js web application (PWA)**, not React Native.
 carries **ten presentation blocks**. And the Rev 1 prohibition on predicted grades is **reversed**,
 replaced by a governed banded projection under eight binding rules (blueprint §J.12).
 
+**ADR-023 amendment (2 September 2026).** Documentation + `app_config` seeds only at the current phase — do **not** leap into a large mastery/selection/template refactor solely because this amendment exists. Binding sources: Spec §9.14, D-23, `docs/decisions/ADR-023-mastery-inventory-ai-cost.md`.
+
+Rules that must not be eroded while implementing later slices:
+
+- Student practice path: deterministic selector → approved bank → `@edmar/answer-core` → mastery in Postgres. **Zero** LLM calls for next-question, answer check, or mastery.
+- Continuous §9.11 mastery stays authoritative; any topic mastery **cycle** is a configurable overlay (default 20 Q / 90% + skill & prerequisite coverage), not `correct >= 18` alone.
+- Offline content: template-first, AI-only-when-necessary, never auto-publish; inventory shortage → replenishment job, not sync AI.
+- Exam simulation is separate from the 20-question topic cycle.
+
 **Three reversals that matter most, because Rev 1's code and Rev 1's habits both encode the old rule:**
+
 
 | Was (Rev 1)                                       | Is (Rev 2)                                                                             |
 | -------------------------------------------------- | --------------------------------------------------------------------------------------- |
@@ -1119,6 +1129,7 @@ unrelated phase.
 
 - **I-1 — No AI on the student path.** No screen a student can reach may cause a
   language-model call, directly or transitively. Enforced by `scripts/check-no-ai-in-client.sh`.
+  Next-question selection must never synchronously call an LLM (ADR-023).
 - **I-2 — Nothing reaches a student unapproved.** The student app reads only rows whose
   status is `published`, enforced in Row Level Security — never in application logic.
 - **I-3 — Answer checking is deterministic and local.** Evaluated in the client — the browser
@@ -1132,7 +1143,9 @@ unrelated phase.
 - **I-6 — All assessment output is deterministic and recomputable.** Diagnostic, mastery,
   readiness, weak-area ranking and projection are versioned rule-based computation over the
   immutable attempt log, in Postgres (D-18). Same log → same numbers, on any machine, forever.
-  No model, no learned weights that cannot be re-derived, no AI.
+  No model, no learned weights that cannot be re-derived, no AI. Topic mastery cycles (ADR-023)
+  are likewise config-driven rules over attempts — they do not replace §9.11 continuous mastery
+  with a bare correct-count gate.
 - **I-7 — No projection without evidence.** Readiness and the grade band are **withheld**
   below the evidence floor, are always a band with a confidence, always state their evidence,
   and never appear without the standing disclosure. The gate lives in the function, not the
@@ -1140,7 +1153,7 @@ unrelated phase.
 - **I-8 — The web client is the reference implementation.** Where mobile and web differ in
   scoring, validation, presentation order or wording, web is correct and mobile is the defect.
 
-## The twenty-two decisions (D-01…D-22 — do not re-litigate; see spec §0.6 for rationale)
+## The twenty-three decisions (D-01…D-23 — do not re-litigate; see spec §0.6 for rationale)
 
 | ID   | Decision                                                                                                                     |
 | ---- | ---------------------------------------------------------------------------------------------------------------------------- |
@@ -1166,6 +1179,7 @@ unrelated phase.
 | D-20 | **The projection evidence gate is in the function**, returning `withheld` + a machine-readable reason — never in the UI       |
 | D-21 | **Web billing (Stripe or equivalent) at MVP**; Google Play Billing added at V2 with no schema change                          |
 | D-22 | **Simulation timing is server-anchored and server-adjudicated**; late submissions are accepted and recorded, not rejected     |
+| D-23 | **Code-first practice; template-first offline replenishment; AI only when necessary** (ADR-023 / Spec §9.14). Continuous §9.11 mastery stays authoritative; configurable topic mastery cycle overlays practice; no `STUDENT → AI → NEW QUESTION` |
 
 ## Naming conventions (D-15)
 
@@ -1187,26 +1201,27 @@ unrelated phase.
 7. Never invent CXC curriculum — codes/statements come from the seeded taxonomy only.
 8. Never invent a mathematical answer — unverified content does not publish.
 9. Never auto-publish AI-generated content.
-10. Never store mathematics only as plain text — LaTeX + a `math_renders` row.
-11. Never destroy LaTeX or worked-solution content during migration.
-12. Never add a dependency not named in the spec without recording why in `docs/decisions/`.
-13. Never make an unrelated change in a phase.
-14. Never skip a test, a migration or a validation step.
-15. Never widen a tolerance to make a test pass.
-16. Never display an **unqualified** predicted CSEC grade. *(Changed in Rev 2 — read spec §38.1
+10. Never synchronously call an LLM from student practice, answer checking, or mastery (ADR-023).
+11. Never store mathematics only as plain text — LaTeX + a `math_renders` row.
+12. Never destroy LaTeX or worked-solution content during migration.
+13. Never add a dependency not named in the spec without recording why in `docs/decisions/`.
+14. Never make an unrelated change in a phase.
+15. Never skip a test, a migration or a validation step.
+16. Never widen a tolerance to make a test pass.
+17. Never display an **unqualified** predicted CSEC grade. *(Changed in Rev 2 — read spec §38.1
     rule 16.)* A band **with its confidence**, behind the evidence gate, with the disclosure, is
     now built. Still absolutely forbidden: a single grade; a band without confidence; a band
     without the gate; a band to a non-entitled student; a band in **any** notification, email or
     marketing surface.
-16a. Never compute readiness or a projection outside Postgres — no band arithmetic in TypeScript.
-16b. Never cache a readiness value, a projection or an entitlement. Network-only.
-16c. Never send response blocks 2–10 to a client before that student has answered or skipped.
-16d. Never let a non-blueprint-conformant simulation feed readiness.
-16e. Never trust a client-supplied timer value in a simulation.
-17. Never mutate a published `question_version`.
-18. Never return a raw Postgres error to a client.
-19. Never copy production student data to staging.
-20. Never publish a question whose `rights_status` is unresolved.
+17a. Never compute readiness or a projection outside Postgres — no band arithmetic in TypeScript.
+17b. Never cache a readiness value, a projection or an entitlement. Network-only.
+17c. Never send response blocks 2–10 to a client before that student has answered or skipped.
+17d. Never let a non-blueprint-conformant simulation feed readiness.
+17e. Never trust a client-supplied timer value in a simulation.
+18. Never mutate a published `question_version`.
+19. Never return a raw Postgres error to a client.
+20. Never copy production student data to staging.
+21. Never publish a question whose `rights_status` is unresolved.
 
 ## Always (§38.2)
 

@@ -19,6 +19,9 @@ export default async function ReviewQueuePage() {
           <h1 className="text-2xl font-bold">Review queue</h1>
           <p className="mt-1 text-sm text-slate-600">Questions awaiting human review before publish.</p>
         </div>
+        <Link href="/inventory" className="text-sm text-blue-700 hover:underline">
+          Inventory health
+        </Link>
         <Link href="/calibration" className="text-sm text-blue-700 hover:underline">
           Calibration
         </Link>

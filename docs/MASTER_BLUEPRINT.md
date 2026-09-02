@@ -9,6 +9,8 @@
 
 > **REVISION 2 NOTICE.** This revision changes the product's centre of gravity and its launch platform. Rev 1 described a practice engine that happened to record progress. Rev 2 describes an **examination-readiness system** whose five load-bearing capabilities are **diagnostic assessment, continuous monitoring, examination simulation, readiness analysis with a banded grade projection, and weak-area identification** — with practice as the instrument that feeds them. The first client is a **responsive web application (PWA)**; the React Native mobile app follows it. Rev 1's blanket refusal of grade prediction (§D.7, §J.1, §V R-09) is **superseded and replaced by a governed banded projection** — see §J.12 and the rewritten R-09. Every changed section is listed in `REVISION_02_CHANGELOG.md`.
 
+> **AMENDMENT ADR-023 (2 September 2026).** Strengthens the content and practice cost model without redesigning the product: **code-first selection → template-first offline replenishment → AI only when necessary**; student practice never synchronously calls an LLM; continuous mastery (§J / Spec §9.11) remains authoritative; a configurable topic mastery **assessment cycle** (default 20 questions / 90% accuracy + skill & prerequisite coverage) may overlay practice; inventory health floors (min 40 approved/topic) sit beside Gate 1 weight targets; exam simulation stays on its own rules. Binding detail: Spec §9.14, §14.6, D-23, and `docs/decisions/ADR-023-mastery-inventory-ai-cost.md`.
+
 ---
 
 ## 0. HOW TO READ THIS DOCUMENT
@@ -275,7 +277,7 @@ The system separates cleanly into three planes with deliberately narrow interfac
 
 Five invariants. An engineering agent should treat a violation of any of them as a design bug, not a trade-off.
 
-**I-1 — No AI on the student path.** No screen a student can reach may cause a language-model call, directly or transitively. Enforced by network policy (the mobile client holds no AI credentials and no route to one) and by a CI check that the mobile bundle imports no AI SDK.
+**I-1 — No AI on the student path.** No screen a student can reach may cause a language-model call, directly or transitively. Enforced by network policy (the mobile client holds no AI credentials and no route to one) and by a CI check that the mobile bundle imports no AI SDK. **Strengthened by ADR-023:** requesting the next practice question must never synchronously invoke an LLM; AI-produced items are offline content assets that reach students only after validation, human review, and publish.
 
 **I-2 — Nothing reaches a student unapproved.** The student app reads only rows whose status is `published`. Enforced in Row Level Security, not application logic, so that a client bug cannot leak draft or AI-unreviewed content.
 
@@ -285,7 +287,7 @@ Five invariants. An engineering agent should treat a violation of any of them as
 
 **I-5 — Every AI-touched artefact carries provenance.** Which model, which prompt version, which run, which reviewer approved it, and when. Non-negotiable for quality forensics and for the "was this written by a machine" question that schools and parents will eventually ask.
 
-**I-6 — All assessment output is deterministic and recomputable.** Diagnostic results, mastery, the readiness index, the weak-area ranking and the grade projection are produced by explicit, versioned, rule-based computation over the immutable attempt log. The same attempt log must produce the same numbers on any machine at any time, and every number must be reproducible from first principles on demand. No model, no learned weights that cannot be re-derived, and — as everywhere else — no AI. A number a student is told about their future that cannot be recomputed and explained is not defensible.
+**I-6 — All assessment output is deterministic and recomputable.** Diagnostic results, mastery, the readiness index, the weak-area ranking and the grade projection are produced by explicit, versioned, rule-based computation over the immutable attempt log. The same attempt log must produce the same numbers on any machine at any time, and every number must be reproducible from first principles on demand. No model, no learned weights that cannot be re-derived, and — as everywhere else — no AI. A number a student is told about their future that cannot be recomputed and explained is not defensible. **ADR-023:** a topic mastery assessment cycle (accuracy + skill coverage + critical prerequisites) is likewise rule-based and configurable; it does not replace continuous mastery (§J / Spec §9.11) with a naive correct-count gate.
 
 **I-7 — No projection without evidence.** The readiness index and the grade projection are **withheld entirely** below the evidence floor (§J.11), are always expressed as a **band with a confidence level**, always state what evidence they rest on, and never appear without the standing qualification that they are a projection from practice, not a CXC result. Any interface that shows a projection must show its confidence in the same visual unit. Violation of this invariant is the single most likely route to the reputational and consumer-protection damage described in R-09.
 
@@ -1038,6 +1040,16 @@ Quality is a continuous process with four inputs:
 
 **Quality metrics tracked per question:** total attempts, accuracy, wrong-answer distribution, skip rate, mean duration, report count, last review date, reviewer.
 
+### E.14 Mastery cycle, inventory health, and generation order _(ADR-023)_
+
+Binding detail lives in Spec §9.14 and `docs/decisions/ADR-023-mastery-inventory-ai-cost.md`. Summary for implementers:
+
+- Selection remains deterministic (§E.4); time cooldown remains; a recent-ID preference window may be added.
+- Continuous mastery (§J) remains the durable score; a configurable 20-question / 90%-accuracy cycle with skill and prerequisite coverage may overlay topic practice — never a bare `correct >= 18` rule.
+- Inventory floor: ≥40 approved questions per topic preferred mature 60–100+; health is coverage-aware, not total-count-only.
+- Offline replenishment: **templates first, AI only when necessary**; never `STUDENT → AI → NEW QUESTION`.
+- Exam simulation is not governed by the topic mastery cycle.
+
 ---
 
 ## SECTION F — CXC CURRICULUM ARCHITECTURE
@@ -1776,6 +1788,8 @@ Constraints, all of which matter:
 - Each variant is solved independently by CAS and the AI's stated answer is checked against it. Disagreement is an automatic rejection.
 - Variants join the source's variant family (§E.10) and are never served alongside it.
 - **Variants still require human review**, though review is fast because the reviewer is checking a known structure with new numbers.
+
+**ADR-023 generation order.** Prefer **deterministic question templates** (parameterised stems with CAS-checked answers and answer-core-compatible specs) before LLM drafting. AI remains appropriate for rich reasoning, novel multi-step items, selected geometry, misconception explanations, and similar cases where templates are inadequate. Inventory shortage creates an offline replenishment job; it never blocks or awaits AI on the student path. Cost is judged by amortisation: AI generation cost ÷ student attempts served from the resulting published assets.
 
 ### K.6 Deterministic validation (step 10) — the quality backbone
 

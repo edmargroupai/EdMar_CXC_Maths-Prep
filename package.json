@@ -18,6 +18,7 @@
     "validate:content": "tsx scripts/validate-content.ts",
     "validate:staging": "tsx scripts/validate-staging.ts",
     "convert:workbook": "tsx scripts/convert-questions-with-solutions.ts",
+    "import:staging": "tsx scripts/import-and-publish-staging.ts",
     "gen:taxonomy": "node scripts/gen-taxonomy-seed.mjs",
     "extract:syllabus": "python scripts/extract-syllabus.py"
   },

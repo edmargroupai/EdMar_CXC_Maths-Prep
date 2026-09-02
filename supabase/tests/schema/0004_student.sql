@@ -32,21 +32,21 @@ select has_table('public', 'student_outcomes', 'student_outcomes exists');
 
 select ok(
   (
-    select count(*) = 50
+    select count(*) = 52
     from information_schema.tables
     where table_schema = 'public'
       and table_type = 'BASE TABLE'
   ),
   format(
-    '50 tables exist (found %s)',
+    '52 tables exist (found %s)',
     (select count(*)::int from information_schema.tables
      where table_schema = 'public' and table_type = 'BASE TABLE')
   )
 );
 
 select ok(
-  (select count(*) = 21 from public.app_config),
-  'app_config seeded with 21 keys'
+  (select count(*) = 39 from public.app_config),
+  'app_config seeded with 39 keys'
 );
 
 -- fn_handle_new_user: registered email

@@ -1,0 +1,23 @@
+{
+  "name": "@edmar/question-templates",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@edmar/answer-core": "workspace:*",
+    "@edmar/types": "workspace:*"
+  },
+  "devDependencies": {
+    "@edmar/config": "workspace:*",
+    "typescript": "^5",
+    "vitest": "^3.2.4"
+  }
+}

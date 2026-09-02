@@ -279,6 +279,25 @@ importers:
         specifier: ^5
         version: 5.9.3
 
+  packages/question-templates:
+    dependencies:
+      '@edmar/answer-core':
+        specifier: workspace:*
+        version: link:../answer-core
+      '@edmar/types':
+        specifier: workspace:*
+        version: link:../types
+    devDependencies:
+      '@edmar/config':
+        specifier: workspace:*
+        version: link:../config
+      typescript:
+        specifier: ^5
+        version: 5.9.3
+      vitest:
+        specifier: ^3.2.4
+        version: 3.2.7(@types/node@20.19.43)(jiti@2.7.0)(lightningcss@1.32.0)(supports-color@7.2.0)(tsx@4.23.13)
+
   packages/types:
     devDependencies:
       '@edmar/config':

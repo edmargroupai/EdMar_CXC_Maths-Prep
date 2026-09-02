@@ -174,6 +174,7 @@ Decisions this specification makes that Cursor must not re-litigate. Each has a 
 | **D-20** | **The projection evidence gate lives in the function, not the interface.** `fn_get_grade_projection` returns `withheld` with a machine-readable reason; no client can construct a band | Blueprint I-7. A gate implemented in a component is one refactor away from removal, and this is the one gate whose removal creates legal exposure (§V R-09) |
 | **D-21** | **Web billing (Stripe or equivalent) at MVP**, behind the existing source-agnostic entitlement model; Google Play Billing added at V2 with no schema change | Blueprint §N.6. §23.3 already made entitlement source-agnostic, so this costs nothing structurally and removes store-merchant availability from the launch path |
 | **D-22** | **Simulation timing is server-anchored and server-adjudicated.** `server_started_at` + `expires_at` are authoritative; a late submission is accepted and recorded with its true elapsed time rather than rejected | Simulation results carry the heaviest weight in readiness (blueprint §2.4). A client-trusted timer corrupts the product's most important evidence; rejecting late work discards evidence that is still valid, merely flagged |
+| **D-23** | **Code-first practice; template-first offline replenishment; AI only when necessary.** Continuous §9.11 mastery remains authoritative. A configurable topic mastery **assessment cycle** (default 20 Q / 90% + skill & prerequisite coverage) may overlay practice mode. Time-based cooldown is retained; a recent-ID window is an additional preference. Inventory health floors (min 40 approved/topic) sit beside §29.6 Gate 1 weight targets. Full record: `docs/decisions/ADR-023-mastery-inventory-ai-cost.md` | Cost control and reliability: student practice must never synchronously call an LLM. AI drafts are content assets that enter the existing review/publish path. Prevents silent replacement of §9.11 with a naive 18/20 counter |
 
 ### 0.7 Uncertainties requiring a human decision
 
@@ -2313,6 +2314,96 @@ A question is `flagged_reason`-set when any holds, with ≥30 attempts from ≥2
 
 Flagging never unpublishes. Auto-suspension happens only at 5 open reports in 24 h (§8.5), because that signal is human-generated and specific.
 
+### 9.14 Topic mastery assessment cycle, inventory health, and generation policy _(ADR-023)_
+
+**Amendment — does not replace §9.11–§9.13.** Continuous EWMA mastery (§9.11), mark-impact recommendations (§9.12), and quality monitoring (§9.13) remain in force. This section adds a practice-mode cycle overlay, inventory health SLAs, and an explicit generation order. See `docs/decisions/ADR-023-mastery-inventory-ai-cost.md`.
+
+#### 9.14.1 Non-negotiable student path
+
+```
+STUDENT → PRACTICE ENGINE → DETERMINISTIC SELECTOR → APPROVED BANK
+       → @edmar/answer-core → ATTEMPT → MASTERY ENGINE
+       → MASTERED / REMEDIATION / PREREQUISITE SUPPORT
+```
+
+There is **no** path `STUDENT → AI → NEW QUESTION`. Selecting or checking an answer makes **zero** LLM calls (I-1).
+
+Offline replenishment (separate from the student path):
+
+```
+INVENTORY MONITOR → SHORTAGE → TEMPLATE GENERATION FIRST
+  → AI ONLY WHEN NECESSARY → VALIDATE → REVIEW → PUBLISH → APPROVED BANK
+```
+
+#### 9.14.2 Continuous mastery vs cycle mastery
+
+| Layer | Role | Config |
+| ----- | ---- | ------ |
+| §9.11 continuous EWMA | Durable skill/topic scores; Mastered band 90–100 is a **label on that score**, not a cycle counter | `mastery_evidence_floor`, `mastery_full_weight_at`, coverage cap in §9.11 |
+| Topic mastery **assessment cycle** | Optional practice overlay: after `mastery_question_target` attempts in a topic-scoped cycle, decide mastered / remediation / prerequisite support | `mastery_cycle_enabled`, `mastery_question_target` (20), `mastery_accuracy_threshold` (0.90) |
+
+Cycle mastery requires **all** of:
+
+1. `overall_accuracy >= mastery_accuracy_threshold` (default 0.90 → 18/20 when target is 20)
+2. `required_skill_coverage_met` — not inventable as `correct_count >= 18` alone; uses existing skills/objectives taxonomy
+3. `critical_prerequisite_requirements_met` — via existing `skill_prerequisites`
+
+Topic-specific overrides may be added later (config table) without redeploying application code. Defaults live in `app_config` (migration `0014_mastery_inventory_ai_config.sql`).
+
+**Exam simulation** is **not** governed by this cycle (§41.3 / blueprint simulation rules unchanged).
+
+#### 9.14.3 Remediation bands (configurable)
+
+After a cycle, if accuracy is below threshold **or** coverage gates fail, remediation is code-driven (reuse `fn_weak_areas` / mark-impact; no AI attempt analysis):
+
+| Band | Default correct count (of 20) | Default action | Config keys |
+| ---- | ----------------------------- | -------------- | ----------- |
+| Near miss | 15–17 | 5 targeted questions | `remediation_band_near_*`, `remediation_near_count` |
+| Mid | 10–14 | 10 targeted questions | `remediation_band_mid_*`, `remediation_mid_count` |
+| Low | 0–9 | Prerequisite review + ~10 targeted + reassess | `remediation_band_low_max`, `remediation_low_count` |
+
+#### 9.14.4 Selection preferences (additive to §9.3)
+
+Existing filter chain (§9.3) remains: entitlement → published → free pool → **time cooldown** → difficulty → diversity.
+
+**Additional preference** (when implementing): avoid the student's `cooldown_recent_ids` most-recent question IDs (default 40, range 30–50). Prefer unseen → outside ID window → outside time cooldown → least-recent suitable. If inventory is exhausted for the student, **relax cooldown**; never trigger synchronous AI.
+
+Cognitive/skill balance uses existing controlled vocabulary (objectives, skills, difficulty bands, cognitive level on presentation blocks). Do **not** hardcode a universal Knowledge/Application/Reasoning 20-question split unless a future topic config defines one.
+
+Diagnostic results may bias starting selection toward weak prerequisites; they must not invoke AI at runtime.
+
+#### 9.14.5 Inventory health (beside §29.6)
+
+§29.6 Paper 01 weight targets remain Gate 1 composition goals.
+
+Additional configurable floors:
+
+| Metric | Default |
+| ------ | ------- |
+| Minimum approved/published per topic | 40 (`inventory_min_approved_per_topic`) |
+| Preferred mature inventory | 60+ (`inventory_preferred_per_topic`); 100+ where content permits |
+| Reserve warn (suitable alternatives after cooldown for a student) | 15 (`inventory_reserve_warn`) |
+
+“Unused” is **per-student**, never global. A question used by Student A remains available to Student B.
+
+Statuses: existing `content_status` only (draft / pending review / published / suspended / retired as already defined). **No duplicate status vocabulary.**
+
+Admin inventory health (§21.4a): per topic show approved / draft / pending / template-origin / AI-origin counts; objective, skill, difficulty, cognitive coverage; reserve health; status `HEALTHY` | `LOW` | `CRITICAL`. Surface **which** objective/skill is short — do not refill blindly on total count alone.
+
+#### 9.14.6 Template-first generation; AI cost metrics
+
+When inventory/coverage is insufficient: create a **replenishment job** (offline). Prefer deterministic question templates (parameter ranges, constraints, answer + solution generators compatible with `@edmar/answer-core`). Use AI only when templates are inadequate (rich reasoning, novel multi-step, selected geometry, misconceptions/explanations drafting, etc.).
+
+AI output **never auto-publishes**. Lifecycle: AI draft → schema → math → dedupe → taxonomy → human review → publish.
+
+Track at minimum (pipeline / `ai_generations` / ops views): template-generated count; AI-generated count; jobs; model; tokens; estimated cost; accepted vs rejected AI items; **cost per approved AI question**; student attempts served from reusable generated content. Primary business ratio:
+
+`AI_CONTENT_GENERATION_COST ÷ STUDENT_ATTEMPTS_SERVED`
+
+Fail-safe: AI outage or budget exhaustion must not block login, diagnostic, practice, answer checking, mastery, progress, or exam simulation.
+
+**Implementation note:** config seeds ship in `0014_*`. Cycle evaluator, ID-cooldown preference, template engine, replenishment jobs, and admin health UI ship in their owning phases (ADR-023 phase table) — do not leap phases solely because this section exists.
+
 ---
 
 ## 10. ANSWER VALIDATION ENGINE
@@ -3607,6 +3698,9 @@ A response that fails schema validation is retried **once** with the validation 
 | Per-stage token ceiling | max input and output tokens per stage; a malformed input cannot produce an unbounded generation |
 | Concurrency             | worker pool ≤ 4 concurrent stage calls                                                          |
 | Batch discounts         | all work is batch-eligible by construction                                                      |
+| Template-first policy   | `content_generation_policy = template_first_ai_when_necessary` (ADR-023 / §9.14.6); AI drafts amortised across many student attempts |
+| Amortisation metric     | Track `AI_CONTENT_GENERATION_COST ÷ STUDENT_ATTEMPTS_SERVED`; maximise reuse of published assets |
+| Student-path isolation  | Inventory shortage creates offline replenishment jobs only — **never** a synchronous LLM call from practice |
 | Model tiering           | §14.2                                                                                           |
 | Daily spend alert       | `job_ai_spend_alert` compares rolling spend against the cap                                     |
 
@@ -4563,6 +4657,21 @@ Sidebar items are hidden by role, **and** every server action re-checks — hidi
 ### 21.4 Dashboard
 
 Ordered by what actually needs attention: review-queue depth **with the age of the oldest item** (a queue growing faster than it drains is the most important operational signal in the business); escalations; open student reports sorted by traffic on the affected question; quality-flagged questions; running/failed jobs with month-to-date AI spend against cap; published counts by topic with coverage gaps highlighted against the official Paper 01 item weights (§0.3); yesterday's actives, attempts and new subscriptions.
+
+### 21.4a Topic inventory health _(ADR-023 / §9.14.5)_
+
+Per topic (and drill-down to objective/skill), show at least:
+
+| Column | Source |
+| ------ | ------ |
+| Approved / published count | `questions` + status |
+| Draft / pending review | existing workflow statuses |
+| Template-generated vs AI-generated | provenance / pipeline metadata |
+| Objective, skill, difficulty, cognitive coverage | taxonomy joins + presentation block cognitive level |
+| Reserve health | suitable alternatives after cooldown rules for a representative student profile |
+| Status | `HEALTHY` / `LOW` / `CRITICAL` vs `inventory_min_approved_per_topic` and coverage holes |
+
+Refill priority follows **coverage holes**, not raw total count alone. Implementation belongs to admin (P19+) once config seeds exist.
 
 ### 21.5 Review workspace — optimised for throughput
 
@@ -6917,6 +7026,7 @@ I-8  WHEN apps/mobile resumes at V2 and its behaviour differs from apps/web
 7. **Never invent CXC curriculum.** Objective codes and statements come from the seeded taxonomy, which came from the official PDF. If a code is needed and absent, stop and ask.
 8. **Never invent a mathematical answer.** If the CAS cannot verify it and no human has, it does not publish.
 9. **Never auto-publish AI-generated content.** No confidence threshold, no batch approval, no exception. (B-14)
+9a. **Never synchronously call an LLM from student practice, answer checking, or mastery.** Inventory shortage creates an offline replenishment job only. (I-1, D-23 / ADR-023, §9.14)
 10. **Never store mathematics only as plain text.** Every expression is LaTeX in the allowlist, with a `math_renders` row. Plain text is a projection for search, never the source.
 11. **Never destroy LaTeX or worked-solution content during migration.** §12 preserves everything; unconvertible records go to `failed/`, never to `/dev/null`.
 12. **Never add a dependency not named in this spec** without recording why in `docs/decisions/`.
