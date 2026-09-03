@@ -4,7 +4,7 @@ import { useEffect, useReducer, useRef } from "react";
 import { useRouter } from "next/navigation";
 import { validate } from "@edmar/answer-core";
 import { BlockRenderer } from "@edmar/design/blocks";
-import type { QuestionOption } from "@edmar/types";
+import type { Block, QuestionOption } from "@edmar/types";
 import { Button } from "@/components/ui/button";
 import { ErrorState } from "@/components/ui/error-state";
 import { OptionList } from "@/features/practice/components/OptionList";
@@ -22,6 +22,7 @@ import {
   questionReducer,
   type AnswerInput,
 } from "@/features/practice/question-reducer";
+import { getSupabasePublicEnv } from "@/lib/supabase/env";
 import type { SessionItemRow } from "@/stores/sessionStore";
 import { useSessionStore } from "@/stores/sessionStore";
 
@@ -40,6 +41,16 @@ const NUMERIC_TYPES = new Set([
   "currency",
 ]);
 
+const TEXT_TYPES = new Set([
+  "boolean",
+  "fraction",
+  "mixed_number",
+  "ratio",
+  "expression",
+  "with_units",
+  "coordinate",
+]);
+
 function orderOptions(
   options: QuestionOption[] | null,
   optionOrder: string[] | null,
@@ -49,6 +60,15 @@ function orderOptions(
   return optionOrder
     .map((key) => options.find((opt) => opt.optionKey === key))
     .filter((opt): opt is QuestionOption => Boolean(opt));
+}
+
+/** Show the figure immediately after the stem, not after coaching notes. */
+function stemBlocksWithFigure(blocks: Block[]): Block[] {
+  const figures = blocks.filter((block) => block.type === "asset");
+  if (figures.length === 0) return blocks;
+  const rest = blocks.filter((block) => block.type !== "asset");
+  const [head, ...tail] = rest;
+  return head ? [head, ...figures, ...tail] : [...figures, ...rest];
 }
 
 export function QuestionScreen({ sessionId, position, item, total }: QuestionScreenProps) {
@@ -167,6 +187,8 @@ export function QuestionScreen({ sessionId, position, item, total }: QuestionScr
     const options = orderOptions(body.payload.options, item.option_order);
     const isMcq = answerSpec.answerType === "option_id" || answerSpec.answerType === "option_set";
     const isNumeric = NUMERIC_TYPES.has(answerSpec.answerType);
+    const isText = TEXT_TYPES.has(answerSpec.answerType);
+    const supabaseUrl = getSupabasePublicEnv().url;
 
     return (
       <div className="mx-auto max-w-5xl px-4 py-6 sm:px-6">
@@ -184,8 +206,9 @@ export function QuestionScreen({ sessionId, position, item, total }: QuestionScr
 
         <article className="rounded-2xl bg-white p-6 shadow-[0_4px_24px_rgba(13,27,62,0.08)] dark:bg-navy">
           <BlockRenderer
-            blocks={body.payload.stemBlocks}
+            blocks={stemBlocksWithFigure(body.payload.stemBlocks)}
             mathRenders={body.payload.mathRenders}
+            supabaseUrl={supabaseUrl}
           />
 
           <div className="mt-8">
@@ -203,6 +226,18 @@ export function QuestionScreen({ sessionId, position, item, total }: QuestionScr
                 onChange={(value) => dispatch({ type: "SET_INPUT", input: value })}
                 disabled={state.phase === "checking"}
               />
+            ) : isText ? (
+              <label className="block">
+                <span className="sr-only">Your answer</span>
+                <input
+                  type="text"
+                  value={typeof input === "string" ? input : ""}
+                  onChange={(event) => dispatch({ type: "SET_INPUT", input: event.target.value })}
+                  disabled={state.phase === "checking"}
+                  placeholder="Type your answer"
+                  className="w-full rounded-xl border border-navy/15 bg-white px-4 py-3 font-mono text-lg text-navy dark:border-white/15 dark:bg-navy dark:text-white"
+                />
+              </label>
             ) : (
               <p className="text-sm text-navy/60">Input type not yet supported in MVP.</p>
             )}
@@ -247,8 +282,9 @@ export function QuestionScreen({ sessionId, position, item, total }: QuestionScr
           <div className="space-y-4">
             <article className="rounded-2xl bg-white p-6 shadow-[0_4px_24px_rgba(13,27,62,0.08)] dark:bg-navy">
               <BlockRenderer
-                blocks={state.payload.payload.stemBlocks}
+                blocks={stemBlocksWithFigure(state.payload.payload.stemBlocks)}
                 mathRenders={state.payload.payload.mathRenders}
+                supabaseUrl={getSupabasePublicEnv().url}
               />
             </article>
             <VerdictBanner

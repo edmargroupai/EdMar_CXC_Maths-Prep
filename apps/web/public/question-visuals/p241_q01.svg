@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-labelledby="title desc">
+  <title id="title">Circle with diameter AC, points B and D on the circumference, and straight line DCE</title>
+  <desc id="desc">AC is a diameter. B is on the upper arc and D on the lower arc. Line DCE passes through C with E outside the circle. Angle CAB is 28 degrees and angle DBC is 46 degrees.</desc>
+  <rect width="640" height="420" fill="#ffffff"/>
+  <g fill="none" stroke="#0D1B3E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="280" cy="210" r="140"/>
+    <line x1="140" y1="210" x2="520" y2="210"/>
+    <line x1="140" y1="210" x2="330" y2="82"/>
+    <line x1="330" y1="82" x2="420" y2="210"/>
+    <line x1="330" y1="82" x2="280" y2="350"/>
+    <line x1="140" y1="210" x2="280" y2="350"/>
+    <line x1="280" y1="350" x2="520" y2="210"/>
+  </g>
+  <g fill="#0D1B3E">
+    <circle cx="140" cy="210" r="4.5"/>
+    <circle cx="420" cy="210" r="4.5"/>
+    <circle cx="330" cy="82" r="4.5"/>
+    <circle cx="280" cy="350" r="4.5"/>
+    <circle cx="520" cy="210" r="4.5"/>
+  </g>
+  <g font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#0D1B3E">
+    <text x="112" y="218">A</text>
+    <text x="428" y="198">C</text>
+    <text x="336" y="72">B</text>
+    <text x="268" y="378">D</text>
+    <text x="530" y="218">E</text>
+  </g>
+  <path d="M 188 210 A 48 48 0 0 0 178 188" fill="none" stroke="#2E5BBA" stroke-width="2"/>
+  <text x="196" y="198" font-family="Georgia, 'Times New Roman', serif" font-size="16" fill="#2E5BBA">28°</text>
+  <path d="M 352 118 A 42 42 0 0 1 318 128" fill="none" stroke="#2E5BBA" stroke-width="2"/>
+  <text x="348" y="148" font-family="Georgia, 'Times New Roman', serif" font-size="16" fill="#2E5BBA">46°</text>
+</svg>
